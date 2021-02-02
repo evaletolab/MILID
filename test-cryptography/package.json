@@ -9,6 +9,8 @@
   "author": "Olivier Evalet <evaleto@gmail.com> (http://evaletolab.ch/)",
   "license": "ISC",
   "dependencies": {
+    "@types/crypto-js": "^4.0.1",
+    "crypto-js": "^4.0.0",
     "install": "^0.13.0",
     "noble-ed25519": "^1.0.3",
     "noble-secp256k1": "^1.1.2",
