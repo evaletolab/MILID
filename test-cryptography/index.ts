@@ -1,3 +1,5 @@
+//
+// state less authentification
 import * as ed from 'noble-ed25519';
 
 const privateKey = ed.utils.randomPrivateKey(); // 32-byte Uint8Array or string.
