@@ -1,5 +1,5 @@
 
-
+// TODO: discuss i18n with client
 
 
 enum LessonType {
