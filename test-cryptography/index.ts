@@ -9,14 +9,14 @@ const account = 'test@pouet.com:password1';
 import { SHA256 } from 'crypto-js';
 
 const user = account.split(':')[0];
-const hidenUser = SHA256(user);
-const hidenAccount = SHA256(account);
+const hiddenUser = SHA256(user);
+const hiddenAccount = SHA256(account);
 
 //
 // use the pattern to access user content
 console.log('# simple solution for a stateless readonly account content');
 console.log('/project/users/sha256(user)-sha256(account).json');
-console.log('/project/users/'+hidenUser+'-'+hidenAccount+'.json');
+console.log('/project/users/'+hiddenUser+'-'+hiddenAccount+'.json');
 console.log('# ');
 
 //
