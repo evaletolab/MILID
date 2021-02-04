@@ -1,14 +1,31 @@
 import Vue from 'vue'
 import VueRouter, { RouteConfig } from 'vue-router'
+
 import Landing from '../views/Landing.vue'
+import Home from '../views/Home.vue'
+
+import { $config } from '@/services/config-service'
+import { $module } from '@/services/module-service'
 
 Vue.use(VueRouter)
 
 const routes: Array<RouteConfig> = [
   {
     path: '/',
+    name: 'Landing',
+    component: Landing,
+    beforeEnter:(to: any, from: any, next: any) => {
+      $config.get().then(next)
+    }
+  },
+  {
+    path: '/home',
     name: 'Home',
-    component: Landing
+    component: Home,
+    beforeEnter:(to: any, from: any, next: any) => {
+      const load = [$config.get(),$module.getAll()]
+      Promise.all(load).then(next);
+    }
   },
   {
     path: '/about',

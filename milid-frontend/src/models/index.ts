@@ -20,6 +20,19 @@ namespace MILID {
       url: string;
   }
 
+  export interface Config {
+    
+  }
+
+  //
+  // user
+  export interface User {
+    id: string | false;
+    name: string;
+    created: Date;
+    updated?: Date;
+  }
+
 
   //
   // Activities

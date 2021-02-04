@@ -8,7 +8,7 @@ class ModuleService {
 
   async getAll(): Promise<MILID.Module[]> {
     if(!this._modules.length) {
-      this._modules = await axios.get('assets/modules.json');
+      this._modules = await axios.get('modules.json');
     }
 
     return this._modules;
