@@ -1,7 +1,7 @@
 <template>
   <div class="landing">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <h1>Bienvenu Inscrivez-vous! </h1>
+    <h1>Landing</h1>
+    <p>create your pseudo</p>
   </div>
 </template>
 
@@ -12,12 +12,9 @@
 import { Component, Vue } from 'vue-property-decorator';
 import { $config } from '../services/config-service';
 
-import HelloWorld  from '../components/HelloWorld.vue'; // @ is an alias to /src
 
-@Component({  
-  components: {
-    HelloWorld,
-  },
+@Component({
+  components: { },
 })
 export default class Landing extends Vue {
   config: any; // MILID.Config;
