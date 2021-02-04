@@ -1,7 +1,8 @@
 <template>
-  <div class="landing">
-    <h1>Landing</h1>
-    <p>create your pseudo</p>
+  <div>
+    <h1>Module {{$route.params.module_id}}</h1>
+    <h2>lesson {{$route.params.lesson_id}}</h2>
+
   </div>
 </template>
 
@@ -14,5 +15,5 @@ import { Component, Vue } from 'vue-property-decorator';
 @Component({
   components: { },
 })
-export default class Landing extends Vue {}
+export default class Lesson extends Vue {}
 </script>

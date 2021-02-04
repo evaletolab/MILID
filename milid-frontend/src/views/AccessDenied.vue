@@ -21,10 +21,20 @@ export default class AccessDenied extends Vue {
     console.log("mounted");
   }
 
+  beforeRouteEnter(to: Route, from: Route, next: NavigationGuardNext<Vue>) {
+    console.log("before route enter from", from, to);
+    next();
+  }
+
+  // does not work...
   beforeRouteUpdate(to: Route, from: Route, next: NavigationGuardNext<Vue>) {
     console.log("before route update from", from);
     next();
   }
 
+  beforeRouteLeave(to: Route, from: Route, next: NavigationGuardNext<Vue>) {
+    console.log("before route leave from", from, to);
+    next();
+  }
 }
 </script>

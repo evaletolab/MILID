@@ -1,5 +1,6 @@
 
 import './ts/class-component-hooks.ts';
+
 import Vue from 'vue'
 import App from './App.vue'
 import './registerServiceWorker'
