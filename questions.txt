@@ -1,6 +1,0 @@
-- est-ce que la cover est dérivé selon le type de la leçon. illustration pour un podcast?
-- mettre au clair le positionement de la vidéo dans la leçon vidéo.
-- clarifer toutes les leçons qui ne sont pas triviales (podcast ou vidéo). 
-- texte avec lien, dictionnaire, chaque mot est isolé par un tag md qui fait référence à un asset texte de dictionnaire|source|+d'info (fonctionne que dans un type de leçon)
-- au niveau stat on pourra évaluer done/todo pas d'état "started" 
-- à valider: il n'y pas de page module (présentation et objectifs pédagogiques)
