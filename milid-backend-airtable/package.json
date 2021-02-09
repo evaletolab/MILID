@@ -1,0 +1,18 @@
+{
+  "name": "milid_backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node src/export_cr_media.js"
+  },
+  "author": "olivier evalet + david hodgetts",
+  "license": "MIT",
+  "devDependencies": {
+    "airtable": "^0.10.1",
+    "dotenv": "^8.2.0",
+    "fs-extra": "^9.0.1",
+    "marked": "^2.0.0"
+  }
+}
