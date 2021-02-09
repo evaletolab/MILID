@@ -11,16 +11,22 @@ import Home from '../views/Home.vue'
 import Lesson from '../views/Lesson.vue'
 import AccessDenied from '../views/AccessDenied.vue'
 
+import Component from 'vue-class-component'
+
+// Register the router hooks with their names
+Component.registerHooks([
+  'beforeRouteEnter',
+  'beforeRouteLeave',
+  'beforeRouteUpdate' // for vue-router 2.2+
+]);
+
 Vue.use(VueRouter)
 
 const routes: Array<RouteConfig> = [
   {
     path: '/',
     name: 'Landing',
-    component: Landing,
-    beforeEnter:(to: any, from: any, next: any) => {
-      $config.get().then(next)
-    }
+    component: Landing
   },
   {
     path: '/home',
@@ -30,11 +36,6 @@ const routes: Array<RouteConfig> = [
       const load = [$config.get(),$module.getAll()]
       Promise.all(load).then(next);
     }
-  },
-  {
-    path: '/home',
-    name: 'Home',
-    component: Home
   },
   {
     path: '/about',

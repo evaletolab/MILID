@@ -1,6 +1,6 @@
 <template>
   <div class="landing">
-    <h1>Landing</h1>
+    <h1 >Landing {{ config.primary }}</h1>
     <p>create your pseudo</p>
     <section>
       <img src="@/assets/MILID-logo.svg" />
@@ -31,20 +31,33 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import { $config } from '../services/config-service';
+import { $config } from '../services';
 
 
 @Component({
   components: { },
 })
 export default class Landing extends Vue {
-  config: any; // MILID.Config;
+  private _config: any; // MILID.Config;
+
 
   constructor(){
     super();
-    //
-    // should always be preloaded
-    this.config = $config.get()
   }
+
+  async mounted(){
+    this._config = await $config.get();
+    console.log('--- mounted',this._config)
+  }
+
+  get config(){
+    console.log('--- get',this._config)
+    return this._config || {};
+  }
+
+  beforeRouteEnter(to: any, from: any, next: any) {
+    $config.get().then(next)
+  }
+
 }
 </script>
