@@ -38,21 +38,16 @@ import { $config } from '../services';
   components: { },
 })
 export default class Landing extends Vue {
-  private _config: any; // MILID.Config;
-
-
   constructor(){
     super();
   }
 
   async mounted(){
-    this._config = await $config.get();
-    console.log('--- mounted',this._config)
+    console.log('--- mounted',$config.store.config)
   }
 
   get config(){
-    console.log('--- get',this._config)
-    return this._config || {};
+    return $config.store.config;
   }
 
   beforeRouteEnter(to: any, from: any, next: any) {
