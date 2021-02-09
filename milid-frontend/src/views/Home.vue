@@ -4,7 +4,7 @@
     <h2>Module {{ config.version }}</h2>
 
     <ul v-for="mod in modules" :key="mod.id">
-      <li><a :href="`/module/${mod.id}/lesson/0`">{{ mod.title }} lesson 0</a></li>
+      <li><router-link :to="'/module/' + mod.id + '/lesson/0'">{{ mod.title }} lesson 0</router-link></li>
     </ul>
   </div>
 </template>
