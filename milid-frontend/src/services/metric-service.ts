@@ -1,8 +1,7 @@
-import axios from 'axios';
 
 interface MILIDEvent {
-  module:string;
-  lesson:string;
+  module: string;
+  lesson: string;
   state: MILID.LessonState;
   uid: string;
   username: string;
@@ -11,7 +10,7 @@ interface MILIDEvent {
 
 class MetricService {
   constructor() {
-
+    // TODO
   }
 
   async event(params: MILIDEvent){
