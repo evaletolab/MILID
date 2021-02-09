@@ -1,13 +1,10 @@
 <template>
   <div>
     <h1>Home</h1>
-    <h2>Module {{module.name}}</h2>
+    <h2>Module {{ config.version }}</h2>
 
-    <ul>
-      <li><a :href="`/module/${module.name}/lesson/0`">lesson 0</a></li>
-      <li><a :href="`/module/${module.name}/lesson/1`">lesson 1</a></li>
-      <li><a :href="`/module/${module.name}/lesson/2`">lesson 2</a></li>
-      <li><a :href="`/module/${module.name}/lesson/3`">lesson 3</a></li>
+    <ul v-for="mod in modules" :key="mod.id">
+      <li><a :href="`/module/${mod.id}/lesson/0`">{{ mod.title }} lesson 0</a></li>
     </ul>
   </div>
 </template>
@@ -17,29 +14,30 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import { $config } from '../services/config-service'
+import { Route } from 'vue-router';
+import { $config, $module } from '../services'
 
-
-@Component({  
-  components: {
-  },
-})
 
 @Component({
   components: { },
 })
 export default class Home extends Vue {
-  module = {
-    name:'my module',
-    slug:'my_module',
-  }
-  config: any;
 
   constructor(){
     super();
-    //
-    // should always be preloaded
-    this.config = $config.get()
+  }
+
+  get modules() {
+    return $module.store.modules;    
+  }
+
+  get config(){
+    return $config.store.config;
+  }
+
+  beforeRouteEnter(to: Route, from: Route, next: any) {
+    const load = [$config.get(),$module.getAll()]
+    Promise.all(load).then(next);
   }
 
 }

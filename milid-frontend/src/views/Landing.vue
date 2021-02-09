@@ -1,6 +1,6 @@
 <template>
   <div class="landing">
-    <h1 >Landing {{ config.primary }}</h1>
+    <h1 >Landing {{ config.version }}</h1>
     <p>create your pseudo</p>
     <section>
       <img src="@/assets/MILID-logo.svg" />

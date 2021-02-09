@@ -32,10 +32,6 @@ const routes: Array<RouteConfig> = [
     path: '/home',
     name: 'Home',
     component: Home,
-    beforeEnter:(to: any, from: any, next: any) => {
-      const load = [$config.get(),$module.getAll()]
-      Promise.all(load).then(next);
-    }
   },
   {
     path: '/about',
