@@ -1,17 +1,26 @@
+import Vue from "vue";
 import axios from 'axios';
 
 class ModuleService {
-  private _modules: MILID.Module[];
+  private _store: any;
+
   constructor() {
-    this._modules = [];
+    this._store = Vue.observable({
+      modules: {}
+    });
   }
 
-  async getAll(): Promise<MILID.Module[]> {
-    if(!this._modules.length) {
-      this._modules = await axios.get('modules.json');
-    }
+  get store() {
+    return this._store;
+  }
 
-    return this._modules;
+
+  async getAll(): Promise<MILID.Module[]> {
+    if(!this._store.modules.length) {
+      const res = await axios.get('/modules.json');
+      this._store.modules = res.data;
+    }
+    return this._store.modules;
   }
 
 }

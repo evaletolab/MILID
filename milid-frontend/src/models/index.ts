@@ -39,15 +39,19 @@ namespace MILID {
   export type LessonActivity = VideoActivity | PodcastActivity | MarkdowActivity | GameActivity;
 
   export interface VideoActivity{
-
+    title: string;    
+    url: string;
   }
 
   export interface PodcastActivity{
-    
+    title: string;    
+    url: string;
   }
 
   export interface MarkdowActivity{
-    
+    cover: string;
+    content: string;
+    game?: GameActivity;
   }
 
   //
@@ -73,7 +77,6 @@ namespace MILID {
     VIDEO ,
     PODCAST ,
     INFOGRAPHIC,
-    GAME,
     MARKDOWN 
   }
 
