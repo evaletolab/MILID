@@ -1,19 +1,32 @@
+import Vue from "vue";
 import axios from 'axios';
 
+const store = Vue.observable({
+  config: []
+});
+
 class ConfigService {
-  private _STORAGE_USER = "milid-user";
-  private _config: MILID.Config;
+  private _store: any;
+
 
   constructor() {
-    this._config = false;
+    this._store = Vue.observable({
+      config: {}
+    });
+  }
+
+  get store() {
+    return this._store;
   }
 
   async get(force?: boolean): Promise<any> {
-    if(!this._config && !force) {
-      this._config = await (axios.get('config.json').then(resp => resp.data));
+    if(!this._store.config.done && !force) {
+      const res = await axios.get('config.json');
+      this._store.config = res.data;
+      this._store.config.done = true;
     }
 
-    return this._config;
+    return this._store.config
   }  
 }
 
