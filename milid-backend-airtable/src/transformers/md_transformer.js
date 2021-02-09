@@ -8,7 +8,7 @@ module.exports = function mdTransformer(lesson, globalData){
     const urlForAssetId = (assetId) => {
         const asset = globalData.assets.find(asset => asset.asset_id == assetId);
         if(!asset){
-            throw new Error("no asset with id", assetId);
+            throw new Error(`no asset with id ${assetId}`);
         }
         return asset.media[0].url;
     }

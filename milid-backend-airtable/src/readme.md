@@ -8,5 +8,7 @@
 ## build
 
 ```
-    $ node src/app.js
+    $ npm run build
 ```
+
+the build artefacts are placed in the dist folder.
