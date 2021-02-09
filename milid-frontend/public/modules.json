@@ -1,0 +1,54 @@
+[{
+  "title": "module A",
+  "id": "module-a",
+  "description": "string; du module A",
+  "published": true,
+  "lessons": [{
+    "type": "MARKDOWN",
+    "title": "leçon A",
+    "state": "TODO",
+    "description": "string de leçon A",
+    "color": "linear-gradient(145deg, #ff0619 40%, #ff049f 100%)",
+    "activity": {
+      "cover" : "url",
+      "content" : "text"
+    }
+  },{
+    "type": "VIDEO",
+    "title": "leçon B",
+    "state": "TODO",
+    "description": "string de leçon A",
+    "color": "linear-gradient(145deg, #ff6406 40%, #ffb704 100%)",
+    "activity": {
+      "title" : "la video",
+      "url" : "url"
+    }
+  },{
+    "type": "VIDEO",
+    "title": "leçon C",
+    "state": "TODO",
+    "description": "string de leçon C",
+    "color": "linear-gradient(145deg, #fff100 40%, #efff06 100%)",
+    "activity": {
+      "title" : "la video",
+      "url" : "url"
+    }
+
+  }]
+},{
+  "title": "module B",
+  "id": "module-b",
+  "description": "string; du module B",
+  "published": true,
+  "lessons": [{
+    "type": "MARKDOWN",
+    "title": "leçon A",
+    "state": "TODO",
+    "description": "string de leçon A",
+    "activity": {
+      "cover" : "url",
+      "content" : "text"
+    }
+  }]
+}
+]
