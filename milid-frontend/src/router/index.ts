@@ -10,6 +10,7 @@ import About from '../views/About.vue'
 import Home from '../views/Home.vue'
 import Lesson from '../views/Lesson.vue'
 import AccessDenied from '../views/AccessDenied.vue'
+import Test from '../views/Test.vue';
 
 import Component from 'vue-class-component'
 
@@ -37,6 +38,11 @@ const routes: Array<RouteConfig> = [
     path: '/about',
     name: 'About',
     component: About
+  },
+  {
+    path: '/test',
+    name: 'Test',
+    component: Test
   },
   {
     path: '/module/:module_id/lesson/:lesson_id',

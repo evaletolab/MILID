@@ -23,6 +23,8 @@ async function main(){
         
         // result to be improved on
         writeFileSync('./dist/data.json', JSON.stringify(data, null, 2), { encoding: 'utf-8' });
+
+        console.log("all done");
     }catch(e){
         console.log("proccess stopped with error", e);
         process.exit(1);

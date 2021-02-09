@@ -47,7 +47,7 @@ import { $config, $module } from '../services';
   components: { }
 })
 export default class Lesson extends Vue {
-  private _observer;
+  private _observer: any;
   //
   // vues methods
   beforeRouteEnter(to: Route, from: Route, next: any) {
@@ -66,7 +66,7 @@ export default class Lesson extends Vue {
       threshold: 0.25
     }
 
-    const observerCallback = (entries) => {
+    const observerCallback = (entries: any) => {
       entries.forEach((entry: any) => {
         if (entry.intersectionRatio >= 0.25) {
           entry.target.classList.add("is-visible");
@@ -100,14 +100,14 @@ export default class Lesson extends Vue {
 
   //
   // only for devel purposes
-  getStyle(lesson) {
+  getStyle(lesson: any) {
     const styleObj = {
       background: (lesson.color || 'white')
     }
     return styleObj;
   }
 
-  onScroll($event) {
+  onScroll($event: any) {
     // console.log('---- scroll',$event);
   }
 }
