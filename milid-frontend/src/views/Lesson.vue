@@ -1,18 +1,17 @@
-<template>
-  <div class="scroll-snap-container fullscreen horizontal">
-    <div class="item"
+<template >
+  <div class="-scroll-snap-container fullscreen horizontal" v-if="module">
+    <div class="lesson" 
         v-for="lesson in lessons"
-        :key="lesson.id"
-        :ref="lesson.id">
-        
-        
->
-      <h1>Module {{$route.params.module_id}}</h1>
-      <h2>lesson {{$route.params.lesson_id}}</h2>
+        :key="lesson.id">
+      <h2>{{lesson.title}}</h2>
     </div>
-    
 
   </div>
+  <!--- WHEN MODULE IS NOT READY -->
+  <div v-else>    
+    <h1>Le Module {{$route.params.module_id}} n'existe pas</h1>
+  </div>
+
 </template>
 
 <style lang="scss" scoped>
@@ -84,16 +83,18 @@ import { $config, $module } from '../services';
   components: { }
 })
 export default class Lesson extends Vue {
-  modules: any; // Why MILID.Module;
+
+  get module() {
+    return $module.store.modules.find(m=>m.id === this.$route.params.module_id);    
+  }
+
+  get lessons() {
+    return this.module.lessons;
+  }
+
   beforeRouteEnter(to: Route, from: Route, next: any) {
-    console.log('---- beforeRouteEnter 0')
-
-    $module.getAll().then(modules => {
-      this.modules = modules;
-      console.log('--- ', this.modules);
-      next();
-    })
-
+    const load = [$config.get(),$module.getAll()]
+    Promise.all(load).then(next);
   }
 }
 </script>

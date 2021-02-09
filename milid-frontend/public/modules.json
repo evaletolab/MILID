@@ -1,6 +1,6 @@
 [{
   "title": "module A",
-  "id": "module-a;",
+  "id": "module-a",
   "description": "string; du module A",
   "published": true,
   "lessons": [{
@@ -24,7 +24,7 @@
   }]
 },{
   "title": "module B",
-  "id": "module-b;",
+  "id": "module-b",
   "description": "string; du module B",
   "published": true,
   "lessons": [{
