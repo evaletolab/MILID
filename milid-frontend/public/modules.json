@@ -1,1 +1,41 @@
-[]
+[{
+  "title": "module A",
+  "id": "module-a;",
+  "description": "string; du module A",
+  "published": true,
+  "lessons": [{
+    "type": "MARKDOWN",
+    "title": "leçon A",
+    "state": "TODO",
+    "description": "string de leçon A",
+    "activity": {
+      "cover" : "url",
+      "content" : "text"
+    }
+  },{
+    "type": "VIDEO",
+    "title": "leçon B",
+    "state": "TODO",
+    "description": "string de leçon A",
+    "activity": {
+      "title" : "la video",
+      "url" : "url"
+    }
+  }]
+},{
+  "title": "module B",
+  "id": "module-b;",
+  "description": "string; du module B",
+  "published": true,
+  "lessons": [{
+    "type": "MARKDOWN",
+    "title": "leçon A",
+    "state": "TODO",
+    "description": "string de leçon A",
+    "activity": {
+      "cover" : "url",
+      "content" : "text"
+    }
+  }]
+}
+]
