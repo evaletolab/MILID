@@ -21,6 +21,19 @@ module.exports = function mdTransformer(lesson, globalData){
         return img;
     }
 
+    renderer.link = function(href, title, text){
+        console.log(href, title, text);
+
+        let link;
+        if(!href.startsWith('http://') || !href.startsWith('https://')){
+            return `<span class="_definition" data-definition-id="${href}">${text}</span>`;
+        }else{
+            link = marked.Renderer.prototype.link.call(this, href, title, text);
+        }
+
+        return link;
+    }
+
     const options = { renderer: renderer };
 
     lesson.html = marked(lesson.markdown, options);

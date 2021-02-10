@@ -29,6 +29,10 @@ module.exports = async function extractRawAirtable(){
     })
     .then(lessonRecords => {
         result.lessons = lessonRecords.map(fieldExtract);
+        return export_table("definitions", process.env.BASE_TOKEN);
+    })
+    .then(definitionRecords => {
+        result.definitions = definitionRecords.map(fieldExtract);
         return export_table("palettes", process.env.BASE_TOKEN);
     })
     .then(paletteRecords => {

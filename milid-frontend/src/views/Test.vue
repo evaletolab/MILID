@@ -1,7 +1,7 @@
 <template>
   <div class="col" >
     <h1>This is a test page</h1>
-    <div v-html="lessonContent" ></div>
+    <div ref="raw_root" v-html="lessonContent" ></div>
   </div>
 </template>
 
@@ -25,6 +25,11 @@
     /* content: "• "; */
   }
 
+  .col /deep/ ._definition{
+    color: red;
+    cursor:pointer;
+  }
+
 </style>
 
 
@@ -42,6 +47,22 @@ export default class Test extends Vue {
     const data = await resp.json();
 
     this.lessonContent = data.lessons[0].html;
+
+    setTimeout(() =>{
+      // must be called after dom update...
+      this.setupDefinitions();
+    }, 100);
+  }
+
+  definitionClickHandler(e: any){
+    console.log(e, this);
+  }
+
+  setupDefinitions(){
+      const rawRoot = this.$refs['raw_root'] as HTMLElement;
+      const definitionElements = rawRoot.querySelectorAll('._definition');
+      console.log("images", definitionElements);
+      definitionElements.forEach(e => e.addEventListener('click', this.definitionClickHandler));
   }
 }
 </script>
