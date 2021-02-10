@@ -1,4 +1,4 @@
-import axios from 'axios';
+import { MILID } from '@/models';
 
 class UserService {
   private _STORAGE_USER = "milid-user";

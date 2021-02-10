@@ -2,10 +2,13 @@
   <div>
     <h1>Home</h1>
     <h2>Module {{ config.version }}</h2>
-
+    <ModuleStatus v-for="mod in modules" :key="mod.id+'status'"
+                  v-bind:module="mod"></ModuleStatus>
+    <h4>Links</h4>                  
     <ul v-for="mod in modules" :key="mod.id">
       <li><router-link :to="'/module/' + mod.id + '/lesson/0'">{{ mod.title }}</router-link></li>
     </ul>
+
   </div>
 </template>
 
@@ -15,11 +18,13 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 import { Route } from 'vue-router';
-import { $config, $module } from '../services'
+import { $config, $module } from '../services';
+
+import ModuleStatus from '../components/ModuleStatus.vue';
 
 
 @Component({
-  components: { },
+  components: { ModuleStatus },
 })
 export default class Home extends Vue {
 

@@ -1,6 +1,6 @@
 
 // TODO: discuss i18n with client
-namespace MILID {
+export namespace MILID {
   export enum ColorPalette{
     PINK,
     CYAN,
