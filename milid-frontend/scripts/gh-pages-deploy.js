@@ -6,6 +6,9 @@ const fs = require("fs");
     const { stdout } = await execa("git", ["rev-parse","--abbrev-ref", "HEAD"]);
     await execa("git", ["checkout", "--orphan", "gh-pages"]);
     // eslint-disable-next-line no-console
+    if(!stdout) {
+      throw new Error('Clean your local git before deploy');
+    }
     console.log("Building started on " + stdout + "... ");
     await execa("npm", ["run", "build"]);
     // Understand if it's dist or build folder
