@@ -1,5 +1,5 @@
 <template >
-  <div class="scroll-snap-container horizontal transition-snap" :class="transitionClass"
+  <div class="scroll-snap-container horizontal " :class="transitionClass"
        v-if="module">
     <section class="lesson -rendered-item" :class="(lesson.id == $route.params.lesson_id) ? 'active-card':''"
         v-for="(lesson, index) in lessons" :key="lesson.id"
