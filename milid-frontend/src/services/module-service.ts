@@ -1,5 +1,6 @@
 import Vue from "vue";
 import axios from 'axios';
+import { MILID } from "@/models";
 
 class ModuleService {
   private _store: any;

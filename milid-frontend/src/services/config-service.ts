@@ -1,3 +1,4 @@
+import { MILID } from "@/models";
 import Vue from "vue";
 import axios from 'axios';
 
@@ -6,7 +7,7 @@ class ConfigService {
   // More about store
   // https://fr.vuejs.org/v2/guide/reactivity.html
   private _store: any;
-
+ 
   constructor() {
     this._store = Vue.observable({
       config: {}
@@ -17,7 +18,7 @@ class ConfigService {
     return this._store;
   }
 
-  async get(force?: boolean): Promise<any> {
+  async get(force?: boolean): Promise<MILID.Config> {
     if(!this._store.config.done && !force) {
       const res = await axios.get('/config.json');
       this._store.config = res.data;

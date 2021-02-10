@@ -1,3 +1,4 @@
+import { MILID } from "@/models";
 
 interface MILIDEvent {
   module: string;
