@@ -1,3 +1,5 @@
+const prod = process.env.NODE_ENV === "production";
+
 module.exports = {
-  publicPath : '/MILID'
+  publicPath : prod? '/MILID':'/'
 }
