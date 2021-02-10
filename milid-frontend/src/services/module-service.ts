@@ -18,7 +18,7 @@ class ModuleService {
 
   async getAll(): Promise<MILID.Module[]> {
     if(!this._store.modules.length) {
-      const res = await axios.get('/modules.json');
+      const res = await axios.get('/MILID/modules.json');
       this._store.modules = res.data;
     }
     return this._store.modules;

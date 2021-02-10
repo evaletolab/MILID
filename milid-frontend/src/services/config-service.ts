@@ -20,7 +20,7 @@ class ConfigService {
 
   async get(force?: boolean): Promise<MILID.Config> {
     if(!this._store.config.done && !force) {
-      const res = await axios.get('/config.json');
+      const res = await axios.get('/MILID/config.json');
       this._store.config = res.data;
       this._store.config.done = true;
     }

@@ -3,10 +3,10 @@ const execa = require("execa");
 const fs = require("fs");
 (async () => {
   try {
-    const { curentBranch } = await execa("git", ["rev-parse","--abbrev-ref", "HEAD"]);
+    const { stdout } = await execa("git", ["rev-parse","--abbrev-ref", "HEAD"]);
     await execa("git", ["checkout", "--orphan", "gh-pages"]);
     // eslint-disable-next-line no-console
-    console.log("Building started on " + curentBranch + "... ");
+    console.log("Building started on " + stdout + "... ");
     await execa("npm", ["run", "build"]);
     // Understand if it's dist or build folder
     const folderName = fs.existsSync("dist") ? "dist" : "build";
@@ -15,7 +15,7 @@ const fs = require("fs");
     console.log("Pushing to gh-pages...");
     await execa("git", ["push", "origin", "HEAD:gh-pages", "--force"]);
     await execa("rm", ["-r", folderName]);
-    await execa("git", ["checkout", "-f", curentBranch]);
+    await execa("git", ["checkout", "-f", stdout ? stdout:'oe-v0_2']);
     await execa("git", ["branch", "-D", "gh-pages"]);
     console.log("Successfully deployed, check your settings");
   } catch (e) {
