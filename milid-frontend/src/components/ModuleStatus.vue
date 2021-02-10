@@ -41,18 +41,16 @@ export default class ModuleStatus extends Vue {
       border: none;
       
       /* Add dimensions */
-      width: 100%; height: 20px;
+      width: 100%; height: 4px;
       
       /* Although firefox doesn't provide any additional pseudo class to style the progress element container, any style applied here works on the container. */
-        background-color: whiteSmoke;
-        border-radius: 3px;
-        box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
+      background-color: whiteSmoke;
       
       /* Of all IE, only IE10 supports progress element that too partially. It only allows to change the background-color of the progress value using the 'color' attribute. */
-      color: royalblue;
+      color: #eee;
       
       position: relative;
-      margin: 0 0 1.5em; 
+      margin-left: 10px;
     }    
   }
 
