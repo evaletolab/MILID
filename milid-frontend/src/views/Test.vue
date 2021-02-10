@@ -1,6 +1,13 @@
 <template>
-  <div class="col" >
+  <div class="col" v-bind:class="{ scrollDisabled: definitionPopupIsOpen }">
     <h1>This is a test page</h1>
+    <DefinitionPopup 
+    :open="definitionPopupIsOpen"
+    :height="height"
+    v-on:closerequest="definitionPopupIsOpen = false"
+    >
+      {{definition}}
+    </DefinitionPopup>
     <div ref="raw_root" v-html="lessonContent" ></div>
   </div>
 </template>
@@ -11,6 +18,10 @@
     width:100%;
     max-width: 640px;
     text-align: left;
+  }
+
+  .scrollDisabled{
+    touch-action: none;
   }
 
   .col /deep/ img{
@@ -35,18 +46,35 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
+import DefinitionPopup from '../components/DefinitionPopup.vue';
+
+function getOffset(el: HTMLElement) {
+  const rect = el.getBoundingClientRect();
+  return {
+    left: rect.left + window.scrollX,
+    top: rect.top + window.scrollY,
+  };
+}
 
 @Component({
-  components: {},
+  components: {
+    DefinitionPopup,
+  },
 })
 export default class Test extends Vue {
   lessonContent = "";
+  definitions: any[] = [];
+  definition = "";
+  definitionPopupIsOpen = false;
+  height = 0;
+  
 
   async mounted(){
     const resp = await fetch('/data/data.json');
     const data = await resp.json();
 
     this.lessonContent = data.lessons[0].html;
+    this.definitions = data.definitions;
 
     setTimeout(() =>{
       // must be called after dom update...
@@ -55,7 +83,14 @@ export default class Test extends Vue {
   }
 
   definitionClickHandler(e: any){
-    console.log(e, this);
+    console.log(e, this, e.target.getBoundingClientRect());
+    console.log("oofset", getOffset(e.target));
+
+    this.height = getOffset(e.target).top;
+    console.log("height", this.height);
+    this.definitionPopupIsOpen = true;
+    this.definition = this.definitions[0].definition;
+    console.log(this.definition);
   }
 
   setupDefinitions(){
