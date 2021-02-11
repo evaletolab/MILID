@@ -24,8 +24,9 @@
 
     .definition{
         position:absolute;
-        width:80%;
-        margin-left: 10%;
+        margin: auto;
+        // width:80%;
+        // margin-left: 10%;
         padding:10px;
         max-width: 600px;
         background-color: white;

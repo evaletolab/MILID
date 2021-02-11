@@ -22,9 +22,8 @@ module.exports = function mdTransformer(lesson, globalData){
     }
 
     renderer.link = function(href, title, text){
-        console.log(href, title, text);
-
         let link;
+        
         if(!href.startsWith('http://') || !href.startsWith('https://')){
             return `<span class="_definition" data-definition-id="${href}">${text}</span>`;
         }else{
