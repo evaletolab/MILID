@@ -4,6 +4,7 @@
   "description": "string; du module A",
   "published": true,
   "lessons": [{
+    "id": 0,
     "type": "MARKDOWN",
     "title": "leçon A",
     "state": "TODO",
@@ -14,6 +15,7 @@
       "content" : "text"
     }
   },{
+    "id": 1,
     "type": "VIDEO",
     "title": "leçon B",
     "state": "TODO",
@@ -24,6 +26,7 @@
       "url" : "url"
     }
   },{
+    "id": 2,
     "type": "VIDEO",
     "title": "leçon C",
     "state": "TODO",
@@ -41,6 +44,7 @@
   "description": "string; du module B",
   "published": true,
   "lessons": [{
+    "id": 3,
     "type": "MARKDOWN",
     "title": "leçon A",
     "state": "TODO",
