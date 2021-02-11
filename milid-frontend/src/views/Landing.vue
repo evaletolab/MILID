@@ -1,15 +1,14 @@
 <template>
   <div class="landing">
-    <div id="nav" class="topbar title hide-sm">
+    <div id="nav" class="topbar title ">
       <div class="left">
-        <span class="version">APP {{ config.version }}</span>
+        <span class="version">{{ config.version }}</span>
       </div>
       <div class="">
-        <router-link class="link" to="/">Landing</router-link> 
         <router-link class="link" to="/home">Home</router-link> 
         <router-link class="link" to="/About">About</router-link> 
       </div>
-      <div class="right">
+      <div class="right hide-sm">
         <router-link class="link btn" to="/dashboard">Dashboard</router-link>
       </div>
 

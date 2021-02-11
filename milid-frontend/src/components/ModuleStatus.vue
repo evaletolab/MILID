@@ -22,7 +22,7 @@ export default class ModuleStatus extends Vue {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
   .status {
-    width: 100vw;
+    width: calc( 100vw - 50px );
     margin: 10px 50px;
     display: flex;
     flex-direction: row;
