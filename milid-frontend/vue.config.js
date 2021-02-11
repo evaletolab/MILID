@@ -1,5 +1,6 @@
 const prod = process.env.NODE_ENV === "production";
+const github = process.env.NODE_ENV === "github";
 
 module.exports = {
-  publicPath : prod? '/MILID':'/'
+  publicPath : github? '/MILID': (prod? '/':'/')
 }
