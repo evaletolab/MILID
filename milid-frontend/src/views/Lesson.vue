@@ -166,6 +166,5 @@ export default class Lesson extends Vue {
     return styleObj;
   }
 
-
 }
 </script>
