@@ -8,64 +8,74 @@ import { MILID } from '../models';
 
 @Component
 export default class ModuleProgress extends Vue {
-  private _vueCanvas;
+  private _ctx;
   @Prop() private module!: MILID.Module;
 
   mounted() {
     const canvas = this.$refs.canvas as HTMLCanvasElement;
-    this._vueCanvas = canvas.getContext('2d');
+    const parent = canvas.parentNode;
+    const styles = getComputedStyle(parent as HTMLElement);
+    const w = parseInt(styles.getPropertyValue("width"), 10);
+    const h = parseInt(styles.getPropertyValue("height"), 10);
+
+    canvas.width = w;
+    canvas.height = h;
+    this._ctx = canvas.getContext('2d');
 
     //
     // draw module progression
-    const { clientHeight, clientWidth } = this._vueCanvas.canvas;
+    const { width, height } = this._ctx.canvas
+    console.log(width, height, this._ctx);
+
     const padding = 5;
     //this.clear();
-    this.colors('#eee','red');
-    //this.drawLine(padding,clientHeight-padding,(clientWidth - padding*2));
-    this.drawLine(0,0,clientWidth);
-    this.drawLine(0,clientHeight,clientWidth);
-    console.log('----',clientHeight,clientWidth,this._vueCanvas);
+
+    const ctx: CanvasRenderingContext2D = this._ctx;
+
+    ctx.save();
+    {
+      ctx.translate(0, height / 2);
+      this.colors('#eee','red');
+      this.drawLine(0, 0, width);
+      // this.drawLine(0, height, width);
+    }
+    ctx.restore();
   }
 
 
-  colors(fill, stoke) {
-    this._vueCanvas.fillStyle = fill;    
-    this._vueCanvas.strokeStyle = stoke;
+  colors(fill, stroke) {
+    this._ctx.fillStyle = fill;    
+    this._ctx.strokeStyle = stroke;
   }
 
   drawLine(x,y,len) {
-    const { clientHeight, clientWidth } = this._vueCanvas.canvas;
 
-    this._vueCanvas.beginPath();
-    this._vueCanvas.lineCap = "round";
-    this._vueCanvas.lineWidth = 4;
-    // this._vueCanvas.setLineDash([5, 15]);        
-    this._vueCanvas.moveTo(x, y);
-    this._vueCanvas.lineTo(x+len, y);
-    this._vueCanvas.stroke();    
+    this._ctx.beginPath();
+    this._ctx.lineCap = "round";
+    this._ctx.lineWidth = 4;
+    // this._ctx.setLineDash([5, 15]);        
+    this._ctx.moveTo(x, y);
+    this._ctx.lineTo(x+len, y);
+    this._ctx.stroke();    
   }
 
   drawRect(x,y, w, h) {    
-    const { clientHeight, clientWidth } = this._vueCanvas.canvas;
-
     // draw rect
-    this._vueCanvas.beginPath();
-    this._vueCanvas.rect(x, y, w, h);
-    this._vueCanvas.stroke();      
+    this._ctx.beginPath();
+    this._ctx.rect(x, y, w, h);
+    this._ctx.stroke();      
   }  
 
   drawCircle(x,y,r) {
-    const { clientHeight, clientWidth } = this._vueCanvas.canvas;
-
-    this._vueCanvas.beginPath();
-    this._vueCanvas.arc(x,y, r, 0, 2 * Math.PI);
-    this._vueCanvas.stroke(); 
+    this._ctx.beginPath();
+    this._ctx.arc(x,y, r, 0, 2 * Math.PI);
+    this._ctx.stroke(); 
   }
 
   clear() {
-    const { clientHeight, clientWidth } = this._vueCanvas.canvas;
+    const { width, height } = this._ctx.canvas;
     // clear canvas
-    this._vueCanvas.clearRect(0, 0, clientWidth, clientHeight);
+    this._ctx.clearRect(0, 0, width, height);
   }
 }
 </script>
