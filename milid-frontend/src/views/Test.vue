@@ -1,6 +1,8 @@
+
 <template>
   <div class="col" v-bind:class="{ scrollDisabled: definitionPopupIsOpen }">
     <h1>This is a test page</h1>
+    <router-link to="/home">back to home</router-link>
     <DefinitionPopup 
     :open="definitionPopupIsOpen"
     :height="height"
@@ -45,6 +47,7 @@
 
 
 <script lang="ts">
+/* eslint-disable */
 import { Component, Vue } from 'vue-property-decorator';
 import DefinitionPopup from '../components/DefinitionPopup.vue';
 
@@ -82,22 +85,27 @@ export default class Test extends Vue {
     }, 100);
   }
 
-  definitionClickHandler(e: any){
-    console.log(e, this, e.target.getBoundingClientRect());
-    console.log("oofset", getOffset(e.target));
+  beforeDestroy(){
+    this.cleanupDefinitions();
+  }
 
+
+  definitionClickHandler(e: any){
     this.height = getOffset(e.target).top;
-    console.log("height", this.height);
     this.definitionPopupIsOpen = true;
     this.definition = this.definitions[0].definition;
-    console.log(this.definition);
   }
 
   setupDefinitions(){
       const rawRoot = this.$refs['raw_root'] as HTMLElement;
       const definitionElements = rawRoot.querySelectorAll('._definition');
-      console.log("images", definitionElements);
       definitionElements.forEach(e => e.addEventListener('click', this.definitionClickHandler));
+  }
+
+  cleanupDefinitions(){
+      const rawRoot = this.$refs['raw_root'] as HTMLElement;
+      const definitionElements = rawRoot.querySelectorAll('._definition');
+      definitionElements.forEach(e => e.removeEventListener('click', this.definitionClickHandler));
   }
 }
 </script>
