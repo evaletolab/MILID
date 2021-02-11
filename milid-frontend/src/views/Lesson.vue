@@ -1,5 +1,46 @@
 <template >
   <div v-if="module">
+    <!-- DEFAULT TOOLBAR -->
+    <md-toolbar class="-md-large md-primary">
+      <div class="md-toolbar-row">
+        <div class="md-toolbar-section-start">
+          <md-button class="md-icon-button">
+            <md-icon>menu</md-icon>
+          </md-button>
+        </div>
+
+        <div class="md-toolbar-section-end">
+          <md-button class="md-icon-button">
+            <md-icon>refresh</md-icon>
+          </md-button>
+
+          <md-button class="md-icon-button">
+            <md-icon>more_vert</md-icon>
+          </md-button>
+        </div>
+      </div>
+
+      <!-- <div class="md-toolbar-row md-toolbar-offset">
+        <h3 class="md-title">Title on a second row</h3>
+      </div> -->
+    </md-toolbar>
+
+    <md-speed-dial class="md-bottom-right">
+      <md-speed-dial-target>
+        <md-icon>add</md-icon>
+      </md-speed-dial-target>
+
+      <md-speed-dial-content>
+        <md-button class="md-icon-button">
+          <md-icon>note</md-icon>
+        </md-button>
+
+        <md-button class="md-icon-button">
+          <md-icon>event</md-icon>
+        </md-button>
+      </md-speed-dial-content>
+    </md-speed-dial>    
+
     <ContentSwipe :lessons="lessons" @changeCard="renderChange">
       <section class="lesson rendered-item"
           v-for="(lesson, index) in renderLessons" :key="lesson.id" :id="lesson.id"
@@ -19,8 +60,14 @@
 </template>
 
 <style lang="scss" scoped>
+
   .md-toolbar + .md-toolbar {
     margin-top: 16px;
+  }
+
+  .md-speed-dial.md-bottom-right {
+    position: fixed;
+    z-index: 2;
   }
 
   section.lesson {
@@ -48,6 +95,14 @@ import { $config, $module } from '../services';
 
 import ContentSwipe from '../components/ContentSwipe.vue';
 import { MILID } from '../models';
+
+import MdToolbars  from 'vue-material'
+import MdButton  from 'vue-material'
+import MdSpeedDial  from 'vue-material'
+
+Vue.use(MdToolbars);
+Vue.use(MdButton);
+Vue.use(MdSpeedDial);
 
 @Component({
   components: { ContentSwipe }
