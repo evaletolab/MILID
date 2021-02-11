@@ -88,6 +88,7 @@ export namespace MILID {
   }
 
   export interface Lesson {
+      id: string;
       type: LessonType;
       title: string;
       state: LessonState;
