@@ -2,8 +2,10 @@
         <transition name="fade">
     <div v-if="open">
             <div class="backdrop" @click="close"></div>
-        <div :style="{'top':heightStr}" class="definition">
-            <slot></slot>
+            <div :style="{'top':heightStr}" class="horizontal-center">
+                <div  class="definition">
+                    <slot></slot>
+                </div>
         </div>
     </div>
         </transition>
@@ -22,11 +24,17 @@
         z-index: 1;
     }
 
-    .definition{
+    .horizontal-center {
         position:absolute;
+        display: flex; // make us of Flexbox
+        justify-content: center; // horizontally centers single line items
+        height:auto;
+        left:0;
+    }  
+
+    .definition{
         margin: auto;
-        // width:80%;
-        // margin-left: 10%;
+        width:80%;
         padding:10px;
         max-width: 600px;
         background-color: white;
@@ -39,7 +47,7 @@
     }
 
     .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
-      opacity: 0;
+        opacity: 0;
     }
 </style>
 
@@ -48,20 +56,19 @@
 import { Component, Prop, Vue } from 'vue-property-decorator';
 
 @Component({
-  components: {},
+    components: {},
 })
 export default class Test extends Vue {
-  @Prop() open!: boolean;
-  @Prop() dataId!: string;
-  @Prop() height!: number;
+    @Prop() open!: boolean;
+    @Prop() dataId!: string;
+    @Prop() height!: number;
 
-  get heightStr(){
-      return `${this.height}px`;
-  }
+    get heightStr(){
+        return `${this.height}px`;
+    }
 
-  close(){
-      this.$emit('closerequest', null);
-  }
+    close(){
+        this.$emit('closerequest', null);
+    }
 }
-
 </script>
