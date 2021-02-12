@@ -1,7 +1,7 @@
 <template>
-  <div class="status">
-    <div class="title">{{module.title}}</div>
-    <ModuleProgress :pipCount="4" :completedPips="1" :color="'#ffaa00'" class="progress"></ModuleProgress>    
+  <div class="status " :class="'theme-'+module.theme">
+    <div class="title primary-on-text">{{module.title}}</div>
+    <ModuleProgress :pipCount="4" :completedPips="1" :theme="module.theme" class="progress"></ModuleProgress>    
   </div>
 </template>
 
@@ -31,6 +31,12 @@ export default class ModuleStatus extends Vue {
       height: 35px;
       width: 50%;
       // margin-left: 20px; // breaks canvas size computation
+    }
+
+    .title {
+      font-size: 17px;
+      font-weight: 700;
+      padding: 6px 0;      
     }
   }
 

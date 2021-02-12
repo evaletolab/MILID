@@ -19,7 +19,7 @@ class ConfigService {
     return this._store;
   }
 
-  async get(force?: boolean): Promise<MILID.Config> {
+  async get(force?: boolean){
     if(!this._store.config.done && !force) {
       const res = await axios.get(this._baseUrl + 'config.json');
       this._store.config = res.data;
@@ -30,7 +30,7 @@ class ConfigService {
       this.generateColors(this._store.config.themes);
     }
 
-    return this._store.config
+    return this._store.config;
   }  
 
   generateColors(themes){

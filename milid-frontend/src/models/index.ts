@@ -21,7 +21,8 @@ export namespace MILID {
   }
 
   export interface Config {
-    
+    version: string;
+    themes: any;
   }
 
   //

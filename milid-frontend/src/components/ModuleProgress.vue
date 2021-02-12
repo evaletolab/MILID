@@ -6,6 +6,7 @@
 /* eslint-disable */
 
 import { Component, Prop, Vue } from 'vue-property-decorator';
+import { $config } from '../services';
 import { MILID } from '../models';
 
 @Component
@@ -15,7 +16,16 @@ export default class ModuleProgress extends Vue {
 
   @Prop() pipCount!: number;
   @Prop() completedPips!: number;
-  @Prop() color!: string;
+  @Prop() theme!: string;
+
+  config: MILID.Config = {} as MILID.Config;
+
+  get primary() {
+    if(!this.config.themes) {
+      return '#f00';
+    }
+    return this.config.themes[this.theme].primary;
+  }
 
   created() {
     window.addEventListener("resize", this.onResize);
@@ -37,9 +47,10 @@ export default class ModuleProgress extends Vue {
     this.draw();
   }
 
-  mounted() {
+  mounted() {    
     const canvas = this.$refs.canvas as HTMLCanvasElement;
     this._ctx = canvas.getContext('2d');
+    this.config = $config.store.config;
     this.onResize();
   }
 
@@ -53,7 +64,6 @@ export default class ModuleProgress extends Vue {
     const { width, height } = this._ctx.canvas;
     const ctx: CanvasRenderingContext2D = this._ctx;
 
-    console.log("w, h", width, height);
     
     ctx.clearRect(0, 0, width, height);
 
@@ -69,13 +79,13 @@ export default class ModuleProgress extends Vue {
       const pipOffset = usableWidth / (this.pipCount - 1);
       const pipRadius = Math.floor(4 * this.pixelRatio);
       const lineWidth = Math.floor(6 * this.pixelRatio);
-      const completedRadius = Math.floor(15 * this.pixelRatio);
+      const completedRadius = Math.floor(10 * this.pixelRatio);
       const whiteDotRadius = completedRadius - (lineWidth);
 
       ctx.translate(0, height / 2);
       {
         // draw pips ( = count of lessons)
-        ctx.fillStyle = this.color || "#f00";
+        ctx.fillStyle = this.primary || "#f00";
         for(let i = 0; i < this.pipCount; i++){
           const x = xMargin + (i * pipOffset);
           const y = 0;
@@ -91,7 +101,7 @@ export default class ModuleProgress extends Vue {
       {
         const len = pipOffset * this.completedPips;
 
-        ctx.strokeStyle = this.color || "#f00";
+        ctx.strokeStyle = this.primary || "#f00";
         ctx.beginPath();
         ctx.lineCap = "round";
         ctx.lineWidth = lineWidth;
@@ -152,7 +162,6 @@ export default class ModuleProgress extends Vue {
 <style scoped lang="scss">
   canvas {
     width: 100%;
-    border: 1px solid #ddd;
     height: 100%;
   }
 </style>

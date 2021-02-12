@@ -150,7 +150,7 @@ export default class Lesson extends Vue {
   //
   // vues methods
   beforeRouteEnter(to: Route, from: Route, next: any) {
-    const load = [$config.get(),$module.getAll()]
+    const load = [$config.get(),$module.getAll()];
     Promise.all(load).then(next);
   }
 
