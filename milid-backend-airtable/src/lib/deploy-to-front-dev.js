@@ -15,12 +15,14 @@ if(!fs.existsSync(distFolderPath)){
     process.exit(1);
 }
 
-const staticFolderPath = path.join(devFolderPath, 'public', 'data');
+const staticFolderPath = path.join(devFolderPath, 'public');
 
 fs.emptyDirSync(staticFolderPath);
 
-fs.copySync(distFolderPath, staticFolderPath);
+const dataFilePath = path.join(distFolderPath, 'data.json');
 
-console.log("copied", distFolderPath, "to", staticFolderPath);
+fs.copySync(dataFilePath, staticFolderPath);
+
+console.log("copied", dataFilePath, "to", staticFolderPath);
 
 
