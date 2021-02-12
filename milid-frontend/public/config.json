@@ -1,5 +1,11 @@
 {
   "version" : "v0.2.0",
+  "icons":{
+    "VIDEO": "video",
+    "PODCAST": "podcast",
+    "INFOGRAPHIC": "infographie",
+    "MARKDOWN": "cours"
+  },
   "themes": {
     "1": { "primary":"#6900FF","secondary":"#260063", "tertiary":"#BBB8FF"},
     "2": { "primary":"#FFF200","secondary":"#FFBC00", "tertiary":"#FFF9C5"},
