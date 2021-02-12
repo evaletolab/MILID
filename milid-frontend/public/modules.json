@@ -3,6 +3,7 @@
   "id": "module-a",
   "description": "string; du module A",
   "published": true,
+  "theme":"1",
   "lessons": [{
     "id": 0,
     "type": "MARKDOWN",
@@ -43,6 +44,7 @@
   "id": "module-b",
   "description": "string; du module B",
   "published": true,
+  "theme":"2",
   "lessons": [{
     "id": 3,
     "type": "MARKDOWN",

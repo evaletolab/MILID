@@ -32,10 +32,11 @@
                   :module="mod"></ModuleStatus>
     
     <!-- MODULE -->
-    <div v-for="mod in modules" :key="mod.id" class="module ">
+    <div v-for="mod in modules" :key="mod.id" class="module " >
+      <div class="top-wave"><MILIDWave name="top" :theme="mod.theme" :config="config" /></div>
       <div class="title">{{mod.title}}</div>
       <div class="subtitle">{{mod.description}}</div>
-      <div class="masonry-with-columns">
+      <div class="masonry-with-columns" :style="{ backgroundColor: themePrivary(mod.theme)}">
         <div v-for="lesson in mod.lessons" :key="lesson.id" 
             @click="routerLink(mod.id,lesson.id)"
             class="lesson">
@@ -43,6 +44,8 @@
           <div class="title">{{lesson.title}}</div>
         </div>
       </div>
+      <div class="bottom-wave"><MILIDWave name="bottom" :theme="mod.theme" :config="config" /></div>
+
       <!-- <li><router-link :to="'/module/' + mod.id + '/lesson/0'">{{ mod.title }}</router-link></li> -->
     </div>
     
@@ -51,67 +54,7 @@
 </template>
 
 <style lang="scss" scoped>
-
-
-  .md-elevation-4 {
-    box-shadow: none;
-  }
-
-
-  .module {
-    background: url('~@/assets/wave.svg') 0 -10%;
-    background-repeat: no-repeat;
-    text-align: left;
-    padding-top: 30px;
-    >.title {
-      color: #333;
-      text-transform: uppercase;
-      padding-left: 10px;      
-      font-weight: 700;
-      line-height: 8px;
-      font-size: 12px;      
-    }
-    >.subtitle{
-      color: #333;
-      padding-left: 10px;      
-      font-weight: 700;
-      font-size: 11px;      
-    }
-
-    .lesson {
-      min-height:  100px;
-      border: 1px solid #eee;
-      border-radius: 10px;
-      color: #333;
-      background-color: rgba(255,255,255,0.85);
-    }
-  }
-
-
-  .masonry-with-columns {
-    columns: 6 140px;
-    column-gap: 1rem;
-    padding: 10px;
-    background-color: var(--md-theme-default-accent);
-    background-color: #9eaffd;
-    >div.lesson {
-      width: 150px;
-      margin: 0 1rem 1rem 0;
-      display: inline-block;
-      width: 100%;
-      text-align: center;
-      font-family: system-ui;
-      font-weight: 900;
-    } 
-  }  
-
-  @for $i from 1 through 36 { 
-    div.-lesson:nth-child(#{$i}) {
-      $h: (random(400) + 100) + px;
-      height: $h;
-      line-height: $h;
-    }
-  }  
+   @import "./Home.scss";
 </style>
 
 <script lang="ts">
@@ -120,10 +63,11 @@ import { Route } from 'vue-router';
 import { $config, $module } from '../services';
 
 import ModuleStatus from '../components/ModuleStatus.vue';
+import MILIDWave from '../components/MILIDWave.vue';
 
 
 @Component({
-  components: { ModuleStatus },
+  components: { ModuleStatus, MILIDWave },
 })
 export default class Home extends Vue {
 
@@ -134,6 +78,10 @@ export default class Home extends Vue {
 
   get config(){
     return $config.store.config;
+  }
+
+  themePrivary(theme) {
+    return this.config.themes[theme].primary;
   }
 
   beforeRouteEnter(to: Route, from: Route, next: any) {

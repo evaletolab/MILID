@@ -1,3 +1,7 @@
 {
-  "version" : "v0.2.0"
+  "version" : "v0.2.0",
+  "themes": {
+    "1": { "primary":"#BBB8FF","secondary":"#D9D8FC"},
+    "2": { "primary":"#FFF683","secondary":"#FFF9C5"}
+  }
 }
