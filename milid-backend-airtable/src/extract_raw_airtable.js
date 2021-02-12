@@ -13,6 +13,9 @@ function fieldExtract(mediaRecord){
     return result;
 }
 
+function removeEmptyRecords(mediaRecord){
+    return Object.keys(mediaRecord).length > 1;
+}
 
 let result = {};
 
@@ -20,23 +23,19 @@ let result = {};
 module.exports = async function extractRawAirtable(){
     return export_table("assets", process.env.BASE_TOKEN)
     .then(assetRecords => {
-        result.assets = assetRecords.map(fieldExtract);
+        result.assets = assetRecords.map(fieldExtract).filter(removeEmptyRecords);
         return export_table("modules", process.env.BASE_TOKEN);
     })
     .then(moduleRecords => {
-        result.modules = moduleRecords.map(fieldExtract);
+        result.modules = moduleRecords.map(fieldExtract).filter(removeEmptyRecords);
         return export_table("lessons", process.env.BASE_TOKEN);
     })
     .then(lessonRecords => {
-        result.lessons = lessonRecords.map(fieldExtract);
+        result.lessons = lessonRecords.map(fieldExtract).filter(removeEmptyRecords);
         return export_table("definitions", process.env.BASE_TOKEN);
     })
     .then(definitionRecords => {
-        result.definitions = definitionRecords.map(fieldExtract);
-        return export_table("palettes", process.env.BASE_TOKEN);
-    })
-    .then(paletteRecords => {
-        result.palettes = paletteRecords.map(fieldExtract);
+        result.definitions = definitionRecords.map(fieldExtract).filter(removeEmptyRecords);
         return result;
     })
     .catch(err => console.log(err));

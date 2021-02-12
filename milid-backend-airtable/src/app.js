@@ -7,6 +7,7 @@ const { writeFileSync } = require('fs');
 const { emptyDirSync } = require('fs-extra');
 
 const lessonTransformer = require('./lessonTransformer');
+const moduleTransfomer = require('./moduleTransformer');
 
 async function main(){
     try{
@@ -15,7 +16,9 @@ async function main(){
 
 
         // transform and massage the data
-        const data = lessonTransformer(airtableData);
+        const step1 = lessonTransformer(airtableData);
+        const data = moduleTransfomer(step1);
+        
         emptyDirSync('./dist');
         
         // write raw airtable structure for reference
