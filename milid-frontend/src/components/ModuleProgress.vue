@@ -29,10 +29,10 @@ export default class ModuleProgress extends Vue {
     const canvas = this.$refs.canvas as HTMLCanvasElement;
 
     const { width, height } = canvas.getBoundingClientRect();
-    console.log("resize", width, height, devicePixelRatio);
+    console.log("resize", width, height, this.pixelRatio);
 
-    canvas.width = Math.floor(width * devicePixelRatio);
-    canvas.height = Math.floor(height * devicePixelRatio);
+    canvas.width = Math.floor(width * this.pixelRatio);
+    canvas.height = Math.floor(height * this.pixelRatio);
 
     this.draw();
   }
@@ -43,9 +43,9 @@ export default class ModuleProgress extends Vue {
     this.onResize();
   }
 
-  get devicePixelRatio(){
-    // return window.devicePixelRatio;
-    return 1;
+  get pixelRatio(){
+    return window.devicePixelRatio;
+    // return 1;
   }
 
   draw(){
@@ -64,11 +64,13 @@ export default class ModuleProgress extends Vue {
 
     ctx.save();
     {
-      const xMargin = Math.floor(20 * devicePixelRatio);
+      const xMargin = Math.floor(20 * this.pixelRatio);
       const usableWidth = width - (xMargin * 2);  
       const pipOffset = usableWidth / (this.pipCount - 1);
-      const pipRadius = Math.floor(4 * devicePixelRatio);
-      const lineWidth = Math.floor(6 * devicePixelRatio);
+      const pipRadius = Math.floor(4 * this.pixelRatio);
+      const lineWidth = Math.floor(6 * this.pixelRatio);
+      const completedRadius = Math.floor(15 * this.pixelRatio);
+      const whiteDotRadius = completedRadius - (lineWidth);
 
       ctx.translate(0, height / 2);
       {
@@ -101,8 +103,6 @@ export default class ModuleProgress extends Vue {
       // draw completed index if needed
       if(this.completedPips >= 0)
       {
-          const completedRadius = 15;
-          const whiteDotRadius = completedRadius - (lineWidth);
           const x = (pipOffset * this.completedPips) + xMargin;
           circle (x, 0, completedRadius);
           ctx.fill(); 
