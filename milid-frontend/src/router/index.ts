@@ -38,7 +38,7 @@ const routes: Array<RouteConfig> = [
   {
     path: '/module/:module_id/lesson/:lesson_id',
     name: 'Lesson',
-    component: Lesson
+    components: { l2 : Lesson}
   },
   {
     path:'/access_denied',
