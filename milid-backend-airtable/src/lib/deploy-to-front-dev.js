@@ -5,6 +5,8 @@ const devFolderPath = '../milid-frontend/';
 
 const distFolderPath = './dist';
 
+const dataFilename = 'data.json';
+
 if(!fs.existsSync(devFolderPath)){
     console.error("can't find folder", devFolderPath);
     process.exit(1);
@@ -15,14 +17,12 @@ if(!fs.existsSync(distFolderPath)){
     process.exit(1);
 }
 
-const staticFolderPath = path.join(devFolderPath, 'public');
+const staticFilePath = path.join(devFolderPath, 'public', dataFilename);
 
-fs.emptyDirSync(staticFolderPath);
+const dataFilePath = path.join(distFolderPath, dataFilename);
 
-const dataFilePath = path.join(distFolderPath, 'data.json');
+fs.copySync(dataFilePath, staticFilePath);
 
-fs.copySync(dataFilePath, staticFolderPath);
-
-console.log("copied", dataFilePath, "to", staticFolderPath);
+console.log("copied", dataFilePath, "to", staticFilePath);
 
 
