@@ -25,7 +25,10 @@
     </md-toolbar>
 
     <!-- USER -->
-    <h2>Olivier E.</h2>
+    <div class="user">
+      <MILIDIcons name="user" />
+      <h2>Olivier E.</h2>
+    </div>
 
     <!-- STATUS -->
     <ModuleStatus v-for="mod in modules" :key="mod.id+'status'"
@@ -64,10 +67,11 @@ import { $config, $module } from '../services';
 
 import ModuleStatus from '../components/ModuleStatus.vue';
 import MILIDWave from '../components/MILIDWave.vue';
+import MILIDIcons from '../components/MILIDIcons.vue';
 
 
 @Component({
-  components: { ModuleStatus, MILIDWave },
+  components: { ModuleStatus, MILIDWave, MILIDIcons },
 })
 export default class Home extends Vue {
 

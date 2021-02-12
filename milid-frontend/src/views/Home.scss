@@ -3,6 +3,17 @@
     box-shadow: none;
   }
 
+  .user {
+    margin: auto;
+    margin-bottom: 40px;
+    svg {
+      width: 30%;            
+    }
+    h2{
+      text-transform: uppercase;
+    }
+  }
+
 
   .module {    
     margin-bottom: 100px;
