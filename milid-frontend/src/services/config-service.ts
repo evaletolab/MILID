@@ -24,10 +24,28 @@ class ConfigService {
       const res = await axios.get(this._baseUrl + 'config.json');
       this._store.config = res.data;
       this._store.config.done = true;
+
+      //
+      // generate root colors
+      this.generateColors(this._store.config.themes);
     }
 
     return this._store.config
   }  
+
+  generateColors(themes){
+    const root = document.documentElement;
+    Object.keys(themes).forEach(theme => {
+      const primary = themes[theme].primary
+      root.style.setProperty('--theme-'+theme+'-primary',primary);
+
+      const secondary = themes[theme].secondary
+      root.style.setProperty('--theme-'+theme+'-secondary',secondary);
+
+      const tertiary = themes[theme].tertiary
+      root.style.setProperty('--theme-'+theme+'-tertiary',tertiary);
+    });
+  }
 }
 
 //

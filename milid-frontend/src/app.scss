@@ -18,7 +18,31 @@
     .show-lg    {display: block;}
     .hide-lg    {display: none;}
   }
+
+  .theme-1 {
+    .primary { background-color: var(--theme-1-primary)!important; color: white!important }
+    .secondary { background-color: var(--theme-1-secondary)!important; color: white!important; }
+    .tertiary { background-color: var(--theme-1-tertiary)!important; }
+
   
+  }
+
+  .theme-2 {
+    .primary { background-color: var(--theme-2-primary)!important;color: white!important; }
+    .secondary { background-color: var(--theme-2-secondary)!important;color: white!important; }
+    .tertiary { background-color: var(--theme-2-tertiary)!important; }
+
+  }
+
+  .theme-3 {
+    .primary { background-color: var(--theme-3-primary)!important;color: white!important; }
+    .secondary { background-color: var(--theme-3-secondary)!important;color: white!important; }
+    .tertiary { background-color: var(--theme-3-tertiary)!important; }
+
+  }
+  
+
   // Info
   // https://css-tricks.com/practical-css-scroll-snapping/
+
 

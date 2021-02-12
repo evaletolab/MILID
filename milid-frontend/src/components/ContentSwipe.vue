@@ -11,6 +11,8 @@ import debounce from 'lodash.debounce';
 })
 export default class ContentSwipe extends Vue {
   @Prop() lessons!: any[];
+  @Prop({ default: 0 }) initial!: number;
+
   isInfiniteLoop = false; // Whether to loop back to start of item array when reaching the end
   prefersReducedMotion = false;
   currentIndex = 0;
@@ -67,6 +69,9 @@ export default class ContentSwipe extends Vue {
   }
 
   mounted() {
+    // use prop to initiate the currentIndex;
+    this.currentIndex = this.initial;
+
     // Set up Hammer element & event listeners to respond to swiping gestures
     const touchContainer = document.getElementById("touch-container");
     const hammer = new Hammer.Manager(touchContainer, {

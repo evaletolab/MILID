@@ -1,7 +1,8 @@
 {
   "version" : "v0.2.0",
   "themes": {
-    "1": { "primary":"#BBB8FF","secondary":"#D9D8FC"},
-    "2": { "primary":"#FFF683","secondary":"#FFF9C5"}
+    "1": { "primary":"#6900FF","secondary":"#260063", "tertiary":"#BBB8FF"},
+    "2": { "primary":"#FFF200","secondary":"#FFBC00", "tertiary":"#FFF9C5"},
+    "3": { "primary":"#00FFDA","secondary":"#00A585", "tertiary":"#D9FFF8"}
   }
 }

@@ -36,7 +36,7 @@
       <div class="top-wave"><MILIDWave name="top" :theme="mod.theme" :config="config" /></div>
       <div class="title">{{mod.title}}</div>
       <div class="subtitle">{{mod.description}}</div>
-      <div class="masonry-with-columns" :style="{ backgroundColor: themePrivary(mod.theme)}">
+      <div class="masonry-with-columns" :style="{ backgroundColor: themeTertiary(mod.theme)}">
         <div v-for="lesson in mod.lessons" :key="lesson.id" 
             @click="routerLink(mod.id,lesson.id)"
             class="lesson">
@@ -80,8 +80,8 @@ export default class Home extends Vue {
     return $config.store.config;
   }
 
-  themePrivary(theme) {
-    return this.config.themes[theme].primary;
+  themeTertiary(theme) {
+    return this.config.themes[theme].tertiary;
   }
 
   beforeRouteEnter(to: Route, from: Route, next: any) {
