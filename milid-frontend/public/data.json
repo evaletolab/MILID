@@ -710,7 +710,8 @@
           "id": "recPsLd9VsWKVHoNn",
           "description": "my lesson description",
           "modules": [
-            "recKefWoiBrgzqAyQ"
+            "recKefWoiBrgzqAyQ",
+            "rectQXEUZsDam7c8j"
           ],
           "type": "MARKDOWN",
           "title": "Qu’est-ce qu’une information ?",
@@ -729,7 +730,8 @@
         {
           "id": "rec7cpjVAOypi26iz",
           "modules": [
-            "recKefWoiBrgzqAyQ"
+            "recKefWoiBrgzqAyQ",
+            "rectQXEUZsDam7c8j"
           ],
           "type": "MARKDOWN",
           "title": "Banques et bases de données",
@@ -746,8 +748,38 @@
         }
       ],
       "module_id": "1",
-      "theme_id": "1",
-      "title": "mon premier module"
+      "theme": "1",
+      "title": "module 1"
+    },
+    {
+      "id": "rectQXEUZsDam7c8j",
+      "lessons": [
+        {
+          "id": "recPsLd9VsWKVHoNn",
+          "description": "my lesson description",
+          "modules": [
+            "recKefWoiBrgzqAyQ",
+            "rectQXEUZsDam7c8j"
+          ],
+          "type": "MARKDOWN",
+          "title": "Qu’est-ce qu’une information ?",
+          "cover": "https://dl.airtable.com/.attachments/68d7cd4ee0cc9a850d0c59a5d51600ef/c8e3f3a6/M01_illustrations-10.svg",
+          "html": "<h1 id=\"quest-ce-quune-information-\">QU&#39;EST-CE QU&#39;UNE INFORMATION ?</h1>\n<p>L&#39;information est un terme ayant de nombreux sens, alors mettons-nous d&#39;accord sur une définition simple.</p>\n<p><img src=\"https://dl.airtable.com/.attachments/bf97741c297cb2615467b09e0ed82194/3c30e304/M01_illustrations-11.svg\" alt=\"alt text\"></p>\n<p>Une <span class=\"_definition\" data-definition-id=\"information\">information</span>, c&#39;est de la communication communiquée.  </p>\n<p>Il existe trois type d&#39;informations:</p>\n<p><img src=\"https://dl.airtable.com/.attachments/2a27c59553718d953d1647b94c30cc3d/43637854/M01_illustrations-12.svg\" alt=\"alt text\"></p>\n<ul>\n<li>Blanche: son accès est facile et licite. Elle représente le 80% de l&#39;information mondiale.</li>\n</ul>\n<p><img src=\"https://dl.airtable.com/.attachments/1a047dda5986efd2c036ec0f2a31117c/f2d9b132/M01_illustrations-13.svg\" alt=\"alt text\"></p>\n<ul>\n<li>Grise: son accès est licite, mais elle est plus difficile à trouver (nécessité d&#39;un login, connaissance de l&#39;existence de la base de données, etc.). Elle représente le 10-15% de l&#39;information mondiale.</li>\n</ul>\n<p><img src=\"https://dl.airtable.com/.attachments/f31453e399b06e06ef5c19947b63d6b0/358b007e/M01_illustrations-14.svg\" alt=\"alt text\"></p>\n<ul>\n<li>Noire: son accès est très limité et protégé. Ce type d&#39;information est obtenu par des moyens illégaux (espionnage industriel, chantage etc.). Elle représente le 5-10% de l&#39;information mondiale.</li>\n</ul>\n"
+        },
+        {
+          "id": "rec7cpjVAOypi26iz",
+          "modules": [
+            "recKefWoiBrgzqAyQ",
+            "rectQXEUZsDam7c8j"
+          ],
+          "type": "MARKDOWN",
+          "title": "Banques et bases de données",
+          "html": "<h1 id=\"banques-et-bases-de-données\">Banques et bases de données</h1>\n<p>Une banque de données est un «ensemble de données relatif à un domaine défini de la connaissance et organisé pour être offert aux utilisateurs» (République française, 1982)  </p>\n<p><img src=\"https://dl.airtable.com/.attachments/c10e74bab41253009f5c7fd8532a028d/87a6be9c/M01_illustrations-15.svg\" alt=\"illustration\"></p>\n<p>Si tu cherches des informations de qualité et qui soient vérifiées, des types de documents spécifiques (articles scientifiques, articles de presse, …) ou des informations propres à un domaine défini de la connaissance (chimie, médecine, économie, …), pense à utiliser les banques de données.   </p>\n<p><img src=\"https://dl.airtable.com/.attachments/e8159de5c9f8296498413e249b054ec8/b1f17a63/M01_illustrations-16.svg\" alt=\"illustration\"></p>\n<p>« La base de données décrit la structure \u0003informatique, le contenant, tandis que la banque de données représente le contenu de la base, c&#39;est à dire un ensemble de données relatif à un domaine de connaissance spécifique. » ENSSIB   </p>\n<p>On distingue plusieurs types de banques de données:   </p>\n<ul>\n<li><p>Les banques bibliographiques qui contiennent uniquement des références bibliographiques de documents.   </p>\n</li>\n<li><p>Les banques textuelles qui rassemblent des textes (intégraux ou partiels).  </p>\n</li>\n<li><p>Les banques de connaissance (factuelle ou numérique) fournissent des renseignements immédiatement exploitables par les utilisateurs.  </p>\n</li>\n</ul>\n<p>Les banques de données sont souvent payantes et onéreuses mais la plupart des hautes écoles payent des abonnements pour permettre à leurs étudiant·e·s d’avoir accès à certaines d’entre elles en lien avec les sujets qu’elles enseignent.   </p>\n<p><img src=\"https://dl.airtable.com/.attachments/be5fe10811d61afb55a49ea1ac294e03/dbd7ff3d/M01_illustrations-17.svg\" alt=\"illustration\"></p>\n<p>Pense aussi à toujours consulter la rubrique d’aide de ces banques de données car la recherche et son langage d’interrogation changent très fréquemment d’une banque à l’autre.  </p>\n"
+        }
+      ],
+      "module_id": "2",
+      "theme": "2",
+      "title": "module 2"
     }
   ],
   "lessons": [
@@ -755,7 +787,8 @@
       "id": "recPsLd9VsWKVHoNn",
       "description": "my lesson description",
       "modules": [
-        "recKefWoiBrgzqAyQ"
+        "recKefWoiBrgzqAyQ",
+        "rectQXEUZsDam7c8j"
       ],
       "type": "MARKDOWN",
       "title": "Qu’est-ce qu’une information ?",
@@ -774,7 +807,8 @@
     {
       "id": "rec7cpjVAOypi26iz",
       "modules": [
-        "recKefWoiBrgzqAyQ"
+        "recKefWoiBrgzqAyQ",
+        "rectQXEUZsDam7c8j"
       ],
       "type": "MARKDOWN",
       "title": "Banques et bases de données",

@@ -78,7 +78,8 @@ export default class Home extends Vue {
 
 
   get modules() {
-    return $module.store.modules;    
+    console.log("modules", $module.modules);
+    return $module.modules;    
   }
 
   get config(){
@@ -91,11 +92,12 @@ export default class Home extends Vue {
   }
 
   themeTertiary(theme) {
+    console.log("config", this.config.themes, theme);
     return this.config.themes[theme].tertiary;
   }
 
   beforeRouteEnter(to: Route, from: Route, next: any) {
-    const load = [$config.get(),$module.getAll()]
+    const load = [$config.get(),$module.getAll()];
     Promise.all(load).then(next);
   }
 
