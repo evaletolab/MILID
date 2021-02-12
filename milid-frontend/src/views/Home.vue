@@ -26,7 +26,7 @@
 
     <!-- USER -->
     <div class="user">
-      <MILIDIcons name="user" />
+      <MILIDIcons name="user" theme="1"/>
       <h2>Olivier E.</h2>
     </div>
 
@@ -43,7 +43,9 @@
         <div v-for="lesson in mod.lessons" :key="lesson.id" 
             @click="routerLink(mod.id,lesson.id)"
             class="lesson">
-          <div class="type">{{lesson.type}}</div>
+          <div class="type">
+            <MILIDIcons name="podcast" :theme="mod.theme"/>
+          </div>
           <div class="title">{{lesson.title}}</div>
         </div>
       </div>
@@ -51,7 +53,6 @@
 
       <!-- <li><router-link :to="'/module/' + mod.id + '/lesson/0'">{{ mod.title }}</router-link></li> -->
     </div>
-    
 
   </div>
 </template>

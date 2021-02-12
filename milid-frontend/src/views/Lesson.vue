@@ -47,7 +47,9 @@
           v-for="(lesson, index) in renderLessons" :key="lesson.id" :id="lesson.id"          
           v-bind:index="index">
         <h2>{{lesson.title}}</h2>
-        <div class="item type ">{{lesson.type}}!</div>
+        <div class="item type ">
+          <MILIDIcons name="podcast" :theme="module.theme"/>
+        </div>
         <div class="item content ">Yeah!</div>
       </section>
 
@@ -127,20 +129,20 @@ import { Component, Vue } from 'vue-property-decorator';
 import { Route} from 'vue-router';
 
 import { $config, $module } from '../services';
-
-import ContentSwipe from '../components/ContentSwipe.vue';
 import { MILID } from '../models';
 
-import MdToolbars  from 'vue-material'
+import ContentSwipe from '../components/ContentSwipe.vue';
+import MILIDIcons from '../components/MILIDIcons.vue';
+
 import MdButton  from 'vue-material'
 import MdSpeedDial  from 'vue-material'
 
-Vue.use(MdToolbars);
+
 Vue.use(MdButton);
 Vue.use(MdSpeedDial);
 
 @Component({
-  components: { ContentSwipe }
+  components: { ContentSwipe, MILIDIcons }
 })
 export default class Lesson extends Vue {
   //private _observer: any;
@@ -158,7 +160,9 @@ export default class Lesson extends Vue {
     //this._observer.disconnect();
   }
 
-
+  mounted() {    
+    window.scroll(0,0);
+  }
 
   //
   // computed properties

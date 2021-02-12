@@ -7,7 +7,8 @@
     margin: auto;
     margin-bottom: 40px;
     svg {
-      width: 30%;            
+      width: 30%;
+      color: var(--theme-1-primary);            
     }
     h2{
       text-transform: uppercase;
@@ -55,6 +56,12 @@
       border-radius: 10px;
       color: #333;
       background-color: rgba(255,255,255,0.85);
+      .type {
+        width: 36px;
+        margin: 5px;
+        margin-right: 5px;
+        margin-left: auto;        
+      }
     }
   }
 
