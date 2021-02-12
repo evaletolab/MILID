@@ -1,32 +1,33 @@
 <template >
-  <div v-if="module">
+  <div v-if="module" :class="'theme-'+ module.theme" class="module">
     <!-- DEFAULT TOOLBAR -->
-    <md-toolbar class="-md-large md-primary">
-      <div class="md-toolbar-row">
+    <nav class="toolbar primary">
+      <div class="toolbar-row">
         <div class="md-toolbar-section-start">
           <md-button class="md-icon-button">
-            <md-icon>menu</md-icon>
+            <md-icon class="primary">menu</md-icon>
           </md-button>
         </div>
 
+        <div class="toolbar-title title-left">
+          <span>M1.01<br/>qu'est-ce qu'une donnée?</span>
+        </div>        
+
         <div class="md-toolbar-section-end">
           <md-button class="md-icon-button">
-            <md-icon>refresh</md-icon>
-          </md-button>
-
-          <md-button class="md-icon-button">
-            <md-icon>more_vert</md-icon>
+            <md-icon class="primary">more_vert</md-icon>
           </md-button>
         </div>
       </div>
 
-      <!-- <div class="md-toolbar-row md-toolbar-offset">
-        <h3 class="md-title">Title on a second row</h3>
-      </div> -->
-    </md-toolbar>
+      <div class="toolbar-row">
+        <div class="toolbar-title">- O --</div>
+      </div>        
 
-    <md-speed-dial class="md-bottom-right">
-      <md-speed-dial-target>
+    </nav>
+
+    <md-speed-dial class="md-bottom-right ">
+      <md-speed-dial-target class="primary">
         <md-icon>add</md-icon>
       </md-speed-dial-target>
 
@@ -35,18 +36,18 @@
           <md-icon>note</md-icon>
         </md-button>
 
-        <md-button class="md-icon-button">
+        <md-button class="md-icon-button ">
           <md-icon>event</md-icon>
         </md-button>
       </md-speed-dial-content>
     </md-speed-dial>    
 
-    <ContentSwipe :lessons="lessons" @changeCard="renderChange">
+    <ContentSwipe :initial="$route.params.lesson_id" :lessons="lessons" @changeCard="renderChange">
       <section class="lesson rendered-item"
-          v-for="(lesson, index) in renderLessons" :key="lesson.id" :id="lesson.id"
-          v-bind:style="getStyle(lesson)"
+          v-for="(lesson, index) in renderLessons" :key="lesson.id" :id="lesson.id"          
           v-bind:index="index">
         <h2>{{lesson.title}}</h2>
+        <div class="item type ">{{lesson.type}}!</div>
         <div class="item content ">Yeah!</div>
       </section>
 
@@ -61,10 +62,44 @@
 
 <style lang="scss" scoped>
 
-  .md-toolbar + .md-toolbar {
+  .toolbar {
+    border-radius: 0 0 25px 25px;
+    flex-flow: row wrap;
+    position: relative;
+    z-index: 2;    
+    .toolbar-title{
+      text-align: center;
+      font-size: 17px;
+      font-weight: 500;
+      letter-spacing: .005em;
+      line-height: 20px;      
+      margin-top: .9em;
+      margin-bottom: .9em;
+      text-transform: uppercase;
+      font-weight: 700;
+      text-overflow: ellipsis;
+      white-space: nowrap;      
+      overflow: hidden;
+      width: 100%;
+      &.title-left{
+        text-align: left;
+      }
+    }
+
+    .toolbar-row {
+      width: 100%;
+      min-height: 38px;
+      display: flex;
+      align-items: center;
+      align-content: center;
+    }
+  }
+
+  .toolbar + .toolbar {
     margin-top: 16px;
   }
 
+  
   .md-speed-dial.md-bottom-right {
     position: fixed;
     z-index: 2;
@@ -127,6 +162,11 @@ export default class Lesson extends Vue {
 
   //
   // computed properties
+
+  get config(){
+    return $config.store.config;
+  }
+
   get module() {
     return $module.store.modules.find((m: any)=>m.id === this.$route.params.module_id);    
   }
@@ -146,7 +186,6 @@ export default class Lesson extends Vue {
 
       this.renderLessons$ = [lessons[prevIndex],lessons[index],lessons[nextIndex]];
     }
-    console.log('---- get',this.renderLessons$[1].title);
     return this.renderLessons$;
   }
 
@@ -157,6 +196,18 @@ export default class Lesson extends Vue {
     });
   }
 
+  themePrimary(theme) {
+    return this.config.themes[theme].primary;
+  }
+
+  themeSecondary(theme) {
+    return this.config.themes[theme].secondary;
+  }
+
+  themeTertiary(theme) {
+    return this.config.themes[theme].tertiary;
+  }
+
   //
   // only for devel purposes
   getStyle(lesson: any) {
@@ -165,6 +216,8 @@ export default class Lesson extends Vue {
     }
     return styleObj;
   }
+
+
 
 }
 </script>
