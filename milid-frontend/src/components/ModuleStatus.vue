@@ -1,7 +1,7 @@
 <template>
   <div class="status">
     <div class="title">{{module.title}}</div>
-    <ModuleProgress :module="module" class="progress" max="4" value="2"></ModuleProgress>    
+    <ModuleProgress :pipCount="4" :completedPips="1" :color="'#ffaa00'" class="progress"></ModuleProgress>    
   </div>
 </template>
 
@@ -28,9 +28,9 @@ export default class ModuleStatus extends Vue {
     flex-direction: row;
     flex-wrap: nowrap;
     .progress {
-      height: 20px;
+      height: 35px;
       width: 50%;
-      margin-left: 20px;
+      // margin-left: 20px; // breaks canvas size computation
     }
   }
 
