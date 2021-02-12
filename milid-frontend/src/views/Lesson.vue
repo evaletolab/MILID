@@ -4,8 +4,8 @@
     <nav class="toolbar primary">
       <div class="toolbar-row">
         <div class="md-toolbar-section-start">
-          <md-button class="md-icon-button">
-            <md-icon class="primary">menu</md-icon>
+          <md-button class="md-icon-button" @click="onBack()">
+            <md-icon class="primary">arrow_back</md-icon>
           </md-button>
         </div>
 
@@ -21,7 +21,9 @@
       </div>
 
       <div class="toolbar-row">
-        <div class="toolbar-title">- O --</div>
+        <div class="toolbar-title ">
+          <ModuleProgress :pipCount="count" :completedPips="position" color="white" class="progress"></ModuleProgress>    
+        </div>
       </div>        
 
     </nav>
@@ -86,6 +88,11 @@
       &.title-left{
         text-align: left;
       }
+      .progress{
+        width: 180px;
+        height: 40px;
+        margin: auto;        
+      }
     }
 
     .toolbar-row {
@@ -109,6 +116,9 @@
 
   section.lesson {
     opacity: 0.8;
+    .type {
+      padding: 80px;
+    }
 
     &.active-card {
       opacity: 1;
@@ -133,6 +143,7 @@ import { MILID } from '../models';
 
 import ContentSwipe from '../components/ContentSwipe.vue';
 import MILIDIcons from '../components/MILIDIcons.vue';
+import ModuleProgress from '../components/ModuleProgress.vue';
 
 import MdButton  from 'vue-material'
 import MdSpeedDial  from 'vue-material'
@@ -142,7 +153,7 @@ Vue.use(MdButton);
 Vue.use(MdSpeedDial);
 
 @Component({
-  components: { ContentSwipe, MILIDIcons }
+  components: { ContentSwipe, MILIDIcons, ModuleProgress }
 })
 export default class Lesson extends Vue {
   //private _observer: any;
@@ -166,6 +177,13 @@ export default class Lesson extends Vue {
 
   //
   // computed properties
+  get count() {
+    return this.lessons.length + 1;
+  }
+
+  get position(){
+    return Number.parseInt(this.$route.params.lesson_id || "0");
+  }
 
   get config(){
     return $config.store.config;
@@ -191,7 +209,7 @@ export default class Lesson extends Vue {
       this.renderLessons$ = [lessons[prevIndex],lessons[index],lessons[nextIndex]];
     }
     return this.renderLessons$;
-  }
+  }  
 
   renderChange(renderLessons) {
     this.renderLessons$ = [...renderLessons];
@@ -222,6 +240,9 @@ export default class Lesson extends Vue {
   }
 
 
+  onBack() {
+    this.$router.push({ path: `/home`});
+  }
 
 }
 </script>

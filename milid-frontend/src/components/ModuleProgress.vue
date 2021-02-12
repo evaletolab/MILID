@@ -17,12 +17,13 @@ export default class ModuleProgress extends Vue {
   @Prop() pipCount!: number;
   @Prop() completedPips!: number;
   @Prop() theme!: string;
+  @Prop({default:'white'}) color!: string;
 
   config: MILID.Config = {} as MILID.Config;
 
   get primary() {
-    if(!this.config.themes) {
-      return '#f00';
+    if(!this.config.themes || !this.theme) {
+      return this.color;
     }
     return this.config.themes[this.theme].primary;
   }

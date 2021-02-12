@@ -44,7 +44,7 @@
             @click="routerLink(mod.id,lesson.id)"
             class="lesson">
           <div class="type">
-            <MILIDIcons name="podcast" :theme="mod.theme"/>
+            <MILIDIcons :name="getType(lesson)" :theme="mod.theme"/>
           </div>
           <div class="title">{{lesson.title}}</div>
         </div>
@@ -83,6 +83,11 @@ export default class Home extends Vue {
 
   get config(){
     return $config.store.config;
+  }
+
+  getType(lesson) {
+    //console.log('----',lesson.type, this.config.icons[lesson.type])
+    return this.config.icons[lesson.type];
   }
 
   themeTertiary(theme) {

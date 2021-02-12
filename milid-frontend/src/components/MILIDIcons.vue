@@ -35,7 +35,7 @@
     </g>
   </svg>
   <!--- COURS -->
-  <svg v-else-if="name === 'cours'" :viewBox="viewBox" preserveAspectRatio="none" >
+  <svg v-else-if="name === 'cours'" viewBox="0 0 100 100" preserveAspectRatio="none" >
     <g>
       <path :style="{ fill: colorPrimary }" d="M85.75,20.12L70.89,5.25C67.72,2.08,63.56,0.5,59.41,0.5c-4.15,0-8.31,1.58-11.48,4.75L9.61,43.57
         c-2.37,2.37-3.94,5.4-4.51,8.7L0.66,77.83C-0.51,84.57,4.74,90.5,11.28,90.5c0.62,0,1.25-0.05,1.89-0.16l25.56-4.44
@@ -63,7 +63,7 @@
     </g>
   </svg>
   <!--- infographie -->
-  <svg v-else-if="name === 'infographie'" :viewBox="viewBox" preserveAspectRatio="none" >
+  <svg v-else-if="name === 'infographie'" viewBox="0 0 100 100" preserveAspectRatio="none" >
     <g>
       <path :style="{ fill: colorPrimary }" d="M43.5,0.04c-24,0-43.46,19.46-43.46,43.46c0,2.58,0.22,5.1,0.65,7.55c3.57,20.4,21.38,35.91,42.8,35.91
         c21.43,0,39.23-15.51,42.8-35.91c0.43-2.45,0.65-4.97,0.65-7.55C86.96,19.5,67.5,0.04,43.5,0.04z M43.49,79.41c0,0,0.01,0,0.01,0
@@ -82,7 +82,7 @@
     </g>
   </svg>
   <!--- parametres -->
-  <svg v-else-if="name === 'parametres'" :viewBox="viewBox" preserveAspectRatio="none" >
+  <svg v-else-if="name === 'parametres'" viewBox="0 0 100 100" preserveAspectRatio="none" >
     <g>
       <path :style="{ fill: colorPrimary }" d="M43.5,7.56c9.6,0,18.63,3.74,25.41,10.53C75.7,24.87,79.44,33.9,79.44,43.5S75.7,62.13,68.91,68.91
         C62.13,75.7,53.1,79.44,43.5,79.44S24.87,75.7,18.09,68.91C11.3,62.13,7.56,53.1,7.56,43.5s3.74-18.63,10.53-25.41
@@ -146,7 +146,7 @@
           c0,4.87,2.52,9.23,6.74,11.67c2.11,1.22,4.42,1.83,6.74,1.83s4.63-0.61,6.74-1.83l63.09-36.43c4.22-2.44,6.74-6.8,6.74-11.67
           c0-4.87-2.52-9.23-6.74-11.67L20.17,1.87C18.06,0.66,15.75,0.05,13.43,0.05L13.43,0.05z"/>
       </g>
-      <path d="M17.3,73.02V26.93c0-2.97,3.21-4.82,5.78-3.34L63,46.63c2.57,1.48,2.57,5.19,0,6.68L23.09,76.35
+      <path :style="{ fill: colorPrimary }" d="M17.3,73.02V26.93c0-2.97,3.21-4.82,5.78-3.34L63,46.63c2.57,1.48,2.57,5.19,0,6.68L23.09,76.35
         C20.52,77.84,17.3,75.98,17.3,73.02z"/>
     </g>
   </svg>
@@ -180,12 +180,10 @@ export default class MILIDIcons extends Vue {
   }
 
   get viewBox() {
-    return "0 0 "+this.width+" "+this.height;
+    return "0 0 100 100";
   }
 
   get colorPrimary() {
-    console.log('----',this.theme, this.config.themes)
-
     return this.config.themes[this.theme].primary;
   }
 

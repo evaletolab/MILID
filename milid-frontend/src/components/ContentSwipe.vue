@@ -70,7 +70,7 @@ export default class ContentSwipe extends Vue {
 
   mounted() {
     // use prop to initiate the currentIndex;
-    this.currentIndex = this.initial;
+    // this.currentIndex = this.initial;
 
     // Set up Hammer element & event listeners to respond to swiping gestures
     const touchContainer = document.getElementById("touch-container");
