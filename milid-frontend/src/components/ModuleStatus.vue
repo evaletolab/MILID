@@ -27,6 +27,7 @@ export default class ModuleStatus extends Vue {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    align-items: center;
     .progress {
       height: 35px;
       width: 50%;
