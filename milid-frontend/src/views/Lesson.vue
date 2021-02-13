@@ -22,7 +22,12 @@
 
       <div class="toolbar-row">
         <div class="toolbar-title ">
-          <ModuleProgress :pipCount="count" :completedPips="position" color="white" class="progress"></ModuleProgress>    
+          <ModuleProgress 
+          :pipCount="count" 
+          :completedPips="position" 
+          color="white" 
+          :bkgdColor="config.themes[module.id].primary"
+          class="progress"></ModuleProgress>    
         </div>
       </div>        
 

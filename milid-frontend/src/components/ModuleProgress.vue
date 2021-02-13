@@ -14,10 +14,11 @@ export default class ModuleProgress extends Vue {
   private _ctx;
   // @Prop() private module!: MILID.Module;
 
-  @Prop() pipCount!: number;
-  @Prop() completedPips!: number;
-  @Prop() theme!: string;
-  @Prop({default:'white'}) color!: string;
+  @Prop() readonly pipCount!: number;
+  @Prop() readonly completedPips!: number;
+  @Prop() readonly theme!: string;
+  @Prop({ default: '#fff' }) readonly bkgdColor!: string; 
+  @Prop({default:'white'}) readonly color!: string;
 
   config: MILID.Config = {} as MILID.Config;
 
@@ -118,7 +119,7 @@ export default class ModuleProgress extends Vue {
           circle (x, 0, completedRadius);
           ctx.fill(); 
           
-          ctx.fillStyle = "white";
+          ctx.fillStyle = this.bkgdColor;
           circle (x, 0, whiteDotRadius);
           ctx.fill(); 
         }
