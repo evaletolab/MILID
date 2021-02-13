@@ -2,6 +2,9 @@ import { MILID } from "@/models";
 import Vue from "vue";
 import axios from 'axios';
 
+const defaultAxios = {
+  headers: { 'Cache-Control': 'no-cache' }
+};
 
 class ConfigService {
   // More about store
@@ -21,13 +24,14 @@ class ConfigService {
 
   async get(force?: boolean){
     if(!this._store.config.done && !force) {
-      const res = await axios.get(this._baseUrl + 'config.json');
+      const res = await axios.get(this._baseUrl + 'config.json',defaultAxios);
       this._store.config = res.data;
       this._store.config.done = true;
 
       //
       // generate root colors
       this.generateColors(this._store.config.themes);
+
     }
 
     return this._store.config;

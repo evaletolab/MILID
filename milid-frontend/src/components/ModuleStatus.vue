@@ -23,19 +23,19 @@ export default class ModuleStatus extends Vue {
 <style scoped lang="scss">
   .status {
     width: calc( 100vw - 50px );
-    margin: 10px 50px;
+    margin: 1px 50px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
     .progress {
-      height: 35px;
+      height: 25px;
       width: 50%;
       // margin-left: 20px; // breaks canvas size computation
     }
 
     .title {
-      font-size: 17px;
+      font-size: 15px;
       font-weight: 700;
       padding: 6px 0;      
     }

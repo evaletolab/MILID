@@ -2,6 +2,10 @@ import Vue from "vue";
 import axios from 'axios';
 import { MILID } from "@/models";
 
+const defaultAxios = {
+  headers: { 'Cache-Control': 'no-cache' }
+};
+
 class ModuleService {
   private _store: any;
   private _baseUrl = process.env.BASE_URL;
@@ -32,8 +36,7 @@ class ModuleService {
 
   async getAll(){
     if(!this._store) {
-      console.log("loading store");
-      const res = await axios.get(this._baseUrl + 'data.json');
+      const res = await axios.get(this._baseUrl + 'data.json',defaultAxios);
       this._store = res.data;
     }
     return this._store;

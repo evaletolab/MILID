@@ -10,7 +10,7 @@
         </div>
 
         <div class="toolbar-title title-left">
-          <span>M1.01<br/>qu'est-ce qu'une donnée?</span>
+          <span>M1.01<br/>{{module.description}}</span>
         </div>        
 
         <div class="md-toolbar-section-end">
@@ -21,7 +21,7 @@
       </div>
 
       <div class="toolbar-row">
-        <div class="toolbar-title ">
+        <div class="toolbar-title tight">
           <ModuleProgress 
           :pipCount="count" 
           :completedPips="position" 
@@ -53,11 +53,11 @@
       <section class="lesson rendered-item"
           v-for="(lesson, index) in renderLessons" :key="lesson.id" :id="lesson.id"          
           v-bind:index="index">
-        <h2>{{lesson.title}}</h2>
+        <h3 class="title">{{lesson.title}}</h3>
         <div class="item type ">
           <MILIDIcons name="podcast" :theme="module.theme"/>
         </div>
-        <div class="item content ">Yeah!</div>
+        <div class="item content primary-on-text">1:40</div>
       </section>
 
     </ContentSwipe>
@@ -72,30 +72,33 @@
 <style lang="scss" scoped>
 
   .toolbar {
-    border-radius: 0 0 25px 25px;
+    border-radius: 0 0 18px 18px;
     flex-flow: row wrap;
     position: relative;
     z-index: 2;    
     .toolbar-title{
       text-align: center;
-      font-size: 17px;
+      font-size: 14px;
       font-weight: 500;
-      letter-spacing: .005em;
-      line-height: 20px;      
-      margin-top: .9em;
-      margin-bottom: .9em;
+      letter-spacing: -0.01em;
+      line-height: 16px;
+      margin-top: 0.8em;
+      margin-bottom: 0.8em;
       text-transform: uppercase;
-      font-weight: 700;
+      font-weight: 900;
       text-overflow: ellipsis;
-      white-space: nowrap;      
+      white-space: nowrap;
       overflow: hidden;
       width: 100%;
+      &.tight {
+        margin: 0;
+      }
       &.title-left{
         text-align: left;
       }
       .progress{
-        width: 180px;
-        height: 40px;
+        width: 90px;
+        height: 25px;
         margin: auto;        
       }
     }
@@ -117,10 +120,21 @@
   .md-speed-dial.md-bottom-right {
     position: fixed;
     z-index: 2;
+    right: calc( 50% - 30px );
+    margin: auto;
   }
 
   section.lesson {
-    opacity: 0.8;
+    .title {
+      text-align: left;
+      padding-left: 10px;
+      color: var(--theme-1-primary);
+      margin-top: 63px;      
+      text-transform: uppercase;
+      font-size: 13px;
+      line-height: 15px;      
+    }
+
     .type {
       padding: 80px;
     }
