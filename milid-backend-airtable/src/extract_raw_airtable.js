@@ -5,7 +5,7 @@ const export_table = require('./lib/airtable_easy_export');
 
 function fieldExtract(mediaRecord){
     let result = {
-        id: mediaRecord.id,
+        airtable_id: mediaRecord.id,
     };
 
     result = Object.assign(result, mediaRecord.fields);

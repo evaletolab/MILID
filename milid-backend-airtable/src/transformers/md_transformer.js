@@ -6,7 +6,7 @@ module.exports = function mdTransformer(lesson, globalData){
     const renderer = new marked.Renderer();
 
     const urlForAssetId = (assetId) => {
-        const asset = globalData.assets.find(asset => asset.asset_id == assetId);
+        const asset = globalData.assets.find(asset => asset.id == assetId);
         if(!asset){
             throw new Error(`no asset with id ${assetId}`);
         }

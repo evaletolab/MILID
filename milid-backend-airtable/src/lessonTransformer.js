@@ -4,7 +4,7 @@ const LessonType = require('./LessonType');
 
 module.exports = function lessonTransformer(data){
     const urlForAssetId = (id) => {
-        const asset = data.assets.find(asset => asset.id == id);
+        const asset = data.assets.find(asset => asset.airtable_id == id);
         if(!asset){
             throw new Error(`no asset with id ${id}`);
         }

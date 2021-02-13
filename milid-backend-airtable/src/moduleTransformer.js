@@ -1,7 +1,7 @@
 
 module.exports = function moduleTransformer(data){
     const lessonWithId = (id) => {
-        const lesson = data.lessons.find(lesson => lesson.id == id);
+        const lesson = data.lessons.find(lesson => lesson.airtable_id == id);
         if(!lesson){
             throw new Error(`no lesson with id ${id}`);
         }
