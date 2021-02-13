@@ -375,6 +375,7 @@ export default class ContentSwipe extends Vue {
   min-width: 100%;
   width: 100%;
   box-sizing: border-box;
+  padding: 0 25px;
 }
 
 .item-content {

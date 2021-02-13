@@ -10,7 +10,7 @@
         </div>
 
         <div class="toolbar-title title-left">
-          <span>M1.01<br/>{{module.description}}</span>
+          <span>M1.01<br/>{{module.title}}</span>
         </div>        
 
         <div class="md-toolbar-section-end">
@@ -127,7 +127,6 @@
   section.lesson {
     .title {
       text-align: left;
-      padding-left: 10px;
       color: var(--theme-1-primary);
       margin-top: 63px;      
       text-transform: uppercase;
