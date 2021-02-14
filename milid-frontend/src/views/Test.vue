@@ -16,7 +16,7 @@
 
 <style scoped>
   .col{
-    margin-right: 10px;
+    margin-left: 20px;
     width:100%;
     max-width: 640px;
     text-align: left;
@@ -51,6 +51,8 @@
 import { Component, Vue } from 'vue-property-decorator';
 import DefinitionPopup from '../components/DefinitionPopup.vue';
 
+import { $module } from '@/services/module-service';
+
 function getOffset(el: HTMLElement) {
   const rect = el.getBoundingClientRect();
   return {
@@ -72,12 +74,10 @@ export default class Test extends Vue {
   height = 0;
   
 
-  async mounted(){
-    const resp = await fetch('/data/data.json');
-    const data = await resp.json();
+  mounted(){
 
-    this.lessonContent = data.lessons[0].html;
-    this.definitions = data.definitions;
+    this.lessonContent = $module.store.lessons[0].html;
+    this.definitions = $module.store.definitions;
 
     setTimeout(() =>{
       // must be called after dom update...
