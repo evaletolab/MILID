@@ -10,6 +10,7 @@ import About from '../views/About.vue'
 import Home from '../views/Home.vue'
 import Lesson from '../views/Lesson.vue'
 import AccessDenied from '../views/AccessDenied.vue'
+import Test from '../views/Test.vue';
 
 Vue.use(VueRouter)
 
@@ -17,24 +18,12 @@ const routes: Array<RouteConfig> = [
   {
     path: '/',
     name: 'Landing',
-    component: Landing,
-    beforeEnter:(to: any, from: any, next: any) => {
-      $config.get().then(next)
-    }
+    component: Landing
   },
   {
     path: '/home',
     name: 'Home',
     component: Home,
-    beforeEnter:(to: any, from: any, next: any) => {
-      const load = [$config.get(),$module.getAll()]
-      Promise.all(load).then(next);
-    }
-  },
-  {
-    path: '/home',
-    name: 'Home',
-    component: Home
   },
   {
     path: '/about',
@@ -42,9 +31,14 @@ const routes: Array<RouteConfig> = [
     component: About
   },
   {
+    path: '/test',
+    name: 'Test',
+    component: Test
+  },
+  {
     path: '/module/:module_id/lesson/:lesson_id',
     name: 'Lesson',
-    component: Lesson
+    components: { l2 : Lesson}
   },
   {
     path:'/access_denied',

@@ -1,6 +1,6 @@
 
 // TODO: discuss i18n with client
-namespace MILID {
+export namespace MILID {
   export enum ColorPalette{
     PINK,
     CYAN,
@@ -21,7 +21,8 @@ namespace MILID {
   }
 
   export interface Config {
-    
+    version: string;
+    themes: any;
   }
 
   //
@@ -39,15 +40,19 @@ namespace MILID {
   export type LessonActivity = VideoActivity | PodcastActivity | MarkdowActivity | GameActivity;
 
   export interface VideoActivity{
-
+    title: string;    
+    url: string;
   }
 
   export interface PodcastActivity{
-    
+    title: string;    
+    url: string;
   }
 
   export interface MarkdowActivity{
-    
+    cover: string;
+    content: string;
+    game?: GameActivity;
   }
 
   //
@@ -73,7 +78,6 @@ namespace MILID {
     VIDEO ,
     PODCAST ,
     INFOGRAPHIC,
-    GAME,
     MARKDOWN 
   }
 
@@ -85,6 +89,7 @@ namespace MILID {
   }
 
   export interface Lesson {
+      id: string;
       type: LessonType;
       title: string;
       state: LessonState;

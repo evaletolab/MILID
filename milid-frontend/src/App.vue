@@ -1,10 +1,16 @@
 <template>
   <div id="app">
     <router-view/>
+    <router-view name="l2"/>
   </div>
 </template>
 
 <style lang="scss">
+
+// 
+// global style
+@import "./app.scss";
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

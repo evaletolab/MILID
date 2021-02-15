@@ -1,17 +1,45 @@
+import Vue from "vue";
 import axios from 'axios';
+import { MILID } from "@/models";
+
+const defaultAxios = {
+  headers: { 'Cache-Control': 'no-cache' }
+};
 
 class ModuleService {
-  private _modules: MILID.Module[];
-  constructor() {
-    this._modules = [];
+  private _store: any;
+  private _baseUrl = process.env.BASE_URL;
+
+
+  get store() {
+    return this._store;
   }
 
-  async getAll(): Promise<MILID.Module[]> {
-    if(!this._modules.length) {
-      this._modules = await axios.get('modules.json');
-    }
+  get modules(){
+    return this._store.modules;
+  }
 
-    return this._modules;
+  get definitions(){
+    return this._store.definitions;
+  }
+
+  getModuleWithId(id){
+    return this._store.modules.find(m => m.id === id);
+  }
+
+  getLessonsForModuleWithId(id){
+    const module = this.getModuleWithId(id);
+    if(!module) return [];
+
+    return module.lessons;
+  }
+
+  async getAll(){
+    if(!this._store) {
+      const res = await axios.get(this._baseUrl + 'data.json',defaultAxios);
+      this._store = res.data;
+    }
+    return this._store;
   }
 
 }

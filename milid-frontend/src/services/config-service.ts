@@ -1,64 +1,55 @@
+import { MILID } from "@/models";
+import Vue from "vue";
 import axios from 'axios';
 
-class ConfigService {
-  private _STORAGE_USER = "milid-user";
-  private _config: MILID.Config;
-  private _user: MILID.User;
+const defaultAxios = {
+  headers: { 'Cache-Control': 'no-cache' }
+};
 
+class ConfigService {
+  // More about store
+  // https://fr.vuejs.org/v2/guide/reactivity.html
+  private _store: any;
+  private _baseUrl = process.env.BASE_URL;
+ 
   constructor() {
-    this._user = { id: false } as MILID.User;
-    this._config = false;
+    this._store = Vue.observable({
+      config: {}
+    });
   }
 
-  async get(): Promise<any> {
-    if(!this._config) {
-      this._config = await axios.get('config.json');
+  get store() {
+    return this._store;
+  }
+
+  async get(force?: boolean){
+    if(!this._store.config.done && !force) {
+      const res = await axios.get(this._baseUrl + 'config.json',defaultAxios);
+      this._store.config = res.data;
+      this._store.config.done = true;
+
+      //
+      // generate root colors
+      this.generateColors(this._store.config.themes);
+
     }
 
-    return this._config;
+    return this._store.config;
+  }  
+
+  generateColors(themes){
+    const root = document.documentElement;
+    Object.keys(themes).forEach(theme => {
+      const primary = themes[theme].primary
+      root.style.setProperty('--theme-'+theme+'-primary',primary);
+
+      const secondary = themes[theme].secondary
+      root.style.setProperty('--theme-'+theme+'-secondary',secondary);
+
+      const tertiary = themes[theme].tertiary
+      root.style.setProperty('--theme-'+theme+'-tertiary',tertiary);
+    });
   }
-
-  createUser(name: string) {
-    const user = {
-      id: this.getDeviceID(),
-      name: name,
-      created: new Date()
-    } as MILID.User;
-
-    try {
-      const storage = JSON.stringify(user);
-      localStorage.setItem(this._STORAGE_USER,storage);
-      this._user = user ;
-    } catch(e) {
-      //
-    }    
-
-
-  }
-
-  getDeviceID() {
-    const navigatorInfo = window.navigator;
-    const screenInfo = window.screen;
-    let uid = navigatorInfo.mimeTypes.length  + '';
-    uid += navigatorInfo.userAgent.replace(/\D+/g, '') + '';
-    uid += navigatorInfo.plugins.length;
-    uid += screenInfo.height || '';
-    uid += screenInfo.width || '';
-    uid += screenInfo.pixelDepth || '';
-    return uid;
-  }
-
-
-  getUser() {
-    try {
-      const storage = localStorage.getItem(this._STORAGE_USER);
-      this._user = JSON.parse(storage||'') as MILID.User;
-    } catch(e) {
-      //
-    }    
-    return this._user;
-  }
-  
 }
 
 //
