@@ -9,6 +9,7 @@
   "themes": {
     "1": { "primary":"#6900FF","secondary":"#260063", "tertiary":"#BBB8FF"},
     "2": { "primary":"#FFF200","secondary":"#FFBC00", "tertiary":"#FFF9C5"},
-    "3": { "primary":"#00FFDA","secondary":"#00A585", "tertiary":"#D9FFF8"}
+    "3": { "primary":"#00FFDA","secondary":"#00A585", "tertiary":"#D9FFF8"},
+    "4": { "primary":"#00FFDA","secondary":"#00A585", "tertiary":"#D9FFF8"}
   }
 }

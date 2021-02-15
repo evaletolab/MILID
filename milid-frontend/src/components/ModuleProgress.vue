@@ -1,25 +1,29 @@
 <template >
-  <canvas ref="canvas"></canvas>  
+    <canvas ref="canvas"></canvas>  
 </template>
 
 <script lang="ts">
 /* eslint-disable */
 
-import { Component, Prop, Vue } from 'vue-property-decorator';
+import { Component, Prop, Vue, Watch } from 'vue-property-decorator';
 import { $config } from '../services';
 import { MILID } from '../models';
 
 @Component
 export default class ModuleProgress extends Vue {
   private _ctx;
-  // @Prop() private module!: MILID.Module;
 
   @Prop() readonly pipCount!: number;
   @Prop() readonly completedPips!: number;
   @Prop() readonly theme!: string;
   @Prop({ default: '#fff' }) readonly bkgdColor!: string; 
-  @Prop({default:'white'}) readonly color!: string;
+  @Prop({ default:'#fff' }) readonly color!: string;
 
+  @Watch('completedPips')
+  onCompletedPipsChanged(val: string, oldVal: string) {
+    this.draw();
+  }
+  
   config: MILID.Config = {} as MILID.Config;
 
   get primary() {
@@ -56,9 +60,15 @@ export default class ModuleProgress extends Vue {
     this.onResize();
   }
 
+
   get pixelRatio(){
     return window.devicePixelRatio;
     // return 1;
+  }
+
+  beforeUpdate(){
+    console.log("update", this.completedPips);
+    this.draw();
   }
 
   draw(){
@@ -91,7 +101,7 @@ export default class ModuleProgress extends Vue {
         for(let i = 0; i < this.pipCount; i++){
           const x = xMargin + (i * pipOffset);
           const y = 0;
-          if(i > this.completedPips){
+          if(i > this.completedPips - 1){
             circle(x, y, pipRadius);
             ctx.fill(); 
           }
@@ -99,9 +109,9 @@ export default class ModuleProgress extends Vue {
       }
 
       // draw progress line if needed
-      if(this.completedPips > 0)
+      if(this.completedPips > 1)
       {
-        const len = pipOffset * this.completedPips;
+        const len = pipOffset * (this.completedPips - 1);
 
         ctx.strokeStyle = this.primary || "#f00";
         ctx.beginPath();
@@ -113,9 +123,9 @@ export default class ModuleProgress extends Vue {
       }
 
       // draw completed index if needed
-      if(this.completedPips >= 0)
+      if(this.completedPips > 0)
       {
-          const x = (pipOffset * this.completedPips) + xMargin;
+          const x = (pipOffset * (this.completedPips - 1)) + xMargin;
           circle (x, 0, completedRadius);
           ctx.fill(); 
           
@@ -125,37 +135,6 @@ export default class ModuleProgress extends Vue {
         }
       }
     ctx.restore();
-  }
-
-
-  drawLine(x,y,len) {
-
-    this._ctx.beginPath();
-    this._ctx.lineCap = "round";
-    this._ctx.lineWidth = 4;
-    // this._ctx.setLineDash([5, 15]);        
-    this._ctx.moveTo(x, y);
-    this._ctx.lineTo(x+len, y);
-    this._ctx.stroke();    
-  }
-
-  drawRect(x,y, w, h) {    
-    // draw rect
-    this._ctx.beginPath();
-    this._ctx.rect(x, y, w, h);
-    this._ctx.stroke();      
-  }  
-
-  drawCircle(x,y,r) {
-    this._ctx.beginPath();
-    this._ctx.arc(x,y, r, 0, 2 * Math.PI);
-    this._ctx.stroke(); 
-  }
-
-  clear() {
-    const { width, height } = this._ctx.canvas;
-    // clear canvas
-    this._ctx.clearRect(0, 0, width, height);
   }
 }
 </script>

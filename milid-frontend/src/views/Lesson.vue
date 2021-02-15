@@ -27,7 +27,7 @@
           :completedPips="position" 
           color="white" 
           :bkgdColor="config.themes[module.id].primary"
-          class="progress"></ModuleProgress>    
+          class="progress" />
         </div>
       </div>        
 
@@ -200,6 +200,7 @@ export default class Lesson extends Vue {
   }
 
   get position(){
+    console.log("pos", this.$route.params.lesson_id);
     return Number.parseInt(this.$route.params.lesson_id || "0");
   }
 
