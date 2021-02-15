@@ -711,12 +711,15 @@
           "description": "my lesson description",
           "modules": [
             "recKefWoiBrgzqAyQ",
-            "rectQXEUZsDam7c8j"
+            "rectQXEUZsDam7c8j",
+            "rec3Uzws3khrczr4D",
+            "recL96730JlAeJJXd"
           ],
+          "id": "1",
           "type": "MARKDOWN",
           "title": "Qu’est-ce qu’une information ?",
           "cover": "https://dl.airtable.com/.attachments/68d7cd4ee0cc9a850d0c59a5d51600ef/c8e3f3a6/M01_illustrations-10.svg",
-          "id": "1",
+          "sources": "<p> BODER, Alexandre, 2019. <em>Théorie I [document PDF]</em>. Support de cours : Cours Systèmes d’information documentaires, Haute École de Gestion de Genève, filière Information documentaire, année académique 2019-2020 </p>\n<p>HAESEN, Stéphanie, <em>2019. Introduction - 1ère partie</em> [support PowerPoint]. Support de cours : Cours “Recherche d’information”, Haute École de Gestion de Genève, filière Information documentaire, année académique 2019-2020 </p>\n<p>LAROUSSE, Éditions. <em>Définitions : information. Larousse</em> [en ligne]. [Consulté le 2 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.larousse.fr/dictionnaires/francais/information/42993\">lien</a></p>\n<p>LES DÉCODEURS, 2017. _Décodex : qu’est-ce qu’une information ? _Le Monde.fr [en ligne]. 23 janvier 2017. [Consulté le 6 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.lemonde.fr/les-decodeurs/article/2017/01/23/decodex-qu-est-ce-qu-une-information_5067721_4355770.html\">lien</a>\nROMAGNI, Patrick et WILD, Valérie, 1998. <em>L’intelligence économique au service de l’entreprise</em>. Paris : LPM. 219 p. ISBN 978-2878453317</p>\n",
           "html": "<h1 id=\"quest-ce-quune-information-\">QU&#39;EST-CE QU&#39;UNE INFORMATION ?</h1>\n<p>L&#39;information est un terme ayant de nombreux sens, alors mettons-nous d&#39;accord sur une définition simple.</p>\n<p><img src=\"https://dl.airtable.com/.attachments/bf97741c297cb2615467b09e0ed82194/3c30e304/M01_illustrations-11.svg\" alt=\"alt text\"></p>\n<p>Une <span class=\"_definition\" data-definition-id=\"information\">information</span>, c&#39;est de la communication communiquée.  </p>\n<p>Il existe trois type d&#39;informations:</p>\n<p><img src=\"https://dl.airtable.com/.attachments/2a27c59553718d953d1647b94c30cc3d/43637854/M01_illustrations-12.svg\" alt=\"alt text\"></p>\n<ul>\n<li>Blanche: son accès est facile et licite. Elle représente le 80% de l&#39;information mondiale.</li>\n</ul>\n<p><img src=\"https://dl.airtable.com/.attachments/1a047dda5986efd2c036ec0f2a31117c/f2d9b132/M01_illustrations-13.svg\" alt=\"alt text\"></p>\n<ul>\n<li>Grise: son accès est licite, mais elle est plus difficile à trouver (nécessité d&#39;un login, connaissance de l&#39;existence de la base de données, etc.). Elle représente le 10-15% de l&#39;information mondiale.</li>\n</ul>\n<p><img src=\"https://dl.airtable.com/.attachments/f31453e399b06e06ef5c19947b63d6b0/358b007e/M01_illustrations-14.svg\" alt=\"alt text\"></p>\n<ul>\n<li>Noire: son accès est très limité et protégé. Ce type d&#39;information est obtenu par des moyens illégaux (espionnage industriel, chantage etc.). Elle représente le 5-10% de l&#39;information mondiale.</li>\n</ul>\n"
         },
         {
@@ -725,9 +728,10 @@
           "modules": [
             "recKefWoiBrgzqAyQ"
           ],
+          "id": "2",
           "type": "VIDEO",
           "title": "Qu’est-ce qu’une donnée ?",
-          "id": "2"
+          "sources": "<p>ÉCOLE DES DONNÉES, 2013. Q_u’est-ce qu’une donnée ? Ecole des Données_ [en ligne]. 2 février 2013. [Consulté le 14 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://ecoledesdonnees.org/handbook/cours/quest-ce-quune-donnee/\">lien</a></p>\n<p>BODER, Alexandre, 2019. Théorie I [document PDF]. Support de cours : Cours : “Systèmes d’information documentaires”, Haute École de Gestion de Genève, filière Information documentaire, année académique 2019-2020 </p>\n<p>Donnée, 2020. Wikipédia : l’encyclopédie libre [en ligne]. Dernière modification de la page le 18 novembre 2020 à 12h19. [Consulté le 10 décembre 2020]. Disponible à l’adresse :  <a target='_blank'  href=\"https://fr.wikipedia.org/w/index.php?title=Donn%C3%A9e&amp;oldid=176723240\">lien </a></p>\n"
         },
         {
           "airtable_id": "rec7cpjVAOypi26iz",
@@ -735,9 +739,10 @@
             "recKefWoiBrgzqAyQ",
             "rectQXEUZsDam7c8j"
           ],
+          "id": "3",
           "type": "MARKDOWN",
           "title": "Banques et bases de données",
-          "id": "3",
+          "sources": "<p>BOULOGNE, Arlette, 2004. <em>Vocabulaire de la documentation</em>. Paris : Association des professionnels de l&#39;information et de la documentation (ABDS). Sciences et techniques de l’information. ISBN 9782843650710 </p>\n<p>ENSSIB, 2017. <em>Base de données / banque de données.</em> Enssib.fr [en ligne]. 17 mars 2017. [Consulté le 3 novembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.enssib.fr/services-et-ressources/questions-reponses/base-de-donnees-banque-de-donnees#:~:text=En%20simplifiant%2C%20on%20peut%20dire,%C3%A0%20un%20domaine%20de%20connaissance\">lien</a></p>\n<p>REPUBLIQUE FRANCAISE, 1982. _Banque de données. Arrêté du 22 décembre 1981 enrichissement du vocabulaire de l’informatique Journal Officiel _[en ligne]. 17 janvier 1982. P. 625. [Consulté le 11 novembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000842020\">lien</a></p>\n<p>SAFON, M.-O., IRDES. Centre de documentation, 2020. _Sources d’information et méthodologie de recherche documentaire en santé. _Irdes.fr [en ligne]. Septembre 2020. [Consulté le 3 novembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.irdes.fr/documentation/documents/sources-d-information-et-methodologie-de-recherche-documentaire.pdf\">lien</a></p>\n",
           "html": "<h1 id=\"banques-et-bases-de-données\">Banques et bases de données</h1>\n<p>Une banque de données est un «ensemble de données relatif à un domaine défini de la connaissance et organisé pour être offert aux utilisateurs» (République française, 1982)  </p>\n<p><img src=\"https://dl.airtable.com/.attachments/c10e74bab41253009f5c7fd8532a028d/87a6be9c/M01_illustrations-15.svg\" alt=\"illustration\"></p>\n<p>Si tu cherches des informations de qualité et qui soient vérifiées, des types de documents spécifiques (articles scientifiques, articles de presse, …) ou des informations propres à un domaine défini de la connaissance (chimie, médecine, économie, …), pense à utiliser les banques de données.   </p>\n<p><img src=\"https://dl.airtable.com/.attachments/e8159de5c9f8296498413e249b054ec8/b1f17a63/M01_illustrations-16.svg\" alt=\"illustration\"></p>\n<p>« La base de données décrit la structure \u0003informatique, le contenant, tandis que la banque de données représente le contenu de la base, c&#39;est à dire un ensemble de données relatif à un domaine de connaissance spécifique. » ENSSIB   </p>\n<p>On distingue plusieurs types de banques de données:   </p>\n<ul>\n<li><p>Les banques bibliographiques qui contiennent uniquement des références bibliographiques de documents.   </p>\n</li>\n<li><p>Les banques textuelles qui rassemblent des textes (intégraux ou partiels).  </p>\n</li>\n<li><p>Les banques de connaissance (factuelle ou numérique) fournissent des renseignements immédiatement exploitables par les utilisateurs.  </p>\n</li>\n</ul>\n<p>Les banques de données sont souvent payantes et onéreuses mais la plupart des hautes écoles payent des abonnements pour permettre à leurs étudiant·e·s d’avoir accès à certaines d’entre elles en lien avec les sujets qu’elles enseignent.   </p>\n<p><img src=\"https://dl.airtable.com/.attachments/be5fe10811d61afb55a49ea1ac294e03/dbd7ff3d/M01_illustrations-17.svg\" alt=\"illustration\"></p>\n<p>Pense aussi à toujours consulter la rubrique d’aide de ces banques de données car la recherche et son langage d’interrogation changent très fréquemment d’une banque à l’autre.  </p>\n"
         },
         {
@@ -746,14 +751,15 @@
           "modules": [
             "recKefWoiBrgzqAyQ"
           ],
+          "id": "4",
           "type": "PODCAST",
           "title": "Qu’est-ce que la recherche d’information ?",
-          "id": "4"
+          "sources": "<p>BOUGHANEM, Mohand, 2014. <em>Introduction à la recherche d’information.</em> Institut de recherche en informatique de Toulouse. 2014. [Consulté le 3 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.irit.fr/~Mohand.Boughanem/slides/RI/chap1-Intro_RI_2014.pdf\">lien </a></p>\n<p>CHIARAMELLA Yves et MULHEM Philippe, 2007. <em>La recherche d&#39;information : De la documentation automatique à la recherche d&#39;information en contexte</em>. Document numérique [en ligne]. 2007. Vol.10, pp.11-38. [Consulté le 2 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.cairn.info/revue-document-numerique-2007-1-page-11.htm\">lien</a></p>\n<p>Recherche d’information. Wikipédia : l’encyclopédie libre [en ligne]. Dernière modification de la page le 13 avril 2020. [Consulté le 2 octobre 2020]. \nDisponible à l’adresse :<a target='_blank'  href=\"https://fr.wikipedia.org/w/index.php?title=Recherche_d%27information&amp;oldid=169487900\"> lien</a></p>\n<p>SEARCH ENGINE MARKETING, 2019. <em>Recherche d’information : la grande recherche vers la connaissance</em>. IONOS Digital Guide [en ligne]. 14 janvier 2019. [Consulté le 3 octobre 2020]. Disponible à l’adresse :<a target='_blank'  href=\"https://www.ionos.fr/digitalguide/web-marketing/search-engine-marketing/recherche-dinformations/\"> lien</a>             </p>\n<h3 id=\"sources-définitions-\">Sources définitions :</h3>\n<h3 id=\"corpus\">Corpus</h3>\n<p>Corpus. Wikipédia : l’encyclopédie libre [en ligne]. Dernière modification de la page le 24 novembre 2020 à 09:58. [Consulté le 8 décembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://fr.wikipedia.org/wiki/Corpus\">lien </a> </p>\n<h3 id=\"catalogue\">Catalogue</h3>\n<p>SERVICE DES BIBLIOTHEQUES DE L&#39;UQAM, 2006. Catalogues de bibliothèques. Infosphère [en ligne]. Mis à jour le 29 avril 2009. [Consulté le 8 décembre 2020]. Disponible à l’adresse :  <a target='_blank'  href=\"http://www.fucam.ac.be/infosphere/sciences/module3/outils_catal.html#:~:text=Catalogues%20de%20biblioth%C3%A8ques&amp;text=Un%20catalogue%20de%20biblioth%C3%A8que%20est,%2C%20th%C3%A8ses%2C%20rapports%2C%20etc\">lien</a></p>\n<h3 id=\"base-de-données\">Base de données</h3>\n<p>Base de données. Wikipédia : l’encyclopédie libre [en ligne]. Dernière modification de la page le 30 novembre 2020 à 18:01. [Consulté le 8 décembre 2020]. Disponible à l’adresse :  <a target='_blank'  href=\"https://fr.wikipedia.org/wiki/Base_de_donn%C3%A9es\">lien</a></p>\n"
         }
       ],
       "id": "1",
       "theme": "1",
-      "title": "module 1"
+      "title": "Définir l'information"
     },
     {
       "airtable_id": "rectQXEUZsDam7c8j",
@@ -763,12 +769,15 @@
           "description": "my lesson description",
           "modules": [
             "recKefWoiBrgzqAyQ",
-            "rectQXEUZsDam7c8j"
+            "rectQXEUZsDam7c8j",
+            "rec3Uzws3khrczr4D",
+            "recL96730JlAeJJXd"
           ],
+          "id": "1",
           "type": "MARKDOWN",
           "title": "Qu’est-ce qu’une information ?",
           "cover": "https://dl.airtable.com/.attachments/68d7cd4ee0cc9a850d0c59a5d51600ef/c8e3f3a6/M01_illustrations-10.svg",
-          "id": "1",
+          "sources": "<p> BODER, Alexandre, 2019. <em>Théorie I [document PDF]</em>. Support de cours : Cours Systèmes d’information documentaires, Haute École de Gestion de Genève, filière Information documentaire, année académique 2019-2020 </p>\n<p>HAESEN, Stéphanie, <em>2019. Introduction - 1ère partie</em> [support PowerPoint]. Support de cours : Cours “Recherche d’information”, Haute École de Gestion de Genève, filière Information documentaire, année académique 2019-2020 </p>\n<p>LAROUSSE, Éditions. <em>Définitions : information. Larousse</em> [en ligne]. [Consulté le 2 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.larousse.fr/dictionnaires/francais/information/42993\">lien</a></p>\n<p>LES DÉCODEURS, 2017. _Décodex : qu’est-ce qu’une information ? _Le Monde.fr [en ligne]. 23 janvier 2017. [Consulté le 6 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.lemonde.fr/les-decodeurs/article/2017/01/23/decodex-qu-est-ce-qu-une-information_5067721_4355770.html\">lien</a>\nROMAGNI, Patrick et WILD, Valérie, 1998. <em>L’intelligence économique au service de l’entreprise</em>. Paris : LPM. 219 p. ISBN 978-2878453317</p>\n",
           "html": "<h1 id=\"quest-ce-quune-information-\">QU&#39;EST-CE QU&#39;UNE INFORMATION ?</h1>\n<p>L&#39;information est un terme ayant de nombreux sens, alors mettons-nous d&#39;accord sur une définition simple.</p>\n<p><img src=\"https://dl.airtable.com/.attachments/bf97741c297cb2615467b09e0ed82194/3c30e304/M01_illustrations-11.svg\" alt=\"alt text\"></p>\n<p>Une <span class=\"_definition\" data-definition-id=\"information\">information</span>, c&#39;est de la communication communiquée.  </p>\n<p>Il existe trois type d&#39;informations:</p>\n<p><img src=\"https://dl.airtable.com/.attachments/2a27c59553718d953d1647b94c30cc3d/43637854/M01_illustrations-12.svg\" alt=\"alt text\"></p>\n<ul>\n<li>Blanche: son accès est facile et licite. Elle représente le 80% de l&#39;information mondiale.</li>\n</ul>\n<p><img src=\"https://dl.airtable.com/.attachments/1a047dda5986efd2c036ec0f2a31117c/f2d9b132/M01_illustrations-13.svg\" alt=\"alt text\"></p>\n<ul>\n<li>Grise: son accès est licite, mais elle est plus difficile à trouver (nécessité d&#39;un login, connaissance de l&#39;existence de la base de données, etc.). Elle représente le 10-15% de l&#39;information mondiale.</li>\n</ul>\n<p><img src=\"https://dl.airtable.com/.attachments/f31453e399b06e06ef5c19947b63d6b0/358b007e/M01_illustrations-14.svg\" alt=\"alt text\"></p>\n<ul>\n<li>Noire: son accès est très limité et protégé. Ce type d&#39;information est obtenu par des moyens illégaux (espionnage industriel, chantage etc.). Elle représente le 5-10% de l&#39;information mondiale.</li>\n</ul>\n"
         },
         {
@@ -777,15 +786,64 @@
             "recKefWoiBrgzqAyQ",
             "rectQXEUZsDam7c8j"
           ],
+          "id": "3",
           "type": "MARKDOWN",
           "title": "Banques et bases de données",
-          "id": "3",
+          "sources": "<p>BOULOGNE, Arlette, 2004. <em>Vocabulaire de la documentation</em>. Paris : Association des professionnels de l&#39;information et de la documentation (ABDS). Sciences et techniques de l’information. ISBN 9782843650710 </p>\n<p>ENSSIB, 2017. <em>Base de données / banque de données.</em> Enssib.fr [en ligne]. 17 mars 2017. [Consulté le 3 novembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.enssib.fr/services-et-ressources/questions-reponses/base-de-donnees-banque-de-donnees#:~:text=En%20simplifiant%2C%20on%20peut%20dire,%C3%A0%20un%20domaine%20de%20connaissance\">lien</a></p>\n<p>REPUBLIQUE FRANCAISE, 1982. _Banque de données. Arrêté du 22 décembre 1981 enrichissement du vocabulaire de l’informatique Journal Officiel _[en ligne]. 17 janvier 1982. P. 625. [Consulté le 11 novembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000842020\">lien</a></p>\n<p>SAFON, M.-O., IRDES. Centre de documentation, 2020. _Sources d’information et méthodologie de recherche documentaire en santé. _Irdes.fr [en ligne]. Septembre 2020. [Consulté le 3 novembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.irdes.fr/documentation/documents/sources-d-information-et-methodologie-de-recherche-documentaire.pdf\">lien</a></p>\n",
           "html": "<h1 id=\"banques-et-bases-de-données\">Banques et bases de données</h1>\n<p>Une banque de données est un «ensemble de données relatif à un domaine défini de la connaissance et organisé pour être offert aux utilisateurs» (République française, 1982)  </p>\n<p><img src=\"https://dl.airtable.com/.attachments/c10e74bab41253009f5c7fd8532a028d/87a6be9c/M01_illustrations-15.svg\" alt=\"illustration\"></p>\n<p>Si tu cherches des informations de qualité et qui soient vérifiées, des types de documents spécifiques (articles scientifiques, articles de presse, …) ou des informations propres à un domaine défini de la connaissance (chimie, médecine, économie, …), pense à utiliser les banques de données.   </p>\n<p><img src=\"https://dl.airtable.com/.attachments/e8159de5c9f8296498413e249b054ec8/b1f17a63/M01_illustrations-16.svg\" alt=\"illustration\"></p>\n<p>« La base de données décrit la structure \u0003informatique, le contenant, tandis que la banque de données représente le contenu de la base, c&#39;est à dire un ensemble de données relatif à un domaine de connaissance spécifique. » ENSSIB   </p>\n<p>On distingue plusieurs types de banques de données:   </p>\n<ul>\n<li><p>Les banques bibliographiques qui contiennent uniquement des références bibliographiques de documents.   </p>\n</li>\n<li><p>Les banques textuelles qui rassemblent des textes (intégraux ou partiels).  </p>\n</li>\n<li><p>Les banques de connaissance (factuelle ou numérique) fournissent des renseignements immédiatement exploitables par les utilisateurs.  </p>\n</li>\n</ul>\n<p>Les banques de données sont souvent payantes et onéreuses mais la plupart des hautes écoles payent des abonnements pour permettre à leurs étudiant·e·s d’avoir accès à certaines d’entre elles en lien avec les sujets qu’elles enseignent.   </p>\n<p><img src=\"https://dl.airtable.com/.attachments/be5fe10811d61afb55a49ea1ac294e03/dbd7ff3d/M01_illustrations-17.svg\" alt=\"illustration\"></p>\n<p>Pense aussi à toujours consulter la rubrique d’aide de ces banques de données car la recherche et son langage d’interrogation changent très fréquemment d’une banque à l’autre.  </p>\n"
         }
       ],
       "id": "2",
       "theme": "2",
-      "title": "module 2"
+      "title": "Rechercher l'information"
+    },
+    {
+      "airtable_id": "rec3Uzws3khrczr4D",
+      "lessons": [
+        {
+          "airtable_id": "recPsLd9VsWKVHoNn",
+          "description": "my lesson description",
+          "modules": [
+            "recKefWoiBrgzqAyQ",
+            "rectQXEUZsDam7c8j",
+            "rec3Uzws3khrczr4D",
+            "recL96730JlAeJJXd"
+          ],
+          "id": "1",
+          "type": "MARKDOWN",
+          "title": "Qu’est-ce qu’une information ?",
+          "cover": "https://dl.airtable.com/.attachments/68d7cd4ee0cc9a850d0c59a5d51600ef/c8e3f3a6/M01_illustrations-10.svg",
+          "sources": "<p> BODER, Alexandre, 2019. <em>Théorie I [document PDF]</em>. Support de cours : Cours Systèmes d’information documentaires, Haute École de Gestion de Genève, filière Information documentaire, année académique 2019-2020 </p>\n<p>HAESEN, Stéphanie, <em>2019. Introduction - 1ère partie</em> [support PowerPoint]. Support de cours : Cours “Recherche d’information”, Haute École de Gestion de Genève, filière Information documentaire, année académique 2019-2020 </p>\n<p>LAROUSSE, Éditions. <em>Définitions : information. Larousse</em> [en ligne]. [Consulté le 2 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.larousse.fr/dictionnaires/francais/information/42993\">lien</a></p>\n<p>LES DÉCODEURS, 2017. _Décodex : qu’est-ce qu’une information ? _Le Monde.fr [en ligne]. 23 janvier 2017. [Consulté le 6 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.lemonde.fr/les-decodeurs/article/2017/01/23/decodex-qu-est-ce-qu-une-information_5067721_4355770.html\">lien</a>\nROMAGNI, Patrick et WILD, Valérie, 1998. <em>L’intelligence économique au service de l’entreprise</em>. Paris : LPM. 219 p. ISBN 978-2878453317</p>\n",
+          "html": "<h1 id=\"quest-ce-quune-information-\">QU&#39;EST-CE QU&#39;UNE INFORMATION ?</h1>\n<p>L&#39;information est un terme ayant de nombreux sens, alors mettons-nous d&#39;accord sur une définition simple.</p>\n<p><img src=\"https://dl.airtable.com/.attachments/bf97741c297cb2615467b09e0ed82194/3c30e304/M01_illustrations-11.svg\" alt=\"alt text\"></p>\n<p>Une <span class=\"_definition\" data-definition-id=\"information\">information</span>, c&#39;est de la communication communiquée.  </p>\n<p>Il existe trois type d&#39;informations:</p>\n<p><img src=\"https://dl.airtable.com/.attachments/2a27c59553718d953d1647b94c30cc3d/43637854/M01_illustrations-12.svg\" alt=\"alt text\"></p>\n<ul>\n<li>Blanche: son accès est facile et licite. Elle représente le 80% de l&#39;information mondiale.</li>\n</ul>\n<p><img src=\"https://dl.airtable.com/.attachments/1a047dda5986efd2c036ec0f2a31117c/f2d9b132/M01_illustrations-13.svg\" alt=\"alt text\"></p>\n<ul>\n<li>Grise: son accès est licite, mais elle est plus difficile à trouver (nécessité d&#39;un login, connaissance de l&#39;existence de la base de données, etc.). Elle représente le 10-15% de l&#39;information mondiale.</li>\n</ul>\n<p><img src=\"https://dl.airtable.com/.attachments/f31453e399b06e06ef5c19947b63d6b0/358b007e/M01_illustrations-14.svg\" alt=\"alt text\"></p>\n<ul>\n<li>Noire: son accès est très limité et protégé. Ce type d&#39;information est obtenu par des moyens illégaux (espionnage industriel, chantage etc.). Elle représente le 5-10% de l&#39;information mondiale.</li>\n</ul>\n"
+        }
+      ],
+      "id": "3",
+      "theme": "3",
+      "title": "Évaluer l'information"
+    },
+    {
+      "airtable_id": "recL96730JlAeJJXd",
+      "lessons": [
+        {
+          "airtable_id": "recPsLd9VsWKVHoNn",
+          "description": "my lesson description",
+          "modules": [
+            "recKefWoiBrgzqAyQ",
+            "rectQXEUZsDam7c8j",
+            "rec3Uzws3khrczr4D",
+            "recL96730JlAeJJXd"
+          ],
+          "id": "1",
+          "type": "MARKDOWN",
+          "title": "Qu’est-ce qu’une information ?",
+          "cover": "https://dl.airtable.com/.attachments/68d7cd4ee0cc9a850d0c59a5d51600ef/c8e3f3a6/M01_illustrations-10.svg",
+          "sources": "<p> BODER, Alexandre, 2019. <em>Théorie I [document PDF]</em>. Support de cours : Cours Systèmes d’information documentaires, Haute École de Gestion de Genève, filière Information documentaire, année académique 2019-2020 </p>\n<p>HAESEN, Stéphanie, <em>2019. Introduction - 1ère partie</em> [support PowerPoint]. Support de cours : Cours “Recherche d’information”, Haute École de Gestion de Genève, filière Information documentaire, année académique 2019-2020 </p>\n<p>LAROUSSE, Éditions. <em>Définitions : information. Larousse</em> [en ligne]. [Consulté le 2 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.larousse.fr/dictionnaires/francais/information/42993\">lien</a></p>\n<p>LES DÉCODEURS, 2017. _Décodex : qu’est-ce qu’une information ? _Le Monde.fr [en ligne]. 23 janvier 2017. [Consulté le 6 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.lemonde.fr/les-decodeurs/article/2017/01/23/decodex-qu-est-ce-qu-une-information_5067721_4355770.html\">lien</a>\nROMAGNI, Patrick et WILD, Valérie, 1998. <em>L’intelligence économique au service de l’entreprise</em>. Paris : LPM. 219 p. ISBN 978-2878453317</p>\n",
+          "html": "<h1 id=\"quest-ce-quune-information-\">QU&#39;EST-CE QU&#39;UNE INFORMATION ?</h1>\n<p>L&#39;information est un terme ayant de nombreux sens, alors mettons-nous d&#39;accord sur une définition simple.</p>\n<p><img src=\"https://dl.airtable.com/.attachments/bf97741c297cb2615467b09e0ed82194/3c30e304/M01_illustrations-11.svg\" alt=\"alt text\"></p>\n<p>Une <span class=\"_definition\" data-definition-id=\"information\">information</span>, c&#39;est de la communication communiquée.  </p>\n<p>Il existe trois type d&#39;informations:</p>\n<p><img src=\"https://dl.airtable.com/.attachments/2a27c59553718d953d1647b94c30cc3d/43637854/M01_illustrations-12.svg\" alt=\"alt text\"></p>\n<ul>\n<li>Blanche: son accès est facile et licite. Elle représente le 80% de l&#39;information mondiale.</li>\n</ul>\n<p><img src=\"https://dl.airtable.com/.attachments/1a047dda5986efd2c036ec0f2a31117c/f2d9b132/M01_illustrations-13.svg\" alt=\"alt text\"></p>\n<ul>\n<li>Grise: son accès est licite, mais elle est plus difficile à trouver (nécessité d&#39;un login, connaissance de l&#39;existence de la base de données, etc.). Elle représente le 10-15% de l&#39;information mondiale.</li>\n</ul>\n<p><img src=\"https://dl.airtable.com/.attachments/f31453e399b06e06ef5c19947b63d6b0/358b007e/M01_illustrations-14.svg\" alt=\"alt text\"></p>\n<ul>\n<li>Noire: son accès est très limité et protégé. Ce type d&#39;information est obtenu par des moyens illégaux (espionnage industriel, chantage etc.). Elle représente le 5-10% de l&#39;information mondiale.</li>\n</ul>\n"
+        }
+      ],
+      "id": "4",
+      "theme": "4",
+      "title": "Utiliser l'information"
     }
   ],
   "lessons": [
@@ -794,12 +852,15 @@
       "description": "my lesson description",
       "modules": [
         "recKefWoiBrgzqAyQ",
-        "rectQXEUZsDam7c8j"
+        "rectQXEUZsDam7c8j",
+        "rec3Uzws3khrczr4D",
+        "recL96730JlAeJJXd"
       ],
+      "id": "1",
       "type": "MARKDOWN",
       "title": "Qu’est-ce qu’une information ?",
       "cover": "https://dl.airtable.com/.attachments/68d7cd4ee0cc9a850d0c59a5d51600ef/c8e3f3a6/M01_illustrations-10.svg",
-      "id": "1",
+      "sources": "<p> BODER, Alexandre, 2019. <em>Théorie I [document PDF]</em>. Support de cours : Cours Systèmes d’information documentaires, Haute École de Gestion de Genève, filière Information documentaire, année académique 2019-2020 </p>\n<p>HAESEN, Stéphanie, <em>2019. Introduction - 1ère partie</em> [support PowerPoint]. Support de cours : Cours “Recherche d’information”, Haute École de Gestion de Genève, filière Information documentaire, année académique 2019-2020 </p>\n<p>LAROUSSE, Éditions. <em>Définitions : information. Larousse</em> [en ligne]. [Consulté le 2 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.larousse.fr/dictionnaires/francais/information/42993\">lien</a></p>\n<p>LES DÉCODEURS, 2017. _Décodex : qu’est-ce qu’une information ? _Le Monde.fr [en ligne]. 23 janvier 2017. [Consulté le 6 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.lemonde.fr/les-decodeurs/article/2017/01/23/decodex-qu-est-ce-qu-une-information_5067721_4355770.html\">lien</a>\nROMAGNI, Patrick et WILD, Valérie, 1998. <em>L’intelligence économique au service de l’entreprise</em>. Paris : LPM. 219 p. ISBN 978-2878453317</p>\n",
       "html": "<h1 id=\"quest-ce-quune-information-\">QU&#39;EST-CE QU&#39;UNE INFORMATION ?</h1>\n<p>L&#39;information est un terme ayant de nombreux sens, alors mettons-nous d&#39;accord sur une définition simple.</p>\n<p><img src=\"https://dl.airtable.com/.attachments/bf97741c297cb2615467b09e0ed82194/3c30e304/M01_illustrations-11.svg\" alt=\"alt text\"></p>\n<p>Une <span class=\"_definition\" data-definition-id=\"information\">information</span>, c&#39;est de la communication communiquée.  </p>\n<p>Il existe trois type d&#39;informations:</p>\n<p><img src=\"https://dl.airtable.com/.attachments/2a27c59553718d953d1647b94c30cc3d/43637854/M01_illustrations-12.svg\" alt=\"alt text\"></p>\n<ul>\n<li>Blanche: son accès est facile et licite. Elle représente le 80% de l&#39;information mondiale.</li>\n</ul>\n<p><img src=\"https://dl.airtable.com/.attachments/1a047dda5986efd2c036ec0f2a31117c/f2d9b132/M01_illustrations-13.svg\" alt=\"alt text\"></p>\n<ul>\n<li>Grise: son accès est licite, mais elle est plus difficile à trouver (nécessité d&#39;un login, connaissance de l&#39;existence de la base de données, etc.). Elle représente le 10-15% de l&#39;information mondiale.</li>\n</ul>\n<p><img src=\"https://dl.airtable.com/.attachments/f31453e399b06e06ef5c19947b63d6b0/358b007e/M01_illustrations-14.svg\" alt=\"alt text\"></p>\n<ul>\n<li>Noire: son accès est très limité et protégé. Ce type d&#39;information est obtenu par des moyens illégaux (espionnage industriel, chantage etc.). Elle représente le 5-10% de l&#39;information mondiale.</li>\n</ul>\n"
     },
     {
@@ -808,9 +869,10 @@
       "modules": [
         "recKefWoiBrgzqAyQ"
       ],
+      "id": "2",
       "type": "VIDEO",
       "title": "Qu’est-ce qu’une donnée ?",
-      "id": "2"
+      "sources": "<p>ÉCOLE DES DONNÉES, 2013. Q_u’est-ce qu’une donnée ? Ecole des Données_ [en ligne]. 2 février 2013. [Consulté le 14 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://ecoledesdonnees.org/handbook/cours/quest-ce-quune-donnee/\">lien</a></p>\n<p>BODER, Alexandre, 2019. Théorie I [document PDF]. Support de cours : Cours : “Systèmes d’information documentaires”, Haute École de Gestion de Genève, filière Information documentaire, année académique 2019-2020 </p>\n<p>Donnée, 2020. Wikipédia : l’encyclopédie libre [en ligne]. Dernière modification de la page le 18 novembre 2020 à 12h19. [Consulté le 10 décembre 2020]. Disponible à l’adresse :  <a target='_blank'  href=\"https://fr.wikipedia.org/w/index.php?title=Donn%C3%A9e&amp;oldid=176723240\">lien </a></p>\n"
     },
     {
       "airtable_id": "rec7cpjVAOypi26iz",
@@ -818,9 +880,10 @@
         "recKefWoiBrgzqAyQ",
         "rectQXEUZsDam7c8j"
       ],
+      "id": "3",
       "type": "MARKDOWN",
       "title": "Banques et bases de données",
-      "id": "3",
+      "sources": "<p>BOULOGNE, Arlette, 2004. <em>Vocabulaire de la documentation</em>. Paris : Association des professionnels de l&#39;information et de la documentation (ABDS). Sciences et techniques de l’information. ISBN 9782843650710 </p>\n<p>ENSSIB, 2017. <em>Base de données / banque de données.</em> Enssib.fr [en ligne]. 17 mars 2017. [Consulté le 3 novembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.enssib.fr/services-et-ressources/questions-reponses/base-de-donnees-banque-de-donnees#:~:text=En%20simplifiant%2C%20on%20peut%20dire,%C3%A0%20un%20domaine%20de%20connaissance\">lien</a></p>\n<p>REPUBLIQUE FRANCAISE, 1982. _Banque de données. Arrêté du 22 décembre 1981 enrichissement du vocabulaire de l’informatique Journal Officiel _[en ligne]. 17 janvier 1982. P. 625. [Consulté le 11 novembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000842020\">lien</a></p>\n<p>SAFON, M.-O., IRDES. Centre de documentation, 2020. _Sources d’information et méthodologie de recherche documentaire en santé. _Irdes.fr [en ligne]. Septembre 2020. [Consulté le 3 novembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.irdes.fr/documentation/documents/sources-d-information-et-methodologie-de-recherche-documentaire.pdf\">lien</a></p>\n",
       "html": "<h1 id=\"banques-et-bases-de-données\">Banques et bases de données</h1>\n<p>Une banque de données est un «ensemble de données relatif à un domaine défini de la connaissance et organisé pour être offert aux utilisateurs» (République française, 1982)  </p>\n<p><img src=\"https://dl.airtable.com/.attachments/c10e74bab41253009f5c7fd8532a028d/87a6be9c/M01_illustrations-15.svg\" alt=\"illustration\"></p>\n<p>Si tu cherches des informations de qualité et qui soient vérifiées, des types de documents spécifiques (articles scientifiques, articles de presse, …) ou des informations propres à un domaine défini de la connaissance (chimie, médecine, économie, …), pense à utiliser les banques de données.   </p>\n<p><img src=\"https://dl.airtable.com/.attachments/e8159de5c9f8296498413e249b054ec8/b1f17a63/M01_illustrations-16.svg\" alt=\"illustration\"></p>\n<p>« La base de données décrit la structure \u0003informatique, le contenant, tandis que la banque de données représente le contenu de la base, c&#39;est à dire un ensemble de données relatif à un domaine de connaissance spécifique. » ENSSIB   </p>\n<p>On distingue plusieurs types de banques de données:   </p>\n<ul>\n<li><p>Les banques bibliographiques qui contiennent uniquement des références bibliographiques de documents.   </p>\n</li>\n<li><p>Les banques textuelles qui rassemblent des textes (intégraux ou partiels).  </p>\n</li>\n<li><p>Les banques de connaissance (factuelle ou numérique) fournissent des renseignements immédiatement exploitables par les utilisateurs.  </p>\n</li>\n</ul>\n<p>Les banques de données sont souvent payantes et onéreuses mais la plupart des hautes écoles payent des abonnements pour permettre à leurs étudiant·e·s d’avoir accès à certaines d’entre elles en lien avec les sujets qu’elles enseignent.   </p>\n<p><img src=\"https://dl.airtable.com/.attachments/be5fe10811d61afb55a49ea1ac294e03/dbd7ff3d/M01_illustrations-17.svg\" alt=\"illustration\"></p>\n<p>Pense aussi à toujours consulter la rubrique d’aide de ces banques de données car la recherche et son langage d’interrogation changent très fréquemment d’une banque à l’autre.  </p>\n"
     },
     {
@@ -829,9 +892,10 @@
       "modules": [
         "recKefWoiBrgzqAyQ"
       ],
+      "id": "4",
       "type": "PODCAST",
       "title": "Qu’est-ce que la recherche d’information ?",
-      "id": "4"
+      "sources": "<p>BOUGHANEM, Mohand, 2014. <em>Introduction à la recherche d’information.</em> Institut de recherche en informatique de Toulouse. 2014. [Consulté le 3 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.irit.fr/~Mohand.Boughanem/slides/RI/chap1-Intro_RI_2014.pdf\">lien </a></p>\n<p>CHIARAMELLA Yves et MULHEM Philippe, 2007. <em>La recherche d&#39;information : De la documentation automatique à la recherche d&#39;information en contexte</em>. Document numérique [en ligne]. 2007. Vol.10, pp.11-38. [Consulté le 2 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.cairn.info/revue-document-numerique-2007-1-page-11.htm\">lien</a></p>\n<p>Recherche d’information. Wikipédia : l’encyclopédie libre [en ligne]. Dernière modification de la page le 13 avril 2020. [Consulté le 2 octobre 2020]. \nDisponible à l’adresse :<a target='_blank'  href=\"https://fr.wikipedia.org/w/index.php?title=Recherche_d%27information&amp;oldid=169487900\"> lien</a></p>\n<p>SEARCH ENGINE MARKETING, 2019. <em>Recherche d’information : la grande recherche vers la connaissance</em>. IONOS Digital Guide [en ligne]. 14 janvier 2019. [Consulté le 3 octobre 2020]. Disponible à l’adresse :<a target='_blank'  href=\"https://www.ionos.fr/digitalguide/web-marketing/search-engine-marketing/recherche-dinformations/\"> lien</a>             </p>\n<h3 id=\"sources-définitions-\">Sources définitions :</h3>\n<h3 id=\"corpus\">Corpus</h3>\n<p>Corpus. Wikipédia : l’encyclopédie libre [en ligne]. Dernière modification de la page le 24 novembre 2020 à 09:58. [Consulté le 8 décembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://fr.wikipedia.org/wiki/Corpus\">lien </a> </p>\n<h3 id=\"catalogue\">Catalogue</h3>\n<p>SERVICE DES BIBLIOTHEQUES DE L&#39;UQAM, 2006. Catalogues de bibliothèques. Infosphère [en ligne]. Mis à jour le 29 avril 2009. [Consulté le 8 décembre 2020]. Disponible à l’adresse :  <a target='_blank'  href=\"http://www.fucam.ac.be/infosphere/sciences/module3/outils_catal.html#:~:text=Catalogues%20de%20biblioth%C3%A8ques&amp;text=Un%20catalogue%20de%20biblioth%C3%A8que%20est,%2C%20th%C3%A8ses%2C%20rapports%2C%20etc\">lien</a></p>\n<h3 id=\"base-de-données\">Base de données</h3>\n<p>Base de données. Wikipédia : l’encyclopédie libre [en ligne]. Dernière modification de la page le 30 novembre 2020 à 18:01. [Consulté le 8 décembre 2020]. Disponible à l’adresse :  <a target='_blank'  href=\"https://fr.wikipedia.org/wiki/Base_de_donn%C3%A9es\">lien</a></p>\n"
     }
   ],
   "definitions": [
