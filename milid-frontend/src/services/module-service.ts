@@ -24,7 +24,7 @@ class ModuleService {
   }
 
   getModuleWithId(id){
-    return this._store.modules.find(m => m.id === id);
+    return this._store.modules.find(m => m.id === id.toString());
   }
 
   getLessonsForModuleWithId(id){
@@ -32,6 +32,11 @@ class ModuleService {
     if(!module) return [];
 
     return module.lessons;
+  }
+
+  getLessonForModuleAndLessonId(moduleId, lessonId){
+    const lessons = this.getLessonsForModuleWithId(moduleId);
+    return lessons.find(l => l.id === lessonId.toString());
   }
 
   async getAll(){

@@ -57,6 +57,7 @@
         <div class="item type ">
           <MILIDIcons name="podcast" :theme="module.theme"/>
         </div>
+        <LessonMarkdown v-if="lesson.type == 'MARKDOWN'" :moduleId="1" :lessonId="lesson.id" />
         <div class="item content primary-on-text">1:40</div>
       </section>
 
@@ -163,15 +164,19 @@ import ContentSwipe from '../components/ContentSwipe.vue';
 import MILIDIcons from '../components/MILIDIcons.vue';
 import ModuleProgress from '../components/ModuleProgress.vue';
 
-import MdButton  from 'vue-material'
-import MdSpeedDial  from 'vue-material'
+import MdButton  from 'vue-material';
+import MdSpeedDial  from 'vue-material';
+
+import LessonMarkdown from '../components/LessonMarkdown.vue';
+
+
 
 
 Vue.use(MdButton);
 Vue.use(MdSpeedDial);
 
 @Component({
-  components: { ContentSwipe, MILIDIcons, ModuleProgress }
+  components: { ContentSwipe, MILIDIcons, ModuleProgress, LessonMarkdown }
 })
 export default class Lesson extends Vue {
   //private _observer: any;
