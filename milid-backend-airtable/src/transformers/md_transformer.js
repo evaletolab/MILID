@@ -25,7 +25,13 @@ module.exports = function mdTransformer(lesson, globalData){
         let link;
         
         if(!href.startsWith('http://') || !href.startsWith('https://')){
-            return `<span class="_definition" data-definition-id="${href}">${text}</span>`;
+            const definitionKey = href;
+
+            if(!globalData.definitions.find(def => def.id === definitionKey)){
+                throw new Error(`no definition with key ${definitionKey}`);
+            }
+
+            return `<span class="_definition" data-definition-id="${definitionKey}">${text}</span>`;
         }else{
             link = marked.Renderer.prototype.link.call(this, href, title, text);
         }
