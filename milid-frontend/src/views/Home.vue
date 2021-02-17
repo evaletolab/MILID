@@ -46,6 +46,7 @@
           <div class="type">
             <MILIDIcons :name="getType(lesson)" :theme="mod.theme"/>
           </div>
+          <img class="cover" v-if="lesson.cover" :src="lesson.cover" />
           <div class="title">{{lesson.title}}</div>
         </div>
       </div>
