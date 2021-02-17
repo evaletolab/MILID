@@ -76,7 +76,7 @@ export default class Test extends Vue {
 
   mounted(){
 
-    this.lessonContent = $module.store.lessons[0].html;
+    this.lessonContent = $module.store.lessons[2].html;
     this.definitions = $module.store.definitions;
 
     setTimeout(() =>{
@@ -91,9 +91,11 @@ export default class Test extends Vue {
 
 
   definitionClickHandler(e: any){
+    const definitionId = e.target.dataset.definitionId;
+    console.log("id", definitionId);
     this.height = getOffset(e.target).top;
     this.definitionPopupIsOpen = true;
-    this.definition = this.definitions[0].definition;
+    this.definition = this.definitions.find(def => def.id === definitionId).definition;
   }
 
   setupDefinitions(){
