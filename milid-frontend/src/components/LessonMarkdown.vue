@@ -1,6 +1,6 @@
 
 <template>
-  <div class="col" v-bind:class="{ scrollDisabled: definitionPopupIsOpen }">
+  <div class="col" :style="cssVars" v-bind:class="{ scrollDisabled: definitionPopupIsOpen }">
     <DefinitionPopup 
     :open="definitionPopupIsOpen"
     :height="height"
@@ -14,7 +14,7 @@
 
 <style scoped>
   .col{
-    margin-left: 20px;
+    /* margin-left: 20px; */
     width:100%;
     max-width: 640px;
     text-align: left;
@@ -32,12 +32,12 @@
   }
 
   .col /deep/ li::marker {
-    color: red;
+    color: var(--lesson-color);
     /* content: "• "; */
   }
 
   .col /deep/ ._definition{
-    color: red;
+    color: var(--lesson-color);
     cursor:pointer;
   }
 
@@ -50,6 +50,7 @@ import { Component, Vue, Prop } from 'vue-property-decorator';
 import DefinitionPopup from '../components/DefinitionPopup.vue';
 
 import { $module } from '@/services/module-service';
+import { $config } from '@/services/config-service';
 
 function getOffset(el: HTMLElement) {
   const rect = el.getBoundingClientRect();
@@ -78,15 +79,20 @@ export default class LessonMarkdown extends Vue {
 
     this.lessonContent = $module.getLessonForModuleAndLessonId(this.moduleId, this.lessonId).html;
     this.definitions = $module.store.definitions;
+  }
 
-    setTimeout(() =>{
-      // must be called after dom update...
+  mounted(){
       this.setupDefinitions();
-    }, 100);
   }
 
   beforeDestroy(){
     this.cleanupDefinitions();
+  }
+
+  get cssVars(){
+      return {
+        '--lesson-color': $config.store.config.themes[this.moduleId].primary,
+      };
   }
 
   definitionClickHandler(e: any){

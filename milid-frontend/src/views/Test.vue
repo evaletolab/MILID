@@ -1,6 +1,6 @@
 
 <template>
-  <div class="col" v-bind:class="{ scrollDisabled: definitionPopupIsOpen }">
+  <div class="col" :style="cssVars" v-bind:class="{ scrollDisabled: definitionPopupIsOpen }">
     <h1>This is a test page</h1>
     <router-link to="/home">back to home</router-link>
     <DefinitionPopup 
@@ -34,12 +34,12 @@
   }
 
   .col /deep/ li::marker {
-    color: red;
+    color: var(--my-color);
     /* content: "• "; */
   }
 
   .col /deep/ ._definition{
-    color: red;
+    color: var(--my-color);
     cursor:pointer;
   }
 
@@ -74,19 +74,25 @@ export default class Test extends Vue {
   height = 0;
   
 
-  mounted(){
+  beforeMount(){
 
     this.lessonContent = $module.store.lessons[2].html;
     this.definitions = $module.store.definitions;
+  }
 
-    setTimeout(() =>{
-      // must be called after dom update...
+  mounted(){
       this.setupDefinitions();
-    }, 100);
   }
 
   beforeDestroy(){
     this.cleanupDefinitions();
+  }
+
+  // cf https://www.telerik.com/blogs/passing-variables-to-css-on-a-vue-component
+  get cssVars(){
+      return {
+        '--my-color': "#fa0",
+      };
   }
 
 
