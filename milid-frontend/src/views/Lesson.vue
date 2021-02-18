@@ -10,7 +10,7 @@
         </div>
 
         <div class="toolbar-title title-left">
-          <span>M1.01<br/>{{module.title}}</span>
+          <span>M{{module.id}}.{{position}}<br/></span>
         </div>        
 
         <div class="md-toolbar-section-end">
@@ -49,7 +49,7 @@
       </md-speed-dial-content>
     </md-speed-dial>    
 
-    <ContentSwipe :initial="$route.params.lesson_id" :lessons="lessons" @changeCard="renderChange">
+    <ContentSwipe :initial="$route.params.lesson_id - 1" :lessons="lessons" @changeCard="renderChange">
       <section class="lesson rendered-item"
           v-for="(lesson, index) in renderLessons" :key="lesson.id" :id="lesson.id"          
           v-bind:index="index">
@@ -201,7 +201,8 @@ export default class Lesson extends Vue {
   //
   // computed properties
   get count() {
-    return this.lessons.length + 1;
+    // return this.lessons.length + 1;
+    return this.lessons.length;
   }
 
   get position(){

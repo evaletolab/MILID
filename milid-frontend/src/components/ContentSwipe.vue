@@ -70,7 +70,9 @@ export default class ContentSwipe extends Vue {
 
   mounted() {
     // use prop to initiate the currentIndex;
-    // this.currentIndex = this.initial;
+    this.currentIndex = this.initial;
+
+    console.log(this.currentIndex, this.renderedItems);
 
     // Set up Hammer element & event listeners to respond to swiping gestures
     const touchContainer = document.getElementById("touch-container");
@@ -101,6 +103,13 @@ export default class ContentSwipe extends Vue {
     this.prefersReducedMotion = window.matchMedia(
       "(prefers-reduced-motion: reduce)"
     ).matches;
+
+    this.firstPaint();
+  }
+
+  firstPaint(){
+    this.upcomingIndex = this.currentIndex;
+    this.updateCurrentItem();
   }
 
   handleTouchEvents(e) {
@@ -331,6 +340,13 @@ export default class ContentSwipe extends Vue {
 </template>
 
 <style lang="scss" scoped>
+
+.notransition {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
 
 #touch-container {
   position: relative;
