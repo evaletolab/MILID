@@ -239,8 +239,10 @@ export default class Lesson extends Vue {
 
   get renderLessons() {
     if(!this.renderLessons$.length) {
-      const index =  Number.parseInt(this.$route.params.lesson_id || "0");
+      const lid = Number.parseInt(this.$route.params.lesson_id || "0");
       const lessons = this.module.lessons;
+      // FIXME, findIndex can return -1 !
+      const index =  lessons.findIndex(l => l.id == lid);
       const lastIndex = lessons.length - 1;
       const prevIndex = index === 0 ? lastIndex : index - 1;
       const nextIndex = index === lastIndex ? 0 : index + 1;
