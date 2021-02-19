@@ -151,12 +151,21 @@
     </g>
   </svg>
   <!--- podcast-play -->
-  <svg v-else-if="name === 'podcast-play'" viewBox="0 0 89.45 100" preserveAspectRatio="none" >
+  <svg v-else-if="name === 'podcast-play'" @click="$emit('wasClicked')" viewBox="0 0 89.45 100" preserveAspectRatio="none" >
     <path style="fill:#808183;" d="M0,50.09v-38.6C0,2.79,9.42-2.65,16.95,1.7L50.38,21L83.8,40.3c7.53,4.35,7.53,15.22,0,19.57l-33.43,19.3
 	l-33.43,19.3C9.42,102.82,0,97.38,0,88.68V50.09z"/>
   </svg>
+  <!--- podcast-pause -->
+  <svg v-else-if="name === 'podcast-pause'" @click="$emit('wasClicked')" viewBox="0 0 82.21 100" preserveAspectRatio="none" >
+    <g>
+      <path style="fill:#808183;" d="M14.22,0C6.37,0,0,6.37,0,14.22v71.55C0,93.63,6.37,100,14.22,100s14.22-6.37,14.22-14.22V14.22
+        C28.45,6.37,22.08,0,14.22,0z"/>
+      <path style="fill:#808183;" d="M67.98,0c-7.86,0-14.22,6.37-14.22,14.22v71.55c0,7.86,6.37,14.22,14.22,14.22s14.22-6.37,14.22-14.22V14.22
+        C82.21,6.37,75.84,0,67.98,0z"/>
+    </g>
+  </svg>
   <!--- podcast-forward -->
-  <svg v-else-if="name === 'podcast-forward'" viewBox="0 0 106.69 100" preserveAspectRatio="none" >
+  <svg v-else-if="name === 'podcast-forward'" @click="$emit('wasClicked')" viewBox="0 0 106.69 100" preserveAspectRatio="none" >
     <g>
       <path :style="{ fill: colorPrimary }" d="M41.09,63.16V44.6h-5.53v-2.39c3.48-0.1,5.22-0.46,6.53-3.12h2.41v24.07H41.09z"/>
       <path :style="{ fill: colorPrimary }" d="M49.36,51.04c0-7.44,3.05-12.38,9.51-12.38c6.5,0,9.54,4.95,9.54,12.38c0,7.4-3.05,12.55-9.54,12.55
@@ -170,7 +179,7 @@
       l2.14-10.99c0.45-2.31-1.77-4.24-3.99-3.47l-2.62,0.9C98.3,31.87,96.44,31.03,95.69,29.38z"/>
   </svg>
   <!--- podcast-rewind -->
-  <svg v-else-if="name === 'podcast-rewind'" viewBox="0 0 106.69 100" preserveAspectRatio="none" >
+  <svg v-else-if="name === 'podcast-rewind'" @click="$emit('wasClicked')" viewBox="0 0 106.69 100" preserveAspectRatio="none" >
     <g>
       <path :style="{ fill: colorPrimary }" d="M44.64,63.16V44.6h-5.53v-2.39c3.48-0.1,5.22-0.46,6.53-3.12h2.41v24.07H44.64z"/>
       <path :style="{ fill: colorPrimary }" d="M52.91,51.04c0-7.44,3.05-12.38,9.51-12.38c6.5,0,9.54,4.95,9.54,12.38c0,7.4-3.05,12.55-9.54,12.55

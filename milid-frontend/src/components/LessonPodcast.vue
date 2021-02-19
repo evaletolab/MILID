@@ -1,22 +1,19 @@
 <template>
     <div class="col">
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
         <h1>{{title}}</h1>
-        <lottie-animation class="lottie-player" :path="lottiePath" :autoPlay="false" @AnimControl="setAnimController" />
+        <div class="lottie-container">
+           <lottie-animation class="lottie-player" :path="lottiePath" :autoPlay="false" @AnimControl="setAnimController" />
+        </div>
 
         <audio ref="audioPlayer">
             <source :src="mediaUrl" preload='metadata' type='audio/mpeg; codecs="mp3"'>
         </audio>
         <div class="control">
             <div class="control-icons">
-                <MILIDIcons name="podcast-rewind" :theme="theme" />
-                <MILIDIcons name="podcast-play" :theme="theme" />
-                <MILIDIcons name="podcast-forward" :theme="theme" />
+                <MILIDIcons name="podcast-rewind" :theme="theme" @wasClicked="seekBackwards" />
+                <MILIDIcons v-if="isPlaying" name="podcast-pause" :theme="theme" @wasClicked="pause"/>
+                <MILIDIcons v-else name="podcast-play" :theme="theme" @wasClicked="play" />
+                <MILIDIcons name="podcast-forward" :theme="theme" @wasClicked="seekForwards"  />
             </div>
         </div>
     </div>
@@ -37,10 +34,20 @@
       font-size: 15px;
   }
 
+  .lottie-container{
+      display: flex;
+      justify-content: center;
+      width:170%;
+  }
+  .lottie-player{
+      position:relative;
+      left: -20%;
+  }
+  
+  
   .control{
       display: flex;
       justify-content: center;
-
   }
 
   .control-icons{
@@ -74,8 +81,10 @@ export default class LessonPodcast extends Vue {
     @Prop() readonly moduleId!:string;
     @Prop() readonly lessonId!:string;
 
-    lottieController = null;
+    lottieController:any = null;
     lottieOptions:any = null;
+
+    isPlaying = false;
 
     get lesson(){
         return $module.getLessonForModuleAndLessonId(this.moduleId, this.lessonId);
@@ -105,10 +114,55 @@ export default class LessonPodcast extends Vue {
     async beforeMount(){
     }
 
+    get audioPlayer(){
+        return this.$refs.audioPlayer as HTMLAudioElement;
+    }
+
     mounted(){
+        this.audioPlayer.addEventListener('ended', this.onTrackEnded);
+        // player.addEventListener('canplaythrough', onCanPlayThrough);
     }
 
     beforeDestroy(){
+        this.audioPlayer.removeEventListener('ended', this.onTrackEnded);
+    }
+
+    onTrackEnded(){
+        this.isPlaying = false;
+    }
+
+    pause(){
+        console.log("clik")
+        if(!this.isPlaying) return;
+
+        this.audioPlayer.pause();
+        this.isPlaying = false;
+        
+        if(this.lottieController){
+            this.lottieController.pause();
+        }
+    }
+
+    play(){
+        console.log("clik")
+        if(this.isPlaying) return;
+
+        this.audioPlayer.play();
+        this.isPlaying = true;
+        if(this.lottieController){
+            this.lottieController.play();
+        }
+    }
+
+    seekForwards(){
+        console.log(this.audioPlayer.currentTime, this.audioPlayer.duration);
+        this.audioPlayer.currentTime = Math.min(this.audioPlayer.currentTime + 10, this.audioPlayer.duration);
+    }
+
+    seekBackwards(){
+        console.log(this.audioPlayer.currentTime, this.audioPlayer.duration);
+        this.audioPlayer.currentTime = Math.max(this.audioPlayer.currentTime - 10, this.audioPlayer.duration);
+
     }
 
 }
