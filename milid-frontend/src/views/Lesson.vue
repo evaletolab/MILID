@@ -232,7 +232,7 @@ export default class Lesson extends Vue {
   }
 
   get module() {
-    return $module.store.modules.find((m: any)=>m.id === this.$route.params.module_id);    
+    return $module.getModuleWithId(this.$route.params.module_id);    
   }
 
   get lessons() {

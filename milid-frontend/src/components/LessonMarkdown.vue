@@ -89,9 +89,13 @@ export default class LessonMarkdown extends Vue {
     this.cleanupDefinitions();
   }
 
+  get module() {
+    return $module.getModuleWithId(this.moduleId);    
+  }
+
   get cssVars(){
       return {
-        '--lesson-color': $config.store.config.themes[this.moduleId].primary,
+        '--lesson-color': $config.store.config.themes[this.module.theme].primary,
       };
   }
 
