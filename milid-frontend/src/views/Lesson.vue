@@ -213,11 +213,12 @@ export default class Lesson extends Vue {
   }
 
   beforeDestroy () {
-    //this._observer.disconnect();
+    document.body.style.removeProperty("overflow-y");
   }
 
   mounted() {    
     window.scroll(0,0);
+    document.body.style.setProperty("overflow-y", "hidden");
   }
 
   //
