@@ -97,7 +97,6 @@ export default class LessonMarkdown extends Vue {
 
   definitionClickHandler(e: any){
     const definitionId = e.target.dataset.definitionId;
-    console.log("id", definitionId);
     this.height = getOffset(e.target).top;
     this.definitionPopupIsOpen = true;
     this.definition = this.definitions.find(def => def.id === definitionId).definition;
