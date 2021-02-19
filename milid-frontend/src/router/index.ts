@@ -76,7 +76,7 @@ const router = new VueRouter({
     console.log("--DBG: route position",savedPosition);
     return savedPosition || {
       x:0,
-      y:0
+      y:undefined
     };
   },
 

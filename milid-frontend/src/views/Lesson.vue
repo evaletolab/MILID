@@ -252,7 +252,7 @@ export default class Lesson extends Vue {
 
   renderChange(renderLessons) {
     this.renderLessons$ = [...renderLessons];
-    this.$router.push({ path: `/module/${this.module.id}/lesson/${renderLessons[1].id}`}).catch(()=> {
+    this.$router.replace({ path: `/module/${this.module.id}/lesson/${renderLessons[1].id}`}).catch(()=> {
       //
     });
   }
@@ -280,7 +280,8 @@ export default class Lesson extends Vue {
 
 
   onBack() {
-    this.$router.push({ path: `/home`});
+    this.$router.go(-1);
+    //this.$router.push({ path: `/module`});
   }
 
 }
