@@ -55,6 +55,9 @@
       <!-- <li><router-link :to="'/module/' + mod.id + '/lesson/0'">{{ mod.title }}</router-link></li> -->
     </div>
 
+    <!-- FULLSCREEN MODAL -->
+    <router-view name="l2"/>
+
   </div>
 </template>
 
@@ -79,7 +82,7 @@ export default class Home extends Vue {
 
 
   get modules() {
-    console.log("modules", $module.modules);
+    console.log("--DBG: modules", $module.modules);
     return $module.modules;    
   }
 
@@ -88,12 +91,10 @@ export default class Home extends Vue {
   }
 
   getType(lesson) {
-    //console.log('----',lesson.type, this.config.icons[lesson.type])
     return this.config.icons[lesson.type];
   }
 
   themeTertiary(theme) {
-    console.log("config", this.config.themes, theme);
     return this.config.themes[theme].tertiary;
   }
 

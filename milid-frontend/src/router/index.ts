@@ -23,7 +23,17 @@ const routes: Array<RouteConfig> = [
   {
     path: '/home',
     name: 'Home',
+    redirect:'/module'
+  },
+  {
+    path: '/module',
+    name: 'Modules',
     component: Home,
+    children:[{
+      path: ':module_id/lesson/:lesson_id',
+      name: 'Lesson',
+      components: { l2 : Lesson}  
+    }]
   },
   {
     path: '/about',
@@ -36,7 +46,7 @@ const routes: Array<RouteConfig> = [
     component: Test
   },
   {
-    path: '/module/:module_id/lesson/:lesson_id',
+    path: '/module-old/:module_id/lesson/:lesson_id',
     name: 'Lesson',
     components: { l2 : Lesson}
   },
@@ -61,7 +71,15 @@ const routes: Array<RouteConfig> = [
 const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
-  routes
+  routes,
+  scrollBehavior (to, from, savedPosition: any) {
+    console.log("--DBG: route position",savedPosition);
+    return savedPosition || {
+      x:0,
+      y:0
+    };
+  },
+
 })
 
 export default router

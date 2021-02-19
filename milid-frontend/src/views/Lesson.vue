@@ -1,5 +1,5 @@
 <template >
-  <div v-if="module" :class="'theme-'+ module.theme" class="module">
+  <div v-if="module" :class="'theme-'+ module.theme" class="modal module">
     <!-- DEFAULT TOOLBAR -->
     <nav class="toolbar primary">
       <div class="toolbar-row">
@@ -51,7 +51,7 @@
 
     <ContentSwipe :initial="$route.params.lesson_id - 1" :lessons="lessons" @changeCard="renderChange">
       <section class="lesson rendered-item"
-          v-for="(lesson, index) in renderLessons" :key="lesson.id" :id="lesson.id"          
+          v-for="(lesson, index) in renderLessons" :key="index" :id="index"          
           v-bind:index="index">
         <h3 class="title">{{lesson.title}}</h3>
         <div class="item type ">
@@ -71,12 +71,27 @@
 </template>
 
 <style lang="scss" scoped>
+  .modal.module{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: white;
+    margin: 0;
+    z-index: 2;
+    height: 100vh;
+    width: 100vw;    
+    padding-top:0;
+  }
 
   .toolbar {
     border-radius: 0 0 18px 18px;
     flex-flow: row wrap;
     position: relative;
     z-index: 2;    
+    position: fixed;
+    width: 100vw;
+
     .toolbar-title{
       text-align: center;
       font-size: 14px;
@@ -206,7 +221,6 @@ export default class Lesson extends Vue {
   }
 
   get position(){
-    console.log("pos", this.$route.params.lesson_id);
     return Number.parseInt(this.$route.params.lesson_id || "0");
   }
 
