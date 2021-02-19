@@ -357,6 +357,7 @@ export default class ContentSwipe extends Vue {
   min-width: 100%;
   height: 100%;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 #rendered-items-flexbox {

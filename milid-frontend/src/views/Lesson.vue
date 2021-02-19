@@ -82,7 +82,7 @@
     z-index: 2;
     height: 100vh;
     width: 100vw;    
-    padding-top:0;
+    padding-top:0;    
   }
 
   .toolbar {
@@ -142,6 +142,8 @@
   }
 
   section.lesson {
+    overflow-x: hidden;
+    overflow-y: auto;
     .title {
       text-align: left;
       color: var(--theme-1-primary);
@@ -257,6 +259,8 @@ export default class Lesson extends Vue {
     this.renderLessons$ = [...renderLessons];
     this.$router.replace({ path: `/module/${this.module.id}/lesson/${renderLessons[1].id}`}).catch(()=> {
       //
+    }).then(()=>{
+      this.$el.scrollTop = 0;
     });
   }
 
