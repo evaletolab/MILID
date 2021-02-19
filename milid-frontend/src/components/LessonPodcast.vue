@@ -1,13 +1,19 @@
 <template>
-    <div class="col">
-        <h1>{{title}}</h1>
+    <div class="col" :class="'theme-'+theme">
+        <h1 class="primary-on-text">{{title}}</h1>
+        
+        <audio ref="audioPlayer">
+            <source :src="mediaUrl" preload='metadata' type='audio/mpeg; codecs="mp3"'>
+        </audio>
+        
         <div class="lottie-container">
            <lottie-animation class="lottie-player" :path="lottiePath" :autoPlay="false" @AnimControl="setAnimController" />
         </div>
 
-        <audio ref="audioPlayer">
-            <source :src="mediaUrl" preload='metadata' type='audio/mpeg; codecs="mp3"'>
-        </audio>
+        <div class="duration-container">
+            <span class="primary-on-text" >{{elapsed}}/{{duration}}</span>
+        </div>
+
         <div class="control">
             <div class="control-icons">
                 <MILIDIcons name="podcast-rewind" :theme="theme" @wasClicked="seekBackwards" />
@@ -39,11 +45,17 @@
       justify-content: center;
       width:170%;
   }
+
   .lottie-player{
       position:relative;
       left: -20%;
   }
-  
+
+  .duration-container{
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+  }
   
   .control{
       display: flex;
@@ -56,8 +68,6 @@
       height: 35px;
       justify-content: space-between;
   }
-
-
 </style>
 
 
@@ -83,6 +93,9 @@ export default class LessonPodcast extends Vue {
 
     lottieController:any = null;
     lottieOptions:any = null;
+
+    elapsed = "";
+    duration:any = "";
 
     isPlaying = false;
 
@@ -120,19 +133,31 @@ export default class LessonPodcast extends Vue {
 
     mounted(){
         this.audioPlayer.addEventListener('ended', this.onTrackEnded);
-        // player.addEventListener('canplaythrough', onCanPlayThrough);
+        this.audioPlayer.addEventListener('timeupdate', this.onTimeUpdate);
+        this.audioPlayer.addEventListener('loadedmetadata', this.onMetaLoaded);
     }
 
     beforeDestroy(){
         this.audioPlayer.removeEventListener('ended', this.onTrackEnded);
+        this.audioPlayer.removeEventListener('timeupdate', this.onTimeUpdate);
+        this.audioPlayer.removeEventListener('loadedmetadata', this.onMetaLoaded);
+    }
+
+    onMetaLoaded(){
+        this.duration = Math.floor(this.audioPlayer.duration);
+        this.elapsed = "0";
     }
 
     onTrackEnded(){
         this.isPlaying = false;
+        this.lottieController.pause();
+    }
+
+    onTimeUpdate(){
+        this.elapsed = `${Math.floor(this.audioPlayer.currentTime)}`;
     }
 
     pause(){
-        console.log("clik")
         if(!this.isPlaying) return;
 
         this.audioPlayer.pause();
@@ -144,7 +169,6 @@ export default class LessonPodcast extends Vue {
     }
 
     play(){
-        console.log("clik")
         if(this.isPlaying) return;
 
         this.audioPlayer.play();
@@ -155,15 +179,11 @@ export default class LessonPodcast extends Vue {
     }
 
     seekForwards(){
-        console.log(this.audioPlayer.currentTime, this.audioPlayer.duration);
         this.audioPlayer.currentTime = Math.min(this.audioPlayer.currentTime + 10, this.audioPlayer.duration);
     }
 
     seekBackwards(){
-        console.log(this.audioPlayer.currentTime, this.audioPlayer.duration);
-        this.audioPlayer.currentTime = Math.max(this.audioPlayer.currentTime - 10, this.audioPlayer.duration);
-
+        this.audioPlayer.currentTime = Math.max(this.audioPlayer.currentTime - 10, 0);
     }
-
 }
 </script>
