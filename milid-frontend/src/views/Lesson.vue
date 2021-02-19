@@ -10,7 +10,8 @@
         </div>
 
         <div class="toolbar-title title-left">
-          <span>M{{module.id}}.{{position}}<br/></span>
+          <span>M{{module.id}}.{{position}}<br/>
+          {{module.title}}</span>
         </div>        
 
         <div class="md-toolbar-section-end">
