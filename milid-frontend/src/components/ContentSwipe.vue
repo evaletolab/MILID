@@ -35,26 +35,30 @@ export default class ContentSwipe extends Vue {
     }
     return arr.map((lesson, index) => ({
       id:(lesson.id+''+index),
-      key: `${lesson.id}-${index}`
+      key: `${lesson.id}-${index}`,
+      value: lesson
     }));
   }
 
   // Return array of objects for the 3 items to be rendered in the DOM at the moment
   // Includes the previous, current, and next slides
   get renderedItems() {
-    const { currentIndex: i, infoItems } = this;
+    const { currentIndex: currentIndex, infoItems } = this;
+    const i = currentIndex;
 
+    // console.log('---- DBG: infoItems',this.infoItems);
     if (infoItems.length === 1) {
-      return [infoItems[0]];
+      return [this.lessons[0],this.lessons[0],this.lessons[0]];
     }
 
     const lastIndex = this.lessons.length - 1;
     const prevIndex = i === 0 ? lastIndex : i - 1;
     const nextIndex = i === lastIndex ? 0 : i + 1;
 
+    // console.log('---- DBG: currentIndex',this.currentIndex);
     // console.log('---- DBG: index',prevIndex,i,nextIndex, this.infoItems);
     // console.log('---- DBG: lessons',prevIndex,i,nextIndex, this.lessons);
-    return [this.lessons[prevIndex], this.lessons[i], this.lessons[nextIndex]];
+    return [this.infoItems[prevIndex].value, this.infoItems[i].value, this.infoItems[nextIndex].value];
   }
 
   get isNextAvailable() {
@@ -261,7 +265,7 @@ export default class ContentSwipe extends Vue {
   updateCurrentItem() {
     this.currentIndex = this.upcomingIndex;
     this.$emit('changeCard', this.renderedItems);
-    //console.log('---DBG: changeCard',this.renderedItems)
+    // console.log('---DBG: changeCard',this.renderedItems)
     this.resetTranslate();
   }
 
