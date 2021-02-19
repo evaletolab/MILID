@@ -54,12 +54,14 @@
       <section class="lesson rendered-item"
           v-for="(lesson, index) in renderLessons" :key="index" :id="index"          
           v-bind:index="index">
-        <h3 class="title">{{lesson.title}}</h3>
-        <div class="item type ">
-          <MILIDIcons name="podcast" :theme="module.theme"/>
+        <LessonMarkdown v-if="lesson.type == 'MARKDOWN'" :moduleId="module.id" :lessonId="lesson.id" />
+        <LessonVideo v-else-if="lesson.type == 'VIDEO'" :moduleId="module.id" :lessonId="lesson.id" />
+        <div v-else>
+          <h3 class="title">{{lesson.title}}</h3>
+          <div class="item type ">
+            <MILIDIcons name="podcast" :theme="module.theme"/>
+          </div>
         </div>
-        <LessonMarkdown v-if="lesson.type == 'MARKDOWN'" :moduleId="1" :lessonId="lesson.id" />
-        <div class="item content primary-on-text">1:40</div>
       </section>
 
     </ContentSwipe>
@@ -144,6 +146,7 @@
   section.lesson {
     overflow-x: hidden;
     overflow-y: auto;
+    margin-top: 100px;
     .title {
       text-align: left;
       color: var(--theme-1-primary);
@@ -186,6 +189,7 @@ import MdButton  from 'vue-material';
 import MdSpeedDial  from 'vue-material';
 
 import LessonMarkdown from '../components/LessonMarkdown.vue';
+import LessonVideo from '../components/LessonVideo.vue';
 
 
 
@@ -194,7 +198,7 @@ Vue.use(MdButton);
 Vue.use(MdSpeedDial);
 
 @Component({
-  components: { ContentSwipe, MILIDIcons, ModuleProgress, LessonMarkdown }
+  components: { ContentSwipe, MILIDIcons, ModuleProgress, LessonMarkdown, LessonVideo }
 })
 export default class Lesson extends Vue {
   //private _observer: any;
