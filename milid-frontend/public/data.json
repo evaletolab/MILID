@@ -838,6 +838,25 @@
       "type": [
         "image/svg+xml"
       ]
+    },
+    {
+      "airtable_id": "reccRgn5bgR8M4NfU",
+      "id": "M02S07",
+      "type": [
+        "video/mp4"
+      ],
+      "media": [
+        {
+          "id": "attiV3SKUrRBHsZmw",
+          "url": "https://dl.airtable.com/.attachments/98e9b23abaafd9e0dbd2bb6ec0293ba0/cbe6e5cc/M02S07.mp4",
+          "filename": "M02S07.mp4",
+          "size": 22329854,
+          "type": "video/mp4"
+        }
+      ],
+      "lessons 2": [
+        "recDaIq56bnxM2Jzi"
+      ]
     }
   ],
   "modules": [
@@ -932,6 +951,16 @@
           "cover": "https://dl.airtable.com/.attachments/63abf6c4d803f5799816699c8c895fac/f283a755/M1_3_cover.svg",
           "sources": "<p>BOULOGNE, Arlette, 2004. <em>Vocabulaire de la documentation</em>. Paris : Association des professionnels de l&#39;information et de la documentation (ABDS). Sciences et techniques de l’information. ISBN 9782843650710 </p>\n<p>ENSSIB, 2017. <em>Base de données / banque de données.</em> Enssib.fr [en ligne]. 17 mars 2017. [Consulté le 3 novembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.enssib.fr/services-et-ressources/questions-reponses/base-de-donnees-banque-de-donnees#:~:text=En%20simplifiant%2C%20on%20peut%20dire,%C3%A0%20un%20domaine%20de%20connaissance\">lien</a></p>\n<p>REPUBLIQUE FRANCAISE, 1982. _Banque de données. Arrêté du 22 décembre 1981 enrichissement du vocabulaire de l’informatique Journal Officiel _[en ligne]. 17 janvier 1982. P. 625. [Consulté le 11 novembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000842020\">lien</a></p>\n<p>SAFON, M.-O., IRDES. Centre de documentation, 2020. _Sources d’information et méthodologie de recherche documentaire en santé. _Irdes.fr [en ligne]. Septembre 2020. [Consulté le 3 novembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.irdes.fr/documentation/documents/sources-d-information-et-methodologie-de-recherche-documentaire.pdf\">lien</a></p>\n",
           "html": "<h1 id=\"banques-et-bases-de-données\">Banques et bases de données</h1>\n<p>Une banque de données est un «ensemble de données relatif à un domaine défini de la connaissance et organisé pour être offert aux utilisateurs» (République française, 1982)  </p>\n<p><img src=\"https://dl.airtable.com/.attachments/c10e74bab41253009f5c7fd8532a028d/87a6be9c/M01_illustrations-15.svg\" alt=\"illustration\"></p>\n<p>Si tu cherches des informations de qualité et qui soient vérifiées, des types de documents spécifiques (articles scientifiques, articles de presse, …) ou des informations propres à un domaine défini de la connaissance (chimie, médecine, économie, …), pense à utiliser les banques de données.   </p>\n<p><img src=\"https://dl.airtable.com/.attachments/e8159de5c9f8296498413e249b054ec8/b1f17a63/M01_illustrations-16.svg\" alt=\"illustration\"></p>\n<p>« La base de données décrit la structure \u0003informatique, le contenant, tandis que la banque de données représente le contenu de la base, c&#39;est à dire un ensemble de données relatif à un domaine de connaissance spécifique. » ENSSIB   </p>\n<p>On distingue plusieurs types de banques de données:   </p>\n<ul>\n<li><p>Les banques bibliographiques qui contiennent <span class=\"_definition\" data-definition-id=\"uniquement\">uniquement</span> des [références bibliographiques](références bibliographiques) de documents.   </p>\n</li>\n<li><p>Les banques textuelles qui rassemblent des textes (intégraux ou partiels).  </p>\n</li>\n<li><p>Les banques de connaissance (factuelle ou numérique) fournissent des renseignements immédiatement exploitables [par les utilisateurs](par les utilisateurs).  </p>\n</li>\n</ul>\n<p><span class=\"_definition\" data-definition-id=\"banques_donnees\">Les banques de données</span> sont souvent payantes et onéreuses mais la plupart des hautes écoles payent des abonnements pour permettre à leurs étudiant·e·s <span class=\"_definition\" data-definition-id=\"accés\">d’avoir accès à certaines d’entre elles en lien avec les sujets qu’elles enseignent</span>.   </p>\n<p><img src=\"https://dl.airtable.com/.attachments/be5fe10811d61afb55a49ea1ac294e03/dbd7ff3d/M01_illustrations-17.svg\" alt=\"illustration\"></p>\n<p>Pense aussi à toujours consulter la rubrique d’aide de ces banques de données car la recherche et son langage d’interrogation changent très fréquemment d’une banque à l’autre.  </p>\n"
+        },
+        {
+          "airtable_id": "recDaIq56bnxM2Jzi",
+          "title": "module 2 leçon 7",
+          "id": "7",
+          "type": "VIDEO",
+          "media": "https://dl.airtable.com/.attachments/98e9b23abaafd9e0dbd2bb6ec0293ba0/cbe6e5cc/M02S07.mp4",
+          "modules": [
+            "rectQXEUZsDam7c8j"
+          ]
         }
       ],
       "id": "2",
@@ -1039,33 +1068,43 @@
       "type": "PODCAST",
       "title": "Qu’est-ce que la recherche d’information ?",
       "sources": "<p>BOUGHANEM, Mohand, 2014. <em>Introduction à la recherche d’information.</em> Institut de recherche en informatique de Toulouse. 2014. [Consulté le 3 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.irit.fr/~Mohand.Boughanem/slides/RI/chap1-Intro_RI_2014.pdf\">lien </a></p>\n<p>CHIARAMELLA Yves et MULHEM Philippe, 2007. <em>La recherche d&#39;information : De la documentation automatique à la recherche d&#39;information en contexte</em>. Document numérique [en ligne]. 2007. Vol.10, pp.11-38. [Consulté le 2 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.cairn.info/revue-document-numerique-2007-1-page-11.htm\">lien</a></p>\n<p>Recherche d’information. Wikipédia : l’encyclopédie libre [en ligne]. Dernière modification de la page le 13 avril 2020. [Consulté le 2 octobre 2020]. \nDisponible à l’adresse :<a target='_blank'  href=\"https://fr.wikipedia.org/w/index.php?title=Recherche_d%27information&amp;oldid=169487900\"> lien</a></p>\n<p>SEARCH ENGINE MARKETING, 2019. <em>Recherche d’information : la grande recherche vers la connaissance</em>. IONOS Digital Guide [en ligne]. 14 janvier 2019. [Consulté le 3 octobre 2020]. Disponible à l’adresse :<a target='_blank'  href=\"https://www.ionos.fr/digitalguide/web-marketing/search-engine-marketing/recherche-dinformations/\"> lien</a>             </p>\n<h3 id=\"sources-définitions-\">Sources définitions :</h3>\n<h3 id=\"corpus\">Corpus</h3>\n<p>Corpus. Wikipédia : l’encyclopédie libre [en ligne]. Dernière modification de la page le 24 novembre 2020 à 09:58. [Consulté le 8 décembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://fr.wikipedia.org/wiki/Corpus\">lien </a> </p>\n<h3 id=\"catalogue\">Catalogue</h3>\n<p>SERVICE DES BIBLIOTHEQUES DE L&#39;UQAM, 2006. Catalogues de bibliothèques. Infosphère [en ligne]. Mis à jour le 29 avril 2009. [Consulté le 8 décembre 2020]. Disponible à l’adresse :  <a target='_blank'  href=\"http://www.fucam.ac.be/infosphere/sciences/module3/outils_catal.html#:~:text=Catalogues%20de%20biblioth%C3%A8ques&amp;text=Un%20catalogue%20de%20biblioth%C3%A8que%20est,%2C%20th%C3%A8ses%2C%20rapports%2C%20etc\">lien</a></p>\n<h3 id=\"base-de-données\">Base de données</h3>\n<p>Base de données. Wikipédia : l’encyclopédie libre [en ligne]. Dernière modification de la page le 30 novembre 2020 à 18:01. [Consulté le 8 décembre 2020]. Disponible à l’adresse :  <a target='_blank'  href=\"https://fr.wikipedia.org/wiki/Base_de_donn%C3%A9es\">lien</a></p>\n"
+    },
+    {
+      "airtable_id": "recDaIq56bnxM2Jzi",
+      "title": "module 2 leçon 7",
+      "id": "7",
+      "type": "VIDEO",
+      "media": "https://dl.airtable.com/.attachments/98e9b23abaafd9e0dbd2bb6ec0293ba0/cbe6e5cc/M02S07.mp4",
+      "modules": [
+        "rectQXEUZsDam7c8j"
+      ]
     }
   ],
   "definitions": [
     {
       "airtable_id": "recsb84DjLJqUP650",
-      "id": "banques_donnees",
-      "definition": "Exemple : Si je recherche des publications scientifiques concernant la vie après un AVC, j’utilise plusieurs banques de données (médicales, sociales, en pycho, etc.)"
+      "definition": "Exemple : Si je recherche des publications scientifiques concernant la vie après un AVC, j’utilise plusieurs banques de données (médicales, sociales, en pycho, etc.)",
+      "id": "banques_donnees"
     },
     {
       "airtable_id": "recunqInuIP8IKdwE",
-      "id": "uniquement",
-      "definition": "Information complémentaire : Bonne nouvelle ! Maintenant, dans la plupart des BDD bibliographiques ; on accède au texte intégral via les résolveurs de liens."
+      "definition": "Information complémentaire : Bonne nouvelle ! Maintenant, dans la plupart des BDD bibliographiques ; on accède au texte intégral via les résolveurs de liens.",
+      "id": "uniquement"
     },
     {
       "airtable_id": "recoYXH1rLMVk3qnw",
-      "id": "références bibliographiques",
-      "definition": "Lexique : Éléments qui décrivent ces documents : auteur(s), titre, éditeur, date de publication, mots-clés, parfois un résumé."
+      "definition": "Lexique : Éléments qui décrivent ces documents : auteur(s), titre, éditeur, date de publication, mots-clés, parfois un résumé.",
+      "id": "références bibliographiques"
     },
     {
       "airtable_id": "rec98NVGFrY9fnppG",
-      "id": "par les utilisateurs",
-      "definition": "Exemple : Les différentes étapes nécessaires à la fabrication du papier."
+      "definition": "Exemple : Les différentes étapes nécessaires à la fabrication du papier.",
+      "id": "par les utilisateurs"
     },
     {
       "airtable_id": "recbirojCsYYN1a2N",
-      "id": "accés",
-      "definition": "Astuce : Va voir sur le site de ton institution, généralement sur les pages de la bibliothèque. Tu trouveras probablement un répertoire des banques de données auxquelles tu as accès. Si ce n’est pas le cas, demande à ton ou ta bibliothécaire ! "
+      "definition": "Astuce : Va voir sur le site de ton institution, généralement sur les pages de la bibliothèque. Tu trouveras probablement un répertoire des banques de données auxquelles tu as accès. Si ce n’est pas le cas, demande à ton ou ta bibliothécaire ! ",
+      "id": "accés"
     }
   ]
 }

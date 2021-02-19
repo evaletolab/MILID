@@ -56,6 +56,7 @@
           v-bind:index="index">
         <LessonMarkdown v-if="lesson.type == 'MARKDOWN'" :moduleId="module.id" :lessonId="lesson.id" />
         <LessonVideo v-else-if="lesson.type == 'VIDEO'" :moduleId="module.id" :lessonId="lesson.id" />
+        <LessonPodcast v-else-if="lesson.type == 'PODCAST'" :moduleId="module.id" :lessonId="lesson.id" />
         <div v-else>
           <h3 class="title">{{lesson.title}}</h3>
           <div class="item type ">
@@ -190,6 +191,7 @@ import MdSpeedDial  from 'vue-material';
 
 import LessonMarkdown from '../components/LessonMarkdown.vue';
 import LessonVideo from '../components/LessonVideo.vue';
+import LessonPodcast from '../components/LessonPodcast.vue';
 
 
 
@@ -198,7 +200,7 @@ Vue.use(MdButton);
 Vue.use(MdSpeedDial);
 
 @Component({
-  components: { ContentSwipe, MILIDIcons, ModuleProgress, LessonMarkdown, LessonVideo }
+  components: { ContentSwipe, MILIDIcons, ModuleProgress, LessonMarkdown, LessonVideo, LessonPodcast }
 })
 export default class Lesson extends Vue {
   //private _observer: any;

@@ -82,7 +82,7 @@ export default class LessonMarkdown extends Vue {
   }
 
   mounted(){
-      this.setupDefinitions();
+    this.setupDefinitions();
   }
 
   beforeDestroy(){
