@@ -33,9 +33,9 @@ export default class ContentSwipe extends Vue {
     if (arr.length === 2) {
       arr = [...arr, ...arr];
     }
-    return arr.map((id, index) => ({
-      id,
-      key: `${id}-${index}`
+    return arr.map((lesson, index) => ({
+      id:(lesson.id+''+index),
+      key: `${lesson.id}-${index}`
     }));
   }
 
@@ -48,10 +48,12 @@ export default class ContentSwipe extends Vue {
       return [infoItems[0]];
     }
 
-    const lastIndex = infoItems.length - 1;
+    const lastIndex = this.lessons.length - 1;
     const prevIndex = i === 0 ? lastIndex : i - 1;
     const nextIndex = i === lastIndex ? 0 : i + 1;
 
+    // console.log('---- DBG: index',prevIndex,i,nextIndex, this.infoItems);
+    // console.log('---- DBG: lessons',prevIndex,i,nextIndex, this.lessons);
     return [this.lessons[prevIndex], this.lessons[i], this.lessons[nextIndex]];
   }
 
@@ -71,8 +73,6 @@ export default class ContentSwipe extends Vue {
   mounted() {
     // use prop to initiate the currentIndex;
     this.currentIndex = this.initial;
-
-    console.log(this.currentIndex, this.renderedItems);
 
     // Set up Hammer element & event listeners to respond to swiping gestures
     const touchContainer = document.getElementById("touch-container");
@@ -261,7 +261,7 @@ export default class ContentSwipe extends Vue {
   updateCurrentItem() {
     this.currentIndex = this.upcomingIndex;
     this.$emit('changeCard', this.renderedItems);
-
+    //console.log('---DBG: changeCard',this.renderedItems)
     this.resetTranslate();
   }
 
@@ -429,7 +429,7 @@ export default class ContentSwipe extends Vue {
 
 .left-edge-shape, .right-edge-shape {
   position: absolute;
-  fill: white;
+  fill: var(--md-theme-default-accent);
   opacity: 0.3;
 }
 
