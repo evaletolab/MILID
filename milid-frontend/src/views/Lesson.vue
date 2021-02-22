@@ -1,5 +1,5 @@
 <template >
-  <div v-if="module" :class="'theme-'+ module.theme" class="module">
+  <div v-if="module" :class="'theme-'+ module.theme" class="modal module">
     <!-- DEFAULT TOOLBAR -->
     <nav class="toolbar primary">
       <div class="toolbar-row">
@@ -10,7 +10,8 @@
         </div>
 
         <div class="toolbar-title title-left">
-          <span>M1.01<br/>{{module.title}}</span>
+          <span>M{{module.id}}.{{position}}<br/>
+          {{module.title}}</span>
         </div>        
 
         <div class="md-toolbar-section-end">
@@ -27,13 +28,13 @@
           :completedPips="position" 
           color="white" 
           :bkgdColor="config.themes[module.id].primary"
-          class="progress"></ModuleProgress>    
+          class="progress" />
         </div>
       </div>        
 
     </nav>
 
-    <md-speed-dial class="md-bottom-right ">
+    <!-- <md-speed-dial class="md-bottom-right ">
       <md-speed-dial-target class="primary">
         <md-icon>add</md-icon>
       </md-speed-dial-target>
@@ -47,17 +48,21 @@
           <md-icon>event</md-icon>
         </md-button>
       </md-speed-dial-content>
-    </md-speed-dial>    
+    </md-speed-dial>     -->
 
-    <ContentSwipe :initial="$route.params.lesson_id" :lessons="lessons" @changeCard="renderChange">
+    <ContentSwipe :initial="$route.params.lesson_id - 1" :lessons="lessons" @changeCard="renderChange">
       <section class="lesson rendered-item"
-          v-for="(lesson, index) in renderLessons" :key="lesson.id" :id="lesson.id"          
+          v-for="(lesson, index) in renderLessons" :key="index" :id="index"          
           v-bind:index="index">
-        <h3 class="title">{{lesson.title}}</h3>
-        <div class="item type ">
-          <MILIDIcons name="podcast" :theme="module.theme"/>
+        <LessonMarkdown v-if="lesson.type == 'MARKDOWN'" :moduleId="module.id" :lessonId="lesson.id" />
+        <LessonVideo v-else-if="lesson.type == 'VIDEO'" :moduleId="module.id" :lessonId="lesson.id" />
+        <LessonPodcast v-else-if="lesson.type == 'PODCAST'" :moduleId="module.id" :lessonId="lesson.id" />
+        <div v-else>
+          <h3 class="title">{{lesson.title}}</h3>
+          <div class="item type ">
+            <MILIDIcons name="podcast" :theme="module.theme"/>
+          </div>
         </div>
-        <div class="item content primary-on-text">1:40</div>
       </section>
 
     </ContentSwipe>
@@ -70,12 +75,27 @@
 </template>
 
 <style lang="scss" scoped>
+  .modal.module{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: white;
+    margin: 0;
+    z-index: 2;
+    height: 100vh;
+    width: 100vw;    
+    padding-top:0;    
+  }
 
   .toolbar {
     border-radius: 0 0 18px 18px;
     flex-flow: row wrap;
     position: relative;
     z-index: 2;    
+    position: fixed;
+    width: 100vw;
+
     .toolbar-title{
       text-align: center;
       font-size: 14px;
@@ -125,6 +145,10 @@
   }
 
   section.lesson {
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin-top: 100px;
+    padding-bottom: 100px;
     .title {
       text-align: left;
       color: var(--theme-1-primary);
@@ -163,15 +187,21 @@ import ContentSwipe from '../components/ContentSwipe.vue';
 import MILIDIcons from '../components/MILIDIcons.vue';
 import ModuleProgress from '../components/ModuleProgress.vue';
 
-import MdButton  from 'vue-material'
-import MdSpeedDial  from 'vue-material'
+import MdButton  from 'vue-material';
+import MdSpeedDial  from 'vue-material';
+
+import LessonMarkdown from '../components/LessonMarkdown.vue';
+import LessonVideo from '../components/LessonVideo.vue';
+import LessonPodcast from '../components/LessonPodcast.vue';
+
+
 
 
 Vue.use(MdButton);
 Vue.use(MdSpeedDial);
 
 @Component({
-  components: { ContentSwipe, MILIDIcons, ModuleProgress }
+  components: { ContentSwipe, MILIDIcons, ModuleProgress, LessonMarkdown, LessonVideo, LessonPodcast }
 })
 export default class Lesson extends Vue {
   //private _observer: any;
@@ -186,17 +216,19 @@ export default class Lesson extends Vue {
   }
 
   beforeDestroy () {
-    //this._observer.disconnect();
+    document.body.style.removeProperty("overflow-y");
   }
 
   mounted() {    
     window.scroll(0,0);
+    document.body.style.setProperty("overflow-y", "hidden");
   }
 
   //
   // computed properties
   get count() {
-    return this.lessons.length + 1;
+    // return this.lessons.length + 1;
+    return this.lessons.length;
   }
 
   get position(){
@@ -208,7 +240,7 @@ export default class Lesson extends Vue {
   }
 
   get module() {
-    return $module.store.modules.find((m: any)=>m.id === this.$route.params.module_id);    
+    return $module.getModuleWithId(this.$route.params.module_id);    
   }
 
   get lessons() {
@@ -218,8 +250,10 @@ export default class Lesson extends Vue {
 
   get renderLessons() {
     if(!this.renderLessons$.length) {
-      const index =  Number.parseInt(this.$route.params.lesson_id || "0");
+      const lid = Number.parseInt(this.$route.params.lesson_id || "0");
       const lessons = this.module.lessons;
+      // FIXME, findIndex can return -1 !
+      const index =  lessons.findIndex(l => l.id == lid);
       const lastIndex = lessons.length - 1;
       const prevIndex = index === 0 ? lastIndex : index - 1;
       const nextIndex = index === lastIndex ? 0 : index + 1;
@@ -231,8 +265,10 @@ export default class Lesson extends Vue {
 
   renderChange(renderLessons) {
     this.renderLessons$ = [...renderLessons];
-    this.$router.push({ path: `/module/${this.module.id}/lesson/${renderLessons[1].id}`}).catch(()=> {
+    this.$router.replace({ path: `/module/${this.module.id}/lesson/${renderLessons[1].id}`}).catch(()=> {
       //
+    }).then(()=>{
+      this.$el.scrollTop = 0;
     });
   }
 
@@ -259,7 +295,8 @@ export default class Lesson extends Vue {
 
 
   onBack() {
-    this.$router.push({ path: `/home`});
+    this.$router.go(-1);
+    //this.$router.push({ path: `/module`});
   }
 
 }

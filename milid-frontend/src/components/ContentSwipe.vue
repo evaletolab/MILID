@@ -33,26 +33,32 @@ export default class ContentSwipe extends Vue {
     if (arr.length === 2) {
       arr = [...arr, ...arr];
     }
-    return arr.map((id, index) => ({
-      id,
-      key: `${id}-${index}`
+    return arr.map((lesson, index) => ({
+      id:(lesson.id+''+index),
+      key: `${lesson.id}-${index}`,
+      value: lesson
     }));
   }
 
   // Return array of objects for the 3 items to be rendered in the DOM at the moment
   // Includes the previous, current, and next slides
   get renderedItems() {
-    const { currentIndex: i, infoItems } = this;
+    const { currentIndex: currentIndex, infoItems } = this;
+    const i = currentIndex;
 
+    // console.log('---- DBG: infoItems',this.infoItems);
     if (infoItems.length === 1) {
-      return [infoItems[0]];
+      return [this.lessons[0],this.lessons[0],this.lessons[0]];
     }
 
-    const lastIndex = infoItems.length - 1;
+    const lastIndex = this.lessons.length - 1;
     const prevIndex = i === 0 ? lastIndex : i - 1;
     const nextIndex = i === lastIndex ? 0 : i + 1;
 
-    return [this.lessons[prevIndex], this.lessons[i], this.lessons[nextIndex]];
+    // console.log('---- DBG: currentIndex',this.currentIndex);
+    // console.log('---- DBG: index',prevIndex,i,nextIndex, this.infoItems);
+    // console.log('---- DBG: lessons',prevIndex,i,nextIndex, this.lessons);
+    return [this.infoItems[prevIndex].value, this.infoItems[i].value, this.infoItems[nextIndex].value];
   }
 
   get isNextAvailable() {
@@ -70,7 +76,7 @@ export default class ContentSwipe extends Vue {
 
   mounted() {
     // use prop to initiate the currentIndex;
-    // this.currentIndex = this.initial;
+    this.currentIndex = this.initial;
 
     // Set up Hammer element & event listeners to respond to swiping gestures
     const touchContainer = document.getElementById("touch-container");
@@ -101,6 +107,13 @@ export default class ContentSwipe extends Vue {
     this.prefersReducedMotion = window.matchMedia(
       "(prefers-reduced-motion: reduce)"
     ).matches;
+
+    this.firstPaint();
+  }
+
+  firstPaint(){
+    this.upcomingIndex = this.currentIndex;
+    this.updateCurrentItem();
   }
 
   handleTouchEvents(e) {
@@ -252,7 +265,7 @@ export default class ContentSwipe extends Vue {
   updateCurrentItem() {
     this.currentIndex = this.upcomingIndex;
     this.$emit('changeCard', this.renderedItems);
-
+    // console.log('---DBG: changeCard',this.renderedItems)
     this.resetTranslate();
   }
 
@@ -332,11 +345,19 @@ export default class ContentSwipe extends Vue {
 
 <style lang="scss" scoped>
 
+.notransition {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+
 #touch-container {
   position: relative;
   min-width: 100%;
   height: 100%;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 #rendered-items-flexbox {
@@ -347,6 +368,7 @@ export default class ContentSwipe extends Vue {
   width: 100vw;
   box-sizing: border-box;
   touch-action: pan-y; // Disables automatic browser control of touches, except vertical scrolling
+  overflow-y: hidden;
 }
 
 // Removes all translation effects for those who prefer less animation
@@ -413,7 +435,7 @@ export default class ContentSwipe extends Vue {
 
 .left-edge-shape, .right-edge-shape {
   position: absolute;
-  fill: white;
+  fill: var(--md-theme-default-accent);
   opacity: 0.3;
 }
 

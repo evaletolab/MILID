@@ -1,4 +1,5 @@
 const mdTransformer = require('./transformers/md_transformer');
+const sourcesTransformer = require('./transformers/sources_transformer');
 
 const LessonType = require('./LessonType');
 
@@ -25,6 +26,8 @@ module.exports = function lessonTransformer(data){
         if(lesson.media){
             lesson.media = urlForAssetId(lesson.media[0]);
         }
+
+        lesson = sourcesTransformer(lesson);
 
         switch(lesson.type){
             case LessonType.MARKDOWN:
