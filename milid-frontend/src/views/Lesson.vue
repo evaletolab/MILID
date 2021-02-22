@@ -34,7 +34,7 @@
 
     </nav>
 
-    <md-speed-dial class="md-bottom-right ">
+    <!-- <md-speed-dial class="md-bottom-right ">
       <md-speed-dial-target class="primary">
         <md-icon>add</md-icon>
       </md-speed-dial-target>
@@ -48,7 +48,7 @@
           <md-icon>event</md-icon>
         </md-button>
       </md-speed-dial-content>
-    </md-speed-dial>    
+    </md-speed-dial>     -->
 
     <ContentSwipe :initial="$route.params.lesson_id - 1" :lessons="lessons" @changeCard="renderChange">
       <section class="lesson rendered-item"
