@@ -11,7 +11,7 @@
         </div>
 
         <div class="duration-container">
-            <span class="primary-on-text" >{{elapsed}}/{{duration}}</span>
+            <span class="primary-on-text" >{{elapsedStr}}/{{durationStr}}</span>
         </div>
 
         <div class="control">
@@ -111,13 +111,20 @@ export default class LessonPodcast extends Vue {
         return `lottie/podcast-theme-${this.moduleId}.json`;
     }
 
-
     get title(){
         return this.lesson.title;
     }
 
     get mediaUrl(){
         return this.lesson.media;
+    }
+
+    get elapsedStr(){
+        return this.formatTime(this.elapsed);
+    }
+
+    get durationStr(){
+        return this.formatTime(this.duration);
     }
 
     setAnimController(controller){
@@ -184,6 +191,16 @@ export default class LessonPodcast extends Vue {
 
     seekBackwards(){
         this.audioPlayer.currentTime = Math.max(this.audioPlayer.currentTime - 10, 0);
+    }
+    
+    formatTime(time){
+        const minutes = Math.floor(time / 60);
+        const seconds = time % 60;
+        
+        const minStr = minutes > 0 ? `${minutes}:` : "";
+        const secondsStr = seconds.toString().padStart(2, '0');
+
+        return `${minStr}${secondsStr}`;
     }
 }
 </script>
