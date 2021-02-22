@@ -25,7 +25,7 @@
   }
 
   .col /deep/ img{
-    width:40%;
+    width:80%;
     display:block;
     margin-left:auto;
     margin-right:auto;
@@ -83,6 +83,7 @@ export default class LessonMarkdown extends Vue {
 
   mounted(){
     this.setupDefinitions();
+    this.setupImages();
   }
 
   beforeDestroy(){
@@ -110,6 +111,17 @@ export default class LessonMarkdown extends Vue {
       const rawRoot = this.$refs['raw_root'] as HTMLElement;
       const definitionElements = rawRoot.querySelectorAll('._definition');
       definitionElements.forEach(e => e.addEventListener('click', this.definitionClickHandler));
+  }
+
+  setupImages(){
+      const rawRoot = this.$refs['raw_root'] as HTMLElement;
+      const imgElements = rawRoot.querySelectorAll('img');
+
+      imgElements.forEach((imgElement) => {
+        if(imgElement.dataset.size){
+          imgElement.style.width = imgElement.dataset.size;
+        }
+      });
   }
 
   cleanupDefinitions(){

@@ -13,11 +13,23 @@ module.exports = function mdTransformer(lesson, globalData){
         return asset.media[0].url;
     }
 
+    ////////////
+    // [40%](foo)   40% is size hint   foo is asset_id
     renderer.image = function(href, title, text){
+        // console.log(href, text, title);
         if(!href.startsWith('http://') || !href.startsWith('https://')){
             href = urlForAssetId(href)
         }
+
         const img = marked.Renderer.prototype.image.call(this, href, title, text);
+        
+        let sizeHint = "";
+        const parsedAltText = parseInt(text);
+        if(!isNaN(parsedAltText)) { 
+            sizeHint = text; 
+            return img.replace("<img", `<img data-size="${sizeHint}" `);
+        }
+
         return img;
     }
 
