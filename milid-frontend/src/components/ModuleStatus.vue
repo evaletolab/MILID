@@ -1,7 +1,7 @@
 <template>
   <div class="status " :class="'theme-'+module.theme">
     <div class="title primary-on-text">{{module.title}}</div>
-    <ModuleProgress :pipCount="4" :completedPips="1" :theme="module.theme" class="progress"></ModuleProgress>    
+    <ModuleProgress :pipCount="module.lessons.length" :completedPips="1" :theme="module.theme" class="progress"></ModuleProgress>    
   </div>
 </template>
 
@@ -16,6 +16,7 @@ import { MILID } from '../models';
 })
 export default class ModuleStatus extends Vue {
   @Prop() private module!: MILID.Module;
+
 }
 </script>
 

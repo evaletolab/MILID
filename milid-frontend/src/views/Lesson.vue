@@ -25,6 +25,7 @@
         <div class="toolbar-title tight">
           <ModuleProgress 
           :pipCount="count" 
+          :pipTotal="count"
           :completedPips="position" 
           color="white" 
           :bkgdColor="config.themes[module.id].primary"
