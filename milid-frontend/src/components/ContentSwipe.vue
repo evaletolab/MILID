@@ -368,6 +368,7 @@ export default class ContentSwipe extends Vue {
   width: 100vw;
   box-sizing: border-box;
   touch-action: pan-y; // Disables automatic browser control of touches, except vertical scrolling
+  overflow-y: hidden;
 }
 
 // Removes all translation effects for those who prefer less animation
