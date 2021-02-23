@@ -277,6 +277,7 @@ export default class Lesson extends Vue {
     setTimeout(()=>{
       const overflow = (content.clientHeight > window.innerHeight) ? 'auto':'hidden';
       container.$el.style.setProperty("overflow-y", overflow);
+      container.$el.scrollTop = 0;
       disableBodyScroll(container.$el);
       // console.log('----',content.clientHeight);
       // console.log('----',overflow);

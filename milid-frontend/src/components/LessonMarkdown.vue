@@ -19,6 +19,7 @@
     max-width: 100vw;
     text-align: left;
     height: auto;
+    padding-bottom: 50px;
   }
 
   .scrollDisabled{
