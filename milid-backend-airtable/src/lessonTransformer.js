@@ -37,6 +37,8 @@ module.exports = function lessonTransformer(data){
                 break;
             case LessonType.VIDEO:
                 break;
+            case LessonType.INFOGRAPHIC:
+                break;
             default:
                 throw new Error("unsupported LessonType", lesson.type);
         }
