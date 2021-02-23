@@ -11,7 +11,7 @@
 @import "./app.scss";
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: suisse, Sans-Serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
