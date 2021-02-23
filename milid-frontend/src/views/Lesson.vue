@@ -222,11 +222,13 @@ export default class Lesson extends Vue {
 
   beforeDestroy () {
     document.body.style.removeProperty("overflow-y");
+    document.body.style.removeProperty("position");
     clearAllBodyScrollLocks();
   }
 
   mounted() {    
     document.body.style.setProperty("overflow-y", "hidden");
+    document.body.style.setProperty("position", "fixed");
   }
 
   //
