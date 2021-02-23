@@ -51,13 +51,14 @@
       </md-speed-dial-content>
     </md-speed-dial>     -->
 
-    <ContentSwipe :initial="$route.params.lesson_id - 1" :lessons="lessons" @changeCard="renderChange">
-      <section class="lesson rendered-item"
-          v-for="(lesson, index) in renderLessons" :key="index" :id="index"          
+    <ContentSwipe :initial="$route.params.lesson_id - 1" :lessons="lessons" @changeCard="renderChange" >
+      <section class="lesson rendered-item" 
+          ref="container" @touchmove="onScroll" @touchend="onScrollEnd"          
+          v-for="(lesson, index) in renderLessons" :key="index" :id="'ctn-'+index"          
           v-bind:index="index">
-        <LessonMarkdown v-if="lesson.type == 'MARKDOWN'" :moduleId="module.id" :lessonId="lesson.id" />
-        <LessonVideo v-else-if="lesson.type == 'VIDEO'" :moduleId="module.id" :lessonId="lesson.id" />
-        <LessonPodcast v-else-if="lesson.type == 'PODCAST'" :moduleId="module.id" :lessonId="lesson.id" />
+        <LessonMarkdown v-if="lesson.type == 'MARKDOWN'" :moduleId="module.id" :lessonId="lesson.id" ref="content"  />
+        <LessonVideo v-else-if="lesson.type == 'VIDEO'" :moduleId="module.id" :lessonId="lesson.id" ref="content"  />
+        <LessonPodcast v-else-if="lesson.type == 'PODCAST'" :moduleId="module.id" :lessonId="lesson.id" ref="content"  />
         <div v-else>
           <h3 class="title">{{lesson.title}}</h3>
           <div class="item type ">
@@ -146,10 +147,10 @@
   }
 
   section.lesson {
-    overflow-x: hidden;
-    overflow-y: auto;
-    margin-top: 100px;
-    padding-bottom: 100px;
+    margin-top: 95px;
+    padding-bottom: 160px;
+    // FIXME activating scroll, disable swipe 
+    // overflow-y:auto;
     .title {
       text-align: left;
       color: var(--theme-1-primary);
@@ -180,6 +181,7 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 import { Route} from 'vue-router';
+import XScroll from 'xscroll';
 
 import { $config, $module } from '../services';
 import { MILID } from '../models';
@@ -207,6 +209,8 @@ Vue.use(MdSpeedDial);
 export default class Lesson extends Vue {
   //private _observer: any;
   private renderLessons$: MILID.Lesson[] = [];
+  private translateY = -1;
+  private xscroll;
   test = [];
 
   //
@@ -221,8 +225,9 @@ export default class Lesson extends Vue {
   }
 
   mounted() {    
-    window.scroll(0,0);
     document.body.style.setProperty("overflow-y", "hidden");
+    const container = this.$refs.container as any;
+    // this.initScroll(container);
   }
 
   //
@@ -264,12 +269,55 @@ export default class Lesson extends Vue {
     return this.renderLessons$;
   }  
 
+
+  //
+  // look firstChild, skip comment
+  getFirstChild(el){
+    let firstChild = el.firstChild;
+    while(firstChild != null && firstChild.nodeType == 8){ 
+      firstChild = firstChild.nextSibling;
+    }
+    return firstChild;
+  }  
+
+  initScroll(container, content?) {
+    if(!container) {
+      return;
+    }
+    content = content || this.getFirstChild(container);
+    if(this.xscroll) {
+      this.xscroll.destroy();
+    }
+
+    //
+    // FIXME, be sure that html content is rendered
+    setTimeout(()=>{
+      this.xscroll = new XScroll({
+          renderTo: container,
+          container: content,
+          content: this.getFirstChild(content),
+          scrollbarX:false,
+          lockX:true,
+          lockY:false
+      });
+      this.xscroll.render();   
+    },500);
+
+  }
+
+
   renderChange(renderLessons) {
     this.renderLessons$ = [...renderLessons];
     this.$router.replace({ path: `/module/${this.module.id}/lesson/${renderLessons[1].id}`}).catch(()=> {
       //
     }).then(()=>{
+
+      //
+      // init virtual scroll position here
       this.$el.scrollTop = 0;
+      const container = this.$refs.container as any;
+      const content = this.$refs.content as any;
+      this.initScroll(container[1],content.$el);
     });
   }
 
@@ -300,5 +348,40 @@ export default class Lesson extends Vue {
     //this.$router.push({ path: `/module`});
   }
 
+  onScroll($event) {
+    if($event) return;
+    const touch = $event.changedTouches[0];
+    const container = this.$refs.container as any;
+    if(container.length < 2) {
+      return;
+    }
+    if(this.translateY == -1 ){
+      this.translateY = touch.pageY;
+      container[1].style.transition = 'transform 0s ease';
+      return;
+    }
+
+    const deltaY = touch.pageY - this.translateY;
+    // this.translateY = touch.pageY;
+    container[1].style.transform = 'translateY('+(2*deltaY|0)+'px)';
+
+    // this.$el.scrollBy({ 
+    //   top: 0, // could be negative value
+    //   left: 0, 
+    //   behavior: 'smooth' 
+    // });    
+  }
+  onScrollEnd($event) {
+    const touch = $event.changedTouches[0];
+    const container = this.$refs.container as any;
+    if(container.length < 2) {
+      return;
+    }
+    // const deltaY = (touch.pageY - this.translateY)>1 ? -1:1;
+    // container[1].style.transform = 'translateY('+(deltaY*100)+'px)';
+    // container[1].style.transition = 'transform  500ms ease-out';
+    this.translateY = -1;
+
+  }
 }
 </script>
