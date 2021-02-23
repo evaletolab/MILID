@@ -51,13 +51,13 @@
       </md-speed-dial-content>
     </md-speed-dial>     -->
 
-    <ContentSwipe :initial="$route.params.lesson_id - 1" :lessons="lessons" @changeCard="renderChange">
-      <section class="lesson rendered-item"
-          v-for="(lesson, index) in renderLessons" :key="index" :id="index"          
-          v-bind:index="index">
-        <LessonMarkdown v-if="lesson.type == 'MARKDOWN'" :moduleId="module.id" :lessonId="lesson.id" />
-        <LessonVideo v-else-if="lesson.type == 'VIDEO'" :moduleId="module.id" :lessonId="lesson.id" />
-        <LessonPodcast v-else-if="lesson.type == 'PODCAST'" :moduleId="module.id" :lessonId="lesson.id" />
+    <ContentSwipe :initial="$route.params.lesson_id - 1" :lessons="lessons" @changeCard="renderChange" ref="container">
+      <section class="lesson rendered-item"          
+          v-for="(lesson, index) in renderLessons" :key="index" :id="'ctn-'+index"          
+          v-bind:index="index" ref="content">
+        <LessonMarkdown v-if="lesson.type == 'MARKDOWN'" :moduleId="module.id" :lessonId="lesson.id"  />
+        <LessonVideo v-else-if="lesson.type == 'VIDEO'" :moduleId="module.id" :lessonId="lesson.id"  />
+        <LessonPodcast v-else-if="lesson.type == 'PODCAST'" :moduleId="module.id" :lessonId="lesson.id"  />
         <div v-else>
           <h3 class="title">{{lesson.title}}</h3>
           <div class="item type ">
@@ -146,10 +146,10 @@
   }
 
   section.lesson {
-    overflow-x: hidden;
-    overflow-y: auto;
-    margin-top: 100px;
-    padding-bottom: 100px;
+    margin-top: 95px;
+    padding-bottom: 160px;
+    // FIXME activating scroll, disable swipe 
+    // overflow-y:auto;
     .title {
       text-align: left;
       color: var(--theme-1-primary);
@@ -180,6 +180,7 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 import { Route} from 'vue-router';
+import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 
 import { $config, $module } from '../services';
 import { MILID } from '../models';
@@ -207,6 +208,7 @@ Vue.use(MdSpeedDial);
 export default class Lesson extends Vue {
   //private _observer: any;
   private renderLessons$: MILID.Lesson[] = [];
+  private translateY = -1;
   test = [];
 
   //
@@ -218,10 +220,10 @@ export default class Lesson extends Vue {
 
   beforeDestroy () {
     document.body.style.removeProperty("overflow-y");
+    clearAllBodyScrollLocks();
   }
 
   mounted() {    
-    window.scroll(0,0);
     document.body.style.setProperty("overflow-y", "hidden");
   }
 
@@ -264,12 +266,32 @@ export default class Lesson extends Vue {
     return this.renderLessons$;
   }  
 
+  initScroll(container, content) {
+    if(!content || !container) {
+      return;
+    }
+
+    content = content.firstChild || content;
+    setTimeout(()=>{
+      const overflow = (content.clientHeight > window.innerHeight) ? 'auto':'hidden';
+      container.$el.style.setProperty("overflow-y", overflow);
+      disableBodyScroll(container.$el);
+      // console.log('----',content.clientHeight);
+      // console.log('----',overflow);
+    },200);
+  }
+
+
   renderChange(renderLessons) {
     this.renderLessons$ = [...renderLessons];
     this.$router.replace({ path: `/module/${this.module.id}/lesson/${renderLessons[1].id}`}).catch(()=> {
       //
     }).then(()=>{
-      this.$el.scrollTop = 0;
+      // validate screen 
+      // lock or unlock scroll (iOS body scroll issue)
+      const container = this.$refs.container as any;
+      const content = this.$refs.content as any;
+      this.initScroll(container,content[1]);
     });
   }
 
@@ -299,6 +321,5 @@ export default class Lesson extends Vue {
     this.$router.go(-1);
     //this.$router.push({ path: `/module`});
   }
-
 }
 </script>
