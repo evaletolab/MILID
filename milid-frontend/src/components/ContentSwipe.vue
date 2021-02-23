@@ -43,15 +43,14 @@ export default class ContentSwipe extends Vue {
   // Return array of objects for the 3 items to be rendered in the DOM at the moment
   // Includes the previous, current, and next slides
   get renderedItems() {
-    const { currentIndex: currentIndex, infoItems } = this;
-    const i = currentIndex;
+    const { currentIndex: i, infoItems } = this;
 
     // console.log('---- DBG: infoItems',this.infoItems);
     if (infoItems.length === 1) {
       return [this.lessons[0],this.lessons[0],this.lessons[0]];
     }
 
-    const lastIndex = this.lessons.length - 1;
+    const lastIndex = this.infoItems.length - 1;
     const prevIndex = i === 0 ? lastIndex : i - 1;
     const nextIndex = i === lastIndex ? 0 : i + 1;
 
@@ -126,6 +125,8 @@ export default class ContentSwipe extends Vue {
       isNextAvailable
     } = this;
     const { deltaX, deltaY, isFinal } = e;
+    // console.log('--- DBG hammer gesture, prev,next',isPreviousAvailable, isNextAvailable)
+    // console.log('--- DBG hammer gesture X,Y',deltaX,deltaY)
 
     // While card is transitioning, don't respond to events
     if (isTransitioning) {
@@ -144,6 +145,7 @@ export default class ContentSwipe extends Vue {
       return;
     }
 
+    
     if (
       (!isPreviousAvailable && deltaX > 0) ||
       (!isNextAvailable && deltaX < 0)
@@ -367,8 +369,8 @@ export default class ContentSwipe extends Vue {
   min-height: fit-content;
   width: 100vw;
   box-sizing: border-box;
-  touch-action: pan-y; // Disables automatic browser control of touches, except vertical scrolling
-  overflow-y: hidden;
+
+  touch-action: pan-y!important; // Disables automatic browser control of touches, except vertical scrolling
 }
 
 // Removes all translation effects for those who prefer less animation

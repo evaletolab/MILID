@@ -16,8 +16,9 @@
   .col{
     /* margin-left: 20px; */
     width:100%;
-    max-width: 640px;
+    max-width: 100vw;
     text-align: left;
+    height: auto;
   }
 
   .scrollDisabled{
