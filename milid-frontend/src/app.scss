@@ -1,3 +1,34 @@
+/* * * * suisse * * * * */
+
+@font-face {
+  font-family: "suisse";
+  src: url("/fonts/suisse.woff/SuisseEDUIntl-Regular-WebS.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "suisse";
+  src: url("/fonts/suisse.woff/SuisseEDUIntl-RegularItalic-WebS.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "suisse";
+  src: url("/fonts/suisse.woff/SuisseEDUIntl-Bold-WebS.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "suisse";
+  src: url("/fonts/suisse.woff/SuisseEDUIntl-BoldItalic-WebS.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+
+
   html {
     -webkit-overflow-scrolling: touch;
     overflow: scrolls;
@@ -63,9 +94,10 @@
     .tertiary-on-text { color: var(--theme-4-tertiary)!important; }
   }
 
-  .hidden {
-    visibility: hidden;
-  }
+.hidden {
+  visibility: hidden;
+}
+
   
 
   // Info
