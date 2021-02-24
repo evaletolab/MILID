@@ -1,6 +1,6 @@
 <template>
     <div class="col" :class="'theme-'+theme">
-        <h1 class="primary-on-text">{{title}}</h1>
+        <h1 class="primary-on-text" v-html="title"/>
         
         <audio ref="audioPlayer">
             <source :src="mediaUrl" preload='metadata' type='audio/mpeg; codecs="mp3"'>
