@@ -14,25 +14,12 @@ interface MILIDEvent {
 }
 
 
-interface LessonProgress
-{
-  id: string;
-  state: MILID.LessonState[];
-}
-
-interface ModuleProgress{
-  id: string;
-  lessons: LessonProgress[];
-}
-
-interface ProgressState {
-  modules: ModuleProgress[];
-}
-
 class MetricService {
-  constructor() {
-    // TODO
-    
+
+  public progressionState: any = {};
+
+  init() {
+    this.progressionState = Vue.observable(this.computeInitialValue());
   }
 
   async event(params: MILIDEvent){
@@ -43,32 +30,30 @@ class MetricService {
     return "progression";
   }
 
-  buildEmptryProgressValue(): ProgressState{
-    const result: ProgressState = { modules: []};
+  setCompleted(moduleId, lessonId){
+    this.progressionState.modules[moduleId].lessons[lessonId] = MILID.LessonState.DONE;
+  }
+
+  buildEmptyProgressValue(){
+    const result = { modules: {} }
 
     for(const module of $module.modules){
-      const lessons: LessonProgress[] = module.lessons.map(l => {
-        return { 
-          id: l.id, 
-          state: MILID.LessonState.TODO
-        };
-      });
-      const moduleProgress: ModuleProgress = {
-        id: module.id,
-        lessons: lessons
-      }
-      result.modules.push(moduleProgress);
+      result.modules[module.id] = { lessons: {} };
+
+      for(const lesson of module.lessons){
+        result.modules[module.id].lessons[lesson.id] = MILID.LessonState.TODO;
+      } 
     }
 
     return result;
   }
 
-  computeInitialValue(): ProgressState{
-    let value = this.buildEmptryProgressValue();
+  computeInitialValue(){
+    let value = this.buildEmptyProgressValue();
     try{
       const str = window.localStorage.getItem(MetricService.localStorageKey);
       if(str){
-        value = JSON.parse(str) as ProgressState;
+        value = JSON.parse(str);
       }
     }catch(e){
       console.error(e);

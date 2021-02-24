@@ -22,6 +22,10 @@
                 <MILIDIcons name="podcast-forward" :theme="theme" @wasClicked="seekForwards"  />
             </div>
         </div>
+
+        <button @click="completionHandler">complete me</button>
+
+        <p>status = {{done}}</p>
     </div>   
 </template>
 
@@ -81,6 +85,7 @@ import axios from 'axios';
 
 import { $module } from '@/services/module-service';
 import { $config } from '@/services/config-service';
+import { $metric } from '@/services/metric-service';
 
 @Component({
   components: { 
@@ -118,6 +123,10 @@ export default class LessonPodcast extends Vue {
 
     get mediaUrl(){
         return this.lesson.media;
+    }
+
+    get done(){
+        return $metric.progressionState?.modules[this.moduleId].lessons[this.lessonId];
     }
 
     get elapsedStr(){
@@ -202,6 +211,10 @@ export default class LessonPodcast extends Vue {
         const secondsStr = seconds.toString().padStart(2, '0');
 
         return `${minStr}${secondsStr}`;
+    }
+
+    completionHandler(){
+        $metric.setCompleted(this.moduleId, this.lessonId);
     }
 }
 </script>
