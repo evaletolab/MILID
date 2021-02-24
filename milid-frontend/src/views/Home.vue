@@ -1,28 +1,28 @@
 <template>
-  <div>
-    <md-toolbar class="-md-large -md-primary">
-      <div class="md-toolbar-row">
-        <div class="md-toolbar-section-start">
-          <md-button class="md-icon-button">
-            <md-icon>menu</md-icon>
-          </md-button>
+  <div class="home">
+    <!-- TOOLBAR -->
+    <nav class="toolbar " :class="{'exited': (scrollDirection <= 0) }">
+      <div class="toolbar-row">
+        <div class="toolbar-section-start">
+          <button class="icon start">
+            <MILIDIcons name="home" color="black"/>
+          </button>
         </div>
 
-        <div class="md-toolbar-section-end">
-          <md-button class="md-icon-button">
-            <md-icon>refresh</md-icon>
-          </md-button>
+        <div class="toolbar-title">
+          <img class="logo" src="@/assets/MILID-logo-text.svg" />
+        </div>        
 
-          <md-button class="md-icon-button">
-            <md-icon>more_vert</md-icon>
-          </md-button>
+        <div class="toolbar-section-end">
+          <button class="icon end">
+            <MILIDIcons name="parametres" color="black"/>
+          </button>
         </div>
       </div>
 
-      <!-- <div class="md-toolbar-row md-toolbar-offset">
-        <h3 class="md-title">Title on a second row</h3>
-      </div> -->
-    </md-toolbar>
+      <div class="toolbar-row">
+      </div>        
+    </nav>
 
     <!-- USER -->
     <div class="user">
@@ -76,10 +76,16 @@ import MILIDIcons from '../components/MILIDIcons.vue';
 
 
 @Component({
-  components: { ModuleStatus, MILIDWave, MILIDIcons },
+  components: { 
+    ModuleStatus, 
+    MILIDWave, 
+    MILIDIcons 
+  }
 })
 export default class Home extends Vue {
+  private lastScrollTop = 0;
 
+  scrollDirection = 0;
 
   get modules() {
     console.log("--DBG: modules", $module.modules);
@@ -103,6 +109,27 @@ export default class Home extends Vue {
     Promise.all(load).then(next);
   }
 
+  mounted(){
+    console.log('---- mount')
+    window.addEventListener("scroll", () => { 
+      const st = window.pageYOffset || document.documentElement.scrollTop;
+      //
+      // downscroll code
+      if (st > this.lastScrollTop){
+        this.scrollDirection = 1;
+      } 
+      //
+      // upscroll code
+      else {          
+        this.scrollDirection = -1;
+      }
+
+      //
+      // For Mobile or negative scrolling
+      this.lastScrollTop = st <= 0 ? 0 : st; 
+
+    }, false);    
+  }
 
   routerLink(module,lesson) {
     this.$router.push({path:'/module/' + module + '/lesson/' + lesson});

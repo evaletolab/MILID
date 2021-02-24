@@ -8,9 +8,6 @@ import router from './router'
 
 Vue.config.productionTip = false
 
-import 'vue-material/dist/vue-material.min.css'
-import 'vue-material/dist/theme/default.css'
-
 import '@/main.scss'
 
 import { $config } from '@/services/config-service';

@@ -35,6 +35,7 @@
   }
   body{
       margin: 0;
+      -background-color: rgba(255, 255, 255, 0.1);
   }
   
 
@@ -96,6 +97,94 @@
 
 .hidden {
   visibility: hidden;
+}
+
+
+.toolbar {
+  border-radius: 0 0 18px 18px;
+  flex-flow: row wrap;
+  position: relative;
+  z-index: 2;    
+  position: fixed;
+  width: 100vw;
+  .toolbar-section-start,
+  .toolbar-section-end
+  {
+    display: flex;
+    align-items: center;
+    flex: 1;    
+  }
+
+  .toolbar-section-end {
+    justify-content: flex-end;
+    order: 10;    
+  }
+
+  .toolbar-section-start {
+    justify-content: flex-start;
+    order: 0;    
+  }
+
+  .toolbar-title{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    line-height: 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 6px;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    &.tight {
+      margin: 0;
+    }
+    &.title-left{
+      text-align: left;
+    }
+    .progress{
+      width: 90px;
+      height: 25px;
+      margin: auto;        
+    }
+  }
+
+  .toolbar-row {
+    width: 100%;
+    min-height: 38px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+  }
+
+  button{
+    padding: 2px 2px;
+    width: 36px;
+    height: 36px;        
+    background-color: transparent;
+    border: none;
+    svg{
+      width: 34px;
+    }
+
+    &.end{
+      margin-right: 10px;
+      margin-top: 15px;
+    }
+    &.start{
+      margin-left: 10px;
+      margin-top: 15px;
+    }
+  }
+
+}
+
+.toolbar-row + .toolbar-row {
+  margin-top: -12px;
 }
 
   

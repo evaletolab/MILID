@@ -3,10 +3,10 @@
     <!-- DEFAULT TOOLBAR -->
     <nav class="toolbar primary">
       <div class="toolbar-row">
-        <div class="md-toolbar-section-start">
-          <md-button class="md-icon-button" @click="onBack()">
-            <md-icon class="primary">arrow_back</md-icon>
-          </md-button>
+        <div class="toolbar-section-start">
+          <button class="start icon" @click="onBack()">
+            <MILIDIcons name="back" color="white"/>
+          </button>
         </div>
 
         <div class="toolbar-title title-left">
@@ -14,10 +14,10 @@
           {{module.title}}</span>
         </div>        
 
-        <div class="md-toolbar-section-end">
-          <md-button class="md-icon-button">
-            <md-icon class="primary">more_vert</md-icon>
-          </md-button>
+        <div class="toolbar-section-end">
+          <button class="end icon">
+            <MILIDIcons name="parametres" color="white"/>
+          </button>
         </div>
       </div>
 
@@ -90,54 +90,6 @@
     padding-top:0;    
   }
 
-  .toolbar {
-    border-radius: 0 0 18px 18px;
-    flex-flow: row wrap;
-    position: relative;
-    z-index: 2;    
-    position: fixed;
-    width: 100vw;
-
-    .toolbar-title{
-      text-align: center;
-      font-size: 14px;
-      font-weight: 500;
-      letter-spacing: -0.01em;
-      line-height: 16px;
-      margin-top: 0.8em;
-      margin-bottom: 0.8em;
-      text-transform: uppercase;
-      font-weight: 900;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      overflow: hidden;
-      width: 100%;
-      &.tight {
-        margin: 0;
-      }
-      &.title-left{
-        text-align: left;
-      }
-      .progress{
-        width: 90px;
-        height: 25px;
-        margin: auto;        
-      }
-    }
-
-    .toolbar-row {
-      width: 100%;
-      min-height: 38px;
-      display: flex;
-      align-items: center;
-      align-content: center;
-    }
-  }
-
-  .toolbar + .toolbar {
-    margin-top: 16px;
-  }
-
   
   .md-speed-dial.md-bottom-right {
     position: fixed;
@@ -190,19 +142,12 @@ import ContentSwipe from '../components/ContentSwipe.vue';
 import MILIDIcons from '../components/MILIDIcons.vue';
 import ModuleProgress from '../components/ModuleProgress.vue';
 
-import MdButton  from 'vue-material';
-import MdSpeedDial  from 'vue-material';
 
 import LessonMarkdown from '../components/LessonMarkdown.vue';
 import LessonVideo from '../components/LessonVideo.vue';
 import LessonPodcast from '../components/LessonPodcast.vue';
 import LessonInfographic from '../components/LessonInfographic.vue';
 
-
-
-
-Vue.use(MdButton);
-Vue.use(MdSpeedDial);
 
 @Component({
   components: { ContentSwipe, MILIDIcons, ModuleProgress, LessonMarkdown, LessonVideo, LessonPodcast, LessonInfographic }

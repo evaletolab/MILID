@@ -208,7 +208,7 @@ export default class MILIDIcons extends Vue {
   @Prop({ default : '1'}) private theme!: string;
   @Prop({ default : '18'}) private width!: string;
   @Prop({ default : '18'}) private height!: string;
-  @Prop({ default : 'primary'}) private color!: string;
+  @Prop() private color!: string;
 
   content = "";
 
@@ -226,14 +226,23 @@ export default class MILIDIcons extends Vue {
   }
 
   get colorPrimary() {
+    if(this.color) {
+      return this.color;
+    }
     return this.config.themes[this.theme].primary;
   }
 
   get colorSecondary() {
+    if(this.color) {
+      return this.color;
+    }
     return this.config.themes[this.theme].secondary;
   }
 
   get colorTertiary() {
+    if(this.color) {
+      return this.color;
+    }
     return this.config.themes[this.theme].tertiary;
   }
 
