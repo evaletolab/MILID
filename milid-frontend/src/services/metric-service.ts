@@ -1,5 +1,7 @@
 import { MILID } from "@/models";
 
+import { Vue } from 'vue-property-decorator';
+
 interface MILIDEvent {
   module: string;
   lesson: string;
@@ -12,6 +14,7 @@ interface MILIDEvent {
 class MetricService {
   constructor() {
     // TODO
+    
   }
 
   async event(params: MILIDEvent){

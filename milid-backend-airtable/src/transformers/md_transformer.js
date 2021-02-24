@@ -1,5 +1,5 @@
 const marked = require('marked');
-
+const { insecables } = require('../typeHelper');
 
 module.exports = function mdTransformer(lesson, globalData){
 
@@ -52,6 +52,8 @@ module.exports = function mdTransformer(lesson, globalData){
     }
 
     const options = { renderer: renderer };
+
+    lesson.markdown = insecables(lesson.markdown);
 
     lesson.html = marked(lesson.markdown, options);
     delete lesson.markdown;

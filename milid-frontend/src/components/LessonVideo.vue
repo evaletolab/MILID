@@ -1,9 +1,8 @@
 
 <template>
-  <div class="lesson-video" :class="'theme-'+module.theme" :style="cssVars">
-    <h4>{{lesson.title}}</h4>
+  <div class="lesson-video" :class="'theme-'+module.theme" :style="cssVars">  
+    <h4 v-html="lesson.title" />
     <svg viewBox="0 0 200 200" class="video-edges">
-  
       <path class="st0" d="M177.14,129.13l-0.69-0.7c-0.43-0.43-13.01-13.23-13.01-13.23l-9.31-9.31c-2.09-2.1-2.09-5.52,0-7.62
         c1.01-1.02,2.36-1.58,3.79-1.58c1.43,0,2.78,0.56,3.79,1.58l5.32,5.32c1.47,1.47,3.41,2.28,5.49,2.28c2.07,0,4.02-0.81,5.49-2.28
         c3.02-3.03,3.02-7.96,0-10.99l-0.87-0.88l-9.29-9.31c-0.06-0.06-0.12-0.11-0.18-0.15l-12.63-12.63l0.02-0.02l-38.46-38.46
@@ -164,7 +163,8 @@ export default class LessonVideo extends Vue {
   }  
 
   get mediaUrl() {
-    return "http://media.w3.org/2010/05/sintel/trailer.mp4";
+    // return "http://media.w3.org/2010/05/sintel/trailer.mp4";
+    return this.lesson.media;
   }
 
 

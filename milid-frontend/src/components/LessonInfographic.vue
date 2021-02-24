@@ -1,6 +1,8 @@
-
 <template>
-  <div class="col" ref="raw_root" v-html="svgContent" />
+    <div class="col" :class="'theme-'+theme">
+        <h1 class="primary-on-text" v-html="title"/>
+        <div ref="raw_root" v-html="svgContent" />
+    </div>
 </template>
 
 <style scoped>
@@ -47,13 +49,19 @@ export default class LessonInfographic extends Vue {
   get module() {
     return $module.getModuleWithId(this.moduleId);    
   }
-
-  get cssVars(){
-      return {
-        '--lesson-color': $config.store.config.themes[this.module.theme].primary,
-      };
+  
+  get lesson(){
+      return $module.getLessonForModuleAndLessonId(this.moduleId, this.lessonId);
   }
 
+  get title(){
+      return this.lesson.title;
+  }
+
+  get theme(){
+    return this.module.theme;
+  }
+  
   definitionClickHandler(e: any){
     const definitionId = e.target.dataset.definitionId;
   }
