@@ -127,7 +127,6 @@
     }
   }
 
-
 </style>
 
 <script lang="ts">
@@ -220,13 +219,19 @@ export default class Lesson extends Vue {
       return;
     }
 
-    content = content.firstChild || content;
+    const section = content[1].firstChild || content[1];
     setTimeout(()=>{
-      const overflow = (content.clientHeight > window.innerHeight) ? 'auto':'hidden';
-      container.$el.style.setProperty("overflow-y", overflow);
+      // const margin = 100;// toolbar
+      // const overflow = (section.clientHeight > (window.innerHeight - margin)) ? 'auto':'hidden';
+      container.$el.style.setProperty("overflow-y", 'auto');
       container.$el.scrollTop = 0;
+
+      content[0].style.setProperty("overflow-y", 'hidden');
+      content[1].style.removeProperty("overflow-y");
+      content[2].style.setProperty("overflow-y", 'hidden');
+      
       disableBodyScroll(container.$el);
-      // console.log('----',content.clientHeight);
+      // console.log('----',section.clientHeight, window.innerHeight,content[0].style);
       // console.log('----',overflow);
     },200);
   }
@@ -241,7 +246,7 @@ export default class Lesson extends Vue {
       // lock or unlock scroll (iOS body scroll issue)
       const container = this.$refs.container as any;
       const content = this.$refs.content as any;
-      this.initScroll(container,content[1]);
+      this.initScroll(container,content);
     });
   }
 
