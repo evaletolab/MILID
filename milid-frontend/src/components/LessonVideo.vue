@@ -89,13 +89,15 @@
   }
 
   canvas {
-    width: 160px;
-    height: 160px;
+    width: calc( 100% - 70px);
+    height: calc( 100% - 70px);
     border-radius: 30px;
     background-color: var(--tertiary);
     margin: auto;    
-    margin-top: 15%;
-    zoom: .8;
+    position: absolute;
+    left: 50%;
+    top: 50%;    
+    transform: translate3d(-50%,-50%,0);
 
   }
 
