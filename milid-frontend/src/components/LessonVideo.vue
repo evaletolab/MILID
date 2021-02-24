@@ -237,7 +237,7 @@ export default class LessonVideo extends Vue {
         // console.log('--DBG',videoWidth*ratio,videoHeight*ratio, ratio);
         // console.log('--DBG',sx,sy,videoWidth*ratio,videoHeight*ratio, ratio);
         (function loop() {
-          if (!$this.paused && !$this.ended) {
+          if (ctx && !$this.paused && !$this.ended) {
             ctx.drawImage($this, 
               sx,sy,videoWidth-sx*2,videoHeight-sy*2,
               0, 0,canvas.width,canvas.height);
