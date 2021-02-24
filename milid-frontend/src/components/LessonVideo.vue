@@ -75,7 +75,8 @@
 
   .video-edges{
     position: relative;
-    width: auto;
+    width: 100%;
+    height: 100%;
     margin-left: -45px;
     margin-right: -45px;    
   }
