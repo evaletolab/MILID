@@ -3,6 +3,7 @@
   <div class="col" :style="cssVars" v-bind:class="{ scrollDisabled: definitionPopupIsOpen }">
     <DefinitionPopup 
     :open="definitionPopupIsOpen"
+    :theme="module.theme"
     :height="height"
     v-on:closerequest="definitionPopupIsOpen = false"
     >
