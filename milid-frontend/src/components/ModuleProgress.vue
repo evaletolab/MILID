@@ -47,7 +47,7 @@ export default class ModuleProgress extends Vue {
     const canvas = this.$refs.canvas as HTMLCanvasElement;
 
     const { width, height } = canvas.getBoundingClientRect();
-    console.log("resize", width, height, this.pixelRatio);
+    // console.log("resize", width, height, this.pixelRatio);
 
     canvas.width = Math.floor(width * this.pixelRatio);
     canvas.height = Math.floor(height * this.pixelRatio);
@@ -79,6 +79,7 @@ export default class ModuleProgress extends Vue {
     const ctx: CanvasRenderingContext2D = this._ctx;
 
     ctx.clearRect(0, 0, width, height);
+    ctx.imageSmoothingEnabled = true;
 
     const circle = (x, y, r) => {
       ctx.beginPath();
