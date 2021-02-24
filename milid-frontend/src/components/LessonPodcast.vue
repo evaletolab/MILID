@@ -22,8 +22,7 @@
                 <MILIDIcons name="podcast-forward" :theme="theme" @wasClicked="seekForwards"  />
             </div>
         </div>
-    </div>
-    
+    </div>   
 </template>
 
 
@@ -44,6 +43,7 @@
       display: flex;
       justify-content: center;
       width:170%;
+      min-height: 320px;
   }
 
   .lottie-player{
@@ -67,6 +67,7 @@
       width:70%;
       height: 35px;
       justify-content: space-between;
+      cursor:pointer;
   }
 </style>
 

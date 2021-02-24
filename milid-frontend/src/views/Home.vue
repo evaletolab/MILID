@@ -110,7 +110,6 @@ export default class Home extends Vue {
   }
 
   mounted(){
-    console.log('---- mount')
     window.addEventListener("scroll", () => { 
       const st = window.pageYOffset || document.documentElement.scrollTop;
       //
