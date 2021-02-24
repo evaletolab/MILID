@@ -104,6 +104,10 @@
       justify-content: center;
       margin-bottom: 20px;
       width: 100%;
+      margin-top: -60px;
+      z-index: 1;
+      text-shadow: 2px 2px 3px rgb(171 171 171 / 50%);
+      font-family: monospace;      
   }
   
   .control{
