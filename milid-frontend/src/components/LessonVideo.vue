@@ -50,7 +50,6 @@
             <MILIDIcons name="podcast-forward" width="35px" :theme="theme" @wasClicked="onSeekForwards"  />
         </div>
     </div>
-
   </div>
 </template>
 
@@ -94,7 +93,7 @@
     .video-edges{
       width: 100%;
       height: 100%;
-      transform: scale(1.25);
+      transform: scale(1.2);
     }
 
     
@@ -128,6 +127,7 @@
       display: flex;
       justify-content: center;
       width: 100%;
+      transform: scale(.8);
       svg{
         width: 35px;
         height: 35px;
@@ -156,7 +156,7 @@ import { $config } from '@/services/config-service';
 
 @Component({
   components: {
-    MILIDIcons
+    MILIDIcons    
   },
 })
 export default class LessonVideo extends Vue {

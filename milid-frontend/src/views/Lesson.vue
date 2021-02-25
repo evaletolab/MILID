@@ -66,8 +66,8 @@
           </div>
         </div>
       </section>
-
     </ContentSwipe>
+    <LessonSources :lessonId="currentLesson" :moduleId="module.id" />
   </div>
   <!--- WHEN MODULE IS NOT READY -->
   <div v-else>    
@@ -127,6 +127,7 @@
     }
   }
 
+
 </style>
 
 <script lang="ts">
@@ -146,10 +147,20 @@ import LessonMarkdown from '../components/LessonMarkdown.vue';
 import LessonVideo from '../components/LessonVideo.vue';
 import LessonPodcast from '../components/LessonPodcast.vue';
 import LessonInfographic from '../components/LessonInfographic.vue';
+import LessonSources from '../components/LessonSources.vue';
 
 
 @Component({
-  components: { ContentSwipe, MILIDIcons, ModuleProgress, LessonMarkdown, LessonVideo, LessonPodcast, LessonInfographic }
+  components: { 
+    ContentSwipe, 
+    MILIDIcons, 
+    ModuleProgress, 
+    LessonMarkdown, 
+    LessonVideo, 
+    LessonPodcast, 
+    LessonInfographic,
+    LessonSources
+   }
 })
 export default class Lesson extends Vue {
   //private _observer: any;
@@ -199,6 +210,10 @@ export default class Lesson extends Vue {
     return lessons;
   }
 
+  get currentLesson() {
+    return Number.parseInt(this.$route.params.lesson_id);
+  }
+
   get renderLessons() {
     if(!this.renderLessons$.length) {
       const lid = Number.parseInt(this.$route.params.lesson_id || "0");
@@ -213,6 +228,7 @@ export default class Lesson extends Vue {
     }
     return this.renderLessons$;
   }  
+
 
   initScroll(container, content) {
     if(!content || !container) {
@@ -262,14 +278,11 @@ export default class Lesson extends Vue {
     return this.config.themes[theme].tertiary;
   }
 
-  //
-  // only for devel purposes
-  getStyle(lesson: any) {
-    const styleObj = {
-      background: (lesson.color || 'white')
-    }
-    return styleObj;
+  getSourceHtml(lesson: MILID.Lesson) {
+    return lesson.sources || '';
   }
+
+
 
 
   onBack() {

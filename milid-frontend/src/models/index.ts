@@ -94,6 +94,7 @@ export namespace MILID {
       state: LessonState;
       description?: string;
       activity: LessonActivity
+      sources?: string;
   }
 
 

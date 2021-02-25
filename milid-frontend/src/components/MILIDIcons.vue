@@ -117,6 +117,12 @@
   </svg>  
   <!--- sources -->
   <svg v-else-if="name === 'sources'" :viewBox="viewBox" preserveAspectRatio="none" >
+    <circle
+   style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.79999995;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+   id="path819"
+   cx="43.5"
+   cy="43.5"
+   r="38.707626" />
     <path :style="{ fill: colorPrimary }" d="M43.5,0C19.48,0,0,19.48,0,43.5S19.48,87,43.5,87S87,67.52,87,43.5S67.52,0,43.5,0z M68.91,68.91
 	C62.13,75.7,53.1,79.44,43.5,79.44S24.87,75.7,18.09,68.91C11.3,62.13,7.56,53.1,7.56,43.5s3.74-18.63,10.53-25.41
 	c4.76-4.76,10.63-8.02,17.02-9.54v46.28c0,3.07,3.77,4.53,5.84,2.27l10.12-11.07l10.12,11.07c2.07,2.26,5.84,0.8,5.84-2.27v-38.5
