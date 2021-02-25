@@ -71,18 +71,18 @@ export default class LessonSources extends Vue {
     position: fixed;
     bottom: 0;
     left:0;
-    height: 70vh;
+    height: calc(100vh - 100px);
     -background-color: var(--theme-1-primary);
     width: calc( 100vw - 10px );
     text-align: center;
     border-radius: 20px 20px 0 0;
     padding: 0 5px;    
-    transform: translateY(calc(70vh - 25px));
+    transform: translateY(calc(100vh - 120px));
     transition: all 200ms;      
   }  
 
   section.sources.open {
-    transform: translateY(0);
+    transform: translateY(180px);
   }
   section.sources svg {
     width: 22px;
