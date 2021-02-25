@@ -26,7 +26,7 @@
 </template>
 
 
-<style scoped>
+<style lang="scss" scoped>
   .col{
     /* margin-left: 20px; */
     width:100%;
@@ -54,6 +54,7 @@
   .duration-container{
       display: flex;
       justify-content: center;
+      margin-top: -20px;
       margin-bottom: 20px;
   }
   
@@ -67,8 +68,13 @@
       width:70%;
       height: 35px;
       justify-content: space-between;
-      cursor:pointer;
-  }
+      cursor:pointer;      
+   }
+    .control-icons svg{
+        width: 35px;
+        height: 35px;
+    }
+
 </style>
 
 
