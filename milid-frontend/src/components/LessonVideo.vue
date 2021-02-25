@@ -44,10 +44,10 @@
 
     <div class="control">
         <div class="control-icons">
-            <MILIDIcons name="podcast-rewind" :theme="theme" @wasClicked="onSeekBackwards" />
-            <MILIDIcons v-if="isPlaying" name="podcast-pause" :theme="theme" @wasClicked="onPause"/>
-            <MILIDIcons v-else name="podcast-play" :theme="theme" @wasClicked="onPlay" />
-            <MILIDIcons name="podcast-forward" :theme="theme" @wasClicked="onSeekForwards"  />
+            <MILIDIcons name="podcast-rewind" width="35px" :theme="theme" @wasClicked="onSeekBackwards" />
+            <MILIDIcons v-if="isPlaying" name="podcast-pause" width="35px" :theme="theme" @wasClicked="onPause"/>
+            <MILIDIcons v-else name="podcast-play" width="35px" :theme="theme" @wasClicked="onPlay" />
+            <MILIDIcons name="podcast-forward" width="35px" :theme="theme" @wasClicked="onSeekForwards"  />
         </div>
     </div>
 

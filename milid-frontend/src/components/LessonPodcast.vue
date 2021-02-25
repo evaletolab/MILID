@@ -16,12 +16,16 @@
 
         <div class="control">
             <div class="control-icons">
-                <MILIDIcons name="podcast-rewind" :theme="theme" @wasClicked="seekBackwards" />
-                <MILIDIcons v-if="isPlaying" name="podcast-pause" :theme="theme" @wasClicked="pause"/>
-                <MILIDIcons v-else name="podcast-play" :theme="theme" @wasClicked="play" />
-                <MILIDIcons name="podcast-forward" :theme="theme" @wasClicked="seekForwards"  />
+                <MILIDIcons name="podcast-rewind" width="35px" :theme="theme" @wasClicked="seekBackwards" />
+                <MILIDIcons v-if="isPlaying" width="35px" name="podcast-pause" :theme="theme" @wasClicked="pause"/>
+                <MILIDIcons v-else name="podcast-play" width="35px" :theme="theme" @wasClicked="play" />
+                <MILIDIcons name="podcast-forward" width="35px" :theme="theme" @wasClicked="seekForwards"  />
             </div>
         </div>
+
+        <button @click="completionHandler">complete me</button>
+
+        <p>status = {{done}}</p>
     </div>   
 </template>
 
@@ -87,6 +91,7 @@ import axios from 'axios';
 
 import { $module } from '@/services/module-service';
 import { $config } from '@/services/config-service';
+import { $metric } from '@/services/metric-service';
 
 @Component({
   components: { 
@@ -124,6 +129,10 @@ export default class LessonPodcast extends Vue {
 
     get mediaUrl(){
         return this.lesson.media;
+    }
+
+    get done(){
+        return $metric.progressionState?.modules[this.moduleId].lessons[this.lessonId];
     }
 
     get elapsedStr(){
@@ -208,6 +217,10 @@ export default class LessonPodcast extends Vue {
         const secondsStr = seconds.toString().padStart(2, '0');
 
         return `${minStr}${secondsStr}`;
+    }
+
+    completionHandler(){
+        $metric.setCompleted(this.moduleId, this.lessonId);
     }
 }
 </script>
