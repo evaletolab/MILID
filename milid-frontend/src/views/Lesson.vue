@@ -10,8 +10,8 @@
         </div>
 
         <div class="toolbar-title title-left">
-          <span>M{{module.id}}.{{position}}<br/>
-          {{module.title}}</span>
+          <b>M{{module.id}}</b>.{{position}}<br/>
+          <span v-html="currentLesson.title"></span>
         </div>        
 
         <div class="toolbar-section-end">
@@ -67,7 +67,7 @@
         </div>
       </section>
     </ContentSwipe>
-    <LessonSources :lessonId="currentLesson" :moduleId="module.id" />
+    <LessonSources :lessonId="currentLesson.id" :moduleId="module.id" />
   </div>
   <!--- WHEN MODULE IS NOT READY -->
   <div v-else>    
@@ -211,7 +211,7 @@ export default class Lesson extends Vue {
   }
 
   get currentLesson() {
-    return Number.parseInt(this.$route.params.lesson_id);
+    return $module.getLessonForModuleAndLessonId(this.$route.params.module_id,this.$route.params.lesson_id);
   }
 
   get renderLessons() {
