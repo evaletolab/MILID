@@ -16,10 +16,10 @@
 
         <div class="control">
             <div class="control-icons">
-                <MILIDIcons name="podcast-rewind" :theme="theme" @wasClicked="seekBackwards" />
-                <MILIDIcons v-if="isPlaying" name="podcast-pause" :theme="theme" @wasClicked="pause"/>
-                <MILIDIcons v-else name="podcast-play" :theme="theme" @wasClicked="play" />
-                <MILIDIcons name="podcast-forward" :theme="theme" @wasClicked="seekForwards"  />
+                <MILIDIcons name="podcast-rewind" width="35px" :theme="theme" @wasClicked="seekBackwards" />
+                <MILIDIcons v-if="isPlaying" width="35px" name="podcast-pause" :theme="theme" @wasClicked="pause"/>
+                <MILIDIcons v-else name="podcast-play" width="35px" :theme="theme" @wasClicked="play" />
+                <MILIDIcons name="podcast-forward" width="35px" :theme="theme" @wasClicked="seekForwards"  />
             </div>
         </div>
 
