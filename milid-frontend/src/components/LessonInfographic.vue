@@ -2,6 +2,7 @@
     <div class="col" :class="'theme-'+theme">
         <h1 class="primary-on-text" v-html="title"/>
         <div ref="raw_root" v-html="svgContent" />
+        <div class="footer" />
     </div>
 </template>
 
@@ -11,6 +12,10 @@
     width:100%;
     max-width: 640px;
     text-align: left;
+  }
+
+  .footer{
+    height: 80px;
   }
 
 </style>
