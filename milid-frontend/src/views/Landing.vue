@@ -13,8 +13,13 @@
     <section>
       <img src="@/assets/MILID-logo.svg" />
     </section>
-    <section>
+    <section class="form">
       <input v-model="pseudo" placeholder="Choisir un pseudo ..." class="pseudo"/>
+
+      <router-link class="btn tertiary" to="/module" tag="button" :class="{'hidden':(pseudo.length < 4)}">
+        C'est parti mon kiki!
+      </router-link>
+
 
 
     </section>
@@ -23,7 +28,7 @@
       <div class="content">
         <h3>L'expérience est meilleure après installation</h3>
         <button class="btn tertiary" @click="onInstall">Ajouter à l'écran d'acceuil</button>
-        <div>Test</div>        
+        <div></div>        
       </div>        
     </section>
 
@@ -39,6 +44,7 @@
     width: 100vw;
     height: 100vh;
     .topbar{
+      padding: 10px 30px;
       width: calc( 100vw - 30px );
       display: flex;
       flex-wrap: wrap;
@@ -77,12 +83,18 @@
     }
 
     section{
-      padding: 50px 70px;
-      max-width: 50%;
+      padding: 20px 70px;
+      max-width: 60%;
       max-height: calc( 100vh - 80px );
       @media (max-width: 376px) {
-        max-width: 100%;
-        
+        max-width: 100%;        
+      }
+
+      &.form{
+        padding: 20px 50px;
+        button{
+          min-width: 220px;
+        }
       }
     }
   }
@@ -100,13 +112,15 @@
   }
 
   input.pseudo {
-    line-height: 20px;
-    height: 24px;
-    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 35px;
+    height: 32px;
+    font-size: 17px;
     color: #444;
     padding: 2px 15px;
-    border-radius: 15px;
+    border-radius: 25px;
     border: none;      
+    outline: 0;
   }
 
   section.bottom {
@@ -127,7 +141,7 @@
 
 
     &.open {
-      transform: translateY(410px);
+      transform: translateY(30%);
       svg{
         transform: translateY(-30px) translateX(3px) rotate(180deg) !important;
       }
