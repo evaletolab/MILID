@@ -1,7 +1,7 @@
 <template>
 <!--- SOURCE -->
-  <section class="sources primary" :hidden="!lesson.sources" :class="{'open':open}" @click="onToggle">
-    <MILIDIcons name="sources" :theme="module.theme" />
+  <section class="sources " :hidden="!lesson.sources" :class="{'open secondary':open,'primary':!open}" @click="onToggle">
+    <MILIDIcons name="sources-bar" :theme="module.theme" />
     <nav class="handle" hidden></nav>
     <div class="content">
       <h3>sources</h3>
@@ -72,7 +72,6 @@ export default class LessonSources extends Vue {
     bottom: 0;
     left:0;
     height: calc(100vh - 100px);
-    -background-color: var(--theme-1-primary);
     width: calc( 100vw - 10px );
     text-align: center;
     border-radius: 20px 20px 0 0;
@@ -85,12 +84,12 @@ export default class LessonSources extends Vue {
     transform: translateY(180px);
   }
   section.sources svg {
-    width: 22px;
-    margin-top: 3px;    
-    height: 22px;
     width: 55px;
     margin-top: -27px;
     height: 55px;    
+    width: 67px;
+    margin-top: 10px;
+    height: 39px;
     transform: translateY(-27px) translateX(3px);
   }
 

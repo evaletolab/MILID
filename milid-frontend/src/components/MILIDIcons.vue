@@ -1,6 +1,6 @@
 <template>
   <!--- TOP -->
-  <svg v-if="name === 'back_top'" :viewBox="viewBox" preserveAspectRatio="none" >
+  <svg v-if="name === 'back-top'" :viewBox="viewBox" preserveAspectRatio="none" >
     <g>
       <path :style="{ fill: colorPrimary }" d="M79.44,43.5c0,9.6-3.74,18.63-10.53,25.41C62.13,75.7,53.1,79.44,43.5,79.44S24.87,75.7,18.09,68.91
         C11.3,62.13,7.56,53.1,7.56,43.5s3.74-18.63,10.53-25.41C24.87,11.3,33.9,7.56,43.5,7.56s18.63,3.74,25.41,10.53
@@ -127,6 +127,42 @@
 	C62.13,75.7,53.1,79.44,43.5,79.44S24.87,75.7,18.09,68.91C11.3,62.13,7.56,53.1,7.56,43.5s3.74-18.63,10.53-25.41
 	c4.76-4.76,10.63-8.02,17.02-9.54v46.28c0,3.07,3.77,4.53,5.84,2.27l10.12-11.07l10.12,11.07c2.07,2.26,5.84,0.8,5.84-2.27v-38.5
 	c0.65,0.56,1.29,1.14,1.9,1.76C75.7,24.87,79.44,33.9,79.44,43.5S75.7,62.13,68.91,68.91z"/>
+  </svg>
+  <svg v-else-if="name === 'sources-bar'" viewBox="0 0 305.46912 175.2" preserveAspectRatio="none" >
+    <rect
+      x="2"
+      y="74"
+      class="st0"
+      width="302"
+      height="92"
+      id="rect4"
+      style="fill:#ffffff;stroke-width:0" />
+
+    <path
+      d="m 305.2,78.5 c -30.1,0 -57.3,16.9 -71.5,43.4 -4.4,8.1 -10.1,15.7 -16.9,22.3 -17,16.6 -40,25.9 -63.7,25.9 -6.8,0 -13.5,-0.7 -20,-2.1 -16.9,-3.7 -32.4,-12.2 -45,-24.7 C 81.6,136.8 76.2,129.5 72,121.6 57.8,95 30.1,78.5 0,78.5 c 0.0492,24.76034 0.0492,45.38402 0.0492,96.6 h 305.41991 c 0,-66.20496 0.26916,-37.14934 3e-5,-96.359965 z"
+      id="path6"
+      inkscape:connector-curvature="0"
+      sodipodi:nodetypes="cccscccccccc"
+      :style="{ fill: colorPrimary, stroke: colorPrimary }" />
+
+
+    <circle
+      class="st0"
+      cx="152.10001"
+      cy="87.599998"
+      r="72.400002"
+      id="circle8"
+      style="fill:#ffffff" />
+    <circle
+      style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:4.73625565;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+      id="path824"
+      cx="151.63248"
+      cy="87.400253"
+      r="75.074028" /><path
+      d="m 152.1,0 c -48.4,0 -87.6,39.2 -87.6,87.6 0,48.4 39.2,87.6 87.6,87.6 48.4,0 87.6,-39.2 87.6,-87.6 C 239.7,39.2 200.5,0 152.1,0 Z m 51.2,138.8 C 189.6,152.5 171.4,160 152.1,160 132.8,160 114.6,152.5 100.9,138.8 87.2,125.1 79.7,107 79.7,87.6 c 0,-19.4 7.5,-37.5 21.2,-51.2 9.6,-9.6 21.4,-16.1 34.3,-19.2 v 93.2 c 0,6.2 7.6,9.1 11.8,4.6 l 20.4,-22.3 20.4,22.3 c 4.2,4.6 11.8,1.6 11.8,-4.6 V 32.9 c 1.3,1.1 2.6,2.3 3.8,3.5 13.7,13.7 21.2,31.8 21.2,51.2 0,19.4 -7.6,37.5 -21.3,51.2 z"
+      :style="{ fill: colorPrimary }"
+      inkscape:connector-curvature="0" />
+
   </svg>
   <!--- user -->
   <svg v-else-if="name === 'user'" viewBox="0 0 65.59 68.23" preserveAspectRatio="none" >
