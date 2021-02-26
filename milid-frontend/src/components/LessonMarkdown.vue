@@ -1,14 +1,6 @@
 
 <template>
-  <div class="col" :style="cssVars" v-bind:class="{ scrollDisabled: definitionPopupIsOpen }">
-    <DefinitionPopup 
-    :open="definitionPopupIsOpen"
-    :theme="module.theme"
-    :height="height"
-    v-on:closerequest="definitionPopupIsOpen = false"
-    >
-      {{definition}}
-    </DefinitionPopup>
+  <div class="col" :style="cssVars" >
     <div ref="raw_root" v-html="lessonContent" />
   </div>
 </template>
@@ -50,7 +42,6 @@
 <script lang="ts">
 /* eslint-disable */
 import { Component, Vue, Prop } from 'vue-property-decorator';
-import DefinitionPopup from '../components/DefinitionPopup.vue';
 
 import { $module } from '@/services/module-service';
 import { $config } from '@/services/config-service';
@@ -64,18 +55,16 @@ function getOffset(el: HTMLElement) {
 }
 
 @Component({
-  components: {
-    DefinitionPopup,
-  },
+  components: { },
 })
 export default class LessonMarkdown extends Vue {
   @Prop() readonly moduleId!:string;
   @Prop() readonly lessonId!:string;
   lessonContent = "";
   definitions: any[] = [];
-  definition = "";
-  definitionPopupIsOpen = false;
-  height = 0;
+  // definition = "";
+  // definitionPopupIsOpen = false;
+  // height = 0;
   
 
   beforeMount(){
@@ -105,9 +94,12 @@ export default class LessonMarkdown extends Vue {
 
   definitionClickHandler(e: any){
     const definitionId = e.target.dataset.definitionId;
-    this.height = getOffset(e.target).top;
-    this.definitionPopupIsOpen = true;
-    this.definition = this.definitions.find(def => def.id === definitionId).definition;
+    // this.height = getOffset(e.target).top;
+    // this.definitionPopupIsOpen = true;
+    // this.definition = this.definitions.find(def => def.id === definitionId).definition;
+    const height = getOffset(e.target).top;
+    const definition = this.definitions.find(def => def.id === definitionId).definition;
+    this.$emit('popupRequest', { height, definition });
   }
 
   setupDefinitions(){

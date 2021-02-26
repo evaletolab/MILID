@@ -55,7 +55,7 @@
       <section class="lesson rendered-item"          
           v-for="(lesson, index) in renderLessons" :key="index" :id="'ctn-'+index"          
           v-bind:index="index" ref="content">
-        <LessonMarkdown v-if="lesson.type == 'MARKDOWN'" :moduleId="module.id" :lessonId="lesson.id"  />
+        <LessonMarkdown v-if="lesson.type == 'MARKDOWN'" :moduleId="module.id" :lessonId="lesson.id" @popupRequest="onPopupRequest" />
         <LessonVideo v-else-if="lesson.type == 'VIDEO'" :moduleId="module.id" :lessonId="lesson.id"  />
         <LessonPodcast v-else-if="lesson.type == 'PODCAST'" :moduleId="module.id" :lessonId="lesson.id"  />
         <LessonInfographic v-else-if="lesson.type == 'INFOGRAPHIC'" :moduleId="module.id" :lessonId="lesson.id" />
@@ -68,6 +68,13 @@
       </section>
     </ContentSwipe>
     <LessonSources :lessonId="currentLesson.id" :moduleId="module.id" />
+    <DefinitionPopup 
+      :open="showDefPopup" 
+      :theme="module.theme" 
+      :height="popupHeight" 
+      v-on:closerequest="showDefPopup = false">
+      {{definition}}
+    </DefinitionPopup>
   </div>
   <!--- WHEN MODULE IS NOT READY -->
   <div v-else>    
@@ -147,7 +154,9 @@ import LessonMarkdown from '../components/LessonMarkdown.vue';
 import LessonVideo from '../components/LessonVideo.vue';
 import LessonPodcast from '../components/LessonPodcast.vue';
 import LessonInfographic from '../components/LessonInfographic.vue';
+
 import LessonSources from '../components/LessonSources.vue';
+import DefinitionPopup from '../components/DefinitionPopup.vue';
 
 
 @Component({
@@ -159,7 +168,8 @@ import LessonSources from '../components/LessonSources.vue';
     LessonVideo, 
     LessonPodcast, 
     LessonInfographic,
-    LessonSources
+    LessonSources,
+    DefinitionPopup,
    }
 })
 export default class Lesson extends Vue {
@@ -167,6 +177,10 @@ export default class Lesson extends Vue {
   private renderLessons$: MILID.Lesson[] = [];
   private translateY = -1;
   test = [];
+
+  showDefPopup = false;
+  popupHeight = 0;
+  definition = "";
 
   //
   // vues methods
@@ -282,7 +296,12 @@ export default class Lesson extends Vue {
     return lesson.sources || '';
   }
 
-
+  onPopupRequest(payload){
+    const { height, definition } = payload;
+    this.popupHeight = height;
+    this.definition = definition;
+    this.showDefPopup = true;
+  }
 
 
   onBack() {
