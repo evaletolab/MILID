@@ -1,7 +1,9 @@
 
 <template>
   <div class="col" :style="cssVars" >
-    <div ref="raw_root" v-html="lessonContent" />
+    <div ref="raw_root" v-html="lessonContent" ></div>
+
+    <Quiz v-if="hasQuiz" :moduleId="moduleId" :lessonId="lessonId" />
   </div>
 </template>
 
@@ -43,6 +45,7 @@
 <script lang="ts">
 /* eslint-disable */
 import { Component, Vue, Prop } from 'vue-property-decorator';
+import Quiz from './Quiz.vue';
 
 import { $module } from '@/services/module-service';
 import { $config } from '@/services/config-service';
@@ -56,7 +59,7 @@ function getOffset(el: HTMLElement) {
 }
 
 @Component({
-  components: { },
+  components: { Quiz },
 })
 export default class LessonMarkdown extends Vue {
   @Prop() readonly moduleId!:string;
@@ -69,8 +72,7 @@ export default class LessonMarkdown extends Vue {
   
 
   beforeMount(){
-
-    this.lessonContent = $module.getLessonForModuleAndLessonId(this.moduleId, this.lessonId).html;
+    this.lessonContent = this.lesson.html;
     this.definitions = $module.store.definitions;
   }
 
@@ -85,6 +87,14 @@ export default class LessonMarkdown extends Vue {
 
   get module() {
     return $module.getModuleWithId(this.moduleId);    
+  }
+
+  get lesson(){
+    return $module.getLessonForModuleAndLessonId(this.moduleId, this.lessonId);
+  }
+
+  get hasQuiz(){
+    return !!this.lesson.quiz;
   }
 
   get cssVars(){

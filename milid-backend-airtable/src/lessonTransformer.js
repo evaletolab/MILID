@@ -7,6 +7,9 @@ const svg_transformer = require('./transformers/svg_transformer');
 
 const { insecables } = require('./typeHelper');
 
+const marked = require('marked');
+const { INFOGRAPHIC } = require('./LessonType');
+
 module.exports = function lessonTransformer(data){
     const urlForAssetId = (id) => {
         const asset = data.assets.find(asset => asset.airtable_id == id);
@@ -29,6 +32,10 @@ module.exports = function lessonTransformer(data){
 
         if(lesson.media){
             lesson.media = urlForAssetId(lesson.media[0]);
+        }
+
+        if(lesson.quiz){
+            lesson.quiz = marked(lesson.quiz);
         }
 
         lesson.title = insecables(lesson.title);
