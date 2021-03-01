@@ -34,6 +34,7 @@
   .col /deep/ ._definition{
     color: var(--lesson-color);
     cursor:pointer;
+    text-decoration: underline;
   }
 
 </style>
