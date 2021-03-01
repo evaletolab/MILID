@@ -8,18 +8,17 @@ import router from './router'
 
 Vue.config.productionTip = false
 
-import 'vue-material/dist/vue-material.min.css'
-import 'vue-material/dist/theme/default.css'
-
 import '@/main.scss'
 
 import { $config } from '@/services/config-service';
 import { $module } from '@/services/module-service';
+import { $metric } from '@/services/metric-service';
 
 const load = [$config.get(), $module.getAll()];
 Promise.all(load).
 then(() => {
   console.log("services loaded");
+  $metric.init(); // must be called after $module is ready
   new Vue({
     router,
     render: h => h(App)

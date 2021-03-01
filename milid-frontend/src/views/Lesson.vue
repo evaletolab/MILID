@@ -3,21 +3,21 @@
     <!-- DEFAULT TOOLBAR -->
     <nav class="toolbar primary">
       <div class="toolbar-row">
-        <div class="md-toolbar-section-start">
-          <md-button class="md-icon-button" @click="onBack()">
-            <md-icon class="primary">arrow_back</md-icon>
-          </md-button>
+        <div class="toolbar-section-start">
+          <button class="start icon" @click="onBack()">
+            <MILIDIcons name="back" color="white"/>
+          </button>
         </div>
 
         <div class="toolbar-title title-left">
-          <span>M{{module.id}}.{{position}}<br/>
-          {{module.title}}</span>
+          <b>M{{module.id}}</b>.{{position}}<br/>
+          <span v-html="currentLesson.title"></span>
         </div>        
 
-        <div class="md-toolbar-section-end">
-          <md-button class="md-icon-button">
-            <md-icon class="primary">more_vert</md-icon>
-          </md-button>
+        <div class="toolbar-section-end">
+          <button class="end icon">
+            <MILIDIcons name="parametres" color="white"/>
+          </button>
         </div>
       </div>
 
@@ -25,6 +25,7 @@
         <div class="toolbar-title tight">
           <ModuleProgress 
           :pipCount="count" 
+          :pipTotal="count"
           :completedPips="position" 
           color="white" 
           :bkgdColor="config.themes[module.id].primary"
@@ -50,13 +51,14 @@
       </md-speed-dial-content>
     </md-speed-dial>     -->
 
-    <ContentSwipe :initial="$route.params.lesson_id - 1" :lessons="lessons" @changeCard="renderChange">
-      <section class="lesson rendered-item"
-          v-for="(lesson, index) in renderLessons" :key="index" :id="index"          
-          v-bind:index="index">
-        <LessonMarkdown v-if="lesson.type == 'MARKDOWN'" :moduleId="module.id" :lessonId="lesson.id" />
-        <LessonVideo v-else-if="lesson.type == 'VIDEO'" :moduleId="module.id" :lessonId="lesson.id" />
-        <LessonPodcast v-else-if="lesson.type == 'PODCAST'" :moduleId="module.id" :lessonId="lesson.id" />
+    <ContentSwipe :initial="$route.params.lesson_id - 1" :lessons="lessons" @changeCard="renderChange" ref="container">
+      <section class="lesson rendered-item"          
+          v-for="(lesson, index) in renderLessons" :key="index" :id="'ctn-'+index"          
+          v-bind:index="index" ref="content">
+        <LessonMarkdown v-if="lesson.type == 'MARKDOWN'" :moduleId="module.id" :lessonId="lesson.id" @popupRequest="onPopupRequest" />
+        <LessonVideo v-else-if="lesson.type == 'VIDEO'" :moduleId="module.id" :lessonId="lesson.id"  />
+        <LessonPodcast v-else-if="lesson.type == 'PODCAST'" :moduleId="module.id" :lessonId="lesson.id"  />
+        <LessonInfographic v-else-if="lesson.type == 'INFOGRAPHIC'" :moduleId="module.id" :lessonId="lesson.id" />
         <div v-else>
           <h3 class="title">{{lesson.title}}</h3>
           <div class="item type ">
@@ -64,8 +66,15 @@
           </div>
         </div>
       </section>
-
     </ContentSwipe>
+    <LessonSources :lessonId="currentLesson.id" :moduleId="module.id" />
+    <DefinitionPopup 
+      :open="showDefPopup" 
+      :theme="module.theme" 
+      :height="popupHeight" 
+      v-on:closerequest="showDefPopup = false">
+      {{definition}}
+    </DefinitionPopup>
   </div>
   <!--- WHEN MODULE IS NOT READY -->
   <div v-else>    
@@ -88,54 +97,6 @@
     padding-top:0;    
   }
 
-  .toolbar {
-    border-radius: 0 0 18px 18px;
-    flex-flow: row wrap;
-    position: relative;
-    z-index: 2;    
-    position: fixed;
-    width: 100vw;
-
-    .toolbar-title{
-      text-align: center;
-      font-size: 14px;
-      font-weight: 500;
-      letter-spacing: -0.01em;
-      line-height: 16px;
-      margin-top: 0.8em;
-      margin-bottom: 0.8em;
-      text-transform: uppercase;
-      font-weight: 900;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      overflow: hidden;
-      width: 100%;
-      &.tight {
-        margin: 0;
-      }
-      &.title-left{
-        text-align: left;
-      }
-      .progress{
-        width: 90px;
-        height: 25px;
-        margin: auto;        
-      }
-    }
-
-    .toolbar-row {
-      width: 100%;
-      min-height: 38px;
-      display: flex;
-      align-items: center;
-      align-content: center;
-    }
-  }
-
-  .toolbar + .toolbar {
-    margin-top: 16px;
-  }
-
   
   .md-speed-dial.md-bottom-right {
     position: fixed;
@@ -145,10 +106,10 @@
   }
 
   section.lesson {
-    overflow-x: hidden;
-    overflow-y: auto;
-    margin-top: 100px;
-    padding-bottom: 100px;
+    margin-top: 95px;
+    padding-bottom: 160px;
+    // FIXME activating scroll, disable swipe 
+    // overflow-y:auto;
     .title {
       text-align: left;
       color: var(--theme-1-primary);
@@ -179,6 +140,7 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 import { Route} from 'vue-router';
+import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 
 import { $config, $module } from '../services';
 import { MILID } from '../models';
@@ -187,26 +149,38 @@ import ContentSwipe from '../components/ContentSwipe.vue';
 import MILIDIcons from '../components/MILIDIcons.vue';
 import ModuleProgress from '../components/ModuleProgress.vue';
 
-import MdButton  from 'vue-material';
-import MdSpeedDial  from 'vue-material';
 
 import LessonMarkdown from '../components/LessonMarkdown.vue';
 import LessonVideo from '../components/LessonVideo.vue';
 import LessonPodcast from '../components/LessonPodcast.vue';
+import LessonInfographic from '../components/LessonInfographic.vue';
 
+import LessonSources from '../components/LessonSources.vue';
+import DefinitionPopup from '../components/DefinitionPopup.vue';
 
-
-
-Vue.use(MdButton);
-Vue.use(MdSpeedDial);
 
 @Component({
-  components: { ContentSwipe, MILIDIcons, ModuleProgress, LessonMarkdown, LessonVideo, LessonPodcast }
+  components: { 
+    ContentSwipe, 
+    MILIDIcons, 
+    ModuleProgress, 
+    LessonMarkdown, 
+    LessonVideo, 
+    LessonPodcast, 
+    LessonInfographic,
+    LessonSources,
+    DefinitionPopup,
+   }
 })
 export default class Lesson extends Vue {
   //private _observer: any;
   private renderLessons$: MILID.Lesson[] = [];
+  private translateY = -1;
   test = [];
+
+  showDefPopup = false;
+  popupHeight = 0;
+  definition = "";
 
   //
   // vues methods
@@ -217,11 +191,13 @@ export default class Lesson extends Vue {
 
   beforeDestroy () {
     document.body.style.removeProperty("overflow-y");
+    document.body.style.removeProperty("position");
+    clearAllBodyScrollLocks();
   }
 
   mounted() {    
-    window.scroll(0,0);
     document.body.style.setProperty("overflow-y", "hidden");
+    document.body.style.setProperty("position", "fixed");
   }
 
   //
@@ -248,6 +224,10 @@ export default class Lesson extends Vue {
     return lessons;
   }
 
+  get currentLesson() {
+    return $module.getLessonForModuleAndLessonId(this.$route.params.module_id,this.$route.params.lesson_id);
+  }
+
   get renderLessons() {
     if(!this.renderLessons$.length) {
       const lid = Number.parseInt(this.$route.params.lesson_id || "0");
@@ -263,12 +243,40 @@ export default class Lesson extends Vue {
     return this.renderLessons$;
   }  
 
+
+  initScroll(container, content) {
+    if(!content || !container) {
+      return;
+    }
+
+    const section = content[1].firstChild || content[1];
+    setTimeout(()=>{
+      // const margin = 100;// toolbar
+      // const overflow = (section.clientHeight > (window.innerHeight - margin)) ? 'auto':'hidden';
+      container.$el.style.setProperty("overflow-y", 'auto');
+      container.$el.scrollTop = 0;
+
+      content[0].style.setProperty("overflow-y", 'hidden');
+      content[1].style.removeProperty("overflow-y");
+      content[2].style.setProperty("overflow-y", 'hidden');
+      
+      disableBodyScroll(container.$el);
+      // console.log('----',section.clientHeight, window.innerHeight,content[0].style);
+      // console.log('----',overflow);
+    },200);
+  }
+
+
   renderChange(renderLessons) {
     this.renderLessons$ = [...renderLessons];
     this.$router.replace({ path: `/module/${this.module.id}/lesson/${renderLessons[1].id}`}).catch(()=> {
       //
     }).then(()=>{
-      this.$el.scrollTop = 0;
+      // validate screen 
+      // lock or unlock scroll (iOS body scroll issue)
+      const container = this.$refs.container as any;
+      const content = this.$refs.content as any;
+      this.initScroll(container,content);
     });
   }
 
@@ -284,13 +292,15 @@ export default class Lesson extends Vue {
     return this.config.themes[theme].tertiary;
   }
 
-  //
-  // only for devel purposes
-  getStyle(lesson: any) {
-    const styleObj = {
-      background: (lesson.color || 'white')
-    }
-    return styleObj;
+  getSourceHtml(lesson: MILID.Lesson) {
+    return lesson.sources || '';
+  }
+
+  onPopupRequest(payload){
+    const { height, definition } = payload;
+    this.popupHeight = height;
+    this.definition = definition;
+    this.showDefPopup = true;
   }
 
 
@@ -298,6 +308,5 @@ export default class Lesson extends Vue {
     this.$router.go(-1);
     //this.$router.push({ path: `/module`});
   }
-
 }
 </script>

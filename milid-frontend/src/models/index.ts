@@ -1,4 +1,4 @@
-
+/* eslint-disable */
 // TODO: discuss i18n with client
 export namespace MILID {
   export enum ColorPalette{
@@ -84,7 +84,6 @@ export namespace MILID {
   export enum LessonState 
   {
     TODO,
-    DOING,
     DONE
   }
 
@@ -94,7 +93,8 @@ export namespace MILID {
       title: string;
       state: LessonState;
       description?: string;
-      activity: LessonActivity
+      activity: LessonActivity;
+      sources?: string;
   }
 
 

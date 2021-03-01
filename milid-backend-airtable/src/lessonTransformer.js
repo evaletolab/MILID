@@ -1,7 +1,11 @@
 const mdTransformer = require('./transformers/md_transformer');
+const svgTransformer = require('./transformers/svg_transformer');
 const sourcesTransformer = require('./transformers/sources_transformer');
 
 const LessonType = require('./LessonType');
+const svg_transformer = require('./transformers/svg_transformer');
+
+const { insecables } = require('./typeHelper');
 
 module.exports = function lessonTransformer(data){
     const urlForAssetId = (id) => {
@@ -27,6 +31,8 @@ module.exports = function lessonTransformer(data){
             lesson.media = urlForAssetId(lesson.media[0]);
         }
 
+        lesson.title = insecables(lesson.title);
+
         lesson = sourcesTransformer(lesson);
 
         switch(lesson.type){
@@ -36,6 +42,9 @@ module.exports = function lessonTransformer(data){
             case LessonType.PODCAST:
                 break;
             case LessonType.VIDEO:
+                break;
+            case LessonType.INFOGRAPHIC:
+                lesson = svg_transformer(lesson);
                 break;
             default:
                 throw new Error("unsupported LessonType", lesson.type);

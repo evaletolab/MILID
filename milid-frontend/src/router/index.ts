@@ -73,7 +73,7 @@ const router = new VueRouter({
   base: process.env.BASE_URL,
   routes,
   scrollBehavior (to, from, savedPosition: any) {
-    console.log("--DBG: route position",savedPosition);
+    //console.log("--DBG: route position",savedPosition);
     return savedPosition || {
       x:0,
       y:undefined

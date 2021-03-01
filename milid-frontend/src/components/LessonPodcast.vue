@@ -1,6 +1,6 @@
 <template>
     <div class="col" :class="'theme-'+theme">
-        <h1 class="primary-on-text">{{title}}</h1>
+        <h1 class="primary-on-text" v-html="title"/>
         
         <audio ref="audioPlayer">
             <source :src="mediaUrl" preload='metadata' type='audio/mpeg; codecs="mp3"'>
@@ -11,23 +11,26 @@
         </div>
 
         <div class="duration-container">
-            <span class="primary-on-text" >{{elapsed}}/{{duration}}</span>
+            <span class="primary-on-text" >{{elapsedStr}}/{{durationStr}}</span>
         </div>
 
         <div class="control">
             <div class="control-icons">
-                <MILIDIcons name="podcast-rewind" :theme="theme" @wasClicked="seekBackwards" />
-                <MILIDIcons v-if="isPlaying" name="podcast-pause" :theme="theme" @wasClicked="pause"/>
-                <MILIDIcons v-else name="podcast-play" :theme="theme" @wasClicked="play" />
-                <MILIDIcons name="podcast-forward" :theme="theme" @wasClicked="seekForwards"  />
+                <MILIDIcons name="podcast-rewind" width="35px" :theme="theme" @wasClicked="seekBackwards" />
+                <MILIDIcons v-if="isPlaying" width="35px" name="podcast-pause" :theme="theme" @wasClicked="pause"/>
+                <MILIDIcons v-else name="podcast-play" width="35px" :theme="theme" @wasClicked="play" />
+                <MILIDIcons name="podcast-forward" width="35px" :theme="theme" @wasClicked="seekForwards"  />
             </div>
         </div>
-    </div>
-    
+
+        <button @click="completionHandler">complete me</button>
+
+        <p>status = {{done}}</p>
+    </div>   
 </template>
 
 
-<style scoped>
+<style lang="scss" scoped>
   .col{
     /* margin-left: 20px; */
     width:100%;
@@ -44,6 +47,7 @@
       display: flex;
       justify-content: center;
       width:170%;
+      min-height: 320px;
   }
 
   .lottie-player{
@@ -54,6 +58,7 @@
   .duration-container{
       display: flex;
       justify-content: center;
+      margin-top: -20px;
       margin-bottom: 20px;
   }
   
@@ -67,7 +72,13 @@
       width:70%;
       height: 35px;
       justify-content: space-between;
-  }
+      cursor:pointer;      
+   }
+    .control-icons svg{
+        width: 35px;
+        height: 35px;
+    }
+
 </style>
 
 
@@ -80,6 +91,7 @@ import axios from 'axios';
 
 import { $module } from '@/services/module-service';
 import { $config } from '@/services/config-service';
+import { $metric } from '@/services/metric-service';
 
 @Component({
   components: { 
@@ -111,13 +123,24 @@ export default class LessonPodcast extends Vue {
         return `lottie/podcast-theme-${this.moduleId}.json`;
     }
 
-
     get title(){
         return this.lesson.title;
     }
 
     get mediaUrl(){
         return this.lesson.media;
+    }
+
+    get done(){
+        return $metric.progressionState?.modules[this.moduleId].lessons[this.lessonId];
+    }
+
+    get elapsedStr(){
+        return this.formatTime(this.elapsed);
+    }
+
+    get durationStr(){
+        return this.formatTime(this.duration);
     }
 
     setAnimController(controller){
@@ -184,6 +207,20 @@ export default class LessonPodcast extends Vue {
 
     seekBackwards(){
         this.audioPlayer.currentTime = Math.max(this.audioPlayer.currentTime - 10, 0);
+    }
+    
+    formatTime(time){
+        const minutes = Math.floor(time / 60);
+        const seconds = time % 60;
+        
+        const minStr = minutes > 0 ? `${minutes}:` : "";
+        const secondsStr = seconds.toString().padStart(2, '0');
+
+        return `${minStr}${secondsStr}`;
+    }
+
+    completionHandler(){
+        $metric.setCompleted(this.moduleId, this.lessonId);
     }
 }
 </script>

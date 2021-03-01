@@ -13,7 +13,9 @@ import { MILID } from '../models';
 export default class ModuleProgress extends Vue {
   private _ctx;
 
+
   @Prop() readonly pipCount!: number;
+  @Prop({ default: 8 }) readonly pipTotal!: number; // max number of visible pips (determines pip separation)
   @Prop() readonly completedPips!: number;
   @Prop() readonly theme!: string;
   @Prop({ default: '#fff' }) readonly bkgdColor!: string; 
@@ -45,7 +47,7 @@ export default class ModuleProgress extends Vue {
     const canvas = this.$refs.canvas as HTMLCanvasElement;
 
     const { width, height } = canvas.getBoundingClientRect();
-    console.log("resize", width, height, this.pixelRatio);
+    // console.log("resize", width, height, this.pixelRatio);
 
     canvas.width = Math.floor(width * this.pixelRatio);
     canvas.height = Math.floor(height * this.pixelRatio);
@@ -76,8 +78,8 @@ export default class ModuleProgress extends Vue {
     const { width, height } = this._ctx.canvas;
     const ctx: CanvasRenderingContext2D = this._ctx;
 
-    
     ctx.clearRect(0, 0, width, height);
+    ctx.imageSmoothingEnabled = true;
 
     const circle = (x, y, r) => {
       ctx.beginPath();
@@ -86,9 +88,13 @@ export default class ModuleProgress extends Vue {
 
     ctx.save();
     {
-      const xMargin = Math.floor(20 * this.pixelRatio);
+      const xMargin = Math.floor(12 * this.pixelRatio);
       const usableWidth = width - (xMargin * 2);  
-      const pipOffset = usableWidth / (this.pipCount - 1);
+
+      // const pipOffset = usableWidth / (this.pipCount - 1);
+      const pipOffset = usableWidth / (this.pipTotal - 1);
+
+
       const pipRadius = Math.floor(4 * this.pixelRatio);
       const lineWidth = Math.floor(6 * this.pixelRatio);
       const completedRadius = Math.floor(10 * this.pixelRatio);

@@ -1,6 +1,6 @@
 <template>
   <!--- TOP -->
-  <svg v-if="name === 'back_top'" :viewBox="viewBox" preserveAspectRatio="none" >
+  <svg v-if="name === 'back-top'" :viewBox="viewBox" preserveAspectRatio="none" >
     <g>
       <path :style="{ fill: colorPrimary }" d="M79.44,43.5c0,9.6-3.74,18.63-10.53,25.41C62.13,75.7,53.1,79.44,43.5,79.44S24.87,75.7,18.09,68.91
         C11.3,62.13,7.56,53.1,7.56,43.5s3.74-18.63,10.53-25.41C24.87,11.3,33.9,7.56,43.5,7.56s18.63,3.74,25.41,10.53
@@ -117,10 +117,52 @@
   </svg>  
   <!--- sources -->
   <svg v-else-if="name === 'sources'" :viewBox="viewBox" preserveAspectRatio="none" >
+    <circle
+   style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.79999995;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+   id="path819"
+   cx="43.5"
+   cy="43.5"
+   r="38.707626" />
     <path :style="{ fill: colorPrimary }" d="M43.5,0C19.48,0,0,19.48,0,43.5S19.48,87,43.5,87S87,67.52,87,43.5S67.52,0,43.5,0z M68.91,68.91
 	C62.13,75.7,53.1,79.44,43.5,79.44S24.87,75.7,18.09,68.91C11.3,62.13,7.56,53.1,7.56,43.5s3.74-18.63,10.53-25.41
 	c4.76-4.76,10.63-8.02,17.02-9.54v46.28c0,3.07,3.77,4.53,5.84,2.27l10.12-11.07l10.12,11.07c2.07,2.26,5.84,0.8,5.84-2.27v-38.5
 	c0.65,0.56,1.29,1.14,1.9,1.76C75.7,24.87,79.44,33.9,79.44,43.5S75.7,62.13,68.91,68.91z"/>
+  </svg>
+  <svg v-else-if="name === 'sources-bar'" viewBox="0 0 305.46912 175.2" preserveAspectRatio="none" >
+    <rect
+      x="2"
+      y="74"
+      class="st0"
+      width="302"
+      height="92"
+      id="rect4"
+      style="fill:#ffffff;stroke-width:0" />
+
+    <path
+      d="m 305.2,78.5 c -30.1,0 -57.3,16.9 -71.5,43.4 -4.4,8.1 -10.1,15.7 -16.9,22.3 -17,16.6 -40,25.9 -63.7,25.9 -6.8,0 -13.5,-0.7 -20,-2.1 -16.9,-3.7 -32.4,-12.2 -45,-24.7 C 81.6,136.8 76.2,129.5 72,121.6 57.8,95 30.1,78.5 0,78.5 c 0.0492,24.76034 0.0492,45.38402 0.0492,96.6 h 305.41991 c 0,-66.20496 0.26916,-37.14934 3e-5,-96.359965 z"
+      id="path6"
+      inkscape:connector-curvature="0"
+      sodipodi:nodetypes="cccscccccccc"
+      :style="{ fill: colorPrimary, stroke: colorPrimary }" />
+
+
+    <circle
+      class="st0"
+      cx="152.10001"
+      cy="87.599998"
+      r="72.400002"
+      id="circle8"
+      style="fill:#ffffff" />
+    <circle
+      style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:4.73625565;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+      id="path824"
+      cx="151.63248"
+      cy="87.400253"
+      r="75.074028" /><path
+      d="m 152.1,0 c -48.4,0 -87.6,39.2 -87.6,87.6 0,48.4 39.2,87.6 87.6,87.6 48.4,0 87.6,-39.2 87.6,-87.6 C 239.7,39.2 200.5,0 152.1,0 Z m 51.2,138.8 C 189.6,152.5 171.4,160 152.1,160 132.8,160 114.6,152.5 100.9,138.8 87.2,125.1 79.7,107 79.7,87.6 c 0,-19.4 7.5,-37.5 21.2,-51.2 9.6,-9.6 21.4,-16.1 34.3,-19.2 v 93.2 c 0,6.2 7.6,9.1 11.8,4.6 l 20.4,-22.3 20.4,22.3 c 4.2,4.6 11.8,1.6 11.8,-4.6 V 32.9 c 1.3,1.1 2.6,2.3 3.8,3.5 13.7,13.7 21.2,31.8 21.2,51.2 0,19.4 -7.6,37.5 -21.3,51.2 z"
+      :style="{ fill: colorPrimary }"
+      inkscape:connector-curvature="0" />
+
   </svg>
   <!--- user -->
   <svg v-else-if="name === 'user'" viewBox="0 0 65.59 68.23" preserveAspectRatio="none" >
@@ -151,12 +193,12 @@
     </g>
   </svg>
   <!--- podcast-play -->
-  <svg v-else-if="name === 'podcast-play'" @click="$emit('wasClicked')" viewBox="0 0 89.45 100" preserveAspectRatio="none" >
+  <svg v-else-if="name === 'podcast-play'" @click="$emit('wasClicked')" :width="width" viewBox="0 0 89.45 100" preserveAspectRatio="none" >
     <path style="fill:#808183;" d="M0,50.09v-38.6C0,2.79,9.42-2.65,16.95,1.7L50.38,21L83.8,40.3c7.53,4.35,7.53,15.22,0,19.57l-33.43,19.3
 	l-33.43,19.3C9.42,102.82,0,97.38,0,88.68V50.09z"/>
   </svg>
   <!--- podcast-pause -->
-  <svg v-else-if="name === 'podcast-pause'" @click="$emit('wasClicked')" viewBox="0 0 82.21 100" preserveAspectRatio="none" >
+  <svg v-else-if="name === 'podcast-pause'" @click="$emit('wasClicked')" :width="width" viewBox="0 0 82.21 100" preserveAspectRatio="none" >
     <g>
       <path style="fill:#808183;" d="M14.22,0C6.37,0,0,6.37,0,14.22v71.55C0,93.63,6.37,100,14.22,100s14.22-6.37,14.22-14.22V14.22
         C28.45,6.37,22.08,0,14.22,0z"/>
@@ -165,7 +207,7 @@
     </g>
   </svg>
   <!--- podcast-forward -->
-  <svg v-else-if="name === 'podcast-forward'" @click="$emit('wasClicked')" viewBox="0 0 106.69 100" preserveAspectRatio="none" >
+  <svg v-else-if="name === 'podcast-forward'" @click="$emit('wasClicked')" :width="width" viewBox="0 0 106.69 100" preserveAspectRatio="none" >
     <g>
       <path :style="{ fill: colorPrimary }" d="M41.09,63.16V44.6h-5.53v-2.39c3.48-0.1,5.22-0.46,6.53-3.12h2.41v24.07H41.09z"/>
       <path :style="{ fill: colorPrimary }" d="M49.36,51.04c0-7.44,3.05-12.38,9.51-12.38c6.5,0,9.54,4.95,9.54,12.38c0,7.4-3.05,12.55-9.54,12.55
@@ -179,7 +221,7 @@
       l2.14-10.99c0.45-2.31-1.77-4.24-3.99-3.47l-2.62,0.9C98.3,31.87,96.44,31.03,95.69,29.38z"/>
   </svg>
   <!--- podcast-rewind -->
-  <svg v-else-if="name === 'podcast-rewind'" @click="$emit('wasClicked')" viewBox="0 0 106.69 100" preserveAspectRatio="none" >
+  <svg v-else-if="name === 'podcast-rewind'" @click="$emit('wasClicked')" :width="width" viewBox="0 0 106.69 100" preserveAspectRatio="none" >
     <g>
       <path :style="{ fill: colorPrimary }" d="M44.64,63.16V44.6h-5.53v-2.39c3.48-0.1,5.22-0.46,6.53-3.12h2.41v24.07H44.64z"/>
       <path :style="{ fill: colorPrimary }" d="M52.91,51.04c0-7.44,3.05-12.38,9.51-12.38c6.5,0,9.54,4.95,9.54,12.38c0,7.4-3.05,12.55-9.54,12.55
@@ -191,6 +233,18 @@
       c20.97-2.18,37.25-20.38,36.37-42.11c-0.83-20.6-17.3-37.52-37.87-38.88c-16.97-1.12-31.93,8.25-39.02,22.25
       c-0.96,1.89-0.01,4.19,1.99,4.88l2.91,1c2.22,0.77,2.79,3.65,1.01,5.2l-8.45,7.34l-8.45,7.35c-1.78,1.54-4.56,0.59-5-1.72
       L2.19,44.84L0.06,33.85c-0.45-2.31,1.77-4.24,3.99-3.47l2.62,0.9C8.39,31.87,10.25,31.03,11.01,29.38z"/>
+  </svg>
+  <!--- close -->
+  <svg v-else-if="name === 'close'" @click="$emit('wasClicked')" :width="width" viewBox="0 0 87 87" preserveAspectRatio="none" >
+      <g>
+        <path :style="{ fill: color }" d="M43.5,7.6c9.6,0,18.6,3.7,25.4,10.5s10.5,15.8,10.5,25.4s-3.7,18.6-10.5,25.4S53.1,79.4,43.5,79.4s-18.6-3.7-25.4-10.5
+          S7.6,53.1,7.6,43.5s3.7-18.6,10.5-25.4S33.9,7.6,43.5,7.6 M43.5,0C19.5,0,0,19.5,0,43.5S19.5,87,43.5,87S87,67.5,87,43.5
+          S67.5,0,43.5,0L43.5,0z"/>
+      </g>
+      <path :style="{ fill: color }" d="M53.2,40.5l10.7-10.7c1.7-1.7,2-4.8,0.3-6.6c-1.9-2.1-4.9-2.2-6.9-0.2L46.5,33.8c-1.7,1.7-4.3,1.7-6,0L29.7,23.1
+        c-2-2-5-1.9-6.9,0.2c-1.6,1.8-1.4,4.9,0.3,6.6l10.7,10.7c1.7,1.7,1.7,4.3,0,6L23.2,57.2c-1.6,1.6-1.9,4.4-0.6,6.2c1,1.4,2.5,2,3.8,2
+        c1.1,0,2.4-0.5,3.3-1.4l10.8-10.8c1.7-1.7,4.3-1.7,6,0L57.3,64c0.9,0.9,2.2,1.4,3.3,1.4c1.1,0,2.4-0.5,3.3-1.4
+        c1.9-1.9,1.9-4.8,0-6.7L53.2,46.5C51.5,44.8,51.5,42.2,53.2,40.5z"/>
   </svg>
 
 </template>
@@ -208,7 +262,7 @@ export default class MILIDIcons extends Vue {
   @Prop({ default : '1'}) private theme!: string;
   @Prop({ default : '18'}) private width!: string;
   @Prop({ default : '18'}) private height!: string;
-  @Prop({ default : 'primary'}) private color!: string;
+  @Prop() private color!: string;
 
   content = "";
 
@@ -226,14 +280,23 @@ export default class MILIDIcons extends Vue {
   }
 
   get colorPrimary() {
+    if(this.color) {
+      return this.color;
+    }
     return this.config.themes[this.theme].primary;
   }
 
   get colorSecondary() {
+    if(this.color) {
+      return this.color;
+    }
     return this.config.themes[this.theme].secondary;
   }
 
   get colorTertiary() {
+    if(this.color) {
+      return this.color;
+    }
     return this.config.themes[this.theme].tertiary;
   }
 
