@@ -13,5 +13,13 @@ module.exports = function moduleTransformer(data){
         return module;
     });
 
+    // add index to each lesson
+    for(const module of data.modules){
+        module.lessons = module.lessons.map((lesson, index) => {
+            lesson.index = index + 1;
+            return lesson;
+        });
+    }
+
     return data;
 }
