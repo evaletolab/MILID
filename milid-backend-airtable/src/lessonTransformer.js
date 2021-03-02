@@ -35,7 +35,7 @@ module.exports = function lessonTransformer(data){
         }
 
         if(lesson.quiz){
-            lesson.quiz = marked(lesson.quiz);
+            lesson.quiz = marked(insecables(lesson.quiz));
         }
 
         lesson.title = insecables(lesson.title);

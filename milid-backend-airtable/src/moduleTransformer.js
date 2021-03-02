@@ -16,7 +16,7 @@ module.exports = function moduleTransformer(data){
     // add index to each lesson
     for(const module of data.modules){
         module.lessons = module.lessons.map((lesson, index) => {
-            lesson.index = index + 1;
+            lesson.index = (index + 1).toString();
             return lesson;
         });
     }

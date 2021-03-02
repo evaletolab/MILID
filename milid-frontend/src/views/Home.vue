@@ -40,8 +40,8 @@
       <div class="title">{{mod.title}}</div>
       <div class="subtitle">{{mod.description}}</div>
       <div class="masonry-with-columns" :style="{ backgroundColor: themeTertiary(mod.theme)}">
-        <div v-for="lesson in mod.lessons" :key="lesson.id" 
-            @click="routerLink(mod.id,lesson.id)"
+        <div v-for="lesson in mod.lessons" :key="lesson.index" 
+            @click="routerLink(mod.id,lesson.index)"
             class="lesson">
           <div class="type">
             <MILIDIcons :name="getType(lesson)" :theme="mod.theme"/>

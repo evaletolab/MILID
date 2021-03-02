@@ -38,6 +38,11 @@ class ModuleService {
     const lessons = this.getLessonsForModuleWithId(moduleId);
     return lessons.find(l => l.id === lessonId.toString());
   }
+  
+  getLessonForModuleAndLessonIndex(moduleId, lessonIndex){
+    const lessons = this.getLessonsForModuleWithId(moduleId);
+    return lessons.find(l => l.index === lessonIndex);
+  }
 
   async getAll(){
     if(!this._store) {

@@ -225,7 +225,7 @@ export default class Lesson extends Vue {
   }
 
   get currentLesson() {
-    return $module.getLessonForModuleAndLessonId(this.$route.params.module_id,this.$route.params.lesson_id);
+    return $module.getLessonForModuleAndLessonIndex(this.$route.params.module_id,this.$route.params.lesson_id);
   }
 
   get renderLessons() {
@@ -233,7 +233,7 @@ export default class Lesson extends Vue {
       const lid = Number.parseInt(this.$route.params.lesson_id || "0");
       const lessons = this.module.lessons;
       // FIXME, findIndex can return -1 !
-      const index =  lessons.findIndex(l => l.id == lid);
+      const index =  lessons.findIndex(l => l.index == lid);
       const lastIndex = lessons.length - 1;
       const prevIndex = index === 0 ? lastIndex : index - 1;
       const nextIndex = index === lastIndex ? 0 : index + 1;
@@ -269,7 +269,7 @@ export default class Lesson extends Vue {
 
   renderChange(renderLessons) {
     this.renderLessons$ = [...renderLessons];
-    this.$router.replace({ path: `/module/${this.module.id}/lesson/${renderLessons[1].id}`}).catch(()=> {
+    this.$router.replace({ path: `/module/${this.module.id}/lesson/${renderLessons[1].index}`}).catch(()=> {
       //
     }).then(()=>{
       // validate screen 
