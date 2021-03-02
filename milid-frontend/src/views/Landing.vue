@@ -14,11 +14,14 @@
       <img src="@/assets/MILID-logo.svg" />
     </section>
     <section class="form">
-      <input v-model="pseudo" placeholder="Choisir un pseudo ..." class="pseudo"/>
+      <input v-model="pseudo" @keypress.enter="onEnter(pseudo)"
+             placeholder="Choisir un pseudo ..."  class="pseudo"/>
 
-      <router-link class="btn tertiary" to="/module" tag="button" :class="{'hidden':(pseudo.length < 4)}">
+      <a class="btn tertiary"
+        :class="{'hidden':(pseudo.length < 4)}"
+        @click="onEnter()">
         C'est parti mon kiki!
-      </router-link>
+      </a>
 
 
 
@@ -109,6 +112,7 @@
     margin: auto;
     font-size: 17px;
     outline: 0;
+    display: block;
   }
 
   input.pseudo {
@@ -191,7 +195,7 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import { $config } from '../services';
+import { $config, $user } from '../services';
 
 import MILIDIcons from '../components/MILIDIcons.vue';
 
@@ -219,8 +223,24 @@ export default class Landing extends Vue {
     return $config.store.config;
   }
 
+  get user() {
+    return $user.user;
+  }
+
   beforeRouteEnter(to: any, from: any, next: any) {
-    $config.get().then(next)
+    const all = [$config.get(),$user.get()]
+    Promise.all(all).then(([config, user])=> {
+      if(user.id && user.name) {
+        return next('/module');
+      }
+      next();
+    })
+  }
+
+  onEnter(username){
+    console.log('--- DBG entrer',username)
+    $user.createUser(username)
+    this.$router.push({path:'/module' });
   }
 
   onToggle(){

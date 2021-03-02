@@ -1,6 +1,7 @@
 import { MILID } from "@/models";
 import Vue from "vue";
 import axios from 'axios';
+import Airtable from 'airtable';
 
 const defaultAxios = {
   headers: { 'Cache-Control': 'no-cache' }
@@ -28,10 +29,25 @@ class ConfigService {
       this._store.config = res.data;
       this._store.config.done = true;
 
+      // console.log('---DBG', JSON.stringify(this._store,null,2))
       //
       // generate root colors
       this.generateColors(this._store.config.themes);
 
+      //
+      // configure Airtable instance 
+      const air = this._store.config.airtable;
+      if(!air || !air.key) {
+        console.log('-- DBG missing airtable config');
+        return;
+      }
+
+      const config = {
+        endpointUrl: 'https://api.airtable.com',
+        apiKey: air.key
+      } as any;
+      Airtable.configure(config);
+      air.base = Airtable.base(air.base); 
     }
 
     return this._store.config;
@@ -48,6 +64,30 @@ class ConfigService {
 
       const tertiary = themes[theme].tertiary
       root.style.setProperty('--theme-'+theme+'-tertiary',tertiary);
+    });
+  }
+
+
+  async storageGet(key: string) {
+    return new Promise((resolve, reject) => {
+      try {
+        const item = localStorage.getItem(key);
+        const parsed = JSON.parse(item as string);
+        resolve(parsed);
+      } catch (err) {
+        return reject(err);
+      }
+    });
+  }
+
+  async storageSet(key: string, value: any) {
+    return new Promise((resolve, reject) => {
+      try {
+        localStorage.setItem(key, JSON.stringify(value));
+        resolve(value);
+      } catch (err) {
+        reject(err);
+      }
     });
   }
 }

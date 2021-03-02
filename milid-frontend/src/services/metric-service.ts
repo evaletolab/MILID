@@ -3,63 +3,99 @@ import { MILID } from "@/models";
 import { Vue } from 'vue-property-decorator';
 
 import { $module } from './module-service';
+import { $config } from "./config-service";
+import { $user } from "./user-service";
 
-interface MILIDEvent {
+
+export interface MILIDEvent {
   module: string;
   lesson: string;
   state: MILID.LessonState;
-  uid: string;
-  username: string;
-  date: number;
+  uid?: string;
+  username?: string;
+  timestamp?: number;
 }
 
 
 class MetricService {
+  public STORAGE_KEY = "milid-progression";
 
   public progressionState: any = {};
 
-  init() {
-    this.progressionState = Vue.observable(this.computeInitialValue());
+  constructor() {
+    this.progressionState = Vue.observable({});
   }
 
+  async get() {
+    const state = (await $config.storageGet(this.STORAGE_KEY)) as any;
+    Object.keys(state ||{}).forEach(key => {
+      this.progressionState[key] = state[key];
+    })
+    return this.progressionState;
+  }
+
+  //
+  // push usage 
   async event(params: MILIDEvent){
-    throw new Error('Not implemented');
-  }
+    const base = $config.store.config.airtable.base;
+    const user = await $user.get();
 
-  static get localStorageKey(){
-    return "progression";
-  }
+    //
+    // extends params
+    const fields = Object.assign({},params,{
+      uid:user.id, 
+      username:user.name,
+      timestamp: (params.timestamp || new Date())
+    })
 
-  setCompleted(moduleId, lessonId){
-    this.progressionState.modules[moduleId].lessons[lessonId] = MILID.LessonState.DONE;
-  }
+    const createEvent = [{
+      "fields": fields
+    }];
 
-  buildEmptyProgressValue(){
-    const result = { modules: {} }
+    console.log('---DBG',fields);
+    //
+    // check state before to continue 
+    const current = this.progressionState[params.lesson];
+    if(current && 
+      (current.state == params.state || current.state == MILID.LessonState.DONE)) {
+     return fields;
+    } 
 
-    for(const module of $module.modules){
-      result.modules[module.id] = { lessons: {} };
+    //
+    // save localStorage
+    await this.set(fields);
 
-      for(const lesson of module.lessons){
-        result.modules[module.id].lessons[lesson.id] = MILID.LessonState.TODO;
-      } 
-    }
-
-    return result;
-  }
-
-  computeInitialValue(){
-    let value = this.buildEmptyProgressValue();
-    try{
-      const str = window.localStorage.getItem(MetricService.localStorageKey);
-      if(str){
-        value = JSON.parse(str);
+    //
+    // save Airtable
+    return new Promise((resolve,reject) => {
+      if(!fields.uid ||
+        !fields.username ||
+        !fields.lesson ||
+        !fields.module ||
+        !fields.state) {
+          return reject("Missing ARGs");          
       }
-    }catch(e){
-      console.error(e);
-    }
+  
+      base('usage').create(createEvent,function(err, records) {
+        if (err) {
+          return reject(err);
+        }
+        resolve(fields);
+      });
+    });
+  }
 
-    return value;
+  //
+  // keep track of all lessons
+  async set(params: MILIDEvent){
+    this.progressionState[params.lesson] = {
+      lesson: params.module,
+      state: params.state,
+      timestamp: params.date,
+      uid:params.uid,
+      pseudoname: params.username
+    };
+    return $config.storageSet(this.STORAGE_KEY,this.progressionState)
   }
 }
 

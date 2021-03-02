@@ -89,9 +89,8 @@ import MILIDIcons from '../components/MILIDIcons.vue';
 import LottieAnimation from "lottie-vuejs/src/LottieAnimation.vue";
 import axios from 'axios';
 
-import { $module } from '@/services/module-service';
-import { $config } from '@/services/config-service';
-import { $metric } from '@/services/metric-service';
+import { $config, $module, $metric } from '@/services';
+import { MILID } from '../models';
 
 @Component({
   components: { 
@@ -132,7 +131,7 @@ export default class LessonPodcast extends Vue {
     }
 
     get done(){
-        return $metric.progressionState?.modules[this.moduleId].lessons[this.lessonId];
+        return $metric.progressionState[this.lessonId];
     }
 
     get elapsedStr(){
@@ -219,8 +218,14 @@ export default class LessonPodcast extends Vue {
         return `${minStr}${secondsStr}`;
     }
 
-    completionHandler(){
-        $metric.setCompleted(this.moduleId, this.lessonId);
+    completionHandler($evt){
+        $evt.stopPropagation();
+        const params = {
+            lesson: this.lessonId,
+            module: this.moduleId,
+            state: MILID.LessonState.DONE
+        };
+        $metric.event(params);
     }
 }
 </script>

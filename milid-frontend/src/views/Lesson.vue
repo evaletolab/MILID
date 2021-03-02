@@ -142,7 +142,7 @@ import { Component, Vue } from 'vue-property-decorator';
 import { Route} from 'vue-router';
 import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 
-import { $config, $module } from '../services';
+import { $config, $module, $metric, MILIDEvent, $user } from '../services';
 import { MILID } from '../models';
 
 import ContentSwipe from '../components/ContentSwipe.vue';
@@ -277,6 +277,15 @@ export default class Lesson extends Vue {
       const container = this.$refs.container as any;
       const content = this.$refs.content as any;
       this.initScroll(container,content);
+
+      //
+      // event metric
+      const params: MILIDEvent = {
+        module:this.module.id,
+        lesson:renderLessons[1].id,
+        state:MILID.LessonState.DOING
+      };
+      $metric.event(params);
     });
   }
 
