@@ -91,7 +91,7 @@ class MetricService {
     this.progressionState[params.lesson] = {
       lesson: params.module,
       state: params.state,
-      timestamp: params.date,
+      timestamp: params.timestamp,
       uid:params.uid,
       pseudoname: params.username
     };
