@@ -33,6 +33,10 @@
     /* content: "• "; */
   }
 
+  .col /deep/ strong{
+    color: var(--lesson-color);
+  }
+
   .col /deep/ ._definition{
     color: var(--lesson-color);
     cursor:pointer;
@@ -66,9 +70,6 @@ export default class LessonMarkdown extends Vue {
   @Prop() readonly lessonId!:string;
   lessonContent = "";
   definitions: any[] = [];
-  // definition = "";
-  // definitionPopupIsOpen = false;
-  // height = 0;
   
 
   beforeMount(){
@@ -105,9 +106,6 @@ export default class LessonMarkdown extends Vue {
 
   definitionClickHandler(e: any){
     const definitionId = e.target.dataset.definitionId;
-    // this.height = getOffset(e.target).top;
-    // this.definitionPopupIsOpen = true;
-    // this.definition = this.definitions.find(def => def.id === definitionId).definition;
     const height = getOffset(e.target).top;
     const definition = this.definitions.find(def => def.id === definitionId).definition;
     this.$emit('popupRequest', { height, definition });
