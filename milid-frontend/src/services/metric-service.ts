@@ -28,9 +28,14 @@ class MetricService {
 
   async get() {
     const state = (await $config.storageGet(this.STORAGE_KEY)) as any;
-    Object.keys(state ||{}).forEach(key => {
-      this.progressionState[key] = state[key];
-    })
+    const keys = Object.keys(state ||{});
+    //
+    // looking on Airtable
+    if(!keys.length){
+      await this.sync();
+      await $config.storageSet(this.STORAGE_KEY,this.progressionState);
+    }    
+
     return this.progressionState;
   }
 
@@ -96,6 +101,58 @@ class MetricService {
       pseudoname: params.username
     };
     return $config.storageSet(this.STORAGE_KEY,this.progressionState)
+  }
+
+  async sync() {
+    const base = $config.store.config.airtable.base;
+    const user = await $user.get();
+    //
+    // reset
+    this.progressionState = {};
+
+    //
+    // basic check
+    if(!user.id) {
+      throw new Error('Unauthorized sync()')
+    }
+
+    //
+    // load Airtable usage
+    return new Promise((resolve,reject) => {
+      const query = {
+        maxRecords: 100,
+        filterByFormula:`{uid} = '${user.id}'`,
+        view: "Grid view"
+      };
+      const states: any[] = [];
+      base('usage').select(query).eachPage((records, fetchNextPage) => {    
+        records.forEach(record => {
+          const elem = {   
+            uid: record.get('uid'),
+            username: record.get('username'),
+            module: record.get('module'),
+            lesson: record.get('lesson'),
+            state: record.get('state'),
+            timestamp: record.get('timestamp')
+          };
+          states.push(elem)
+        });
+    
+        fetchNextPage();
+      }, 
+      (err) => {
+        console.log('--DBG load usage',states);
+        if (err) { 
+          reject(err) 
+        }
+        //
+        // end of sync
+        states.forEach(state => this.progressionState[state.lesson]=state)
+        resolve(this.progressionState);
+      });
+             
+    });
+
   }
 }
 

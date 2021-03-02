@@ -11,6 +11,7 @@ import Home from '../views/Home.vue'
 import Lesson from '../views/Lesson.vue'
 import AccessDenied from '../views/AccessDenied.vue'
 import Test from '../views/Test.vue';
+import { $user } from '@/services'
 
 Vue.use(VueRouter)
 
@@ -21,14 +22,14 @@ const routes: Array<RouteConfig> = [
     component: Landing
   },
   {
-    path: '/home',
-    name: 'Home',
-    redirect:'/module'
-  },
-  {
     path: '/module',
     name: 'Modules',
     component: Home,
+    beforeEnter: (to, from, next) =>{
+      $user.get().then(user => {
+        user.id ? next():next('/')
+      })
+    },
     children:[{
       path: ':module_id/lesson/:lesson_id',
       name: 'Lesson',
@@ -46,11 +47,6 @@ const routes: Array<RouteConfig> = [
     component: Test
   },
   {
-    path: '/module-old/:module_id/lesson/:lesson_id',
-    name: 'Lesson',
-    components: { l2 : Lesson}
-  },
-  {
     path:'/access_denied',
     name: 'AccessDenied',
     component: AccessDenied
@@ -59,8 +55,9 @@ const routes: Array<RouteConfig> = [
     path: '/dashboard',
     name: 'Dashboard',
     beforeEnter: (to, from, next) =>{
-      // TODO check role here
-      next();
+      $user.get().then(user => {
+        user.id ? next():next('/')
+      })
     },
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route

@@ -10,8 +10,8 @@ Vue.config.productionTip = false
 
 import '@/main.scss'
 
-import { $config, $module, $metric } from '@/services';
-const load = [$config.get(), $module.getAll(),$metric.get()];
+import { $config, $module, $metric, $user } from '@/services';
+const load = [$config.get(), $module.getAll(),$user.get()];
 
 Promise.all(load).
 then(() => {

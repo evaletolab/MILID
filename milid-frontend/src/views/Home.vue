@@ -68,7 +68,7 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 import { Route } from 'vue-router';
-import { $config, $module } from '../services';
+import { $config, $metric, $module } from '../services';
 
 import ModuleStatus from '../components/ModuleStatus.vue';
 import MILIDWave from '../components/MILIDWave.vue';
@@ -105,7 +105,7 @@ export default class Home extends Vue {
   }
 
   beforeRouteEnter(to: Route, from: Route, next: any) {
-    const load = [$config.get(),$module.getAll()];
+    const load = [$config.get(),$module.getAll(),$metric.get()];
     Promise.all(load).then(next);
   }
 
