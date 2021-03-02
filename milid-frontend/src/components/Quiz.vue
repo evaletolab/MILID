@@ -3,8 +3,13 @@
   <div class="quiz" :style="cssVars">
     <div ref="raw_root" v-html="quizContent" />
     <div class="center">
-      <button @click.once="validate" class="validate-btn">Validez vos réponses</button>
+      <button 
+      @click.once="validate" 
+      :disabled="!allQuestionsHaveAtLeastOneAnswer" 
+      class="validate-btn"
+      v-bind:class="{ validateBtnActive: allQuestionsHaveAtLeastOneAnswer }">Validez vos réponses</button>
     </div>
+    <p>{{validationText}}</p>
   </div>
 </template>
 
@@ -28,19 +33,23 @@
   .validate-btn{
     border: none;
     color: black;
-    background-color: orange;
+    background-color: grey;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     margin: 4px 2px;
     margin-top: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     cursor: pointer;
     border-radius: 48px;
-
   }
-  
+
+  .validateBtnActive
+  {
+    background-color: orange;
+  }
+
   .quiz /deep/ .quiz-btn
   {
     border: none;
@@ -83,9 +92,9 @@
     top: -2px;
   }
 
-  .quiz /deep/ .red
+  .quiz /deep/ .quiz-btn-done
   {
-     filter: brightness(3) hue-rotate(0deg) saturate(3);
+     filter: opacity(0.5);
   }
 
 </style>
@@ -108,6 +117,10 @@ export default class Quiz extends Vue {
 
   quizContent = "";
   questionSets: any = []
+
+  validationText = "";
+
+  allQuestionsHaveAtLeastOneAnswer = false;
 
   beforeMount(){
     this.quizContent = this.lesson.quiz;
@@ -136,16 +149,37 @@ export default class Quiz extends Vue {
   }
 
   validate(){
-    console.log("validate quiz");
+    const questionCount = this.questionSets.length;
+    let correctAnswersCount = 0;
+    
     for(const questionSet of this.questionSets){
       console.log(questionSet.id, questionSet.hasCorrectAnswer());
+      if(questionSet.hasCorrectAnswer()){
+        correctAnswersCount++;
+      }
       questionSet.validate();
+      questionSet.setDoneAppearance();
     }
 
+    const plural = correctAnswersCount > 1 ? 's' : '';
+
+    this.validationText = `vous avez ${correctAnswersCount} réponse${plural} correcte${plural}.`
+
+  }
+
+  computeStatus(){
+    for(const questionSet of this.questionSets){
+      if(!questionSet.hasAtLeastOneAnswer()){
+        return false;
+      }
+    }
+    return true;
   }
 
   quizAnswerHandler(e){
     e.target.classList.toggle('active');
+    this.allQuestionsHaveAtLeastOneAnswer = this.computeStatus();
+    console.log("status", this.allQuestionsHaveAtLeastOneAnswer);
   }
 
   setupQuiz(){
