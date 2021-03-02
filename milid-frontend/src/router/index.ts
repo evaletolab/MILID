@@ -59,7 +59,8 @@ const routes: Array<RouteConfig> = [
     path: '/dashboard',
     name: 'Dashboard',
     beforeEnter: (to, from, next) =>{
-      next('/access_denied');
+      // TODO check role here
+      next();
     },
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
