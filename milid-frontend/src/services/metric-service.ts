@@ -61,10 +61,14 @@ class MetricService {
     //
     // check state before to continue 
     const current = this.progressionState[params.lesson];
-    if(current && 
+    if(current &&
       (current.state == params.state || current.state == MILID.LessonState.DONE)) {
      return fields;
     } 
+    // event already
+    if(current && current.module == params.module){
+      return fields;
+    }
 
     //
     // save localStorage
