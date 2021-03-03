@@ -52,6 +52,9 @@ module.exports = function lessonTransformer(data){
                 break;
             case LessonType.INFOGRAPHIC:
                 lesson = svg_transformer(lesson);
+                if (lesson.markdown) {
+                    lesson = mdTransformer(lesson, data);
+                }
                 break;
             default:
                 throw new Error("unsupported LessonType", lesson.type);
