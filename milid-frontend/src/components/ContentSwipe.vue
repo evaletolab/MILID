@@ -416,7 +416,7 @@ export default class ContentSwipe extends Vue {
 .touch-tap-right {
   position: absolute;
   top: 0;
-  width: 20%;
+  width: 10%;
   height: 100%;
 }
 
