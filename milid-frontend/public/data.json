@@ -1349,6 +1349,9 @@
             }
           }
         }
+      ],
+      "lessons": [
+        "recb08K6RUGNFh738"
       ]
     },
     {
@@ -1443,6 +1446,105 @@
             },
             "full": {
               "url": "https://dl.airtable.com/.attachmentThumbnails/f301d2661c11b0a9ae9cacb7ff409fea/a1745a8c.png",
+              "width": 3000,
+              "height": 3000
+            }
+          }
+        }
+      ]
+    },
+    {
+      "airtable_id": "recSk01s5ByGLhbwv",
+      "id": "M2.5_illustration1",
+      "type": [
+        "image/svg+xml"
+      ],
+      "media": [
+        {
+          "id": "attHk9no6cLi7DqGb",
+          "url": "https://dl.airtable.com/.attachments/0cf95a16aab9d7aa35a43ac3224a2af3/c8e187b9/M2_5_illustration1.svg",
+          "filename": "M2_5_illustration1.svg",
+          "size": 1166,
+          "type": "image/svg+xml",
+          "thumbnails": {
+            "small": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/45592922bc823e1fb41a5893f8981c59/70a45134.png",
+              "width": 36,
+              "height": 36
+            },
+            "large": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/af68a1eb2ce785558a6a584daf28d244/c7b9fd6a.png",
+              "width": 512,
+              "height": 512
+            },
+            "full": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/b0fc9555ad89d0e8206170850c9700e5/9cb66f2e.png",
+              "width": 3000,
+              "height": 3000
+            }
+          }
+        }
+      ]
+    },
+    {
+      "airtable_id": "rechaNgMvzACYGQD7",
+      "id": "M2.5_illustration2",
+      "type": [
+        "image/svg+xml"
+      ],
+      "media": [
+        {
+          "id": "attB0ZQHHhyOYveYE",
+          "url": "https://dl.airtable.com/.attachments/3c6a88c1012b9a872d033e0eccf8085f/26578de3/M2_5_illustration2.svg",
+          "filename": "M2_5_illustration2.svg",
+          "size": 1168,
+          "type": "image/svg+xml",
+          "thumbnails": {
+            "small": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/b1475fc96bc11f43d8d4a5d426a37d2b/6b060627.png",
+              "width": 36,
+              "height": 36
+            },
+            "large": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/7b5ee0228069e6a6989ed6eb96d1b4e5/6ff3c60b.png",
+              "width": 512,
+              "height": 512
+            },
+            "full": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/20836fcd52cab487f86677a80d9ce59c/bf4b8c32.png",
+              "width": 3000,
+              "height": 3000
+            }
+          }
+        }
+      ]
+    },
+    {
+      "airtable_id": "recqdZRwhSvjksYrp",
+      "id": "M2.5_illustration3",
+      "type": [
+        "image/svg+xml"
+      ],
+      "media": [
+        {
+          "id": "attYb5Aas9p3swDsx",
+          "url": "https://dl.airtable.com/.attachments/d038883a4a088838be9ef76056f8ded6/0dd48581/M2_5_illustration3.svg",
+          "filename": "M2_5_illustration3.svg",
+          "size": 1166,
+          "type": "image/svg+xml",
+          "thumbnails": {
+            "small": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/9f81b5dee4a9c0b9a3b2cb08cb401ce4/6b67289e.png",
+              "width": 36,
+              "height": 36
+            },
+            "large": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/47922f6492af71b3725bf07017091a0b/1b951981.png",
+              "width": 512,
+              "height": 512
+            },
+            "full": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/dace53e64aaf1af4063d4c200d630cf4/953f47b5.png",
               "width": 3000,
               "height": 3000
             }
@@ -1585,6 +1687,19 @@
           "cover": "https://dl.airtable.com/.attachments/690f41139d14f2a5d1fbc5ed039bd8fc/228e0c60/M2_4_cover.svg",
           "html": "<p>Je vais t’expliquer en&nbsp;un clin d’œil comment faire une recherche sur Facebook, Twitter et&nbsp;Instagram. Mais je&nbsp;dois te&nbsp;prévenir que ces réseaux sociaux sont des grands vecteurs de <span class=\"_definition\" data-definition-id=\"fake_news\">fake news</span>. </p>\n",
           "index": "4"
+        },
+        {
+          "airtable_id": "recb08K6RUGNFh738",
+          "title": "Astuces de&nbsp;recherche Troncature - Guillemets – Parenthèses",
+          "type": "MARKDOWN",
+          "id": "10",
+          "cover": "https://dl.airtable.com/.attachments/0b5aad455b7fd3195e31345813daa060/fae40c5e/M2_5_illustration1.svg",
+          "sources": "<h2 id=\"sources\">Sources</h2>\n<p>CAZENAVE, F., ÉCOLE D’ASSAS. Bibliothèque, 2012._ La recherche documentaire informatisée_. Ecoledassas.com [en ligne]. 29 mai 2012. [Consulté le 22 octobre 2020]. Disponible à l’adresse :  <a target='_blank'  href=\"https://www.ecoledassas.com/wp-content/uploads/2014/10/Recherche-documentaire.pdf\">lien</a></p>\n<p>HAUTE ÉCOLE DE GESTION. Infothèque, 2019. _La troncature _[image PNG]. Dernière modification le 9 septembre 2019 à 14:03. Support visuel : E-Learning de l’infothèque (ELI) « À la recherche d’information et au référencement bibliographique », Haute école de gestion de Genève. </p>\n<p>IREPS, [sans date]. <em>L’équation de recherche : opérateurs booléens, guillemets, troncature</em> [document de synthèse]. Ireps.gp [en ligne]. [Consulté le 22 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"http://www.ireps.gp/data/IMG/Synthese_Equation_de_recherche.pdf\">lien</a></p>\n<p>ITLIS, Nicole et SAUVAJON, Catherine, 2018. <em>Du sujet à l’équation de recherche en 5 points</em>. Cirad.fr [en ligne]. 26 septembre 2018. [Consulté le 22 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://coop-ist.cirad.fr/trouver-l-information/du-sujet-a-l-equation/1-le-sujet\">lien</a></p>\n",
+          "modules": [
+            "rectQXEUZsDam7c8j"
+          ],
+          "html": "<h1 id=\"astuces-derecherche\">Astuces de&nbsp;recherche</h1>\n<h1 id=\"troncature---guillemets--parenthèses\">Troncature - Guillemets – Parenthèses</h1>\n<p>Voici 3&nbsp;astuces pour t’aider à parfaire tes <span class=\"_definition\" data-definition-id=\"equation_recherche\">équations de&nbsp;recherche</span>&#8201;: la&nbsp;troncature, les guillemets et&nbsp;les parenthèses.</p>\n<p>La&nbsp;troncature consiste à remplacer une ou&nbsp;plusieurs lettres d’un terme par un&nbsp;signe de&nbsp;troncature. Ceci permet d’élargir la&nbsp;recherche à tous les termes qui ont une racine identique ou&nbsp;d’inclure le&nbsp;pluriel et&nbsp;les variations d’orthographes.  </p>\n<p>Clique ici pour découvrir <span class=\"_definition\" data-definition-id=\"quelques_exemples\">quelques exemples</span>, <span class=\"_definition\" data-definition-id=\"astuce_1\">une astuce</span> et&nbsp;une autre <span class=\"_definition\" data-definition-id=\"astuce_2\">astuce</span>&#8201;! \n&#8201;<img src=\"https://dl.airtable.com/.attachments/0cf95a16aab9d7aa35a43ac3224a2af3/c8e187b9/M2_5_illustration1.svg\" alt=\"alt\"></p>\n<p>Si&nbsp;tu recherches une expression exacte telle que “pompe à insuline”, pense à la&nbsp;mettre entre guillemets. Cela permet d’éviter que le&nbsp;moteur de&nbsp;recherche cherche les termes individuellement. Tu&nbsp;peux consulter ici <span class=\"_definition\" data-definition-id=\"exemple_1\">un exemple</span> et <span class=\"_definition\" data-definition-id=\"astuce_3\">une astuce incontournable</span>.&#8201;<img src=\"https://dl.airtable.com/.attachments/3c6a88c1012b9a872d033e0eccf8085f/26578de3/M2_5_illustration2.svg\" alt=\"alt\"></p>\n<p>Si&nbsp;ton équation de&nbsp;recherche contient plusieurs termes et&nbsp;opérateurs, pense à utiliser les parenthèses pour effectuer des regroupements logiques.  La&nbsp;règle d’or est un&nbsp;concept par parenthèse&#8201;! <span class=\"_definition\" data-definition-id=\"exemple_2\">Voici un&nbsp;exemple</span>. \n&#8201;<img src=\"https://dl.airtable.com/.attachments/d038883a4a088838be9ef76056f8ded6/0dd48581/M2_5_illustration3.svg\" alt=\"alt\"></p>\n",
+          "index": "5"
         }
       ],
       "id": "2",
@@ -1765,6 +1880,19 @@
       "cover": "https://dl.airtable.com/.attachments/690f41139d14f2a5d1fbc5ed039bd8fc/228e0c60/M2_4_cover.svg",
       "html": "<p>Je vais t’expliquer en&nbsp;un clin d’œil comment faire une recherche sur Facebook, Twitter et&nbsp;Instagram. Mais je&nbsp;dois te&nbsp;prévenir que ces réseaux sociaux sont des grands vecteurs de <span class=\"_definition\" data-definition-id=\"fake_news\">fake news</span>. </p>\n",
       "index": "4"
+    },
+    {
+      "airtable_id": "recb08K6RUGNFh738",
+      "title": "Astuces de&nbsp;recherche Troncature - Guillemets – Parenthèses",
+      "type": "MARKDOWN",
+      "id": "10",
+      "cover": "https://dl.airtable.com/.attachments/0b5aad455b7fd3195e31345813daa060/fae40c5e/M2_5_illustration1.svg",
+      "sources": "<h2 id=\"sources\">Sources</h2>\n<p>CAZENAVE, F., ÉCOLE D’ASSAS. Bibliothèque, 2012._ La recherche documentaire informatisée_. Ecoledassas.com [en ligne]. 29 mai 2012. [Consulté le 22 octobre 2020]. Disponible à l’adresse :  <a target='_blank'  href=\"https://www.ecoledassas.com/wp-content/uploads/2014/10/Recherche-documentaire.pdf\">lien</a></p>\n<p>HAUTE ÉCOLE DE GESTION. Infothèque, 2019. _La troncature _[image PNG]. Dernière modification le 9 septembre 2019 à 14:03. Support visuel : E-Learning de l’infothèque (ELI) « À la recherche d’information et au référencement bibliographique », Haute école de gestion de Genève. </p>\n<p>IREPS, [sans date]. <em>L’équation de recherche : opérateurs booléens, guillemets, troncature</em> [document de synthèse]. Ireps.gp [en ligne]. [Consulté le 22 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"http://www.ireps.gp/data/IMG/Synthese_Equation_de_recherche.pdf\">lien</a></p>\n<p>ITLIS, Nicole et SAUVAJON, Catherine, 2018. <em>Du sujet à l’équation de recherche en 5 points</em>. Cirad.fr [en ligne]. 26 septembre 2018. [Consulté le 22 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://coop-ist.cirad.fr/trouver-l-information/du-sujet-a-l-equation/1-le-sujet\">lien</a></p>\n",
+      "modules": [
+        "rectQXEUZsDam7c8j"
+      ],
+      "html": "<h1 id=\"astuces-derecherche\">Astuces de&nbsp;recherche</h1>\n<h1 id=\"troncature---guillemets--parenthèses\">Troncature - Guillemets – Parenthèses</h1>\n<p>Voici 3&nbsp;astuces pour t’aider à parfaire tes <span class=\"_definition\" data-definition-id=\"equation_recherche\">équations de&nbsp;recherche</span>&#8201;: la&nbsp;troncature, les guillemets et&nbsp;les parenthèses.</p>\n<p>La&nbsp;troncature consiste à remplacer une ou&nbsp;plusieurs lettres d’un terme par un&nbsp;signe de&nbsp;troncature. Ceci permet d’élargir la&nbsp;recherche à tous les termes qui ont une racine identique ou&nbsp;d’inclure le&nbsp;pluriel et&nbsp;les variations d’orthographes.  </p>\n<p>Clique ici pour découvrir <span class=\"_definition\" data-definition-id=\"quelques_exemples\">quelques exemples</span>, <span class=\"_definition\" data-definition-id=\"astuce_1\">une astuce</span> et&nbsp;une autre <span class=\"_definition\" data-definition-id=\"astuce_2\">astuce</span>&#8201;! \n&#8201;<img src=\"https://dl.airtable.com/.attachments/0cf95a16aab9d7aa35a43ac3224a2af3/c8e187b9/M2_5_illustration1.svg\" alt=\"alt\"></p>\n<p>Si&nbsp;tu recherches une expression exacte telle que “pompe à insuline”, pense à la&nbsp;mettre entre guillemets. Cela permet d’éviter que le&nbsp;moteur de&nbsp;recherche cherche les termes individuellement. Tu&nbsp;peux consulter ici <span class=\"_definition\" data-definition-id=\"exemple_1\">un exemple</span> et <span class=\"_definition\" data-definition-id=\"astuce_3\">une astuce incontournable</span>.&#8201;<img src=\"https://dl.airtable.com/.attachments/3c6a88c1012b9a872d033e0eccf8085f/26578de3/M2_5_illustration2.svg\" alt=\"alt\"></p>\n<p>Si&nbsp;ton équation de&nbsp;recherche contient plusieurs termes et&nbsp;opérateurs, pense à utiliser les parenthèses pour effectuer des regroupements logiques.  La&nbsp;règle d’or est un&nbsp;concept par parenthèse&#8201;! <span class=\"_definition\" data-definition-id=\"exemple_2\">Voici un&nbsp;exemple</span>. \n&#8201;<img src=\"https://dl.airtable.com/.attachments/d038883a4a088838be9ef76056f8ded6/0dd48581/M2_5_illustration3.svg\" alt=\"alt\"></p>\n",
+      "index": "5"
     }
   ],
   "definitions": [
@@ -1832,6 +1960,41 @@
       "airtable_id": "recae8g3BALoUOGsA",
       "id": "fake_news",
       "definition": "Les fake news sont des nouvelles partiellement ou complètement fausses, répandues sur internet ou dans d’autres médias."
+    },
+    {
+      "airtable_id": "rec5MzKr5gx5ULVl6",
+      "id": "equation_recherche",
+      "definition": "Organisation de termes et d’opérateurs de recherche, selon une syntaxe préétablie et spécifique au langage d’interrogation utilisé, pour répondre à une demande d’information."
+    },
+    {
+      "airtable_id": "recEcHYuVZGSofZh0",
+      "id": "quelques_exemples",
+      "definition": "Banan* = banana, bananas, banane, bananes, bananeraie, bananeraies, bananier, bananiers, bananière, bananières, banano, bananos, …\nChin* = Chine, chinois, chinoise, chinoise, chinese, China, …\nMat?hieu = Matthieu, Mathieu\nM?cdonald  = MacDonald, McDonald,\nWom?n = woman, women\nBehavi*r = behavior, behaviour"
+    },
+    {
+      "airtable_id": "recmM2ScWuiYTzsVV",
+      "id": "astuce_1",
+      "definition": "Astuce 1 : Attention au radical que tu choisis : s’il est trop court, tu obtiendras trop de résultats et s’il est trop long, tu obtiendras trop peu de résultats !"
+    },
+    {
+      "airtable_id": "rec0qeB2pOCs2URR3",
+      "id": "astuce_2",
+      "definition": "Astuce 2 : Les symboles utilisés (* ? ! # +) pour la troncature diffèrent selon les moteurs de recherche et les banques de données. Vérifie dans leur section « aide » quel symbole doit être utilisé."
+    },
+    {
+      "airtable_id": "recSplNMzuq8wwdpK",
+      "id": "exemple_1",
+      "definition": "Une recherche -Pompe à insuline- sans guillements, peut vous retourner des documents sur les pompes en tout genre en plus de tout ce qui parle d’insuline."
+    },
+    {
+      "airtable_id": "recU5dhEdVa0r6h61",
+      "id": "astuce_3",
+      "definition": "Astuce 3 : L’usage des guillemets peut être restrictif. Si tu cherches l’expression exacte « cure de désintoxication », les résultats au pluriel (cures de désintoxication) ne seront pas retournés ! \nPense à utiliser la troncature pour inclure le pluriel => “cure* de désintoxication”\nTu peux également utiliser l’opérateur booléen OU/OR => “cure de désintoxication” OU “cures de désintoxication”."
+    },
+    {
+      "airtable_id": "recB0I5IdQYhy7dTO",
+      "id": "exemple_2",
+      "definition": "On utilise l’équation suivante pour faire une recherche sur la culture de fruits en Europe en excluant la France de la recherche. \n(fruits OR pomme* OR poire* OR kiwi* OR raisin* OR orange* OR fraise*) ET (culture OR agric*) ET (Europe SAUF France) \nDans cet exemple, la première parenthèse regroupe les termes de recherche autour du concept « fruits », la deuxième autour du concept « agriculture » et la troisième autour du concept « zone géographique »."
     }
   ]
 }
