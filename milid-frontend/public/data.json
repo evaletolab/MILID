@@ -929,9 +929,8 @@
     },
     {
       "airtable_id": "rec6SNv02YEjUuXvo",
-      "id": "M02S02_podcast",
-      "type": [
-        "audio/mpeg"
+      "lessons 2": [
+        "recSfh0oKDUxZev6C"
       ],
       "media": [
         {
@@ -942,16 +941,13 @@
           "type": "audio/mpeg"
         }
       ],
-      "lessons 2": [
-        "recSfh0oKDUxZev6C"
+      "id": "M02S02_podcast",
+      "type": [
+        "audio/mpeg"
       ]
     },
     {
       "airtable_id": "recobX0tZjajeJRAm",
-      "id": "M2.3_illustration1",
-      "type": [
-        "image/svg+xml"
-      ],
       "media": [
         {
           "id": "attyzUsDRpzD49gqz",
@@ -977,14 +973,14 @@
             }
           }
         }
+      ],
+      "id": "M2.3_illustration1",
+      "type": [
+        "image/svg+xml"
       ]
     },
     {
       "airtable_id": "recNo76qQJK1cmNyS",
-      "id": "M2.3_illustration2",
-      "type": [
-        "image/svg+xml"
-      ],
       "media": [
         {
           "id": "attIqtQ4dwWOFhCZb",
@@ -1010,14 +1006,14 @@
             }
           }
         }
+      ],
+      "id": "M2.3_illustration2",
+      "type": [
+        "image/svg+xml"
       ]
     },
     {
       "airtable_id": "recTO5bsFb4rzMXey",
-      "id": "M2.3_illustration3",
-      "type": [
-        "image/svg+xml"
-      ],
       "media": [
         {
           "id": "attGJAHuOqqZHGoqV",
@@ -1043,14 +1039,14 @@
             }
           }
         }
+      ],
+      "id": "M2.3_illustration3",
+      "type": [
+        "image/svg+xml"
       ]
     },
     {
       "airtable_id": "recpswNRNt040TAOW",
-      "id": "M2.3_illustration4",
-      "type": [
-        "image/svg+xml"
-      ],
       "media": [
         {
           "id": "attExPral61HbMQbu",
@@ -1076,14 +1072,14 @@
             }
           }
         }
+      ],
+      "id": "M2.3_illustration4",
+      "type": [
+        "image/svg+xml"
       ]
     },
     {
       "airtable_id": "recCGgrTuN7rk0yoY",
-      "id": "M2.3_illustration5",
-      "type": [
-        "image/svg+xml"
-      ],
       "media": [
         {
           "id": "attGf0g7nZYztCLaX",
@@ -1109,14 +1105,14 @@
             }
           }
         }
+      ],
+      "id": "M2.3_illustration5",
+      "type": [
+        "image/svg+xml"
       ]
     },
     {
       "airtable_id": "recKuCEO34vnhpFyt",
-      "id": "M2.3_illustration6",
-      "type": [
-        "image/svg+xml"
-      ],
       "media": [
         {
           "id": "attCPBLslnI0MQJTw",
@@ -1142,14 +1138,14 @@
             }
           }
         }
+      ],
+      "id": "M2.3_illustration6",
+      "type": [
+        "image/svg+xml"
       ]
     },
     {
       "airtable_id": "recpTY1lZrR1TQsw8",
-      "id": "M2.3_illustration7",
-      "type": [
-        "image/svg+xml"
-      ],
       "media": [
         {
           "id": "attWI6dUBqr7nDhQz",
@@ -1175,14 +1171,14 @@
             }
           }
         }
+      ],
+      "id": "M2.3_illustration7",
+      "type": [
+        "image/svg+xml"
       ]
     },
     {
       "airtable_id": "recvkF3Ldo5pTS98m",
-      "id": "M2.3_illustration8",
-      "type": [
-        "image/svg+xml"
-      ],
       "media": [
         {
           "id": "attd2DscDNBUSiUt9",
@@ -1203,6 +1199,250 @@
             },
             "full": {
               "url": "https://dl.airtable.com/.attachmentThumbnails/238fcdf69d9e5f027295a24142353daf/65af0eb2.png",
+              "width": 3000,
+              "height": 3000
+            }
+          }
+        }
+      ],
+      "id": "M2.3_illustration8",
+      "type": [
+        "image/svg+xml"
+      ]
+    },
+    {
+      "airtable_id": "reczkinKFRGvrWfnu",
+      "id": "M2.1_cover",
+      "media": [
+        {
+          "id": "attsGUuq951iYrPd7",
+          "url": "https://dl.airtable.com/.attachments/bd2c8f3915b24e4e2b732c9e71048291/1401f7e6/M2_1_cover.svg",
+          "filename": "M2_1_cover.svg",
+          "size": 29112,
+          "type": "image/svg+xml",
+          "thumbnails": {
+            "small": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/8180b1abb64eb01d545b014c335aa61b/47db16c0.png",
+              "width": 36,
+              "height": 36
+            },
+            "large": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/de105068f4437fce70cc8ca2d4985573/20b658e7.png",
+              "width": 512,
+              "height": 512
+            },
+            "full": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/dcb1c343fe3e3d8dbd0b2aac70cecf58/1c66c90e.png",
+              "width": 3000,
+              "height": 3000
+            }
+          }
+        }
+      ],
+      "type": [
+        "image/svg+xml"
+      ],
+      "lessons": [
+        "recDaIq56bnxM2Jzi"
+      ]
+    },
+    {
+      "airtable_id": "recy2sbR9bEKBHPp8",
+      "id": "M2.3_cover",
+      "media": [
+        {
+          "id": "attqyWZvfazNvaqok",
+          "url": "https://dl.airtable.com/.attachments/cf77bb49f50f0a44cb276bb77f89cbbc/e2c52df3/M2_3_cover.svg",
+          "filename": "M2_3_cover.svg",
+          "size": 4759,
+          "type": "image/svg+xml",
+          "thumbnails": {
+            "small": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/ef7c9372b55c41f350098f22f53fade6/8e448177.png",
+              "width": 36,
+              "height": 36
+            },
+            "large": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/913dbd7ed787db40713b46f1ba13fb03/db17fab1.png",
+              "width": 512,
+              "height": 512
+            },
+            "full": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/27abd836b24a24461a19054dd22b4d7c/58c50290.png",
+              "width": 3000,
+              "height": 3000
+            }
+          }
+        }
+      ],
+      "type": [
+        "image/svg+xml"
+      ],
+      "lessons": [
+        "recscSRI4Lbxci54S"
+      ]
+    },
+    {
+      "airtable_id": "rec5DMaXge0r9BeRF",
+      "id": "M2.4_cover",
+      "type": [
+        "image/svg+xml"
+      ],
+      "media": [
+        {
+          "id": "attD8VTo2YRe3MrvR",
+          "url": "https://dl.airtable.com/.attachments/690f41139d14f2a5d1fbc5ed039bd8fc/228e0c60/M2_4_cover.svg",
+          "filename": "M2_4_cover.svg",
+          "size": 1456,
+          "type": "image/svg+xml",
+          "thumbnails": {
+            "small": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/ee27068085f122cec6c064f22bc2c500/cb9c02e4.png",
+              "width": 36,
+              "height": 36
+            },
+            "large": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/e6bca59ef97cbe9d7134ffad03a92d7d/5eb6ea44.png",
+              "width": 512,
+              "height": 512
+            },
+            "full": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/f16bbd4c560a500138ee44a256b01868/577f694e.png",
+              "width": 3000,
+              "height": 3000
+            }
+          }
+        }
+      ],
+      "lessons": [
+        "recQ6wylKA6fMLs46"
+      ]
+    },
+    {
+      "airtable_id": "recrXqlVLpYkJ10K1",
+      "id": "M2.5_cover",
+      "type": [
+        "image/svg+xml"
+      ],
+      "media": [
+        {
+          "id": "attxjwa0ILQ5bcQh3",
+          "url": "https://dl.airtable.com/.attachments/0b5aad455b7fd3195e31345813daa060/fae40c5e/M2_5_illustration1.svg",
+          "filename": "M2_5_illustration1.svg",
+          "size": 1166,
+          "type": "image/svg+xml",
+          "thumbnails": {
+            "small": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/38eee871b1a6fb784d2f0fe40c95bdde/6eac84aa.png",
+              "width": 36,
+              "height": 36
+            },
+            "large": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/0b70fef0c09dc07fc14fc3a10092567c/e15910f8.png",
+              "width": 512,
+              "height": 512
+            },
+            "full": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/8032270c1326366542c50a2f2da74bd8/1c8ad5a8.png",
+              "width": 3000,
+              "height": 3000
+            }
+          }
+        }
+      ]
+    },
+    {
+      "airtable_id": "rec0clKLKHdcsShSM",
+      "id": "M2.6_cover",
+      "type": [
+        "image/svg+xml"
+      ],
+      "media": [
+        {
+          "id": "attGz6kRxHy5Sb7J5",
+          "url": "https://dl.airtable.com/.attachments/419f8d54acb227f691325fbe7a810b4d/dea7696b/M2_6_cover.svg",
+          "filename": "M2_6_cover.svg",
+          "size": 1904,
+          "type": "image/svg+xml",
+          "thumbnails": {
+            "small": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/411e061845b1199a6fa7cdf886d5d4de/1ff906c7.png",
+              "width": 36,
+              "height": 36
+            },
+            "large": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/d834d2c653b06bfb071d09133cff7b44/920a5890.png",
+              "width": 512,
+              "height": 512
+            },
+            "full": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/5fa8a5df967e4c879631d82aca0ec4f4/b8245dbd.png",
+              "width": 3000,
+              "height": 3000
+            }
+          }
+        }
+      ]
+    },
+    {
+      "airtable_id": "recflCJ0BbarbOw3S",
+      "id": "M2.7_cover",
+      "type": [
+        "image/svg+xml"
+      ],
+      "media": [
+        {
+          "id": "attSFDUoY01q087Fm",
+          "url": "https://dl.airtable.com/.attachments/387c7943415694ddda074e11ed97c8f5/59f1e296/M2_7_cover.svg",
+          "filename": "M2_7_cover.svg",
+          "size": 4947,
+          "type": "image/svg+xml",
+          "thumbnails": {
+            "small": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/ab1d43cc413ad6c958c0424ae1019963/926032ea.png",
+              "width": 36,
+              "height": 36
+            },
+            "large": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/d8443c4a9307544622467f3eee185d9a/61a50ecb.png",
+              "width": 512,
+              "height": 512
+            },
+            "full": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/916fcd0e24959673dae3037693c32e09/90e08ba9.png",
+              "width": 3000,
+              "height": 3000
+            }
+          }
+        }
+      ]
+    },
+    {
+      "airtable_id": "recb4r5faLjKGpPeG",
+      "id": "M2.8_cover",
+      "type": [
+        "image/svg+xml"
+      ],
+      "media": [
+        {
+          "id": "attlGnHqCy97KM5SJ",
+          "url": "https://dl.airtable.com/.attachments/896e4ab6f430994c0b837f1807e039e7/49eef0a9/M2_8_cover.svg",
+          "filename": "M2_8_cover.svg",
+          "size": 1824,
+          "type": "image/svg+xml",
+          "thumbnails": {
+            "small": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/c78266eda915afcb902da83fd04ba4ad/32e5d12a.png",
+              "width": 36,
+              "height": 36
+            },
+            "large": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/54d96492520d3572cc6ed9cff3469595/d5266d29.png",
+              "width": 512,
+              "height": 512
+            },
+            "full": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/f301d2661c11b0a9ae9cacb7ff409fea/a1745a8c.png",
               "width": 3000,
               "height": 3000
             }
@@ -1302,32 +1542,49 @@
           "title": "Méthodologie de&nbsp;recherche",
           "sources": "<h2 id=\"ressources-complémentaires\">Ressources complémentaires</h2>\n<p><a target='_blank'  href=\"http://www.infosphere.uqam.ca/preparer-sa-recherche.\">http://www.infosphere.uqam.ca/preparer-sa-recherche.</a> </p>\n<p>Sources </p>\n<p>BIBLIOTHEQUE UNIGE, [sans date]. InfoTrack : Formation aux compétences informationnelles. InfoTrack [en ligne]. [Consulté le 28 septembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://infotrack.unige.ch/\">lien</a></p>\n<p>BIBLIOTHEQUE UQAM, [sans date]. Infosphère préparer sa recherche. UQAM Infosphère [en ligne]. [Consulté le 28 septembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"http://www.infosphere.uqam.ca/preparer-sa-recherche\">lien</a></p>\n<p>BOUCHARD Aline, HABAROU Corrine et D’HAUTEVILLE Marion, 2018. <em>CERISE : Tutoriel Conseils en Recherche et Information. URFIST</em> [en ligne]. [Consulté le 28 septembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://urfist.chartes.psl.eu/cerise/node/224\">lien</a></p>\n<p>HAESEN Stéphanie, [sans date]. <em>Méthodologie de la recherche d’information</em> [document PowerPoint]. Support de cours : Cours “Recherche en ligne 1”, Haute école de gestion de Genève, filière Information documentaire, année académique 2019-2020 </p>\n<p>HAUTE ECOLE DE GESTION DE GENEVE, 2020. ELI - E-learning de l&#39;Infothèque. Cyberlearn - HES-SO [en ligne]. [Consulté le 11 novembre 2020]. Disponible à l&#39;adresse : <a target='_blank'  href=\"https://cyberlearn.hes-so.ch/course/view.php?id=7225\">lien</a> [accès restreint aux comptes Switch AAI] </p>\n<p>ISIPCA CENTRE DE DOCUMENTATION ET D’INFORMATION, [sans date]. <em>La recherche documentaire</em>. ISIPCA [en ligne]. [Consulté le 28 septembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.isipca.fr/sites/default/files/atoms/files/guide_recherchecdi.pdf\">lien</a></p>\n<p>MARTIN Nichole, 2014. _5 Components of Information Literacy _[enregistrement vidéo]. Youtube [en ligne]. 29 janvier 2014. [Consulté le 28 septembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.youtube.com/watch?v=1ronp6Iue9w\">lien</a></p>\n<h2 id=\"sources-définitions-\">Sources définitions :</h2>\n<p>Carte mentale :  </p>\n<p>Carte heuristique. Wikipédia : l’encyclopédie libre [en ligne]. Dernière modification de la page le 15 décembre 2020 à 05:55. [Consulté le 10 décembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://fr.wikipedia.org/wiki/Carte_heuristique\">lien</a></p>\n<p>Moteur de recherche : </p>\n<p>Moteur de recherche. Wikipédia : l’encyclopédie libre [en ligne]. Dernière modification de la page le 13 novembre 2020 à 22:45. [Consulté le 10 décembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://fr.wikipedia.org/wiki/Moteur_de_recherche\">lien</a> </p>\n<p>Banque de données : </p>\n<p>ENSSIB. Ecole nationale supérieure des sciences de l’information et des bibliothèques [en ligne]. 17 mars 2017. [Consulté le 14 décembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.enssib.fr/services-et-ressources/questions-reponses/base-de-donnees-banque-de-donnees\">lien</a></p>\n",
           "quiz": "<h2 id=\"quizz\">Quizz&#8201;:</h2>\n<p>Lorsqu&#39;on démarre une recherche, quelle est la&nbsp;première étape&#8201;? </p>\n<div class=\"question\">\n    <button class=\"quiz-btn\">Lancer Google</button>\n    <button class=\"quiz-btn\" data-correct-answer>Définir le&nbsp;but du&nbsp;travail</button>\n    <button class=\"quiz-btn\">Plagier un&nbsp;livre</button>\n</div>\n\n<p>Quels sont les axes de&nbsp;recherche&#8201;?</p>\n<div class=\"question\">\n    <button class=\"quiz-btn\" data-correct-answer>Qui, quand, quoi, comment, pourquoi, où</button>\n    <button class=\"quiz-btn\" >Temps, distance, vitesse, durée, longueur</button>\n    <button class=\"quiz-btn\">Officiel, officieux, public, privé, textes, chiffres</button>\n</div>\n\n<p>Parmi ces formulations, laquelle est juste&#8201;? </p>\n<div class=\"question\">\n    <button class=\"quiz-btn\" data-correct-answer>Pour trouver des sources pertinentes, je&nbsp;dois d'abord établir une liste de&nbsp;mots-clés.</button>\n    <button class=\"quiz-btn\" >Pour trouver des sources pertinentes, je&nbsp;dois faire une recherche sur le&nbsp;web.</button>\n</div>\n\n<p>Laquelle des ces proposition est fausse. Pour choisir une souce, je&nbsp;dois m&#39;appuyer sur&#8201;: </p>\n<div class=\"question\">\n    <button class=\"quiz-btn\" >Le domaine couvert par la&nbsp;source</button>\n    <button class=\"quiz-btn\" >Mon sujet de&nbsp;recherche</button>\n    <button class=\"quiz-btn\"  data-correct-answer>L'article qui a&nbsp;le plus de&nbsp;like et&nbsp;de retweet</button>\n    <button class=\"quiz-btn\" >Du type de&nbsp;documents présents</button>\n</div>",
-          "html": "<h1 id=\"méthodologie-derecherche\">Méthodologie de&nbsp;recherche</h1>\n<p>Maintenant que tu&nbsp;en sais un&nbsp;peu plus sur l&#39;information et&nbsp;les données, tu&nbsp;peux t’attaquer à ta&nbsp;recherche. </p>\n<p>Ne&nbsp;te jette pas tête baissée dans ta&nbsp;recherche. Trouver des informations demande de&nbsp;la préparation.  </p>\n<p>Avant même de&nbsp;commencer ta&nbsp;recherche, il&nbsp;faut&#8201;: </p>\n<ul>\n<li>Définir le&nbsp;but de&nbsp;ton travail </li>\n<li>Anticiper le&nbsp;temps dont tu&nbsp;auras besoin\n&#8201;<img src=\"https://dl.airtable.com/.attachments/6cfe02fcc46794bd0f8d65642326ad8f/ce69947e/M2_1_illustration1.svg\" alt=\"alt\"></li>\n</ul>\n<p>Ensuite, tu&nbsp;dois identifier les différents axes de&nbsp;recherche de&nbsp;ton sujet&#8201;: </p>\n<p><strong>Qui&#8201;:</strong> les autrices, auteurs qui traitent de&nbsp;ton sujet.<br><strong>Quoi&#8201;:</strong> les domaines et&nbsp;disciplines dont ton sujet fait partie.<br><strong>Quand&#8201;:</strong> la&nbsp;période couverte par ton sujet.<br><strong>Où&#8201;:</strong> la&nbsp;zone géographique de&nbsp;ton sujet.<br><strong>Comment&#8201;:</strong> Les thèmes et&nbsp;sous-thèmes du&nbsp;domaine principal et&nbsp;secondaire.<br><strong>Pourquoi&#8201;:</strong>  Pourquoi ton sujet doit-il être traité.  </p>\n<p>Pour pouvoir trouver des sources, il&nbsp;faut établir une liste de&nbsp;mots-clés et&nbsp;de leurs synonymes (en français et&nbsp;en anglais). </p>\n<p>Fais un&nbsp;tableau ou&nbsp;une carte mentale des axes de&nbsp;recherches (les concepts) et&nbsp;aux mots clés auxquels ils sont liés.\n&#8201;<img src=\"https://dl.airtable.com/.attachments/d72a66ffc98a7ced3e3202e7b897c716/27967740/M2_1_illustration2.svg\" alt=\"alt\"></p>\n<p>Lorsqu’on cherche une information, le&nbsp;premier réflexe est de&nbsp;se jeter sur Google. Pourtant, ce&nbsp;n’est pas toujours la&nbsp;meilleure solution.  </p>\n<p>Choisis tes sources en&nbsp;fonction&#8201;:  </p>\n<ul>\n<li>de&nbsp;ton sujet de&nbsp;recherche.  </li>\n<li>du&nbsp;domaine couvert par la&nbsp;source.  </li>\n<li>de&nbsp;la date de&nbsp;sa dernière mise à jour (on veut des sources récentes&#8201;!)  </li>\n<li>de&nbsp;sa couverture géographique/linguistique.  </li>\n<li>des types de&nbsp;documents présents.</li>\n</ul>\n<p>Il&nbsp;ne te&nbsp;reste plus qu’à choisir les moteurs de \u0003recherche et&nbsp;banques de&nbsp;données que tu&nbsp;vas consulter, à lancer ta&nbsp;recherche, et à trier les résultats.</p>\n",
+          "cover": "https://dl.airtable.com/.attachments/bd2c8f3915b24e4e2b732c9e71048291/1401f7e6/M2_1_cover.svg",
+          "html": "<h1 id=\"méthodologie-derecherche\">Méthodologie de&nbsp;recherche</h1>\n<p>Maintenant que tu&nbsp;en sais un&nbsp;peu plus sur l&#39;information et&nbsp;les données, tu&nbsp;peux t’attaquer à ta&nbsp;recherche. </p>\n<p>Ne&nbsp;te jette pas tête baissée dans ta&nbsp;recherche. Trouver des informations demande de&nbsp;la préparation.  </p>\n<p>Avant même de&nbsp;commencer ta&nbsp;recherche, il&nbsp;faut&#8201;: </p>\n<ul>\n<li>Définir le&nbsp;but de&nbsp;ton travail </li>\n<li>Anticiper le&nbsp;temps dont tu&nbsp;auras besoin\n&#8201;<img src=\"https://dl.airtable.com/.attachments/6cfe02fcc46794bd0f8d65642326ad8f/ce69947e/M2_1_illustration1.svg\" alt=\"alt\"></li>\n</ul>\n<p>Ensuite, tu&nbsp;dois identifier les différents axes de&nbsp;recherche de&nbsp;ton sujet&#8201;: </p>\n<p><strong>Qui&#8201;:</strong> les autrices, auteurs qui traitent de&nbsp;ton sujet.<br><strong>Quoi&#8201;:</strong> les domaines et&nbsp;disciplines dont ton sujet fait partie.<br><strong>Quand&#8201;:</strong> la&nbsp;période couverte par ton sujet.<br><strong>Où&#8201;:</strong> la&nbsp;zone géographique de&nbsp;ton sujet.<br><strong>Comment&#8201;:</strong> Les thèmes et&nbsp;sous-thèmes du&nbsp;domaine principal et&nbsp;secondaire.<br><strong>Pourquoi&#8201;:</strong>  Pourquoi ton sujet doit-il être traité.  </p>\n<p>Pour pouvoir trouver des sources, il&nbsp;faut établir une liste de&nbsp;mots-clés et&nbsp;de leurs synonymes (en français et&nbsp;en anglais). </p>\n<p>Fais un&nbsp;tableau ou&nbsp;une <span class=\"_definition\" data-definition-id=\"carte_mentale\">carte mentale</span> des axes de&nbsp;recherches (les concepts) et&nbsp;aux mots clés auxquels ils sont liés.\n&#8201;<img src=\"https://dl.airtable.com/.attachments/d72a66ffc98a7ced3e3202e7b897c716/27967740/M2_1_illustration2.svg\" alt=\"alt\"></p>\n<p>Lorsqu’on cherche une information, le&nbsp;premier réflexe est de&nbsp;se <span class=\"_definition\" data-definition-id=\"jeter_google\">jeter sur Google</span>. Pourtant, ce&nbsp;n’est pas toujours la&nbsp;meilleure solution.  </p>\n<p>Choisis tes sources en&nbsp;fonction&#8201;:  </p>\n<ul>\n<li>de&nbsp;ton sujet de&nbsp;recherche.  </li>\n<li>du&nbsp;domaine couvert par la&nbsp;source.  </li>\n<li>de&nbsp;la date de&nbsp;sa dernière mise à jour (on veut des sources récentes&#8201;!)  </li>\n<li>de&nbsp;sa couverture géographique/linguistique.  </li>\n<li>des types de&nbsp;documents présents.</li>\n</ul>\n<p>Il&nbsp;ne te&nbsp;reste plus qu’à <span class=\"_definition\" data-definition-id=\"choisir\">choisir</span> les <span class=\"_definition\" data-definition-id=\"moteur_recherche\">moteurs de \u0003recherche</span> et <span class=\"_definition\" data-definition-id=\"banque_donnees_2\">banques de&nbsp;données</span> que tu&nbsp;vas consulter, à lancer ta&nbsp;recherche, et à trier les résultats.</p>\n",
           "index": "1"
         },
         {
           "airtable_id": "recSfh0oKDUxZev6C",
-          "title": "Les moteurs de&nbsp;recherche",
-          "id": "7",
-          "type": "PODCAST",
           "media": "https://dl.airtable.com/.attachments/2f96caab5b5f004832059dba9200300e/80b55a2e/M02S02_podcast.mp3",
-          "sources": "<h2 id=\"sources\">Sources</h2>\n<p>BESSON François, 2017. <em>Les meilleurs moteurs de recherche alternatifs à Google. 1ère Position Take the lead</em> [en ligne]. 10 octobre 2017. [Consulté le 19 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.1ere-position.fr/blog/10-meilleurs-moteurs-de-recherche-alternatifs-google/\">lien</a></p>\n<p>Déclaration de confidentialité Microsoft. Microsoft. [en ligne]. Mise à jour novembre 2020. [Consulté le 12 novembre 2020 ]. Disponible à l’adresse : <a target='_blank'  href=\"https://privacy.microsoft.com/fr-fr/privacystatement\">lien</a></p>\n<p>Duckduckgo. Wikipédia [en ligne]. Dernière modification de la page le 2 septembre 2020 à 08:35. [Consulté le 19 octobre 2020]. Disponible à l’adresse :  <a target='_blank'  href=\"https://fr.wikipedia.org/w/index.php?title=DuckDuckGo&amp;oldid=174360001\">lien</a></p>\n<p>GOOGLE. Google Règles de confidentialité et conditions d’utilisation. Google [en ligne]. 30 septembre 2020. [Consulté le 8 décembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://policies.google.com/privacy\">lien</a></p>\n<p>Lilo un moteur de recherche qui protège votre vie privée. Lilo [en ligne]. [sans date]. [Consulté le 19 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.lilo.org/votre-vie-privee-avec-lilo/\">lien</a></p>\n<p>Masq by Qwant vos données personnelles. About Qwant . [en ligne]. Mise à jour 28 juin 2019. [Consulté le 19 octobre 2020 ]. Disponible à l’adresse : <a target='_blank'  href=\"https://about.qwant.com/fr/legal/masq-by-qwant-vos-donnees-personnelles/\">lien</a></p>\n<p>Microsoft Bing. Wikipédia [en ligne]. Dernière modification de la page le 14 octobre 2020 [Consulté le 19 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://fr.wikipedia.org/w/index.php?title=Microsoft_Bing&amp;oldid=175561889\">lien</a></p>\n<p>Moteur de recherche. Wikipédia [en ligne]. Dernière modification de la page le 24 septembre 2020. [Consulté le 19 octobre 2020]. Disponible à l’adresse :  <a target='_blank'  href=\"https://fr.wikipedia.org/w/index.php?title=Moteur_de_recherche&amp;oldid=174985341\">lien</a></p>\n<p>Netixel, 2014. Comment faire des recherches avec Google Images. Netixel.fr [en ligne]. 2 juin 2014 [Consulté le 12 novembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.netixel.fr/google-images-tuto/\">lien</a></p>\n<p>Nous protégeons votre vie privée. Info Ecosia [en ligne]. 1er février 2020. [Consulté le 19 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://info.ecosia.org/privacy?ref=fb-share\">lien</a></p>\n<p>Nous sommes Swisscows. About Swisscows. [en ligne]. [sans date]. [Consulté le 19 octobre 2020 ]. Disponible à l’adresse : <a target='_blank'  href=\"https://swisscows.com/fr/about\">lien</a></p>\n<p>Qwant. Wikipédia [en ligne]. Dernière modification de la page le 2 octobre 2020 [Consulté le 19 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://fr.wikipedia.org/w/index.php?title=Qwant&amp;oldid=175227423\">lien</a></p>\n<p>Tineye tutorial. Help Tineye [en ligne]. Mise à jour 6 octobre 2020 [Consulté le 12 novembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://help.tineye.com/article/265-tineye-tutorial\">lien</a></p>\n<h2 id=\"sources-définitions-\">Sources définitions :</h2>\n<p>Serveur : </p>\n<p>Serveur informatique. Wikipédia : l’encyclopédie libre [en ligne]. Dernière modification de la page le 11 septembre 2020 à 14:57. [Consulté le 10 décembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://fr.wikipedia.org/wiki/Serveur_informatique\">lien</a></p>\n",
           "modules": [
             "rectQXEUZsDam7c8j"
           ],
+          "id": "7",
+          "type": "PODCAST",
+          "title": "Les moteurs de&nbsp;recherche",
+          "sources": "<h2 id=\"sources\">Sources</h2>\n<p>BESSON François, 2017. <em>Les meilleurs moteurs de recherche alternatifs à Google. 1ère Position Take the lead</em> [en ligne]. 10 octobre 2017. [Consulté le 19 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.1ere-position.fr/blog/10-meilleurs-moteurs-de-recherche-alternatifs-google/\">lien</a></p>\n<p>Déclaration de confidentialité Microsoft. Microsoft. [en ligne]. Mise à jour novembre 2020. [Consulté le 12 novembre 2020 ]. Disponible à l’adresse : <a target='_blank'  href=\"https://privacy.microsoft.com/fr-fr/privacystatement\">lien</a></p>\n<p>Duckduckgo. Wikipédia [en ligne]. Dernière modification de la page le 2 septembre 2020 à 08:35. [Consulté le 19 octobre 2020]. Disponible à l’adresse :  <a target='_blank'  href=\"https://fr.wikipedia.org/w/index.php?title=DuckDuckGo&amp;oldid=174360001\">lien</a></p>\n<p>GOOGLE. Google Règles de confidentialité et conditions d’utilisation. Google [en ligne]. 30 septembre 2020. [Consulté le 8 décembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://policies.google.com/privacy\">lien</a></p>\n<p>Lilo un moteur de recherche qui protège votre vie privée. Lilo [en ligne]. [sans date]. [Consulté le 19 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.lilo.org/votre-vie-privee-avec-lilo/\">lien</a></p>\n<p>Masq by Qwant vos données personnelles. About Qwant . [en ligne]. Mise à jour 28 juin 2019. [Consulté le 19 octobre 2020 ]. Disponible à l’adresse : <a target='_blank'  href=\"https://about.qwant.com/fr/legal/masq-by-qwant-vos-donnees-personnelles/\">lien</a></p>\n<p>Microsoft Bing. Wikipédia [en ligne]. Dernière modification de la page le 14 octobre 2020 [Consulté le 19 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://fr.wikipedia.org/w/index.php?title=Microsoft_Bing&amp;oldid=175561889\">lien</a></p>\n<p>Moteur de recherche. Wikipédia [en ligne]. Dernière modification de la page le 24 septembre 2020. [Consulté le 19 octobre 2020]. Disponible à l’adresse :  <a target='_blank'  href=\"https://fr.wikipedia.org/w/index.php?title=Moteur_de_recherche&amp;oldid=174985341\">lien</a></p>\n<p>Netixel, 2014. Comment faire des recherches avec Google Images. Netixel.fr [en ligne]. 2 juin 2014 [Consulté le 12 novembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.netixel.fr/google-images-tuto/\">lien</a></p>\n<p>Nous protégeons votre vie privée. Info Ecosia [en ligne]. 1er février 2020. [Consulté le 19 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://info.ecosia.org/privacy?ref=fb-share\">lien</a></p>\n<p>Nous sommes Swisscows. About Swisscows. [en ligne]. [sans date]. [Consulté le 19 octobre 2020 ]. Disponible à l’adresse : <a target='_blank'  href=\"https://swisscows.com/fr/about\">lien</a></p>\n<p>Qwant. Wikipédia [en ligne]. Dernière modification de la page le 2 octobre 2020 [Consulté le 19 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://fr.wikipedia.org/w/index.php?title=Qwant&amp;oldid=175227423\">lien</a></p>\n<p>Tineye tutorial. Help Tineye [en ligne]. Mise à jour 6 octobre 2020 [Consulté le 12 novembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://help.tineye.com/article/265-tineye-tutorial\">lien</a></p>\n<h2 id=\"sources-définitions-\">Sources définitions :</h2>\n<p>Serveur : </p>\n<p>Serveur informatique. Wikipédia : l’encyclopédie libre [en ligne]. Dernière modification de la page le 11 septembre 2020 à 14:57. [Consulté le 10 décembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://fr.wikipedia.org/wiki/Serveur_informatique\">lien</a></p>\n",
           "index": "2"
         },
         {
           "airtable_id": "recscSRI4Lbxci54S",
-          "title": "La recherche multimédia ",
-          "id": "8",
-          "type": "MARKDOWN",
           "modules": [
             "rectQXEUZsDam7c8j"
           ],
-          "quiz": "<h2 id=\"quizz-fake-news--true-news\">Quizz Fake news / true news&#8201;:</h2>\n<p>&quot;Je peux utiliser les images que je&nbsp;trouve sur internet comme je&nbsp;veux&#8201;! </p>\n<div class=\"question\">\n    <button class=\"quiz-btn\" data-correct-answer>Fake News&#8201;!</button>\n    <button class=\"quiz-btn\" >True News&#8201;!</button>\n</div>\n\n<p>&quot;Toutes les images sur Googe images sont libres de&nbsp;droit.&quot; </p>\n<div class=\"question\">\n    <button class=\"quiz-btn\" data-correct-answer>Fake News&#8201;!</button>\n    <button class=\"quiz-btn\" >True News&#8201;!</button>\n</div>\n\n<p>&quot;Youtube est un&nbsp;moteur de&nbsp;recherche dédié à la&nbsp;vidéo&quot; </p>\n<div class=\"question\">\n    <button class=\"quiz-btn\" >Fake News&#8201;!</button>\n    <button class=\"quiz-btn\" data-correct-answer>True News&#8201;!</button>\n</div>\n\n<p>&quot;Youtube est le&nbsp;seul site sur lequel je&nbsp;peux trouver des vidéos d&#39;archive&quot; </p>\n<div class=\"question\">\n    <button class=\"quiz-btn\" data-correct-answer>Fake News&#8201;!</button>\n    <button class=\"quiz-btn\" >True News&#8201;!</button>\n</div>\n",
-          "html": "<h1 id=\"larecherche-multimédia\">La&nbsp;recherche multimédia</h1>\n<p>Certains outils permettent de&nbsp;paramétrer la&nbsp;recherche afin de&nbsp;ne chercher qu’un type de&nbsp;documents, par exemple des images ou&nbsp;des vidéos.  </p>\n<p><strong>La recherche d’image</strong>\n&#8201;<img data-size=\"60%\"  src=\"https://dl.airtable.com/.attachments/dd809d289036d567cf182b52856862a0/a5a02e90/M2_3_illustration1.svg\" alt=\"60%\"></p>\n<p><span class=\"primary-on-text\">Google images&#8201;:</span>  </p>\n<p>Permet de&nbsp;trouver sur le&nbsp;web des images en&nbsp;rapport avec un&nbsp;sujet donné. </p>\n<p>Google image offre également la&nbsp;possibilité de&nbsp;faire des recherches d&#39;images inversées&#8201;: retrouver la&nbsp;source originale d’une photo publiée en&nbsp;ligne ou&nbsp;sur les réseaux sociaux.\n&#8201;<img data-size=\"50%\"  src=\"https://dl.airtable.com/.attachments/2f8ab2f2a0172723f1f9f2f19ca2bcfa/389a114a/M2_3_illustration2.svg\" alt=\"50%\"></p>\n<p><span class=\"primary-on-text\">TinEye&#8201;:</span>  </p>\n<p>Moteur de&nbsp;recherche spécialisé dans les images.  </p>\n<p>Il&nbsp;suffit de&nbsp;lui fournir une image de&nbsp;ton choix et&nbsp;il retrouvera tous les sites web sur lesquels elle a été postée.  </p>\n<p>Il&nbsp;te signalera également s’il existe des versions modifiées de&nbsp;l’image ou&nbsp;si elle est disponible en&nbsp;meilleure résolution/qualité ailleurs sur le&nbsp;web. \n&#8201;<img data-size=\"50%\"  src=\"https://dl.airtable.com/.attachments/9588e5a5cfbc50af62536568257b192e/5d3da18e/M2_3_illustration3.svg\" alt=\"50%\"></p>\n<p><span class=\"primary-on-text\">Pixabay&#8201;:</span>  </p>\n<p>Très bon outil offrant des fonctionnalités de&nbsp;recherche et&nbsp;de sauvegarde des images.  </p>\n<p>Les images sont toutes libres de&nbsp;droits et&nbsp;réutilisables selon certaines modalités. </p>\n<p>&#8201;<img data-size=\"50%\"  src=\"https://dl.airtable.com/.attachments/2e3ac49c74573d84b4ba1d43a86b72f2/9bcd3377/M2_3_illustration4.svg\" alt=\"50%\"></p>\n<p><span class=\"primary-on-text\">Flickr&#8201;: </span>   </p>\n<p>Même principe que Pixabay \n&#8201;<img data-size=\"50%\"  src=\"https://dl.airtable.com/.attachments/69bd5367c361d4ab55c1b93dca8ec71d/24c3bdb2/M2_3_illustration5.svg\" alt=\"50%\"></p>\n<p><span class=\"primary-on-text\">Pexels&#8201;:</span>   </p>\n<p>40’000 photos en&nbsp;creatives commons zero (cc0) \n&#8201;<img data-size=\"50%\"  src=\"https://dl.airtable.com/.attachments/b68778590178496aff1a512ae90cf455/03112db1/M2_3_illustration6.svg\" alt=\"50%\"></p>\n<p><span class=\"primary-on-text\">PxHere&#8201;:</span>   </p>\n<p>Plus d’un million de&nbsp;photos en&nbsp;haute définition.\n&#8201;<img src=\"https://dl.airtable.com/.attachments/49d302b0fad899cef1e43c0373cb55a6/4ba7265c/M2_3_illustration7.svg\" alt=\"alt\"></p>\n<p>Attention&#8201;: une image libre de&nbsp;droits ne&nbsp;veut pas dire que tu&nbsp;peux en&nbsp;faire tout et&nbsp;n’importe quoi&#8201;! Par exemple, certaines images ne&nbsp;peuvent pas être utilisées à des fin commerciales. </p>\n<p> Lorsque tu&nbsp;effectues une recherche d’images dans le&nbsp;but de&nbsp;les réutiliser, veille à vérifier précisément les droits associés.  </p>\n<p>Sur Google images, tu&nbsp;peux sélectionner le&nbsp;type de&nbsp;droits que tu&nbsp;cherches dans le&nbsp;menu “droit d’usage” afin de&nbsp;n’obtenir que des images libres de&nbsp;droits, par exemple.&#8201;<img src=\"https://dl.airtable.com/.attachments/da00e1f25284351f6190c56b9309abd9/72415645/M2_3_illustration8.svg\" alt=\"alt\"></p>\n<p><strong>La recherche de&nbsp;vidéos</strong></p>\n<p>Il&nbsp;existe des moteurs de&nbsp;recherche exclusivement consacrés à la&nbsp;vidéo. Nous pouvons citer par exemple YouTube et&nbsp;Dailymotion. </p>\n<p> Mais ce&nbsp;ne sont pas les seuls&#8201;! Tu&nbsp;peux également trouver des vidéos sur les sites des chaînes de&nbsp;télévision, par exemple dans les archives RTS et&nbsp;sur les sites d’autres institutions actives dans l’archivage de&nbsp;l’audiovisuel comme le&nbsp;site notrehistoire.ch ou&nbsp;encore les archives de&nbsp;l’INA.</p>\n",
+          "id": "8",
+          "type": "MARKDOWN",
+          "title": "La recherche multimédia ",
+          "quiz": "<h2 id=\"quizz-fake-news--true-news\">Quizz Fake news / true news&#8201;:</h2>\n<p>&quot;Je peux utiliser les images que je&nbsp;trouve sur internet comme je&nbsp;veux&#8201;!&quot;</p>\n<div class=\"question\">\n    <button class=\"quiz-btn\" data-correct-answer>Fake News&#8201;!</button>\n    <button class=\"quiz-btn\" >True News&#8201;!</button>\n</div>\n\n<p>&quot;Toutes les images sur Googe images sont libres de&nbsp;droit.&quot; </p>\n<div class=\"question\">\n    <button class=\"quiz-btn\" data-correct-answer>Fake News&#8201;!</button>\n    <button class=\"quiz-btn\" >True News&#8201;!</button>\n</div>\n\n<p>&quot;Youtube est un&nbsp;moteur de&nbsp;recherche dédié à la&nbsp;vidéo&quot; </p>\n<div class=\"question\">\n    <button class=\"quiz-btn\" >Fake News&#8201;!</button>\n    <button class=\"quiz-btn\" data-correct-answer>True News&#8201;!</button>\n</div>\n\n<p>&quot;Youtube est le&nbsp;seul site sur lequel je&nbsp;peux trouver des vidéos d&#39;archive&quot; </p>\n<div class=\"question\">\n    <button class=\"quiz-btn\" data-correct-answer>Fake News&#8201;!</button>\n    <button class=\"quiz-btn\" >True News&#8201;!</button>\n</div>\n",
+          "cover": "https://dl.airtable.com/.attachments/cf77bb49f50f0a44cb276bb77f89cbbc/e2c52df3/M2_3_cover.svg",
+          "sources": "<h2 id=\"sources\">Sources</h2>\n<p>BESSON François, 2017. <em>Les meilleurs moteurs de recherche alternatifs à Google. 1ère Position Take the lead</em> [en ligne]. 10 octobre 2017. [Consulté le 19 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.1ere-position.fr/blog/10-meilleurs-moteurs-de-recherche-alternatifs-google/\">lien</a></p>\n<p>Déclaration de confidentialité Microsoft. Microsoft. [en ligne]. Mise à jour novembre 2020. [Consulté le 12 novembre 2020 ]. Disponible à l’adresse : <a target='_blank'  href=\"https://privacy.microsoft.com/fr-fr/privacystatement\">lien</a></p>\n<p>Duckduckgo. Wikipédia [en ligne]. Dernière modification de la page le 2 septembre 2020 à 08:35. [Consulté le 19 octobre 2020]. Disponible à l’adresse :  <a target='_blank'  href=\"https://fr.wikipedia.org/w/index.php?title=DuckDuckGo&amp;oldid=174360001\">lien</a></p>\n<p> Lilo un moteur de recherche qui protège votre vie privée. Lilo [en ligne]. [sans date]. [Consulté le 19 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.lilo.org/votre-vie-privee-avec-lilo/\">lien</a></p>\n<p>Masq by Qwant vos données personnelles. About Qwant . [en ligne]. Mise à jour 28 juin 2019. [Consulté le 19 octobre 2020 ]. Disponible à l’adresse :  <a target='_blank'  href=\"https://about.qwant.com/fr/legal/masq-by-qwant-vos-donnees-personnelles/\">lien</a></p>\n<p>Microsoft Bing. Wikipédia [en ligne]. Dernière modification de la page le 14 octobre 2020 [Consulté le 19 octobre 2020]. Disponible à l’adresse :  <a target='_blank'  href=\"https://fr.wikipedia.org/w/index.php?title=Microsoft_Bing&amp;oldid=175561889\">lien</a></p>\n<p>Moteur de recherche. Wikipédia [en ligne]. Dernière modification de la page le 24 septembre 2020. [Consulté le 19 octobre 2020]. Disponible à l’adresse :  <a target='_blank'  href=\"https://fr.wikipedia.org/w/index.php?title=Moteur_de_recherche&amp;oldid=174985341\">lien</a></p>\n<p>Netixel, 2014. Comment faire des recherches avec Google Images. Netixel.fr [en ligne]. 2 juin 2014 [Consulté le 12 novembre 2020]. Disponible à l’adresse :  <a target='_blank'  href=\"https://www.netixel.fr/google-images-tuto/\">lien</a></p>\n<p>Nous protégeons votre vie privée. Info Ecosia [en ligne]. 1er février 2020. [Consulté le 19 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://info.ecosia.org/privacy?ref=fb-share\">lien</a></p>\n<p>Nous sommes Swisscows. About Swisscows. [en ligne]. [sans date]. [Consulté le 19 octobre 2020 ]. Disponible à l’adresse : <a target='_blank'  href=\"https://swisscows.com/fr/about\">lien</a></p>\n<p>Qwant. Wikipédia [en ligne]. Dernière modification de la page le 2 octobre 2020 [Consulté le 19 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://fr.wikipedia.org/w/index.php?title=Qwant&amp;oldid=175227423\">lien</a></p>\n<p>Tineye tutorial. Help Tineye [en ligne]. Mise à jour 6 octobre 2020 [Consulté le 12 novembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://help.tineye.com/article/265-tineye-tutorial\">lien</a></p>\n<h2 id=\"source-définitions-\">Source définitions :</h2>\n<p>Creative commons : </p>\n<p>Creative commons. Wikipédia : l’encyclopédie libre [en ligne]. Dernière modification de la page le 30 octobre 2020 à 20:39. [Consulté le 10 décembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://fr.wikipedia.org/wiki/Creative_Common\">lien</a> </p>\n<p>Libre de droit : </p>\n<p>Libre de droits. Wikipédia : l’encyclopédie libre [en ligne]. Dernière modification de la page le 14 octobre 2020 à 16:44. [Consulté le 10 décembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://fr.wikipedia.org/wiki/Libre_de_droits\">lien</a></p>\n",
+          "html": "<h1 id=\"larecherche-multimédia\">La&nbsp;recherche multimédia</h1>\n<p>Certains outils permettent de&nbsp;paramétrer la&nbsp;recherche afin de&nbsp;ne chercher qu’un type de&nbsp;documents, par exemple des images ou&nbsp;des vidéos.  </p>\n<p><strong>La recherche d’image</strong>\n&#8201;<img data-size=\"60%\"  src=\"https://dl.airtable.com/.attachments/dd809d289036d567cf182b52856862a0/a5a02e90/M2_3_illustration1.svg\" alt=\"60%\"></p>\n<p><span class=\"primary-on-text\">Google images&#8201;:</span>  </p>\n<p>Permet de&nbsp;trouver sur le&nbsp;web des images en&nbsp;rapport avec un&nbsp;sujet donné. </p>\n<p>Google image offre également la&nbsp;possibilité de&nbsp;faire des recherches d&#39;images inversées&#8201;: retrouver la&nbsp;source originale d’une photo publiée en&nbsp;ligne ou&nbsp;sur les réseaux sociaux.\n&#8201;<img data-size=\"50%\"  src=\"https://dl.airtable.com/.attachments/2f8ab2f2a0172723f1f9f2f19ca2bcfa/389a114a/M2_3_illustration2.svg\" alt=\"50%\"></p>\n<p><span class=\"primary-on-text\">TinEye&#8201;:</span>  </p>\n<p>Moteur de&nbsp;recherche spécialisé dans les images.  </p>\n<p>Il&nbsp;suffit de&nbsp;lui fournir une image de&nbsp;ton choix et&nbsp;il retrouvera tous les sites web sur lesquels elle a été postée.  </p>\n<p>Il&nbsp;te signalera également s’il existe des versions modifiées de&nbsp;l’image ou&nbsp;si elle est disponible en&nbsp;meilleure résolution/qualité ailleurs sur le&nbsp;web. \n&#8201;<img data-size=\"50%\"  src=\"https://dl.airtable.com/.attachments/9588e5a5cfbc50af62536568257b192e/5d3da18e/M2_3_illustration3.svg\" alt=\"50%\"></p>\n<p><span class=\"primary-on-text\">Pixabay&#8201;:</span>  </p>\n<p>Très bon outil offrant des fonctionnalités de&nbsp;recherche et&nbsp;de sauvegarde des images.  </p>\n<p>Les images sont toutes libres de&nbsp;droits et&nbsp;réutilisables selon certaines modalités. </p>\n<p>&#8201;<img data-size=\"50%\"  src=\"https://dl.airtable.com/.attachments/2e3ac49c74573d84b4ba1d43a86b72f2/9bcd3377/M2_3_illustration4.svg\" alt=\"50%\"></p>\n<p><span class=\"primary-on-text\">Flickr&#8201;: </span>   </p>\n<p>Même principe que Pixabay \n&#8201;<img data-size=\"50%\"  src=\"https://dl.airtable.com/.attachments/69bd5367c361d4ab55c1b93dca8ec71d/24c3bdb2/M2_3_illustration5.svg\" alt=\"50%\"></p>\n<p><span class=\"primary-on-text\">Pexels&#8201;:</span>   </p>\n<p>40’000 photos en <span class=\"_definition\" data-definition-id=\"creative_commons\">creatives commons</span> zero (cc0) \n&#8201;<img data-size=\"50%\"  src=\"https://dl.airtable.com/.attachments/b68778590178496aff1a512ae90cf455/03112db1/M2_3_illustration6.svg\" alt=\"50%\"></p>\n<p><span class=\"primary-on-text\">PxHere&#8201;:</span>   </p>\n<p>Plus d’un million de&nbsp;photos en&nbsp;haute définition.\n&#8201;<img src=\"https://dl.airtable.com/.attachments/49d302b0fad899cef1e43c0373cb55a6/4ba7265c/M2_3_illustration7.svg\" alt=\"alt\"></p>\n<p>Attention&#8201;: une image <span class=\"_definition\" data-definition-id=\"libre_droit\">libre de&nbsp;droits</span> ne&nbsp;veut pas dire que tu&nbsp;peux en&nbsp;faire tout et&nbsp;n’importe quoi&#8201;! Par exemple, certaines images ne&nbsp;peuvent pas être utilisées à des fin commerciales. </p>\n<p> Lorsque tu&nbsp;effectues une recherche d’images dans le&nbsp;but de&nbsp;les réutiliser, veille à vérifier précisément les droits associés.  </p>\n<p>Sur Google images, tu&nbsp;peux sélectionner le&nbsp;type de&nbsp;droits que tu&nbsp;cherches dans le&nbsp;menu “droit d’usage” afin de&nbsp;n’obtenir que des images libres de&nbsp;droits, par exemple.&#8201;<img src=\"https://dl.airtable.com/.attachments/da00e1f25284351f6190c56b9309abd9/72415645/M2_3_illustration8.svg\" alt=\"alt\"></p>\n<p><strong>La recherche de&nbsp;vidéos</strong></p>\n<p>Il&nbsp;existe des moteurs de&nbsp;recherche exclusivement consacrés à la&nbsp;vidéo. Nous pouvons citer par exemple YouTube et&nbsp;Dailymotion. </p>\n<p> Mais ce&nbsp;ne sont pas les seuls&#8201;! Tu&nbsp;peux également trouver des vidéos sur les sites des chaînes de&nbsp;télévision, par exemple dans les archives RTS et&nbsp;sur les sites d’autres institutions actives dans l’archivage de&nbsp;l’audiovisuel comme le&nbsp;site notrehistoire.ch ou&nbsp;encore les archives de&nbsp;l’INA.</p>\n",
           "index": "3"
+        },
+        {
+          "airtable_id": "recQ6wylKA6fMLs46",
+          "modules": [
+            "rectQXEUZsDam7c8j"
+          ],
+          "type": "INFOGRAPHIC",
+          "title": "la recherche sociale",
+          "sources": "<h2 id=\"sources-\">Sources :</h2>\n<p>Comment faire une recherche sur Facebook. Facebook [en ligne]. [sans date]. [Consulté le 5 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.facebook.com/help/103764609715185\">lien</a></p>\n<p>DELAFOI Florian, 2016. <em>En perte de vitesse, Twitter peut-il rebondir.</em> Le Temps [en ligne]. 11 février 2016. [Consulté le 5 octobre 2020]. Disponible à l’adresse : \n<a target='_blank'  href=\"https://www.letemps.ch/economie/perte-vitesse-twitter-peutil-rebondir\">lien</a> </p>\n<p>Facebook va lister les sources fiables pour contrer les “fakes news”. RTS [en ligne]. 20 janvier 2018. [Consulté le 5 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.rts.ch/info/sciences-tech/9263845-facebook-va-lister-les-sources-fiables-pour-contrer-les-fake-news.html\">lien</a></p>\n<p>Identifier des sources fiables. Wikipédia : l’encyclopédie libre [en ligne]. Dernière modification de la page le 25 septembre 2020. [Consulté le 5 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://fr.wikipedia.org/w/index.php?title=Aide:Identifiez_des_sources_fiables&amp;oldid=175020239\">lien</a></p>\n<p>Quels réseaux sociaux pour quelle utilisation. Habefast [en ligne]. 20 avril 2018. [Consulté le 5 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://habefast.ch/quels-reseaux-sociaux-pour-quelle-utilisation/\">lien</a></p>\n<p>SUMMERMATTER Stefania, 2009. <em>Outil de résistance, Twitter, l’autre face du journalisme</em>. SWI swissinfo [en ligne]. [Consulté le 5 octobre 2020]. Disponible à l’adresse : <em>lien</em></p>\n",
+          "id": "9",
+          "svg": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->\n<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\" \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\">\n<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\"\n\t width=\"100%\" height=\"auto\" viewBox=\"0 0 1029.888 1445.906\" enable-background=\"new 0 0 1029.888 1445.906\"\n\t xml:space=\"preserve\">\n<g id=\"button_x5F_1\">\n\t<g>\n\t\t<circle fill=\"#FFFFFF\" stroke=\"#FFBC00\" stroke-width=\"20\" stroke-miterlimit=\"10\" cx=\"516.797\" cy=\"158.784\" r=\"148.783\"/>\n\t\t<path fill=\"#FFBC00\" d=\"M490.867,177.067c-11.903,0-21.97,0-33.17,0c0-13.853,0-26.316,0-40.619c10.44,0,20.892,0,33.21,0\n\t\t\tc0-11.831-0.191-21.92,0.042-32c0.386-16.606,5.355-31.295,19.262-41.6c10.783-7.99,23.453-10.024,36.417-9.707\n\t\t\tc8.139,0.2,16.244,1.729,25.563,2.8c0,10.734,0,21.144,0,32.995c-5.618,0.393-11.592,0.5-17.475,1.282\n\t\t\tc-13.796,1.835-19.834,8.282-20.645,22.207c-0.411,7.061-0.072,14.165-0.072,23.159c12.525,0,24.007,0,37.591,0\n\t\t\tc-1.904,14.555-3.528,26.963-5.322,40.664c-10.617,0.524-20.613,1.017-31.888,1.572c0,31.103,0,61.154,0,92.376\n\t\t\tc-14.773,0-28.209,0-43.514,0C490.867,239.36,490.867,208.898,490.867,177.067z\"/>\n\t</g>\n</g>\n<g id=\"button_x5F_2\">\n\t<g>\n\t\t<g>\n\t\t\t<circle fill=\"#FFFFFF\" stroke=\"#FFBC00\" stroke-width=\"20\" stroke-miterlimit=\"10\" cx=\"516.797\" cy=\"609.097\" r=\"148.783\"/>\n\t\t\t<path fill=\"#FFBC00\" d=\"M422.401,611.315c0-11.955-0.194-23.913,0.037-35.864c0.646-33.428,23.381-56.828,56.776-57.627\n\t\t\t\tc24.778-0.594,49.59-0.528,74.372-0.015c33.529,0.694,56.534,23.627,57.268,57.131c0.543,24.783,0.569,49.599,0.005,74.382\n\t\t\t\tc-0.765,33.524-23.946,56.386-57.425,56.93c-24.344,0.396-48.703,0.356-73.047,0.012c-34.215-0.483-57.303-23.635-57.947-57.755\n\t\t\t\tC422.204,636.115,422.4,623.713,422.401,611.315z M587.206,613.293c0-12.84,0.303-20.525-0.067-33.354\n\t\t\t\tc-0.638-22.199-10.424-37.811-32.395-38.315c-25.221-0.58-45.31-0.521-70.533-0.034c-22.12,0.427-37.521,10.626-37.953,32.705\n\t\t\t\tc-0.493,25.228-0.517,50.48,0.022,75.706c0.472,22.102,15.995,32.115,38.125,32.464c24.785,0.391,39.26,0.358,64.046,0.01\n\t\t\t\tc22.865-0.321,38.041-10.396,38.707-33.319C587.506,637.21,587.22,625.248,587.206,613.293z\"/>\n\t\t\t<path fill=\"#FFBC00\" d=\"M471.088,611.608c0.16-26.026,20.473-46.157,46.474-46.057c25.914,0.101,46.326,20.425,46.475,46.274\n\t\t\t\tc0.151,26.415-20.714,46.959-47.357,46.628C490.633,658.13,470.926,637.881,471.088,611.608z M543.724,611.838\n\t\t\t\tc-0.076-14.346-11.323-25.805-25.534-26.018c-14.185-0.212-26.958,12.381-26.789,26.408c0.167,13.822,12.092,25.728,26,25.957\n\t\t\t\tC532.094,638.429,543.803,626.708,543.724,611.838z\"/>\n\t\t</g>\n\t\t<path fill=\"#FFBC00\" d=\"M563.71,554.031c5.91-0.1,10.933,4.487,11.325,10.342c0.427,6.377-4.622,12.058-10.899,12.264\n\t\t\tc-6.198,0.204-11.476-5.315-11.266-11.784C553.062,558.902,557.844,554.128,563.71,554.031z\"/>\n\t</g>\n</g>\n<g id=\"button_x5F_3\">\n\t<g>\n\t\t<circle fill=\"#FFFFFF\" stroke=\"#FFBC00\" stroke-width=\"20\" stroke-miterlimit=\"10\" cx=\"516.797\" cy=\"1059.412\" r=\"148.783\"/>\n\t\t<path fill=\"#FFBC00\" d=\"M424.27,1131.747c19.628,0.527,37.962-3.283,55.277-14.836c-25.257-10.378-29.917-14.387-34.764-29.685\n\t\t\tc1.342-0.451,2.691-0.905,4.041-1.358c1.052-0.353,2.105-0.704,4.416-1.476c-14.351-9.48-23.985-21.08-24.156-39.263\n\t\t\tc4.603,0.81,8.49,1.493,13.437,2.363c-12.806-16.562-18.75-33.11-7.831-53.126c8.381,7.046,15.692,14.456,24.212,20.01\n\t\t\tc8.979,5.853,18.871,10.519,28.812,14.615c9.532,3.929,19.51,7.084,30.763,6.867c0.194-3.801,0.303-7.193,0.55-10.574\n\t\t\tc2.222-30.376,37.059-49.289,62.693-32.853c9.36,6.001,16.559,5.847,25.355,1.618c2.663-1.28,5.516-2.166,9.079-3.541\n\t\t\tc0.223,8.731-6.611,12.685-9.971,19.655c4.97-1.068,9.263-1.991,15.404-3.312c-3.119,7.695-8.063,12.34-13.126,16.489\n\t\t\tc-4.262,3.493-5.728,7.25-6.313,12.694c-1.36,12.632-2.798,25.448-6.208,37.629c-9.623,34.382-31.903,57.837-65.315,70.099\n\t\t\tc-32.312,11.857-64.459,10.201-95.953-3.603c-3.795-1.663-7.339-3.898-11-5.869\n\t\t\tC423.873,1133.444,424.072,1132.595,424.27,1131.747z\"/>\n\t</g>\n</g>\n<g id=\"overlay_x5F_1\">\n\t<path fill=\"#FDBB03\" d=\"M936.604,1121.674H93.284C41.765,1121.674,0,1079.91,0,1028.39V464.276\n\t\tc0-51.52,41.765-93.284,93.284-93.284h843.32c51.52,0,93.284,41.765,93.284,93.284v564.114\n\t\tC1029.888,1079.91,988.123,1121.674,936.604,1121.674z\"/>\n\t<rect x=\"70.852\" y=\"444.269\" fill=\"none\" width=\"895.036\" height=\"625.521\"/>\n\t<text transform=\"matrix(1.0087 0 0 1 70.8516 476.894)\"><tspan x=\"0\" y=\"0\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">Facebook ne crée pas de contenu: les </tspan><tspan x=\"0\" y=\"54\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">informations que l’on y trouve sont des </tspan><tspan x=\"0\" y=\"108\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">rediffusions d’autres sites. L’avantage est </tspan><tspan x=\"0\" y=\"162\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">que si tu y trouves des informations perti</tspan><tspan x=\"834.916\" y=\"162\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">-</tspan><tspan x=\"0\" y=\"216\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">nentes, tu pourras sûrement les retrouver </tspan><tspan x=\"0\" y=\"270\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">ailleurs sur le web. Le désavantage, c’est </tspan><tspan x=\"0\" y=\"324\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">que tu n’y trouveras que des informations </tspan><tspan x=\"0\" y=\"378\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">qui correspondent à ton point de vue : il y a </tspan><tspan x=\"0\" y=\"432\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">un algorithme qui t’oriente vers tes préfé</tspan><tspan x=\"835.049\" y=\"432\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">-</tspan><tspan x=\"0\" y=\"486\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">rences. C’est ce qu’on appelle une bulle </tspan><tspan x=\"0\" y=\"540\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">de filtre. </tspan></text>\n</g>\n<g id=\"overlay_x5F_2\">\n\t<path fill=\"#FDBB03\" d=\"M936.604,1445.906H93.284c-51.519,0-93.284-41.765-93.284-93.284V902.71\n\t\tc0-51.519,41.765-93.283,93.284-93.283h843.32c51.52,0,93.284,41.765,93.284,93.283v449.911\n\t\tC1029.888,1404.141,988.123,1445.906,936.604,1445.906z\"/>\n\t<rect x=\"70.852\" y=\"916.809\" fill=\"none\" width=\"895.036\" height=\"465.154\"/>\n\t<text transform=\"matrix(1.0087 0 0 1 70.8516 949.4331)\"><tspan x=\"0\" y=\"0\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">Sur Instagram, la recherche est très limi</tspan><tspan x=\"820.783\" y=\"0\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">-</tspan><tspan x=\"0\" y=\"54\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">tée : elle se fait uniquement par hashtags </tspan><tspan x=\"0\" y=\"108\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">(#) ou par noms de pages. </tspan><tspan x=\"0\" y=\"216\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">Comme sur Twitter, il faut vérifier d’où pro</tspan><tspan x=\"859.261\" y=\"216\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">-</tspan><tspan x=\"0\" y=\"270\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">viennent les images pour être sûr qu’elles </tspan><tspan x=\"0\" y=\"324\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">appartiennent au compte que tu veux citer.</tspan></text>\n</g>\n<g id=\"overlay_x5F_3\">\n\t<path fill=\"#FDBB03\" d=\"M936.604,835.64H93.284C41.765,835.64,0,793.875,0,742.356v-449.91c0-51.52,41.765-93.284,93.284-93.284\n\t\th843.32c51.52,0,93.284,41.765,93.284,93.284v449.91C1029.888,793.875,988.123,835.64,936.604,835.64z\"/>\n\t<rect x=\"70.852\" y=\"268.533\" fill=\"none\" width=\"895.036\" height=\"465.154\"/>\n\t<text transform=\"matrix(1.0087 0 0 1 70.8516 301.1577)\"><tspan x=\"0\" y=\"0\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">Les informations publiées sur Twitter sont </tspan><tspan x=\"0\" y=\"54\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">souvent inédites. Elles sont diffusées en </tspan><tspan x=\"0\" y=\"108\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">temps réel sur ce réseau social. Il faut </tspan><tspan x=\"0\" y=\"162\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">donc attendre que ces informations soient </tspan><tspan x=\"0\" y=\"216\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">publiées ailleurs pour pouvoir vérifier leur </tspan><tspan x=\"0\" y=\"270\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">pertinence et leur fiabilité.  </tspan><tspan x=\"0\" y=\"324\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">Mais Twitter te propose une recherche </tspan><tspan x=\"0\" y=\"378\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">avancée plutôt performante.</tspan></text>\n</g>\n</svg>",
+          "cover": "https://dl.airtable.com/.attachments/690f41139d14f2a5d1fbc5ed039bd8fc/228e0c60/M2_4_cover.svg",
+          "html": "<p>Je vais t’expliquer en&nbsp;un clin d’œil comment faire une recherche sur Facebook, Twitter et&nbsp;Instagram. Mais je&nbsp;dois te&nbsp;prévenir que ces réseaux sociaux sont des grands vecteurs de <span class=\"_definition\" data-definition-id=\"fake_news\">fake news</span>. </p>\n",
+          "index": "4"
         }
       ],
       "id": "2",
@@ -1465,32 +1722,49 @@
       "title": "Méthodologie de&nbsp;recherche",
       "sources": "<h2 id=\"ressources-complémentaires\">Ressources complémentaires</h2>\n<p><a target='_blank'  href=\"http://www.infosphere.uqam.ca/preparer-sa-recherche.\">http://www.infosphere.uqam.ca/preparer-sa-recherche.</a> </p>\n<p>Sources </p>\n<p>BIBLIOTHEQUE UNIGE, [sans date]. InfoTrack : Formation aux compétences informationnelles. InfoTrack [en ligne]. [Consulté le 28 septembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://infotrack.unige.ch/\">lien</a></p>\n<p>BIBLIOTHEQUE UQAM, [sans date]. Infosphère préparer sa recherche. UQAM Infosphère [en ligne]. [Consulté le 28 septembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"http://www.infosphere.uqam.ca/preparer-sa-recherche\">lien</a></p>\n<p>BOUCHARD Aline, HABAROU Corrine et D’HAUTEVILLE Marion, 2018. <em>CERISE : Tutoriel Conseils en Recherche et Information. URFIST</em> [en ligne]. [Consulté le 28 septembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://urfist.chartes.psl.eu/cerise/node/224\">lien</a></p>\n<p>HAESEN Stéphanie, [sans date]. <em>Méthodologie de la recherche d’information</em> [document PowerPoint]. Support de cours : Cours “Recherche en ligne 1”, Haute école de gestion de Genève, filière Information documentaire, année académique 2019-2020 </p>\n<p>HAUTE ECOLE DE GESTION DE GENEVE, 2020. ELI - E-learning de l&#39;Infothèque. Cyberlearn - HES-SO [en ligne]. [Consulté le 11 novembre 2020]. Disponible à l&#39;adresse : <a target='_blank'  href=\"https://cyberlearn.hes-so.ch/course/view.php?id=7225\">lien</a> [accès restreint aux comptes Switch AAI] </p>\n<p>ISIPCA CENTRE DE DOCUMENTATION ET D’INFORMATION, [sans date]. <em>La recherche documentaire</em>. ISIPCA [en ligne]. [Consulté le 28 septembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.isipca.fr/sites/default/files/atoms/files/guide_recherchecdi.pdf\">lien</a></p>\n<p>MARTIN Nichole, 2014. _5 Components of Information Literacy _[enregistrement vidéo]. Youtube [en ligne]. 29 janvier 2014. [Consulté le 28 septembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.youtube.com/watch?v=1ronp6Iue9w\">lien</a></p>\n<h2 id=\"sources-définitions-\">Sources définitions :</h2>\n<p>Carte mentale :  </p>\n<p>Carte heuristique. Wikipédia : l’encyclopédie libre [en ligne]. Dernière modification de la page le 15 décembre 2020 à 05:55. [Consulté le 10 décembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://fr.wikipedia.org/wiki/Carte_heuristique\">lien</a></p>\n<p>Moteur de recherche : </p>\n<p>Moteur de recherche. Wikipédia : l’encyclopédie libre [en ligne]. Dernière modification de la page le 13 novembre 2020 à 22:45. [Consulté le 10 décembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://fr.wikipedia.org/wiki/Moteur_de_recherche\">lien</a> </p>\n<p>Banque de données : </p>\n<p>ENSSIB. Ecole nationale supérieure des sciences de l’information et des bibliothèques [en ligne]. 17 mars 2017. [Consulté le 14 décembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.enssib.fr/services-et-ressources/questions-reponses/base-de-donnees-banque-de-donnees\">lien</a></p>\n",
       "quiz": "<h2 id=\"quizz\">Quizz&#8201;:</h2>\n<p>Lorsqu&#39;on démarre une recherche, quelle est la&nbsp;première étape&#8201;? </p>\n<div class=\"question\">\n    <button class=\"quiz-btn\">Lancer Google</button>\n    <button class=\"quiz-btn\" data-correct-answer>Définir le&nbsp;but du&nbsp;travail</button>\n    <button class=\"quiz-btn\">Plagier un&nbsp;livre</button>\n</div>\n\n<p>Quels sont les axes de&nbsp;recherche&#8201;?</p>\n<div class=\"question\">\n    <button class=\"quiz-btn\" data-correct-answer>Qui, quand, quoi, comment, pourquoi, où</button>\n    <button class=\"quiz-btn\" >Temps, distance, vitesse, durée, longueur</button>\n    <button class=\"quiz-btn\">Officiel, officieux, public, privé, textes, chiffres</button>\n</div>\n\n<p>Parmi ces formulations, laquelle est juste&#8201;? </p>\n<div class=\"question\">\n    <button class=\"quiz-btn\" data-correct-answer>Pour trouver des sources pertinentes, je&nbsp;dois d'abord établir une liste de&nbsp;mots-clés.</button>\n    <button class=\"quiz-btn\" >Pour trouver des sources pertinentes, je&nbsp;dois faire une recherche sur le&nbsp;web.</button>\n</div>\n\n<p>Laquelle des ces proposition est fausse. Pour choisir une souce, je&nbsp;dois m&#39;appuyer sur&#8201;: </p>\n<div class=\"question\">\n    <button class=\"quiz-btn\" >Le domaine couvert par la&nbsp;source</button>\n    <button class=\"quiz-btn\" >Mon sujet de&nbsp;recherche</button>\n    <button class=\"quiz-btn\"  data-correct-answer>L'article qui a&nbsp;le plus de&nbsp;like et&nbsp;de retweet</button>\n    <button class=\"quiz-btn\" >Du type de&nbsp;documents présents</button>\n</div>",
-      "html": "<h1 id=\"méthodologie-derecherche\">Méthodologie de&nbsp;recherche</h1>\n<p>Maintenant que tu&nbsp;en sais un&nbsp;peu plus sur l&#39;information et&nbsp;les données, tu&nbsp;peux t’attaquer à ta&nbsp;recherche. </p>\n<p>Ne&nbsp;te jette pas tête baissée dans ta&nbsp;recherche. Trouver des informations demande de&nbsp;la préparation.  </p>\n<p>Avant même de&nbsp;commencer ta&nbsp;recherche, il&nbsp;faut&#8201;: </p>\n<ul>\n<li>Définir le&nbsp;but de&nbsp;ton travail </li>\n<li>Anticiper le&nbsp;temps dont tu&nbsp;auras besoin\n&#8201;<img src=\"https://dl.airtable.com/.attachments/6cfe02fcc46794bd0f8d65642326ad8f/ce69947e/M2_1_illustration1.svg\" alt=\"alt\"></li>\n</ul>\n<p>Ensuite, tu&nbsp;dois identifier les différents axes de&nbsp;recherche de&nbsp;ton sujet&#8201;: </p>\n<p><strong>Qui&#8201;:</strong> les autrices, auteurs qui traitent de&nbsp;ton sujet.<br><strong>Quoi&#8201;:</strong> les domaines et&nbsp;disciplines dont ton sujet fait partie.<br><strong>Quand&#8201;:</strong> la&nbsp;période couverte par ton sujet.<br><strong>Où&#8201;:</strong> la&nbsp;zone géographique de&nbsp;ton sujet.<br><strong>Comment&#8201;:</strong> Les thèmes et&nbsp;sous-thèmes du&nbsp;domaine principal et&nbsp;secondaire.<br><strong>Pourquoi&#8201;:</strong>  Pourquoi ton sujet doit-il être traité.  </p>\n<p>Pour pouvoir trouver des sources, il&nbsp;faut établir une liste de&nbsp;mots-clés et&nbsp;de leurs synonymes (en français et&nbsp;en anglais). </p>\n<p>Fais un&nbsp;tableau ou&nbsp;une carte mentale des axes de&nbsp;recherches (les concepts) et&nbsp;aux mots clés auxquels ils sont liés.\n&#8201;<img src=\"https://dl.airtable.com/.attachments/d72a66ffc98a7ced3e3202e7b897c716/27967740/M2_1_illustration2.svg\" alt=\"alt\"></p>\n<p>Lorsqu’on cherche une information, le&nbsp;premier réflexe est de&nbsp;se jeter sur Google. Pourtant, ce&nbsp;n’est pas toujours la&nbsp;meilleure solution.  </p>\n<p>Choisis tes sources en&nbsp;fonction&#8201;:  </p>\n<ul>\n<li>de&nbsp;ton sujet de&nbsp;recherche.  </li>\n<li>du&nbsp;domaine couvert par la&nbsp;source.  </li>\n<li>de&nbsp;la date de&nbsp;sa dernière mise à jour (on veut des sources récentes&#8201;!)  </li>\n<li>de&nbsp;sa couverture géographique/linguistique.  </li>\n<li>des types de&nbsp;documents présents.</li>\n</ul>\n<p>Il&nbsp;ne te&nbsp;reste plus qu’à choisir les moteurs de \u0003recherche et&nbsp;banques de&nbsp;données que tu&nbsp;vas consulter, à lancer ta&nbsp;recherche, et à trier les résultats.</p>\n",
+      "cover": "https://dl.airtable.com/.attachments/bd2c8f3915b24e4e2b732c9e71048291/1401f7e6/M2_1_cover.svg",
+      "html": "<h1 id=\"méthodologie-derecherche\">Méthodologie de&nbsp;recherche</h1>\n<p>Maintenant que tu&nbsp;en sais un&nbsp;peu plus sur l&#39;information et&nbsp;les données, tu&nbsp;peux t’attaquer à ta&nbsp;recherche. </p>\n<p>Ne&nbsp;te jette pas tête baissée dans ta&nbsp;recherche. Trouver des informations demande de&nbsp;la préparation.  </p>\n<p>Avant même de&nbsp;commencer ta&nbsp;recherche, il&nbsp;faut&#8201;: </p>\n<ul>\n<li>Définir le&nbsp;but de&nbsp;ton travail </li>\n<li>Anticiper le&nbsp;temps dont tu&nbsp;auras besoin\n&#8201;<img src=\"https://dl.airtable.com/.attachments/6cfe02fcc46794bd0f8d65642326ad8f/ce69947e/M2_1_illustration1.svg\" alt=\"alt\"></li>\n</ul>\n<p>Ensuite, tu&nbsp;dois identifier les différents axes de&nbsp;recherche de&nbsp;ton sujet&#8201;: </p>\n<p><strong>Qui&#8201;:</strong> les autrices, auteurs qui traitent de&nbsp;ton sujet.<br><strong>Quoi&#8201;:</strong> les domaines et&nbsp;disciplines dont ton sujet fait partie.<br><strong>Quand&#8201;:</strong> la&nbsp;période couverte par ton sujet.<br><strong>Où&#8201;:</strong> la&nbsp;zone géographique de&nbsp;ton sujet.<br><strong>Comment&#8201;:</strong> Les thèmes et&nbsp;sous-thèmes du&nbsp;domaine principal et&nbsp;secondaire.<br><strong>Pourquoi&#8201;:</strong>  Pourquoi ton sujet doit-il être traité.  </p>\n<p>Pour pouvoir trouver des sources, il&nbsp;faut établir une liste de&nbsp;mots-clés et&nbsp;de leurs synonymes (en français et&nbsp;en anglais). </p>\n<p>Fais un&nbsp;tableau ou&nbsp;une <span class=\"_definition\" data-definition-id=\"carte_mentale\">carte mentale</span> des axes de&nbsp;recherches (les concepts) et&nbsp;aux mots clés auxquels ils sont liés.\n&#8201;<img src=\"https://dl.airtable.com/.attachments/d72a66ffc98a7ced3e3202e7b897c716/27967740/M2_1_illustration2.svg\" alt=\"alt\"></p>\n<p>Lorsqu’on cherche une information, le&nbsp;premier réflexe est de&nbsp;se <span class=\"_definition\" data-definition-id=\"jeter_google\">jeter sur Google</span>. Pourtant, ce&nbsp;n’est pas toujours la&nbsp;meilleure solution.  </p>\n<p>Choisis tes sources en&nbsp;fonction&#8201;:  </p>\n<ul>\n<li>de&nbsp;ton sujet de&nbsp;recherche.  </li>\n<li>du&nbsp;domaine couvert par la&nbsp;source.  </li>\n<li>de&nbsp;la date de&nbsp;sa dernière mise à jour (on veut des sources récentes&#8201;!)  </li>\n<li>de&nbsp;sa couverture géographique/linguistique.  </li>\n<li>des types de&nbsp;documents présents.</li>\n</ul>\n<p>Il&nbsp;ne te&nbsp;reste plus qu’à <span class=\"_definition\" data-definition-id=\"choisir\">choisir</span> les <span class=\"_definition\" data-definition-id=\"moteur_recherche\">moteurs de \u0003recherche</span> et <span class=\"_definition\" data-definition-id=\"banque_donnees_2\">banques de&nbsp;données</span> que tu&nbsp;vas consulter, à lancer ta&nbsp;recherche, et à trier les résultats.</p>\n",
       "index": "1"
     },
     {
       "airtable_id": "recSfh0oKDUxZev6C",
-      "title": "Les moteurs de&nbsp;recherche",
-      "id": "7",
-      "type": "PODCAST",
       "media": "https://dl.airtable.com/.attachments/2f96caab5b5f004832059dba9200300e/80b55a2e/M02S02_podcast.mp3",
-      "sources": "<h2 id=\"sources\">Sources</h2>\n<p>BESSON François, 2017. <em>Les meilleurs moteurs de recherche alternatifs à Google. 1ère Position Take the lead</em> [en ligne]. 10 octobre 2017. [Consulté le 19 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.1ere-position.fr/blog/10-meilleurs-moteurs-de-recherche-alternatifs-google/\">lien</a></p>\n<p>Déclaration de confidentialité Microsoft. Microsoft. [en ligne]. Mise à jour novembre 2020. [Consulté le 12 novembre 2020 ]. Disponible à l’adresse : <a target='_blank'  href=\"https://privacy.microsoft.com/fr-fr/privacystatement\">lien</a></p>\n<p>Duckduckgo. Wikipédia [en ligne]. Dernière modification de la page le 2 septembre 2020 à 08:35. [Consulté le 19 octobre 2020]. Disponible à l’adresse :  <a target='_blank'  href=\"https://fr.wikipedia.org/w/index.php?title=DuckDuckGo&amp;oldid=174360001\">lien</a></p>\n<p>GOOGLE. Google Règles de confidentialité et conditions d’utilisation. Google [en ligne]. 30 septembre 2020. [Consulté le 8 décembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://policies.google.com/privacy\">lien</a></p>\n<p>Lilo un moteur de recherche qui protège votre vie privée. Lilo [en ligne]. [sans date]. [Consulté le 19 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.lilo.org/votre-vie-privee-avec-lilo/\">lien</a></p>\n<p>Masq by Qwant vos données personnelles. About Qwant . [en ligne]. Mise à jour 28 juin 2019. [Consulté le 19 octobre 2020 ]. Disponible à l’adresse : <a target='_blank'  href=\"https://about.qwant.com/fr/legal/masq-by-qwant-vos-donnees-personnelles/\">lien</a></p>\n<p>Microsoft Bing. Wikipédia [en ligne]. Dernière modification de la page le 14 octobre 2020 [Consulté le 19 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://fr.wikipedia.org/w/index.php?title=Microsoft_Bing&amp;oldid=175561889\">lien</a></p>\n<p>Moteur de recherche. Wikipédia [en ligne]. Dernière modification de la page le 24 septembre 2020. [Consulté le 19 octobre 2020]. Disponible à l’adresse :  <a target='_blank'  href=\"https://fr.wikipedia.org/w/index.php?title=Moteur_de_recherche&amp;oldid=174985341\">lien</a></p>\n<p>Netixel, 2014. Comment faire des recherches avec Google Images. Netixel.fr [en ligne]. 2 juin 2014 [Consulté le 12 novembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.netixel.fr/google-images-tuto/\">lien</a></p>\n<p>Nous protégeons votre vie privée. Info Ecosia [en ligne]. 1er février 2020. [Consulté le 19 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://info.ecosia.org/privacy?ref=fb-share\">lien</a></p>\n<p>Nous sommes Swisscows. About Swisscows. [en ligne]. [sans date]. [Consulté le 19 octobre 2020 ]. Disponible à l’adresse : <a target='_blank'  href=\"https://swisscows.com/fr/about\">lien</a></p>\n<p>Qwant. Wikipédia [en ligne]. Dernière modification de la page le 2 octobre 2020 [Consulté le 19 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://fr.wikipedia.org/w/index.php?title=Qwant&amp;oldid=175227423\">lien</a></p>\n<p>Tineye tutorial. Help Tineye [en ligne]. Mise à jour 6 octobre 2020 [Consulté le 12 novembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://help.tineye.com/article/265-tineye-tutorial\">lien</a></p>\n<h2 id=\"sources-définitions-\">Sources définitions :</h2>\n<p>Serveur : </p>\n<p>Serveur informatique. Wikipédia : l’encyclopédie libre [en ligne]. Dernière modification de la page le 11 septembre 2020 à 14:57. [Consulté le 10 décembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://fr.wikipedia.org/wiki/Serveur_informatique\">lien</a></p>\n",
       "modules": [
         "rectQXEUZsDam7c8j"
       ],
+      "id": "7",
+      "type": "PODCAST",
+      "title": "Les moteurs de&nbsp;recherche",
+      "sources": "<h2 id=\"sources\">Sources</h2>\n<p>BESSON François, 2017. <em>Les meilleurs moteurs de recherche alternatifs à Google. 1ère Position Take the lead</em> [en ligne]. 10 octobre 2017. [Consulté le 19 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.1ere-position.fr/blog/10-meilleurs-moteurs-de-recherche-alternatifs-google/\">lien</a></p>\n<p>Déclaration de confidentialité Microsoft. Microsoft. [en ligne]. Mise à jour novembre 2020. [Consulté le 12 novembre 2020 ]. Disponible à l’adresse : <a target='_blank'  href=\"https://privacy.microsoft.com/fr-fr/privacystatement\">lien</a></p>\n<p>Duckduckgo. Wikipédia [en ligne]. Dernière modification de la page le 2 septembre 2020 à 08:35. [Consulté le 19 octobre 2020]. Disponible à l’adresse :  <a target='_blank'  href=\"https://fr.wikipedia.org/w/index.php?title=DuckDuckGo&amp;oldid=174360001\">lien</a></p>\n<p>GOOGLE. Google Règles de confidentialité et conditions d’utilisation. Google [en ligne]. 30 septembre 2020. [Consulté le 8 décembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://policies.google.com/privacy\">lien</a></p>\n<p>Lilo un moteur de recherche qui protège votre vie privée. Lilo [en ligne]. [sans date]. [Consulté le 19 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.lilo.org/votre-vie-privee-avec-lilo/\">lien</a></p>\n<p>Masq by Qwant vos données personnelles. About Qwant . [en ligne]. Mise à jour 28 juin 2019. [Consulté le 19 octobre 2020 ]. Disponible à l’adresse : <a target='_blank'  href=\"https://about.qwant.com/fr/legal/masq-by-qwant-vos-donnees-personnelles/\">lien</a></p>\n<p>Microsoft Bing. Wikipédia [en ligne]. Dernière modification de la page le 14 octobre 2020 [Consulté le 19 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://fr.wikipedia.org/w/index.php?title=Microsoft_Bing&amp;oldid=175561889\">lien</a></p>\n<p>Moteur de recherche. Wikipédia [en ligne]. Dernière modification de la page le 24 septembre 2020. [Consulté le 19 octobre 2020]. Disponible à l’adresse :  <a target='_blank'  href=\"https://fr.wikipedia.org/w/index.php?title=Moteur_de_recherche&amp;oldid=174985341\">lien</a></p>\n<p>Netixel, 2014. Comment faire des recherches avec Google Images. Netixel.fr [en ligne]. 2 juin 2014 [Consulté le 12 novembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.netixel.fr/google-images-tuto/\">lien</a></p>\n<p>Nous protégeons votre vie privée. Info Ecosia [en ligne]. 1er février 2020. [Consulté le 19 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://info.ecosia.org/privacy?ref=fb-share\">lien</a></p>\n<p>Nous sommes Swisscows. About Swisscows. [en ligne]. [sans date]. [Consulté le 19 octobre 2020 ]. Disponible à l’adresse : <a target='_blank'  href=\"https://swisscows.com/fr/about\">lien</a></p>\n<p>Qwant. Wikipédia [en ligne]. Dernière modification de la page le 2 octobre 2020 [Consulté le 19 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://fr.wikipedia.org/w/index.php?title=Qwant&amp;oldid=175227423\">lien</a></p>\n<p>Tineye tutorial. Help Tineye [en ligne]. Mise à jour 6 octobre 2020 [Consulté le 12 novembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://help.tineye.com/article/265-tineye-tutorial\">lien</a></p>\n<h2 id=\"sources-définitions-\">Sources définitions :</h2>\n<p>Serveur : </p>\n<p>Serveur informatique. Wikipédia : l’encyclopédie libre [en ligne]. Dernière modification de la page le 11 septembre 2020 à 14:57. [Consulté le 10 décembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://fr.wikipedia.org/wiki/Serveur_informatique\">lien</a></p>\n",
       "index": "2"
     },
     {
       "airtable_id": "recscSRI4Lbxci54S",
-      "title": "La recherche multimédia ",
-      "id": "8",
-      "type": "MARKDOWN",
       "modules": [
         "rectQXEUZsDam7c8j"
       ],
-      "quiz": "<h2 id=\"quizz-fake-news--true-news\">Quizz Fake news / true news&#8201;:</h2>\n<p>&quot;Je peux utiliser les images que je&nbsp;trouve sur internet comme je&nbsp;veux&#8201;! </p>\n<div class=\"question\">\n    <button class=\"quiz-btn\" data-correct-answer>Fake News&#8201;!</button>\n    <button class=\"quiz-btn\" >True News&#8201;!</button>\n</div>\n\n<p>&quot;Toutes les images sur Googe images sont libres de&nbsp;droit.&quot; </p>\n<div class=\"question\">\n    <button class=\"quiz-btn\" data-correct-answer>Fake News&#8201;!</button>\n    <button class=\"quiz-btn\" >True News&#8201;!</button>\n</div>\n\n<p>&quot;Youtube est un&nbsp;moteur de&nbsp;recherche dédié à la&nbsp;vidéo&quot; </p>\n<div class=\"question\">\n    <button class=\"quiz-btn\" >Fake News&#8201;!</button>\n    <button class=\"quiz-btn\" data-correct-answer>True News&#8201;!</button>\n</div>\n\n<p>&quot;Youtube est le&nbsp;seul site sur lequel je&nbsp;peux trouver des vidéos d&#39;archive&quot; </p>\n<div class=\"question\">\n    <button class=\"quiz-btn\" data-correct-answer>Fake News&#8201;!</button>\n    <button class=\"quiz-btn\" >True News&#8201;!</button>\n</div>\n",
-      "html": "<h1 id=\"larecherche-multimédia\">La&nbsp;recherche multimédia</h1>\n<p>Certains outils permettent de&nbsp;paramétrer la&nbsp;recherche afin de&nbsp;ne chercher qu’un type de&nbsp;documents, par exemple des images ou&nbsp;des vidéos.  </p>\n<p><strong>La recherche d’image</strong>\n&#8201;<img data-size=\"60%\"  src=\"https://dl.airtable.com/.attachments/dd809d289036d567cf182b52856862a0/a5a02e90/M2_3_illustration1.svg\" alt=\"60%\"></p>\n<p><span class=\"primary-on-text\">Google images&#8201;:</span>  </p>\n<p>Permet de&nbsp;trouver sur le&nbsp;web des images en&nbsp;rapport avec un&nbsp;sujet donné. </p>\n<p>Google image offre également la&nbsp;possibilité de&nbsp;faire des recherches d&#39;images inversées&#8201;: retrouver la&nbsp;source originale d’une photo publiée en&nbsp;ligne ou&nbsp;sur les réseaux sociaux.\n&#8201;<img data-size=\"50%\"  src=\"https://dl.airtable.com/.attachments/2f8ab2f2a0172723f1f9f2f19ca2bcfa/389a114a/M2_3_illustration2.svg\" alt=\"50%\"></p>\n<p><span class=\"primary-on-text\">TinEye&#8201;:</span>  </p>\n<p>Moteur de&nbsp;recherche spécialisé dans les images.  </p>\n<p>Il&nbsp;suffit de&nbsp;lui fournir une image de&nbsp;ton choix et&nbsp;il retrouvera tous les sites web sur lesquels elle a été postée.  </p>\n<p>Il&nbsp;te signalera également s’il existe des versions modifiées de&nbsp;l’image ou&nbsp;si elle est disponible en&nbsp;meilleure résolution/qualité ailleurs sur le&nbsp;web. \n&#8201;<img data-size=\"50%\"  src=\"https://dl.airtable.com/.attachments/9588e5a5cfbc50af62536568257b192e/5d3da18e/M2_3_illustration3.svg\" alt=\"50%\"></p>\n<p><span class=\"primary-on-text\">Pixabay&#8201;:</span>  </p>\n<p>Très bon outil offrant des fonctionnalités de&nbsp;recherche et&nbsp;de sauvegarde des images.  </p>\n<p>Les images sont toutes libres de&nbsp;droits et&nbsp;réutilisables selon certaines modalités. </p>\n<p>&#8201;<img data-size=\"50%\"  src=\"https://dl.airtable.com/.attachments/2e3ac49c74573d84b4ba1d43a86b72f2/9bcd3377/M2_3_illustration4.svg\" alt=\"50%\"></p>\n<p><span class=\"primary-on-text\">Flickr&#8201;: </span>   </p>\n<p>Même principe que Pixabay \n&#8201;<img data-size=\"50%\"  src=\"https://dl.airtable.com/.attachments/69bd5367c361d4ab55c1b93dca8ec71d/24c3bdb2/M2_3_illustration5.svg\" alt=\"50%\"></p>\n<p><span class=\"primary-on-text\">Pexels&#8201;:</span>   </p>\n<p>40’000 photos en&nbsp;creatives commons zero (cc0) \n&#8201;<img data-size=\"50%\"  src=\"https://dl.airtable.com/.attachments/b68778590178496aff1a512ae90cf455/03112db1/M2_3_illustration6.svg\" alt=\"50%\"></p>\n<p><span class=\"primary-on-text\">PxHere&#8201;:</span>   </p>\n<p>Plus d’un million de&nbsp;photos en&nbsp;haute définition.\n&#8201;<img src=\"https://dl.airtable.com/.attachments/49d302b0fad899cef1e43c0373cb55a6/4ba7265c/M2_3_illustration7.svg\" alt=\"alt\"></p>\n<p>Attention&#8201;: une image libre de&nbsp;droits ne&nbsp;veut pas dire que tu&nbsp;peux en&nbsp;faire tout et&nbsp;n’importe quoi&#8201;! Par exemple, certaines images ne&nbsp;peuvent pas être utilisées à des fin commerciales. </p>\n<p> Lorsque tu&nbsp;effectues une recherche d’images dans le&nbsp;but de&nbsp;les réutiliser, veille à vérifier précisément les droits associés.  </p>\n<p>Sur Google images, tu&nbsp;peux sélectionner le&nbsp;type de&nbsp;droits que tu&nbsp;cherches dans le&nbsp;menu “droit d’usage” afin de&nbsp;n’obtenir que des images libres de&nbsp;droits, par exemple.&#8201;<img src=\"https://dl.airtable.com/.attachments/da00e1f25284351f6190c56b9309abd9/72415645/M2_3_illustration8.svg\" alt=\"alt\"></p>\n<p><strong>La recherche de&nbsp;vidéos</strong></p>\n<p>Il&nbsp;existe des moteurs de&nbsp;recherche exclusivement consacrés à la&nbsp;vidéo. Nous pouvons citer par exemple YouTube et&nbsp;Dailymotion. </p>\n<p> Mais ce&nbsp;ne sont pas les seuls&#8201;! Tu&nbsp;peux également trouver des vidéos sur les sites des chaînes de&nbsp;télévision, par exemple dans les archives RTS et&nbsp;sur les sites d’autres institutions actives dans l’archivage de&nbsp;l’audiovisuel comme le&nbsp;site notrehistoire.ch ou&nbsp;encore les archives de&nbsp;l’INA.</p>\n",
+      "id": "8",
+      "type": "MARKDOWN",
+      "title": "La recherche multimédia ",
+      "quiz": "<h2 id=\"quizz-fake-news--true-news\">Quizz Fake news / true news&#8201;:</h2>\n<p>&quot;Je peux utiliser les images que je&nbsp;trouve sur internet comme je&nbsp;veux&#8201;!&quot;</p>\n<div class=\"question\">\n    <button class=\"quiz-btn\" data-correct-answer>Fake News&#8201;!</button>\n    <button class=\"quiz-btn\" >True News&#8201;!</button>\n</div>\n\n<p>&quot;Toutes les images sur Googe images sont libres de&nbsp;droit.&quot; </p>\n<div class=\"question\">\n    <button class=\"quiz-btn\" data-correct-answer>Fake News&#8201;!</button>\n    <button class=\"quiz-btn\" >True News&#8201;!</button>\n</div>\n\n<p>&quot;Youtube est un&nbsp;moteur de&nbsp;recherche dédié à la&nbsp;vidéo&quot; </p>\n<div class=\"question\">\n    <button class=\"quiz-btn\" >Fake News&#8201;!</button>\n    <button class=\"quiz-btn\" data-correct-answer>True News&#8201;!</button>\n</div>\n\n<p>&quot;Youtube est le&nbsp;seul site sur lequel je&nbsp;peux trouver des vidéos d&#39;archive&quot; </p>\n<div class=\"question\">\n    <button class=\"quiz-btn\" data-correct-answer>Fake News&#8201;!</button>\n    <button class=\"quiz-btn\" >True News&#8201;!</button>\n</div>\n",
+      "cover": "https://dl.airtable.com/.attachments/cf77bb49f50f0a44cb276bb77f89cbbc/e2c52df3/M2_3_cover.svg",
+      "sources": "<h2 id=\"sources\">Sources</h2>\n<p>BESSON François, 2017. <em>Les meilleurs moteurs de recherche alternatifs à Google. 1ère Position Take the lead</em> [en ligne]. 10 octobre 2017. [Consulté le 19 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.1ere-position.fr/blog/10-meilleurs-moteurs-de-recherche-alternatifs-google/\">lien</a></p>\n<p>Déclaration de confidentialité Microsoft. Microsoft. [en ligne]. Mise à jour novembre 2020. [Consulté le 12 novembre 2020 ]. Disponible à l’adresse : <a target='_blank'  href=\"https://privacy.microsoft.com/fr-fr/privacystatement\">lien</a></p>\n<p>Duckduckgo. Wikipédia [en ligne]. Dernière modification de la page le 2 septembre 2020 à 08:35. [Consulté le 19 octobre 2020]. Disponible à l’adresse :  <a target='_blank'  href=\"https://fr.wikipedia.org/w/index.php?title=DuckDuckGo&amp;oldid=174360001\">lien</a></p>\n<p> Lilo un moteur de recherche qui protège votre vie privée. Lilo [en ligne]. [sans date]. [Consulté le 19 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.lilo.org/votre-vie-privee-avec-lilo/\">lien</a></p>\n<p>Masq by Qwant vos données personnelles. About Qwant . [en ligne]. Mise à jour 28 juin 2019. [Consulté le 19 octobre 2020 ]. Disponible à l’adresse :  <a target='_blank'  href=\"https://about.qwant.com/fr/legal/masq-by-qwant-vos-donnees-personnelles/\">lien</a></p>\n<p>Microsoft Bing. Wikipédia [en ligne]. Dernière modification de la page le 14 octobre 2020 [Consulté le 19 octobre 2020]. Disponible à l’adresse :  <a target='_blank'  href=\"https://fr.wikipedia.org/w/index.php?title=Microsoft_Bing&amp;oldid=175561889\">lien</a></p>\n<p>Moteur de recherche. Wikipédia [en ligne]. Dernière modification de la page le 24 septembre 2020. [Consulté le 19 octobre 2020]. Disponible à l’adresse :  <a target='_blank'  href=\"https://fr.wikipedia.org/w/index.php?title=Moteur_de_recherche&amp;oldid=174985341\">lien</a></p>\n<p>Netixel, 2014. Comment faire des recherches avec Google Images. Netixel.fr [en ligne]. 2 juin 2014 [Consulté le 12 novembre 2020]. Disponible à l’adresse :  <a target='_blank'  href=\"https://www.netixel.fr/google-images-tuto/\">lien</a></p>\n<p>Nous protégeons votre vie privée. Info Ecosia [en ligne]. 1er février 2020. [Consulté le 19 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://info.ecosia.org/privacy?ref=fb-share\">lien</a></p>\n<p>Nous sommes Swisscows. About Swisscows. [en ligne]. [sans date]. [Consulté le 19 octobre 2020 ]. Disponible à l’adresse : <a target='_blank'  href=\"https://swisscows.com/fr/about\">lien</a></p>\n<p>Qwant. Wikipédia [en ligne]. Dernière modification de la page le 2 octobre 2020 [Consulté le 19 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://fr.wikipedia.org/w/index.php?title=Qwant&amp;oldid=175227423\">lien</a></p>\n<p>Tineye tutorial. Help Tineye [en ligne]. Mise à jour 6 octobre 2020 [Consulté le 12 novembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://help.tineye.com/article/265-tineye-tutorial\">lien</a></p>\n<h2 id=\"source-définitions-\">Source définitions :</h2>\n<p>Creative commons : </p>\n<p>Creative commons. Wikipédia : l’encyclopédie libre [en ligne]. Dernière modification de la page le 30 octobre 2020 à 20:39. [Consulté le 10 décembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://fr.wikipedia.org/wiki/Creative_Common\">lien</a> </p>\n<p>Libre de droit : </p>\n<p>Libre de droits. Wikipédia : l’encyclopédie libre [en ligne]. Dernière modification de la page le 14 octobre 2020 à 16:44. [Consulté le 10 décembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://fr.wikipedia.org/wiki/Libre_de_droits\">lien</a></p>\n",
+      "html": "<h1 id=\"larecherche-multimédia\">La&nbsp;recherche multimédia</h1>\n<p>Certains outils permettent de&nbsp;paramétrer la&nbsp;recherche afin de&nbsp;ne chercher qu’un type de&nbsp;documents, par exemple des images ou&nbsp;des vidéos.  </p>\n<p><strong>La recherche d’image</strong>\n&#8201;<img data-size=\"60%\"  src=\"https://dl.airtable.com/.attachments/dd809d289036d567cf182b52856862a0/a5a02e90/M2_3_illustration1.svg\" alt=\"60%\"></p>\n<p><span class=\"primary-on-text\">Google images&#8201;:</span>  </p>\n<p>Permet de&nbsp;trouver sur le&nbsp;web des images en&nbsp;rapport avec un&nbsp;sujet donné. </p>\n<p>Google image offre également la&nbsp;possibilité de&nbsp;faire des recherches d&#39;images inversées&#8201;: retrouver la&nbsp;source originale d’une photo publiée en&nbsp;ligne ou&nbsp;sur les réseaux sociaux.\n&#8201;<img data-size=\"50%\"  src=\"https://dl.airtable.com/.attachments/2f8ab2f2a0172723f1f9f2f19ca2bcfa/389a114a/M2_3_illustration2.svg\" alt=\"50%\"></p>\n<p><span class=\"primary-on-text\">TinEye&#8201;:</span>  </p>\n<p>Moteur de&nbsp;recherche spécialisé dans les images.  </p>\n<p>Il&nbsp;suffit de&nbsp;lui fournir une image de&nbsp;ton choix et&nbsp;il retrouvera tous les sites web sur lesquels elle a été postée.  </p>\n<p>Il&nbsp;te signalera également s’il existe des versions modifiées de&nbsp;l’image ou&nbsp;si elle est disponible en&nbsp;meilleure résolution/qualité ailleurs sur le&nbsp;web. \n&#8201;<img data-size=\"50%\"  src=\"https://dl.airtable.com/.attachments/9588e5a5cfbc50af62536568257b192e/5d3da18e/M2_3_illustration3.svg\" alt=\"50%\"></p>\n<p><span class=\"primary-on-text\">Pixabay&#8201;:</span>  </p>\n<p>Très bon outil offrant des fonctionnalités de&nbsp;recherche et&nbsp;de sauvegarde des images.  </p>\n<p>Les images sont toutes libres de&nbsp;droits et&nbsp;réutilisables selon certaines modalités. </p>\n<p>&#8201;<img data-size=\"50%\"  src=\"https://dl.airtable.com/.attachments/2e3ac49c74573d84b4ba1d43a86b72f2/9bcd3377/M2_3_illustration4.svg\" alt=\"50%\"></p>\n<p><span class=\"primary-on-text\">Flickr&#8201;: </span>   </p>\n<p>Même principe que Pixabay \n&#8201;<img data-size=\"50%\"  src=\"https://dl.airtable.com/.attachments/69bd5367c361d4ab55c1b93dca8ec71d/24c3bdb2/M2_3_illustration5.svg\" alt=\"50%\"></p>\n<p><span class=\"primary-on-text\">Pexels&#8201;:</span>   </p>\n<p>40’000 photos en <span class=\"_definition\" data-definition-id=\"creative_commons\">creatives commons</span> zero (cc0) \n&#8201;<img data-size=\"50%\"  src=\"https://dl.airtable.com/.attachments/b68778590178496aff1a512ae90cf455/03112db1/M2_3_illustration6.svg\" alt=\"50%\"></p>\n<p><span class=\"primary-on-text\">PxHere&#8201;:</span>   </p>\n<p>Plus d’un million de&nbsp;photos en&nbsp;haute définition.\n&#8201;<img src=\"https://dl.airtable.com/.attachments/49d302b0fad899cef1e43c0373cb55a6/4ba7265c/M2_3_illustration7.svg\" alt=\"alt\"></p>\n<p>Attention&#8201;: une image <span class=\"_definition\" data-definition-id=\"libre_droit\">libre de&nbsp;droits</span> ne&nbsp;veut pas dire que tu&nbsp;peux en&nbsp;faire tout et&nbsp;n’importe quoi&#8201;! Par exemple, certaines images ne&nbsp;peuvent pas être utilisées à des fin commerciales. </p>\n<p> Lorsque tu&nbsp;effectues une recherche d’images dans le&nbsp;but de&nbsp;les réutiliser, veille à vérifier précisément les droits associés.  </p>\n<p>Sur Google images, tu&nbsp;peux sélectionner le&nbsp;type de&nbsp;droits que tu&nbsp;cherches dans le&nbsp;menu “droit d’usage” afin de&nbsp;n’obtenir que des images libres de&nbsp;droits, par exemple.&#8201;<img src=\"https://dl.airtable.com/.attachments/da00e1f25284351f6190c56b9309abd9/72415645/M2_3_illustration8.svg\" alt=\"alt\"></p>\n<p><strong>La recherche de&nbsp;vidéos</strong></p>\n<p>Il&nbsp;existe des moteurs de&nbsp;recherche exclusivement consacrés à la&nbsp;vidéo. Nous pouvons citer par exemple YouTube et&nbsp;Dailymotion. </p>\n<p> Mais ce&nbsp;ne sont pas les seuls&#8201;! Tu&nbsp;peux également trouver des vidéos sur les sites des chaînes de&nbsp;télévision, par exemple dans les archives RTS et&nbsp;sur les sites d’autres institutions actives dans l’archivage de&nbsp;l’audiovisuel comme le&nbsp;site notrehistoire.ch ou&nbsp;encore les archives de&nbsp;l’INA.</p>\n",
       "index": "3"
+    },
+    {
+      "airtable_id": "recQ6wylKA6fMLs46",
+      "modules": [
+        "rectQXEUZsDam7c8j"
+      ],
+      "type": "INFOGRAPHIC",
+      "title": "la recherche sociale",
+      "sources": "<h2 id=\"sources-\">Sources :</h2>\n<p>Comment faire une recherche sur Facebook. Facebook [en ligne]. [sans date]. [Consulté le 5 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.facebook.com/help/103764609715185\">lien</a></p>\n<p>DELAFOI Florian, 2016. <em>En perte de vitesse, Twitter peut-il rebondir.</em> Le Temps [en ligne]. 11 février 2016. [Consulté le 5 octobre 2020]. Disponible à l’adresse : \n<a target='_blank'  href=\"https://www.letemps.ch/economie/perte-vitesse-twitter-peutil-rebondir\">lien</a> </p>\n<p>Facebook va lister les sources fiables pour contrer les “fakes news”. RTS [en ligne]. 20 janvier 2018. [Consulté le 5 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.rts.ch/info/sciences-tech/9263845-facebook-va-lister-les-sources-fiables-pour-contrer-les-fake-news.html\">lien</a></p>\n<p>Identifier des sources fiables. Wikipédia : l’encyclopédie libre [en ligne]. Dernière modification de la page le 25 septembre 2020. [Consulté le 5 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://fr.wikipedia.org/w/index.php?title=Aide:Identifiez_des_sources_fiables&amp;oldid=175020239\">lien</a></p>\n<p>Quels réseaux sociaux pour quelle utilisation. Habefast [en ligne]. 20 avril 2018. [Consulté le 5 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://habefast.ch/quels-reseaux-sociaux-pour-quelle-utilisation/\">lien</a></p>\n<p>SUMMERMATTER Stefania, 2009. <em>Outil de résistance, Twitter, l’autre face du journalisme</em>. SWI swissinfo [en ligne]. [Consulté le 5 octobre 2020]. Disponible à l’adresse : <em>lien</em></p>\n",
+      "id": "9",
+      "svg": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->\n<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\" \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\">\n<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\"\n\t width=\"100%\" height=\"auto\" viewBox=\"0 0 1029.888 1445.906\" enable-background=\"new 0 0 1029.888 1445.906\"\n\t xml:space=\"preserve\">\n<g id=\"button_x5F_1\">\n\t<g>\n\t\t<circle fill=\"#FFFFFF\" stroke=\"#FFBC00\" stroke-width=\"20\" stroke-miterlimit=\"10\" cx=\"516.797\" cy=\"158.784\" r=\"148.783\"/>\n\t\t<path fill=\"#FFBC00\" d=\"M490.867,177.067c-11.903,0-21.97,0-33.17,0c0-13.853,0-26.316,0-40.619c10.44,0,20.892,0,33.21,0\n\t\t\tc0-11.831-0.191-21.92,0.042-32c0.386-16.606,5.355-31.295,19.262-41.6c10.783-7.99,23.453-10.024,36.417-9.707\n\t\t\tc8.139,0.2,16.244,1.729,25.563,2.8c0,10.734,0,21.144,0,32.995c-5.618,0.393-11.592,0.5-17.475,1.282\n\t\t\tc-13.796,1.835-19.834,8.282-20.645,22.207c-0.411,7.061-0.072,14.165-0.072,23.159c12.525,0,24.007,0,37.591,0\n\t\t\tc-1.904,14.555-3.528,26.963-5.322,40.664c-10.617,0.524-20.613,1.017-31.888,1.572c0,31.103,0,61.154,0,92.376\n\t\t\tc-14.773,0-28.209,0-43.514,0C490.867,239.36,490.867,208.898,490.867,177.067z\"/>\n\t</g>\n</g>\n<g id=\"button_x5F_2\">\n\t<g>\n\t\t<g>\n\t\t\t<circle fill=\"#FFFFFF\" stroke=\"#FFBC00\" stroke-width=\"20\" stroke-miterlimit=\"10\" cx=\"516.797\" cy=\"609.097\" r=\"148.783\"/>\n\t\t\t<path fill=\"#FFBC00\" d=\"M422.401,611.315c0-11.955-0.194-23.913,0.037-35.864c0.646-33.428,23.381-56.828,56.776-57.627\n\t\t\t\tc24.778-0.594,49.59-0.528,74.372-0.015c33.529,0.694,56.534,23.627,57.268,57.131c0.543,24.783,0.569,49.599,0.005,74.382\n\t\t\t\tc-0.765,33.524-23.946,56.386-57.425,56.93c-24.344,0.396-48.703,0.356-73.047,0.012c-34.215-0.483-57.303-23.635-57.947-57.755\n\t\t\t\tC422.204,636.115,422.4,623.713,422.401,611.315z M587.206,613.293c0-12.84,0.303-20.525-0.067-33.354\n\t\t\t\tc-0.638-22.199-10.424-37.811-32.395-38.315c-25.221-0.58-45.31-0.521-70.533-0.034c-22.12,0.427-37.521,10.626-37.953,32.705\n\t\t\t\tc-0.493,25.228-0.517,50.48,0.022,75.706c0.472,22.102,15.995,32.115,38.125,32.464c24.785,0.391,39.26,0.358,64.046,0.01\n\t\t\t\tc22.865-0.321,38.041-10.396,38.707-33.319C587.506,637.21,587.22,625.248,587.206,613.293z\"/>\n\t\t\t<path fill=\"#FFBC00\" d=\"M471.088,611.608c0.16-26.026,20.473-46.157,46.474-46.057c25.914,0.101,46.326,20.425,46.475,46.274\n\t\t\t\tc0.151,26.415-20.714,46.959-47.357,46.628C490.633,658.13,470.926,637.881,471.088,611.608z M543.724,611.838\n\t\t\t\tc-0.076-14.346-11.323-25.805-25.534-26.018c-14.185-0.212-26.958,12.381-26.789,26.408c0.167,13.822,12.092,25.728,26,25.957\n\t\t\t\tC532.094,638.429,543.803,626.708,543.724,611.838z\"/>\n\t\t</g>\n\t\t<path fill=\"#FFBC00\" d=\"M563.71,554.031c5.91-0.1,10.933,4.487,11.325,10.342c0.427,6.377-4.622,12.058-10.899,12.264\n\t\t\tc-6.198,0.204-11.476-5.315-11.266-11.784C553.062,558.902,557.844,554.128,563.71,554.031z\"/>\n\t</g>\n</g>\n<g id=\"button_x5F_3\">\n\t<g>\n\t\t<circle fill=\"#FFFFFF\" stroke=\"#FFBC00\" stroke-width=\"20\" stroke-miterlimit=\"10\" cx=\"516.797\" cy=\"1059.412\" r=\"148.783\"/>\n\t\t<path fill=\"#FFBC00\" d=\"M424.27,1131.747c19.628,0.527,37.962-3.283,55.277-14.836c-25.257-10.378-29.917-14.387-34.764-29.685\n\t\t\tc1.342-0.451,2.691-0.905,4.041-1.358c1.052-0.353,2.105-0.704,4.416-1.476c-14.351-9.48-23.985-21.08-24.156-39.263\n\t\t\tc4.603,0.81,8.49,1.493,13.437,2.363c-12.806-16.562-18.75-33.11-7.831-53.126c8.381,7.046,15.692,14.456,24.212,20.01\n\t\t\tc8.979,5.853,18.871,10.519,28.812,14.615c9.532,3.929,19.51,7.084,30.763,6.867c0.194-3.801,0.303-7.193,0.55-10.574\n\t\t\tc2.222-30.376,37.059-49.289,62.693-32.853c9.36,6.001,16.559,5.847,25.355,1.618c2.663-1.28,5.516-2.166,9.079-3.541\n\t\t\tc0.223,8.731-6.611,12.685-9.971,19.655c4.97-1.068,9.263-1.991,15.404-3.312c-3.119,7.695-8.063,12.34-13.126,16.489\n\t\t\tc-4.262,3.493-5.728,7.25-6.313,12.694c-1.36,12.632-2.798,25.448-6.208,37.629c-9.623,34.382-31.903,57.837-65.315,70.099\n\t\t\tc-32.312,11.857-64.459,10.201-95.953-3.603c-3.795-1.663-7.339-3.898-11-5.869\n\t\t\tC423.873,1133.444,424.072,1132.595,424.27,1131.747z\"/>\n\t</g>\n</g>\n<g id=\"overlay_x5F_1\">\n\t<path fill=\"#FDBB03\" d=\"M936.604,1121.674H93.284C41.765,1121.674,0,1079.91,0,1028.39V464.276\n\t\tc0-51.52,41.765-93.284,93.284-93.284h843.32c51.52,0,93.284,41.765,93.284,93.284v564.114\n\t\tC1029.888,1079.91,988.123,1121.674,936.604,1121.674z\"/>\n\t<rect x=\"70.852\" y=\"444.269\" fill=\"none\" width=\"895.036\" height=\"625.521\"/>\n\t<text transform=\"matrix(1.0087 0 0 1 70.8516 476.894)\"><tspan x=\"0\" y=\"0\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">Facebook ne crée pas de contenu: les </tspan><tspan x=\"0\" y=\"54\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">informations que l’on y trouve sont des </tspan><tspan x=\"0\" y=\"108\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">rediffusions d’autres sites. L’avantage est </tspan><tspan x=\"0\" y=\"162\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">que si tu y trouves des informations perti</tspan><tspan x=\"834.916\" y=\"162\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">-</tspan><tspan x=\"0\" y=\"216\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">nentes, tu pourras sûrement les retrouver </tspan><tspan x=\"0\" y=\"270\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">ailleurs sur le web. Le désavantage, c’est </tspan><tspan x=\"0\" y=\"324\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">que tu n’y trouveras que des informations </tspan><tspan x=\"0\" y=\"378\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">qui correspondent à ton point de vue : il y a </tspan><tspan x=\"0\" y=\"432\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">un algorithme qui t’oriente vers tes préfé</tspan><tspan x=\"835.049\" y=\"432\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">-</tspan><tspan x=\"0\" y=\"486\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">rences. C’est ce qu’on appelle une bulle </tspan><tspan x=\"0\" y=\"540\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">de filtre. </tspan></text>\n</g>\n<g id=\"overlay_x5F_2\">\n\t<path fill=\"#FDBB03\" d=\"M936.604,1445.906H93.284c-51.519,0-93.284-41.765-93.284-93.284V902.71\n\t\tc0-51.519,41.765-93.283,93.284-93.283h843.32c51.52,0,93.284,41.765,93.284,93.283v449.911\n\t\tC1029.888,1404.141,988.123,1445.906,936.604,1445.906z\"/>\n\t<rect x=\"70.852\" y=\"916.809\" fill=\"none\" width=\"895.036\" height=\"465.154\"/>\n\t<text transform=\"matrix(1.0087 0 0 1 70.8516 949.4331)\"><tspan x=\"0\" y=\"0\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">Sur Instagram, la recherche est très limi</tspan><tspan x=\"820.783\" y=\"0\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">-</tspan><tspan x=\"0\" y=\"54\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">tée : elle se fait uniquement par hashtags </tspan><tspan x=\"0\" y=\"108\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">(#) ou par noms de pages. </tspan><tspan x=\"0\" y=\"216\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">Comme sur Twitter, il faut vérifier d’où pro</tspan><tspan x=\"859.261\" y=\"216\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">-</tspan><tspan x=\"0\" y=\"270\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">viennent les images pour être sûr qu’elles </tspan><tspan x=\"0\" y=\"324\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">appartiennent au compte que tu veux citer.</tspan></text>\n</g>\n<g id=\"overlay_x5F_3\">\n\t<path fill=\"#FDBB03\" d=\"M936.604,835.64H93.284C41.765,835.64,0,793.875,0,742.356v-449.91c0-51.52,41.765-93.284,93.284-93.284\n\t\th843.32c51.52,0,93.284,41.765,93.284,93.284v449.91C1029.888,793.875,988.123,835.64,936.604,835.64z\"/>\n\t<rect x=\"70.852\" y=\"268.533\" fill=\"none\" width=\"895.036\" height=\"465.154\"/>\n\t<text transform=\"matrix(1.0087 0 0 1 70.8516 301.1577)\"><tspan x=\"0\" y=\"0\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">Les informations publiées sur Twitter sont </tspan><tspan x=\"0\" y=\"54\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">souvent inédites. Elles sont diffusées en </tspan><tspan x=\"0\" y=\"108\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">temps réel sur ce réseau social. Il faut </tspan><tspan x=\"0\" y=\"162\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">donc attendre que ces informations soient </tspan><tspan x=\"0\" y=\"216\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">publiées ailleurs pour pouvoir vérifier leur </tspan><tspan x=\"0\" y=\"270\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">pertinence et leur fiabilité.  </tspan><tspan x=\"0\" y=\"324\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">Mais Twitter te propose une recherche </tspan><tspan x=\"0\" y=\"378\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">avancée plutôt performante.</tspan></text>\n</g>\n</svg>",
+      "cover": "https://dl.airtable.com/.attachments/690f41139d14f2a5d1fbc5ed039bd8fc/228e0c60/M2_4_cover.svg",
+      "html": "<p>Je vais t’expliquer en&nbsp;un clin d’œil comment faire une recherche sur Facebook, Twitter et&nbsp;Instagram. Mais je&nbsp;dois te&nbsp;prévenir que ces réseaux sociaux sont des grands vecteurs de <span class=\"_definition\" data-definition-id=\"fake_news\">fake news</span>. </p>\n",
+      "index": "4"
     }
   ],
   "definitions": [
@@ -1518,6 +1792,46 @@
       "airtable_id": "recbirojCsYYN1a2N",
       "definition": "Astuce : Va voir sur le site de ton institution, généralement sur les pages de la bibliothèque. Tu trouveras probablement un répertoire des banques de données auxquelles tu as accès. Si ce n’est pas le cas, demande à ton ou ta bibliothécaire ! ",
       "id": "accés"
+    },
+    {
+      "airtable_id": "recutNZ99jeGWPY5M",
+      "id": "carte_mentale",
+      "definition": "Une carte heuristique, carte cognitive, carte mentale, carte des idées, ou encore schéma heuristique, est un schéma, supposé refléter le fonctionnement de la pensée, qui permet de représenter visuellement et de suivre le cheminement associatif de la pensée."
+    },
+    {
+      "airtable_id": "recV9eaXq4yvTL7VC",
+      "id": "jeter_google",
+      "definition": "Astuce : Prend le temps de faire une recherche plus approfondie et ainsi, de mieux connaître ton sujet."
+    },
+    {
+      "airtable_id": "reckovc7Ei2WspSKG",
+      "id": "choisir",
+      "definition": "Astuce : Demande-toi si l’information n’est-elle pas plus facilement accessible et de meilleure qualité via une ou plusieurs autres sources !"
+    },
+    {
+      "airtable_id": "rec1itXF8wXgn8CXZ",
+      "id": "moteur_recherche",
+      "definition": "Un moteur de recherche est une application web permettant à un utilisateur d'effectuer une recherche en ligne, c'est-à-dire de trouver des ressources à partir d'une requête composée de termes."
+    },
+    {
+      "airtable_id": "recp7Bd6Ves1Feomy",
+      "id": "banque_donnees_2",
+      "definition": "Une base de donnée décrit la structure informatique, le contenant, tandis que la banque de données représente le contenu de la base. C'est à dire, un ensemble de données relatif à un domaine de connaissance. "
+    },
+    {
+      "airtable_id": "recoYAiWXhR3LLMsb",
+      "id": "creative_commons",
+      "definition": "Creative Commons est une association à but non lucratif dont la finalité est de proposer une solution alternative légale aux personnes souhaitant libérer leurs œuvres des droits de propriété intellectuelle standard de leur pays, jugés trop restrictifs."
+    },
+    {
+      "airtable_id": "recBCSytyn4LabTmg",
+      "id": "libre_droit",
+      "definition": "La notion de libre de droits se réfère à la liberté d'utilisation de certains contenus, le plus souvent des images ou de la musique, qui une fois acquis, peuvent être utilisés sans payer de redevances à l'auteur."
+    },
+    {
+      "airtable_id": "recae8g3BALoUOGsA",
+      "id": "fake_news",
+      "definition": "Les fake news sont des nouvelles partiellement ou complètement fausses, répandues sur internet ou dans d’autres médias."
     }
   ]
 }

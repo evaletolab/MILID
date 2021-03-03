@@ -58,7 +58,7 @@
         <LessonMarkdown v-if="lesson.type == 'MARKDOWN'" :moduleId="module.id" :lessonId="lesson.id" @popupRequest="onPopupRequest" />
         <LessonVideo v-else-if="lesson.type == 'VIDEO'" :moduleId="module.id" :lessonId="lesson.id"  />
         <LessonPodcast v-else-if="lesson.type == 'PODCAST'" :moduleId="module.id" :lessonId="lesson.id"  />
-        <LessonInfographic v-else-if="lesson.type == 'INFOGRAPHIC'" :moduleId="module.id" :lessonId="lesson.id" />
+        <LessonInfographic v-else-if="lesson.type == 'INFOGRAPHIC'" :moduleId="module.id" :lessonId="lesson.id" @popupRequest="onPopupRequest" />
         <div v-else>
           <h3 class="title">{{lesson.title}}</h3>
           <div class="item type ">

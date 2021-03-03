@@ -54,13 +54,7 @@ import Quiz from './Quiz.vue';
 import { $module } from '@/services/module-service';
 import { $config } from '@/services/config-service';
 
-function getOffset(el: HTMLElement) {
-  const rect = el.getBoundingClientRect();
-  return {
-    left: rect.left + window.scrollX,
-    top: rect.top + window.scrollY,
-  };
-}
+import { getOffset } from '@/helpers/utils';
 
 @Component({
   components: { Quiz },
