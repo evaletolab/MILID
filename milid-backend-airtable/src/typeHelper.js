@@ -62,7 +62,7 @@ class TypeHelper
         result = result.replace(/(\s\w{1,2})(\s)(\w+)/g, "$1&nbsp;$3");
         
         // catch words with hyphens
-        result = result.replace(/([a-zàâçéèêëîïôûùüÿñæœ.-]+(?:\-+[a-zàâçéèêëîïôûùüÿñæœ.-]+)+)/ig, "<nobr>$1</nobr>"); 
+        // result = result.replace(/([a-zàâçéèêëîïôûùüÿñæœ.-]+(?:\-+[a-zàâçéèêëîïôûùüÿñæœ.-]+)+)/ig, "<nobr>$1</nobr>"); 
 
         return result;
     }

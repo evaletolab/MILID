@@ -1,6 +1,7 @@
 <template>
-    <div class="col" :class="'theme-'+theme">
+    <div class="col" :class="'theme-'+theme" :style="cssVars" >
         <h1 class="primary-on-text" v-html="title"/>
+        <div ref="text_root" v-html="textContent" />
         <div ref="raw_root" v-html="svgContent" />
         <div class="footer" />
     </div>
@@ -17,6 +18,12 @@
   .footer{
     height: 80px;
   }
+  
+  .col /deep/ ._definition{
+    color: var(--lesson-color);
+    cursor:pointer;
+    text-decoration: underline;
+  }
 
 </style>
 
@@ -28,6 +35,7 @@ import { Component, Vue, Prop } from 'vue-property-decorator';
 import { $module } from '@/services/module-service';
 import { $config } from '@/services/config-service';
 
+import { getOffset } from '@/helpers/utils';
 
 @Component({
   components: {},
@@ -36,19 +44,30 @@ export default class LessonInfographic extends Vue {
   @Prop() readonly moduleId!:string;
   @Prop() readonly lessonId!:string;
   svgContent = "";
+  textContent = "";
+  hasTextContent = false;
 
   interactives = new Map(); 
 
+  definitions: any[] = [];
+  
   beforeMount(){
-    this.svgContent = $module.getLessonForModuleAndLessonId(this.moduleId, this.lessonId).svg;
+    const lesson = $module.getLessonForModuleAndLessonId(this.moduleId, this.lessonId);
+    console.log("lesson", lesson);
+    this.svgContent = lesson.svg;
+    this.textContent = lesson.html || "";
+    this.hasTextContent = this.textContent !== "";
+    this.definitions = $module.store.definitions;
   }
 
   mounted(){
     this.setup();
+    this.setupDefinitions();
   }
 
   beforeDestroy(){
     this.cleanup();
+    this.cleanupDefinitions();
   }
 
   get module() {
@@ -56,19 +75,21 @@ export default class LessonInfographic extends Vue {
   }
   
   get lesson(){
-      return $module.getLessonForModuleAndLessonId(this.moduleId, this.lessonId);
+    return $module.getLessonForModuleAndLessonId(this.moduleId, this.lessonId);
   }
 
   get title(){
-      return this.lesson.title;
+    return this.lesson.title;
+  }
+  
+  get cssVars(){
+      return {
+        '--lesson-color': $config.store.config.themes[this.module.theme].primary,
+      };
   }
 
   get theme(){
     return this.module.theme;
-  }
-  
-  definitionClickHandler(e: any){
-    const definitionId = e.target.dataset.definitionId;
   }
 
   hideAllOverlays(){
@@ -78,7 +99,6 @@ export default class LessonInfographic extends Vue {
   }
 
   findNodeWithId(node){
-    
     while(!node.id){
       node = node.parentNode;
     }
@@ -87,7 +107,7 @@ export default class LessonInfographic extends Vue {
   }
 
   buttonClickHandler(e){
-    console.log(e.target);
+    // console.log(e.target);
     const id = this.findNodeWithId(e.target);
     console.log("id", id);
     this.hideAllOverlays(); 
@@ -98,9 +118,23 @@ export default class LessonInfographic extends Vue {
   overlayClickHandler(e){
     this.hideAllOverlays(); 
   }
+  
+  definitionClickHandler(e: any){
+    const definitionId = e.target.dataset.definitionId;
+    const height = getOffset(e.target).top;
+    const definition = this.definitions.find(def => def.id === definitionId).definition;
+    this.$emit('popupRequest', { height, definition });
+  }
+  
+  setupDefinitions(){
+      const textRoot = this.$refs['text_root'] as HTMLElement;
+      if(!textRoot) return;
+      const definitionElements = textRoot.querySelectorAll('._definition');
+      definitionElements.forEach(e => e.addEventListener('click', this.definitionClickHandler));
+  }
 
   setup(){
-      const rawRoot = this.$refs['raw_root'] as HTMLElement;
+      // const rawRoot = this.$refs['raw_root'] as HTMLElement;
       const buttons = Array.from(document.querySelectorAll('[id^="button"]'));
       const overlays = Array.from(document.querySelectorAll('[id^="overlay"]'));
 
@@ -130,6 +164,12 @@ export default class LessonInfographic extends Vue {
       value.button.removeEventListener('click', this.buttonClickHandler);
       value.overlay.removeEventListener('click', this.overlayClickHandler);
     }
+  }
+  
+  cleanupDefinitions(){
+      const rawRoot = this.$refs['raw_root'] as HTMLElement;
+      const definitionElements = rawRoot.querySelectorAll('._definition');
+      definitionElements.forEach(e => e.removeEventListener('click', this.definitionClickHandler));
   }
 }
 </script>

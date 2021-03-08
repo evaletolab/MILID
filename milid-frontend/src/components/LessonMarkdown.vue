@@ -1,7 +1,9 @@
 
 <template>
   <div class="col" :style="cssVars" >
-    <div ref="raw_root" v-html="lessonContent" />
+    <div ref="raw_root" v-html="lessonContent" ></div>
+
+    <Quiz v-if="hasQuiz" :moduleId="moduleId" :lessonId="lessonId" />
   </div>
 </template>
 
@@ -31,9 +33,14 @@
     /* content: "• "; */
   }
 
+  .col /deep/ strong{
+    color: var(--lesson-color);
+  }
+
   .col /deep/ ._definition{
     color: var(--lesson-color);
     cursor:pointer;
+    text-decoration: underline;
   }
 
 </style>
@@ -42,34 +49,25 @@
 <script lang="ts">
 /* eslint-disable */
 import { Component, Vue, Prop } from 'vue-property-decorator';
+import Quiz from './Quiz.vue';
 
 import { $module } from '@/services/module-service';
 import { $config } from '@/services/config-service';
 
-function getOffset(el: HTMLElement) {
-  const rect = el.getBoundingClientRect();
-  return {
-    left: rect.left + window.scrollX,
-    top: rect.top + window.scrollY,
-  };
-}
+import { getOffset } from '@/helpers/utils';
 
 @Component({
-  components: { },
+  components: { Quiz },
 })
 export default class LessonMarkdown extends Vue {
   @Prop() readonly moduleId!:string;
   @Prop() readonly lessonId!:string;
   lessonContent = "";
   definitions: any[] = [];
-  // definition = "";
-  // definitionPopupIsOpen = false;
-  // height = 0;
   
 
   beforeMount(){
-
-    this.lessonContent = $module.getLessonForModuleAndLessonId(this.moduleId, this.lessonId).html;
+    this.lessonContent = this.lesson.html;
     this.definitions = $module.store.definitions;
   }
 
@@ -86,6 +84,14 @@ export default class LessonMarkdown extends Vue {
     return $module.getModuleWithId(this.moduleId);    
   }
 
+  get lesson(){
+    return $module.getLessonForModuleAndLessonId(this.moduleId, this.lessonId);
+  }
+
+  get hasQuiz(){
+    return !!this.lesson.quiz;
+  }
+
   get cssVars(){
       return {
         '--lesson-color': $config.store.config.themes[this.module.theme].primary,
@@ -94,9 +100,6 @@ export default class LessonMarkdown extends Vue {
 
   definitionClickHandler(e: any){
     const definitionId = e.target.dataset.definitionId;
-    // this.height = getOffset(e.target).top;
-    // this.definitionPopupIsOpen = true;
-    // this.definition = this.definitions.find(def => def.id === definitionId).definition;
     const height = getOffset(e.target).top;
     const definition = this.definitions.find(def => def.id === definitionId).definition;
     this.$emit('popupRequest', { height, definition });

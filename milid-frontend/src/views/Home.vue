@@ -40,8 +40,8 @@
       <div class="title">{{mod.title}}</div>
       <div class="subtitle">{{mod.description}}</div>
       <div class="masonry-with-columns" :style="{ backgroundColor: themeTertiary(mod.theme)}">
-        <div v-for="lesson in mod.lessons" :key="lesson.id" 
-            @click="routerLink(mod.id,lesson.id)"
+        <div v-for="lesson in mod.lessons" :key="lesson.index" 
+            @click="routerLink(mod.id,lesson.index)"
             class="lesson">
           <div class="type">
             <MILIDIcons :name="getType(lesson)" :theme="mod.theme"/>
@@ -68,7 +68,7 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 import { Route } from 'vue-router';
-import { $config, $module } from '../services';
+import { $config, $metric, $module } from '../services';
 
 import ModuleStatus from '../components/ModuleStatus.vue';
 import MILIDWave from '../components/MILIDWave.vue';
@@ -105,7 +105,7 @@ export default class Home extends Vue {
   }
 
   beforeRouteEnter(to: Route, from: Route, next: any) {
-    const load = [$config.get(),$module.getAll()];
+    const load = [$config.get(),$module.getAll(),$metric.get()];
     Promise.all(load).then(next);
   }
 

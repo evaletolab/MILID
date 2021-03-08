@@ -83,8 +83,9 @@ export namespace MILID {
 
   export enum LessonState 
   {
-    TODO,
-    DONE
+    TODO = "todo",
+    DOING = "doing",
+    DONE = "done"
   }
 
   export interface Lesson {

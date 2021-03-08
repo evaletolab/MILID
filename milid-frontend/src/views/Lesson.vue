@@ -58,7 +58,7 @@
         <LessonMarkdown v-if="lesson.type == 'MARKDOWN'" :moduleId="module.id" :lessonId="lesson.id" @popupRequest="onPopupRequest" />
         <LessonVideo v-else-if="lesson.type == 'VIDEO'" :moduleId="module.id" :lessonId="lesson.id"  />
         <LessonPodcast v-else-if="lesson.type == 'PODCAST'" :moduleId="module.id" :lessonId="lesson.id"  />
-        <LessonInfographic v-else-if="lesson.type == 'INFOGRAPHIC'" :moduleId="module.id" :lessonId="lesson.id" />
+        <LessonInfographic v-else-if="lesson.type == 'INFOGRAPHIC'" :moduleId="module.id" :lessonId="lesson.id" @popupRequest="onPopupRequest" />
         <div v-else>
           <h3 class="title">{{lesson.title}}</h3>
           <div class="item type ">
@@ -142,7 +142,7 @@ import { Component, Vue } from 'vue-property-decorator';
 import { Route} from 'vue-router';
 import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 
-import { $config, $module } from '../services';
+import { $config, $module, $metric, MILIDEvent, $user } from '../services';
 import { MILID } from '../models';
 
 import ContentSwipe from '../components/ContentSwipe.vue';
@@ -225,7 +225,7 @@ export default class Lesson extends Vue {
   }
 
   get currentLesson() {
-    return $module.getLessonForModuleAndLessonId(this.$route.params.module_id,this.$route.params.lesson_id);
+    return $module.getLessonForModuleAndLessonIndex(this.$route.params.module_id,this.$route.params.lesson_id);
   }
 
   get renderLessons() {
@@ -233,7 +233,7 @@ export default class Lesson extends Vue {
       const lid = Number.parseInt(this.$route.params.lesson_id || "0");
       const lessons = this.module.lessons;
       // FIXME, findIndex can return -1 !
-      const index =  lessons.findIndex(l => l.id == lid);
+      const index =  lessons.findIndex(l => l.index == lid);
       const lastIndex = lessons.length - 1;
       const prevIndex = index === 0 ? lastIndex : index - 1;
       const nextIndex = index === lastIndex ? 0 : index + 1;
@@ -269,7 +269,7 @@ export default class Lesson extends Vue {
 
   renderChange(renderLessons) {
     this.renderLessons$ = [...renderLessons];
-    this.$router.replace({ path: `/module/${this.module.id}/lesson/${renderLessons[1].id}`}).catch(()=> {
+    this.$router.replace({ path: `/module/${this.module.id}/lesson/${renderLessons[1].index}`}).catch(()=> {
       //
     }).then(()=>{
       // validate screen 
@@ -277,6 +277,15 @@ export default class Lesson extends Vue {
       const container = this.$refs.container as any;
       const content = this.$refs.content as any;
       this.initScroll(container,content);
+
+      //
+      // event metric
+      const params: MILIDEvent = {
+        module:this.module.id,
+        lesson:renderLessons[1].id,
+        state:MILID.LessonState.DOING
+      };
+      $metric.event(params);
     });
   }
 
