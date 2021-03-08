@@ -1,6 +1,6 @@
 <template>
 <!--- SOURCE -->
-  <section class="sources " :hidden="!lesson.sources" :class="{'open secondary':open,'primary':!open}" @click="onToggle">
+  <section class="sources " :hidden="!lesson.sources" :class="{'open primary':open,'primary':!open}" @click="onToggle">
     <MILIDIcons name="sources-bar" :theme="module.theme" />
     <nav class="handle" hidden></nav>
     <div class="content">
@@ -110,10 +110,15 @@ export default class LessonSources extends Vue {
 
   section.sources div.content h3{
     text-align: center;
-    margin-top: -10px;
     text-transform: uppercase;
     font-size: 14px;
     margin-bottom: 30px;    
+  }
+
+  section.sources div.content {
+    overflow-y: auto;
+    margin-top: -15px;
+    height: 65%;
   }
 
   section.sources div.content  /deep/ a{
