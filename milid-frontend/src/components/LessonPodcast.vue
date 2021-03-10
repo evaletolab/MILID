@@ -87,7 +87,6 @@
 import { Component, Vue, Prop } from 'vue-property-decorator';
 import MILIDIcons from '../components/MILIDIcons.vue';
 import LottieAnimation from "lottie-vuejs/src/LottieAnimation.vue";
-import axios from 'axios';
 
 import { $config, $module, $metric } from '@/services';
 import { MILID } from '../models';
