@@ -24,3 +24,4 @@ expects a json encoded object of format:
 
 ## curl test
 - curl -v -H "Content-Type: application/json" --data @test.json http://site-address/event_add.php
+- curl -v -H "Content-Type: application/json" -H "Authorization: Bearer abcd"  http://localhost:4000/event/2bdaf3e1-39653661
