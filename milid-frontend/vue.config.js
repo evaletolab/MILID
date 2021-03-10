@@ -3,8 +3,16 @@ const github = process.env.NODE_ENV === "github";
 //
 // pwa config
 // https://cli.vuejs.org/core-plugins/pwa.html#configuration
-module.exports = {
+module.exports = {  
   publicPath : github? '/MILID': (prod? '/':'/'),
+  devServer: {
+    proxy: {
+      '^/event': {
+        target: 'http://localhost:4000',
+        changeOrigin: true, // so CORS doesn't bite us. 
+      }
+    }
+  },
   pwa:{
     name:"MILID",
     themeColor:"#6900FF",
