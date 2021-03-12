@@ -9,6 +9,7 @@ module.exports = function svg_transformer(lesson){
     // and replace root svg height with height='auto'
     lesson.svg = lesson.svg.replace(/width="\S*"/, 'width="100%"')
     .replace(/height="\S*"/, 'height="auto"')
+    .replace(/font-family="'SuisseEDUIntl-Bold'"/g, `font-family="suisse" font-weight="bold"`)
     .replace(/SuisseEDUIntl/g, "suisse");
 
 
