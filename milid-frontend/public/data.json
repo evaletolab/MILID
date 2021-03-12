@@ -1612,6 +1612,730 @@
           }
         }
       ]
+    },
+    {
+      "airtable_id": "recGbZuV29R4b1Jkv",
+      "id": "M3.1_cover",
+      "type": [
+        "image/svg+xml"
+      ],
+      "media": [
+        {
+          "id": "att9MFt8zwdF9850i",
+          "url": "https://dl.airtable.com/.attachments/e77cd33cb39b5f2f0a721f3c5bd74b6e/ffc2bd99/M3_1_cover.svg",
+          "filename": "M3_1_cover.svg",
+          "size": 3589,
+          "type": "image/svg+xml",
+          "thumbnails": {
+            "small": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/7dd8529e7a29d799a9fc6a0ce0e521e4/a0efa59b.png",
+              "width": 36,
+              "height": 36
+            },
+            "large": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/29bbfbb4521b2097ed885da76479593e/4e719786.png",
+              "width": 512,
+              "height": 512
+            },
+            "full": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/0a1fbf760bb239e602673e806e91009b/4f815cfd.png",
+              "width": 3000,
+              "height": 3000
+            }
+          }
+        }
+      ],
+      "lessons": [
+        "recsRYo8wXfYpOfjW"
+      ]
+    },
+    {
+      "airtable_id": "recEJWQp2qYNuBzdO",
+      "id": "M3.1_illustration1",
+      "type": [
+        "image/svg+xml"
+      ],
+      "media": [
+        {
+          "id": "attAcRS4wzXE0JQqy",
+          "url": "https://dl.airtable.com/.attachments/b828bda6aaddb1a103261a302346f0ac/5d1790de/M3_1_illustration1.svg",
+          "filename": "M3_1_illustration1.svg",
+          "size": 3589,
+          "type": "image/svg+xml",
+          "thumbnails": {
+            "small": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/81dc8975b97da0e61c8f6f3423b06aed/cf000da7.png",
+              "width": 36,
+              "height": 36
+            },
+            "large": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/2c20b74ecf88e3eeb6b7f54f69af0f03/5fe3abd3.png",
+              "width": 512,
+              "height": 512
+            },
+            "full": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/a90afea87fef08e5e02347493a99108b/56c3a739.png",
+              "width": 3000,
+              "height": 3000
+            }
+          }
+        }
+      ]
+    },
+    {
+      "airtable_id": "reckokimquvhFVgbL",
+      "id": "M3.1_illustration2",
+      "type": [
+        "image/svg+xml"
+      ],
+      "media": [
+        {
+          "id": "att7r1gOJdoUYf3cx",
+          "url": "https://dl.airtable.com/.attachments/84f61749f4f5028e623a6254d58d6e72/604c735f/M3_1_illustration2.svg",
+          "filename": "M3_1_illustration2.svg",
+          "size": 6772,
+          "type": "image/svg+xml",
+          "thumbnails": {
+            "small": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/c66892bec1c704ba5ddb587c1c9f2e01/bbf0087d.png",
+              "width": 36,
+              "height": 36
+            },
+            "large": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/ef92cad20e15193daab0556ba58eb8ed/20597588.png",
+              "width": 512,
+              "height": 512
+            },
+            "full": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/cba220e1ba991dce158bbb9b652c79b8/6980744d.png",
+              "width": 3000,
+              "height": 3000
+            }
+          }
+        }
+      ]
+    },
+    {
+      "airtable_id": "recxznRynxVzO8Fek",
+      "id": "M3.2_cover",
+      "type": [
+        "image/svg+xml"
+      ],
+      "media": [
+        {
+          "id": "attbZMCrHqWStkkhZ",
+          "url": "https://dl.airtable.com/.attachments/f64073d7b374d8adcc8fa20aa649aec2/0c58ec9d/M3_2_cover.svg",
+          "filename": "M3_2_cover.svg",
+          "size": 6052,
+          "type": "image/svg+xml",
+          "thumbnails": {
+            "small": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/1a7ce31937d8968de1aca626149be113/9f94e43e.png",
+              "width": 36,
+              "height": 36
+            },
+            "large": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/a3ea4d44acabf1d45ea9758df88ff152/5eee5c48.png",
+              "width": 512,
+              "height": 512
+            },
+            "full": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/e0ea7f48b30f0309f8d28e1b5ea6771a/2032c640.png",
+              "width": 3000,
+              "height": 3000
+            }
+          }
+        }
+      ],
+      "lessons": [
+        "recJfanjtVzEpFInZ"
+      ]
+    },
+    {
+      "airtable_id": "recP0KnBDGHY4BhL2",
+      "id": "M3.3_cover",
+      "type": [
+        "image/svg+xml"
+      ],
+      "media": [
+        {
+          "id": "attYYp83gs8ShvKrC",
+          "url": "https://dl.airtable.com/.attachments/00878ee7c55c9220f7f877959675a1db/daf5e216/M3_3_cover.svg",
+          "filename": "M3_3_cover.svg",
+          "size": 13613,
+          "type": "image/svg+xml",
+          "thumbnails": {
+            "small": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/3d2aa24940d99da02f0c177d2ec37ce0/4198a438.png",
+              "width": 36,
+              "height": 36
+            },
+            "large": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/4ce8baa9a1eac06e369a5d304da3b288/519ece5f.png",
+              "width": 512,
+              "height": 512
+            },
+            "full": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/5a3a7d616533e82f4ca510908951b53f/51a09a14.png",
+              "width": 3000,
+              "height": 3000
+            }
+          }
+        }
+      ],
+      "lessons": [
+        "recT89iicBP08J498"
+      ]
+    },
+    {
+      "airtable_id": "recMZVMWTQ5Ai35k3",
+      "id": "M3.3_illustration",
+      "type": [
+        "image/svg+xml"
+      ],
+      "media": [
+        {
+          "id": "attRO2mkmM9dY1JRZ",
+          "url": "https://dl.airtable.com/.attachments/c76a6560b91cacc3fec8559efcd8b68c/5726766e/M3_3_illustration.svg",
+          "filename": "M3_3_illustration.svg",
+          "size": 13613,
+          "type": "image/svg+xml",
+          "thumbnails": {
+            "small": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/28b9776db041eba1ef9aa4a750179556/0e23bd00.png",
+              "width": 36,
+              "height": 36
+            },
+            "large": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/9347c6ff4cf9bccdc6e28068b6cfbbd6/5598fc71.png",
+              "width": 512,
+              "height": 512
+            },
+            "full": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/e14a79397a338aa91a0a741bd6bb9928/00834a6f.png",
+              "width": 3000,
+              "height": 3000
+            }
+          }
+        }
+      ]
+    },
+    {
+      "airtable_id": "recTYdqpb77RMcCWG",
+      "id": "M03S04_podcast",
+      "type": [
+        "audio/mpeg"
+      ],
+      "media": [
+        {
+          "id": "attAlEvVwPS3WnzEJ",
+          "url": "https://dl.airtable.com/.attachments/1fe8dbc2044705a926816e5eea3e4150/b0c58f35/M03S04_podcast.mp3",
+          "filename": "M03S04_podcast.mp3",
+          "size": 1876469,
+          "type": "audio/mpeg"
+        }
+      ],
+      "lessons 2": [
+        "recmyika1DK8hBr9K"
+      ]
+    },
+    {
+      "airtable_id": "recYaMw4OrT7kXyqF",
+      "id": "M3.5_cover",
+      "type": [
+        "image/svg+xml"
+      ],
+      "media": [
+        {
+          "id": "attKJbY5RkBUCX1Nc",
+          "url": "https://dl.airtable.com/.attachments/fcb6faf29331656f8ff7413ba974959f/a7d5d310/M3_5_cover.svg",
+          "filename": "M3_5_cover.svg",
+          "size": 1944,
+          "type": "image/svg+xml",
+          "thumbnails": {
+            "small": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/cca3d21cbd57f28eec970c73acf29da9/5191a1b8.png",
+              "width": 36,
+              "height": 36
+            },
+            "large": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/93b24e7cd174627c75c4f7a9faac9523/412f38d1.png",
+              "width": 512,
+              "height": 512
+            },
+            "full": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/bfbaadff43a54a5bc5be95ed348ed69e/2fcb404c.png",
+              "width": 3000,
+              "height": 3000
+            }
+          }
+        }
+      ],
+      "lessons": [
+        "recBc9mfANTp8y4lx"
+      ]
+    },
+    {
+      "airtable_id": "recZZWeQ2z0OuyPdu",
+      "id": "M03S05_video",
+      "type": [
+        "video/mp4"
+      ],
+      "media": [
+        {
+          "id": "attfCLmEt6QFtJ1Ud",
+          "url": "https://dl.airtable.com/.attachments/141b11dc066c170e0a6728da05e17958/9a238615/M03S05_video.mp4",
+          "filename": "M03S05_video.mp4",
+          "size": 68184164,
+          "type": "video/mp4"
+        }
+      ],
+      "lessons 2": [
+        "recBc9mfANTp8y4lx"
+      ]
+    },
+    {
+      "airtable_id": "rec8zBKtVv8nXXhbQ",
+      "type": [
+        "audio/mpeg"
+      ],
+      "media": [
+        {
+          "id": "att8mh6lYsdelndVp",
+          "url": "https://dl.airtable.com/.attachments/2d2f605d92fee1b737cbeada2737bf2a/bd848fe1/M04S01_podcast.mp3",
+          "filename": "M04S01_podcast.mp3",
+          "size": 1792781,
+          "type": "audio/mpeg"
+        }
+      ],
+      "id": "M04S01_podcast",
+      "lessons 2": [
+        "recIkTTlRs4s3yC02"
+      ]
+    },
+    {
+      "airtable_id": "recyydJYAuAQE0fLl",
+      "id": "M4.2_cover",
+      "lessons": [
+        "recu250dd3Y6SOiMq"
+      ],
+      "type": [
+        "image/svg+xml"
+      ],
+      "media": [
+        {
+          "id": "attzApLzyVN3vBxi4",
+          "url": "https://dl.airtable.com/.attachments/196dd507243e1861eef83a88dab86aff/0a9d28de/M4_2_cover.svg",
+          "filename": "M4_2_cover.svg",
+          "size": 2928,
+          "type": "image/svg+xml",
+          "thumbnails": {
+            "small": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/af80727a5691cdeef1b9899dfdb8a469/7328aa01.png",
+              "width": 36,
+              "height": 36
+            },
+            "large": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/301ed314b2f37cae7f39038be42a8791/11bc90de.png",
+              "width": 512,
+              "height": 512
+            },
+            "full": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/2a29c18b926bcada7316c2fa336aec93/9937b454.png",
+              "width": 3000,
+              "height": 3000
+            }
+          }
+        }
+      ]
+    },
+    {
+      "airtable_id": "recQdkl5wKTo7qWSG",
+      "id": "M04S02_video",
+      "type": [
+        "video/mp4"
+      ],
+      "media": [
+        {
+          "id": "attqWNByuds900lJq",
+          "url": "https://dl.airtable.com/.attachments/70d2ad898ce5ab3d1d426d172257fad3/63743c5c/M04S02_video.mp4",
+          "filename": "M04S02_video.mp4",
+          "size": 85812921,
+          "type": "video/mp4"
+        }
+      ],
+      "lessons 2": [
+        "recu250dd3Y6SOiMq"
+      ]
+    },
+    {
+      "airtable_id": "recqd9QCjIWew8d0i",
+      "id": "M4.3_cover",
+      "type": [
+        "image/svg+xml"
+      ],
+      "media": [
+        {
+          "id": "atthblr9uh6l2XHWK",
+          "url": "https://dl.airtable.com/.attachments/10225ec27350ade8e3a51eef07ac3d20/f00fe2c6/M4_3_cover.svg",
+          "filename": "M4_3_cover.svg",
+          "size": 10720,
+          "type": "image/svg+xml",
+          "thumbnails": {
+            "small": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/0974e7021c923d0917237a27894dec36/f1f0e818.png",
+              "width": 36,
+              "height": 36
+            },
+            "large": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/9bd3c8b224e889f9f4388fa8edb26fb7/d58e7031.png",
+              "width": 512,
+              "height": 512
+            },
+            "full": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/95ca7577e494e2dde6c68ce3970bc123/536c8f69.png",
+              "width": 3000,
+              "height": 3000
+            }
+          }
+        }
+      ],
+      "lessons": [
+        "recS53QrqBJS13C23"
+      ]
+    },
+    {
+      "airtable_id": "rec3cJKsDE5bcZ9ue",
+      "id": "M04_illustrations-11",
+      "type": [
+        "image/svg+xml"
+      ],
+      "media": [
+        {
+          "id": "attUfE68LYYUSyMJ6",
+          "url": "https://dl.airtable.com/.attachments/62ebe4eef937ad9fe279dfa9a42f0447/5bcf2c66/M04_illustrations-11.svg",
+          "filename": "M04_illustrations-11.svg",
+          "size": 11139,
+          "type": "image/svg+xml",
+          "thumbnails": {
+            "small": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/0aa658bcab2aa6fe5a3ed06fa92691b6/ebb8b83b.png",
+              "width": 36,
+              "height": 36
+            },
+            "large": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/f5704809e3d97fa75eb7f30de2f303d7/fa90eacc.png",
+              "width": 512,
+              "height": 512
+            },
+            "full": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/75039756412d3fa2d039b6b9b7b3bd06/a52d5d7a.png",
+              "width": 3000,
+              "height": 3000
+            }
+          }
+        }
+      ]
+    },
+    {
+      "airtable_id": "recxxT9InNP3ke3ux",
+      "id": "M04_illustrations-12",
+      "type": [
+        "image/svg+xml"
+      ],
+      "media": [
+        {
+          "id": "attl77nMCOB27lEWs",
+          "url": "https://dl.airtable.com/.attachments/e305d5f2e875244b79ee5acc22e05192/41dddfd0/M04_illustrations-12.svg",
+          "filename": "M04_illustrations-12.svg",
+          "size": 10720,
+          "type": "image/svg+xml",
+          "thumbnails": {
+            "small": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/4e83adc3bfc427861bbe3b9c511704eb/77c9cedd.png",
+              "width": 36,
+              "height": 36
+            },
+            "large": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/493801a671d21bda30281be30d7d1325/3173871b.png",
+              "width": 512,
+              "height": 512
+            },
+            "full": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/27e987550c25608eff099637f2825aec/c6f96c03.png",
+              "width": 3000,
+              "height": 3000
+            }
+          }
+        }
+      ]
+    },
+    {
+      "airtable_id": "recxFUgoQJW0uCTbq",
+      "id": "M04_illustrations-13",
+      "media": [
+        {
+          "id": "atts6wglZEPT6W7vU",
+          "url": "https://dl.airtable.com/.attachments/0c87951851cd97a114ab5f013453f766/7b07e01f/M04_illustrations-13.svg",
+          "filename": "M04_illustrations-13.svg",
+          "size": 4119,
+          "type": "image/svg+xml",
+          "thumbnails": {
+            "small": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/1d37b8649bbaa64dc888a8a2414c64e8/1c836687.png",
+              "width": 36,
+              "height": 36
+            },
+            "large": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/01ec7cb4b5bec6cb5d4a70bd5b714e6a/3d4a2f73.png",
+              "width": 512,
+              "height": 512
+            },
+            "full": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/af94ba9bf3b46642de7d8b74f38680b9/7d067782.png",
+              "width": 3000,
+              "height": 3000
+            }
+          }
+        }
+      ],
+      "type": [
+        "image/svg+xml"
+      ]
+    },
+    {
+      "airtable_id": "recow1B8RQe4mMnKH",
+      "id": "M04_illustrations-14",
+      "type": [
+        "image/svg+xml"
+      ],
+      "media": [
+        {
+          "id": "attykTMLkD4RJO2xD",
+          "url": "https://dl.airtable.com/.attachments/a13793e6a2a78749bc9671e4a25716e0/81b14177/M04_illustrations-14.svg",
+          "filename": "M04_illustrations-14.svg",
+          "size": 4674,
+          "type": "image/svg+xml",
+          "thumbnails": {
+            "small": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/bb691449f5911d70c419b57c1d89b3e2/43166314.png",
+              "width": 36,
+              "height": 36
+            },
+            "large": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/52f9ae3ea20c81db4681378029e3e285/668351a6.png",
+              "width": 512,
+              "height": 512
+            },
+            "full": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/47b76ee3a0c40cf40dfe74b725af86be/a6a48adb.png",
+              "width": 3000,
+              "height": 3000
+            }
+          }
+        }
+      ]
+    },
+    {
+      "airtable_id": "rec2KzIBT9iDZOFcc",
+      "id": "M4.4_cover",
+      "type": [
+        "image/svg+xml"
+      ],
+      "media": [
+        {
+          "id": "attsXyoxH2RnsRsAL",
+          "url": "https://dl.airtable.com/.attachments/aba7829cad42870122d0aa38bd263dd0/fb97283c/M4_4_cover.svg",
+          "filename": "M4_4_cover.svg",
+          "size": 4399,
+          "type": "image/svg+xml",
+          "thumbnails": {
+            "small": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/42bb2da39401e10dab4106f4cca4536d/fed71b2b.png",
+              "width": 36,
+              "height": 36
+            },
+            "large": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/49da8933607ea6fa375de4bcbdf0ca0f/4dd70abe.png",
+              "width": 512,
+              "height": 512
+            },
+            "full": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/83a83588532d8cfd4058d02d9d0c36b0/d1777044.png",
+              "width": 3000,
+              "height": 3000
+            }
+          }
+        }
+      ],
+      "lessons": [
+        "recThxgmuijtbKDRF"
+      ]
+    },
+    {
+      "airtable_id": "rec7CBtO8cQcV1KYs",
+      "id": "M04_illustrations-15",
+      "type": [
+        "image/svg+xml"
+      ],
+      "media": [
+        {
+          "id": "att3OYjhvIuYeqii0",
+          "url": "https://dl.airtable.com/.attachments/779b66379217b221c3e7ca6aeefd3781/fdac3223/M04_illustrations-15.svg",
+          "filename": "M04_illustrations-15.svg",
+          "size": 24989,
+          "type": "image/svg+xml",
+          "thumbnails": {
+            "small": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/954e62c1a90a7f6f5be9737fd011feb2/703fbca1.png",
+              "width": 36,
+              "height": 36
+            },
+            "large": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/d12d3c0625d24225ab83a42ea7d15528/c17bcdb4.png",
+              "width": 512,
+              "height": 512
+            },
+            "full": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/d327a9ed8b7a9c965f3049905e7f7eac/46011341.png",
+              "width": 3000,
+              "height": 3000
+            }
+          }
+        }
+      ]
+    },
+    {
+      "airtable_id": "recaTPNaCjzJfyjre",
+      "id": "M04_illustrations-16",
+      "type": [
+        "image/svg+xml"
+      ],
+      "media": [
+        {
+          "id": "attjWnPK313gwEheR",
+          "url": "https://dl.airtable.com/.attachments/cf0137a140453b955159dfbc5da6b3b9/9cc34a50/M04_illustrations-16.svg",
+          "filename": "M04_illustrations-16.svg",
+          "size": 4399,
+          "type": "image/svg+xml",
+          "thumbnails": {
+            "small": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/a6259af0c5591beeb0002c9970dce8be/0f5db45c.png",
+              "width": 36,
+              "height": 36
+            },
+            "large": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/47d71cc35958222f02ea5dadf7ded795/87fe3e4e.png",
+              "width": 512,
+              "height": 512
+            },
+            "full": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/ad6b64755f577cf3645ea1a877f972a3/e87817a1.png",
+              "width": 3000,
+              "height": 3000
+            }
+          }
+        }
+      ]
+    },
+    {
+      "airtable_id": "recdrmZWB2HyIlup0",
+      "id": "M04_illustrations-17",
+      "type": [
+        "image/svg+xml"
+      ],
+      "media": [
+        {
+          "id": "attSVlr6YyKWopvbP",
+          "url": "https://dl.airtable.com/.attachments/d72b3137e7a890d8a1993db7a168ebac/4508beed/M04_illustrations-17.svg",
+          "filename": "M04_illustrations-17.svg",
+          "size": 17638,
+          "type": "image/svg+xml",
+          "thumbnails": {
+            "small": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/25b37adbb99739f6b6202168490a12a5/c8cb2e9d.png",
+              "width": 36,
+              "height": 36
+            },
+            "large": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/2ce565f8a7e3c47cb4ed1ad9bc441f9f/5e83b5a7.png",
+              "width": 512,
+              "height": 512
+            },
+            "full": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/723a04549f3790416fa29968cea84c7e/2d67dd4d.png",
+              "width": 3000,
+              "height": 3000
+            }
+          }
+        }
+      ]
+    },
+    {
+      "airtable_id": "reca3bJnnkO2otiSC",
+      "id": "M04_illustrations-18",
+      "type": [
+        "image/svg+xml"
+      ],
+      "media": [
+        {
+          "id": "attWg3jneC2de9nQc",
+          "url": "https://dl.airtable.com/.attachments/abec05092663fa010239c977ec664e85/5079a956/M04_illustrations-18.svg",
+          "filename": "M04_illustrations-18.svg",
+          "size": 64218,
+          "type": "image/svg+xml",
+          "thumbnails": {
+            "small": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/fb8a4dafdeedabf8c311e3df1c030f3d/3edb8e35.png",
+              "width": 36,
+              "height": 36
+            },
+            "large": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/70757b963cfacd787722ee2fd93553c1/d1e01e2f.png",
+              "width": 512,
+              "height": 512
+            },
+            "full": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/130723b79fb215c2d0b879b85ad0a9da/269a24c8.png",
+              "width": 3000,
+              "height": 3000
+            }
+          }
+        }
+      ]
+    },
+    {
+      "airtable_id": "recGEZCxuHUoSVUqY",
+      "id": "M4.5_cover",
+      "type": [
+        "image/svg+xml"
+      ],
+      "media": [
+        {
+          "id": "attDQEMpAVKYSTKor",
+          "url": "https://dl.airtable.com/.attachments/b2c56b4530dd674d7f9fe4671e925b57/a914a6da/M4_5_cover.svg",
+          "filename": "M4_5_cover.svg",
+          "size": 12525,
+          "type": "image/svg+xml",
+          "thumbnails": {
+            "small": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/9021dff60d26aaca9a2bbbd20306111a/fbb34ffe.png",
+              "width": 36,
+              "height": 36
+            },
+            "large": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/fd0067f2a3f933774ff0d24865fb9e8c/07bc4809.png",
+              "width": 512,
+              "height": 512
+            },
+            "full": {
+              "url": "https://dl.airtable.com/.attachmentThumbnails/8e4d956ea0d78e9ffa75d6dc8a665316/71f7dec3.png",
+              "width": 3000,
+              "height": 3000
+            }
+          }
+        }
+      ]
     }
   ],
   "modules": [
@@ -1628,9 +2352,7 @@
           "cover": "https://dl.airtable.com/.attachments/d5c2d920748b250707c88aaf80af456f/9820ea2c/M1_1_cover.svg",
           "type": "MARKDOWN",
           "modules": [
-            "recKefWoiBrgzqAyQ",
-            "rec3Uzws3khrczr4D",
-            "recL96730JlAeJJXd"
+            "recKefWoiBrgzqAyQ"
           ],
           "id": "1",
           "sources": "<p> BODER, Alexandre, 2019. <em>Théorie I [document PDF]</em>. Support de cours : Cours Systèmes d’information documentaires, Haute École de Gestion de Genève, filière Information documentaire, année académique 2019-2020 </p>\n<p>HAESEN, Stéphanie, <em>2019. Introduction - 1ère partie</em> [support PowerPoint]. Support de cours : Cours “Recherche d’information”, Haute École de Gestion de Genève, filière Information documentaire, année académique 2019-2020 </p>\n<p>LAROUSSE, Éditions. <em>Définitions : information. Larousse</em> [en ligne]. [Consulté le 2 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.larousse.fr/dictionnaires/francais/information/42993\">lien</a></p>\n<p>LES DÉCODEURS, 2017. _Décodex : qu’est-ce qu’une information ? _Le Monde.fr [en ligne]. 23 janvier 2017. [Consulté le 6 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.lemonde.fr/les-decodeurs/article/2017/01/23/decodex-qu-est-ce-qu-une-information_5067721_4355770.html\">lien</a>\nROMAGNI, Patrick et WILD, Valérie, 1998. <em>L’intelligence économique au service de l’entreprise</em>. Paris : LPM. 219 p. ISBN 978-2878453317</p>\n",
@@ -1815,21 +2537,71 @@
       "title": "Évaluer l'information",
       "lessons": [
         {
-          "airtable_id": "recPsLd9VsWKVHoNn",
-          "title": "Qu’est-ce qu’une information&#8201;?",
-          "description": "my lesson description",
-          "cover": "https://dl.airtable.com/.attachments/d5c2d920748b250707c88aaf80af456f/9820ea2c/M1_1_cover.svg",
+          "airtable_id": "recsRYo8wXfYpOfjW",
+          "title": "Comment choisir des sources pertinentes&#8201;?",
+          "cover": "https://dl.airtable.com/.attachments/e77cd33cb39b5f2f0a721f3c5bd74b6e/ffc2bd99/M3_1_cover.svg",
           "type": "MARKDOWN",
+          "id": "14",
+          "sources": "<h2 id=\"sources-\">Sources :</h2>\n<p>BIBLIOTHÈQUE HEC MONTRÉAL, 2020. <em>Évaluer ses sources</em>. HEC Montréal [en ligne]. 15 juillet 2020. [Consulté le 28 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://libguides.hec.ca/c.php?g=246716&amp;p=1643668\">lien</a></p>\n<p>INFOTHÈQUE HAUTE ÉCOLE DE GESTION, [2004]. _Outil d’aide : Fiche de suivi de lecture. E-Learning de l’Infothèque (ELI) _[en ligne]. 1 juillet 2016. [Consulté le 12 novembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://cyberlearn.hes-so.ch/mod/resource/view.php?id=554650\">lien</a> [accès par abonnement] </p>\n<p>SERVICE DES BIBLIOTHÈQUES DE L’UQAM, 2013. <em>Évaluer la qualité de ses sources</em>. Infosphère, collège Jean-de-Brébeuf [en ligne]. 4 mars 2013. [Consulté le 28 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://portail2.brebeuf.qc.ca/infosphere/sciences_humaines/module7/evaluer1a.html\">lien</a></p>\n",
+          "quiz": "<h2 id=\"quizz\">QUIZZ&#8201;:</h2>\n<p>Parmi les phrases suivantes, laquelle est juste&#8201;: </p>\n<div class=\"question\">\n    <button class=\"quiz-btn\">Un auteur employé par un&nbsp;lobby est une preuve de&nbsp;son intégrité</button>\n    <button class=\"quiz-btn\" data-correct-answer>Un auteur reconnu dans son domaine est un&nbsp;gage de&nbsp;qualité</button>\n    <button class=\"quiz-btn\">Tous les avis sont bons à prendre</button>\n    <button class=\"quiz-btn\">Un article promotionnel reste une source fiable</button>\n</div>\n\n\n\n<p>L&#39;information contenue dans une source doit être&#8201;: </p>\n<div class=\"question\">\n    <button class=\"quiz-btn\" data-correct-answer>Objective</button>\n    <button class=\"quiz-btn\">Subjective</button>\n    <button class=\"quiz-btn\">Quantique</button>\n    <button class=\"quiz-btn\">Non-vérifiée</button>\n</div>\n\n\n<p>Parmi ces propositions, laquelle doit te&nbsp;faire douter de&nbsp;la fiabilité d&#39;une source&#8201;:</p>\n <div class=\"question\">\n    <button class=\"quiz-btn\">L'auteur est reconnu dans son domaine</button>\n    <button class=\"quiz-btn\">Plusieurs autres sources fiables traitent de&nbsp;ce même sujet</button>\n    <button class=\"quiz-btn\" data-correct-answer>L'auteur a&nbsp;intégré un&nbsp;code promotionnel à son article</button>\n</div>\n",
           "modules": [
-            "recKefWoiBrgzqAyQ",
-            "rec3Uzws3khrczr4D",
-            "recL96730JlAeJJXd"
+            "rec3Uzws3khrczr4D"
           ],
-          "id": "1",
-          "sources": "<p> BODER, Alexandre, 2019. <em>Théorie I [document PDF]</em>. Support de cours : Cours Systèmes d’information documentaires, Haute École de Gestion de Genève, filière Information documentaire, année académique 2019-2020 </p>\n<p>HAESEN, Stéphanie, <em>2019. Introduction - 1ère partie</em> [support PowerPoint]. Support de cours : Cours “Recherche d’information”, Haute École de Gestion de Genève, filière Information documentaire, année académique 2019-2020 </p>\n<p>LAROUSSE, Éditions. <em>Définitions : information. Larousse</em> [en ligne]. [Consulté le 2 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.larousse.fr/dictionnaires/francais/information/42993\">lien</a></p>\n<p>LES DÉCODEURS, 2017. _Décodex : qu’est-ce qu’une information ? _Le Monde.fr [en ligne]. 23 janvier 2017. [Consulté le 6 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.lemonde.fr/les-decodeurs/article/2017/01/23/decodex-qu-est-ce-qu-une-information_5067721_4355770.html\">lien</a>\nROMAGNI, Patrick et WILD, Valérie, 1998. <em>L’intelligence économique au service de l’entreprise</em>. Paris : LPM. 219 p. ISBN 978-2878453317</p>\n",
-          "quiz": "<h2 id=\"quizz-dequel-type-dinformation-sagit-il-\">QUIZZ&#8201;: De&nbsp;quel type d’information s’agit-il &#8201;?</h2>\n<p>Les informations concernant tes propres paiements bancaires (via ebanking), ta&nbsp;commande Zalando ou&nbsp;ta thèse universitaire&#8201;?</p>\n<div class=\"question\">\n    <button class=\"quiz-btn\">Blanche</button>\n    <button class=\"quiz-btn\" data-correct-answer>Grise</button>\n    <button class=\"quiz-btn\">Noire</button>\n</div>\n\n<p>Les information des codes de&nbsp;la bombe atomique (à moindre d&#39;être président des usa), données de&nbsp;carte bleue volées ou&nbsp;des comptes Twitter piratés&#8201;?</p>\n<div class=\"question\">\n    <button class=\"quiz-btn\">Blanche</button>\n    <button class=\"quiz-btn\">Grise</button>\n    <button class=\"quiz-btn\" data-correct-answer>Noire</button>\n</div>\n\n<p>Les horaires des trains CFF (en gare ou&nbsp;sur site web), publicités sur les bords des routes ou&nbsp;encore le&nbsp;prix des bananes à la&nbsp;Coop&#8201;?</p>\n<div class=\"question\">\n    <button class=\"quiz-btn\" data-correct-answer>Blanche</button>\n    <button class=\"quiz-btn\">Grise</button>\n    <button class=\"quiz-btn\">Noire</button>\n</div>",
-          "html": "<h1 id=\"quest-ce-quune-information\">QU&#39;EST-CE QU&#39;UNE INFORMATION&#8201;?</h1>\n<p>L&#39;information est un&nbsp;terme ayant de&nbsp;nombreux sens, alors mettons-nous d&#39;accord sur une définition simple.\n&#8201;<img src=\"https://dl.airtable.com/.attachments/bf97741c297cb2615467b09e0ed82194/3c30e304/M01_illustrations-11.svg\" alt=\"alt\"></p>\n<p>Une information, c&#39;est de&nbsp;la communication communiquée.  </p>\n<p>Il&nbsp;existe trois type d&#39;informations&#8201;:\n&#8201;<img data-size=\"40%\"  src=\"https://dl.airtable.com/.attachments/2a27c59553718d953d1647b94c30cc3d/43637854/M01_illustrations-12.svg\" alt=\"40%\"></p>\n<ul>\n<li>Blanche&#8201;: son accès est facile et&nbsp;licite. Elle représente le&nbsp;80% de&nbsp;l&#39;information mondiale.</li>\n</ul>\n<p>&#8201;<img data-size=\"40%\"  src=\"https://dl.airtable.com/.attachments/1a047dda5986efd2c036ec0f2a31117c/f2d9b132/M01_illustrations-13.svg\" alt=\"40%\"></p>\n<ul>\n<li>Grise&#8201;: son accès est licite, mais elle est plus difficile à trouver (nécessité d&#39;un login, connaissance de&nbsp;l&#39;existence de&nbsp;la base de&nbsp;données, etc.). Elle représente le&nbsp;10-15% de&nbsp;l&#39;information mondiale.</li>\n</ul>\n<p>&#8201;<img data-size=\"40%\"  src=\"https://dl.airtable.com/.attachments/f31453e399b06e06ef5c19947b63d6b0/358b007e/M01_illustrations-14.svg\" alt=\"40%\"></p>\n<ul>\n<li>Noire&#8201;: son accès est très limité et&nbsp;protégé. Ce&nbsp;type d&#39;information est obtenu par des moyens illégaux (espionnage industriel, chantage etc.). Elle représente le&nbsp;5-10% de&nbsp;l&#39;information mondiale.</li>\n</ul>\n",
+          "html": "<h1 id=\"comment-choisir-des-sources-pertinentes\">Comment choisir des sources pertinentes&#8201;?</h1>\n<p>En&nbsp;tant qu’étudiant·e, tu&nbsp;es très souvent amené·e à effectuer des recherches documentaires. Si&nbsp;tes sources ne&nbsp;sont pas bonnes, tu&nbsp;prends le&nbsp;risque de&nbsp;rendre un&nbsp;travail de&nbsp;mauvaise qualité. Il&nbsp;est donc essentiel de&nbsp;bien choisir tes sources.\n&#8201;<img src=\"https://dl.airtable.com/.attachments/b828bda6aaddb1a103261a302346f0ac/5d1790de/M3_1_illustration1.svg\" alt=\"alt\"></p>\n<p>La&nbsp;source </p>\n<ul>\n<li><p>Quel est son sujet principal&#8201;? Cette source te&nbsp;permet-elle d’obtenir des <span class=\"_definition\" data-definition-id=\"reponses\">réponses</span> à ta&nbsp;question ou à un&nbsp;de tes axes de&nbsp;recherche&#8201;? </p>\n</li>\n<li><p><span class=\"_definition\" data-definition-id=\"journal_blog\">Est-ce un&nbsp;journal scientifique, de&nbsp;presse, un&nbsp;blog, etcétéra&#8201;?</span></p>\n</li>\n</ul>\n<p>Le&nbsp;document&#8201;:  </p>\n<ul>\n<li>Sa&nbsp;nature correspond-t-elle <span class=\"_definition\" data-definition-id=\"type_recherche\">au type de&nbsp;recherche</span> que tu&nbsp;dois faire&#8201;? </li>\n</ul>\n<p>L’autrice, l’auteur&#8201;:  </p>\n<ul>\n<li>Est-il connu ou&nbsp;reconnu dans le&nbsp;domaine&#8201;? </li>\n</ul>\n<p>Il&nbsp;faut évaluer ses sources en&nbsp;tenant compte des critères suivants&#8201;: \n&#8201;<img src=\"https://dl.airtable.com/.attachments/84f61749f4f5028e623a6254d58d6e72/604c735f/M3_1_illustration2.svg\" alt=\"alt\"></p>\n<p>L’objectivité de&nbsp;l’information </p>\n<ul>\n<li>Quelle est l’intention de&nbsp;l’autrice, l’auteur (éduquer, vendre, faire de&nbsp;la propagande, etc.)&#8201;?  </li>\n<li>Différents points de&nbsp;vue sont-ils présentés&#8201;?  </li>\n<li>Le&nbsp;langage est-il nuancé&#8201;?  </li>\n<li>Ses propos peuvent-ils être croisés avec d’autres sources&#8201;? </li>\n<li>Y&nbsp;a-t-il des publicités associées à la&nbsp;source&#8201;? </li>\n<li>L&#39;autrice, l’auteur est-il affilié à un&nbsp;lobby&#8201;?  </li>\n</ul>\n<p>L’exactitude de&nbsp;l’information </p>\n<ul>\n<li>Les références bibliographiques sont-elles variées&#8201;?  </li>\n<li>Sont-elles lisibles et&nbsp;complètes&#8201;?  </li>\n<li>Contiennent-elles des documents officiels&#8201;?  </li>\n</ul>\n<p>L’actualité de&nbsp;l’information&#8201;:  </p>\n<ul>\n<li>La&nbsp;date de&nbsp;publication est-elle récente&#8201;?  </li>\n<li>Y&nbsp;a-t-il eu&nbsp;une mise à jour/réédition&#8201;?</li>\n</ul>\n",
           "index": "1"
+        },
+        {
+          "airtable_id": "recJfanjtVzEpFInZ",
+          "title": "Comment identifier des expert·e·s&#8201;?",
+          "id": "15",
+          "type": "INFOGRAPHIC",
+          "cover": "https://dl.airtable.com/.attachments/f64073d7b374d8adcc8fa20aa649aec2/0c58ec9d/M3_2_cover.svg",
+          "sources": "<h2 id=\"sources\">Sources</h2>\n<p>GLATRON, Sandrine, 1997. <em>Qu&#39;est-ce qu&#39;un expert?</em>. Vacarme [en ligne]. Mars 1997. N° 3, p. 26-27. [Consulté le 12 novembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.cairn.info/revue-vacarme-1997-3-page-26.htm\">lien</a> [accès par abonnement] </p>\n<p>GUITTARD, Claude &amp; WELTER, Adeline, 2014. <em>Définition et sélection de l&#39;expert IT : Approches cognitives et sociales</em>. Management &amp; Avenir [en ligne]. Janvier 2014. N° 67, p. 101-121. [Consulté le 12 novembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.cairn.info/revue-management-et-avenir-2014-1-page-101.htm\">lien </a>[accès par abonnement] </p>\n",
+          "svg": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->\n<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\" \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\">\n<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\"\n\t width=\"100%\" height=\"auto\" viewBox=\"0 0 882.383 1427.09\" enable-background=\"new 0 0 882.383 1427.09\"\n\t xml:space=\"preserve\">\n<g id=\"Background\">\n\t<path fill=\"#00FFDA\" d=\"M374.172,733.445c-2.633,2.643-4.907,5.272-5.144,8.996c-0.244,3.83,1.922,6.988,5.207,8.975\n\t\tc10.953,6.624,25.795,6.13,36.282-1.209c1.625-1.137,3.179-2.456,4.173-4.172c2.376-4.101,0.992-9.391-1.394-13.485\n\t\tc-2.386-4.096-5.707-7.668-7.469-12.067c-0.524-1.309-0.956-2.752-2.052-3.639c-1.008-0.815-2.377-0.987-3.669-1.099\n\t\tc-5.843-0.502-13.021-1.825-17.222,2.648C379.19,722.327,378.444,729.158,374.172,733.445z\"/>\n\t<path fill=\"#00FFDA\" d=\"M506.041,749.592c2.087,1.757,4.891,2.355,7.585,2.78c11.807,1.861,23.962,1.49,35.634-1.087\n\t\tc5.625-1.242,11.414-3.162,15.301-7.413c0.855-0.936,1.627-2.03,1.786-3.288c0.419-3.327-3.33-5.51-6.519-6.551\n\t\tc-8.563-2.795-17.754-4.189-25.936-8.079c-6.835-3.25-14.938-15.976-22.052-16.392C498.667,708.792,499.01,743.676,506.041,749.592\n\t\tz\"/>\n\t<path fill=\"#D9FFF8\" d=\"M609.499,289.446c7.889-0.588,16.6-2.944,20.578-9.782c2.271-3.901,2.579-8.603,2.756-13.113\n\t\tc0.06-1.54,0.064-3.228-0.904-4.425c-1.45-1.793-4.393-1.51-6.272-0.173c-1.879,1.336-3.064,3.413-4.544,5.182\n\t\tc-4.647,5.558-12.713,7.987-19.657,5.92c-0.355-0.106-0.719-0.229-0.995-0.476c-1.018-0.912-0.174-2.598,0.819-3.537\n\t\tc2.727-2.578,6.775-4.784,6.719-8.536c-0.013-0.802-0.291-1.675-0.981-2.083c-0.691-0.409-1.566-0.239-2.345-0.041\n\t\tc-7.348,1.868-14.337,5.135-20.482,9.574c-5.85,4.225-14.745,14.191-5.191,18.025C588.202,289.673,599.737,290.173,609.499,289.446\n\t\tz\"/>\n\t<path fill=\"#D9FFF8\" d=\"M264.002,188.571c-3.658-7.014-6.246-15.659-2.532-22.644c2.12-3.985,5.953-6.726,9.693-9.252\n\t\tc1.276-0.862,2.709-1.756,4.237-1.564c2.289,0.288,3.598,2.938,3.453,5.239c-0.146,2.302-1.285,4.404-2.009,6.593\n\t\tc-2.274,6.879-0.088,15.013,5.328,19.826c0.277,0.247,0.573,0.491,0.929,0.595c1.311,0.384,2.299-1.222,2.574-2.56\n\t\tc0.753-3.676,0.495-8.28,3.714-10.208c0.688-0.413,1.576-0.636,2.288-0.264c0.712,0.372,1.028,1.205,1.271,1.971\n\t\tc2.284,7.229,3.191,14.89,2.657,22.453c-0.508,7.198-4.29,20.01-12.583,13.911C275.032,206.791,268.528,197.25,264.002,188.571z\"/>\n\t<path fill=\"#00DBBF\" d=\"M459.758,158.404c19.746,7.06,38.604,15.767,54.912,29.281c5.043,4.179,6.723,9.606,7.319,15.95\n\t\tc1.617,17.191,0.505,34.314-0.464,51.46c-0.492,8.72-0.79,17.438,0.145,26.169c0.439,4.098,2.638,6.046,6.447,6.667\n\t\tc6.804,1.11,13.254-0.551,19.57-2.724c8.688-2.991,17.249-6.453,25.071-11.242c3.89-2.381,5.576-1.527,7.138,2.036\n\t\tc1.292,3.586,2.995,6.969,5.053,10.175c0.695,1.68,0.128,2.645-1.501,3.495c-23.114,12.061-46.024,24.552-70.418,33.945\n\t\tc-9.894,3.81-11.498,2.814-13.823-7.567c-2.154-9.617-2.319-19.394-2.32-29.184c0-5.921,0-11.842-0.603-17.933\n\t\tc-1.374,5.169-2.773,10.331-4.117,15.507c-5.616,21.634-5.568,43.197-9.091,65.307c-1.071,6.725-1.576,13.545-0.812,20.379\n\t\tc-2.362,0.049-4.736,0.274-7.085,0.12c-17.302-1.135-40.619-2.123-57.893-3.602c-14.01-1.2-40.118-1.699-53.936-4.678\n\t\tc0.209-7.537,0.477-15.073,0.617-22.612c0.584-31.458,11.166-62.786,5.68-93.837c-0.282-1.596-0.625-3.182-1.161-5.897\n\t\tc-1.038,2.395-1.702,3.871-2.322,5.366c-7.434,17.922-15.11,35.722-25.76,52.059c-2.522,3.869-5.29,7.528-8.808,10.537\n\t\tc-4.411,3.772-8.702,3.799-13.281,0.197c-3.063-2.409-5.461-5.385-7.536-8.681c-10.427-16.569-16.694-34.929-22.985-53.271\n\t\tc-2.88-8.396-5.255-16.974-8.393-25.269c-1.513-3.999-1.612-6.94,2.198-9.344c3.225-2.03,6.187-4.389,8.875-7.089\n\t\tc2.156-1.532,4.311-3.063,6.57-4.669c1.759,2.47,2.119,5.312,2.987,7.928c5.085,15.327,10.192,30.641,17.056,45.297\n\t\tc1.701,3.632,3.518,7.201,6.099,10.302c2.142,2.575,4.237,2.503,6.004-0.413c2.084-3.439,3.467-7.196,4.804-10.97\n\t\tc6.28-17.722,11.772-35.697,18.573-53.267c7.652-19.768,21.056-31.558,41.762-35.669c8.726-1.732,17.341-3.917,26.314-3.816\n\t\tc-0.07,1.177-0.196,2.355-0.199,3.533c-0.016,6.176,4.636,14.302,9.196,16.117c10.315,4.106,20.371,0.63,25.83-9.007\n\t\tC457.437,166.019,459.023,162.369,459.758,158.404z\"/>\n\t<path fill=\"#D9FFF8\" d=\"M406.403,125.482c-3.44-21.829-3.647-9.591,1.312-31.754c3.009,4.129,6.312,7.739,9.917,11.137\n\t\tc5.271,4.969,9.587-27.532,16.357-26.368c8.929,1.536,17.969,1.877,26.983,2.482c1.862,0.125,3.567,0.079,3.42,2.781\n\t\tc-0.852,15.679-2.112,31.305-5.59,46.667c-0.223,0.985-0.64,1.926-0.967,2.887c-4.948,5.432-3.572,11.432-1.445,17.417\n\t\tc0.934,2.625,2.234,5.12,3.367,7.673c-0.734,3.964-2.321,7.614-4.288,11.087c-5.459,9.638-15.515,13.113-25.83,9.007\n\t\tc-4.56-1.815-9.211-9.941-9.196-16.117c0.003-1.178,0.129-2.356,0.199-3.533c0.466-5.177-0.462-10.246-1.18-15.333\n\t\tc-0.198-1.401-0.897-2.449-1.937-3.342C412.76,136.079,409.491,130.849,406.403,125.482z\"/>\n\t<g>\n\t\t<path fill=\"#00DBBF\" d=\"M437.223,156.56c-29.832-0.846-56.758-47.582-47.264-64.987c5.925-10.86,23.118-4.965,36.925-20.678\n\t\t\tc12.955-14.743,6.802-30.157,16.247-34.709c11.849-5.71,37.726,10.741,45.787,32.493\n\t\t\tC502.003,103.998,469.673,157.48,437.223,156.56z\"/>\n\t\t<polygon fill=\"#A9FFEE\" points=\"444.46,124.789 428.848,124.789 428.848,74.491 431.703,74.491 431.703,121.934 444.46,121.934 \t\t\n\t\t\t\"/>\n\t</g>\n\t<g>\n\t\t<path fill=\"#00D6B2\" d=\"M495.204,481.535c-2.336-15.329-5.895-30.436-7.42-45.922c-3.756-38.127-2.538-43.506-5.521-65.486\n\t\t\tc-2.362,0.049-4.736,0.274-7.085,0.12c-17.302-1.135-40.619-2.123-57.893-3.602c-14.01-1.2-40.118-1.699-53.936-4.678\n\t\t\tc-13.196,54.472,6.118,183.547,6.118,183.547l49.245-13.715l8.709-75.112l-0.398-0.149\n\t\t\tC449.742,464.891,472.477,473.201,495.204,481.535z\"/>\n\t\t<path fill=\"#00D6B2\" d=\"M506.361,558.214c3.092,21.802,6.245,43.595,9.344,65.396c3.452,24.287,6.896,48.575,10.296,72.87\n\t\t\tc1.105,7.9,2.057,15.821,3.079,23.732c-10.096,0-20.19,0-30.286,0c-7.532-26.312-14.993-48.552-21.157-74.716\n\t\t\tc-5.198-20.781-10.019-58.489-24.216-113.698c-13.594-52.863-25.999-75.112-25.999-75.112l67.782,24.849L506.361,558.214z\"/>\n\t\t<path fill=\"#00D6B2\" d=\"M369.468,545.513c16.415-4.571,32.831-9.143,49.245-13.714c-0.373,6.785-0.666,13.575-1.132,20.354\n\t\t\tc-1.386,20.177-2.936,40.343-4.234,60.525c-0.825,12.822-1.083,25.684-2.007,38.499c-1.658,22.989-2.182,46.028-3.403,69.036\n\t\t\tc-10.392,0-20.784,0-31.177,0l-5.353-79.137C369.563,608.442,368.823,576.526,369.468,545.513\"/>\n\t</g>\n\t<g>\n\t\t<path fill=\"#00FFDA\" d=\"M274.422,188.203l-20.074-42.078c-0.856-1.794-0.253-3.946,1.412-5.034l16.993-11.111\n\t\t\tc2.079-1.359,4.882-0.499,5.838,1.794l16.855,40.375c0.641,1.534,0.257,3.305-0.96,4.438l-13.775,12.814\n\t\t\tC278.749,191.228,275.577,190.623,274.422,188.203z\"/>\n\t\t<path fill=\"#D9FFF8\" d=\"M257.996,148.388l13.417,26.957c1.04,2.088,3.686,2.773,5.607,1.453l11.384-7.82\n\t\t\tc1.508-1.036,2.075-2.992,1.354-4.674L277.7,136.167c-0.961-2.244-3.747-3.031-5.74-1.623l-12.742,9\n\t\t\tC257.671,144.637,257.152,146.693,257.996,148.388z\"/>\n\t\t<path fill=\"#FFFFFF\" d=\"M282.599,179.577l0.013,0.028c0.513,1.14,1.983,1.457,2.919,0.628l1.098-0.971\n\t\t\tc0.597-0.528,0.79-1.377,0.479-2.111l-0.262-0.619c-0.463-1.095-1.822-1.477-2.788-0.784l-0.531,0.38\n\t\t\tC282.437,176.911,282.049,178.353,282.599,179.577z\"/>\n\t</g>\n\t<path fill=\"#D9FFF8\" d=\"M283.102,187.448c1.311,0.385,2.299-1.221,2.574-2.56c0.753-3.676,0.495-8.279,3.714-10.208\n\t\tc0.688-0.413,1.576-0.636,2.288-0.264s1.028,1.205,1.271,1.971c2.284,7.229,3.191,14.89,2.657,22.453\n\t\tc-0.508,7.197-4.29,20.01-12.583,13.911c0,0-3.341-2.615-5.314-4.708C275.735,205.949,283.102,187.448,283.102,187.448z\"/>\n\t<path fill=\"#00FFDA\" d=\"M601.253,271.295c8.878,3.018,24.842,8.919,33.379,8.672c2.53-0.073,5.045-2.897,5.871-6.595\n\t\tc4.03-18.046,15.742-69.018,21.172-88.039c1.127-3.946,0.003-7.792-2.53-8.656c-8.842-3.014-24.841-5.418-33.191-6.362\n\t\tc-2.621-0.296-5.401,2.548-6.316,6.463c-4.357,18.653-15.035,66.316-20.869,85.708C597.567,266.475,598.681,270.42,601.253,271.295\n\t\tz\"/>\n\t<g>\n\t\t<g>\n\t\t\t<path fill=\"#00A585\" d=\"M623.723,180.241c-0.376-0.102-0.555-0.652-0.399-1.229c0.156-0.578,0.587-0.964,0.963-0.862\n\t\t\t\tc3.941,1.062,8.005,1.237,12.309,1.422c6.324,0.271,12.864,0.553,19.487,3.751c0.354,0.171,0.479,0.765,0.279,1.326\n\t\t\t\tc-0.201,0.562-0.65,0.878-1.005,0.706c-6.452-3.115-12.894-3.392-19.123-3.66C631.877,181.507,627.762,181.33,623.723,180.241z\"\n\t\t\t\t/>\n\t\t</g>\n\t\t<g>\n\t\t\t<path fill=\"#00A585\" d=\"M621.634,189.628c-0.373-0.101-0.553-0.645-0.401-1.22c0.152-0.579,0.582-0.97,0.96-0.874\n\t\t\t\tc4.338,1.104,8.685,1.426,12.888,1.738c5.989,0.444,12.182,0.903,18.659,3.584c0.362,0.15,0.504,0.731,0.316,1.298\n\t\t\t\tc-0.187,0.567-0.631,0.902-0.993,0.756c-6.34-2.625-12.457-3.078-18.373-3.517c-4.244-0.314-8.632-0.64-13.049-1.764\n\t\t\t\tC621.639,189.629,621.637,189.629,621.634,189.628z\"/>\n\t\t</g>\n\t\t<g>\n\t\t\t<path fill=\"#00A585\" d=\"M619.546,199.016c-0.371-0.1-0.552-0.638-0.403-1.211c0.148-0.58,0.577-0.975,0.956-0.883\n\t\t\t\tc4.792,1.156,9.253,1.629,13.565,2.087c5.885,0.625,11.442,1.215,17.731,3.384c0.368,0.127,0.527,0.695,0.355,1.267\n\t\t\t\tc-0.173,0.573-0.616,0.931-0.98,0.807c-6.188-2.135-11.696-2.72-17.526-3.339c-4.344-0.461-8.835-0.938-13.686-2.108\n\t\t\t\tC619.554,199.018,619.55,199.017,619.546,199.016z\"/>\n\t\t</g>\n\t\t<g>\n\t\t\t<path fill=\"#00A585\" d=\"M617.458,208.403c-0.369-0.1-0.55-0.633-0.406-1.204c0.146-0.58,0.573-0.979,0.953-0.892\n\t\t\t\tc5.396,1.238,10.049,1.885,14.548,2.51c5.409,0.752,10.521,1.465,16.496,3.113c0.376,0.104,0.554,0.656,0.396,1.233\n\t\t\t\tc-0.157,0.576-0.588,0.959-0.963,0.858c-0.001,0-0.002,0-0.002,0c-5.915-1.637-11-2.341-16.378-3.088\n\t\t\t\tc-4.52-0.628-9.192-1.278-14.628-2.525C617.469,208.406,617.463,208.405,617.458,208.403z\"/>\n\t\t</g>\n\t\t<g>\n\t\t\t<path fill=\"#00A585\" d=\"M615.369,217.791c-0.366-0.099-0.548-0.627-0.407-1.197c0.145-0.581,0.569-0.984,0.95-0.9\n\t\t\t\tc6.885,1.507,12.245,2.425,17.429,3.312c4.341,0.743,8.44,1.444,13.361,2.464c0.388,0.076,0.577,0.614,0.436,1.195\n\t\t\t\tc-0.141,0.581-0.564,0.988-0.947,0.909c-4.905-1.016-8.997-1.716-13.329-2.458c-5.194-0.889-10.565-1.808-17.471-3.32\n\t\t\t\tC615.384,217.794,615.377,217.792,615.369,217.791z\"/>\n\t\t</g>\n\t\t<g>\n\t\t\t<path fill=\"#00A585\" d=\"M613.281,227.178c-0.365-0.099-0.547-0.623-0.408-1.191c0.141-0.581,0.565-0.987,0.947-0.907\n\t\t\t\tc3.186,0.667,6.029,1.282,8.537,1.824c7.958,1.72,13.707,2.962,21.996,4.105c0.387,0.056,0.602,0.57,0.477,1.155\n\t\t\t\tc-0.124,0.584-0.539,1.014-0.927,0.961c-8.323-1.148-14.087-2.394-22.064-4.118c-2.507-0.542-5.349-1.156-8.532-1.823\n\t\t\t\tC613.299,227.183,613.29,227.18,613.281,227.178z\"/>\n\t\t</g>\n\t\t<g>\n\t\t\t<path fill=\"#00A585\" d=\"M611.193,236.565c-0.363-0.098-0.547-0.619-0.41-1.185c0.14-0.582,0.562-0.99,0.945-0.914\n\t\t\t\tc5.12,1.028,9.124,2.032,12.656,2.917c6.011,1.506,10.758,2.696,17.618,3.168c0.395,0.025,0.626,0.523,0.519,1.11\n\t\t\t\tc-0.106,0.586-0.512,1.039-0.904,1.012c-6.943-0.478-11.726-1.676-17.781-3.193c-3.521-0.883-7.514-1.884-12.613-2.908\n\t\t\t\tC611.213,236.571,611.203,236.568,611.193,236.565z\"/>\n\t\t</g>\n\t\t<g>\n\t\t\t<path fill=\"#00A585\" d=\"M609.104,245.953c-0.361-0.098-0.545-0.615-0.411-1.18c0.138-0.582,0.561-0.993,0.943-0.919\n\t\t\t\tc5.79,1.118,9.992,2.334,13.7,3.409c5.474,1.584,9.798,2.837,16.314,2.834c0.398,0,0.648,0.476,0.561,1.062\n\t\t\t\tc-0.089,0.586-0.482,1.062-0.88,1.062c-6.651,0.002-11.031-1.266-16.576-2.872c-3.688-1.068-7.869-2.279-13.618-3.389\n\t\t\t\tC609.127,245.958,609.115,245.956,609.104,245.953z\"/>\n\t\t</g>\n\t\t<g>\n\t\t\t<path fill=\"#00A585\" d=\"M626.283,260.708c-1.636-0.44-3.26-0.979-5.008-1.557c-3.744-1.239-7.986-2.643-14.223-3.803\n\t\t\t\tc-0.385-0.07-0.584-0.601-0.448-1.183c0.136-0.583,0.558-0.997,0.941-0.925c6.298,1.171,10.571,2.586,14.343,3.834\n\t\t\t\tc5.278,1.747,9.093,3.01,15.41,2.569c0.401-0.028,0.671,0.424,0.602,1.01s-0.451,1.084-0.852,1.112\n\t\t\t\tC632.739,262.066,629.49,261.573,626.283,260.708z\"/>\n\t\t</g>\n\t\t<g>\n\t\t\t<path fill=\"#00A585\" d=\"M625.075,270.784c-1.756-0.473-3.483-1.121-5.417-1.845c-3.57-1.338-8.014-3.004-14.69-4.202\n\t\t\t\tc-0.379-0.07-0.587-0.597-0.453-1.18c0.135-0.583,0.556-0.999,0.939-0.93c6.759,1.213,11.246,2.895,14.853,4.246\n\t\t\t\tc4.921,1.845,8.477,3.177,14.64,2.32c0.403-0.056,0.691,0.372,0.642,0.956c-0.051,0.584-0.418,1.103-0.822,1.159\n\t\t\t\tC630.811,271.857,627.906,271.547,625.075,270.784z\"/>\n\t\t</g>\n\t</g>\n\t<path fill=\"#D9FFF8\" d=\"M601.49,273.054c-0.355-0.106-0.72-0.229-0.996-0.476c-1.018-0.912-0.174-2.598,0.819-3.537\n\t\tc2.728-2.578,6.776-4.784,6.719-8.536c-0.012-0.802-0.29-1.675-0.981-2.083c-0.691-0.409-1.566-0.239-2.345-0.041\n\t\tc-7.347,1.868-14.336,5.135-20.481,9.574C578.375,272.18,601.49,273.054,601.49,273.054z\"/>\n\t<path fill=\"#00A585\" d=\"M797.272,1427.09H85.11c-47.005,0-85.11-38.105-85.11-85.11V883.094c0-47.005,38.105-85.11,85.11-85.11\n\t\th712.162c47.006,0,85.11,38.105,85.11,85.11v458.886C882.383,1388.985,844.278,1427.09,797.272,1427.09z\"/>\n\t<path fill=\"#00A585\" d=\"M777.592,587.793H601.902c-24.325,0-44.045-19.72-44.045-44.044v-90.72\n\t\tc0-24.325,19.72-44.044,44.045-44.044h175.689c24.324,0,44.044,19.719,44.044,44.044v90.72\n\t\tC821.636,568.074,801.916,587.793,777.592,587.793z\"/>\n\t<path fill=\"#00DBBF\" d=\"M780.898,574.284H598.595c-14.46,0-26.182-11.722-26.182-26.182v-99.425\n\t\tc0-14.46,11.722-26.182,26.182-26.182h182.304c14.46,0,26.182,11.722,26.182,26.182v99.425\n\t\tC807.08,562.562,795.358,574.284,780.898,574.284z\"/>\n\t<path fill=\"#00A585\" d=\"M672.697,587.793v20.377c0,1.08-0.483,2.104-1.318,2.789l-16.66,10.472\n\t\tc-2.609,2.144-1.108,6.377,2.269,6.397l59.949,0.315c3.395,0.021,4.938-4.229,2.32-6.392l-17.429-11.164\n\t\tc-0.831-0.686-1.312-1.706-1.312-2.782v-20.013H672.697z\"/>\n\t<g>\n\t\t<path fill=\"#00DBBF\" d=\"M189.971,557.663c8.094,0.218,15.653-1.354,22.793-6.117c-10.415-4.279-12.336-5.933-14.335-12.241\n\t\t\tc0.553-0.186,1.11-0.374,1.666-0.56c0.434-0.146,0.868-0.29,1.821-0.608c-5.917-3.909-9.89-8.692-9.961-16.19\n\t\t\tc1.898,0.334,3.501,0.616,5.541,0.975c-5.28-6.83-7.731-13.653-3.229-21.906c3.456,2.905,6.47,5.961,9.984,8.251\n\t\t\tc3.702,2.413,7.781,4.337,11.881,6.026c3.93,1.62,8.045,2.921,12.685,2.832c0.08-1.568,0.125-2.966,0.227-4.361\n\t\t\tc0.916-12.525,15.281-20.324,25.851-13.546c3.86,2.475,6.828,2.411,10.456,0.667c1.098-0.528,2.274-0.893,3.744-1.46\n\t\t\tc0.092,3.601-2.726,5.23-4.111,8.105c2.049-0.44,3.819-0.821,6.352-1.366c-1.287,3.173-3.325,5.088-5.413,6.799\n\t\t\tc-1.757,1.44-2.362,2.99-2.604,5.234c-0.561,5.209-1.154,10.494-2.56,15.517c-3.968,14.177-13.155,23.849-26.933,28.904\n\t\t\tc-13.323,4.89-26.579,4.207-39.565-1.485c-1.565-0.686-3.026-1.607-4.536-2.42C189.807,558.363,189.889,558.013,189.971,557.663z\"\n\t\t\t/>\n\t</g>\n\t<g>\n\t\t<path fill=\"#A9FFEE\" d=\"M757.229,451.45H629.613c-2.762,0-5-2.239-5-5s2.238-5,5-5h127.615c2.762,0,5,2.239,5,5\n\t\t\tS759.99,451.45,757.229,451.45z\"/>\n\t</g>\n\t<g>\n\t\t<path fill=\"#A9FFEE\" d=\"M757.229,475.747H629.613c-2.762,0-5-2.239-5-5s2.238-5,5-5h127.615c2.762,0,5,2.239,5,5\n\t\t\tS759.99,475.747,757.229,475.747z\"/>\n\t</g>\n\t<g>\n\t\t<path fill=\"#A9FFEE\" d=\"M757.229,500.042H629.613c-2.762,0-5-2.239-5-5s2.238-5,5-5h127.615c2.762,0,5,2.239,5,5\n\t\t\tS759.99,500.042,757.229,500.042z\"/>\n\t</g>\n\t<g>\n\t\t<path fill=\"#A9FFEE\" d=\"M757.229,524.339H629.613c-2.762,0-5-2.239-5-5s2.238-5,5-5h127.615c2.762,0,5,2.239,5,5\n\t\t\tS759.99,524.339,757.229,524.339z\"/>\n\t</g>\n\t<g>\n\t\t<path fill=\"#A9FFEE\" d=\"M757.229,548.635H629.613c-2.762,0-5-2.239-5-5s2.238-5,5-5h127.615c2.762,0,5,2.239,5,5\n\t\t\tS759.99,548.635,757.229,548.635z\"/>\n\t</g>\n</g>\n<g id=\"button_x5F_1\">\n\t<g>\n\t\t<circle fill=\"none\" stroke=\"#00A484\" stroke-width=\"20\" stroke-miterlimit=\"10\" cx=\"498.466\" cy=\"60\" r=\"44.571\"/>\n\t</g>\n\t<g opacity=\"0.01\">\n\t\t<circle fill=\"#FFFFFF\" cx=\"498.466\" cy=\"60\" r=\"44.571\"/>\n\t</g>\n</g>\n<g id=\"overlay_x5F_1\">\n\t<g>\n\t\t<circle fill=\"#00A585\" stroke=\"#00A484\" stroke-width=\"20\" stroke-miterlimit=\"10\" cx=\"501.224\" cy=\"60\" r=\"44.571\"/>\n\t</g>\n\t<rect x=\"75.365\" y=\"935.105\" fill=\"none\" width=\"736.409\" height=\"438.035\"/>\n\t<text transform=\"matrix(1.0087 0 0 1 75.3643 967.729)\"><tspan x=\"0\" y=\"0\" fill=\"#FFFFFF\" font-family=\"suisse\" font-weight=\"bold\" font-size=\"45\">Les interventions médiatiques</tspan><tspan x=\"680.299\" y=\"0\" fill=\"#FFFFFF\" font-family=\"'MyriadPro-Regular'\" font-size=\"45\"> </tspan><tspan x=\"689.839\" y=\"0\" fill=\"#FFFFFF\" font-family=\"suisse\" font-weight=\"bold\" font-size=\"45\">: </tspan><tspan x=\"0\" y=\"54\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">la personne est régulièrement  </tspan><tspan x=\"0\" y=\"108\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">interrogée et ses écrits sont cités </tspan><tspan x=\"0\" y=\"162\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">dans les médias. </tspan></text>\n</g>\n<g id=\"button_x5F_2\">\n\t<g>\n\t\t<circle fill=\"none\" stroke=\"#00A484\" stroke-width=\"20\" stroke-miterlimit=\"10\" cx=\"635.593\" cy=\"185.4\" r=\"44.571\"/>\n\t</g>\n\t<g opacity=\"0.01\">\n\t\t<circle fill=\"#FFFFFF\" cx=\"635.593\" cy=\"185.4\" r=\"44.571\"/>\n\t</g>\n</g>\n<g id=\"overlay_x5F_2\">\n\t<g>\n\t\t<circle fill=\"#00A585\" stroke=\"#00A484\" stroke-width=\"20\" stroke-miterlimit=\"10\" cx=\"635.456\" cy=\"185.4\" r=\"44.571\"/>\n\t</g>\n\t<rect x=\"75.365\" y=\"935.105\" fill=\"none\" width=\"736.409\" height=\"438.035\"/>\n\t<text transform=\"matrix(1.0087 0 0 1 75.3643 967.729)\"><tspan x=\"0\" y=\"0\" fill=\"#FFFFFF\" font-family=\"suisse\" font-weight=\"bold\" font-size=\"45\">Les diplômes</tspan><tspan x=\"299.472\" y=\"0\" fill=\"#FFFFFF\" font-family=\"'MyriadPro-Regular'\" font-size=\"45\"> </tspan><tspan x=\"309.012\" y=\"0\" fill=\"#FFFFFF\" font-family=\"suisse\" font-weight=\"bold\" font-size=\"45\">: </tspan><tspan x=\"331.376\" y=\"0\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">la personne pos</tspan><tspan x=\"663.423\" y=\"0\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">-</tspan><tspan x=\"0\" y=\"54\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">sède un diplôme de référence </tspan><tspan x=\"0\" y=\"108\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">dans le domaine traité.  </tspan></text>\n</g>\n<g id=\"button_x5F_3\">\n\t<g>\n\t\t<circle fill=\"none\" stroke=\"#00A484\" stroke-width=\"20\" stroke-miterlimit=\"10\" cx=\"273.831\" cy=\"156.572\" r=\"44.571\"/>\n\t</g>\n\t<g opacity=\"0.01\">\n\t\t<circle fill=\"#FFFFFF\" cx=\"274.857\" cy=\"159.898\" r=\"44.571\"/>\n\t</g>\n</g>\n<g id=\"overlay_x5F_3\">\n\t<g>\n\t\t<circle fill=\"#00A585\" stroke=\"#00A484\" stroke-width=\"20\" stroke-miterlimit=\"10\" cx=\"273.831\" cy=\"156.572\" r=\"44.571\"/>\n\t</g>\n\t<rect x=\"75.365\" y=\"935.105\" fill=\"none\" width=\"736.409\" height=\"438.035\"/>\n\t<text transform=\"matrix(1.0087 0 0 1 75.3643 967.729)\"><tspan x=\"0\" y=\"0\" fill=\"#FFFFFF\" font-family=\"suisse\" font-weight=\"bold\" font-size=\"45\">Les publications</tspan><tspan x=\"368.319\" y=\"0\" fill=\"#FFFFFF\" font-family=\"'MyriadPro-Regular'\" font-size=\"45\"> </tspan><tspan x=\"377.859\" y=\"0\" fill=\"#FFFFFF\" font-family=\"suisse\" font-weight=\"bold\" font-size=\"45\">: </tspan><tspan x=\"400.224\" y=\"0\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">la personne a </tspan><tspan x=\"0\" y=\"54\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">publié ses connaissances sous </tspan><tspan x=\"0\" y=\"108\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">forme de livres, d’articles scienti</tspan><tspan x=\"665.582\" y=\"108\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">-</tspan><tspan x=\"0\" y=\"162\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">fiques ou d’articles de presse. Elle </tspan><tspan x=\"0\" y=\"216\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">a participé à des conférences, des </tspan><tspan x=\"0\" y=\"270\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">colloques ou donné des cours ou </tspan><tspan x=\"0\" y=\"324\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">des workshops. </tspan></text>\n</g>\n<g id=\"button_x5F_4\">\n\t<g>\n\t\t<circle fill=\"none\" stroke=\"#00A484\" stroke-width=\"20\" stroke-miterlimit=\"10\" cx=\"353.836\" cy=\"386.586\" r=\"44.571\"/>\n\t</g>\n</g>\n<g id=\"overlay_x5F_4\">\n\t<g>\n\t\t<circle fill=\"#00A585\" stroke=\"#00A484\" stroke-width=\"20\" stroke-miterlimit=\"10\" cx=\"353.836\" cy=\"386.586\" r=\"44.571\"/>\n\t</g>\n\t<rect x=\"75.365\" y=\"935.105\" fill=\"none\" width=\"736.409\" height=\"438.035\"/>\n\t<text transform=\"matrix(1.0087 0 0 1 75.3643 967.729)\"><tspan x=\"0\" y=\"0\" fill=\"#FFFFFF\" font-family=\"suisse\" font-weight=\"bold\" font-size=\"45\">L’expérience</tspan><tspan x=\"292.046\" y=\"0\" fill=\"#FFFFFF\" font-family=\"'MyriadPro-Regular'\" font-size=\"45\"> </tspan><tspan x=\"301.585\" y=\"0\" fill=\"#FFFFFF\" font-family=\"suisse\" font-weight=\"bold\" font-size=\"45\">: </tspan><tspan x=\"323.95\" y=\"0\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">la personne a de </tspan><tspan x=\"0\" y=\"54\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">nombreuses expériences dans le </tspan><tspan x=\"0\" y=\"108\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">domaine. </tspan></text>\n</g>\n<g id=\"button_x5F_5\">\n\t<g>\n\t\t<circle fill=\"none\" stroke=\"#00A484\" stroke-width=\"20\" stroke-miterlimit=\"10\" cx=\"734.436\" cy=\"421.397\" r=\"44.571\"/>\n\t</g>\n\t<g opacity=\"0.01\">\n\t\t<circle fill=\"#FFFFFF\" cx=\"734.436\" cy=\"421.397\" r=\"44.571\"/>\n\t</g>\n</g>\n<g id=\"overlay_x5F_5\">\n\t<g>\n\t\t<circle fill=\"#00A585\" stroke=\"#00A484\" stroke-width=\"20\" stroke-miterlimit=\"10\" cx=\"734.436\" cy=\"422.495\" r=\"44.571\"/>\n\t</g>\n\t<rect x=\"75.365\" y=\"935.105\" fill=\"none\" width=\"736.409\" height=\"438.035\"/>\n\t<text transform=\"matrix(1.0087 0 0 1 75.3643 967.729)\"><tspan x=\"0\" y=\"0\" fill=\"#FFFFFF\" font-family=\"suisse\" font-weight=\"bold\" font-size=\"45\">CV en ligne </tspan><tspan x=\"0\" y=\"54\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">Réseaux sociaux professionnels </tspan><tspan x=\"0\" y=\"108\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">(LinkedIn, ResearchGate) </tspan><tspan x=\"0\" y=\"216\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">Site personnel, blog, site internet </tspan><tspan x=\"0\" y=\"270\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">de l’employeur </tspan></text>\n</g>\n<g id=\"button_x5F_6\">\n\t<g>\n\t\t<circle fill=\"none\" stroke=\"#00A484\" stroke-width=\"20\" stroke-miterlimit=\"10\" cx=\"185.959\" cy=\"498.389\" r=\"44.571\"/>\n\t</g>\n\t<g opacity=\"0.01\">\n\t\t<circle fill=\"#FFFFFF\" cx=\"185.959\" cy=\"498.389\" r=\"44.571\"/>\n\t</g>\n</g>\n<g id=\"overlay_x5F_6\">\n\t<g>\n\t\t<circle fill=\"#00A585\" stroke=\"#00A484\" stroke-width=\"20\" stroke-miterlimit=\"10\" cx=\"185.959\" cy=\"498.389\" r=\"44.571\"/>\n\t</g>\n\t<rect x=\"75.365\" y=\"935.105\" fill=\"none\" width=\"736.409\" height=\"438.035\"/>\n\t<text transform=\"matrix(1.0087 0 0 1 75.3643 967.729)\"><tspan x=\"0\" y=\"0\" fill=\"#FFFFFF\" font-family=\"suisse\" font-weight=\"bold\" font-size=\"45\">Twitter </tspan><tspan x=\"0\" y=\"54\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">Identifie les utilisatrices, utilisa</tspan><tspan x=\"628.409\" y=\"54\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">-</tspan><tspan x=\"0\" y=\"108\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">teurs qui interviennent le plus sur </tspan><tspan x=\"0\" y=\"162\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">un sujet donné grâce aux hash</tspan><tspan x=\"631.428\" y=\"162\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">-</tspan><tspan x=\"0\" y=\"216\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">tags. </tspan><tspan x=\"0\" y=\"324\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">Vérifie leur légitimité. </tspan></text>\n</g>\n<g id=\"button_x5F_7\">\n\t<g>\n\t\t<circle fill=\"none\" stroke=\"#00A484\" stroke-width=\"20\" stroke-miterlimit=\"10\" cx=\"612.826\" cy=\"574.284\" r=\"44.571\"/>\n\t</g>\n\t<g opacity=\"0.01\">\n\t\t<circle fill=\"#FFFFFF\" cx=\"612.826\" cy=\"574.284\" r=\"44.571\"/>\n\t</g>\n</g>\n<g id=\"overlay_x5F_7\">\n\t<g>\n\t\t<circle fill=\"#00A585\" stroke=\"#00A484\" stroke-width=\"20\" stroke-miterlimit=\"10\" cx=\"612.826\" cy=\"574.284\" r=\"44.571\"/>\n\t</g>\n\t<rect x=\"75.365\" y=\"935.105\" fill=\"none\" width=\"736.409\" height=\"438.035\"/>\n\t<text transform=\"matrix(1.0087 0 0 1 75.3643 967.729)\"><tspan x=\"0\" y=\"0\" fill=\"#FFFFFF\" font-family=\"suisse\" font-weight=\"bold\" font-size=\"45\">Publications scientifiques </tspan><tspan x=\"0\" y=\"54\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">Recherche des publications scien</tspan><tspan x=\"700.006\" y=\"54\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">-</tspan><tspan x=\"0\" y=\"108\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">tifiques sur des moteurs dédiés </tspan><tspan x=\"0\" y=\"162\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">(PubMed, Google Scholar, etc). </tspan><tspan x=\"0\" y=\"270\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">Identifie les autrices, auteurs les </tspan><tspan x=\"0\" y=\"324\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">plus cités. </tspan></text>\n</g>\n<g id=\"button_x5F_8\">\n\t<g>\n\t\t<circle fill=\"none\" stroke=\"#00A484\" stroke-width=\"20\" stroke-miterlimit=\"10\" cx=\"358.738\" cy=\"735.617\" r=\"44.571\"/>\n\t</g>\n\t<g opacity=\"0.01\">\n\t\t<circle fill=\"#FFFFFF\" cx=\"358.738\" cy=\"735.617\" r=\"44.571\"/>\n\t</g>\n</g>\n<g id=\"overlay_x5F_8\">\n\t<g>\n\t\t<circle fill=\"#00A585\" stroke=\"#00A484\" stroke-width=\"20\" stroke-miterlimit=\"10\" cx=\"359.702\" cy=\"738.212\" r=\"44.571\"/>\n\t</g>\n\t<rect x=\"75.365\" y=\"875.295\" fill=\"none\" width=\"736.409\" height=\"637.271\"/>\n\t<text transform=\"matrix(1.0087 0 0 1 75.3647 907.9214)\"><tspan x=\"0\" y=\"0\" fill=\"#FFFFFF\" font-family=\"suisse\" font-weight=\"bold\" font-size=\"45\">Séminaires et congrès </tspan><tspan x=\"0\" y=\"54\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">Identifie les événements dont le </tspan><tspan x=\"0\" y=\"108\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">thème principal correspond à ton </tspan><tspan x=\"0\" y=\"162\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">sujet d’étude. </tspan><tspan x=\"0\" y=\"270\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">Regarde qui sont les </tspan><tspan x=\"0\" y=\"324\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">intervenant·e·s </tspan><tspan x=\"0\" y=\"432\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">Vérifie leur légitimité.</tspan></text>\n</g>\n<g id=\"button_x5F_9\">\n\t<g>\n\t\t<circle fill=\"none\" stroke=\"#00A484\" stroke-width=\"20\" stroke-miterlimit=\"10\" cx=\"811.773\" cy=\"587.793\" r=\"44.571\"/>\n\t</g>\n\t<g opacity=\"0.01\">\n\t\t<circle fill=\"#FFFFFF\" cx=\"811.773\" cy=\"587.793\" r=\"44.571\"/>\n\t</g>\n</g>\n<g id=\"overlay_x5F_9\">\n\t<g>\n\t\t<circle fill=\"#00A585\" stroke=\"#00A484\" stroke-width=\"20\" stroke-miterlimit=\"10\" cx=\"811.773\" cy=\"587.793\" r=\"44.571\"/>\n\t</g>\n\t<rect x=\"75.365\" y=\"875.295\" fill=\"none\" width=\"736.409\" height=\"637.271\"/>\n\t<text transform=\"matrix(1.0087 0 0 1 75.3647 907.9214)\"><tspan x=\"0\" y=\"0\" fill=\"#FFFFFF\" font-family=\"suisse\" font-weight=\"bold\" font-size=\"45\">Interventions médiatiques </tspan><tspan x=\"0\" y=\"54\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">Recherche des articles, interviews </tspan><tspan x=\"0\" y=\"108\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">sur ton sujet d’étude. </tspan><tspan x=\"0\" y=\"216\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">Identifie les professionnel·le·s les </tspan><tspan x=\"0\" y=\"270\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">plus interrogé·e·s. </tspan><tspan x=\"0\" y=\"378\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">Vérifie leur légitimité. </tspan></text>\n</g>\n</svg>",
+          "modules": [
+            "rec3Uzws3khrczr4D"
+          ],
+          "html": "<p>C’est une personne expérimentée et&nbsp;compétente dans un&nbsp;domaine donné. Elle peut présenter des recommandations, un&nbsp;avis, une analyse voire même des solutions. Elle est reconnue dans son milieu.</p>\n",
+          "index": "2"
+        },
+        {
+          "airtable_id": "recT89iicBP08J498",
+          "sources": "<h2 id=\"sources\">Sources</h2>\n<p>HAESEN, Stéphanie, 2019. _Bruit et silence documentaire _[document PowerPoint]. Octobre 2019. Support de cours : Cours “La recherche d’information”, Haute école de gestion de Genève, filière Information documentaire, année académique 2019-2020 </p>\n",
+          "title": "Trouver des chiffres fiables",
+          "id": "16",
+          "type": "MARKDOWN",
+          "cover": "https://dl.airtable.com/.attachments/00878ee7c55c9220f7f877959675a1db/daf5e216/M3_3_cover.svg",
+          "quiz": "<h2 id=\"quizz\">QUIZZ&#8201;:</h2>\n<p>Quelle est la&nbsp;base de&nbsp;données statistiques concernant l’Europe&#8201;?</p>\n<div class=\"question\">\n    <button class=\"quiz-btn\">Open Data Swiss</button>\n    <button class=\"quiz-btn\" data-correct-answer>Eurostat</button>\n    <button class=\"quiz-btn\">OCDE</button>\n    <button class=\"quiz-btn\">International Monetary Fund Data</button>\n</div>\n\n<p>Quelle est la&nbsp;base de&nbsp;données statistiques sur des questions économiques internationales&#8201;?</p>\n<div class=\"question\">\n    <button class=\"quiz-btn\">Open Data Swiss</button>\n    <button class=\"quiz-btn\">Eurostat</button>\n    <button class=\"quiz-btn\">OCDE</button>\n    <button class=\"quiz-btn\" data-correct-answer>International Monetary Fund Data</button>\n</div>\n\n\n\n\n<p>Quelle est la&nbsp;base de&nbsp;données ouvertes de&nbsp;l’administration publique Suisse&#8201;?</p>\n<div class=\"question\">\n    <button class=\"quiz-btn\" data-correct-answer>Open Data Swiss</button>\n    <button class=\"quiz-btn\">Eurostat</button>\n    <button class=\"quiz-btn\">OCDE</button>\n    <button class=\"quiz-btn\">International Monetary Fund Data</button>\n</div>\n",
+          "modules": [
+            "rec3Uzws3khrczr4D"
+          ],
+          "html": "<h1 id=\"trouver-des-chiffres-fiables\">Trouver des chiffres fiables</h1>\n<p>Les chiffres sont des outils essentiels pour démontrer et&nbsp;appuyer des propos. Ils peuvent également servir à donner une vue d’ensemble sur l’état d’une question.  </p>\n<p>On&nbsp;peut trouver des chiffres concernant des <span class=\"_definition\" data-definition-id=\"donnees_factuelles\">données factuelles</span> dans des statistiques, des études, ou&nbsp;encore des sondages.\n&#8201;<img src=\"https://dl.airtable.com/.attachments/c76a6560b91cacc3fec8559efcd8b68c/5726766e/M3_3_illustration.svg\" alt=\"alt\"></p>\n<p>Les chiffres fiables se&nbsp;trouvent sur des bases de&nbsp;données officielles d’institutions de&nbsp;référence. Voici quelques exemples&#8201;:  </p>\n<p><span class=\"_definition\" data-definition-id=\"bdno\">Bases de&nbsp;données des Nations Unies</span></p>\n<p><span class=\"_definition\" data-definition-id=\"imfd\">International Monetary Fund Data</span></p>\n<p><span class=\"_definition\" data-definition-id=\"ofs\">Office fédéral de&nbsp;la statistique</span></p>\n<p><span class=\"_definition\" data-definition-id=\"ods\">Open data swiss</span></p>\n<p><span class=\"_definition\" data-definition-id=\"eurostat\">Eurostat</span></p>\n<p><span class=\"_definition\" data-definition-id=\"gpde\">Google Public Data Explorer</span></p>\n<p><span class=\"_definition\" data-definition-id=\"ocde\">OCDE</span></p>\n",
+          "index": "3"
+        },
+        {
+          "airtable_id": "recmyika1DK8hBr9K",
+          "title": "Qu’est-ce qu’une fake news&#8201;?",
+          "id": "17",
+          "type": "PODCAST",
+          "media": "https://dl.airtable.com/.attachments/1fe8dbc2044705a926816e5eea3e4150/b0c58f35/M03S04_podcast.mp3",
+          "sources": "<h2 id=\"sources\">Sources</h2>\n<p>KIELY, Eugene et ROBERTSON, Lori, 2016. _How to Spot Fake News. FactCheck _[en ligne].18 novembre 2016. [Consulté le 23 septembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.factcheck.org/2016/11/how-to-spot-fake-news/\">lien</a></p>\n<p>SERRES, Alexandre, 2012._ Dans le labyrinthe : évaluer l&#39;information sur Internet_. Caen : C&amp;F Editions. 224 p. ISBN : 9782915825220 </p>\n<p>GUÉNIAT, Marc, 2020. «Les géants du numérique deviennent les arbitres de la liberté d’expression». [en ligne]. 16 décembre 2020. [Consulté le 2 janvier 2021]. Disponible à l’adresse : /economie/les-reseaux-sociaux-mettent-les-internautes-dans-des-bulles-d-enfermement-culturelles </p>\n<p>Pour aller plus loin : </p>\n<p>Bande dessinées Le Monde </p>\n<p>Cette bande-dessinée a été réalisée par l’équipe de fact-checking Aos Fatos, en partenariat avec l’International Fact-Checking Network de l’Institut Poynter. Elle a été traduite en français par Les Décodeurs du Monde” </p>\n",
+          "modules": [
+            "rec3Uzws3khrczr4D"
+          ],
+          "index": "4"
+        },
+        {
+          "airtable_id": "recBc9mfANTp8y4lx",
+          "title": "Comment lutter contre les fake news&#8201;? ",
+          "id": "18",
+          "type": "VIDEO",
+          "cover": "https://dl.airtable.com/.attachments/fcb6faf29331656f8ff7413ba974959f/a7d5d310/M3_5_cover.svg",
+          "sources": "<h2 id=\"sources\">Sources</h2>\n<p>BIBLIOTHEQUE DU RESEAU DE L’UNIVERSITE DU QUEBEC, 2010. <em>Si c’est écrit, c’est vrai ?</em> [enregistrement vidéo]. YouTube [en ligne]. 22 décembre 2010. [Consulté le 24 septembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.youtube.com/watch?v=lXwgv8kq6rA&amp;feature=emb_logo\">lien</a>\n<em>Comment améliorer son esprit critique</em>. wikiHow [en ligne]. [Consulté le 25 septembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://fr.wikihow.com/am%C3%A9liorer-son-esprit-critique\">lien</a></p>\n<p>CULOT, Martin, 2019._ La critique de l’information en cinq approches._ Média Animation asbl [en ligne]. 24 décembre 2019. [Consulté le 25 septembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://media-animation.be/La-critique-de-l-information-en-cinq-approches.html\">lien</a></p>\n<p>EDUSCOL, 2018. <em>Éducation aux médias et à l’information : former l’esprit critique des élèves</em>. Eduscol [en ligne]. 10 janvier 2018. [Consulté le 23 septembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://eduscol.education.fr/cid107295/former-l-esprit-critique-des-eleves.html\">lien</a></p>\n<p>KIELY, Eugene et ROBERTSON, Lori, 2016. _How to Spot Fake News. FactCheck _[en ligne]. Publié le 18 novembre 2016. [Consulté le 23 septembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.factcheck.org/2016/11/how-to-spot-fake-news/\">lien</a></p>\n<p>PEREIRA, Irène, 2016. <em>Développer l’esprit critique : un enjeu à l’ère du numérique</em>. Le Courrier [en ligne]. 10 juin 2016. [Consulté le 23 septembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://lecourrier.ch/2016/06/10/developper-lesprit-critique-un-enjeu-a-lere-du-numerique/\">lien</a></p>\n<p>PIERRE, Sylvie, 2018. <em>Former à l’esprit critique : une arme efficace contre les fake news</em>. The Conversation [en ligne]. 8 février 2018. [Consulté le 24 septembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"http://theconversation.com/former-a-lesprit-critique-une-arme-efficace-contre-les-fake-news-91438\">lien</a></p>\n<p>SERRES, Alexandre, 2012. <em>Dans le labyrinthe : évaluer l&#39;information sur Internet</em>. Caen : C&amp;F Editions. 224 p. ISBN : 9782915825220 </p>\n<p>Weasel word. Wikipédia : l’encyclopédie libre [en ligne]. Dernière modification de la page le 31 octobre 2020 à 15:23 (UTC). [Consulté le 15 novembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://en.wikipedia.org/w/index.php?title=Weasel_word&amp;oldid=986390514\">lien</a></p>\n<p>Bande dessinées Le Monde </p>\n<p>Cette bande-dessinée a été réalisée par l’équipe de fact-checking Aos Fatos, en partenariat avec l’International Fact-Checking Network de l’Institut Poynter. Elle a été traduite en français par Les Décodeurs du Monde </p>\n<p>« Fred se méfie des fausses infos » : une BD pour apprendre à vérifier l’information, 2018. Le Monde.fr [en ligne]. [Consulté le 2 janvier 2021]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.lemonde.fr/les-decodeurs/article/2018/04/05/fred-se-mefie-des-fausses-infos-une-bd-pour-apprendre-a-verifier-l-information_5281240_4355770.html\">lien</a></p>\n<p>Sources des définitions </p>\n<p>Fake News et désinformation : </p>\n<p>Le petit lexique de l’information et la désinformation. rts.ch [en ligne]. 3 mars 2017. [Consulté le 2 janvier 2021]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.rts.ch/decouverte/monde-et-societe/economie-et-politique/information-et-desinformation/8432556-le-petit-lexique-de-linformation-et-la-desinformation.html\">lien</a></p>\n<p>Bulle de filtre : </p>\n<p>Bulle. Wikipédia [en ligne]. [Consulté le 2 janvier 2021]. Disponible à l’adresse : <a target='_blank'  href=\"https://fr.wikipedia.org/w/index.php?title=Bulle&amp;oldid=174898501\">lien</a> </p>\n",
+          "media": "https://dl.airtable.com/.attachments/141b11dc066c170e0a6728da05e17958/9a238615/M03S05_video.mp4",
+          "modules": [
+            "rec3Uzws3khrczr4D"
+          ],
+          "index": "5"
         }
       ]
     },
@@ -1840,21 +2612,56 @@
       "title": "Utiliser l'information",
       "lessons": [
         {
-          "airtable_id": "recPsLd9VsWKVHoNn",
-          "title": "Qu’est-ce qu’une information&#8201;?",
-          "description": "my lesson description",
-          "cover": "https://dl.airtable.com/.attachments/d5c2d920748b250707c88aaf80af456f/9820ea2c/M1_1_cover.svg",
-          "type": "MARKDOWN",
+          "airtable_id": "recIkTTlRs4s3yC02",
+          "title": "Lutter contre le&nbsp;plagiat",
+          "type": "PODCAST",
+          "id": "19",
+          "sources": "<h2 id=\"sources\">Sources</h2>\n<p>DOLLFUSS, Helmut et MILJKOVIĆ, Natascha, 2015. <em>Plagiate finden und vermeiden</em>. GMS Medizin [en ligne]. Août 2015. Vol. 15, n° 3, pp. 1‑2. [Consulté le 29 septembre 2020]. Disponible à l’adresse: <a target='_blank'  href=\"https://www.researchgate.net/publication/306473426_Plagiate_finden_und_vermeiden\">lien</a></p>\n<p>HAUTE ECOLE DE GESTION (GENEVE). Infothèque, 2020. <em>Rédaction d’une bibliographie et méthodes de citation : guide pratique</em> [PDF]. Version 4.4. Genève : HEG, Infothèque. [Consulté le 24 septembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.hesge.ch/heg/sites/default/files/guide_ref.pdf\">lien</a></p>\n<p>HAUTE ECOLE DE GESTION (GENEVE), 2014. Plagiat [en ligne]. 7 mars 2014. [Consulté le 24 septembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.hesge.ch/heg/infotheque/boite-outils/guides-linfotheque/plagiat\">lien</a></p>\n<p>MAUREL-INDART, Hélène, [sans date]. Plagiat. Encyclopædia Universalis [en ligne]. [Consulté le 24 septembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.universalis.fr/encyclopedie/plagiat/\">https://www.universalis.fr/encyclopedie/plagiat/</a> </p>\n<p>LAROUSSE, Éditions, [sans date]. Définitions : plagiat. Dictionnaire de français Larousse [en ligne]. [Consulté le 24 septembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.larousse.fr/dictionnaires/francais/plagiat/61301\">lien</a></p>\n<p>Plagiat, 2020. Wikipédia : l’encyclopédie libre [en ligne]. Dernière modification de la page le 3 novembre 2020 à 21:44. [Consulté le 24 septembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://fr.wikipedia.org/w/index.php?title=Plagiat&amp;oldid=173882038\">lien</a></p>\n<p>Un logiciel détecteur de plagiat pourrait révolutionner le milieu académique [émission radio]. Play RTS [en ligne]. 24 février 2016. [Consulté le 24 septembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.rts.ch/play/radio/forum/audio/un-logiciel-detecteur-de-plagiat-pourrait-revolutionner-le-milieu-academique?id=7501534\">lien</a></p>\n<p>UNIVERSITY OF BERGEN. UIB. Et plagieringseventyr [enregistrement vidéo]. Youtube [en ligne]. 27 mai 2010. [Consulté le 29 septembre 2020]. Disponible à l’adresse suivante : <a target='_blank'  href=\"http://www.youtube.com/watch?v=Mwbw9KF-ACY\">lien</a></p>\n<p>Document à consulter :  </p>\n<p><a target='_blank'  href=\"https://www.youtube.com/watch?v=Mwbw9KF-ACY&amp;feature=youtu.be\">lien</a></p>\n<p><a target='_blank'  href=\"https://infotrack.unige.ch/les-usages-en-matiere-de-citation\">lien</a></p>\n",
+          "media": "https://dl.airtable.com/.attachments/2d2f605d92fee1b737cbeada2737bf2a/bd848fe1/M04S01_podcast.mp3",
           "modules": [
-            "recKefWoiBrgzqAyQ",
-            "rec3Uzws3khrczr4D",
             "recL96730JlAeJJXd"
           ],
-          "id": "1",
-          "sources": "<p> BODER, Alexandre, 2019. <em>Théorie I [document PDF]</em>. Support de cours : Cours Systèmes d’information documentaires, Haute École de Gestion de Genève, filière Information documentaire, année académique 2019-2020 </p>\n<p>HAESEN, Stéphanie, <em>2019. Introduction - 1ère partie</em> [support PowerPoint]. Support de cours : Cours “Recherche d’information”, Haute École de Gestion de Genève, filière Information documentaire, année académique 2019-2020 </p>\n<p>LAROUSSE, Éditions. <em>Définitions : information. Larousse</em> [en ligne]. [Consulté le 2 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.larousse.fr/dictionnaires/francais/information/42993\">lien</a></p>\n<p>LES DÉCODEURS, 2017. _Décodex : qu’est-ce qu’une information ? _Le Monde.fr [en ligne]. 23 janvier 2017. [Consulté le 6 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.lemonde.fr/les-decodeurs/article/2017/01/23/decodex-qu-est-ce-qu-une-information_5067721_4355770.html\">lien</a>\nROMAGNI, Patrick et WILD, Valérie, 1998. <em>L’intelligence économique au service de l’entreprise</em>. Paris : LPM. 219 p. ISBN 978-2878453317</p>\n",
-          "quiz": "<h2 id=\"quizz-dequel-type-dinformation-sagit-il-\">QUIZZ&#8201;: De&nbsp;quel type d’information s’agit-il &#8201;?</h2>\n<p>Les informations concernant tes propres paiements bancaires (via ebanking), ta&nbsp;commande Zalando ou&nbsp;ta thèse universitaire&#8201;?</p>\n<div class=\"question\">\n    <button class=\"quiz-btn\">Blanche</button>\n    <button class=\"quiz-btn\" data-correct-answer>Grise</button>\n    <button class=\"quiz-btn\">Noire</button>\n</div>\n\n<p>Les information des codes de&nbsp;la bombe atomique (à moindre d&#39;être président des usa), données de&nbsp;carte bleue volées ou&nbsp;des comptes Twitter piratés&#8201;?</p>\n<div class=\"question\">\n    <button class=\"quiz-btn\">Blanche</button>\n    <button class=\"quiz-btn\">Grise</button>\n    <button class=\"quiz-btn\" data-correct-answer>Noire</button>\n</div>\n\n<p>Les horaires des trains CFF (en gare ou&nbsp;sur site web), publicités sur les bords des routes ou&nbsp;encore le&nbsp;prix des bananes à la&nbsp;Coop&#8201;?</p>\n<div class=\"question\">\n    <button class=\"quiz-btn\" data-correct-answer>Blanche</button>\n    <button class=\"quiz-btn\">Grise</button>\n    <button class=\"quiz-btn\">Noire</button>\n</div>",
-          "html": "<h1 id=\"quest-ce-quune-information\">QU&#39;EST-CE QU&#39;UNE INFORMATION&#8201;?</h1>\n<p>L&#39;information est un&nbsp;terme ayant de&nbsp;nombreux sens, alors mettons-nous d&#39;accord sur une définition simple.\n&#8201;<img src=\"https://dl.airtable.com/.attachments/bf97741c297cb2615467b09e0ed82194/3c30e304/M01_illustrations-11.svg\" alt=\"alt\"></p>\n<p>Une information, c&#39;est de&nbsp;la communication communiquée.  </p>\n<p>Il&nbsp;existe trois type d&#39;informations&#8201;:\n&#8201;<img data-size=\"40%\"  src=\"https://dl.airtable.com/.attachments/2a27c59553718d953d1647b94c30cc3d/43637854/M01_illustrations-12.svg\" alt=\"40%\"></p>\n<ul>\n<li>Blanche&#8201;: son accès est facile et&nbsp;licite. Elle représente le&nbsp;80% de&nbsp;l&#39;information mondiale.</li>\n</ul>\n<p>&#8201;<img data-size=\"40%\"  src=\"https://dl.airtable.com/.attachments/1a047dda5986efd2c036ec0f2a31117c/f2d9b132/M01_illustrations-13.svg\" alt=\"40%\"></p>\n<ul>\n<li>Grise&#8201;: son accès est licite, mais elle est plus difficile à trouver (nécessité d&#39;un login, connaissance de&nbsp;l&#39;existence de&nbsp;la base de&nbsp;données, etc.). Elle représente le&nbsp;10-15% de&nbsp;l&#39;information mondiale.</li>\n</ul>\n<p>&#8201;<img data-size=\"40%\"  src=\"https://dl.airtable.com/.attachments/f31453e399b06e06ef5c19947b63d6b0/358b007e/M01_illustrations-14.svg\" alt=\"40%\"></p>\n<ul>\n<li>Noire&#8201;: son accès est très limité et&nbsp;protégé. Ce&nbsp;type d&#39;information est obtenu par des moyens illégaux (espionnage industriel, chantage etc.). Elle représente le&nbsp;5-10% de&nbsp;l&#39;information mondiale.</li>\n</ul>\n",
           "index": "1"
+        },
+        {
+          "airtable_id": "recu250dd3Y6SOiMq",
+          "title": "Créer une bibliographie",
+          "id": "20",
+          "type": "VIDEO",
+          "cover": "https://dl.airtable.com/.attachments/196dd507243e1861eef83a88dab86aff/0a9d28de/M4_2_cover.svg",
+          "sources": "<h2 id=\"sources\">Sources</h2>\n<p>HAUTE ECOLE DE GESTION (GENEVE). Infothèque, 2020. <em>Rédaction d’une bibliographie et méthodes de citation : guide pratique</em> [PDF]. Version 4.4. Genève : HEG, Infothèque. [Consulté le 24 septembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.hesge.ch/heg/sites/default/files/guide_ref.pdf\">lien</a></p>\n<p>HAUTE ECOLE D’INGENIEURIE ET DE GESTION (VAUD). Bibliothèque, 2018. <em>Méthode de citation et de rédaction d’une bibliographie : guide pratique</em> [PDF]. Version 2. Vaud: HEIG Vaud, bibliothèque. [Consulté le 14 novembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"http://biblio.heig-vd.ch/docs/default-source/default-document-library/guide-de-bibliographie-en-ing%C3%A9nierie---vdef_2018.pdf?sfvrsn=0\">lien</a></p>\n<p>LE BLOG ZOTERO EN LIGNE, 2020. Hypotheses.org [en ligne]. 12 octobre 2020. [Consulté le 15 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://zotero.hypotheses.org/\">lien</a></p>\n<p>ZOTERO, [sans date]. Zotero : documentation [en ligne]. [Consulté le 10 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.zotero.org/support/fr/quick_start_guide\">lien</a></p>\n",
+          "media": "https://dl.airtable.com/.attachments/70d2ad898ce5ab3d1d426d172257fad3/63743c5c/M04S02_video.mp4",
+          "modules": [
+            "recL96730JlAeJJXd"
+          ],
+          "index": "2"
+        },
+        {
+          "airtable_id": "recS53QrqBJS13C23",
+          "title": "Comment citer ses sources dans le&nbsp;texte&#8201;? ",
+          "id": "21",
+          "type": "MARKDOWN",
+          "cover": "https://dl.airtable.com/.attachments/10225ec27350ade8e3a51eef07ac3d20/f00fe2c6/M4_3_cover.svg",
+          "sources": "<h2 id=\"sources\">Sources</h2>\n<p>HAUTE ECOLE DE GESTION (GENEVE). Infothèque, 2020. <em>Rédaction d’une bibliographie et méthodes de citation : guide pratique</em> [PDF]. Version 4.4. Genève : HEG, Infothèque. [Consulté le 24 septembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.hesge.ch/heg/sites/default/files/guide_ref.pdf\">lien</a></p>\n<p>Scribbr, [sans date], <em>Les normes APA : tout ce que vous devez savoir !</em>, [en ligne], 7e éd., Scribr.fr, [sans date], [Consulté le 12 octobre 2020], disponible à l’adresse:  <a target='_blank'  href=\"https://www.scribbr.fr/category/normes-apa/\">lien</a></p>\n<p>UNIVERSITÉ DE MONTRÉAL, [ca. 2014]. _Bien paraphraser. Intégrité, fraude et plagiat _[en ligne]. [ca. 2014]. [Consulté le 4.11.2015]. Disponible à l’adresse : <a target='_blank'  href=\"http://www.integrite.umontreal.ca/pratiques/paraphraser.html\">lien</a></p>\n",
+          "modules": [
+            "recL96730JlAeJJXd"
+          ],
+          "quiz": "<h2 id=\"quizz\">QUIZZ</h2>\n<p>La&nbsp;citation a&nbsp;3 objectifs. Parmi les suivants, lequel n&#39;en fait pas partie&#8201;? </p>\n<div class=\"question\">\n    <button class=\"quiz-btn\">Étayer, illustrer, ou&nbsp;appuyer ton analyse ou&nbsp;ta réflexion</button>\n    <button class=\"quiz-btn\">Distinguer clairement ta&nbsp;pensée de&nbsp;celle des autres</button>\n    <button class=\"quiz-btn\" data-correct-answer>Faire des copier/coller sans risquer de&nbsp;sanction</button>\n    <button class=\"quiz-btn\">Rendre crédit aux idées exprimées dans ton travail</button>\n</div>\n\n\n<p>Quelle est la&nbsp;taille maximale d&#39;une citation&#8201;? </p>\n<div class=\"question\">\n    <button class=\"quiz-btn\">5 mots, c'est déjà beaucoup.</button>\n    <button class=\"quiz-btn\">1 phrase.</button>\n    <button class=\"quiz-btn\">3 lignes.</button>\n    <button class=\"quiz-btn\" data-correct-answer>7 lignes.</button>\n    <button class=\"quiz-btn\">2 paragraphes.</button>\n</div>\n\n\n<p>Paraphraser consiste à reformuler une idée avec ses propres mots. Laquelle de&nbsp;ces affirmations est correcte&#8201;: </p>\n<div class=\"question\">\n    <button class=\"quiz-btn\" data-correct-answer>Paraphraser est interdit.</button>\n    <button class=\"quiz-btn\">On a&nbsp;le droit de&nbsp;paraphraser, mais il&nbsp;faut tout de&nbsp;même citer sa&nbsp;source.</button>\n    <button class=\"quiz-btn\">Lorsqu'on paraphrase, il&nbsp;n'est pas nécessaire de&nbsp;citer sa&nbsp;source.</button>\n    <button class=\"quiz-btn\">Paraphraser permet d'allonger la&nbsp;longueur de&nbsp;son texte.</button>\n</div>\n\n",
+          "html": "<h1 id=\"comment-citer-ses-sources-dans-letexte\">Comment citer ses sources dans le&nbsp;texte&#8201;?</h1>\n<p>La&nbsp;citation a&nbsp;trois objectifs&#8201;:  </p>\n<ul>\n<li>Étayer, illustrer ou&nbsp;appuyer ton analyse ou&nbsp;ta réflexion </li>\n<li>Distinguer clairement ta&nbsp;pensée de&nbsp;celle des autres </li>\n<li>Rendre crédit aux idées exprimées dans ton travail\n&#8201;<img src=\"https://dl.airtable.com/.attachments/62ebe4eef937ad9fe279dfa9a42f0447/5bcf2c66/M04_illustrations-11.svg\" alt=\"alt\"></li>\n</ul>\n<p>Ne&nbsp;pas en&nbsp;abuser</p>\n<p>La&nbsp;citation doit être utilisée avec discernement et&nbsp;modération&#8201;: tes opinions et&nbsp;ton propre travail doivent primer. On&nbsp;estime qu’un travail étudiant ne&nbsp;devrait pas comporter plus de&nbsp;10% de&nbsp;citations et&nbsp;que celles-ci ne&nbsp;doivent pas dépasser 7&nbsp;lignes maximum. \n&#8201;<img src=\"https://dl.airtable.com/.attachments/e305d5f2e875244b79ee5acc22e05192/41dddfd0/M04_illustrations-12.svg\" alt=\"alt\"></p>\n<p>Les règles à respecter</p>\n<ul>\n<li>Mentionner précisément la&nbsp;source de&nbsp;la citation  </li>\n<li><span class=\"_definition\" data-definition-id=\"repro_exact\">Reproduire le&nbsp;texte exact</span> </li>\n<li>Utiliser des guillemets</li>\n<li>Utiliser un&nbsp;style de&nbsp;police différent (italique) ou&nbsp;une mise en&nbsp;page particulière (retrait), pour mettre en&nbsp;valeur de&nbsp;longues citations. \n&#8201;<img src=\"https://dl.airtable.com/.attachments/0c87951851cd97a114ab5f013453f766/7b07e01f/M04_illustrations-13.svg\" alt=\"alt\"></li>\n</ul>\n<p>Il&nbsp;ne faut pas confondre la&nbsp;citation avec la&nbsp;paraphrase qui consiste à reformuler complètement une idée avec ses propres mots. Attention, lorsqu’on paraphrase, il&nbsp;faut tout de&nbsp;même citer sa&nbsp;source&#8201;!  </p>\n<p>La&nbsp;paraphrase peut être utile pour&#8201;: </p>\n<ul>\n<li>Faciliter la&nbsp;lecture de&nbsp;ton texte en&nbsp;s’intégrant au&nbsp;style du&nbsp;reste de&nbsp;ton texte. </li>\n<li>Permet dans certains cas de&nbsp;présenter l’idée de&nbsp;l’autrice, l’auteur de&nbsp;façon plus condensée que si&nbsp;l’on incluait entre guillemets le&nbsp;texte original, donc de&nbsp;résumer les propos.</li>\n</ul>\n<p>Il&nbsp;existe deux modèles pour effectuer une citation dans le&nbsp;texte. Les deux modèles peuvent être utilisés mais une fois un&nbsp;modèle choisi, il&nbsp;faut s&#39;y conformer tout au&nbsp;long d’un même travail.\n&#8201;<img src=\"https://dl.airtable.com/.attachments/a13793e6a2a78749bc9671e4a25716e0/81b14177/M04_illustrations-14.svg\" alt=\"alt\"></p>\n<p>Modèle &quot;citation-note&quot;</p>\n<ul>\n<li>Après la&nbsp;citation, insérer une note de&nbsp;bas de&nbsp;page </li>\n<li>Un&nbsp;numéro est reporté en&nbsp;bas de&nbsp;page où la&nbsp;référence complète doit être mentionnée </li>\n<li>On&nbsp;peut utiliser l’abréviation ibid (ici même) pour citer un&nbsp;document déjà mentionné à la&nbsp;note précédente (si la&nbsp;page n’est pas le&nbsp;même, il&nbsp;faut l’indiquer&#8201;: ibid, p. 43) \n&#8201;<img src=\"https://dl.airtable.com/.attachments/779b66379217b221c3e7ca6aeefd3781/fdac3223/M04_illustrations-15.svg\" alt=\"alt\"></li>\n</ul>\n<p>Modèle &quot;auteur-année&quot; </p>\n<ul>\n<li>Immédiatement après la&nbsp;citation, insérer entre parenthèses&#8201;: le&nbsp;nom et&nbsp;l&#39;initiale du&nbsp;prénom de&nbsp;l’autrice, l&#39;auteur, la&nbsp;date de&nbsp;parution du&nbsp;document cité et&nbsp;la page de&nbsp;référence de&nbsp;la citation </li>\n<li>La&nbsp;référence complète de&nbsp;la citation doit figurer dans la&nbsp;bibliographie en <span class=\"_definition\" data-definition-id=\"fin_travail\">fin de&nbsp;travail</span>  </li>\n</ul>\n",
+          "index": "3"
+        },
+        {
+          "airtable_id": "recThxgmuijtbKDRF",
+          "title": "Faire de&nbsp;la veille",
+          "id": "22",
+          "type": "MARKDOWN",
+          "cover": "https://dl.airtable.com/.attachments/aba7829cad42870122d0aa38bd263dd0/fb97283c/M4_4_cover.svg",
+          "sources": "<h2 id=\"sources\">Sources</h2>\n<p>MADINIER, Hélène, 2020. Cours théorique 1 : introduction à la veille [document PDF]. Support de cours : Cours « Veille stratégique 1 », Haute école de gestion de Genève, filière Information documentaire, année académique 2020-2021 </p>\n<p>Veille en entreprise. Wikipédia : l’encyclopédie libre [en ligne]. Dernière modification de la page le 3 octobre 2020 à 05:00. [Consulté le 24 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://fr.m.wikipedia.org/wiki/Veille_en_entreprise\">lien</a></p>\n<p>Sources définitions </p>\n<p>Newsletter </p>\n<p>CORTHESY, Bastien, 2020. _Le monde du mail [_en ligne]. 7 septembre 2020. [Consulté le 13 décembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://mondedumail.com/newsletter-cest-quoi-definition-et-conseils-cles/\">lien</a></p>\n<p>Rapport d’étonnement </p>\n<p>DEBLIQUY, Pierre-Yves, 2012. Euresis [en ligne]. 27 août 2012. [Consulté le 13 décembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"http://blog.euresis.com/index.php?/archives/918-Intelligence-economique,-veille-et-rapport-detonnement.html\">lien</a></p>\n",
+          "modules": [
+            "recL96730JlAeJJXd"
+          ],
+          "html": "<h1 id=\"faire-dela-veille\">Faire de&nbsp;la veille</h1>\n<p>Avec le&nbsp;web, nous faisons face à une surcharge informationnelle accentuée par la&nbsp;multiplicité des sources d’informations. L’information est éparse&#8201;: elle peut aussi bien se&nbsp;trouver sur un&nbsp;site de&nbsp;grande notoriété que sur un&nbsp;blog de&nbsp;spécialiste peu ou&nbsp;pas référencé. Ce&nbsp;flot permanent d’informations nécessite d’être à l’affut pour capter celles qui peuvent nous intéresser.<br>&#8201;<img src=\"https://dl.airtable.com/.attachments/779b66379217b221c3e7ca6aeefd3781/fdac3223/M04_illustrations-15.svg\" alt=\"alt\"></p>\n<p>La&nbsp;veille est un&nbsp;dispositif (…) de&nbsp;collecte, traitement, diffusion et&nbsp;exploitation de&nbsp;l’information qui vise à rendre (…) une organisation, quelle qu’elle soit, capable de&nbsp;réagir, à moyen et&nbsp;long termes, face à des évolutions ou&nbsp;des menaces de&nbsp;son environnement, que celles-ci soient technologiques, concurrentielles, sociales, etc. » (définition de&nbsp;l’ADBS, Association des professionnels de&nbsp;l’information et&nbsp;de la&nbsp;documentation)\n&#8201;<img src=\"https://dl.airtable.com/.attachments/cf0137a140453b955159dfbc5da6b3b9/9cc34a50/M04_illustrations-16.svg\" alt=\"alt\"></p>\n<p>Les principaux types de&nbsp;veille </p>\n<ul>\n<li>Veille concurrentielle&#8201;: détecter ses concurrent·e·s. </li>\n<li>Veille documentaire&#8201;: Découvrir les publications récentes. </li>\n<li>Veille juridique&#8201;: Anticiper les changements de&nbsp;législation. </li>\n<li>Veille technologique&#8201;: Identifier les nouvelles technologies et&nbsp;les publications scientifiques. </li>\n<li>Veille stratégique&#8201;: Englobe tous les types de&nbsp;veille afin d’identifier les menaces et&nbsp;les opportunités. \n&#8201;<img src=\"https://dl.airtable.com/.attachments/d72b3137e7a890d8a1993db7a168ebac/4508beed/M04_illustrations-17.svg\" alt=\"alt\"></li>\n</ul>\n<p>Les objectifs de&nbsp;la veille </p>\n<ul>\n<li>Anticiper&#8201;: Détecter les changements (Exemple&#8201;: nouveaux produits)  </li>\n<li>Limiter les risques&#8201;: Détecter les dangers (exemple&#8201;: nouveau concurrent) </li>\n<li>Progresser&#8201;: Détecter les écarts </li>\n<li>Innover&#8201;: Détecter les nouvelles idées (exemple&#8201;: articles scientifiques) </li>\n<li>Grandir&#8201;: Détecter de&nbsp;nouveaux partenaires\n&#8201;<img src=\"https://dl.airtable.com/.attachments/abec05092663fa010239c977ec664e85/5079a956/M04_illustrations-18.svg\" alt=\"alt\"></li>\n</ul>\n<p>Une fois que tu&nbsp;as réalisé ta&nbsp;veille, tu&nbsp;peux créer plusieurs types de&nbsp;documents. </p>\n<ul>\n<li><span class=\"_definition\" data-definition-id=\"rapo_eto\">Rapport d’étonnement</span> </li>\n<li><span class=\"_definition\" data-definition-id=\"rapo_veille\">Rapports de&nbsp;veille</span></li>\n<li><span class=\"_definition\" data-definition-id=\"newsletters\">Newsletters</span> </li>\n</ul>\n",
+          "index": "4"
         }
       ]
     }
@@ -1867,9 +2674,7 @@
       "cover": "https://dl.airtable.com/.attachments/d5c2d920748b250707c88aaf80af456f/9820ea2c/M1_1_cover.svg",
       "type": "MARKDOWN",
       "modules": [
-        "recKefWoiBrgzqAyQ",
-        "rec3Uzws3khrczr4D",
-        "recL96730JlAeJJXd"
+        "recKefWoiBrgzqAyQ"
       ],
       "id": "1",
       "sources": "<p> BODER, Alexandre, 2019. <em>Théorie I [document PDF]</em>. Support de cours : Cours Systèmes d’information documentaires, Haute École de Gestion de Genève, filière Information documentaire, année académique 2019-2020 </p>\n<p>HAESEN, Stéphanie, <em>2019. Introduction - 1ère partie</em> [support PowerPoint]. Support de cours : Cours “Recherche d’information”, Haute École de Gestion de Genève, filière Information documentaire, année académique 2019-2020 </p>\n<p>LAROUSSE, Éditions. <em>Définitions : information. Larousse</em> [en ligne]. [Consulté le 2 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.larousse.fr/dictionnaires/francais/information/42993\">lien</a></p>\n<p>LES DÉCODEURS, 2017. _Décodex : qu’est-ce qu’une information ? _Le Monde.fr [en ligne]. 23 janvier 2017. [Consulté le 6 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.lemonde.fr/les-decodeurs/article/2017/01/23/decodex-qu-est-ce-qu-une-information_5067721_4355770.html\">lien</a>\nROMAGNI, Patrick et WILD, Valérie, 1998. <em>L’intelligence économique au service de l’entreprise</em>. Paris : LPM. 219 p. ISBN 978-2878453317</p>\n",
@@ -2036,6 +2841,125 @@
       "quiz": "<h2 id=\"quizz-bonne-catégorie\">Quizz Bonne catégorie&#8201;:</h2>\n<p>&quot;Opérateur booléen et/and&quot; </p>\n<div class=\"question\">\n    <button class=\"quiz-btn\" data-correct-answer>Affiner sa&nbsp;recherche</button>\n    <button class=\"quiz-btn\" >Élargir sa&nbsp;recherche</button>\n</div>\n\n<p>&quot;Opérateur booléen sauf/not&quot;</p>\n<div class=\"question\">\n    <button class=\"quiz-btn\" data-correct-answer>Affiner sa&nbsp;recherche</button>\n    <button class=\"quiz-btn\" >Élargir sa&nbsp;recherche</button>\n</div>\n\n<p>&quot;Opérateur booléen Ou/OR&quot; </p>\n<div class=\"question\">\n    <button class=\"quiz-btn\" >Affiner sa&nbsp;recherche</button>\n    <button class=\"quiz-btn\" data-correct-answer>Élargir sa&nbsp;recherche</button>\n</div>\n\n<p>&quot;Troncature * ou&#8201;?&quot;</p>\n<div class=\"question\">\n    <button class=\"quiz-btn\" >Affiner sa&nbsp;recherche</button>\n    <button class=\"quiz-btn\" data-correct-answer>Élargir sa&nbsp;recherche</button>\n</div>\n\n<p>&quot;Utiliser des filtres&quot;</p>\n<div class=\"question\">\n    <button class=\"quiz-btn\" data-correct-answer>Affiner sa&nbsp;recherche</button>\n    <button class=\"quiz-btn\" >Élargir sa&nbsp;recherche</button>\n</div>\n",
       "html": "<h1 id=\"affiner-et-élargir-sarecherche\">Affiner et élargir sa&nbsp;recherche</h1>\n<p>Tu&nbsp;obtiens un <span class=\"_definition\" data-definition-id=\"trop_gros_nombre\">trop grand nombre de&nbsp;résultats</span> ou&nbsp;des résultats non pertinents lors de&nbsp;ta recherche et&nbsp;tu souhaiterais l’affiner&#8201;? Voici quelques tips qui peuvent t’aider à atteindre cet objectif&#8201;: </p>\n<ul>\n<li>Utilise des mots-clés plus précis. </li>\n<li>Combine tes mots-clés avec l’opérateur booléen ET/AND </li>\n<li> Utilise l’opérateur booléen SAUF/NOT pour exclure des termes non pertinents de&nbsp;la recherche. </li>\n<li>Utilise des guillemets pour rechercher les expressions exactes comme “pompe à insuline”. </li>\n<li>Vérifie que la&nbsp;racine de&nbsp;la troncature que tu&nbsp;as écrite n’inclut pas de&nbsp;termes parasites. Voici <span class=\"_definition\" data-definition-id=\"exemple_3\">un exemple</span>. </li>\n<li>Utilise les filtres ou&nbsp;les <span class=\"_definition\" data-definition-id=\"facettes\">facettes</span> des outils de&nbsp;recherche documentaire pour trier les résultats, par exemple par type de&nbsp;documents ou&nbsp;par date. \n&#8201;<img src=\"https://dl.airtable.com/.attachments/e7b495af60a417aa4b5738496551fd92/22fa46af/M2_8_illustration1.svg\" alt=\"alt\"></li>\n</ul>\n<p><strong>Élargir sa&nbsp;recherche&#8201;:</strong></p>\n<p>Tu&nbsp;n’obtiens qu’un nombre très restreint de&nbsp;résultats ou&nbsp;pas de&nbsp;résultats du&nbsp;tout lors de&nbsp;ta recherche et&nbsp;tu souhaiterais l’élargir&#8201;?</p>\n<p>Voici quelques tips qui peuvent t’aider à atteindre cet objectif&#8201;: </p>\n<ul>\n<li>Utilise des mots-clés plus généraux - Utilise l’opérateur booléen OU/OR pour dissocier les termes de&nbsp;ta recherche. </li>\n<li>Utilise la&nbsp;troncature (* ou&#8201;?) </li>\n</ul>\n<p>Et&nbsp;surtout, n’oublie jamais que les bibliothécaires qui travaillent dans les services documentaires se&nbsp;feront toujours une joie de&nbsp;t’aider si&nbsp;tu es&nbsp;bloqué·e&#8201;! </p>\n",
       "index": "8"
+    },
+    {
+      "airtable_id": "recsRYo8wXfYpOfjW",
+      "title": "Comment choisir des sources pertinentes&#8201;?",
+      "cover": "https://dl.airtable.com/.attachments/e77cd33cb39b5f2f0a721f3c5bd74b6e/ffc2bd99/M3_1_cover.svg",
+      "type": "MARKDOWN",
+      "id": "14",
+      "sources": "<h2 id=\"sources-\">Sources :</h2>\n<p>BIBLIOTHÈQUE HEC MONTRÉAL, 2020. <em>Évaluer ses sources</em>. HEC Montréal [en ligne]. 15 juillet 2020. [Consulté le 28 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://libguides.hec.ca/c.php?g=246716&amp;p=1643668\">lien</a></p>\n<p>INFOTHÈQUE HAUTE ÉCOLE DE GESTION, [2004]. _Outil d’aide : Fiche de suivi de lecture. E-Learning de l’Infothèque (ELI) _[en ligne]. 1 juillet 2016. [Consulté le 12 novembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://cyberlearn.hes-so.ch/mod/resource/view.php?id=554650\">lien</a> [accès par abonnement] </p>\n<p>SERVICE DES BIBLIOTHÈQUES DE L’UQAM, 2013. <em>Évaluer la qualité de ses sources</em>. Infosphère, collège Jean-de-Brébeuf [en ligne]. 4 mars 2013. [Consulté le 28 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://portail2.brebeuf.qc.ca/infosphere/sciences_humaines/module7/evaluer1a.html\">lien</a></p>\n",
+      "quiz": "<h2 id=\"quizz\">QUIZZ&#8201;:</h2>\n<p>Parmi les phrases suivantes, laquelle est juste&#8201;: </p>\n<div class=\"question\">\n    <button class=\"quiz-btn\">Un auteur employé par un&nbsp;lobby est une preuve de&nbsp;son intégrité</button>\n    <button class=\"quiz-btn\" data-correct-answer>Un auteur reconnu dans son domaine est un&nbsp;gage de&nbsp;qualité</button>\n    <button class=\"quiz-btn\">Tous les avis sont bons à prendre</button>\n    <button class=\"quiz-btn\">Un article promotionnel reste une source fiable</button>\n</div>\n\n\n\n<p>L&#39;information contenue dans une source doit être&#8201;: </p>\n<div class=\"question\">\n    <button class=\"quiz-btn\" data-correct-answer>Objective</button>\n    <button class=\"quiz-btn\">Subjective</button>\n    <button class=\"quiz-btn\">Quantique</button>\n    <button class=\"quiz-btn\">Non-vérifiée</button>\n</div>\n\n\n<p>Parmi ces propositions, laquelle doit te&nbsp;faire douter de&nbsp;la fiabilité d&#39;une source&#8201;:</p>\n <div class=\"question\">\n    <button class=\"quiz-btn\">L'auteur est reconnu dans son domaine</button>\n    <button class=\"quiz-btn\">Plusieurs autres sources fiables traitent de&nbsp;ce même sujet</button>\n    <button class=\"quiz-btn\" data-correct-answer>L'auteur a&nbsp;intégré un&nbsp;code promotionnel à son article</button>\n</div>\n",
+      "modules": [
+        "rec3Uzws3khrczr4D"
+      ],
+      "html": "<h1 id=\"comment-choisir-des-sources-pertinentes\">Comment choisir des sources pertinentes&#8201;?</h1>\n<p>En&nbsp;tant qu’étudiant·e, tu&nbsp;es très souvent amené·e à effectuer des recherches documentaires. Si&nbsp;tes sources ne&nbsp;sont pas bonnes, tu&nbsp;prends le&nbsp;risque de&nbsp;rendre un&nbsp;travail de&nbsp;mauvaise qualité. Il&nbsp;est donc essentiel de&nbsp;bien choisir tes sources.\n&#8201;<img src=\"https://dl.airtable.com/.attachments/b828bda6aaddb1a103261a302346f0ac/5d1790de/M3_1_illustration1.svg\" alt=\"alt\"></p>\n<p>La&nbsp;source </p>\n<ul>\n<li><p>Quel est son sujet principal&#8201;? Cette source te&nbsp;permet-elle d’obtenir des <span class=\"_definition\" data-definition-id=\"reponses\">réponses</span> à ta&nbsp;question ou à un&nbsp;de tes axes de&nbsp;recherche&#8201;? </p>\n</li>\n<li><p><span class=\"_definition\" data-definition-id=\"journal_blog\">Est-ce un&nbsp;journal scientifique, de&nbsp;presse, un&nbsp;blog, etcétéra&#8201;?</span></p>\n</li>\n</ul>\n<p>Le&nbsp;document&#8201;:  </p>\n<ul>\n<li>Sa&nbsp;nature correspond-t-elle <span class=\"_definition\" data-definition-id=\"type_recherche\">au type de&nbsp;recherche</span> que tu&nbsp;dois faire&#8201;? </li>\n</ul>\n<p>L’autrice, l’auteur&#8201;:  </p>\n<ul>\n<li>Est-il connu ou&nbsp;reconnu dans le&nbsp;domaine&#8201;? </li>\n</ul>\n<p>Il&nbsp;faut évaluer ses sources en&nbsp;tenant compte des critères suivants&#8201;: \n&#8201;<img src=\"https://dl.airtable.com/.attachments/84f61749f4f5028e623a6254d58d6e72/604c735f/M3_1_illustration2.svg\" alt=\"alt\"></p>\n<p>L’objectivité de&nbsp;l’information </p>\n<ul>\n<li>Quelle est l’intention de&nbsp;l’autrice, l’auteur (éduquer, vendre, faire de&nbsp;la propagande, etc.)&#8201;?  </li>\n<li>Différents points de&nbsp;vue sont-ils présentés&#8201;?  </li>\n<li>Le&nbsp;langage est-il nuancé&#8201;?  </li>\n<li>Ses propos peuvent-ils être croisés avec d’autres sources&#8201;? </li>\n<li>Y&nbsp;a-t-il des publicités associées à la&nbsp;source&#8201;? </li>\n<li>L&#39;autrice, l’auteur est-il affilié à un&nbsp;lobby&#8201;?  </li>\n</ul>\n<p>L’exactitude de&nbsp;l’information </p>\n<ul>\n<li>Les références bibliographiques sont-elles variées&#8201;?  </li>\n<li>Sont-elles lisibles et&nbsp;complètes&#8201;?  </li>\n<li>Contiennent-elles des documents officiels&#8201;?  </li>\n</ul>\n<p>L’actualité de&nbsp;l’information&#8201;:  </p>\n<ul>\n<li>La&nbsp;date de&nbsp;publication est-elle récente&#8201;?  </li>\n<li>Y&nbsp;a-t-il eu&nbsp;une mise à jour/réédition&#8201;?</li>\n</ul>\n",
+      "index": "1"
+    },
+    {
+      "airtable_id": "recJfanjtVzEpFInZ",
+      "title": "Comment identifier des expert·e·s&#8201;?",
+      "id": "15",
+      "type": "INFOGRAPHIC",
+      "cover": "https://dl.airtable.com/.attachments/f64073d7b374d8adcc8fa20aa649aec2/0c58ec9d/M3_2_cover.svg",
+      "sources": "<h2 id=\"sources\">Sources</h2>\n<p>GLATRON, Sandrine, 1997. <em>Qu&#39;est-ce qu&#39;un expert?</em>. Vacarme [en ligne]. Mars 1997. N° 3, p. 26-27. [Consulté le 12 novembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.cairn.info/revue-vacarme-1997-3-page-26.htm\">lien</a> [accès par abonnement] </p>\n<p>GUITTARD, Claude &amp; WELTER, Adeline, 2014. <em>Définition et sélection de l&#39;expert IT : Approches cognitives et sociales</em>. Management &amp; Avenir [en ligne]. Janvier 2014. N° 67, p. 101-121. [Consulté le 12 novembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.cairn.info/revue-management-et-avenir-2014-1-page-101.htm\">lien </a>[accès par abonnement] </p>\n",
+      "svg": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->\n<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\" \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\">\n<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\"\n\t width=\"100%\" height=\"auto\" viewBox=\"0 0 882.383 1427.09\" enable-background=\"new 0 0 882.383 1427.09\"\n\t xml:space=\"preserve\">\n<g id=\"Background\">\n\t<path fill=\"#00FFDA\" d=\"M374.172,733.445c-2.633,2.643-4.907,5.272-5.144,8.996c-0.244,3.83,1.922,6.988,5.207,8.975\n\t\tc10.953,6.624,25.795,6.13,36.282-1.209c1.625-1.137,3.179-2.456,4.173-4.172c2.376-4.101,0.992-9.391-1.394-13.485\n\t\tc-2.386-4.096-5.707-7.668-7.469-12.067c-0.524-1.309-0.956-2.752-2.052-3.639c-1.008-0.815-2.377-0.987-3.669-1.099\n\t\tc-5.843-0.502-13.021-1.825-17.222,2.648C379.19,722.327,378.444,729.158,374.172,733.445z\"/>\n\t<path fill=\"#00FFDA\" d=\"M506.041,749.592c2.087,1.757,4.891,2.355,7.585,2.78c11.807,1.861,23.962,1.49,35.634-1.087\n\t\tc5.625-1.242,11.414-3.162,15.301-7.413c0.855-0.936,1.627-2.03,1.786-3.288c0.419-3.327-3.33-5.51-6.519-6.551\n\t\tc-8.563-2.795-17.754-4.189-25.936-8.079c-6.835-3.25-14.938-15.976-22.052-16.392C498.667,708.792,499.01,743.676,506.041,749.592\n\t\tz\"/>\n\t<path fill=\"#D9FFF8\" d=\"M609.499,289.446c7.889-0.588,16.6-2.944,20.578-9.782c2.271-3.901,2.579-8.603,2.756-13.113\n\t\tc0.06-1.54,0.064-3.228-0.904-4.425c-1.45-1.793-4.393-1.51-6.272-0.173c-1.879,1.336-3.064,3.413-4.544,5.182\n\t\tc-4.647,5.558-12.713,7.987-19.657,5.92c-0.355-0.106-0.719-0.229-0.995-0.476c-1.018-0.912-0.174-2.598,0.819-3.537\n\t\tc2.727-2.578,6.775-4.784,6.719-8.536c-0.013-0.802-0.291-1.675-0.981-2.083c-0.691-0.409-1.566-0.239-2.345-0.041\n\t\tc-7.348,1.868-14.337,5.135-20.482,9.574c-5.85,4.225-14.745,14.191-5.191,18.025C588.202,289.673,599.737,290.173,609.499,289.446\n\t\tz\"/>\n\t<path fill=\"#D9FFF8\" d=\"M264.002,188.571c-3.658-7.014-6.246-15.659-2.532-22.644c2.12-3.985,5.953-6.726,9.693-9.252\n\t\tc1.276-0.862,2.709-1.756,4.237-1.564c2.289,0.288,3.598,2.938,3.453,5.239c-0.146,2.302-1.285,4.404-2.009,6.593\n\t\tc-2.274,6.879-0.088,15.013,5.328,19.826c0.277,0.247,0.573,0.491,0.929,0.595c1.311,0.384,2.299-1.222,2.574-2.56\n\t\tc0.753-3.676,0.495-8.28,3.714-10.208c0.688-0.413,1.576-0.636,2.288-0.264c0.712,0.372,1.028,1.205,1.271,1.971\n\t\tc2.284,7.229,3.191,14.89,2.657,22.453c-0.508,7.198-4.29,20.01-12.583,13.911C275.032,206.791,268.528,197.25,264.002,188.571z\"/>\n\t<path fill=\"#00DBBF\" d=\"M459.758,158.404c19.746,7.06,38.604,15.767,54.912,29.281c5.043,4.179,6.723,9.606,7.319,15.95\n\t\tc1.617,17.191,0.505,34.314-0.464,51.46c-0.492,8.72-0.79,17.438,0.145,26.169c0.439,4.098,2.638,6.046,6.447,6.667\n\t\tc6.804,1.11,13.254-0.551,19.57-2.724c8.688-2.991,17.249-6.453,25.071-11.242c3.89-2.381,5.576-1.527,7.138,2.036\n\t\tc1.292,3.586,2.995,6.969,5.053,10.175c0.695,1.68,0.128,2.645-1.501,3.495c-23.114,12.061-46.024,24.552-70.418,33.945\n\t\tc-9.894,3.81-11.498,2.814-13.823-7.567c-2.154-9.617-2.319-19.394-2.32-29.184c0-5.921,0-11.842-0.603-17.933\n\t\tc-1.374,5.169-2.773,10.331-4.117,15.507c-5.616,21.634-5.568,43.197-9.091,65.307c-1.071,6.725-1.576,13.545-0.812,20.379\n\t\tc-2.362,0.049-4.736,0.274-7.085,0.12c-17.302-1.135-40.619-2.123-57.893-3.602c-14.01-1.2-40.118-1.699-53.936-4.678\n\t\tc0.209-7.537,0.477-15.073,0.617-22.612c0.584-31.458,11.166-62.786,5.68-93.837c-0.282-1.596-0.625-3.182-1.161-5.897\n\t\tc-1.038,2.395-1.702,3.871-2.322,5.366c-7.434,17.922-15.11,35.722-25.76,52.059c-2.522,3.869-5.29,7.528-8.808,10.537\n\t\tc-4.411,3.772-8.702,3.799-13.281,0.197c-3.063-2.409-5.461-5.385-7.536-8.681c-10.427-16.569-16.694-34.929-22.985-53.271\n\t\tc-2.88-8.396-5.255-16.974-8.393-25.269c-1.513-3.999-1.612-6.94,2.198-9.344c3.225-2.03,6.187-4.389,8.875-7.089\n\t\tc2.156-1.532,4.311-3.063,6.57-4.669c1.759,2.47,2.119,5.312,2.987,7.928c5.085,15.327,10.192,30.641,17.056,45.297\n\t\tc1.701,3.632,3.518,7.201,6.099,10.302c2.142,2.575,4.237,2.503,6.004-0.413c2.084-3.439,3.467-7.196,4.804-10.97\n\t\tc6.28-17.722,11.772-35.697,18.573-53.267c7.652-19.768,21.056-31.558,41.762-35.669c8.726-1.732,17.341-3.917,26.314-3.816\n\t\tc-0.07,1.177-0.196,2.355-0.199,3.533c-0.016,6.176,4.636,14.302,9.196,16.117c10.315,4.106,20.371,0.63,25.83-9.007\n\t\tC457.437,166.019,459.023,162.369,459.758,158.404z\"/>\n\t<path fill=\"#D9FFF8\" d=\"M406.403,125.482c-3.44-21.829-3.647-9.591,1.312-31.754c3.009,4.129,6.312,7.739,9.917,11.137\n\t\tc5.271,4.969,9.587-27.532,16.357-26.368c8.929,1.536,17.969,1.877,26.983,2.482c1.862,0.125,3.567,0.079,3.42,2.781\n\t\tc-0.852,15.679-2.112,31.305-5.59,46.667c-0.223,0.985-0.64,1.926-0.967,2.887c-4.948,5.432-3.572,11.432-1.445,17.417\n\t\tc0.934,2.625,2.234,5.12,3.367,7.673c-0.734,3.964-2.321,7.614-4.288,11.087c-5.459,9.638-15.515,13.113-25.83,9.007\n\t\tc-4.56-1.815-9.211-9.941-9.196-16.117c0.003-1.178,0.129-2.356,0.199-3.533c0.466-5.177-0.462-10.246-1.18-15.333\n\t\tc-0.198-1.401-0.897-2.449-1.937-3.342C412.76,136.079,409.491,130.849,406.403,125.482z\"/>\n\t<g>\n\t\t<path fill=\"#00DBBF\" d=\"M437.223,156.56c-29.832-0.846-56.758-47.582-47.264-64.987c5.925-10.86,23.118-4.965,36.925-20.678\n\t\t\tc12.955-14.743,6.802-30.157,16.247-34.709c11.849-5.71,37.726,10.741,45.787,32.493\n\t\t\tC502.003,103.998,469.673,157.48,437.223,156.56z\"/>\n\t\t<polygon fill=\"#A9FFEE\" points=\"444.46,124.789 428.848,124.789 428.848,74.491 431.703,74.491 431.703,121.934 444.46,121.934 \t\t\n\t\t\t\"/>\n\t</g>\n\t<g>\n\t\t<path fill=\"#00D6B2\" d=\"M495.204,481.535c-2.336-15.329-5.895-30.436-7.42-45.922c-3.756-38.127-2.538-43.506-5.521-65.486\n\t\t\tc-2.362,0.049-4.736,0.274-7.085,0.12c-17.302-1.135-40.619-2.123-57.893-3.602c-14.01-1.2-40.118-1.699-53.936-4.678\n\t\t\tc-13.196,54.472,6.118,183.547,6.118,183.547l49.245-13.715l8.709-75.112l-0.398-0.149\n\t\t\tC449.742,464.891,472.477,473.201,495.204,481.535z\"/>\n\t\t<path fill=\"#00D6B2\" d=\"M506.361,558.214c3.092,21.802,6.245,43.595,9.344,65.396c3.452,24.287,6.896,48.575,10.296,72.87\n\t\t\tc1.105,7.9,2.057,15.821,3.079,23.732c-10.096,0-20.19,0-30.286,0c-7.532-26.312-14.993-48.552-21.157-74.716\n\t\t\tc-5.198-20.781-10.019-58.489-24.216-113.698c-13.594-52.863-25.999-75.112-25.999-75.112l67.782,24.849L506.361,558.214z\"/>\n\t\t<path fill=\"#00D6B2\" d=\"M369.468,545.513c16.415-4.571,32.831-9.143,49.245-13.714c-0.373,6.785-0.666,13.575-1.132,20.354\n\t\t\tc-1.386,20.177-2.936,40.343-4.234,60.525c-0.825,12.822-1.083,25.684-2.007,38.499c-1.658,22.989-2.182,46.028-3.403,69.036\n\t\t\tc-10.392,0-20.784,0-31.177,0l-5.353-79.137C369.563,608.442,368.823,576.526,369.468,545.513\"/>\n\t</g>\n\t<g>\n\t\t<path fill=\"#00FFDA\" d=\"M274.422,188.203l-20.074-42.078c-0.856-1.794-0.253-3.946,1.412-5.034l16.993-11.111\n\t\t\tc2.079-1.359,4.882-0.499,5.838,1.794l16.855,40.375c0.641,1.534,0.257,3.305-0.96,4.438l-13.775,12.814\n\t\t\tC278.749,191.228,275.577,190.623,274.422,188.203z\"/>\n\t\t<path fill=\"#D9FFF8\" d=\"M257.996,148.388l13.417,26.957c1.04,2.088,3.686,2.773,5.607,1.453l11.384-7.82\n\t\t\tc1.508-1.036,2.075-2.992,1.354-4.674L277.7,136.167c-0.961-2.244-3.747-3.031-5.74-1.623l-12.742,9\n\t\t\tC257.671,144.637,257.152,146.693,257.996,148.388z\"/>\n\t\t<path fill=\"#FFFFFF\" d=\"M282.599,179.577l0.013,0.028c0.513,1.14,1.983,1.457,2.919,0.628l1.098-0.971\n\t\t\tc0.597-0.528,0.79-1.377,0.479-2.111l-0.262-0.619c-0.463-1.095-1.822-1.477-2.788-0.784l-0.531,0.38\n\t\t\tC282.437,176.911,282.049,178.353,282.599,179.577z\"/>\n\t</g>\n\t<path fill=\"#D9FFF8\" d=\"M283.102,187.448c1.311,0.385,2.299-1.221,2.574-2.56c0.753-3.676,0.495-8.279,3.714-10.208\n\t\tc0.688-0.413,1.576-0.636,2.288-0.264s1.028,1.205,1.271,1.971c2.284,7.229,3.191,14.89,2.657,22.453\n\t\tc-0.508,7.197-4.29,20.01-12.583,13.911c0,0-3.341-2.615-5.314-4.708C275.735,205.949,283.102,187.448,283.102,187.448z\"/>\n\t<path fill=\"#00FFDA\" d=\"M601.253,271.295c8.878,3.018,24.842,8.919,33.379,8.672c2.53-0.073,5.045-2.897,5.871-6.595\n\t\tc4.03-18.046,15.742-69.018,21.172-88.039c1.127-3.946,0.003-7.792-2.53-8.656c-8.842-3.014-24.841-5.418-33.191-6.362\n\t\tc-2.621-0.296-5.401,2.548-6.316,6.463c-4.357,18.653-15.035,66.316-20.869,85.708C597.567,266.475,598.681,270.42,601.253,271.295\n\t\tz\"/>\n\t<g>\n\t\t<g>\n\t\t\t<path fill=\"#00A585\" d=\"M623.723,180.241c-0.376-0.102-0.555-0.652-0.399-1.229c0.156-0.578,0.587-0.964,0.963-0.862\n\t\t\t\tc3.941,1.062,8.005,1.237,12.309,1.422c6.324,0.271,12.864,0.553,19.487,3.751c0.354,0.171,0.479,0.765,0.279,1.326\n\t\t\t\tc-0.201,0.562-0.65,0.878-1.005,0.706c-6.452-3.115-12.894-3.392-19.123-3.66C631.877,181.507,627.762,181.33,623.723,180.241z\"\n\t\t\t\t/>\n\t\t</g>\n\t\t<g>\n\t\t\t<path fill=\"#00A585\" d=\"M621.634,189.628c-0.373-0.101-0.553-0.645-0.401-1.22c0.152-0.579,0.582-0.97,0.96-0.874\n\t\t\t\tc4.338,1.104,8.685,1.426,12.888,1.738c5.989,0.444,12.182,0.903,18.659,3.584c0.362,0.15,0.504,0.731,0.316,1.298\n\t\t\t\tc-0.187,0.567-0.631,0.902-0.993,0.756c-6.34-2.625-12.457-3.078-18.373-3.517c-4.244-0.314-8.632-0.64-13.049-1.764\n\t\t\t\tC621.639,189.629,621.637,189.629,621.634,189.628z\"/>\n\t\t</g>\n\t\t<g>\n\t\t\t<path fill=\"#00A585\" d=\"M619.546,199.016c-0.371-0.1-0.552-0.638-0.403-1.211c0.148-0.58,0.577-0.975,0.956-0.883\n\t\t\t\tc4.792,1.156,9.253,1.629,13.565,2.087c5.885,0.625,11.442,1.215,17.731,3.384c0.368,0.127,0.527,0.695,0.355,1.267\n\t\t\t\tc-0.173,0.573-0.616,0.931-0.98,0.807c-6.188-2.135-11.696-2.72-17.526-3.339c-4.344-0.461-8.835-0.938-13.686-2.108\n\t\t\t\tC619.554,199.018,619.55,199.017,619.546,199.016z\"/>\n\t\t</g>\n\t\t<g>\n\t\t\t<path fill=\"#00A585\" d=\"M617.458,208.403c-0.369-0.1-0.55-0.633-0.406-1.204c0.146-0.58,0.573-0.979,0.953-0.892\n\t\t\t\tc5.396,1.238,10.049,1.885,14.548,2.51c5.409,0.752,10.521,1.465,16.496,3.113c0.376,0.104,0.554,0.656,0.396,1.233\n\t\t\t\tc-0.157,0.576-0.588,0.959-0.963,0.858c-0.001,0-0.002,0-0.002,0c-5.915-1.637-11-2.341-16.378-3.088\n\t\t\t\tc-4.52-0.628-9.192-1.278-14.628-2.525C617.469,208.406,617.463,208.405,617.458,208.403z\"/>\n\t\t</g>\n\t\t<g>\n\t\t\t<path fill=\"#00A585\" d=\"M615.369,217.791c-0.366-0.099-0.548-0.627-0.407-1.197c0.145-0.581,0.569-0.984,0.95-0.9\n\t\t\t\tc6.885,1.507,12.245,2.425,17.429,3.312c4.341,0.743,8.44,1.444,13.361,2.464c0.388,0.076,0.577,0.614,0.436,1.195\n\t\t\t\tc-0.141,0.581-0.564,0.988-0.947,0.909c-4.905-1.016-8.997-1.716-13.329-2.458c-5.194-0.889-10.565-1.808-17.471-3.32\n\t\t\t\tC615.384,217.794,615.377,217.792,615.369,217.791z\"/>\n\t\t</g>\n\t\t<g>\n\t\t\t<path fill=\"#00A585\" d=\"M613.281,227.178c-0.365-0.099-0.547-0.623-0.408-1.191c0.141-0.581,0.565-0.987,0.947-0.907\n\t\t\t\tc3.186,0.667,6.029,1.282,8.537,1.824c7.958,1.72,13.707,2.962,21.996,4.105c0.387,0.056,0.602,0.57,0.477,1.155\n\t\t\t\tc-0.124,0.584-0.539,1.014-0.927,0.961c-8.323-1.148-14.087-2.394-22.064-4.118c-2.507-0.542-5.349-1.156-8.532-1.823\n\t\t\t\tC613.299,227.183,613.29,227.18,613.281,227.178z\"/>\n\t\t</g>\n\t\t<g>\n\t\t\t<path fill=\"#00A585\" d=\"M611.193,236.565c-0.363-0.098-0.547-0.619-0.41-1.185c0.14-0.582,0.562-0.99,0.945-0.914\n\t\t\t\tc5.12,1.028,9.124,2.032,12.656,2.917c6.011,1.506,10.758,2.696,17.618,3.168c0.395,0.025,0.626,0.523,0.519,1.11\n\t\t\t\tc-0.106,0.586-0.512,1.039-0.904,1.012c-6.943-0.478-11.726-1.676-17.781-3.193c-3.521-0.883-7.514-1.884-12.613-2.908\n\t\t\t\tC611.213,236.571,611.203,236.568,611.193,236.565z\"/>\n\t\t</g>\n\t\t<g>\n\t\t\t<path fill=\"#00A585\" d=\"M609.104,245.953c-0.361-0.098-0.545-0.615-0.411-1.18c0.138-0.582,0.561-0.993,0.943-0.919\n\t\t\t\tc5.79,1.118,9.992,2.334,13.7,3.409c5.474,1.584,9.798,2.837,16.314,2.834c0.398,0,0.648,0.476,0.561,1.062\n\t\t\t\tc-0.089,0.586-0.482,1.062-0.88,1.062c-6.651,0.002-11.031-1.266-16.576-2.872c-3.688-1.068-7.869-2.279-13.618-3.389\n\t\t\t\tC609.127,245.958,609.115,245.956,609.104,245.953z\"/>\n\t\t</g>\n\t\t<g>\n\t\t\t<path fill=\"#00A585\" d=\"M626.283,260.708c-1.636-0.44-3.26-0.979-5.008-1.557c-3.744-1.239-7.986-2.643-14.223-3.803\n\t\t\t\tc-0.385-0.07-0.584-0.601-0.448-1.183c0.136-0.583,0.558-0.997,0.941-0.925c6.298,1.171,10.571,2.586,14.343,3.834\n\t\t\t\tc5.278,1.747,9.093,3.01,15.41,2.569c0.401-0.028,0.671,0.424,0.602,1.01s-0.451,1.084-0.852,1.112\n\t\t\t\tC632.739,262.066,629.49,261.573,626.283,260.708z\"/>\n\t\t</g>\n\t\t<g>\n\t\t\t<path fill=\"#00A585\" d=\"M625.075,270.784c-1.756-0.473-3.483-1.121-5.417-1.845c-3.57-1.338-8.014-3.004-14.69-4.202\n\t\t\t\tc-0.379-0.07-0.587-0.597-0.453-1.18c0.135-0.583,0.556-0.999,0.939-0.93c6.759,1.213,11.246,2.895,14.853,4.246\n\t\t\t\tc4.921,1.845,8.477,3.177,14.64,2.32c0.403-0.056,0.691,0.372,0.642,0.956c-0.051,0.584-0.418,1.103-0.822,1.159\n\t\t\t\tC630.811,271.857,627.906,271.547,625.075,270.784z\"/>\n\t\t</g>\n\t</g>\n\t<path fill=\"#D9FFF8\" d=\"M601.49,273.054c-0.355-0.106-0.72-0.229-0.996-0.476c-1.018-0.912-0.174-2.598,0.819-3.537\n\t\tc2.728-2.578,6.776-4.784,6.719-8.536c-0.012-0.802-0.29-1.675-0.981-2.083c-0.691-0.409-1.566-0.239-2.345-0.041\n\t\tc-7.347,1.868-14.336,5.135-20.481,9.574C578.375,272.18,601.49,273.054,601.49,273.054z\"/>\n\t<path fill=\"#00A585\" d=\"M797.272,1427.09H85.11c-47.005,0-85.11-38.105-85.11-85.11V883.094c0-47.005,38.105-85.11,85.11-85.11\n\t\th712.162c47.006,0,85.11,38.105,85.11,85.11v458.886C882.383,1388.985,844.278,1427.09,797.272,1427.09z\"/>\n\t<path fill=\"#00A585\" d=\"M777.592,587.793H601.902c-24.325,0-44.045-19.72-44.045-44.044v-90.72\n\t\tc0-24.325,19.72-44.044,44.045-44.044h175.689c24.324,0,44.044,19.719,44.044,44.044v90.72\n\t\tC821.636,568.074,801.916,587.793,777.592,587.793z\"/>\n\t<path fill=\"#00DBBF\" d=\"M780.898,574.284H598.595c-14.46,0-26.182-11.722-26.182-26.182v-99.425\n\t\tc0-14.46,11.722-26.182,26.182-26.182h182.304c14.46,0,26.182,11.722,26.182,26.182v99.425\n\t\tC807.08,562.562,795.358,574.284,780.898,574.284z\"/>\n\t<path fill=\"#00A585\" d=\"M672.697,587.793v20.377c0,1.08-0.483,2.104-1.318,2.789l-16.66,10.472\n\t\tc-2.609,2.144-1.108,6.377,2.269,6.397l59.949,0.315c3.395,0.021,4.938-4.229,2.32-6.392l-17.429-11.164\n\t\tc-0.831-0.686-1.312-1.706-1.312-2.782v-20.013H672.697z\"/>\n\t<g>\n\t\t<path fill=\"#00DBBF\" d=\"M189.971,557.663c8.094,0.218,15.653-1.354,22.793-6.117c-10.415-4.279-12.336-5.933-14.335-12.241\n\t\t\tc0.553-0.186,1.11-0.374,1.666-0.56c0.434-0.146,0.868-0.29,1.821-0.608c-5.917-3.909-9.89-8.692-9.961-16.19\n\t\t\tc1.898,0.334,3.501,0.616,5.541,0.975c-5.28-6.83-7.731-13.653-3.229-21.906c3.456,2.905,6.47,5.961,9.984,8.251\n\t\t\tc3.702,2.413,7.781,4.337,11.881,6.026c3.93,1.62,8.045,2.921,12.685,2.832c0.08-1.568,0.125-2.966,0.227-4.361\n\t\t\tc0.916-12.525,15.281-20.324,25.851-13.546c3.86,2.475,6.828,2.411,10.456,0.667c1.098-0.528,2.274-0.893,3.744-1.46\n\t\t\tc0.092,3.601-2.726,5.23-4.111,8.105c2.049-0.44,3.819-0.821,6.352-1.366c-1.287,3.173-3.325,5.088-5.413,6.799\n\t\t\tc-1.757,1.44-2.362,2.99-2.604,5.234c-0.561,5.209-1.154,10.494-2.56,15.517c-3.968,14.177-13.155,23.849-26.933,28.904\n\t\t\tc-13.323,4.89-26.579,4.207-39.565-1.485c-1.565-0.686-3.026-1.607-4.536-2.42C189.807,558.363,189.889,558.013,189.971,557.663z\"\n\t\t\t/>\n\t</g>\n\t<g>\n\t\t<path fill=\"#A9FFEE\" d=\"M757.229,451.45H629.613c-2.762,0-5-2.239-5-5s2.238-5,5-5h127.615c2.762,0,5,2.239,5,5\n\t\t\tS759.99,451.45,757.229,451.45z\"/>\n\t</g>\n\t<g>\n\t\t<path fill=\"#A9FFEE\" d=\"M757.229,475.747H629.613c-2.762,0-5-2.239-5-5s2.238-5,5-5h127.615c2.762,0,5,2.239,5,5\n\t\t\tS759.99,475.747,757.229,475.747z\"/>\n\t</g>\n\t<g>\n\t\t<path fill=\"#A9FFEE\" d=\"M757.229,500.042H629.613c-2.762,0-5-2.239-5-5s2.238-5,5-5h127.615c2.762,0,5,2.239,5,5\n\t\t\tS759.99,500.042,757.229,500.042z\"/>\n\t</g>\n\t<g>\n\t\t<path fill=\"#A9FFEE\" d=\"M757.229,524.339H629.613c-2.762,0-5-2.239-5-5s2.238-5,5-5h127.615c2.762,0,5,2.239,5,5\n\t\t\tS759.99,524.339,757.229,524.339z\"/>\n\t</g>\n\t<g>\n\t\t<path fill=\"#A9FFEE\" d=\"M757.229,548.635H629.613c-2.762,0-5-2.239-5-5s2.238-5,5-5h127.615c2.762,0,5,2.239,5,5\n\t\t\tS759.99,548.635,757.229,548.635z\"/>\n\t</g>\n</g>\n<g id=\"button_x5F_1\">\n\t<g>\n\t\t<circle fill=\"none\" stroke=\"#00A484\" stroke-width=\"20\" stroke-miterlimit=\"10\" cx=\"498.466\" cy=\"60\" r=\"44.571\"/>\n\t</g>\n\t<g opacity=\"0.01\">\n\t\t<circle fill=\"#FFFFFF\" cx=\"498.466\" cy=\"60\" r=\"44.571\"/>\n\t</g>\n</g>\n<g id=\"overlay_x5F_1\">\n\t<g>\n\t\t<circle fill=\"#00A585\" stroke=\"#00A484\" stroke-width=\"20\" stroke-miterlimit=\"10\" cx=\"501.224\" cy=\"60\" r=\"44.571\"/>\n\t</g>\n\t<rect x=\"75.365\" y=\"935.105\" fill=\"none\" width=\"736.409\" height=\"438.035\"/>\n\t<text transform=\"matrix(1.0087 0 0 1 75.3643 967.729)\"><tspan x=\"0\" y=\"0\" fill=\"#FFFFFF\" font-family=\"suisse\" font-weight=\"bold\" font-size=\"45\">Les interventions médiatiques</tspan><tspan x=\"680.299\" y=\"0\" fill=\"#FFFFFF\" font-family=\"'MyriadPro-Regular'\" font-size=\"45\"> </tspan><tspan x=\"689.839\" y=\"0\" fill=\"#FFFFFF\" font-family=\"suisse\" font-weight=\"bold\" font-size=\"45\">: </tspan><tspan x=\"0\" y=\"54\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">la personne est régulièrement  </tspan><tspan x=\"0\" y=\"108\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">interrogée et ses écrits sont cités </tspan><tspan x=\"0\" y=\"162\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">dans les médias. </tspan></text>\n</g>\n<g id=\"button_x5F_2\">\n\t<g>\n\t\t<circle fill=\"none\" stroke=\"#00A484\" stroke-width=\"20\" stroke-miterlimit=\"10\" cx=\"635.593\" cy=\"185.4\" r=\"44.571\"/>\n\t</g>\n\t<g opacity=\"0.01\">\n\t\t<circle fill=\"#FFFFFF\" cx=\"635.593\" cy=\"185.4\" r=\"44.571\"/>\n\t</g>\n</g>\n<g id=\"overlay_x5F_2\">\n\t<g>\n\t\t<circle fill=\"#00A585\" stroke=\"#00A484\" stroke-width=\"20\" stroke-miterlimit=\"10\" cx=\"635.456\" cy=\"185.4\" r=\"44.571\"/>\n\t</g>\n\t<rect x=\"75.365\" y=\"935.105\" fill=\"none\" width=\"736.409\" height=\"438.035\"/>\n\t<text transform=\"matrix(1.0087 0 0 1 75.3643 967.729)\"><tspan x=\"0\" y=\"0\" fill=\"#FFFFFF\" font-family=\"suisse\" font-weight=\"bold\" font-size=\"45\">Les diplômes</tspan><tspan x=\"299.472\" y=\"0\" fill=\"#FFFFFF\" font-family=\"'MyriadPro-Regular'\" font-size=\"45\"> </tspan><tspan x=\"309.012\" y=\"0\" fill=\"#FFFFFF\" font-family=\"suisse\" font-weight=\"bold\" font-size=\"45\">: </tspan><tspan x=\"331.376\" y=\"0\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">la personne pos</tspan><tspan x=\"663.423\" y=\"0\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">-</tspan><tspan x=\"0\" y=\"54\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">sède un diplôme de référence </tspan><tspan x=\"0\" y=\"108\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">dans le domaine traité.  </tspan></text>\n</g>\n<g id=\"button_x5F_3\">\n\t<g>\n\t\t<circle fill=\"none\" stroke=\"#00A484\" stroke-width=\"20\" stroke-miterlimit=\"10\" cx=\"273.831\" cy=\"156.572\" r=\"44.571\"/>\n\t</g>\n\t<g opacity=\"0.01\">\n\t\t<circle fill=\"#FFFFFF\" cx=\"274.857\" cy=\"159.898\" r=\"44.571\"/>\n\t</g>\n</g>\n<g id=\"overlay_x5F_3\">\n\t<g>\n\t\t<circle fill=\"#00A585\" stroke=\"#00A484\" stroke-width=\"20\" stroke-miterlimit=\"10\" cx=\"273.831\" cy=\"156.572\" r=\"44.571\"/>\n\t</g>\n\t<rect x=\"75.365\" y=\"935.105\" fill=\"none\" width=\"736.409\" height=\"438.035\"/>\n\t<text transform=\"matrix(1.0087 0 0 1 75.3643 967.729)\"><tspan x=\"0\" y=\"0\" fill=\"#FFFFFF\" font-family=\"suisse\" font-weight=\"bold\" font-size=\"45\">Les publications</tspan><tspan x=\"368.319\" y=\"0\" fill=\"#FFFFFF\" font-family=\"'MyriadPro-Regular'\" font-size=\"45\"> </tspan><tspan x=\"377.859\" y=\"0\" fill=\"#FFFFFF\" font-family=\"suisse\" font-weight=\"bold\" font-size=\"45\">: </tspan><tspan x=\"400.224\" y=\"0\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">la personne a </tspan><tspan x=\"0\" y=\"54\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">publié ses connaissances sous </tspan><tspan x=\"0\" y=\"108\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">forme de livres, d’articles scienti</tspan><tspan x=\"665.582\" y=\"108\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">-</tspan><tspan x=\"0\" y=\"162\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">fiques ou d’articles de presse. Elle </tspan><tspan x=\"0\" y=\"216\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">a participé à des conférences, des </tspan><tspan x=\"0\" y=\"270\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">colloques ou donné des cours ou </tspan><tspan x=\"0\" y=\"324\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">des workshops. </tspan></text>\n</g>\n<g id=\"button_x5F_4\">\n\t<g>\n\t\t<circle fill=\"none\" stroke=\"#00A484\" stroke-width=\"20\" stroke-miterlimit=\"10\" cx=\"353.836\" cy=\"386.586\" r=\"44.571\"/>\n\t</g>\n</g>\n<g id=\"overlay_x5F_4\">\n\t<g>\n\t\t<circle fill=\"#00A585\" stroke=\"#00A484\" stroke-width=\"20\" stroke-miterlimit=\"10\" cx=\"353.836\" cy=\"386.586\" r=\"44.571\"/>\n\t</g>\n\t<rect x=\"75.365\" y=\"935.105\" fill=\"none\" width=\"736.409\" height=\"438.035\"/>\n\t<text transform=\"matrix(1.0087 0 0 1 75.3643 967.729)\"><tspan x=\"0\" y=\"0\" fill=\"#FFFFFF\" font-family=\"suisse\" font-weight=\"bold\" font-size=\"45\">L’expérience</tspan><tspan x=\"292.046\" y=\"0\" fill=\"#FFFFFF\" font-family=\"'MyriadPro-Regular'\" font-size=\"45\"> </tspan><tspan x=\"301.585\" y=\"0\" fill=\"#FFFFFF\" font-family=\"suisse\" font-weight=\"bold\" font-size=\"45\">: </tspan><tspan x=\"323.95\" y=\"0\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">la personne a de </tspan><tspan x=\"0\" y=\"54\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">nombreuses expériences dans le </tspan><tspan x=\"0\" y=\"108\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">domaine. </tspan></text>\n</g>\n<g id=\"button_x5F_5\">\n\t<g>\n\t\t<circle fill=\"none\" stroke=\"#00A484\" stroke-width=\"20\" stroke-miterlimit=\"10\" cx=\"734.436\" cy=\"421.397\" r=\"44.571\"/>\n\t</g>\n\t<g opacity=\"0.01\">\n\t\t<circle fill=\"#FFFFFF\" cx=\"734.436\" cy=\"421.397\" r=\"44.571\"/>\n\t</g>\n</g>\n<g id=\"overlay_x5F_5\">\n\t<g>\n\t\t<circle fill=\"#00A585\" stroke=\"#00A484\" stroke-width=\"20\" stroke-miterlimit=\"10\" cx=\"734.436\" cy=\"422.495\" r=\"44.571\"/>\n\t</g>\n\t<rect x=\"75.365\" y=\"935.105\" fill=\"none\" width=\"736.409\" height=\"438.035\"/>\n\t<text transform=\"matrix(1.0087 0 0 1 75.3643 967.729)\"><tspan x=\"0\" y=\"0\" fill=\"#FFFFFF\" font-family=\"suisse\" font-weight=\"bold\" font-size=\"45\">CV en ligne </tspan><tspan x=\"0\" y=\"54\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">Réseaux sociaux professionnels </tspan><tspan x=\"0\" y=\"108\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">(LinkedIn, ResearchGate) </tspan><tspan x=\"0\" y=\"216\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">Site personnel, blog, site internet </tspan><tspan x=\"0\" y=\"270\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">de l’employeur </tspan></text>\n</g>\n<g id=\"button_x5F_6\">\n\t<g>\n\t\t<circle fill=\"none\" stroke=\"#00A484\" stroke-width=\"20\" stroke-miterlimit=\"10\" cx=\"185.959\" cy=\"498.389\" r=\"44.571\"/>\n\t</g>\n\t<g opacity=\"0.01\">\n\t\t<circle fill=\"#FFFFFF\" cx=\"185.959\" cy=\"498.389\" r=\"44.571\"/>\n\t</g>\n</g>\n<g id=\"overlay_x5F_6\">\n\t<g>\n\t\t<circle fill=\"#00A585\" stroke=\"#00A484\" stroke-width=\"20\" stroke-miterlimit=\"10\" cx=\"185.959\" cy=\"498.389\" r=\"44.571\"/>\n\t</g>\n\t<rect x=\"75.365\" y=\"935.105\" fill=\"none\" width=\"736.409\" height=\"438.035\"/>\n\t<text transform=\"matrix(1.0087 0 0 1 75.3643 967.729)\"><tspan x=\"0\" y=\"0\" fill=\"#FFFFFF\" font-family=\"suisse\" font-weight=\"bold\" font-size=\"45\">Twitter </tspan><tspan x=\"0\" y=\"54\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">Identifie les utilisatrices, utilisa</tspan><tspan x=\"628.409\" y=\"54\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">-</tspan><tspan x=\"0\" y=\"108\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">teurs qui interviennent le plus sur </tspan><tspan x=\"0\" y=\"162\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">un sujet donné grâce aux hash</tspan><tspan x=\"631.428\" y=\"162\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">-</tspan><tspan x=\"0\" y=\"216\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">tags. </tspan><tspan x=\"0\" y=\"324\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">Vérifie leur légitimité. </tspan></text>\n</g>\n<g id=\"button_x5F_7\">\n\t<g>\n\t\t<circle fill=\"none\" stroke=\"#00A484\" stroke-width=\"20\" stroke-miterlimit=\"10\" cx=\"612.826\" cy=\"574.284\" r=\"44.571\"/>\n\t</g>\n\t<g opacity=\"0.01\">\n\t\t<circle fill=\"#FFFFFF\" cx=\"612.826\" cy=\"574.284\" r=\"44.571\"/>\n\t</g>\n</g>\n<g id=\"overlay_x5F_7\">\n\t<g>\n\t\t<circle fill=\"#00A585\" stroke=\"#00A484\" stroke-width=\"20\" stroke-miterlimit=\"10\" cx=\"612.826\" cy=\"574.284\" r=\"44.571\"/>\n\t</g>\n\t<rect x=\"75.365\" y=\"935.105\" fill=\"none\" width=\"736.409\" height=\"438.035\"/>\n\t<text transform=\"matrix(1.0087 0 0 1 75.3643 967.729)\"><tspan x=\"0\" y=\"0\" fill=\"#FFFFFF\" font-family=\"suisse\" font-weight=\"bold\" font-size=\"45\">Publications scientifiques </tspan><tspan x=\"0\" y=\"54\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">Recherche des publications scien</tspan><tspan x=\"700.006\" y=\"54\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">-</tspan><tspan x=\"0\" y=\"108\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">tifiques sur des moteurs dédiés </tspan><tspan x=\"0\" y=\"162\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">(PubMed, Google Scholar, etc). </tspan><tspan x=\"0\" y=\"270\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">Identifie les autrices, auteurs les </tspan><tspan x=\"0\" y=\"324\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">plus cités. </tspan></text>\n</g>\n<g id=\"button_x5F_8\">\n\t<g>\n\t\t<circle fill=\"none\" stroke=\"#00A484\" stroke-width=\"20\" stroke-miterlimit=\"10\" cx=\"358.738\" cy=\"735.617\" r=\"44.571\"/>\n\t</g>\n\t<g opacity=\"0.01\">\n\t\t<circle fill=\"#FFFFFF\" cx=\"358.738\" cy=\"735.617\" r=\"44.571\"/>\n\t</g>\n</g>\n<g id=\"overlay_x5F_8\">\n\t<g>\n\t\t<circle fill=\"#00A585\" stroke=\"#00A484\" stroke-width=\"20\" stroke-miterlimit=\"10\" cx=\"359.702\" cy=\"738.212\" r=\"44.571\"/>\n\t</g>\n\t<rect x=\"75.365\" y=\"875.295\" fill=\"none\" width=\"736.409\" height=\"637.271\"/>\n\t<text transform=\"matrix(1.0087 0 0 1 75.3647 907.9214)\"><tspan x=\"0\" y=\"0\" fill=\"#FFFFFF\" font-family=\"suisse\" font-weight=\"bold\" font-size=\"45\">Séminaires et congrès </tspan><tspan x=\"0\" y=\"54\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">Identifie les événements dont le </tspan><tspan x=\"0\" y=\"108\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">thème principal correspond à ton </tspan><tspan x=\"0\" y=\"162\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">sujet d’étude. </tspan><tspan x=\"0\" y=\"270\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">Regarde qui sont les </tspan><tspan x=\"0\" y=\"324\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">intervenant·e·s </tspan><tspan x=\"0\" y=\"432\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">Vérifie leur légitimité.</tspan></text>\n</g>\n<g id=\"button_x5F_9\">\n\t<g>\n\t\t<circle fill=\"none\" stroke=\"#00A484\" stroke-width=\"20\" stroke-miterlimit=\"10\" cx=\"811.773\" cy=\"587.793\" r=\"44.571\"/>\n\t</g>\n\t<g opacity=\"0.01\">\n\t\t<circle fill=\"#FFFFFF\" cx=\"811.773\" cy=\"587.793\" r=\"44.571\"/>\n\t</g>\n</g>\n<g id=\"overlay_x5F_9\">\n\t<g>\n\t\t<circle fill=\"#00A585\" stroke=\"#00A484\" stroke-width=\"20\" stroke-miterlimit=\"10\" cx=\"811.773\" cy=\"587.793\" r=\"44.571\"/>\n\t</g>\n\t<rect x=\"75.365\" y=\"875.295\" fill=\"none\" width=\"736.409\" height=\"637.271\"/>\n\t<text transform=\"matrix(1.0087 0 0 1 75.3647 907.9214)\"><tspan x=\"0\" y=\"0\" fill=\"#FFFFFF\" font-family=\"suisse\" font-weight=\"bold\" font-size=\"45\">Interventions médiatiques </tspan><tspan x=\"0\" y=\"54\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">Recherche des articles, interviews </tspan><tspan x=\"0\" y=\"108\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">sur ton sujet d’étude. </tspan><tspan x=\"0\" y=\"216\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">Identifie les professionnel·le·s les </tspan><tspan x=\"0\" y=\"270\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">plus interrogé·e·s. </tspan><tspan x=\"0\" y=\"378\" fill=\"#FFFFFF\" font-family=\"'suisse'\" font-size=\"45\">Vérifie leur légitimité. </tspan></text>\n</g>\n</svg>",
+      "modules": [
+        "rec3Uzws3khrczr4D"
+      ],
+      "html": "<p>C’est une personne expérimentée et&nbsp;compétente dans un&nbsp;domaine donné. Elle peut présenter des recommandations, un&nbsp;avis, une analyse voire même des solutions. Elle est reconnue dans son milieu.</p>\n",
+      "index": "2"
+    },
+    {
+      "airtable_id": "recT89iicBP08J498",
+      "sources": "<h2 id=\"sources\">Sources</h2>\n<p>HAESEN, Stéphanie, 2019. _Bruit et silence documentaire _[document PowerPoint]. Octobre 2019. Support de cours : Cours “La recherche d’information”, Haute école de gestion de Genève, filière Information documentaire, année académique 2019-2020 </p>\n",
+      "title": "Trouver des chiffres fiables",
+      "id": "16",
+      "type": "MARKDOWN",
+      "cover": "https://dl.airtable.com/.attachments/00878ee7c55c9220f7f877959675a1db/daf5e216/M3_3_cover.svg",
+      "quiz": "<h2 id=\"quizz\">QUIZZ&#8201;:</h2>\n<p>Quelle est la&nbsp;base de&nbsp;données statistiques concernant l’Europe&#8201;?</p>\n<div class=\"question\">\n    <button class=\"quiz-btn\">Open Data Swiss</button>\n    <button class=\"quiz-btn\" data-correct-answer>Eurostat</button>\n    <button class=\"quiz-btn\">OCDE</button>\n    <button class=\"quiz-btn\">International Monetary Fund Data</button>\n</div>\n\n<p>Quelle est la&nbsp;base de&nbsp;données statistiques sur des questions économiques internationales&#8201;?</p>\n<div class=\"question\">\n    <button class=\"quiz-btn\">Open Data Swiss</button>\n    <button class=\"quiz-btn\">Eurostat</button>\n    <button class=\"quiz-btn\">OCDE</button>\n    <button class=\"quiz-btn\" data-correct-answer>International Monetary Fund Data</button>\n</div>\n\n\n\n\n<p>Quelle est la&nbsp;base de&nbsp;données ouvertes de&nbsp;l’administration publique Suisse&#8201;?</p>\n<div class=\"question\">\n    <button class=\"quiz-btn\" data-correct-answer>Open Data Swiss</button>\n    <button class=\"quiz-btn\">Eurostat</button>\n    <button class=\"quiz-btn\">OCDE</button>\n    <button class=\"quiz-btn\">International Monetary Fund Data</button>\n</div>\n",
+      "modules": [
+        "rec3Uzws3khrczr4D"
+      ],
+      "html": "<h1 id=\"trouver-des-chiffres-fiables\">Trouver des chiffres fiables</h1>\n<p>Les chiffres sont des outils essentiels pour démontrer et&nbsp;appuyer des propos. Ils peuvent également servir à donner une vue d’ensemble sur l’état d’une question.  </p>\n<p>On&nbsp;peut trouver des chiffres concernant des <span class=\"_definition\" data-definition-id=\"donnees_factuelles\">données factuelles</span> dans des statistiques, des études, ou&nbsp;encore des sondages.\n&#8201;<img src=\"https://dl.airtable.com/.attachments/c76a6560b91cacc3fec8559efcd8b68c/5726766e/M3_3_illustration.svg\" alt=\"alt\"></p>\n<p>Les chiffres fiables se&nbsp;trouvent sur des bases de&nbsp;données officielles d’institutions de&nbsp;référence. Voici quelques exemples&#8201;:  </p>\n<p><span class=\"_definition\" data-definition-id=\"bdno\">Bases de&nbsp;données des Nations Unies</span></p>\n<p><span class=\"_definition\" data-definition-id=\"imfd\">International Monetary Fund Data</span></p>\n<p><span class=\"_definition\" data-definition-id=\"ofs\">Office fédéral de&nbsp;la statistique</span></p>\n<p><span class=\"_definition\" data-definition-id=\"ods\">Open data swiss</span></p>\n<p><span class=\"_definition\" data-definition-id=\"eurostat\">Eurostat</span></p>\n<p><span class=\"_definition\" data-definition-id=\"gpde\">Google Public Data Explorer</span></p>\n<p><span class=\"_definition\" data-definition-id=\"ocde\">OCDE</span></p>\n",
+      "index": "3"
+    },
+    {
+      "airtable_id": "recmyika1DK8hBr9K",
+      "title": "Qu’est-ce qu’une fake news&#8201;?",
+      "id": "17",
+      "type": "PODCAST",
+      "media": "https://dl.airtable.com/.attachments/1fe8dbc2044705a926816e5eea3e4150/b0c58f35/M03S04_podcast.mp3",
+      "sources": "<h2 id=\"sources\">Sources</h2>\n<p>KIELY, Eugene et ROBERTSON, Lori, 2016. _How to Spot Fake News. FactCheck _[en ligne].18 novembre 2016. [Consulté le 23 septembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.factcheck.org/2016/11/how-to-spot-fake-news/\">lien</a></p>\n<p>SERRES, Alexandre, 2012._ Dans le labyrinthe : évaluer l&#39;information sur Internet_. Caen : C&amp;F Editions. 224 p. ISBN : 9782915825220 </p>\n<p>GUÉNIAT, Marc, 2020. «Les géants du numérique deviennent les arbitres de la liberté d’expression». [en ligne]. 16 décembre 2020. [Consulté le 2 janvier 2021]. Disponible à l’adresse : /economie/les-reseaux-sociaux-mettent-les-internautes-dans-des-bulles-d-enfermement-culturelles </p>\n<p>Pour aller plus loin : </p>\n<p>Bande dessinées Le Monde </p>\n<p>Cette bande-dessinée a été réalisée par l’équipe de fact-checking Aos Fatos, en partenariat avec l’International Fact-Checking Network de l’Institut Poynter. Elle a été traduite en français par Les Décodeurs du Monde” </p>\n",
+      "modules": [
+        "rec3Uzws3khrczr4D"
+      ],
+      "index": "4"
+    },
+    {
+      "airtable_id": "recBc9mfANTp8y4lx",
+      "title": "Comment lutter contre les fake news&#8201;? ",
+      "id": "18",
+      "type": "VIDEO",
+      "cover": "https://dl.airtable.com/.attachments/fcb6faf29331656f8ff7413ba974959f/a7d5d310/M3_5_cover.svg",
+      "sources": "<h2 id=\"sources\">Sources</h2>\n<p>BIBLIOTHEQUE DU RESEAU DE L’UNIVERSITE DU QUEBEC, 2010. <em>Si c’est écrit, c’est vrai ?</em> [enregistrement vidéo]. YouTube [en ligne]. 22 décembre 2010. [Consulté le 24 septembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.youtube.com/watch?v=lXwgv8kq6rA&amp;feature=emb_logo\">lien</a>\n<em>Comment améliorer son esprit critique</em>. wikiHow [en ligne]. [Consulté le 25 septembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://fr.wikihow.com/am%C3%A9liorer-son-esprit-critique\">lien</a></p>\n<p>CULOT, Martin, 2019._ La critique de l’information en cinq approches._ Média Animation asbl [en ligne]. 24 décembre 2019. [Consulté le 25 septembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://media-animation.be/La-critique-de-l-information-en-cinq-approches.html\">lien</a></p>\n<p>EDUSCOL, 2018. <em>Éducation aux médias et à l’information : former l’esprit critique des élèves</em>. Eduscol [en ligne]. 10 janvier 2018. [Consulté le 23 septembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://eduscol.education.fr/cid107295/former-l-esprit-critique-des-eleves.html\">lien</a></p>\n<p>KIELY, Eugene et ROBERTSON, Lori, 2016. _How to Spot Fake News. FactCheck _[en ligne]. Publié le 18 novembre 2016. [Consulté le 23 septembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.factcheck.org/2016/11/how-to-spot-fake-news/\">lien</a></p>\n<p>PEREIRA, Irène, 2016. <em>Développer l’esprit critique : un enjeu à l’ère du numérique</em>. Le Courrier [en ligne]. 10 juin 2016. [Consulté le 23 septembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://lecourrier.ch/2016/06/10/developper-lesprit-critique-un-enjeu-a-lere-du-numerique/\">lien</a></p>\n<p>PIERRE, Sylvie, 2018. <em>Former à l’esprit critique : une arme efficace contre les fake news</em>. The Conversation [en ligne]. 8 février 2018. [Consulté le 24 septembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"http://theconversation.com/former-a-lesprit-critique-une-arme-efficace-contre-les-fake-news-91438\">lien</a></p>\n<p>SERRES, Alexandre, 2012. <em>Dans le labyrinthe : évaluer l&#39;information sur Internet</em>. Caen : C&amp;F Editions. 224 p. ISBN : 9782915825220 </p>\n<p>Weasel word. Wikipédia : l’encyclopédie libre [en ligne]. Dernière modification de la page le 31 octobre 2020 à 15:23 (UTC). [Consulté le 15 novembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://en.wikipedia.org/w/index.php?title=Weasel_word&amp;oldid=986390514\">lien</a></p>\n<p>Bande dessinées Le Monde </p>\n<p>Cette bande-dessinée a été réalisée par l’équipe de fact-checking Aos Fatos, en partenariat avec l’International Fact-Checking Network de l’Institut Poynter. Elle a été traduite en français par Les Décodeurs du Monde </p>\n<p>« Fred se méfie des fausses infos » : une BD pour apprendre à vérifier l’information, 2018. Le Monde.fr [en ligne]. [Consulté le 2 janvier 2021]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.lemonde.fr/les-decodeurs/article/2018/04/05/fred-se-mefie-des-fausses-infos-une-bd-pour-apprendre-a-verifier-l-information_5281240_4355770.html\">lien</a></p>\n<p>Sources des définitions </p>\n<p>Fake News et désinformation : </p>\n<p>Le petit lexique de l’information et la désinformation. rts.ch [en ligne]. 3 mars 2017. [Consulté le 2 janvier 2021]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.rts.ch/decouverte/monde-et-societe/economie-et-politique/information-et-desinformation/8432556-le-petit-lexique-de-linformation-et-la-desinformation.html\">lien</a></p>\n<p>Bulle de filtre : </p>\n<p>Bulle. Wikipédia [en ligne]. [Consulté le 2 janvier 2021]. Disponible à l’adresse : <a target='_blank'  href=\"https://fr.wikipedia.org/w/index.php?title=Bulle&amp;oldid=174898501\">lien</a> </p>\n",
+      "media": "https://dl.airtable.com/.attachments/141b11dc066c170e0a6728da05e17958/9a238615/M03S05_video.mp4",
+      "modules": [
+        "rec3Uzws3khrczr4D"
+      ],
+      "index": "5"
+    },
+    {
+      "airtable_id": "recIkTTlRs4s3yC02",
+      "title": "Lutter contre le&nbsp;plagiat",
+      "type": "PODCAST",
+      "id": "19",
+      "sources": "<h2 id=\"sources\">Sources</h2>\n<p>DOLLFUSS, Helmut et MILJKOVIĆ, Natascha, 2015. <em>Plagiate finden und vermeiden</em>. GMS Medizin [en ligne]. Août 2015. Vol. 15, n° 3, pp. 1‑2. [Consulté le 29 septembre 2020]. Disponible à l’adresse: <a target='_blank'  href=\"https://www.researchgate.net/publication/306473426_Plagiate_finden_und_vermeiden\">lien</a></p>\n<p>HAUTE ECOLE DE GESTION (GENEVE). Infothèque, 2020. <em>Rédaction d’une bibliographie et méthodes de citation : guide pratique</em> [PDF]. Version 4.4. Genève : HEG, Infothèque. [Consulté le 24 septembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.hesge.ch/heg/sites/default/files/guide_ref.pdf\">lien</a></p>\n<p>HAUTE ECOLE DE GESTION (GENEVE), 2014. Plagiat [en ligne]. 7 mars 2014. [Consulté le 24 septembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.hesge.ch/heg/infotheque/boite-outils/guides-linfotheque/plagiat\">lien</a></p>\n<p>MAUREL-INDART, Hélène, [sans date]. Plagiat. Encyclopædia Universalis [en ligne]. [Consulté le 24 septembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.universalis.fr/encyclopedie/plagiat/\">https://www.universalis.fr/encyclopedie/plagiat/</a> </p>\n<p>LAROUSSE, Éditions, [sans date]. Définitions : plagiat. Dictionnaire de français Larousse [en ligne]. [Consulté le 24 septembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.larousse.fr/dictionnaires/francais/plagiat/61301\">lien</a></p>\n<p>Plagiat, 2020. Wikipédia : l’encyclopédie libre [en ligne]. Dernière modification de la page le 3 novembre 2020 à 21:44. [Consulté le 24 septembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://fr.wikipedia.org/w/index.php?title=Plagiat&amp;oldid=173882038\">lien</a></p>\n<p>Un logiciel détecteur de plagiat pourrait révolutionner le milieu académique [émission radio]. Play RTS [en ligne]. 24 février 2016. [Consulté le 24 septembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.rts.ch/play/radio/forum/audio/un-logiciel-detecteur-de-plagiat-pourrait-revolutionner-le-milieu-academique?id=7501534\">lien</a></p>\n<p>UNIVERSITY OF BERGEN. UIB. Et plagieringseventyr [enregistrement vidéo]. Youtube [en ligne]. 27 mai 2010. [Consulté le 29 septembre 2020]. Disponible à l’adresse suivante : <a target='_blank'  href=\"http://www.youtube.com/watch?v=Mwbw9KF-ACY\">lien</a></p>\n<p>Document à consulter :  </p>\n<p><a target='_blank'  href=\"https://www.youtube.com/watch?v=Mwbw9KF-ACY&amp;feature=youtu.be\">lien</a></p>\n<p><a target='_blank'  href=\"https://infotrack.unige.ch/les-usages-en-matiere-de-citation\">lien</a></p>\n",
+      "media": "https://dl.airtable.com/.attachments/2d2f605d92fee1b737cbeada2737bf2a/bd848fe1/M04S01_podcast.mp3",
+      "modules": [
+        "recL96730JlAeJJXd"
+      ],
+      "index": "1"
+    },
+    {
+      "airtable_id": "recu250dd3Y6SOiMq",
+      "title": "Créer une bibliographie",
+      "id": "20",
+      "type": "VIDEO",
+      "cover": "https://dl.airtable.com/.attachments/196dd507243e1861eef83a88dab86aff/0a9d28de/M4_2_cover.svg",
+      "sources": "<h2 id=\"sources\">Sources</h2>\n<p>HAUTE ECOLE DE GESTION (GENEVE). Infothèque, 2020. <em>Rédaction d’une bibliographie et méthodes de citation : guide pratique</em> [PDF]. Version 4.4. Genève : HEG, Infothèque. [Consulté le 24 septembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.hesge.ch/heg/sites/default/files/guide_ref.pdf\">lien</a></p>\n<p>HAUTE ECOLE D’INGENIEURIE ET DE GESTION (VAUD). Bibliothèque, 2018. <em>Méthode de citation et de rédaction d’une bibliographie : guide pratique</em> [PDF]. Version 2. Vaud: HEIG Vaud, bibliothèque. [Consulté le 14 novembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"http://biblio.heig-vd.ch/docs/default-source/default-document-library/guide-de-bibliographie-en-ing%C3%A9nierie---vdef_2018.pdf?sfvrsn=0\">lien</a></p>\n<p>LE BLOG ZOTERO EN LIGNE, 2020. Hypotheses.org [en ligne]. 12 octobre 2020. [Consulté le 15 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://zotero.hypotheses.org/\">lien</a></p>\n<p>ZOTERO, [sans date]. Zotero : documentation [en ligne]. [Consulté le 10 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.zotero.org/support/fr/quick_start_guide\">lien</a></p>\n",
+      "media": "https://dl.airtable.com/.attachments/70d2ad898ce5ab3d1d426d172257fad3/63743c5c/M04S02_video.mp4",
+      "modules": [
+        "recL96730JlAeJJXd"
+      ],
+      "index": "2"
+    },
+    {
+      "airtable_id": "recS53QrqBJS13C23",
+      "title": "Comment citer ses sources dans le&nbsp;texte&#8201;? ",
+      "id": "21",
+      "type": "MARKDOWN",
+      "cover": "https://dl.airtable.com/.attachments/10225ec27350ade8e3a51eef07ac3d20/f00fe2c6/M4_3_cover.svg",
+      "sources": "<h2 id=\"sources\">Sources</h2>\n<p>HAUTE ECOLE DE GESTION (GENEVE). Infothèque, 2020. <em>Rédaction d’une bibliographie et méthodes de citation : guide pratique</em> [PDF]. Version 4.4. Genève : HEG, Infothèque. [Consulté le 24 septembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://www.hesge.ch/heg/sites/default/files/guide_ref.pdf\">lien</a></p>\n<p>Scribbr, [sans date], <em>Les normes APA : tout ce que vous devez savoir !</em>, [en ligne], 7e éd., Scribr.fr, [sans date], [Consulté le 12 octobre 2020], disponible à l’adresse:  <a target='_blank'  href=\"https://www.scribbr.fr/category/normes-apa/\">lien</a></p>\n<p>UNIVERSITÉ DE MONTRÉAL, [ca. 2014]. _Bien paraphraser. Intégrité, fraude et plagiat _[en ligne]. [ca. 2014]. [Consulté le 4.11.2015]. Disponible à l’adresse : <a target='_blank'  href=\"http://www.integrite.umontreal.ca/pratiques/paraphraser.html\">lien</a></p>\n",
+      "modules": [
+        "recL96730JlAeJJXd"
+      ],
+      "quiz": "<h2 id=\"quizz\">QUIZZ</h2>\n<p>La&nbsp;citation a&nbsp;3 objectifs. Parmi les suivants, lequel n&#39;en fait pas partie&#8201;? </p>\n<div class=\"question\">\n    <button class=\"quiz-btn\">Étayer, illustrer, ou&nbsp;appuyer ton analyse ou&nbsp;ta réflexion</button>\n    <button class=\"quiz-btn\">Distinguer clairement ta&nbsp;pensée de&nbsp;celle des autres</button>\n    <button class=\"quiz-btn\" data-correct-answer>Faire des copier/coller sans risquer de&nbsp;sanction</button>\n    <button class=\"quiz-btn\">Rendre crédit aux idées exprimées dans ton travail</button>\n</div>\n\n\n<p>Quelle est la&nbsp;taille maximale d&#39;une citation&#8201;? </p>\n<div class=\"question\">\n    <button class=\"quiz-btn\">5 mots, c'est déjà beaucoup.</button>\n    <button class=\"quiz-btn\">1 phrase.</button>\n    <button class=\"quiz-btn\">3 lignes.</button>\n    <button class=\"quiz-btn\" data-correct-answer>7 lignes.</button>\n    <button class=\"quiz-btn\">2 paragraphes.</button>\n</div>\n\n\n<p>Paraphraser consiste à reformuler une idée avec ses propres mots. Laquelle de&nbsp;ces affirmations est correcte&#8201;: </p>\n<div class=\"question\">\n    <button class=\"quiz-btn\" data-correct-answer>Paraphraser est interdit.</button>\n    <button class=\"quiz-btn\">On a&nbsp;le droit de&nbsp;paraphraser, mais il&nbsp;faut tout de&nbsp;même citer sa&nbsp;source.</button>\n    <button class=\"quiz-btn\">Lorsqu'on paraphrase, il&nbsp;n'est pas nécessaire de&nbsp;citer sa&nbsp;source.</button>\n    <button class=\"quiz-btn\">Paraphraser permet d'allonger la&nbsp;longueur de&nbsp;son texte.</button>\n</div>\n\n",
+      "html": "<h1 id=\"comment-citer-ses-sources-dans-letexte\">Comment citer ses sources dans le&nbsp;texte&#8201;?</h1>\n<p>La&nbsp;citation a&nbsp;trois objectifs&#8201;:  </p>\n<ul>\n<li>Étayer, illustrer ou&nbsp;appuyer ton analyse ou&nbsp;ta réflexion </li>\n<li>Distinguer clairement ta&nbsp;pensée de&nbsp;celle des autres </li>\n<li>Rendre crédit aux idées exprimées dans ton travail\n&#8201;<img src=\"https://dl.airtable.com/.attachments/62ebe4eef937ad9fe279dfa9a42f0447/5bcf2c66/M04_illustrations-11.svg\" alt=\"alt\"></li>\n</ul>\n<p>Ne&nbsp;pas en&nbsp;abuser</p>\n<p>La&nbsp;citation doit être utilisée avec discernement et&nbsp;modération&#8201;: tes opinions et&nbsp;ton propre travail doivent primer. On&nbsp;estime qu’un travail étudiant ne&nbsp;devrait pas comporter plus de&nbsp;10% de&nbsp;citations et&nbsp;que celles-ci ne&nbsp;doivent pas dépasser 7&nbsp;lignes maximum. \n&#8201;<img src=\"https://dl.airtable.com/.attachments/e305d5f2e875244b79ee5acc22e05192/41dddfd0/M04_illustrations-12.svg\" alt=\"alt\"></p>\n<p>Les règles à respecter</p>\n<ul>\n<li>Mentionner précisément la&nbsp;source de&nbsp;la citation  </li>\n<li><span class=\"_definition\" data-definition-id=\"repro_exact\">Reproduire le&nbsp;texte exact</span> </li>\n<li>Utiliser des guillemets</li>\n<li>Utiliser un&nbsp;style de&nbsp;police différent (italique) ou&nbsp;une mise en&nbsp;page particulière (retrait), pour mettre en&nbsp;valeur de&nbsp;longues citations. \n&#8201;<img src=\"https://dl.airtable.com/.attachments/0c87951851cd97a114ab5f013453f766/7b07e01f/M04_illustrations-13.svg\" alt=\"alt\"></li>\n</ul>\n<p>Il&nbsp;ne faut pas confondre la&nbsp;citation avec la&nbsp;paraphrase qui consiste à reformuler complètement une idée avec ses propres mots. Attention, lorsqu’on paraphrase, il&nbsp;faut tout de&nbsp;même citer sa&nbsp;source&#8201;!  </p>\n<p>La&nbsp;paraphrase peut être utile pour&#8201;: </p>\n<ul>\n<li>Faciliter la&nbsp;lecture de&nbsp;ton texte en&nbsp;s’intégrant au&nbsp;style du&nbsp;reste de&nbsp;ton texte. </li>\n<li>Permet dans certains cas de&nbsp;présenter l’idée de&nbsp;l’autrice, l’auteur de&nbsp;façon plus condensée que si&nbsp;l’on incluait entre guillemets le&nbsp;texte original, donc de&nbsp;résumer les propos.</li>\n</ul>\n<p>Il&nbsp;existe deux modèles pour effectuer une citation dans le&nbsp;texte. Les deux modèles peuvent être utilisés mais une fois un&nbsp;modèle choisi, il&nbsp;faut s&#39;y conformer tout au&nbsp;long d’un même travail.\n&#8201;<img src=\"https://dl.airtable.com/.attachments/a13793e6a2a78749bc9671e4a25716e0/81b14177/M04_illustrations-14.svg\" alt=\"alt\"></p>\n<p>Modèle &quot;citation-note&quot;</p>\n<ul>\n<li>Après la&nbsp;citation, insérer une note de&nbsp;bas de&nbsp;page </li>\n<li>Un&nbsp;numéro est reporté en&nbsp;bas de&nbsp;page où la&nbsp;référence complète doit être mentionnée </li>\n<li>On&nbsp;peut utiliser l’abréviation ibid (ici même) pour citer un&nbsp;document déjà mentionné à la&nbsp;note précédente (si la&nbsp;page n’est pas le&nbsp;même, il&nbsp;faut l’indiquer&#8201;: ibid, p. 43) \n&#8201;<img src=\"https://dl.airtable.com/.attachments/779b66379217b221c3e7ca6aeefd3781/fdac3223/M04_illustrations-15.svg\" alt=\"alt\"></li>\n</ul>\n<p>Modèle &quot;auteur-année&quot; </p>\n<ul>\n<li>Immédiatement après la&nbsp;citation, insérer entre parenthèses&#8201;: le&nbsp;nom et&nbsp;l&#39;initiale du&nbsp;prénom de&nbsp;l’autrice, l&#39;auteur, la&nbsp;date de&nbsp;parution du&nbsp;document cité et&nbsp;la page de&nbsp;référence de&nbsp;la citation </li>\n<li>La&nbsp;référence complète de&nbsp;la citation doit figurer dans la&nbsp;bibliographie en <span class=\"_definition\" data-definition-id=\"fin_travail\">fin de&nbsp;travail</span>  </li>\n</ul>\n",
+      "index": "3"
+    },
+    {
+      "airtable_id": "recThxgmuijtbKDRF",
+      "title": "Faire de&nbsp;la veille",
+      "id": "22",
+      "type": "MARKDOWN",
+      "cover": "https://dl.airtable.com/.attachments/aba7829cad42870122d0aa38bd263dd0/fb97283c/M4_4_cover.svg",
+      "sources": "<h2 id=\"sources\">Sources</h2>\n<p>MADINIER, Hélène, 2020. Cours théorique 1 : introduction à la veille [document PDF]. Support de cours : Cours « Veille stratégique 1 », Haute école de gestion de Genève, filière Information documentaire, année académique 2020-2021 </p>\n<p>Veille en entreprise. Wikipédia : l’encyclopédie libre [en ligne]. Dernière modification de la page le 3 octobre 2020 à 05:00. [Consulté le 24 octobre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://fr.m.wikipedia.org/wiki/Veille_en_entreprise\">lien</a></p>\n<p>Sources définitions </p>\n<p>Newsletter </p>\n<p>CORTHESY, Bastien, 2020. _Le monde du mail [_en ligne]. 7 septembre 2020. [Consulté le 13 décembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"https://mondedumail.com/newsletter-cest-quoi-definition-et-conseils-cles/\">lien</a></p>\n<p>Rapport d’étonnement </p>\n<p>DEBLIQUY, Pierre-Yves, 2012. Euresis [en ligne]. 27 août 2012. [Consulté le 13 décembre 2020]. Disponible à l’adresse : <a target='_blank'  href=\"http://blog.euresis.com/index.php?/archives/918-Intelligence-economique,-veille-et-rapport-detonnement.html\">lien</a></p>\n",
+      "modules": [
+        "recL96730JlAeJJXd"
+      ],
+      "html": "<h1 id=\"faire-dela-veille\">Faire de&nbsp;la veille</h1>\n<p>Avec le&nbsp;web, nous faisons face à une surcharge informationnelle accentuée par la&nbsp;multiplicité des sources d’informations. L’information est éparse&#8201;: elle peut aussi bien se&nbsp;trouver sur un&nbsp;site de&nbsp;grande notoriété que sur un&nbsp;blog de&nbsp;spécialiste peu ou&nbsp;pas référencé. Ce&nbsp;flot permanent d’informations nécessite d’être à l’affut pour capter celles qui peuvent nous intéresser.<br>&#8201;<img src=\"https://dl.airtable.com/.attachments/779b66379217b221c3e7ca6aeefd3781/fdac3223/M04_illustrations-15.svg\" alt=\"alt\"></p>\n<p>La&nbsp;veille est un&nbsp;dispositif (…) de&nbsp;collecte, traitement, diffusion et&nbsp;exploitation de&nbsp;l’information qui vise à rendre (…) une organisation, quelle qu’elle soit, capable de&nbsp;réagir, à moyen et&nbsp;long termes, face à des évolutions ou&nbsp;des menaces de&nbsp;son environnement, que celles-ci soient technologiques, concurrentielles, sociales, etc. » (définition de&nbsp;l’ADBS, Association des professionnels de&nbsp;l’information et&nbsp;de la&nbsp;documentation)\n&#8201;<img src=\"https://dl.airtable.com/.attachments/cf0137a140453b955159dfbc5da6b3b9/9cc34a50/M04_illustrations-16.svg\" alt=\"alt\"></p>\n<p>Les principaux types de&nbsp;veille </p>\n<ul>\n<li>Veille concurrentielle&#8201;: détecter ses concurrent·e·s. </li>\n<li>Veille documentaire&#8201;: Découvrir les publications récentes. </li>\n<li>Veille juridique&#8201;: Anticiper les changements de&nbsp;législation. </li>\n<li>Veille technologique&#8201;: Identifier les nouvelles technologies et&nbsp;les publications scientifiques. </li>\n<li>Veille stratégique&#8201;: Englobe tous les types de&nbsp;veille afin d’identifier les menaces et&nbsp;les opportunités. \n&#8201;<img src=\"https://dl.airtable.com/.attachments/d72b3137e7a890d8a1993db7a168ebac/4508beed/M04_illustrations-17.svg\" alt=\"alt\"></li>\n</ul>\n<p>Les objectifs de&nbsp;la veille </p>\n<ul>\n<li>Anticiper&#8201;: Détecter les changements (Exemple&#8201;: nouveaux produits)  </li>\n<li>Limiter les risques&#8201;: Détecter les dangers (exemple&#8201;: nouveau concurrent) </li>\n<li>Progresser&#8201;: Détecter les écarts </li>\n<li>Innover&#8201;: Détecter les nouvelles idées (exemple&#8201;: articles scientifiques) </li>\n<li>Grandir&#8201;: Détecter de&nbsp;nouveaux partenaires\n&#8201;<img src=\"https://dl.airtable.com/.attachments/abec05092663fa010239c977ec664e85/5079a956/M04_illustrations-18.svg\" alt=\"alt\"></li>\n</ul>\n<p>Une fois que tu&nbsp;as réalisé ta&nbsp;veille, tu&nbsp;peux créer plusieurs types de&nbsp;documents. </p>\n<ul>\n<li><span class=\"_definition\" data-definition-id=\"rapo_eto\">Rapport d’étonnement</span> </li>\n<li><span class=\"_definition\" data-definition-id=\"rapo_veille\">Rapports de&nbsp;veille</span></li>\n<li><span class=\"_definition\" data-definition-id=\"newsletters\">Newsletters</span> </li>\n</ul>\n",
+      "index": "4"
     }
   ],
   "definitions": [
@@ -2153,6 +3077,86 @@
       "airtable_id": "recOUp4mTFZHdmhsH",
       "id": "facettes",
       "definition": "La recherche à facettes (ou recherche facettée, ou navigation à facettes) est une technique en recherche d'information correspondant à une méthodologie d'accès à l'information basée sur une classification à facettes. Elle donne aux utilisateurs les moyens de filtrer une collection de données en choisissant un ou plusieurs critères (les facettes)."
+    },
+    {
+      "airtable_id": "recUol1uVZRJtp9uK",
+      "id": "reponses",
+      "definition": "Astuce : Tu peux évaluer le niveau d’utilité des sources que tu consultes (1 = Moyen, 2 = Bon, 3 = Excellent)"
+    },
+    {
+      "airtable_id": "reccpXZBpfT4dhr4X",
+      "id": "journal_blog",
+      "definition": "Astuce : De manière générale, privilégie les ressources universitaires ou institutionnelles car elles donnent accès à des documents de qualité."
+    },
+    {
+      "airtable_id": "recEeUFGLt73n6hJi",
+      "id": "type_recherche",
+      "definition": "Biographique, statistique, etc"
+    },
+    {
+      "airtable_id": "recv7bxsi29gk4LdL",
+      "id": "donnees_factuelles",
+      "definition": "le PIB d’un pays, transactions, taux de chômage, nombre d’habitants etc."
+    },
+    {
+      "airtable_id": "recCx72I3SimYAJSG",
+      "id": "bdno",
+      "definition": "Classé par thématique, permet de trouver des bases de données statistiques sur des questions internationales"
+    },
+    {
+      "airtable_id": "recPb1PZ1MSnMbx97",
+      "id": "imfd",
+      "definition": "Base de données statistiques sur des questions économiques internationales"
+    },
+    {
+      "airtable_id": "recpvCvf9MH6rs5Ks",
+      "id": "ofs",
+      "definition": "Regroupe toutes les données statistiques concernant la Suisse"
+    },
+    {
+      "airtable_id": "recH9cfL8suqreb2n",
+      "id": "ods",
+      "definition": "Base de données ouvertes de l’administration publique Suisse"
+    },
+    {
+      "airtable_id": "recxJoFJ8Ft56sagA",
+      "id": "eurostat",
+      "definition": "Base de données statistiques concernant l’Europe"
+    },
+    {
+      "airtable_id": "recE4j2cLbfPEF0ev",
+      "id": "gpde",
+      "definition": "Moteur de recherche de données issues d’organismes, très utile pour trouver des chiffres"
+    },
+    {
+      "airtable_id": "recVYQlsyPRyK5LTr",
+      "id": "ocde",
+      "definition": "L'Organisation de coopération et de développement économiques (OCDE) est une organisation internationale d'études économiques, dont les pays membres — des pays développés pour la plupart — ont en commun un système de gouvernement démocratique et une économie de marché."
+    },
+    {
+      "airtable_id": "recf0McZrMHxnJwWU",
+      "id": "repro_exact",
+      "definition": "Astuce : Conserver la ponctuation, les majuscules et même les fautes d'orthographe du texte original (utilisez, dans ce cas, entre crochets le mot latin [sic] juste après l’erreur) "
+    },
+    {
+      "airtable_id": "recVw0uwT8DU8uVLr",
+      "id": "fin_travail",
+      "definition": "Exemple : « La mémoire de travail a trois fonctions essentielles : donner sens aux perceptions […], élaborer la conduite et gérer l'exécution des tâches » (Saint-Onge, M. 2000, p. 28)\n\nDans la bibliographie, en fin de travail : SAINT-ONGE, Michel, 2000. Moi j'enseigne, mais eux apprennent-ils ? Laval : Beauchemin."
+    },
+    {
+      "airtable_id": "recly2RqsEi1WekZh",
+      "id": "rapo_eto",
+      "definition": "Le rapport d'étonnement est un document de maximum deux pages qui comprend les meta-informations (auteur, date, lieu et circonstances de l'étonnement), la description de l'étonnement et une partie analyse du contenu."
+    },
+    {
+      "airtable_id": "reccLB1HI2Bgkq89I",
+      "id": "rapo_veille",
+      "definition": "Le rapport de veille est un document plus long est complet qu'une note détonnement. Il contient la description détaillée de la problématique, de l'organisation du travail et de la synthèse de la veille."
+    },
+    {
+      "airtable_id": "recZBhKHA2iFOe3Dy",
+      "id": "newsletters",
+      "definition": "Le terme news letter englobe tous les mails envoyé régulièrement à des listes de diffusion. C'est un moyen d'atteindre un grand nombre de personne facilement."
     }
   ]
 }

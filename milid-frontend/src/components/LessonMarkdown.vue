@@ -80,6 +80,20 @@ export default class LessonMarkdown extends Vue {
     this.cleanupDefinitions();
   }
 
+  // add support for live updating of component
+  // the case occurs in module 4 where 2 markdown lessons follow each other
+  beforeUpdate(){
+    this.cleanupDefinitions();
+    this.lessonContent = this.lesson.html;
+    this.definitions = $module.store.definitions;
+  }
+
+  updated(){
+    this.setupDefinitions();
+    this.setupImages();
+  }
+
+
   get module() {
     return $module.getModuleWithId(this.moduleId);    
   }
