@@ -1,5 +1,11 @@
 <?php
   //
+  // naive security
+  function controller_event_security_post($token, $method) {
+
+  }
+
+  //
   // naive validation
   function controller_event_validate($data){
       if(!property_exists($data, 'uid')){

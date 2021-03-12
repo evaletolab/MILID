@@ -58,6 +58,7 @@
 
   function db_init(){
     try {
+      global $db;
       // connect to your database
       $db = new SQLite3('./db.sqlite');
       $db->busyTimeout(5000);
@@ -79,12 +80,18 @@
   
   }
 
+  function db() {
+    global $db;
+    return $db;
+  }
 
-  function db_close($db) {
+  function db_close() {
+    global $db;
     $db->close();
   }
 
-  function db_exit($db) {
+  function db_exit() {
+    global $db;
     $db->close();
     exit();
   }
