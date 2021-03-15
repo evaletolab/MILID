@@ -1,7 +1,7 @@
 
 <template>
   <div class="lesson-video" :class="'theme-'+module.theme" :style="cssVars">  
-    <h4 v-html="lesson.title" />
+    <h1 v-html="lesson.title" />
     <div class="player">
       <svg viewBox="0 0 200 200" class="video-edges">
       <path class="st0" d="M177.14,129.13l-0.69-0.7c-0.43-0.43-13.01-13.23-13.01-13.23l-9.31-9.31c-2.09-2.1-2.09-5.52,0-7.62
@@ -54,6 +54,10 @@
   .st2{fill:var(--primary);}
   .st1{fill:#fff;}
   .st0{fill:var(--tertiary);}
+
+  h1{
+    color: var(--primary);
+  }
 
   .lesson-video{
     display: flex;

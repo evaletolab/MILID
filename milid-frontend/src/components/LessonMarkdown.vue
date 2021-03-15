@@ -43,6 +43,10 @@
     text-decoration: underline;
   }
 
+  .col /deep/ h1{
+    color: var(--lesson-color);
+  }
+
 </style>
 
 

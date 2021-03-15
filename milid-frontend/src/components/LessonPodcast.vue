@@ -40,7 +40,6 @@
 
   h1{
       text-transform: uppercase;
-      font-size: 15px;
   }
 
   .lottie-container{
