@@ -15,5 +15,8 @@
     "dotenv": "^8.2.0",
     "fs-extra": "^9.0.1",
     "marked": "^2.0.0"
+  },
+  "dependencies": {
+    "got": "^11.8.2"
   }
 }

@@ -1,16 +1,31 @@
 const marked = require('marked');
 const { insecables } = require('../typeHelper');
 
+const assetShouldBeDownloaded = require('../assetHelpers');
+
 module.exports = function mdTransformer(lesson, globalData){
 
     const renderer = new marked.Renderer();
 
+    // const urlForAssetId = (assetId) => {
+    //     const asset = globalData.assets.find(asset => asset.id == assetId);
+    //     if(!asset){
+    //         throw new Error(`no asset with id ${assetId}`);
+    //     }
+    //     return asset.media[0].url;
+    // }
+    
     const urlForAssetId = (assetId) => {
         const asset = globalData.assets.find(asset => asset.id == assetId);
         if(!asset){
             throw new Error(`no asset with id ${assetId}`);
         }
-        return asset.media[0].url;
+
+        if(assetShouldBeDownloaded(asset)){
+            return  `/assets/${asset.media[0].filename}`;
+        }else{
+            return asset.media[0].url;
+        }
     }
 
     ////////////
