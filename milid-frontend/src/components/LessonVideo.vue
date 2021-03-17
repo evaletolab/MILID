@@ -3,33 +3,9 @@
   <div class="lesson-video" :class="'theme-'+module.theme" :style="cssVars">  
     <h1 v-html="lesson.title" />
     <div class="player">
-      <svg viewBox="0 0 200 200" class="video-edges">
-      <path class="st0" d="M177.14,129.13l-0.69-0.7c-0.43-0.43-13.01-13.23-13.01-13.23l-9.31-9.31c-2.09-2.1-2.09-5.52,0-7.62
-        c1.01-1.02,2.36-1.58,3.79-1.58c1.43,0,2.78,0.56,3.79,1.58l5.32,5.32c1.47,1.47,3.41,2.28,5.49,2.28c2.07,0,4.02-0.81,5.49-2.28
-        c3.02-3.03,3.02-7.96,0-10.99l-0.87-0.88l-9.29-9.31c-0.06-0.06-0.12-0.11-0.18-0.15l-12.63-12.63l0.02-0.02l-38.46-38.46
-        L99.58,14.14c-1.26-0.84-2.74-1.3-4.29-1.3c-2.07,0-4.02,0.81-5.49,2.28c-3.02,3.03-3.02,7.96,0,10.99l0.59,0.59
-        c2.09,2.1,2.09,5.52,0,7.62c-1.01,1.02-2.36,1.58-3.79,1.58c-1.4,0-2.72-0.54-3.73-1.51c0,0-11.19-10.74-11.81-11.37l-8.87-8.87
-        c-1.26-0.84-2.74-1.3-4.29-1.3c-2.07,0-4.02,0.81-5.49,2.28c-3.02,3.03-3.02,7.96,0,10.99l0.59,0.59c2.09,2.1,2.09,5.52,0,7.62
-        c-1.01,1.02-2.36,1.58-3.79,1.58c-1.4,0-2.72-0.54-3.73-1.51l-9.94-9.98c-1.47-1.47-3.41-2.28-5.48-2.28c0,0,0,0,0,0
-        c-2.07,0-4.02,0.81-5.49,2.28c-3.02,3.03-3.02,7.96,0,10.99L36.57,47.4l9.31,9.31c2.09,2.1,2.09,5.52,0,7.62
-        c-1.01,1.02-2.36,1.58-3.79,1.58c-1.43,0-2.78-0.56-3.79-1.58L32.96,59c-1.47-1.47-3.41-2.28-5.49-2.28c-2.07,0-4.02,0.81-5.49,2.28
-        c-3.02,3.03-3.02,7.96,0,10.99l0.87,0.88l0.69,0.7c0.28,0.43,0.62,0.84,1,1.22L36.57,84.8l9.31,9.31c2.09,2.1,2.09,5.52,0,7.62
-        c-1.01,1.02-2.36,1.58-3.79,1.58c-1.43,0-2.78-0.56-3.79-1.58l-5.32-5.32c-1.47-1.47-3.41-2.28-5.49-2.28
-        c-2.07,0-4.02,0.81-5.49,2.28c-3.02,3.03-3.02,7.96,0,10.99l0.87,0.88l9.29,9.31c0.06,0.06,0.12,0.11,0.18,0.15l12.63,12.63
-        l-0.02,0.02l38.46,38.46l17.01,17.01c1.26,0.84,2.74,1.3,4.29,1.3c2.07,0,4.02-0.81,5.49-2.28c3.02-3.03,3.02-7.96,0-10.99
-        l-0.59-0.59c-2.09-2.1-2.09-5.52,0-7.62c1.01-1.02,2.36-1.58,3.79-1.58c1.4,0,2.72,0.54,3.73,1.51c0,0,11.1,10.66,11.81,11.37
-        l8.87,8.87c1.26,0.84,2.74,1.3,4.29,1.3c2.07,0,4.02-0.81,5.49-2.28c3.02-3.03,3.02-7.96,0-10.99l-0.59-0.59
-        c-2.09-2.1-2.09-5.52,0-7.62c1.01-1.02,2.36-1.58,3.79-1.58c1.4,0,2.72,0.54,3.73,1.51l9.94,9.98c1.46,1.47,3.41,2.28,5.48,2.28
-        c0,0,0,0,0,0c2.07,0,4.02-0.81,5.49-2.28c3.02-3.03,3.02-7.96,0-10.99l-12.02-12.01l-9.31-9.31c-2.09-2.1-2.09-5.52,0-7.62
-        c1.01-1.02,2.36-1.58,3.79-1.58c1.43,0,2.78,0.56,3.79,1.58l5.32,5.32c1.47,1.47,3.41,2.28,5.49,2.28c2.07,0,4.02-0.81,5.49-2.28
-        c3.02-3.03,3.02-7.96,0-10.99L177.14,129.13z"/>
-      <g>
-        <foreignObject>
-        </foreignObject>
-      </g>
-
-      </svg>
-      <canvas ref="canvas"  hidden></canvas>
+      <div class="lottie-container">
+        <lottie-animation class="lottie-player" :path="lottiePath" :autoPlay="false" @AnimControl="setAnimController" />
+      </div>
       <video ref="video"  playsinline  @click="onToggle" >
           <source :src="mediaUrl"  type='video/mp4'>
       </video>
@@ -47,6 +23,8 @@
             <MILIDIcons name="podcast-forward" width="35px" :theme="theme" @wasClicked="onSeekForwards"  />
         </div>
     </div>
+
+    <div style="height:120px" />
   </div>
 </template>
 
@@ -57,6 +35,18 @@
 
   h1{
     color: var(--primary);
+  }
+  
+  .lottie-container{
+    display: flex;
+    justify-content: center;
+    width:150%;
+    min-height: 320px;
+  }
+
+  .lottie-player{
+    position:relative;
+    left: -17%;
   }
 
   .lesson-video{
@@ -82,9 +72,9 @@
     
     video,
     canvas {
-      width: calc( 100% - 90px);
-      height: calc( 100% - 95px);
-      border-radius: 30px;
+      width: calc( 100vw - 95px);
+      height: calc( 100vw - 95px);
+      border-radius: 60px;
       background-color: var(--tertiary);
       margin: auto;    
       position: absolute;
@@ -133,13 +123,15 @@
 /* eslint-disable */
 import { Component, Vue, Prop } from 'vue-property-decorator';
 import MILIDIcons from '../components/MILIDIcons.vue';
+import LottieAnimation from "lottie-vuejs/src/LottieAnimation.vue";
 
 import { $module } from '@/services/module-service';
 import { $config } from '@/services/config-service';
 
 @Component({
   components: {
-    MILIDIcons    
+    MILIDIcons,
+    LottieAnimation,
   },
 })
 export default class LessonVideo extends Vue {
@@ -149,6 +141,9 @@ export default class LessonVideo extends Vue {
   duration = 0;
   elapsed = "0";
   isPlaying = false;
+  
+  lottieController:any = null;
+  lottieOptions:any = null;
 
   get lesson() {
     return $module.getLessonForModuleAndLessonId(this.moduleId,this.lessonId);
@@ -160,6 +155,10 @@ export default class LessonVideo extends Vue {
 
   get theme(){
       return $module.getModuleWithId(this.moduleId).theme;
+  }
+  
+  get lottiePath(){
+    return `lottie/video-theme-${this.moduleId}.json`;
   }
 
   get cssVars() {
@@ -195,37 +194,6 @@ export default class LessonVideo extends Vue {
       this.video.addEventListener('timeupdate', this.onTimeUpdate);
       this.video.addEventListener('loadedmetadata', this.onMetaLoaded);
 
-      const canvas = this.$refs.canvas as HTMLCanvasElement;
-      const { width, height } = canvas.getBoundingClientRect();
-      canvas.width = Math.floor(width * 1);
-      canvas.height = Math.floor(height * 1);
-      const ctx = canvas.getContext('2d');
-
-
-      //
-      // crop video inside canvas
-      // respect ratio relative to height
-      // DEAD CODE
-      // this.video.addEventListener('play', function() {
-      //   const $this = this; //cache
-      //   const videoWidth = $this.videoWidth;
-      //   const videoHeight = $this.videoHeight;
-      //   const ratio = canvas.height / videoHeight;
-
-      //   const sx = (videoWidth*ratio - canvas.width) / 2;
-      //   const sy = (videoHeight*ratio - canvas.height) / 2;
-      //   // console.log('--DBG',videoWidth,videoHeight, ratio);
-      //   // console.log('--DBG',videoWidth*ratio,videoHeight*ratio, ratio);
-      //   // console.log('--DBG',sx,sy,videoWidth*ratio,videoHeight*ratio, ratio);
-      //   (function loop() {
-      //     if (ctx && !$this.paused && !$this.ended) {
-      //       ctx.drawImage($this, 
-      //         sx,sy,videoWidth-sx*2,videoHeight-sy*2,
-      //         0, 0,canvas.width,canvas.height);
-      //       setTimeout(loop, 1000 / 30); // drawing at 30fps
-      //     }
-      //   })();
-      // }, false);
       console.log('--DBG',this.lesson)
   }
 
@@ -261,6 +229,10 @@ export default class LessonVideo extends Vue {
 
     this.video.pause();
     this.isPlaying = false;
+    
+    if(this.lottieController){
+        this.lottieController.pause();
+    }
   }
 
   onPlay() {
@@ -268,6 +240,10 @@ export default class LessonVideo extends Vue {
 
     this.video.play();
     this.isPlaying = true;
+
+    if(this.lottieController){
+        this.lottieController.play();
+    }
   }
 
   onSeekForwards(){
@@ -286,6 +262,10 @@ export default class LessonVideo extends Vue {
     const secondsStr = seconds.toString().padStart(2, '0');
 
     return `${minStr}${secondsStr}`;
+  }
+  
+  setAnimController(controller){
+    this.lottieController = controller;
   }
 
 }
