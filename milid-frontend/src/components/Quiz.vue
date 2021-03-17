@@ -3,13 +3,24 @@
   <div class="quiz" :style="cssVars">
     <div ref="raw_root" v-html="quizContent" />
     <div class="center">
+      <div style="height:20px"/>
       <button 
       @click.once="validate" 
       :disabled="!allQuestionsHaveAtLeastOneAnswer" 
       class="validate-btn"
-      v-bind:class="{ validateBtnActive: allQuestionsHaveAtLeastOneAnswer }">Validez vos réponses</button>
+      :key="buttonKey"
+      v-bind:class="{ validateBtnActive: allQuestionsHaveAtLeastOneAnswer }">
+        Validez vos réponses
+      </button>
     </div>
     <p>{{validationText}}</p>
+    <div class="center">
+      <button 
+      @click.once="reStart"
+      v-if="showRetryBtn"
+      :key="buttonKey"
+      class="validate-btn validateBtnActive">Réessayer</button>
+    </div>
   </div>
 </template>
 
@@ -39,7 +50,7 @@
     text-decoration: none;
     display: inline-block;
     margin: 4px 2px;
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom: 10px;
     cursor: pointer;
     border-radius: 48px;
@@ -122,6 +133,10 @@ export default class Quiz extends Vue {
 
   allQuestionsHaveAtLeastOneAnswer = false;
 
+  showRetryBtn = false;
+
+  buttonKey = 0; // allows remount of click once buttons (resets once directive)
+
   beforeMount(){
     this.quizContent = this.lesson.quiz;
   }
@@ -149,9 +164,8 @@ export default class Quiz extends Vue {
   }
 
   validate(){
-    const questionCount = this.questionSets.length;
     let correctAnswersCount = 0;
-    
+
     for(const questionSet of this.questionSets){
       console.log(questionSet.id, questionSet.hasCorrectAnswer());
       if(questionSet.hasCorrectAnswer()){
@@ -163,8 +177,27 @@ export default class Quiz extends Vue {
 
     const plural = correctAnswersCount > 1 ? 's' : '';
 
-    this.validationText = `${correctAnswersCount} réponse${plural} sur ${this.questionSets.length} correcte${plural}.`
+    const questionCount = this.questionSets.length;
 
+    if(correctAnswersCount == questionCount){
+      // no errors
+      this.validationText = "Bravo, vous avez répondu correctement au Quizz!";
+    }else{
+      // there were errors
+      this.validationText = `Vous avez trouvé ${correctAnswersCount} réponse${plural} sur ${questionCount}.`
+      // offer retry option
+      this.showRetryBtn = true;
+    }
+  }
+
+  reStart(){
+    this.showRetryBtn = false;
+    this.validationText = "";
+    this.buttonKey++;
+    this.allQuestionsHaveAtLeastOneAnswer = false;
+    for(const questionSet of this.questionSets){
+      questionSet.reset();
+    }
   }
 
   computeStatus(){

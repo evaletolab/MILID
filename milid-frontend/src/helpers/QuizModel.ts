@@ -1,4 +1,4 @@
-function isQuestionBtnCorrect(questionBtn){
+function isAnswerBtnCorrect(questionBtn){
 
     if (questionBtn.hasAttribute('data-correct-answer') && !questionBtn.classList.contains('active')) {
         return false;
@@ -59,14 +59,16 @@ function crossIcon(color){
 export class QuestionSet
 {
     answers = new Map();
+    answerTexts: string[] = [];
     id = "";
     
     constructor(id: string){
         this.id = id;
     }
 
-    addAnswer(id, questionBtn){
-        this.answers.set(id, questionBtn);
+    addAnswer(id, answerBtn){
+        this.answers.set(id, answerBtn);
+        this.answerTexts.push(answerBtn.innerHTML);
     }
 
     containsId(id){
@@ -76,19 +78,19 @@ export class QuestionSet
     validate(){
         const isCorrect = this.hasCorrectAnswer();
 
-        for(const questionBtn of this.answers.values()){
+        for(const answerBtn of this.answers.values()){
 
-            if(questionBtn.classList.contains('active')) {
-                questionBtn.innerHTML += isCorrect ? vuIcon('green') : crossIcon('red');
+            if(answerBtn.classList.contains('active')) {
+                answerBtn.innerHTML += isCorrect ? vuIcon('green') : crossIcon('red');
             }
             
-            questionBtn.disabled = true;
+            answerBtn.disabled = true;
         }
     }
 
     hasCorrectAnswer(){
-        for(const questionBtn of this.answers.values()){
-            if(!isQuestionBtnCorrect(questionBtn)){
+        for(const answerBtn of this.answers.values()){
+            if(!isAnswerBtnCorrect(answerBtn)){
                 return false;
             }
         }
@@ -97,8 +99,8 @@ export class QuestionSet
     }
 
     hasAtLeastOneAnswer(){
-        for(const questionBtn of this.answers.values()){
-            if(questionBtn.classList.contains('active')){
+        for(const answerBtn of this.answers.values()){
+            if(answerBtn.classList.contains('active')){
                 return true;
             }
         }
@@ -107,14 +109,42 @@ export class QuestionSet
     }
 
     setDoneAppearance(){
-        for(const questionBtn of this.answers.values()){
-            questionBtn.classList.add('quiz-btn-done');
+        for(const answerBtn of this.answers.values()){
+            answerBtn.classList.add('quiz-btn-done');
+        }
+    }
+    
+    removeDoneAppearance(){
+        for(const answerBtn of this.answers.values()){
+            answerBtn.classList.remove('quiz-btn-done');
         }
     }
 
-    deActivateAllButtons(){
-        for(const questionBtn of this.answers.values()){
-            questionBtn.classList.remove('active');
+    removeIcons(){
+        const answerButtons = Array.from(this.answers.values());
+        for(let i = 0; i < answerButtons.length; i++){
+            const answerBtn = answerButtons[i];
+            answerBtn.innerHTML = this.answerTexts[i];
         }
+
+    }
+
+    deActivateAllButtons(){
+        for(const answerBtn of this.answers.values()){
+            answerBtn.classList.remove('active');
+        }
+    }
+
+    enableAllButtons(){
+        for(const answerBtn of this.answers.values()){
+            answerBtn.disabled = false;
+        }
+    }
+
+    reset(){
+        this.deActivateAllButtons();
+        this.enableAllButtons();
+        this.removeDoneAppearance();
+        this.removeIcons();
     }
 }
