@@ -12,15 +12,43 @@ class ConfigService {
   // https://fr.vuejs.org/v2/guide/reactivity.html
   private _store: any;
   private _baseUrl = process.env.BASE_URL;
+
+  lang = 'fr';
  
   constructor() {
     this._store = Vue.observable({
       config: {}
     });
+
+    //
+    // i18n init, default is FR
+    const lang = navigator.language || navigator['userLanguage'];   
+    if (/^en\b/.test(lang)) {
+      this.lang = "fr";
+    }
+    if (/^fr\b/.test(lang)) {
+      this.lang = "fr";
+    }
+    if (/^de\b/.test(lang)) {
+      this.lang = "de";
+    }
+
+    console.log('---i18n', this.lang);
   }
 
   get store() {
     return this._store;
+  }
+
+  get config() {
+    return this._store.config;
+  }
+
+  i18n(key) {
+    if(!this.config.i18n) {
+      return '';
+    }
+    return this.config.i18n[this.lang][key];
   }
 
   async get(force?: boolean){
