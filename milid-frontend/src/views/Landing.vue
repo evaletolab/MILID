@@ -1,38 +1,55 @@
 <template>
   <div class="landing">
-    <div id="nav" class="topbar title ">
-      <div class="left">
-        <span class="version">{{ config.version }}</span>
+    <!-- TOOLBAR -->
+    <nav class="toolbar">
+      <div class="toolbar-row">
+        <div class="toolbar-section-start">
+          <button class="icon start">
+          </button>
+        </div>
+
+        <div class="toolbar-title">
+          <MILIDIcons name="logo" width="80" color="white"/>
+        </div>        
+
+        <div class="toolbar-section-end">
+          <button class="icon end">
+            <MILIDIcons name="parametres" color="white"/>
+          </button>
+        </div>
       </div>
-      <div class="right hide-sm">
-        <router-link class="link btn" to="/dashboard">Dashboard</router-link>
-      </div>
 
-    </div>
+    </nav>
 
-    <section>
-      <img src="@/assets/MILID-logo.svg" />
-    </section>
-    <section class="form">
-      <input v-model="pseudo" @keypress.enter="onEnter(pseudo)"
-             placeholder="Choisir un pseudo ..."  class="pseudo"/>
+    <div class="main">
+      <section>
+        <h3 v-html="i18n('landing_title1')" />
+        <p v-html="i18n('landing_title2')" />
+        <img src="@/assets/MILID-logo-minimal.svg" />
 
-      <a class="btn tertiary"
-        :class="{'hidden':(pseudo.length < 4)}"
-        @click="onEnter()">
-        C'est parti mon kiki!
-      </a>
-
-
-
-    </section>
-    <section class="bottom " :class="{'open':open,'primary':!open}" @click="onToggle">
-      <MILIDIcons name="back-top" color="white" />
-      <div class="content">
-        <h3>L'expérience est meilleure après installation</h3>
         <button class="btn tertiary" @click="onInstall">Ajouter à l'écran d'acceuil</button>
-        <div></div>        
-      </div>        
+      </section>
+      <section class="continue">
+        <button class="" @click="onToggle">
+          <MILIDIcons name="back" color="white"  class="back"/>
+        </button>
+        <p v-html="i18n('landing_continue_title')"></p>
+      </section>
+    </div>
+    <section class="bottom " :class="{'open':open,'primary':!open}" @click="onOpen">
+      <section class="form">
+        <MILIDIcons name="user" theme="1" class="user"/>
+
+        <input v-model="pseudo" @keypress.enter="onEnter(pseudo)"
+              placeholder="Pseudo ..."  />
+
+        <a class=""
+          :class="{'hidden':(pseudo.length < 4)}"
+          @click="onEnter()">
+          <div class="icon material-icons">check_circle_outline</div>
+          <h4>{{i18n('landing_continue_go')}}</h4>
+        </a>
+      </section>
     </section>
 
   </div>
@@ -41,95 +58,104 @@
 <style lang="scss" scoped>
 
   .landing{
-    background: var(--md-theme-default-primary);
-    color: white;
+    background: white;
+    color: #333;
     position: fixed;
     width: 100vw;
     height: 100vh;
-    .topbar{
-      padding: 10px 30px;
-      width: calc( 100vw - 30px );
-      display: flex;
-      flex-wrap: wrap;
-      margin-right: -15px;
-      margin-left: -15px;
-      line-height: 80px;
-      .left{
-        flex: 0 0 20%;
-        max-width: 20%;        
-      }
-      .title{
-        flex: 0 0 60%;
-        max-width: 60%;        
-      }
-      .right{
-        flex: 0 0 20%;
-        max-width: 20%;        
+    padding-top: 80px;
+    .toolbar{
+      transform: translateY(0);
+      transition: all 200ms;      
+      top:0px;
+      background-color: var(--theme-1-primary);
+      height: 69px;
+      -box-shadow: 0 2px 3px -1px rgba(0,0,0,.1);
+      &.exited {
+        transform: translateY(69px);            
       }
 
-      .link {
-        padding: 23px 0 23px;
-        font-size: 16px;
-        font-weight: 500;        
-        padding-left: 19px;
-        padding-right: 19px;
-        &:hover{
-          background: rgba(93, 119, 143, 0.4);
+      .toolbar-title{
+        img.logo{
+          width: 60px;
+          transform: translateY(-25px);
+          margin-top: 25px;
         }
-        
       }
     }
-
+    
     .version {
       font-weight: 200;
       opacity: .5;
     }
 
-    section{
-      padding: 20px 70px;
-      max-width: 60%;
-      max-height: calc( 100vh - 80px );
-      @media (max-width: 376px) {
-        max-width: 100%;        
-      }
+    .main{
+      border-radius: 55px;
+      padding: 0 10px;
+      margin: 0 13px;
+      height: calc( 100vh - 90px);    
+      color: white;
+      background-color: var(--theme-1-secondary);
 
-      &.form{
-        padding: 20px 50px;
-        button{
-          min-width: 220px;
+      >section{
+        padding: 20px 40px;
+        max-width: 60%;
+        max-height: calc( 100vh - 80px );
+        p,h3{
+          text-align: left;
         }
-      }
+        img{
+          text-align: center!important;
+          padding: 26px;
+          background-color: var(--theme-1-primary);
+          border-radius: 23px;
+          width: 80px;
+          margin-top: 30px;
+          margin-bottom: 50px;
+        }
+        @media (max-width: 376px) {
+          max-width: 100%;        
+        }      
+     }
+     
+     section.continue {
+       margin-top: 70px;
+       button{
+        border: none;
+        background: transparent;
+        width: 65px;     
+        height: 65px;
+        svg{
+          transform: rotate(180deg);
+        }    
+       }
+        p{
+          text-align: center;
+          margin: 5px;
+          font-size: 14px;          
+        }
+
+     }
     }
   }
 
   .btn {
     border-radius: 50px;
-    background: var(--theme-1-tertiary);
-    border: 1px solid var(--theme-1-tertiary);
-    color: var(--theme-1-secondary);
+    background: var(--theme-1-secondary);
+    border: 4px solid white;
+    color: white;
     text-align: center;
-    padding: 15px 25px !important;
+    padding: 10px 20px !important;
     margin: auto;
-    font-size: 17px;
+    font-size: 14px;
     outline: 0;
     display: block;
   }
 
-  input.pseudo {
-    margin-bottom: 10px;
-    line-height: 35px;
-    height: 32px;
-    font-size: 17px;
-    color: #444;
-    padding: 2px 15px;
-    border-radius: 25px;
-    border: none;      
-    outline: 0;
-  }
+
 
   section.bottom {
-    color: white;
-    background-color: white;
+    background-color: var(--theme-1-tertiary);
     border:1px solid var(--theme-1-tertiary);
     position: fixed;
     bottom: 0;
@@ -139,53 +165,50 @@
     text-align: center;
     border-radius: 20px 20px 0 0;
     padding: 0 5px;    
-    transform: translateY(calc(100vh - 120px));
+    transform: translateY(calc(100vh - 90px));
     transition: all 200ms;      
     box-shadow: 0 2px 8px 3px rgba(0, 0, 0, 0.2);
 
 
     &.open {
-      transform: translateY(30%);
-      svg{
-        transform: translateY(-30px) translateX(3px) rotate(180deg) !important;
-      }
-    }
+      transform: translateY(10%);
 
-    svg {
-      width: 40px;
-      margin-top: -12px;
-      height: 40px;
-      transform: translateY(-27px) translateX(3px);
-    }
-
-    div.content{    
-      font-size: 14px;
-      font-weight: 200;
-      text-align: left;
-      padding: 5px 20px;              
-      color: #333!important;
-
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-
-      div{
-        width: 100%;
-        text-align: center;
-        padding: 40px;
-      }
-
-      h3{
-        text-align: center;
-        margin-top: -10px;
-        text-transform: uppercase;
-        font-size: 14px;
-        margin-bottom: 30px;    
-        width: 100%;
+      .form{
+        padding: 20px 50px;
+        button{
+          min-width: 220px;
+        }
+        svg{
+          width: 100px;
+          margin-bottom: 30px;
+          margin-top: 20px;
+        }
+        input {
+          margin-bottom: 10px;
+          line-height: 35px;
+          height: 32px;
+          font-size: 17px;
+          color: #444;
+          padding: 10px 15px;
+          border-radius: 15px;
+          border: 3px solid var(--theme-1-tertiary);
+          outline: 0;          
+        }
+        a{
+          display: block;
+          .icon{
+            font-size: 55px;
+            margin-top: 20px;            
+          }
+          h4{
+            margin-top: 0;
+          }
+        }
       }
 
-
     }
+
+
 
   }  
 
@@ -237,6 +260,11 @@ export default class Landing extends Vue {
     })
   }
 
+  i18n(key) {
+    return $config.i18n(key);
+  }
+
+
   onEnter(username){
     console.log('--- DBG entrer',username)
     $user.createUser(username)
@@ -246,6 +274,11 @@ export default class Landing extends Vue {
   onToggle(){
     this.open = !this.open;
   }
+
+  onOpen(){
+    this.open = true;
+  }
+
   
   onInstall($event) {
     const deferredPrompt = this.deferredPrompt;
