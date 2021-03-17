@@ -74,24 +74,15 @@ export class QuestionSet
     }
 
     validate(){
-        const showErrors = !this.hasCorrectAnswer();
+        const isCorrect = this.hasCorrectAnswer();
 
         for(const questionBtn of this.answers.values()){
-            const isCorrect = isQuestionBtnCorrect(questionBtn);
-            if(showErrors && !isCorrect && questionBtn.classList.contains('active')){
-                questionBtn.innerHTML += crossIcon('red');
-            }
-            
-            if(showErrors && !isCorrect && questionBtn.hasAttribute('data-correct-answer')){
-                questionBtn.innerHTML += vuIcon('red');
-            }
 
-            if(isCorrect && questionBtn.classList.contains('active')){
-                questionBtn.innerHTML += vuIcon('green');
-            }            
+            if(questionBtn.classList.contains('active')) {
+                questionBtn.innerHTML += isCorrect ? vuIcon('green') : crossIcon('red');
+            }
             
             questionBtn.disabled = true;
-            // console.log("state", isCorrect, questionBtn.innerHTML);
         }
     }
 
@@ -118,6 +109,12 @@ export class QuestionSet
     setDoneAppearance(){
         for(const questionBtn of this.answers.values()){
             questionBtn.classList.add('quiz-btn-done');
+        }
+    }
+
+    deActivateAllButtons(){
+        for(const questionBtn of this.answers.values()){
+            questionBtn.classList.remove('active');
         }
     }
 }

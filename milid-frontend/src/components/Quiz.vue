@@ -47,7 +47,7 @@
 
   .validateBtnActive
   {
-    background-color: orange;
+    background-color: var(--lesson-color);
   }
 
   .quiz /deep/ .quiz-btn
@@ -163,7 +163,7 @@ export default class Quiz extends Vue {
 
     const plural = correctAnswersCount > 1 ? 's' : '';
 
-    this.validationText = `vous avez ${correctAnswersCount} réponse${plural} correcte${plural}.`
+    this.validationText = `${correctAnswersCount} réponse${plural} sur ${this.questionSets.length} correcte${plural}.`
 
   }
 
@@ -177,6 +177,11 @@ export default class Quiz extends Vue {
   }
 
   quizAnswerHandler(e){
+    // find questionSet containing button and deactivate all buttons
+    const id = e.target.id;
+    this.questionSets.find(questionSet => questionSet.containsId(id)).deActivateAllButtons();
+    
+    // activate target
     e.target.classList.toggle('active');
     this.allQuestionsHaveAtLeastOneAnswer = this.computeStatus();
     console.log("status", this.allQuestionsHaveAtLeastOneAnswer);
