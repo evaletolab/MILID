@@ -5,17 +5,16 @@
       <div class="toolbar-row">
         <div class="toolbar-section-start">
           <button class="icon start">
-            <MILIDIcons name="home" color="black"/>
           </button>
         </div>
 
         <div class="toolbar-title">
-          <img class="logo" src="@/assets/MILID-logo-text.svg" />
+          <MILIDIcons name="logo" width="80" color="white"/>
         </div>        
 
         <div class="toolbar-section-end">
           <button class="icon end">
-            <MILIDIcons name="parametres" color="black"/>
+            <MILIDIcons name="parametres" color="white"/>
           </button>
         </div>
       </div>
