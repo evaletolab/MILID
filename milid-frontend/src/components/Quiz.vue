@@ -32,8 +32,8 @@
 
   .validate-btn{
     border: none;
-    color: black;
-    background-color: grey;
+    color: white;
+    background-color: #aaa;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;

@@ -10,13 +10,27 @@ const { insecables } = require('./typeHelper');
 const marked = require('marked');
 const { INFOGRAPHIC } = require('./LessonType');
 
+const assetShouldBeDownloaded = require('./assetHelpers');
+
 module.exports = function lessonTransformer(data){
+    // const urlForAssetId = (id) => {
+    //     const asset = data.assets.find(asset => asset.airtable_id == id);
+    //     if(!asset){
+    //         throw new Error(`no asset with id ${id}`);
+    //     }
+    //     return asset.media[0].url;
+    // }
     const urlForAssetId = (id) => {
         const asset = data.assets.find(asset => asset.airtable_id == id);
         if(!asset){
             throw new Error(`no asset with id ${id}`);
         }
-        return asset.media[0].url;
+
+        if(assetShouldBeDownloaded(asset)){
+            return `/assets/${asset.media[0].filename}`;
+        }else{
+            return asset.media[0].url;
+        }
     }
 
     data.lessons = data.lessons.map((lesson) => {

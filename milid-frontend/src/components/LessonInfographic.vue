@@ -94,7 +94,7 @@ export default class LessonInfographic extends Vue {
 
   hideAllOverlays(){
     for(let entry of this.interactives.values()){
-      entry.overlay.classList.add('hidden');
+      entry.overlay.classList.remove('infographic-overlay-visible');
     }
   }
 
@@ -106,12 +106,19 @@ export default class LessonInfographic extends Vue {
     return node.id;
   }
 
+  enableTransitions(){
+    for(let entry of this.interactives.values()){
+      entry.overlay.classList.remove('disable-transitions');
+    }
+  }
+
   buttonClickHandler(e){
     // console.log(e.target);
     const id = this.findNodeWithId(e.target);
     console.log("id", id);
     this.hideAllOverlays(); 
-    this.interactives.get(id).overlay.classList.remove('hidden');
+    this.enableTransitions();
+    this.interactives.get(id).overlay.classList.add('infographic-overlay-visible');
     e.stopPropagation();
   }
 
@@ -148,7 +155,8 @@ export default class LessonInfographic extends Vue {
         const overlay:HTMLElement = overlays.find(overlay =>  overlay.id.endsWith(index)) as HTMLElement;
 
         if(overlay){
-          overlay.classList.add('hidden');
+          overlay.classList.add('infographic-overlay');
+          overlay.classList.add('disable-transitions'); // disable transitions for first paint
 
           button.addEventListener('click', this.buttonClickHandler);
           overlay.addEventListener('click', this.overlayClickHandler);

@@ -1,7 +1,7 @@
 
 <template>
   <div class="lesson-video" :class="'theme-'+module.theme" :style="cssVars">  
-    <h4 v-html="lesson.title" />
+    <h1 v-html="lesson.title" />
     <div class="player">
       <svg viewBox="0 0 200 200" class="video-edges">
       <path class="st0" d="M177.14,129.13l-0.69-0.7c-0.43-0.43-13.01-13.23-13.01-13.23l-9.31-9.31c-2.09-2.1-2.09-5.52,0-7.62
@@ -29,14 +29,11 @@
       </g>
 
       </svg>
-      <canvas ref="canvas" @click="onToggle"></canvas>
-
+      <canvas ref="canvas"  hidden></canvas>
+      <video ref="video"  playsinline  @click="onToggle" >
+          <source :src="mediaUrl"  type='video/mp4'>
+      </video>
     </div>
-
-    <video ref="video"  playsinline  hidden>
-        <source :src="mediaUrl"  type='video/mp4'>
-    </video>
-
 
     <div class="duration-container">
         <span class="primary-on-text" >{{elapsedStr}}/{{durationStr}}</span>
@@ -58,30 +55,16 @@
   .st1{fill:#fff;}
   .st0{fill:var(--tertiary);}
 
+  h1{
+    color: var(--primary);
+  }
+
   .lesson-video{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
 
-  }
-
-  video{
-    display: none;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;    
-    &::-webkit-full-screen{
-      display: none;
-    }
-
-    &::-webkit-media-controls {
-     display:none !important;
-    }
-
-    &::-webkit-media-controls {
-      display:none !important;
-    }
   }
 
   .player{
@@ -97,10 +80,10 @@
     }
 
     
-
+    video,
     canvas {
       width: calc( 100% - 90px);
-      height: calc( 100% - 90px);
+      height: calc( 100% - 95px);
       border-radius: 30px;
       background-color: var(--tertiary);
       margin: auto;    
@@ -108,7 +91,7 @@
       left: 50%;
       top: 50%;    
       transform: translate3d(-50%,-50%,0);
-
+      opacity: .95;
     }
 
   }
@@ -222,26 +205,27 @@ export default class LessonVideo extends Vue {
       //
       // crop video inside canvas
       // respect ratio relative to height
-      this.video.addEventListener('play', function() {
-        const $this = this; //cache
-        const videoWidth = $this.videoWidth;
-        const videoHeight = $this.videoHeight;
-        const ratio = canvas.height / videoHeight;
+      // DEAD CODE
+      // this.video.addEventListener('play', function() {
+      //   const $this = this; //cache
+      //   const videoWidth = $this.videoWidth;
+      //   const videoHeight = $this.videoHeight;
+      //   const ratio = canvas.height / videoHeight;
 
-        const sx = (videoWidth*ratio - canvas.width) / 2;
-        const sy = (videoHeight*ratio - canvas.height) / 2;
-        // console.log('--DBG',videoWidth,videoHeight, ratio);
-        // console.log('--DBG',videoWidth*ratio,videoHeight*ratio, ratio);
-        // console.log('--DBG',sx,sy,videoWidth*ratio,videoHeight*ratio, ratio);
-        (function loop() {
-          if (ctx && !$this.paused && !$this.ended) {
-            ctx.drawImage($this, 
-              sx,sy,videoWidth-sx*2,videoHeight-sy*2,
-              0, 0,canvas.width,canvas.height);
-            setTimeout(loop, 1000 / 30); // drawing at 30fps
-          }
-        })();
-      }, false);
+      //   const sx = (videoWidth*ratio - canvas.width) / 2;
+      //   const sy = (videoHeight*ratio - canvas.height) / 2;
+      //   // console.log('--DBG',videoWidth,videoHeight, ratio);
+      //   // console.log('--DBG',videoWidth*ratio,videoHeight*ratio, ratio);
+      //   // console.log('--DBG',sx,sy,videoWidth*ratio,videoHeight*ratio, ratio);
+      //   (function loop() {
+      //     if (ctx && !$this.paused && !$this.ended) {
+      //       ctx.drawImage($this, 
+      //         sx,sy,videoWidth-sx*2,videoHeight-sy*2,
+      //         0, 0,canvas.width,canvas.height);
+      //       setTimeout(loop, 1000 / 30); // drawing at 30fps
+      //     }
+      //   })();
+      // }, false);
       console.log('--DBG',this.lesson)
   }
 

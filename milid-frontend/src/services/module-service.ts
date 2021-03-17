@@ -3,7 +3,11 @@ import axios from 'axios';
 import { MILID } from "@/models";
 
 const defaultAxios = {
-  headers: { 'Cache-Control': 'no-cache' }
+  headers: { 
+    'Cache-Control': 'no-cache',
+    'Content-Type': 'application/json',
+    'Authorization': 'Bearer abcd'
+  }
 };
 
 class ModuleService {

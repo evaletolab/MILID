@@ -32,10 +32,10 @@
 
     <!-- STATUS -->
     <ModuleStatus v-for="mod in modules" :key="mod.id+'status'"
-                  :module="mod"></ModuleStatus>
+                  :module="mod" @click.native="onIndex($event,mod.id)"></ModuleStatus>
     
     <!-- MODULE -->
-    <div v-for="mod in modules" :key="mod.id" class="module " >
+    <div v-for="mod in modules" :key="mod.id" class="module " :id="'m'+mod.id">
       <div class="top-wave"><MILIDWave name="top" :theme="mod.theme" :config="config" /></div>
       <div class="title">{{mod.title}}</div>
       <div class="subtitle">{{mod.description}}</div>
@@ -134,5 +134,13 @@ export default class Home extends Vue {
     this.$router.push({path:'/module/' + module + '/lesson/' + lesson});
   }
 
+  onIndex($event, module) {
+    $event.stopPropagation();
+    const element = document.getElementById('m'+module);
+    if(!element) {
+      return;
+    }
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
 }
 </script>
