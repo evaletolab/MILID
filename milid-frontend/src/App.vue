@@ -38,24 +38,11 @@
 
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator';
+import { $config } from './services';
 
 @Component
 export default class App extends Vue {
   displayIosInstall = false;
-
-  //
-  // Detects if device is on iOS
-  isIos() {
-    const userAgent = window.navigator.userAgent.toLowerCase();
-    return /iphone|ipad|ipod/.test( userAgent ) ;
-  }
-
-  //
-  // Detects if device is in standalone mode
-  isInStandaloneMode(){ 
-    return ('standalone' in (window as any).navigator) && 
-           ((window as any).navigator.standalone);
-  }
 
   mounted() {
     //
@@ -65,14 +52,14 @@ export default class App extends Vue {
       console.log('PWA browser prompt', deferredPrompt);
     });
 
-    //
-    // randomly ask for install
-    if (this.isIos() && !this.isInStandaloneMode() && Math.random() > .5) {
+    window.addEventListener('installprompt', () => {
+      console.log('iOS browser prompt');
       this.displayIosInstall =  true;
       setTimeout(()=>{
         this.displayIosInstall =  false;
       },10000);
-    }
+    });
+
   }  
 
   onClose(){

@@ -80,7 +80,7 @@ class ConfigService {
 
     return this._store.config;
   }  
-
+  
   generateColors(themes){
     const root = document.documentElement;
     Object.keys(themes).forEach(theme => {
@@ -93,6 +93,20 @@ class ConfigService {
       const tertiary = themes[theme].tertiary
       root.style.setProperty('--theme-'+theme+'-tertiary',tertiary);
     });
+  }
+
+  //
+  // Detects if device is on iOS
+  isIos() {
+    const userAgent = window.navigator.userAgent.toLowerCase();
+    return /iphone|ipad|ipod/.test( userAgent ) ;
+  }
+
+  //
+  // Detects if device is in standalone mode
+  isInStandaloneMode(){ 
+    return ('standalone' in (window as any).navigator) && 
+           ((window as any).navigator.standalone);
   }
 
 
