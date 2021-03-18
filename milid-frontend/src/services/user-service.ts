@@ -17,7 +17,7 @@ class UserService {
     } as MILID.User;
     
     this._user = user;
-    console.log('---DBG',user)
+    console.log('---DBG user',user)
     return await $config.storageSet(this._STORAGE_USER,user) as MILID.User;
   }
 
