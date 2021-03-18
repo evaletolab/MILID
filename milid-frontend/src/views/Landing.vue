@@ -60,9 +60,9 @@
   .landing{
     background: white;
     color: #333;
-    position: fixed;
+    position: absolute;
     width: 100vw;
-    height: 100vh;
+    height: auto;
     padding-top: 80px;
     .toolbar{
       transform: translateY(0);
@@ -93,10 +93,10 @@
       border-radius: 55px;
       padding: 0 10px;
       margin: 0 13px;
-      height: calc( 100vh - 90px);    
+      min-height: calc( 100vh - 90px);    
+      height: 100%;
       color: white;
       background-color: var(--theme-1-secondary);
-      overflow-y:auto;
 
       >section{
         max-width: 80%;
