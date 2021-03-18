@@ -27,7 +27,7 @@
         <p v-html="i18n('landing_title2')" />
         <img src="@/assets/MILID-logo-minimal.svg" />
 
-        <button class="btn tertiary" @click="onInstall">Ajouter à l'écran d'acceuil</button>
+        <button class="btn tertiary" @click="onInstall" v-show="!installed">{{i18n('landing_install')}}</button>
       </section>
       <section class="continue">
         <button class="" @click="onToggle">
@@ -96,11 +96,17 @@
       height: calc( 100vh - 90px);    
       color: white;
       background-color: var(--theme-1-secondary);
+      overflow-y:auto;
 
       >section{
-        padding: 20px 40px;
-        max-width: 60%;
+        max-width: 80%;
         max-height: calc( 100vh - 80px );
+        padding: 10px 30px;
+        @media (max-width:330px) {
+          padding: 10px 5px;
+          transform: scale(.9);          
+        }
+
         p,h3{
           text-align: left;
         }
@@ -112,6 +118,11 @@
           width: 80px;
           margin-top: 30px;
           margin-bottom: 50px;
+          @media (max-width:376px) {
+            margin-top: 10px;
+            margin-bottom: 20px;
+          }
+
         }
         @media (max-width: 376px) {
           max-width: 100%;        
@@ -119,7 +130,10 @@
      }
      
      section.continue {
-       margin-top: 70px;
+      margin-top: 10px;
+      @media (max-width:376px) {
+        margin-top: 0px;
+      }
        button{
         border: none;
         background: transparent;
@@ -240,6 +254,8 @@ export default class Landing extends Vue {
       // Stash the event so it can be triggered later.
       this.deferredPrompt = e;
     });
+
+    this.pseudo = this.user.name || '';
   }
 
   get config(){
@@ -250,10 +266,14 @@ export default class Landing extends Vue {
     return $user.user;
   }
 
+  get installed() {
+    return $config.isInStandaloneMode();
+  }
+
   beforeRouteEnter(to: any, from: any, next: any) {
     const all = [$config.get(),$user.get()]
     Promise.all(all).then(([config, user])=> {
-      if(user.id && user.name) {
+      if(user && user.id && user.name && $config.isInStandaloneMode()) {
         return next('/module');
       }
       next();
@@ -266,7 +286,6 @@ export default class Landing extends Vue {
 
 
   onEnter(username){
-    console.log('--- DBG entrer',username)
     $user.createUser(username)
     this.$router.push({path:'/module' });
   }
@@ -283,6 +302,10 @@ export default class Landing extends Vue {
   onInstall($event) {
     const deferredPrompt = this.deferredPrompt;
     // Show the prompt
+    if($config.isIos()) {
+      return window.dispatchEvent(new Event('installprompt'));
+    }
+
     if(!deferredPrompt.prompt) {
       console.log('---DBG alternative install message',$event);
       $event.preventDefault();
@@ -300,7 +323,8 @@ export default class Landing extends Vue {
         console.log('User dismissed the A2HS prompt', choiceResult);
       }
       this.deferredPrompt = {};
-    });    
+    }); 
+    
   }
 
 }
