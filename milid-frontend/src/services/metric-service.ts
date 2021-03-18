@@ -84,7 +84,11 @@ class MetricService {
 
     //
     // save php
-    await axios.post("/event", fields, defaultAxios);
+    try{
+      await axios.post("/event", fields, defaultAxios);
+    }catch(e){
+      console.error("unable to update event", e);
+    }
     return fields;
   }
 
@@ -115,9 +119,14 @@ class MetricService {
 
     //
     // load Airtable usage
-    const res= await axios.get("/event?filter=" + user.id, defaultAxios);
-    console.log('-- DBG',res);
-    return res;
+    try{
+      const res= await axios.get("/event?filter=" + user.id, defaultAxios);
+      console.log('-- DBG',res);
+      return res;
+    }catch(e){
+      console.error("unable to sync events", e);
+      return null;
+    }
   }
 }
 
