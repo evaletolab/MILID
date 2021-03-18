@@ -19,7 +19,12 @@ const routes: Array<RouteConfig> = [
   {
     path: '/',
     name: 'Landing',
-    component: Landing
+    component: Landing,
+    beforeEnter: (to, from, next) =>{
+      $user.get().then(user => {
+        (user.id && $config.isInStandaloneMode()) ? next('/module'):next()
+      })
+    },
   },
   {
     path: '/module',

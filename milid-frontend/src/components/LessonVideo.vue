@@ -193,8 +193,6 @@ export default class LessonVideo extends Vue {
       this.video.addEventListener('ended', this.onTrackEnded);
       this.video.addEventListener('timeupdate', this.onTimeUpdate);
       this.video.addEventListener('loadedmetadata', this.onMetaLoaded);
-
-      console.log('--DBG',this.lesson)
   }
 
   beforeDestroy(){
