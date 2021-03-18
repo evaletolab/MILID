@@ -63,7 +63,7 @@ class MetricService {
     });
 
 
-    console.log('---DBG',fields);
+    console.log('---DBG event',fields);
 
     //
     // check state before to continue 
