@@ -71,6 +71,17 @@ function router_dispatch(){
   $token = $_SERVER['Authorization'];
 
 
+  // echo "request uri " . $_SERVER['REQUEST_URI'];
+  // echo "uri: " . $uri;
+  // echo "\n";
+  // echo "method: " . $method;
+  // echo "\n";
+  // echo "action: " . $action;
+  // echo "\n";
+  // echo "query: " . $_GET["filter"];
+  // echo "\n";
+
+
   global $routes;
   global $pathNotFound;
   // $action = trim($action, '/');
@@ -82,7 +93,7 @@ function router_dispatch(){
   $parsed_url = parse_url($action);
   $path = $parsed_url['path'];
 
-  $basepath = '/';
+  // $basepath = '/';
   $path_match_found = false;
   $route_match_found = false;
 

@@ -30,8 +30,8 @@ try{
 
 // 2 copy php events route
 try{
-    copySync('../php-analytics/sqlite', './dist/event');
-    console.log("copied php-analytics directory");
+    copySync('../php-analytics/sqlite/src', './dist/api');
+    console.log("copied php-analytics directory to ./dist/api");
 }catch(e){
     console.error("failed to copy php-analytics directory", e);
     process.exit(1);

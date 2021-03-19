@@ -16,7 +16,8 @@ expects a json encoded object of format:
 ## install it
 
 - copy **empty.sqlite** and rename it **db.sqlite** 
-- copy **db.sqlite** and **event_add.php** to target apache directory
+- copy all php files to *./dist* folder
+- use deploy script from **milid-frontent**
 
 ## todo
 - auth ??

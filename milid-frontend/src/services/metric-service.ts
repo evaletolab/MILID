@@ -81,7 +81,7 @@ class MetricService {
     //
     // save php
     try{
-      await axios.post("/event", fields, defaultAxios);
+      await axios.post("/api/event", fields, defaultAxios);
     }catch(e){
       console.error("unable to update event", e);
     }
@@ -118,7 +118,7 @@ class MetricService {
     //
     // load Airtable usage
     try{
-      const res= await axios.get("/event?filter=" + user.id, defaultAxios);
+      const res= await axios.get("/api/event?filter=" + user.id, defaultAxios);
       console.log('-- DBG',res);
       return res;
     }catch(e){
