@@ -210,6 +210,17 @@
 }
 
 
+button.done {
+  border: none;
+  padding: 10px 20px;
+  margin: 10px auto;
+  border-radius: 20px;
+  margin-left: calc( 100vw / 2 - 100px );
+  margin-top: 40px;
+  width: 150px;     
+  outline: 0;   
+}
+
 .img-fullwidth{
   width: 100vw;
   margin-left: -25px;
