@@ -7,7 +7,9 @@
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
-    "deploy": "node scripts/gh-pages-deploy.js"
+    "deploy-dev": "node scripts/deploy dev",
+    "deploy-prod": "node scripts/deploy prod",
+    "deploy-gh-pages": "node scripts/gh-pages-deploy.js"
   },
   "dependencies": {
     "@types/airtable": "^0.8.1",
@@ -41,9 +43,11 @@
     "@vue/eslint-config-typescript": "^5.0.2",
     "@vue/test-utils": "^1.0.3",
     "chai": "^4.1.2",
-    "execa": "^5.0.0",
+    "dotenv": "^8.2.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
+    "execa": "^5.0.0",
+    "fs-extra": "^9.1.0",
     "sass": "^1.26.5",
     "sass-loader": "^8.0.2",
     "typescript": "~3.9.3",
