@@ -45,13 +45,13 @@
   .lottie-container{
       display: flex;
       justify-content: center;
-      width:170%;
+      width:120%;
       min-height: 320px;
   }
 
   .lottie-player{
       position:relative;
-      left: -20%;
+      left: -9%;
   }
 
   .duration-container{
