@@ -47,11 +47,6 @@ export default class App extends Vue {
   mounted() {
     //
     // delegate browser install Prompt
-    window.addEventListener('beforeinstallprompt', (deferredPrompt) => {
-      // (<any>deferredPrompt).prompt();
-      console.log('PWA browser prompt', deferredPrompt);
-    });
-
     window.addEventListener('installprompt', () => {
       console.log('iOS browser prompt');
       this.displayIosInstall =  true;
