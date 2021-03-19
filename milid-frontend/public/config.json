@@ -21,14 +21,14 @@
       "landing_title1":"Bienvenue!",
       "landing_title2":"Installer l'application dans votre mobile pour profiter pleinement de l'expérience micro-learning",
       "landing_install":"Ajouter à l'écran d'acceuil",
-      "landing_continue_title":"Continuer sans installer",
+      "landing_continue_title":"Continuer",
       "landing_continue_go": "Go!"
     },
     "de":{
       "landing_title1":"Bienvenue!",
       "landing_title2":"Installer l'application dans votre mobile pour profiter pleinement de l'expérience micro-learning",
       "landing_install":"Ajouter à l'écran d'acceuil",
-      "landing_continue_title":"Continuer sans installer",
+      "landing_continue_title":"Continuer",
       "landing_continue_go": "Go!"
     }
   }
