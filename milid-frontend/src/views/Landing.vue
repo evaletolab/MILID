@@ -40,12 +40,12 @@
       <section class="form">
         <MILIDIcons name="user" theme="1" class="user"/>
 
-        <input v-model="pseudo" @keypress.enter="onEnter(pseudo)"
+        <input v-model="pseudo" @keypress.enter="onEnter"
               placeholder="Pseudo ..."  />
 
         <a class=""
           :class="{'hidden':(pseudo.length < 4)}"
-          @click="onEnter()">
+          @click="onEnter">
           <div class="icon material-icons">check_circle_outline</div>
           <h4>{{i18n('landing_continue_go')}}</h4>
         </a>
@@ -54,7 +54,6 @@
 
   </div>
 </template>
-
 <style lang="scss" scoped>
 
   .landing{
@@ -285,8 +284,8 @@ export default class Landing extends Vue {
   }
 
 
-  onEnter(username){
-    $user.createUser(username)
+  onEnter(){
+    $user.createUser(this.pseudo);
     this.$router.push({path:'/module' });
   }
 
