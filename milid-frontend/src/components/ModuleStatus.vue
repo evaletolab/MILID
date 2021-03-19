@@ -1,13 +1,14 @@
 <template>
   <div class="status " :class="'theme-'+module.theme">
     <div class="title primary-on-text">{{module.title}}</div>
-    <ModuleProgress :pipCount="module.lessons.length" :completedPips="1" :theme="module.theme" class="progress"></ModuleProgress>    
+    <ModuleProgress :pipCount="module.lessons.length" :completedPips="pips" :theme="module.theme" class="progress"></ModuleProgress>    
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator';
 import ModuleProgress from '../components/ModuleProgress.vue';
+import { $metric } from '@/services';
 
 import { MILID } from '../models';
 
@@ -16,6 +17,18 @@ import { MILID } from '../models';
 })
 export default class ModuleStatus extends Vue {
   @Prop() private module!: MILID.Module;
+
+  get pips(){
+    const lessons = Object.keys($metric.progressionState);
+    return lessons.filter(lesson => {
+      return $metric.progressionState[lesson].state == 'done' && 
+             $metric.progressionState[lesson].module == this.module.id;
+    }).length;    
+  }
+
+  mounted() {
+    // $metric.progressionState.sub
+  }
 
 }
 </script>

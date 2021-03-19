@@ -117,6 +117,7 @@ export default class LessonSources extends Vue {
 
   section.sources div.content {
     overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
     margin-top: -15px;
     height: 65%;
   }

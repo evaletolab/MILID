@@ -23,9 +23,7 @@
             </div>
         </div>
 
-        <button @click="completionHandler">complete me</button>
-
-        <p>status = {{done}}</p>
+        <button class="done primary" @click="onCompletionHandler">Complete</button>
     </div>   
 </template>
 
@@ -76,7 +74,9 @@
     .control-icons svg{
         width: 35px;
         height: 35px;
+
     }
+
 
 </style>
 
@@ -216,7 +216,7 @@ export default class LessonPodcast extends Vue {
         return `${minStr}${secondsStr}`;
     }
 
-    completionHandler($evt){
+    onCompletionHandler($evt){
         $evt.stopPropagation();
         const params = {
             lesson: this.lessonId,

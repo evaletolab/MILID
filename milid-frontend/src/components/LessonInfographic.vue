@@ -4,6 +4,10 @@
         <div ref="text_root" v-html="textContent" />
         <div ref="raw_root" v-html="svgContent" />
         <div class="footer" />
+        
+        <!-- DONE -->
+        <button class="done primary" @click="onCompletionHandler">Complete</button>
+
     </div>
 </template>
 
@@ -32,10 +36,10 @@
 /* eslint-disable */
 import { Component, Vue, Prop } from 'vue-property-decorator';
 
-import { $module } from '@/services/module-service';
-import { $config } from '@/services/config-service';
+import { $config, $module, $metric } from '@/services';
 
 import { getOffset } from '@/helpers/utils';
+import { MILID } from '../models';
 
 @Component({
   components: {},
@@ -179,5 +183,16 @@ export default class LessonInfographic extends Vue {
       const definitionElements = rawRoot.querySelectorAll('._definition');
       definitionElements.forEach(e => e.removeEventListener('click', this.definitionClickHandler));
   }
+
+  onCompletionHandler($evt){
+      $evt.stopPropagation();
+      const params = {
+          lesson: this.lessonId,
+          module: this.moduleId,
+          state: MILID.LessonState.DONE
+      };
+      $metric.event(params);
+  }
+
 }
 </script>

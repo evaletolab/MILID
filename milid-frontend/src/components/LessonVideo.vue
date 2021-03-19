@@ -24,7 +24,8 @@
         </div>
     </div>
 
-    <div style="height:120px" />
+    <button class="done primary" @click="onCompletionHandler">Complete</button>
+
   </div>
 </template>
 
@@ -124,8 +125,8 @@ import { Component, Vue, Prop } from 'vue-property-decorator';
 import MILIDIcons from '../components/MILIDIcons.vue';
 import LottieAnimation from "lottie-vuejs/src/LottieAnimation.vue";
 
-import { $module } from '@/services/module-service';
-import { $config } from '@/services/config-service';
+import { $config, $module, $metric } from '@/services';
+import { MILID } from '../models';
 
 @Component({
   components: {
@@ -250,6 +251,7 @@ export default class LessonVideo extends Vue {
   onSeekBackwards(){
     this.video.currentTime = Math.max(this.video.currentTime - 10, 0);
   }
+
   
   formatTime(time){
     const minutes = Math.floor(time / 60);
@@ -263,6 +265,17 @@ export default class LessonVideo extends Vue {
   
   setAnimController(controller){
     this.lottieController = controller;
+  }
+
+
+  onCompletionHandler($evt){
+      $evt.stopPropagation();
+      const params = {
+          lesson: this.lessonId,
+          module: this.moduleId,
+          state: MILID.LessonState.DONE
+      };
+      $metric.event(params);
   }
 
 }
