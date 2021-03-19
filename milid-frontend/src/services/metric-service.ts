@@ -45,7 +45,8 @@ class MetricService {
       await this.sync();
       await $config.storageSet(this.STORAGE_KEY,this.progressionState);
     }    
-
+    Object.assign(this.progressionState,state);
+    console.log('--DBG metrics',this.progressionState)
     return this.progressionState;
   }
 
@@ -72,15 +73,10 @@ class MetricService {
       (current.state == params.state || current.state == MILID.LessonState.DONE)) {
      return fields;
     } 
-    // event already
-    if(current && current.module == params.module){
-      return fields;
-    }
 
     //
     // save localStorage
     await this.set(fields);
-
 
     //
     // save php
@@ -100,8 +96,10 @@ class MetricService {
       state: params.state,
       timestamp: params.timestamp,
       uid:params.uid,
+      module: params.module,
       pseudoname: params.username
     };
+    console.log('--DBG progression',this.progressionState);
     return $config.storageSet(this.STORAGE_KEY,this.progressionState)
   }
 

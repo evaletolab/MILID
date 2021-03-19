@@ -82,6 +82,10 @@
       border-radius: 10px;
       color: #111;
       background-color: rgba(255,255,255,0.90);
+      &.done {
+        opacity: .3;
+      }
+      
       .type {
         opacity: .99;
         width: 28px;
