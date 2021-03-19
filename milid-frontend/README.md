@@ -5,12 +5,17 @@
 npm install
 ```
 
-## deployment-setup
+## deployment
+
+### requirements
+the deployment scripts rely on the presence of **rsync** and **sshpass** on the system
+
+### setup
 
 1. make a copy of **.env.example** named **.env** 
 2. fill **.env** with relevant data
 
-## deployment
+### deployment
 
 run:
 
