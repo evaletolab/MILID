@@ -30,14 +30,14 @@
         <button class="btn tertiary" @click="onInstall" v-show="!installed">{{i18n('landing_desktop_install')}}</button>
       </section>
 
-      <section class="hide-lg">
+      <section class="hide-md hide-lg">
         <h3 v-html="i18n('landing_title1')" />
         <p v-html="i18n('landing_title2')" />
         <img  src="@/assets/MILID-logo-minimal.svg" />
 
         <button class="btn tertiary" @click="onInstall" v-show="!installed">{{i18n('landing_install')}}</button>
       </section>
-      <section class="continue hide-lg">
+      <section class="continue hide-md  hide-lg">
         <button class="" @click="onToggle">
           <MILIDIcons name="back" color="white"  class="back"/>
         </button>
@@ -119,7 +119,7 @@
         background-size: 16%;
         min-height: (80vh);
         p{
-          margin: 40px 0;
+          margin: 30px 0;
           &.right{
             margin-left: calc( 50% - 64px);
           }
@@ -129,7 +129,8 @@
 
         }
         button {
-          margin-top: 100px;          
+          margin-top: 40px;          
+          padding: 30px!important;
         }
       }
 
