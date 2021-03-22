@@ -82,7 +82,7 @@
     </g>
   </svg>
   <!--- parametres -->
-  <svg v-else-if="name === 'parametres'" viewBox="0 0 100 100" preserveAspectRatio="none" >
+  <svg v-else-if="name === 'parametres'" @click="$emit('wasClicked')" viewBox="0 0 100 100" preserveAspectRatio="none" >
     <g>
       <path :style="{ fill: colorPrimary }" d="M43.5,7.56c9.6,0,18.63,3.74,25.41,10.53C75.7,24.87,79.44,33.9,79.44,43.5S75.7,62.13,68.91,68.91
         C62.13,75.7,53.1,79.44,43.5,79.44S24.87,75.7,18.09,68.91C11.3,62.13,7.56,53.1,7.56,43.5s3.74-18.63,10.53-25.41

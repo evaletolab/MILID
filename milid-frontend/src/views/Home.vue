@@ -14,7 +14,7 @@
 
         <div class="toolbar-section-end">
           <button class="icon end">
-            <MILIDIcons name="parametres" color="white"/>
+            <MILIDIcons name="parametres" color="white" @wasClicked="showParameters = true" />
           </button>
         </div>
       </div>
@@ -23,6 +23,8 @@
       </div>        
     </nav>
 
+    <ParametersPage :open="showParameters" v-on:closerequest="showParameters = false" />
+    
     <!-- USER -->
     <div class="user">
       <MILIDIcons name="user" color="#85e5ff"/>
@@ -72,6 +74,7 @@ import { $config, $metric, $module, $user } from '../services';
 import ModuleStatus from '../components/ModuleStatus.vue';
 import MILIDWave from '../components/MILIDWave.vue';
 import MILIDIcons from '../components/MILIDIcons.vue';
+import ParametersPage from '../components/ParametersPage.vue';
 import { MILID } from '../models';
 
 
@@ -79,13 +82,16 @@ import { MILID } from '../models';
   components: { 
     ModuleStatus, 
     MILIDWave, 
-    MILIDIcons 
+    MILIDIcons,
+    ParametersPage, 
   }
 })
 export default class Home extends Vue {
   private lastScrollTop = 0;
 
   scrollDirection = 0;
+
+  showParameters = false;
 
   get modules() {
     console.log("--DBG: modules", $module.modules);

@@ -13,12 +13,14 @@
 
         <div class="toolbar-section-end">
           <button class="icon end">
-            <MILIDIcons name="parametres" color="white"/>
+            <MILIDIcons name="parametres" color="white" @wasClicked="showParameters = true"/>
           </button>
         </div>
       </div>
 
     </nav>
+
+    <ParametersPage :open="showParameters" v-on:closerequest="showParameters = false" />
 
     <div class="main">
       <!-- DESTOP -->
@@ -272,12 +274,14 @@ import { Component, Vue } from 'vue-property-decorator';
 import { $config, $user, $metric } from '../services';
 
 import MILIDIcons from '../components/MILIDIcons.vue';
+import ParametersPage from '../components/ParametersPage.vue';
 import  cfg from '../../package.json';
 import { MILID } from '../models';
 
 @Component({
   components: {
-    MILIDIcons    
+    MILIDIcons,
+    ParametersPage,
   },
 })
 export default class Landing extends Vue {
@@ -285,6 +289,8 @@ export default class Landing extends Vue {
   deferredPrompt: any = {};
   pseudo = '';
   version = cfg.version;
+
+  showParameters = false;
 
   async mounted(){
     window.addEventListener('beforeinstallprompt', (e) => {
