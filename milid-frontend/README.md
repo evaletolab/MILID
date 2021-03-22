@@ -35,8 +35,13 @@ to deploy to prod
 
 the deployment script does three things:
 1. copies **htaccess** file to **dist** folder
-2. copies **php-analytics/sqlite** folder to **dist/event** folder
+2. copies **php-analytics/sqlite/src** folder to **dist/api** folder
 3. rsyncs with remote
+
+### analytics database deployment
+
+The deployment script does not sync the sqlite database. 
+**db.sqlite** (*php-analytics/sqlite*) must be copied to the remote *api* folder by hand.
 
 ### Compiles and hot-reloads for development
 ```
