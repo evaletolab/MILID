@@ -7,7 +7,7 @@ module.exports = {
   publicPath : github? '/MILID': (prod? '/':'/'),
   devServer: {
     proxy: {
-      '^/event': {
+      '^/api': {
         target: 'http://localhost:4000',
         changeOrigin: true, // so CORS doesn't bite us. 
       }
