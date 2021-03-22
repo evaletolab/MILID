@@ -29,6 +29,7 @@
     display:block;
     margin-left:auto;
     margin-right:auto;
+    min-height: 260px;
   }
 
   .col /deep/ li::marker {

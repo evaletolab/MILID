@@ -63,7 +63,8 @@
     margin-left: -25px;
     margin-right: -25px;    
     width: 100vw;
-
+    min-height: 500px;
+    
     .video-edges{
       width: 100%;
       height: 100%;
