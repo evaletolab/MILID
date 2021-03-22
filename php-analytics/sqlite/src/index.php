@@ -24,11 +24,9 @@
     // exit('Unauthorized');
   } 
 
-  
-
   // endpoints for /event
   // everything else results in a 404 Not Found
-  router_add('/event', function ($method, $uri, $query, $payload) {
+  router_add('/api/event', function ($method, $uri, $query, $payload) {
     return controller_event(db(), $method, $uri, $query, $payload);
   });
 

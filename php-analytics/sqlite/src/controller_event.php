@@ -31,15 +31,18 @@
   function controller_event_get($db,$id,$query) {
     $filter = $query["filter"];
 
+
   
     if(!$id && $filter) {
       $id = $filter;
     }
 
     if(!is_null($id)){
+      // echo "complex get " . $id . "\n";
       $statement = $db->prepare("SELECT uid,username,module,lesson,state,timestamp FROM events WHERE uid = :uid;");
       $statement->bindValue(':uid', $id);
     }else{
+      // echo "simple get \n";
       $statement = $db->prepare("SELECT uid,username,module,lesson,state,timestamp FROM events;");  
     }
 
@@ -110,7 +113,7 @@
     response_to_console($method,'event');
     switch ($method) {
       case 'GET':
-        controller_event_get($db, $params[2],$query);
+        controller_event_get($db, $params[3],$query);
         break;
       case 'POST':
         controller_event_add($db, $body);

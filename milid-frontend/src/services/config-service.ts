@@ -12,15 +12,43 @@ class ConfigService {
   // https://fr.vuejs.org/v2/guide/reactivity.html
   private _store: any;
   private _baseUrl = process.env.BASE_URL;
+
+  lang = 'fr';
  
   constructor() {
     this._store = Vue.observable({
       config: {}
     });
+
+    //
+    // i18n init, default is FR
+    const lang = navigator.language || navigator['userLanguage'];   
+    if (/^en\b/.test(lang)) {
+      this.lang = "fr";
+    }
+    if (/^fr\b/.test(lang)) {
+      this.lang = "fr";
+    }
+    if (/^de\b/.test(lang)) {
+      this.lang = "de";
+    }
+
+    console.log('---i18n', this.lang);
   }
 
   get store() {
     return this._store;
+  }
+
+  get config() {
+    return this._store.config;
+  }
+
+  i18n(key) {
+    if(!this.config.i18n) {
+      return '';
+    }
+    return this.config.i18n[this.lang][key];
   }
 
   async get(force?: boolean){
@@ -52,7 +80,7 @@ class ConfigService {
 
     return this._store.config;
   }  
-
+  
   generateColors(themes){
     const root = document.documentElement;
     Object.keys(themes).forEach(theme => {
@@ -65,6 +93,20 @@ class ConfigService {
       const tertiary = themes[theme].tertiary
       root.style.setProperty('--theme-'+theme+'-tertiary',tertiary);
     });
+  }
+
+  //
+  // Detects if device is on iOS
+  isIos() {
+    const userAgent = window.navigator.userAgent.toLowerCase();
+    return /iphone|ipad|ipod/.test( userAgent ) ;
+  }
+
+  //
+  // Detects if device is in standalone mode
+  isInStandaloneMode(){ 
+    return ('standalone' in (window as any).navigator) && 
+           ((window as any).navigator.standalone);
   }
 
 

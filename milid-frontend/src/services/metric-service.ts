@@ -45,7 +45,8 @@ class MetricService {
       await this.sync();
       await $config.storageSet(this.STORAGE_KEY,this.progressionState);
     }    
-
+    Object.assign(this.progressionState,state);
+    console.log('--DBG metrics',this.progressionState)
     return this.progressionState;
   }
 
@@ -63,7 +64,7 @@ class MetricService {
     });
 
 
-    console.log('---DBG',fields);
+    console.log('---DBG event',fields);
 
     //
     // check state before to continue 
@@ -72,19 +73,18 @@ class MetricService {
       (current.state == params.state || current.state == MILID.LessonState.DONE)) {
      return fields;
     } 
-    // event already
-    if(current && current.module == params.module){
-      return fields;
-    }
 
     //
     // save localStorage
     await this.set(fields);
 
-
     //
     // save php
-    await axios.post("/event", fields, defaultAxios);
+    try{
+      await axios.post("/api/event", fields, defaultAxios);
+    }catch(e){
+      console.error("unable to update event", e);
+    }
     return fields;
   }
 
@@ -96,8 +96,10 @@ class MetricService {
       state: params.state,
       timestamp: params.timestamp,
       uid:params.uid,
+      module: params.module,
       pseudoname: params.username
     };
+    console.log('--DBG progression',this.progressionState);
     return $config.storageSet(this.STORAGE_KEY,this.progressionState)
   }
 
@@ -115,9 +117,14 @@ class MetricService {
 
     //
     // load Airtable usage
-    const res= await axios.get("/event?filter=" + user.id, defaultAxios);
-    console.log('-- DBG',res);
-    return res;
+    try{
+      const res= await axios.get("/api/event?filter=" + user.id, defaultAxios);
+      console.log('-- DBG',res);
+      return res;
+    }catch(e){
+      console.error("unable to sync events", e);
+      return null;
+    }
   }
 }
 

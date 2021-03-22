@@ -4,7 +4,7 @@
       transform: translateY(0);
       transition: all 200ms;      
       top:-70px;
-      background-color: white;
+      background-color: var(--theme-1-primary);
       height: 69px;
       -box-shadow: 0 2px 3px -1px rgba(0,0,0,.1);
       &.exited {
@@ -82,6 +82,10 @@
       border-radius: 10px;
       color: #111;
       background-color: rgba(255,255,255,0.90);
+      &.done {
+        opacity: .3;
+      }
+      
       .type {
         opacity: .99;
         width: 28px;

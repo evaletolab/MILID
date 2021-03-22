@@ -1,5 +1,20 @@
 <template>
-  <div id="app">
+  <div id="app">  
+    <!-- IOS INSTALL -->
+    <div class="overlay-pane" :class="{'overlay-open':displayIosInstall}">
+      <div class="install-ios">
+        <div class="surface">
+          <div class="cancel material-icons" @click="onClose">close</div>
+          <div class="label">
+            Installez MILID dans votre appareil.<br/> 
+            Appuyez sur l'icône de Partage, puis sélectionnez<br/>
+            <b>Ajouter à l'écran d'accueil.</b>
+          </div>
+          <div class="bottom material-icons" >arrow_downward</div>
+        </div>          
+      </div>
+    </div>
+
     <router-view/>
   </div>
 </template>
@@ -17,17 +32,36 @@
   text-align: center;
   color: #2c3e50;
 }
+</style>
 
-#nav {
-  padding: 30px;
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+<script lang="ts">
+import { Component, Prop, Vue } from 'vue-property-decorator';
+import { $config } from './services';
+
+@Component
+export default class App extends Vue {
+  displayIosInstall = false;
+
+  mounted() {
+    //
+    // delegate browser install Prompt
+    window.addEventListener('installprompt', () => {
+      console.log('iOS browser prompt');
+      this.displayIosInstall =  true;
+      setTimeout(()=>{
+        this.displayIosInstall =  false;
+      },10000);
+    });
+
+  }  
+
+  onClose(){
+    this.displayIosInstall = false;
   }
 }
-</style>
+</script>
+
+
+

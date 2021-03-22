@@ -1,9 +1,12 @@
 
 <template>
-  <div class="col" :style="cssVars" >
+  <div class="col" :style="cssVars" :class="'theme-'+theme">
     <div ref="raw_root" v-html="lessonContent" ></div>
-
     <Quiz v-if="hasQuiz" :moduleId="moduleId" :lessonId="lessonId" />
+
+    <!-- DONE -->
+    <button class="done primary" @click="onCompletionHandler">Complete</button>
+
   </div>
 </template>
 
@@ -55,10 +58,10 @@
 import { Component, Vue, Prop } from 'vue-property-decorator';
 import Quiz from './Quiz.vue';
 
-import { $module } from '@/services/module-service';
-import { $config } from '@/services/config-service';
+import { $config, $module, $metric } from '@/services';
 
 import { getOffset } from '@/helpers/utils';
+import { MILID } from '../models';
 
 @Component({
   components: { Quiz },
@@ -68,7 +71,10 @@ export default class LessonMarkdown extends Vue {
   @Prop() readonly lessonId!:string;
   lessonContent = "";
   definitions: any[] = [];
-  
+
+  get theme(){
+      return $module.getModuleWithId(this.moduleId).theme;
+  }
 
   beforeMount(){
     this.lessonContent = this.lesson.html;
@@ -145,5 +151,15 @@ export default class LessonMarkdown extends Vue {
       const definitionElements = rawRoot.querySelectorAll('._definition');
       definitionElements.forEach(e => e.removeEventListener('click', this.definitionClickHandler));
   }
+
+  onCompletionHandler($evt){
+      $evt.stopPropagation();
+      const params = {
+          lesson: this.lessonId,
+          module: this.moduleId,
+          state: MILID.LessonState.DONE
+      };
+      $metric.event(params);
+  }  
 }
 </script>

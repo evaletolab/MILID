@@ -5,17 +5,16 @@
       <div class="toolbar-row">
         <div class="toolbar-section-start">
           <button class="icon start">
-            <MILIDIcons name="home" color="black"/>
           </button>
         </div>
 
         <div class="toolbar-title">
-          <img class="logo" src="@/assets/MILID-logo-text.svg" />
+          <MILIDIcons name="logo" width="80" color="white"/>
         </div>        
 
         <div class="toolbar-section-end">
           <button class="icon end">
-            <MILIDIcons name="parametres" color="black"/>
+            <MILIDIcons name="parametres" color="white"/>
           </button>
         </div>
       </div>
@@ -42,7 +41,7 @@
       <div class="masonry-with-columns" :style="{ backgroundColor: themeTertiary(mod.theme)}">
         <div v-for="lesson in mod.lessons" :key="lesson.index" 
             @click="routerLink(mod.id,lesson.index)"
-            class="lesson">
+            class="lesson" :class="getState(lesson)">
           <div class="type">
             <MILIDIcons :name="getType(lesson)" :theme="mod.theme"/>
           </div>
@@ -94,6 +93,11 @@ export default class Home extends Vue {
 
   get config(){
     return $config.store.config;
+  }
+
+  getState(lesson) {
+    const metric = $metric.progressionState[lesson.id] || {};
+    return metric.state || '';
   }
 
   getType(lesson) {
