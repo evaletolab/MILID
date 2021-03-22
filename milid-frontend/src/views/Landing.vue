@@ -4,8 +4,7 @@
     <nav class="toolbar">
       <div class="toolbar-row">
         <div class="toolbar-section-start">
-          <button class="icon start">
-          </button>
+          <div class="version">v{{version}}</div>
         </div>
 
         <div class="toolbar-title">
@@ -84,8 +83,11 @@
     }
     
     .version {
-      font-weight: 200;
       opacity: .5;
+      margin: 5px;
+      padding: 2px;
+      font-size: 13px;
+      color: white;      
     }
 
     .main{
@@ -234,6 +236,7 @@ import { Component, Vue } from 'vue-property-decorator';
 import { $config, $user } from '../services';
 
 import MILIDIcons from '../components/MILIDIcons.vue';
+import  cfg from '../../package.json';
 
 @Component({
   components: {
@@ -244,6 +247,7 @@ export default class Landing extends Vue {
   open = false;
   deferredPrompt: any = {};
   pseudo = '';
+  version = cfg.version;
 
   async mounted(){
     window.addEventListener('beforeinstallprompt', (e) => {
