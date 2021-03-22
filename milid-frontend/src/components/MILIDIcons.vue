@@ -342,6 +342,6 @@ export default class MILIDIcons extends Vue {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .op5{
-  opacity: 0.5;
+  opacity: 1;
 }
 </style>
