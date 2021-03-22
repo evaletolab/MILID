@@ -14,6 +14,18 @@
         </div>          
       </div>
     </div>
+    <!-- SW UPDATE -->
+    <div class="overlay-pane" :class="{'overlay-open':updateExists}">
+      <div class="install-ios">
+        <div class="surface">
+          
+          <div class="label">
+            <span v-html="i18n('app_pwa_update')" />
+            <span class="update material-icons" @click="onRefreshApp">update</span>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <router-view/>
   </div>
@@ -43,6 +55,13 @@ import { $config } from './services';
 @Component
 export default class App extends Vue {
   displayIosInstall = false;
+  registration: any = {};
+  updateExists = false;
+
+
+  i18n(key) {
+    return $config.i18n(key);
+  }
 
   mounted() {
     //
@@ -55,11 +74,28 @@ export default class App extends Vue {
       },10000);
     });
 
+    //
+    // update app
+    window.addEventListener('swUpdated', this.onUpdateAvailable, { once: true })
+
   }  
+
+  onUpdateAvailable(event){
+      this.registration = event.detail
+      this.updateExists = true
+  }
 
   onClose(){
     this.displayIosInstall = false;
   }
+
+  onRefreshApp() {
+    this.updateExists = false
+    // Make sure we only send a 'skip waiting' message if the SW is waiting
+    if (!this.registration || !this.registration.waiting) return
+    // Send message to SW to skip the waiting and activate the new SW
+    this.registration.waiting.postMessage({ type: 'SKIP_WAITING' })
+  }  
 }
 </script>
 
