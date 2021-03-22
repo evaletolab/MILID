@@ -21,14 +21,23 @@
     </nav>
 
     <div class="main">
-      <section>
+      <!-- DESTOP -->
+      <section class="desktop hide-sm">
+        <img src="@/assets/MILID-logo-minimal.svg" />
+        <p class="right" v-html="i18n('landind_desktop_h1')" />
+        <p class="left" v-html="i18n('landind_desktop_h2')" />
+        <p class="right" v-html="i18n('landind_desktop_h3')" />
+        <button class="btn tertiary" @click="onInstall" v-show="!installed">{{i18n('landing_desktop_install')}}</button>
+      </section>
+
+      <section class="hide-lg">
         <h3 v-html="i18n('landing_title1')" />
         <p v-html="i18n('landing_title2')" />
-        <img src="@/assets/MILID-logo-minimal.svg" />
+        <img  src="@/assets/MILID-logo-minimal.svg" />
 
         <button class="btn tertiary" @click="onInstall" v-show="!installed">{{i18n('landing_install')}}</button>
       </section>
-      <section class="continue">
+      <section class="continue hide-lg">
         <button class="" @click="onToggle">
           <MILIDIcons name="back" color="white"  class="back"/>
         </button>
@@ -37,7 +46,7 @@
     </div>
     <section class="bottom " :class="{'open':open,'primary':!open}" @click="onOpen">
       <section class="form">
-        <MILIDIcons name="user" theme="1" class="user"/>
+        <MILIDIcons name="user" color="#85e5ff" class="user"/>
 
         <input v-model="pseudo" @keypress.enter="onEnter"
               placeholder="Pseudo ..."  />
@@ -66,7 +75,7 @@
       transform: translateY(0);
       transition: all 200ms;      
       top:0px;
-      background-color: var(--theme-1-primary);
+      background-color: var(--md-theme-default-primary);
       height: 69px;
       -box-shadow: 0 2px 3px -1px rgba(0,0,0,.1);
       &.exited {
@@ -97,10 +106,35 @@
       min-height: calc( 100vh - 90px);    
       height: 100%;
       color: white;
-      background-color: var(--theme-1-secondary);
+      background-color: var(--md-theme-default-secondary);
+
+      >section.desktop {
+        max-width: 80%;
+        padding: 10px 100px;        
+        overflow:visible;
+        background-image: url('../assets/rocket-static.svg');
+        background-repeat: no-repeat;
+        background-position-x: 20%;
+        background-position-y: 60px;
+        background-size: 16%;
+        min-height: (80vh);
+        p{
+          margin: 40px 0;
+          &.right{
+            margin-left: calc( 50% - 64px);
+          }
+          &.left{
+            margin-right: calc( 50% - 64px);
+          }
+
+        }
+        button {
+          margin-top: 100px;          
+        }
+      }
 
       >section{
-        max-width: 80%;
+        max-width: 100%;
         max-height: calc( 100vh - 80px );
         padding: 10px 30px;
         @media (max-width:330px) {
@@ -114,7 +148,7 @@
         img{
           text-align: center!important;
           padding: 26px;
-          background-color: var(--theme-1-primary);
+          background-color: var(--md-theme-default-primary);
           border-radius: 23px;
           width: 80px;
           margin-top: 30px;
@@ -156,7 +190,7 @@
 
   .btn {
     border-radius: 50px;
-    background: var(--theme-1-secondary);
+    background: var(--md-theme-default-secondary);
     border: 4px solid white;
     color: white;
     text-align: center;
@@ -170,8 +204,8 @@
 
 
   section.bottom {
-    background-color: var(--theme-1-tertiary);
-    border:1px solid var(--theme-1-tertiary);
+    background-color: var(--md-theme-default-secondary);
+    border:1px solid var(--md-theme-default-secondary);
     position: fixed;
     bottom: 0;
     left:0;
@@ -182,13 +216,14 @@
     padding: 0 5px;    
     transform: translateY(calc(100vh - 90px));
     transition: all 200ms;      
-    box-shadow: 0 2px 8px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 20px 8px rgba(0, 0, 0, 0.3);
 
 
     &.open {
       transform: translateY(10%);
 
       .form{
+        color: white;
         padding: 20px 50px;
         button{
           min-width: 220px;
@@ -206,7 +241,7 @@
           color: #444;
           padding: 10px 15px;
           border-radius: 15px;
-          border: 3px solid var(--theme-1-tertiary);
+          border: 3px solid white;
           outline: 0;          
         }
         a{
