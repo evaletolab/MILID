@@ -64,8 +64,6 @@ class MetricService {
     });
 
 
-    console.log('---DBG event',fields);
-
     //
     // check state before to continue 
     const current = this.progressionState[params.lesson];

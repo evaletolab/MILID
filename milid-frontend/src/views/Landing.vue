@@ -233,10 +233,11 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import { $config, $user } from '../services';
+import { $config, $user, $metric } from '../services';
 
 import MILIDIcons from '../components/MILIDIcons.vue';
 import  cfg from '../../package.json';
+import { MILID } from '../models';
 
 @Component({
   components: {
@@ -259,6 +260,13 @@ export default class Landing extends Vue {
     });
 
     this.pseudo = this.user.name || '';
+
+    const params = {
+        lesson: 'landing',
+        module: 'landing',
+        state: MILID.LessonState.DONE
+    };
+    $metric.event(params);
   }
 
   get config(){

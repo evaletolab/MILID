@@ -72,6 +72,7 @@ import { $config, $metric, $module } from '../services';
 import ModuleStatus from '../components/ModuleStatus.vue';
 import MILIDWave from '../components/MILIDWave.vue';
 import MILIDIcons from '../components/MILIDIcons.vue';
+import { MILID } from '../models';
 
 
 @Component({
@@ -132,6 +133,13 @@ export default class Home extends Vue {
       this.lastScrollTop = st <= 0 ? 0 : st; 
 
     }, false);    
+    const params = {
+        lesson: 'home',
+        module: 'home',
+        state: MILID.LessonState.DONE
+    };
+    $metric.event(params);
+
   }
 
   routerLink(module,lesson) {
