@@ -23,8 +23,6 @@ module.exports = async function rsync_deploy(options) {
 
   args = [...args, './dist/', `${user}@${host}:${target_directory}`];
 
-  console.log(args);
-
   try {
     await execa("sshpass", args);
   } catch (e) {
