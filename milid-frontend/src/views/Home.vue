@@ -25,7 +25,7 @@
 
     <!-- USER -->
     <div class="user">
-      <MILIDIcons name="user" theme="1"/>
+      <MILIDIcons name="user" color="#85e5ff"/>
       <h2>{{pseudo}}</h2>
     </div>
 
