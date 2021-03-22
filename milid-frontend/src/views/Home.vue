@@ -26,7 +26,7 @@
     <!-- USER -->
     <div class="user">
       <MILIDIcons name="user" theme="1"/>
-      <h2>Olivier E.</h2>
+      <h2>{{pseudo}}</h2>
     </div>
 
     <!-- STATUS -->
@@ -67,7 +67,7 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 import { Route } from 'vue-router';
-import { $config, $metric, $module } from '../services';
+import { $config, $metric, $module, $user } from '../services';
 
 import ModuleStatus from '../components/ModuleStatus.vue';
 import MILIDWave from '../components/MILIDWave.vue';
@@ -94,6 +94,10 @@ export default class Home extends Vue {
 
   get config(){
     return $config.store.config;
+  }
+
+  get pseudo() {
+    return $user.user.name;
   }
 
   getState(lesson) {
