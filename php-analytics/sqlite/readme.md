@@ -27,3 +27,13 @@ expects a json encoded object of format:
 
 ## run php locally
 - php -S localhost:port
+
+
+## stats route
+
+- curl localhost:4000/api/stats
+
+returns a json object with 5 keys:
+
+- **total_users** -> total of unique visitors (users that have completed the landing page)
+- **completed_lessons_m1** total of completed lessons for the module 1 (divide by total users and then divide by lessons per module to obtain ration)

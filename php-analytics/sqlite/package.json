@@ -1,0 +1,15 @@
+{
+  "name": "sqlite",
+  "version": "1.0.0",
+  "description": "implements a route to add a Milid event object to an sqlite database. expects a json encoded object of format:  ``` { \t\"uid\": \"2bdaf3e1-39653661\", \t\"username\": \"marcus\", \t\"module\": 1, \t\"lesson\":1, \t\"state\": 0 } ```",
+  "main": "generate_test_data.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "got": "^11.8.2"
+  }
+}
