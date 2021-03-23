@@ -14,10 +14,10 @@
       if(!property_exists($data, 'username')){
           return False;
       }
-      if(!property_exists($data, 'module') || !is_numeric($data->module)){
+      if(!property_exists($data, 'module') || !is_string($data->module)){
           return False;
       }
-      if(!property_exists($data, 'lesson') || !is_numeric($data->lesson)){
+      if(!property_exists($data, 'lesson') || !is_string($data->lesson)){
           return False;
       }
       if(!property_exists($data, 'state')){
