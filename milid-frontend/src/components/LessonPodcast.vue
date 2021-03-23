@@ -23,14 +23,14 @@
             </div>
         </div>
 
-        <button class="done primary" @click="onCompletionHandler">Complete</button>
+        <!-- DONE -->
+        <CompletionButton :completed="completed" v-on:complete="onCompletionHandler" />
     </div>   
 </template>
 
 
 <style lang="scss" scoped>
   .col{
-    /* margin-left: 20px; */
     width:100%;
     max-width: 640px;
     text-align: left;
@@ -84,8 +84,9 @@
 <script lang="ts">
 /* eslint-disable */
 import { Component, Vue, Prop } from 'vue-property-decorator';
-import MILIDIcons from '../components/MILIDIcons.vue';
+import MILIDIcons from './MILIDIcons.vue';
 import LottieAnimation from "lottie-vuejs/src/LottieAnimation.vue";
+import CompletionButton from './CompletionButton.vue';
 
 import { $config, $module, $metric } from '@/services';
 import { MILID } from '../models';
@@ -94,6 +95,7 @@ import { MILID } from '../models';
   components: { 
       MILIDIcons,
       LottieAnimation,
+      CompletionButton,
   }
 })
 export default class LessonPodcast extends Vue {
@@ -122,6 +124,15 @@ export default class LessonPodcast extends Vue {
 
     get title(){
         return this.lesson.title;
+    }
+    
+    get completed(){
+        return this.state == "done";
+    }
+
+    get state() {
+        const metric = $metric.progressionState[this.lesson.id] || {};
+        return metric.state || '';
     }
 
     get mediaUrl(){
@@ -216,8 +227,7 @@ export default class LessonPodcast extends Vue {
         return `${minStr}${secondsStr}`;
     }
 
-    onCompletionHandler($evt){
-        $evt.stopPropagation();
+    onCompletionHandler(){
         const params = {
             lesson: this.lessonId,
             module: this.moduleId,
