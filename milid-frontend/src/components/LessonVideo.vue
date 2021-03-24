@@ -138,6 +138,7 @@ import CompletionButton from './CompletionButton.vue'
 
 import { $config, $module, $metric } from '@/services';
 import { MILID } from '../models';
+import { formatTime } from '../helpers/milidHelpers';
 
 @Component({
   components: {
@@ -198,11 +199,11 @@ export default class LessonVideo extends Vue {
   }
 
   get elapsedStr(){
-      return this.formatTime(this.elapsed);
+      return formatTime(this.elapsed);
   }
 
   get durationStr(){
-      return this.formatTime(this.duration);
+      return formatTime(this.duration);
   }
 
   get video(){
@@ -270,17 +271,6 @@ export default class LessonVideo extends Vue {
 
   onSeekBackwards(){
     this.video.currentTime = Math.max(this.video.currentTime - 10, 0);
-  }
-
-  
-  formatTime(time){
-    const minutes = Math.floor(time / 60);
-    const seconds = time % 60;
-    
-    const minStr = minutes > 0 ? `${minutes}:` : "";
-    const secondsStr = seconds.toString().padStart(2, '0');
-
-    return `${minStr}${secondsStr}`;
   }
   
   setAnimController(controller){
