@@ -7,17 +7,16 @@ expects a json encoded object of format:
 {
 	"uid": "2bdaf3e1-39653661",
 	"username": "marcus",
-	"module": 1,
-	"lesson":1,
-	"state": 0
+	"module": "1",
+	"lesson":"1",
+	"state": "done"
 }
 ```
 
 ## install it
 
-- copy **empty.sqlite** and rename it **db.sqlite** 
-- copy all php files to *./dist* folder
-- use deploy script from **milid-frontent**
+- copy **empty.sqlite** and rename it **db.sqlite** and move it to folder **src** 
+- use deploy script from **milid-frontend**
 
 ## todo
 

@@ -1,7 +1,7 @@
 <?php
 
   function get_stat($db, $module){
-    $query = "select COUNT(*) as a_count from(select * from events where module = \"{$module}\" and state = 1 group by lesson, uid, username)";
+    $query = "select COUNT(*) as a_count from(select * from events where module = \"{$module}\" and state = \"done\" group by lesson, uid, username)";
     
     $response = $db->query($query);
     if(!$response){

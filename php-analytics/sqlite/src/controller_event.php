@@ -5,10 +5,6 @@
 
   }
 
-  function is_in_range_inclusive($value, $low, $high){
-    return $value >= $low && $value <= $high;
-  }
-
   //
   // naive validation
   function controller_event_validate($data){
@@ -24,7 +20,7 @@
       if(!property_exists($data, 'lesson') || !is_string($data->lesson)){
           return False;
       }
-      if(!property_exists($data, 'state') || !is_numeric($data->state) || !is_in_range_inclusive($data->state, 0, 1)){
+      if(!property_exists($data, 'state') || !is_string($data->state)){
           return False;
       }
       return True;
