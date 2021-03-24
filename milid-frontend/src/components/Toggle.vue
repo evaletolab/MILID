@@ -76,7 +76,7 @@ input:checked + .slider:before {
 import { Component, Prop, Vue } from 'vue-property-decorator';
 
 @Component
-export default class Switch extends Vue {
+export default class Toggle extends Vue {
   @Prop() readonly disabled!:boolean;
 
 }
