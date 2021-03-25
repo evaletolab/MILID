@@ -33,7 +33,6 @@ class ConfigService {
       this.lang = "de";
     }
 
-    console.log('---i18n', this.lang);
   }
 
   get store() {
