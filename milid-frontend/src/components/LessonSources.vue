@@ -4,7 +4,7 @@
     <MILIDIcons name="sources-bar" :theme="module.theme" />
     <nav class="handle" hidden></nav>
     <div class="content">
-      <h3>sources</h3>
+      <h3 class="hide">sources</h3>
       <div v-html="lesson.sources" />        
     </div>        
   </section>
@@ -86,11 +86,10 @@ export default class LessonSources extends Vue {
   section.sources svg {
     width: 55px;
     margin-top: -27px;
-    height: 55px;    
-    width: 67px;
+    width: auto;
     margin-top: 10px;
-    height: 39px;
-    transform: translateY(-27px) translateX(3px);
+    height: 55px;
+    transform: translateY(-64px) translateX(3px);
   }
 
   section.sources nav{
@@ -99,6 +98,7 @@ export default class LessonSources extends Vue {
     background: rgba(255, 255, 255,.8);
     margin: auto;
     margin-top: 8px;
+    display: none;
   }
   section.sources div.content{    
     font-size: 14px;
@@ -106,6 +106,11 @@ export default class LessonSources extends Vue {
     text-align: left;
     padding: 5px 20px;              
     color: white!important;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-top: -45px;
+    height: 65%;
+
   }
 
   section.sources div.content h3{
@@ -113,13 +118,6 @@ export default class LessonSources extends Vue {
     text-transform: uppercase;
     font-size: 14px;
     margin-bottom: 30px;    
-  }
-
-  section.sources div.content {
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
-    margin-top: -15px;
-    height: 65%;
   }
 
   section.sources div.content  /deep/ a{
