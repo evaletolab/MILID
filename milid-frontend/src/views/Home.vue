@@ -57,7 +57,7 @@
     </div>
 
     <!-- FULLSCREEN MODAL -->
-    <router-view name="l2"/>
+    <router-view name="l2" :key="$route.fullPath"/>
 
   </div>
 </template>

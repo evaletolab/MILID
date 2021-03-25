@@ -16,7 +16,7 @@
 
         <div class="toolbar-section-end">
           <button class="end icon">
-            <MILIDIcons name="parametres" color="white"/>
+            <!-- <MILIDIcons name="parametres" color="white"/> -->
           </button>
         </div>
       </div>
