@@ -66,6 +66,7 @@
     margin-right: -25px;    
     width: 100vw;
     min-height: 500px;
+    overflow: hidden;
     
     .video-edges{
       width: 100%;
@@ -79,7 +80,7 @@
       width: calc( 100vw - 95px);
       height: calc( 100vw - 95px);
       border-radius: 60px;
-      background-color: var(--tertiary);
+      background-color: white;
       margin: auto;    
       position: absolute;
       left: 50%;
