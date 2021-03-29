@@ -19,7 +19,7 @@
   function controller_stats_get($db) {
     
     $result = Array();
-    $result["total_users"] = get_stat($db, "landing");    
+    $result["total_users"] = get_stat($db, "home");    
     $result["completed_lessons_m1"] = get_stat($db, "1");    
     $result["completed_lessons_m2"] = get_stat($db, "2");    
     $result["completed_lessons_m3"] = get_stat($db, "3");    
