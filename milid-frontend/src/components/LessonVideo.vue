@@ -24,8 +24,10 @@
         </div>
     </div>
 
-    <button class="done primary" @click="onCompletionHandler">Complete</button>
-
+    <!-- DONE -->
+    <div class="col">
+      <CompletionButton :completed="completed" v-on:complete="onCompletionHandler" />
+    </div>
   </div>
 </template>
 
@@ -63,7 +65,9 @@
     margin-left: -25px;
     margin-right: -25px;    
     width: 100vw;
-
+    min-height: 500px;
+    overflow: hidden;
+    
     .video-edges{
       width: 100%;
       height: 100%;
@@ -76,7 +80,7 @@
       width: calc( 100vw - 95px);
       height: calc( 100vw - 95px);
       border-radius: 60px;
-      background-color: var(--tertiary);
+      background-color: white;
       margin: auto;    
       position: absolute;
       left: 50%;
@@ -86,6 +90,13 @@
 
   }
 
+  
+  .col{
+    width:100%;
+    max-width: 640px;
+    text-align: left;
+  }
+  
   .duration-container{
       display: flex;
       justify-content: center;
@@ -124,14 +135,17 @@
 import { Component, Vue, Prop } from 'vue-property-decorator';
 import MILIDIcons from '../components/MILIDIcons.vue';
 import LottieAnimation from "lottie-vuejs/src/LottieAnimation.vue";
+import CompletionButton from './CompletionButton.vue'
 
 import { $config, $module, $metric } from '@/services';
 import { MILID } from '../models';
+import { formatTime } from '../helpers/milidHelpers';
 
 @Component({
   components: {
     MILIDIcons,
     LottieAnimation,
+    CompletionButton,
   },
 })
 export default class LessonVideo extends Vue {
@@ -176,13 +190,21 @@ export default class LessonVideo extends Vue {
     return this.lesson.media;
   }
 
+  get completed(){
+    return this.state == "done";
+  }
+
+  get state() {
+    const metric = $metric.progressionState[this.lesson.id] || {};
+    return metric.state || '';
+  }
 
   get elapsedStr(){
-      return this.formatTime(this.elapsed);
+      return formatTime(this.elapsed);
   }
 
   get durationStr(){
-      return this.formatTime(this.duration);
+      return formatTime(this.duration);
   }
 
   get video(){
@@ -251,25 +273,12 @@ export default class LessonVideo extends Vue {
   onSeekBackwards(){
     this.video.currentTime = Math.max(this.video.currentTime - 10, 0);
   }
-
-  
-  formatTime(time){
-    const minutes = Math.floor(time / 60);
-    const seconds = time % 60;
-    
-    const minStr = minutes > 0 ? `${minutes}:` : "";
-    const secondsStr = seconds.toString().padStart(2, '0');
-
-    return `${minStr}${secondsStr}`;
-  }
   
   setAnimController(controller){
     this.lottieController = controller;
   }
 
-
-  onCompletionHandler($evt){
-      $evt.stopPropagation();
+  onCompletionHandler(){
       const params = {
           lesson: this.lessonId,
           module: this.moduleId,

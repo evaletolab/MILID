@@ -2,4 +2,8 @@ RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^.*$ ./index.php [L,QSA]
-# RewriteRule ^(.*)$ ./index.php?path=$1 [NC,L,QSA]
+
+<FilesMatch ".sqlite">
+    Order Allow,Deny
+    Deny from All
+</FilesMatch>

@@ -59,6 +59,7 @@ const options = {
     password: isDevMode ? process.env.DEV_RSYNC_PASSWORD : process.env.PROD_RSYNC_PASSWORD,
     host: isDevMode ? process.env.DEV_RSYNC_HOST : process.env.PROD_RSYNC_HOST,
     target_directory: isDevMode ? process.env.DEV_RSYNC_TARGET_DIRECTORY : process.env.PROD_RSYNC_TARGET_DIRECTORY,
+    exclude_file: "db.sqlite",
 };
 
 run_deploy(options);

@@ -18,6 +18,11 @@
   },
   "i18n":{
     "fr":{
+      "app_pwa_update":"Une mise à jour est disponible",
+      "landind_desktop_h1":"MILID, c’est la formation en microlearning sur la recherche d’informations et la lutte contre les fake news. Nous avons concocté plein de leçons, d’activités et de petits jeux, pour que tu deviennes un pro de la recherche d’info.",
+      "landind_desktop_h2":"Pour faire une activité de MILID, il ne te faudra jamais plus de deux minutes. C’est le principe du microlearning : faire passer un maximum d’informations en un minimum de temps. C’est la formation du futur ! ",
+      "landind_desktop_h3":"Fini les e-learning où tu dois te poser deux heures devant ton ordi. MILID est 100% mobile learning. Grâce à ton smartphone ou ta tablette, tu peux suivre la formation d’où tu veux : dans le bus, sur ton canap’, et même à la plage.",
+      "landing_desktop_install": "Test MILID sur ton smartphone! Accède et install MILID sur ton écran d'acceuil",
       "landing_title1":"Bienvenue!",
       "landing_title2":"Installer l'application dans votre mobile pour profiter pleinement de l'expérience micro-learning",
       "landing_install":"Ajouter à l'écran d'acceuil",
@@ -25,6 +30,11 @@
       "landing_continue_go": "Go!"
     },
     "de":{
+      "app_pwa_update":"An update is available",
+      "landind_desktop_h1":"MILID, c’est la formation en microlearning sur la recherche d’informations et la lutte contre les fake news. Nous avons concocté plein de leçons, d’activités et de petits jeux, pour que tu deviennes un pro de la recherche d’info.",
+      "landind_desktop_h2":"Pour faire une activité de MILID, il ne te faudra jamais plus de deux minutes. C’est le principe du microlearning : faire passer un maximum d’informations en un minimum de temps. C’est la formation du futur ! ",
+      "landind_desktop_h3":"Fini les e-learning où tu dois te poser deux heures devant ton ordi. MILID est 100% mobile learning. Grâce à ton smartphone ou ta tablette, tu peux suivre la formation d’où tu veux : dans le bus, sur ton canap’, et même à la plage.",
+      "landing_desktop_install": "Test MILID sur ton smartphone! Accède et install MILID sur ton écran d'acceuil",
       "landing_title1":"Bienvenue!",
       "landing_title2":"Installer l'application dans votre mobile pour profiter pleinement de l'expérience micro-learning",
       "landing_install":"Ajouter à l'écran d'acceuil",

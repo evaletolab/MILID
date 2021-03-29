@@ -14,7 +14,7 @@
 
         <div class="toolbar-section-end">
           <button class="icon end">
-            <MILIDIcons name="parametres" color="white"/>
+            <MILIDIcons name="parametres" color="white" @wasClicked="showParameters = true" />
           </button>
         </div>
       </div>
@@ -23,10 +23,12 @@
       </div>        
     </nav>
 
+    <ParametersPage :open="showParameters" v-on:closerequest="showParameters = false" />
+    
     <!-- USER -->
     <div class="user">
-      <MILIDIcons name="user" theme="1"/>
-      <h2>Olivier E.</h2>
+      <MILIDIcons name="user" color="#85e5ff"/>
+      <h2>{{pseudo}}</h2>
     </div>
 
     <!-- STATUS -->
@@ -55,7 +57,7 @@
     </div>
 
     <!-- FULLSCREEN MODAL -->
-    <router-view name="l2"/>
+    <router-view name="l2" :key="$route.fullPath"/>
 
   </div>
 </template>
@@ -67,24 +69,29 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 import { Route } from 'vue-router';
-import { $config, $metric, $module } from '../services';
+import { $config, $metric, $module, $user } from '../services';
 
 import ModuleStatus from '../components/ModuleStatus.vue';
 import MILIDWave from '../components/MILIDWave.vue';
 import MILIDIcons from '../components/MILIDIcons.vue';
+import ParametersPage from '../components/ParametersPage.vue';
+import { MILID } from '../models';
 
 
 @Component({
   components: { 
     ModuleStatus, 
     MILIDWave, 
-    MILIDIcons 
+    MILIDIcons,
+    ParametersPage, 
   }
 })
 export default class Home extends Vue {
   private lastScrollTop = 0;
 
   scrollDirection = 0;
+
+  showParameters = false;
 
   get modules() {
     console.log("--DBG: modules", $module.modules);
@@ -93,6 +100,10 @@ export default class Home extends Vue {
 
   get config(){
     return $config.store.config;
+  }
+
+  get pseudo() {
+    return $user.user.name;
   }
 
   getState(lesson) {
@@ -132,6 +143,13 @@ export default class Home extends Vue {
       this.lastScrollTop = st <= 0 ? 0 : st; 
 
     }, false);    
+    const params = {
+        lesson: 'home',
+        module: 'home',
+        state: MILID.LessonState.DONE
+    };
+    $metric.event(params);
+
   }
 
   routerLink(module,lesson) {

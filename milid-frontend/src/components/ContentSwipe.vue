@@ -437,7 +437,7 @@ export default class ContentSwipe extends Vue {
 
 .left-edge-shape, .right-edge-shape {
   position: absolute;
-  fill: var(--md-theme-default-accent);
+  fill: var(--md-theme-default-secondary);
   opacity: 0.3;
 }
 

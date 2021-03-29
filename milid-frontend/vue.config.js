@@ -7,7 +7,7 @@ module.exports = {
   publicPath : github? '/MILID': (prod? '/':'/'),
   devServer: {
     proxy: {
-      '^/event': {
+      '^/api': {
         target: 'http://localhost:4000',
         changeOrigin: true, // so CORS doesn't bite us. 
       }
@@ -15,9 +15,9 @@ module.exports = {
   },
   pwa:{
     name:"MILID",
-    themeColor:"#6900FF",
+    themeColor:"#0061d4",
     appleMobileWebAppCapable: true,
-    appleMobileWebAppStatusBarStyle:'#6900FF',
+    appleMobileWebAppStatusBarStyle:'#0061d4',
     workboxPluginMode: 'GenerateSW',
     workboxOptions: {
       // swSrc is required in InjectManifest mode.

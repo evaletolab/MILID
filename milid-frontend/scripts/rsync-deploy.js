@@ -10,13 +10,18 @@ module.exports = async function rsync_deploy(options) {
   const user = options.user;
   const host = options.host;
   const target_directory = options.target_directory;
+  const exclude_file = options.exclude_file;
 
-  const args = [
+  let args =  [
     '-p', password,
-    'rsync', '-avzrO', '--no-perms', '--delete',
-    './dist/',
-    `${user}@${host}:${target_directory}`,
+    'rsync', '-avzrO', '--no-perms', '--delete'
   ];
+
+  if(exclude_file){
+    args = [...args,'--exclude', exclude_file];
+  }
+
+  args = [...args, './dist/', `${user}@${host}:${target_directory}`];
 
   try {
     await execa("sshpass", args);

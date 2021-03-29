@@ -3,6 +3,7 @@
   require 'bootstrap.php';
   require "router.php";
   require 'controller_event.php';
+  require 'controller_stats.php';
 
   header("Access-Control-Allow-Origin: *");
   header("Content-Type: application/json; charset=UTF-8");
@@ -28,6 +29,10 @@
   // everything else results in a 404 Not Found
   router_add('/api/event', function ($method, $uri, $query, $payload) {
     return controller_event(db(), $method, $uri, $query, $payload);
+  });
+  
+  router_add('/api/stats', function ($method, $uri, $query, $payload) {
+    return controller_stats(db(), $method, $uri, $query, $payload);
   });
 
   router_not_found(function($path){

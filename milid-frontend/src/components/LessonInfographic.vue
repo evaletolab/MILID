@@ -3,11 +3,11 @@
         <h1 class="primary-on-text" v-html="title"/>
         <div ref="text_root" v-html="textContent" />
         <div ref="raw_root" v-html="svgContent" />
-        <div class="footer" />
         
         <!-- DONE -->
-        <button class="done primary" @click="onCompletionHandler">Complete</button>
-
+        <CompletionButton :completed="completed" v-on:complete="onCompletionHandler" />
+        
+        <div class="footer" />
     </div>
 </template>
 
@@ -38,11 +38,13 @@ import { Component, Vue, Prop } from 'vue-property-decorator';
 
 import { $config, $module, $metric } from '@/services';
 
+import CompletionButton from './CompletionButton.vue';
+
 import { getOffset } from '@/helpers/utils';
 import { MILID } from '../models';
 
 @Component({
-  components: {},
+  components: { CompletionButton },
 })
 export default class LessonInfographic extends Vue {
   @Prop() readonly moduleId!:string;
@@ -84,6 +86,15 @@ export default class LessonInfographic extends Vue {
 
   get title(){
     return this.lesson.title;
+  }
+  
+  get completed(){
+    return this.state == "done";
+  }
+
+  get state() {
+    const metric = $metric.progressionState[this.lesson.id] || {};
+    return metric.state || '';
   }
   
   get cssVars(){
@@ -184,14 +195,13 @@ export default class LessonInfographic extends Vue {
       definitionElements.forEach(e => e.removeEventListener('click', this.definitionClickHandler));
   }
 
-  onCompletionHandler($evt){
-      $evt.stopPropagation();
-      const params = {
-          lesson: this.lessonId,
-          module: this.moduleId,
-          state: MILID.LessonState.DONE
-      };
-      $metric.event(params);
+  onCompletionHandler(){
+    const params = {
+      lesson: this.lessonId,
+      module: this.moduleId,
+      state: MILID.LessonState.DONE
+    };
+    $metric.event(params);
   }
 
 }

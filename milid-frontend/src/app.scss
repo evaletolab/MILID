@@ -38,7 +38,11 @@
       overflow-y: auto;
   }
   
+  button {
+    outline: 0;
+  }
 
+  .hide        {display: none!important;}
   .show-sm     {display: none!important;}
 
   @media only screen and (max-width: 767px) {
@@ -46,10 +50,12 @@
     .show-sm     {display: block!important;}
     .inline-show-sm     {display: inline-block!important;}
   }
-  
-  @media only screen and (max-width: 1023px) {
+
+  @media only screen and (min-width: 767px) {
     .hide-md    {display: none;}
   }
+  
+
   @media only screen and (min-width: 1024px) {
     .show-lg    {display: block;}
     .hide-lg    {display: none;}
@@ -283,6 +289,13 @@ button.done {
           display: block;
           color: white;
   
+          &.update{
+            margin-top: 10px;
+            border: 1px solid #aaa;
+            border-radius: 8px;
+            padding: 4px;            
+          }
+
           &.cancel{
             left: auto;
             right: 10px;
@@ -299,6 +312,7 @@ button.done {
   
         .label{
           text-align: center;  
+          margin: 0;
           margin-left: auto;
           margin-right: auto;
           color: white;
@@ -308,7 +322,6 @@ button.done {
           font-weight: 400;
           flex-grow: 1;
           box-sizing: border-box;
-          margin: 0;
           padding: 14px 16px;        
         }
       }

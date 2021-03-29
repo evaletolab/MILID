@@ -5,8 +5,7 @@
     <Quiz v-if="hasQuiz" :moduleId="moduleId" :lessonId="lessonId" />
 
     <!-- DONE -->
-    <button class="done primary" @click="onCompletionHandler">Complete</button>
-
+    <CompletionButton :completed="completed" v-on:complete="onCompletionHandler" />
   </div>
 </template>
 
@@ -29,6 +28,7 @@
     display:block;
     margin-left:auto;
     margin-right:auto;
+    min-height: 260px;
   }
 
   .col /deep/ li::marker {
@@ -58,13 +58,15 @@
 import { Component, Vue, Prop } from 'vue-property-decorator';
 import Quiz from './Quiz.vue';
 
+import CompletionButton from './CompletionButton.vue';
+
 import { $config, $module, $metric } from '@/services';
 
 import { getOffset } from '@/helpers/utils';
 import { MILID } from '../models';
 
 @Component({
-  components: { Quiz },
+  components: { Quiz, CompletionButton },
 })
 export default class LessonMarkdown extends Vue {
   @Prop() readonly moduleId!:string;
@@ -112,6 +114,15 @@ export default class LessonMarkdown extends Vue {
     return $module.getLessonForModuleAndLessonId(this.moduleId, this.lessonId);
   }
 
+  get completed(){
+      return this.state == "done";
+  }
+
+  get state() {
+      const metric = $metric.progressionState[this.lesson.id] || {};
+      return metric.state || '';
+  }
+  
   get hasQuiz(){
     return !!this.lesson.quiz;
   }
@@ -152,8 +163,7 @@ export default class LessonMarkdown extends Vue {
       definitionElements.forEach(e => e.removeEventListener('click', this.definitionClickHandler));
   }
 
-  onCompletionHandler($evt){
-      $evt.stopPropagation();
+  onCompletionHandler(){
       const params = {
           lesson: this.lessonId,
           module: this.moduleId,
