@@ -16,6 +16,7 @@
           <h4>infos</h4>
           <div class="section">
             <p>uid: {{uid}}</p>
+            <p>v{{version}}</p>
           </div>
         </div>
       </div>    
@@ -80,6 +81,7 @@ import Toggle from './Toggle.vue';
 import { Component, Prop, Vue } from 'vue-property-decorator';
 
 import { $user } from '../services/user-service';
+import  cfg from '../../package.json';
 
 @Component({
   components: { MILIDIcons, Toggle },
@@ -87,6 +89,7 @@ import { $user } from '../services/user-service';
 export default class ParametersPage extends Vue {
 
   @Prop() readonly open!: boolean; 
+  version = cfg.version;
 
   close(){
     this.$emit('closerequest', null);
