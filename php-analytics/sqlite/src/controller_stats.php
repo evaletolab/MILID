@@ -1,6 +1,27 @@
 <?php
 
-  function get_stat($db, $module){
+  function get_completed_module_count($db, $module, $lessonsPerModule){
+    $query = "
+    select count(*) from 
+    (
+      select count (*) as c from 
+        (select * from events where module = \"{$module}\" and state = \"done\" group by lesson, uid, username) 
+      group by username, uid
+    ) where c = {$lessonsPerModule};
+    ";
+    
+    $response = $db->query($query);
+    if(!$response){
+      http_response_code(500);
+      exit();
+    }
+
+    // only ever expect one row and one column
+    return $response->fetchArray()[0];
+  }
+  
+  
+    function get_completed_station_count($db, $module){
     $query = "select COUNT(*) as a_count from(select * from events where module = \"{$module}\" and state = \"done\" group by lesson, uid, username)";
     
     $response = $db->query($query);
@@ -19,11 +40,21 @@
   function controller_stats_get($db) {
     
     $result = Array();
-    $result["total_users"] = get_stat($db, "home");    
-    $result["completed_lessons_m1"] = get_stat($db, "1");    
-    $result["completed_lessons_m2"] = get_stat($db, "2");    
-    $result["completed_lessons_m3"] = get_stat($db, "3");    
-    $result["completed_lessons_m4"] = get_stat($db, "4");    
+    $result["total_users"] = get_completed_station_count($db, "home");    
+    $result["completed_lessons_m1"] = get_completed_station_count($db, "1");    
+    $result["completed_lessons_m2"] = get_completed_station_count($db, "2");    
+    $result["completed_lessons_m3"] = get_completed_station_count($db, "3");    
+    $result["completed_lessons_m4"] = get_completed_station_count($db, "4");    
+
+    $module_1_lesson_count = 5;
+    $module_2_lesson_count = 8;
+    $module_3_lesson_count = 5;
+    $module_4_lesson_count = 5;
+
+    $result["completed_module_m1"] = get_completed_module_count($db, "1", $module_1_lesson_count);    
+    $result["completed_module_m2"] = get_completed_module_count($db, "2", $module_2_lesson_count);    
+    $result["completed_module_m3"] = get_completed_module_count($db, "3", $module_3_lesson_count);    
+    $result["completed_module_m4"] = get_completed_module_count($db, "4", $module_4_lesson_count);    
 
 
     http_response_code(200);
