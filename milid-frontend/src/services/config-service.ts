@@ -12,8 +12,10 @@ class ConfigService {
   // https://fr.vuejs.org/v2/guide/reactivity.html
   private _store: any;
   private _baseUrl = process.env.BASE_URL;
+  private _isInstalled = false;
 
   lang = 'fr';
+
  
   constructor() {
     this._store = Vue.observable({
@@ -32,6 +34,10 @@ class ConfigService {
     if (/^de\b/.test(lang)) {
       this.lang = "de";
     }
+
+    window.addEventListener('appinstalled', (evt) => {
+      this._isInstalled = true;
+    });    
 
   }
 
@@ -104,8 +110,9 @@ class ConfigService {
   //
   // Detects if device is in standalone mode
   isInStandaloneMode(){ 
-    return ('standalone' in (window as any).navigator) && 
-           ((window as any).navigator.standalone);
+    const $window = window as any;    
+    const standalone = (window.matchMedia('(display-mode: standalone)').matches);
+    return ($window.navigator.standalone) || standalone || this._isInstalled;
   }
 
 
