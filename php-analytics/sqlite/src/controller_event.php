@@ -11,9 +11,6 @@
       if(!property_exists($data, 'uid')){
           return False;
       }
-      if(!property_exists($data, 'username')){
-          return False;
-      }
       if(!property_exists($data, 'module') || !is_string($data->module)){
           return False;
       }
@@ -86,8 +83,8 @@
         echo $statement;
         response_fail();
     }
+    $statement->bindValue(':username', $payload->username ?? 'anonymous');
     $statement->bindValue(':uid', $payload->uid);
-    $statement->bindValue(':username', $payload->username);
     $statement->bindValue(':module', $payload->module);
     $statement->bindValue(':lesson', $payload->lesson);
     $statement->bindValue(':state', $payload->state);
