@@ -1,5 +1,45 @@
 <?php
 
+  function get_count_landing_users($db){
+    $query = "
+    select count(*) from 
+    (
+      select count (*) as c from 
+        (select * from events where module = \"landing\" and lesson = \"landing\" and state = \"done\" group by uid) 
+      group by uid
+    );
+    ";
+    
+    $response = $db->query($query);
+    if(!$response){
+      http_response_code(500);
+      exit();
+    }
+
+    // only ever expect one row and one column
+    return $response->fetchArray()[0];
+  }
+  
+  function get_count_home_users($db){
+    $query = "
+    select count(*) from 
+    (
+      select count (*) as c from 
+        (select * from events where module = \"home\" and lesson = \"home\" and state = \"done\" group by uid) 
+      group by uid
+    );
+    ";
+    
+    $response = $db->query($query);
+    if(!$response){
+      http_response_code(500);
+      exit();
+    }
+
+    // only ever expect one row and one column
+    return $response->fetchArray()[0];
+  }
+
   function get_completed_module_count($db, $module, $lessonsPerModule){
     $query = "
     select count(*) from 
@@ -40,7 +80,8 @@
   function controller_stats_get($db) {
     
     $result = Array();
-    $result["total_users"] = get_completed_station_count($db, "home");    
+    $result["completed_landing"] = get_count_landing_users($db);    
+    $result["completed_home"] = get_count_home_users($db);    
     $result["completed_lessons_m1"] = get_completed_station_count($db, "1");    
     $result["completed_lessons_m2"] = get_completed_station_count($db, "2");    
     $result["completed_lessons_m3"] = get_completed_station_count($db, "3");    

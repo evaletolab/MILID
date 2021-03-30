@@ -5,7 +5,7 @@
     <div v-if="error" class="error">
       erreur de connection au serveur, essayer de recharger la page.
     </div>
-    <h1>total utilisateurs: {{totalUsers}}</h1>
+    <h1>total visiteurs (landing mobile): {{totalLandingVisitors}}</h1>
     <div class="chart-container">
       <canvas ref="canvas_1"></canvas>
     </div>
@@ -43,7 +43,8 @@ export default class Dashboard extends Vue {
 
   error = false;
 
-  totalUsers = 0;
+  totalLandingVisitors = 0;
+  totalHomeUsers = 0;
 
   ctxMap = new Map();
 
@@ -61,7 +62,8 @@ export default class Dashboard extends Vue {
       this.error = true;
       return;
     }
-    this.totalUsers = stats.total_users;
+    this.totalLandingVisitors = stats.completed_landing;
+    this.totalHomeUsers = stats.completed_home;
 
     this.createCompletedModulesChart(this.ctxMap.get("canvas_1"), stats);
     this.createCompletedLessonsChart(this.ctxMap.get("canvas_2"), stats);
@@ -90,30 +92,33 @@ export default class Dashboard extends Vue {
   createCompletedModulesChart(ctx, stats) {
 
     const data = [ 
-      100, // total users = 100% 
-      (stats.completed_module_m1 / this.totalUsers) * 100,
-      (stats.completed_module_m2 / this.totalUsers) * 100,
-      (stats.completed_module_m3 / this.totalUsers) * 100,
-      (stats.completed_module_m4 / this.totalUsers) * 100,
+      this.totalLandingVisitors,
+      this.totalHomeUsers,
+      stats.completed_module_m1,
+      stats.completed_module_m2,
+      stats.completed_module_m3,
+      stats.completed_module_m4,
     ];
     
     this.chart = new Chart(ctx, {
     type: 'bar',
     responsive: true,
     data: {
-        labels: ['100% des utilisateurs', '% M1', '% M2', '% M3', '% M4'],
+        labels: ['visiteur landing', 'users home', '% M1', '% M2', '% M3', '% M4'],
         datasets: [{
-            label: 'modules complétés',
+            label: 'décompte',
             data: data,
             backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
             ],
             borderColor: [
-                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(54, 162, 235, 1)',
                 'rgba(54, 162, 235, 1)',
                 'rgba(54, 162, 235, 1)',
                 'rgba(54, 162, 235, 1)',
@@ -126,7 +131,8 @@ export default class Dashboard extends Vue {
         scales: {
             yAxes: [{
                 ticks: {
-                    beginAtZero: true
+                    beginAtZero: true,
+                    stepSize: 1,
                 }
             }]
         }
@@ -171,7 +177,8 @@ export default class Dashboard extends Vue {
         scales: {
             yAxes: [{
                 ticks: {
-                    beginAtZero: true
+                    beginAtZero: true,
+                    stepSize: 1,
                 }
             }]
         }

@@ -53,7 +53,7 @@
     $res = $statement->execute();
 
     if(!$res){
-        echo $sqlite->lastErrorMsg();
+        echo $db->lastErrorMsg();
         http_response_code(500);
         exit();
     }
@@ -93,7 +93,7 @@
     $res = $statement->execute();
 
     if(!$res){
-        echo $sqlite->lastErrorMsg();
+        echo $db->lastErrorMsg();
         http_response_code(500);
         exit();
     }
