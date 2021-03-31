@@ -46,11 +46,6 @@ const routes: Array<RouteConfig> = [
     component: About
   },
   {
-    path: '/test',
-    name: 'Test',
-    component: Test
-  },
-  {
     path:'/access_denied',
     name: 'AccessDenied',
     component: AccessDenied
