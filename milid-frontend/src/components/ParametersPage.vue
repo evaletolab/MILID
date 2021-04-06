@@ -12,8 +12,8 @@
             <p>français/allemand (à venir)</p>
             <Toggle disabled="true" />
           </div>
-          <br>
-          <div class="section">
+          <div v-if="showAboutButton" class="section">
+            <br>
             <router-link class="link" to="/about">
               <button class="btn">À propos</button>
             </router-link>
@@ -113,6 +113,12 @@ export default class ParametersPage extends Vue {
 
   @Prop() readonly open!: boolean; 
   version = cfg.version;
+
+  showAboutButton = true;
+
+  mounted(){
+    this.showAboutButton = this.$route.name != "About";
+  }
 
   close(){
     this.$emit('closerequest', null);
