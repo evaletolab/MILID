@@ -16,12 +16,11 @@ import { MILID } from '../models';
   components:{ ModuleProgress }
 })
 export default class ModuleStatus extends Vue {
-  private _subs = null;
+  private _subs: any = null;
   private pips = 0;
   @Prop() private module!: MILID.Module;
 
   mounted() {
-
     // FIXME remove sub on exit // unsubscribe() 
     this._subs = $metric.onUpdate().subscribe(this.computePips);
     this.computePips();
