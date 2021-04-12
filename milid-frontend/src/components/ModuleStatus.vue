@@ -16,20 +16,30 @@ import { MILID } from '../models';
   components:{ ModuleProgress }
 })
 export default class ModuleStatus extends Vue {
+  private _subs = null;
+  private pips = 0;
   @Prop() private module!: MILID.Module;
 
-  get pips(){
+  mounted() {
+
+    // FIXME remove sub on exit // unsubscribe() 
+    this._subs = $metric.onUpdate().subscribe(this.computePips);
+    this.computePips();
+  }
+
+  beforeDestroy() {
+    if(this._subs) {
+      this._subs.unsubscribe();
+    }
+  }
+
+  computePips(event?) {
     const lessons = Object.keys($metric.progressionState);
-    return lessons.filter(lesson => {
+    this.pips = lessons.filter(lesson => {
       return $metric.progressionState[lesson].state == 'done' && 
              $metric.progressionState[lesson].module == this.module.id;
-    }).length;    
+    }).length || 0;    
   }
-
-  mounted() {
-    // $metric.progressionState.sub
-  }
-
 }
 </script>
 
