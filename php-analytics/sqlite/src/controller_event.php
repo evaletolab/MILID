@@ -11,9 +11,6 @@
       if(!property_exists($data, 'uid')){
           return False;
       }
-      if(!property_exists($data, 'username')){
-          return False;
-      }
       if(!property_exists($data, 'module') || !is_string($data->module)){
           return False;
       }
@@ -56,7 +53,7 @@
     $res = $statement->execute();
 
     if(!$res){
-        echo $sqlite->lastErrorMsg();
+        echo $db->lastErrorMsg();
         http_response_code(500);
         exit();
     }
@@ -86,8 +83,8 @@
         echo $statement;
         response_fail();
     }
+    $statement->bindValue(':username', $payload->username ?? 'anonymous');
     $statement->bindValue(':uid', $payload->uid);
-    $statement->bindValue(':username', $payload->username);
     $statement->bindValue(':module', $payload->module);
     $statement->bindValue(':lesson', $payload->lesson);
     $statement->bindValue(':state', $payload->state);
@@ -96,7 +93,7 @@
     $res = $statement->execute();
 
     if(!$res){
-        echo $sqlite->lastErrorMsg();
+        echo $db->lastErrorMsg();
         http_response_code(500);
         exit();
     }

@@ -20,6 +20,8 @@ module.exports = {
     appleMobileWebAppStatusBarStyle:'#0061d4',
     workboxPluginMode: 'GenerateSW',
     workboxOptions: {
+      skipWaiting: true,
+      exclude: [/.mp3$/] // removes mp3 files from precache manifest
       // swSrc is required in InjectManifest mode.
       // swSrc: 'dev/sw.js',
       // ...other Workbox options...

@@ -2,8 +2,16 @@
 <template>
   <div class="admin">
     <h2>Admin</h2>
+    <div v-if="error" class="error">
+      erreur de connection au serveur, essayer de recharger la page.
+    </div>
+    <h1>total visiteurs (landing mobile): {{totalLandingVisitors}}</h1>
     <div class="chart-container">
-      <canvas ref="canvas"></canvas>
+      <canvas ref="canvas_1"></canvas>
+    </div>
+    <div style="height:40px"></div>
+    <div class="chart-container">
+      <canvas ref="canvas_2"></canvas>
     </div>
   </div>
 </template>
@@ -11,17 +19,21 @@
 <style lang="scss" scoped>
   .chart-container{
     position: relative; 
-    height:400px; 
+    height:auto; 
     width:100%    
   }
   .admin {
     color: black;
+  }
+  .error{
+    background-color: red;
   }
 </style>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 import { Chart, BarController, BarElement, PointElement, LinearScale, Title } from 'chart.js';
+import { $metric } from '../services/metric-service';
 
 @Component({
   components: { },
@@ -29,42 +41,88 @@ import { Chart, BarController, BarElement, PointElement, LinearScale, Title } fr
 export default class Dashboard extends Vue {
   chart = {};
 
+  error = false;
+
+  totalLandingVisitors = 0;
+  totalHomeUsers = 0;
+
+  ctxMap = new Map();
+
+
   mounted() {
-    const canvas = this.$refs.canvas as HTMLCanvasElement;
-    const { width, height } = canvas.getBoundingClientRect();
-    canvas.width = Math.floor(width * 1);
-    canvas.height = Math.floor(height * 1);
-    const ctx = canvas.getContext('2d');
-    this.createChart(ctx);
+    this.setupCanvases();
+    this.createCharts();
   }
 
-  createChart(ctx) {
+  async createCharts(){
 
-    //
-    // register
-    // Chart.register(BarController, BarElement, PointElement, LinearScale, Title);    
+    // 1 get data
+    const stats = await $metric.getStats();
+    if(!stats){
+      this.error = true;
+      return;
+    }
+    this.totalLandingVisitors = stats.completed_landing;
+    this.totalHomeUsers = stats.completed_home;
 
-    //
-    // instance
+    this.createCompletedModulesChart(this.ctxMap.get("canvas_1"), stats);
+    this.createCompletedLessonsChart(this.ctxMap.get("canvas_2"), stats);
+  }
+
+  setupCanvases(){
+    {
+      const canvas = this.$refs.canvas_1 as HTMLCanvasElement;
+      const { width, height } = canvas.getBoundingClientRect();
+      canvas.width = Math.floor(width * 1);
+      canvas.height = Math.floor(height * 1);
+      const ctx = canvas.getContext('2d');
+      this.ctxMap.set("canvas_1", ctx);
+    }
+
+    {
+      const canvas = this.$refs.canvas_2 as HTMLCanvasElement;
+      const { width, height } = canvas.getBoundingClientRect();
+      canvas.width = Math.floor(width * 1);
+      canvas.height = Math.floor(height * 1);
+      const ctx = canvas.getContext('2d');
+      this.ctxMap.set("canvas_2", ctx);
+    }
+  }
+
+  createCompletedModulesChart(ctx, stats) {
+
+    const data = [ 
+      this.totalLandingVisitors,
+      this.totalHomeUsers,
+      stats.completed_module_m1,
+      stats.completed_module_m2,
+      stats.completed_module_m3,
+      stats.completed_module_m4,
+    ];
+    
     this.chart = new Chart(ctx, {
     type: 'bar',
     responsive: true,
     data: {
-        labels: ['utilisateurs', 'ouverture', 'actitités', 'terminés'],
+        labels: ['visiteur landing', 'users home', '% M1', '% M2', '% M3', '% M4'],
         datasets: [{
-            label: '# actions',
-            data: [34, 19, 7, 3],
+            label: 'décompte',
+            data: data,
             backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)'
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
             ],
             borderColor: [
-                'rgba(255, 99, 132, 1)',
                 'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)'
+                'rgba(54, 162, 235, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(54, 162, 235, 1)',
             ],
             borderWidth: 1
         }]
@@ -73,12 +131,59 @@ export default class Dashboard extends Vue {
         scales: {
             yAxes: [{
                 ticks: {
-                    beginAtZero: true
+                    beginAtZero: true,
+                    stepSize: 1,
                 }
             }]
         }
     }
-});    
+    });    
+  }
+
+
+  createCompletedLessonsChart(ctx, stats) {
+
+    const data = [ 
+      stats.completed_lessons_m1, 
+      stats.completed_lessons_m2 ,
+      stats.completed_lessons_m3, 
+      stats.completed_lessons_m4,
+    ];
+
+    this.chart = new Chart(ctx, {
+    type: 'bar',
+    responsive: true,
+    data: {
+        labels: ['M1', 'M2', 'M3', 'M4'],
+        datasets: [{
+            label: 'compte des leçons complétées',
+            data: data,
+            backgroundColor: [
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+            ],
+            borderColor: [
+                'rgba(54, 162, 235, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(54, 162, 235, 1)',
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true,
+                    stepSize: 1,
+                }
+            }]
+        }
+    }
+    });    
   }
 }
 </script>

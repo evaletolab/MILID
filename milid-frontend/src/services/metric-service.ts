@@ -124,6 +124,17 @@ class MetricService {
       return null;
     }
   }
+
+  async getStats(){
+    try{
+      const res= await axios.get("/api/stats");
+      console.log('-- DBG',res);
+      return res.data;
+    }catch(e){
+      console.error("unable to get stats", e);
+      return null;
+    }
+  }
 }
 
 //

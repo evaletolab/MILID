@@ -3,7 +3,9 @@ import { $config } from './config-service';
 
 class UserService {
   private _STORAGE_USER = "milid-user";
-  private _user: MILID.User =  { id: false } as MILID.User;
+  private _user: MILID.User =  { 
+    id: this.getDeviceID() 
+  } as MILID.User;
 
   get user(){
     return this._user;
@@ -48,7 +50,7 @@ class UserService {
 
 
   async get(): Promise<MILID.User> {
-    if(this._user.id) {
+    if(this._user.name) {
       return this._user;
     }
 

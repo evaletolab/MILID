@@ -40,7 +40,7 @@
         <button class="btn tertiary" @click="onInstall" v-show="!installed">{{i18n('landing_install')}}</button>
       </section>
       <section class="continue hide-md  hide-lg">
-        <button class="" @click="onToggle">
+        <button class="" @click="onOpen">
           <MILIDIcons name="back" color="white"  class="back"/>
         </button>
         <p v-html="i18n('landing_continue_title')"></p>
@@ -293,6 +293,7 @@ export default class Landing extends Vue {
   showParameters = false;
 
   async mounted(){
+
     window.addEventListener('beforeinstallprompt', (e) => {
       // Prevent Chrome 67 and earlier from automatically showing the prompt
       e.preventDefault();
@@ -343,11 +344,10 @@ export default class Landing extends Vue {
     this.$router.push({path:'/module' });
   }
 
-  onToggle(){
-    this.open = !this.open;
-  }
-
   onOpen(){
+    if($user.user.name) {
+      return this.$router.push({path:'/module' });
+    }
     this.open = true;
   }
 

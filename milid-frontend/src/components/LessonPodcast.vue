@@ -25,6 +25,7 @@
 
         <!-- DONE -->
         <CompletionButton :completed="completed" v-on:complete="onCompletionHandler" />
+        <div style="height:50px" />
     </div>   
 </template>
 
@@ -71,13 +72,11 @@
       justify-content: space-between;
       cursor:pointer;      
    }
-    .control-icons svg{
+   .control-icons svg{
         width: 35px;
         height: 35px;
 
     }
-
-
 </style>
 
 

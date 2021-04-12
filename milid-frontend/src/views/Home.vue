@@ -94,7 +94,6 @@ export default class Home extends Vue {
   showParameters = false;
 
   get modules() {
-    console.log("--DBG: modules", $module.modules);
     return $module.modules;    
   }
 
@@ -142,14 +141,14 @@ export default class Home extends Vue {
       // For Mobile or negative scrolling
       this.lastScrollTop = st <= 0 ? 0 : st; 
 
-    }, false);    
+    }, false); 
+       
     const params = {
         lesson: 'home',
         module: 'home',
         state: MILID.LessonState.DONE
     };
     $metric.event(params);
-
   }
 
   routerLink(module,lesson) {

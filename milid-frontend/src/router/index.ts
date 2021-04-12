@@ -4,7 +4,6 @@ import VueRouter, { RouteConfig } from 'vue-router'
 import Landing from '../views/Landing.vue'
 
 import { $config } from '@/services/config-service'
-import { $module } from '@/services/module-service'
 
 import About from '../views/About.vue'
 import Home from '../views/Home.vue'
@@ -22,7 +21,7 @@ const routes: Array<RouteConfig> = [
     component: Landing,
     beforeEnter: (to, from, next) =>{
       $user.get().then(user => {
-        (user.id && $config.isInStandaloneMode()) ? next('/module'):next()
+        (user.name && $config.isInStandaloneMode()) ? next('/module'):next()
       })
     },
   },
@@ -45,11 +44,6 @@ const routes: Array<RouteConfig> = [
     path: '/about',
     name: 'About',
     component: About
-  },
-  {
-    path: '/test',
-    name: 'Test',
-    component: Test
   },
   {
     path:'/access_denied',

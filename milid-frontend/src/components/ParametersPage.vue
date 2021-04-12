@@ -12,10 +12,17 @@
             <p>français/allemand (à venir)</p>
             <Toggle disabled="true" />
           </div>
+          <div v-if="showAboutButton" class="section">
+            <br>
+            <router-link class="link" to="/about">
+              <button class="btn">À propos</button>
+            </router-link>
+          </div>
           <br>
           <h4>infos</h4>
           <div class="section">
             <p>uid: {{uid}}</p>
+            <p>v{{version}}</p>
           </div>
         </div>
       </div>    
@@ -69,6 +76,23 @@
     .slide-enter-to, .slide-leave {
       transform: translateX(0);
     }
+    
+    .btn {
+      border-radius: 50px;
+      background: var(--md-theme-default-primary);
+      border: 4px solid white;
+      color: white;
+      text-align: center;
+      padding: 10px 20px !important;
+      margin: auto;
+      font-size: 14px;
+      outline: 0;
+      display: block;
+    }
+
+    .link{
+      text-decoration: none;
+    }
 
 </style>
 
@@ -80,6 +104,7 @@ import Toggle from './Toggle.vue';
 import { Component, Prop, Vue } from 'vue-property-decorator';
 
 import { $user } from '../services/user-service';
+import  cfg from '../../package.json';
 
 @Component({
   components: { MILIDIcons, Toggle },
@@ -87,6 +112,13 @@ import { $user } from '../services/user-service';
 export default class ParametersPage extends Vue {
 
   @Prop() readonly open!: boolean; 
+  version = cfg.version;
+
+  showAboutButton = true;
+
+  mounted(){
+    this.showAboutButton = this.$route.name != "About";
+  }
 
   close(){
     this.$emit('closerequest', null);

@@ -53,27 +53,27 @@ function generateStory(m1CompletedLessons = 0, m2CompletedLessons = 0, m3Complet
 
     const result = [];
 
-    result.push(userCompletesModuleLessonWithState(user, "landing", "landing", 1));
-    result.push(userCompletesModuleLessonWithState(user, "home", "home", 1));
+    result.push(userCompletesModuleLessonWithState(user, "landing", "landing", "done"));
+    result.push(userCompletesModuleLessonWithState(user, "home", "home", "done"));
 
     for(let i = 0; i < m1CompletedLessons; i ++){
-        result.push(userCompletesModuleLessonWithState(user, "1", (i + 1).toString(), 0));
-        result.push(userCompletesModuleLessonWithState(user, "1", (i + 1).toString(), 1));
+        result.push(userCompletesModuleLessonWithState(user, "1", (i + 1).toString(), "doing"));
+        result.push(userCompletesModuleLessonWithState(user, "1", (i + 1).toString(), "done"));
     }
     
     for(let i = 0; i < m2CompletedLessons; i ++){
-        result.push(userCompletesModuleLessonWithState(user, "2", (i + 1).toString(), 0));
-        result.push(userCompletesModuleLessonWithState(user, "2", (i + 1).toString(), 1));
+        result.push(userCompletesModuleLessonWithState(user, "2", (i + 1).toString(), "doing"));
+        result.push(userCompletesModuleLessonWithState(user, "2", (i + 1).toString(), "done"));
     }
     
     for(let i = 0; i < m3CompletedLessons; i ++){
-        result.push(userCompletesModuleLessonWithState(user, "3", (i + 1).toString(), 0));
-        result.push(userCompletesModuleLessonWithState(user, "3", (i + 1).toString(), 1));
+        result.push(userCompletesModuleLessonWithState(user, "3", (i + 1).toString(), "doing"));
+        result.push(userCompletesModuleLessonWithState(user, "3", (i + 1).toString(), "done"));
     }
     
     for(let i = 0; i < m4CompletedLessons; i ++){
-        result.push(userCompletesModuleLessonWithState(user, "4", (i + 1).toString(), 0));
-        result.push(userCompletesModuleLessonWithState(user, "4", (i + 1).toString(), 1));
+        result.push(userCompletesModuleLessonWithState(user, "4", (i + 1).toString(), "doing"));
+        result.push(userCompletesModuleLessonWithState(user, "4", (i + 1).toString(), "done"));
     }
 
     return result;

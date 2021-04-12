@@ -3,9 +3,10 @@
   <section class="sources " :hidden="!lesson.sources" :class="{'open primary':open,'primary':!open}" @click="onToggle">
     <MILIDIcons name="sources-bar" :theme="module.theme" />
     <nav class="handle" hidden></nav>
-    <div class="content">
+    <div ref="container" class="content">
       <h3 class="hide">sources</h3>
-      <div v-html="lesson.sources" />        
+      <div v-html="lesson.sources" />
+      <div style="height:50px" />
     </div>        
   </section>
 </template>
@@ -17,6 +18,8 @@ import MILIDIcons from '../components/MILIDIcons.vue';
 
 import { $module } from '@/services/module-service';
 import { $config } from '@/services/config-service';
+
+import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 
 @Component({
   components: {
@@ -59,6 +62,14 @@ export default class LessonSources extends Vue {
 
   onToggle(){
     this.open = !this.open;
+    if(this.open){
+      setTimeout(() => {
+
+        const container = this.$refs.container as any;
+        disableBodyScroll(container);
+      }, 200);
+    }
+
   }
 
 }
