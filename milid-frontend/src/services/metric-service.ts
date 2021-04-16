@@ -8,6 +8,7 @@ import { $user } from "./user-service";
 
 
 import axios from 'axios';
+import { BehaviorSubject } from "rxjs";
 
 const defaultAxios = {
   headers: { 
@@ -30,11 +31,10 @@ export interface MILIDEvent {
 class MetricService {
   public STORAGE_KEY = "milid-progression";
 
-  public progressionState: any = {};
+  public progressionState: any = Vue.observable({});
 
-  constructor() {
-    this.progressionState = Vue.observable({});
-  }
+  private update$ = new BehaviorSubject<MILIDEvent|null>(null);
+
 
   async get() {
     const state = (await $config.storageGet(this.STORAGE_KEY)) as any;
@@ -62,7 +62,6 @@ class MetricService {
       username:user.name,
       timestamp: (params.timestamp || new Date())
     });
-
 
     //
     // check state before to continue 
@@ -97,7 +96,11 @@ class MetricService {
       module: params.module,
       pseudoname: params.username
     };
-    console.log('--DBG progression',this.progressionState);
+    
+    //
+    // notify observers 
+    this.update$.next(params);
+
     return $config.storageSet(this.STORAGE_KEY,this.progressionState)
   }
 
@@ -117,7 +120,7 @@ class MetricService {
     // load Airtable usage
     try{
       const res= await axios.get("/api/event?filter=" + user.id, defaultAxios);
-      console.log('-- DBG',res);
+      this.update$.next(null);
       return res;
     }catch(e){
       console.error("unable to sync events", e);
@@ -134,6 +137,11 @@ class MetricService {
       console.error("unable to get stats", e);
       return null;
     }
+  }
+
+
+  onUpdate() {
+    return this.update$.asObservable();
   }
 }
 

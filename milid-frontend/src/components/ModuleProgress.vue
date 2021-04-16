@@ -15,7 +15,7 @@ export default class ModuleProgress extends Vue {
 
 
   @Prop() readonly pipCount!: number;
-  @Prop({ default: 8 }) readonly pipTotal!: number; // max number of visible pips (determines pip separation)
+  @Prop({ default: 9 }) readonly pipTotal!: number; // max number of visible pips (determines pip separation)
   @Prop() readonly completedPips!: number;
   @Prop() readonly theme!: string;
   @Prop({ default: '#fff' }) readonly bkgdColor!: string; 
