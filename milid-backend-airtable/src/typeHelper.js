@@ -55,7 +55,7 @@ class TypeHelper
 
         let result = text;
 
-        result = result.replace(/([:!;?])/g, "&#8201;$1");
+        result = result.replace(/([:!;?][^\/])/g, "&#8201;$1");
         result = result.replace(/(\()\s*&#8201;(\?)\s*(\))/g, "$1&#8201;$2&#8201;$3");
         result = result.replace(/\s&#8201;/g, "&#8201;");
         // word of two letters should not end line
