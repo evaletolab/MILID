@@ -9,6 +9,9 @@
       <video ref="video"  playsinline  @click="onToggle" >
           <source :src="mediaUrl"  type='video/mp4'>
       </video>
+      <div class="status" :class="{'loader':isLoading,'play':isReadyToPlay}" @click="onToggle">
+            <MILIDIcons name="podcast-play" width="40px" :theme="theme" />
+      </div>
     </div>
 
     <div class="duration-container">
@@ -65,7 +68,7 @@
     margin-left: -25px;
     margin-right: -25px;    
     width: 100vw;
-    min-height: 500px;
+    min-height: 450px;
     overflow: hidden;
     
     .video-edges{
@@ -86,6 +89,26 @@
       left: 50%;
       top: 50%;    
       transform: translate3d(-50%,-50%,0);
+    }
+    .status{
+      left: calc( 50% - 50px );
+      top: calc( 50% - 50px );    
+      margin: auto;    
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      z-index: 0;
+      svg{
+        width: 100px;
+        height: 100px;        
+        opacity: .3;
+      }
+      &.loading,
+      &.play{
+        svg{
+          display: none;
+        }        
+      }
     }
 
   }
@@ -159,6 +182,9 @@ export default class LessonVideo extends Vue {
   lottieController:any = null;
   lottieOptions:any = null;
 
+  isReadyToPlay = false;
+  isLoading = true;
+
   get lesson() {
     return $module.getLessonForModuleAndLessonId(this.moduleId,this.lessonId);
   }
@@ -215,12 +241,16 @@ export default class LessonVideo extends Vue {
       this.video.addEventListener('ended', this.onTrackEnded);
       this.video.addEventListener('timeupdate', this.onTimeUpdate);
       this.video.addEventListener('loadedmetadata', this.onMetaLoaded);
+      this.video.addEventListener('waiting', this.onWait);
+      this.video.addEventListener('canplay', this.onCanPlay);
   }
 
   beforeDestroy(){
       this.video.removeEventListener('ended', this.onTrackEnded);
       this.video.removeEventListener('timeupdate', this.onTimeUpdate);
       this.video.removeEventListener('loadedmetadata', this.onMetaLoaded);
+      this.video.removeEventListener('waiting', this.onWait);
+      this.video.removeEventListener('canplay', this.onCanPlay);
   }
 
   onMetaLoaded(){
@@ -260,6 +290,7 @@ export default class LessonVideo extends Vue {
 
     this.video.play();
     this.isPlaying = true;
+    this.isReadyToPlay = true;
 
     if(this.lottieController){
         this.lottieController.play();
@@ -272,6 +303,20 @@ export default class LessonVideo extends Vue {
 
   onSeekBackwards(){
     this.video.currentTime = Math.max(this.video.currentTime - 10, 0);
+  }
+
+  onloaded() {
+
+  }
+
+  onWait() {
+    this.isReadyToPlay = false
+    this.isLoading = true
+    console.log('--DBG onWait for data')
+  }
+
+  onCanPlay() {
+    this.isLoading = false
   }
   
   setAnimController(controller){
