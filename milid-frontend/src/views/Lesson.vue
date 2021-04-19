@@ -29,7 +29,7 @@
           :completedPips="position" 
           color="white" 
           :bkgdColor="config.themes[module.id].primary"
-          class="progress" />
+          v-bind:class="computeModuleProgressClass" />
         </div>
       </div>        
 
@@ -132,6 +132,7 @@
       height: calc( 100vh - 30px );
       width: 100vw;
     }
+
   }
 
 
@@ -243,6 +244,10 @@ export default class Lesson extends Vue {
     return this.renderLessons$;
   }  
 
+  get computeModuleProgressClass(){
+    const result = this.module.id == 2 ? 'progress-module-2' : 'progress';
+    return result;
+  }
 
   initScroll(container, content) {
     if(!content || !container) {
