@@ -10,7 +10,7 @@
       class="validate-btn"
       :key="buttonKey"
       v-bind:class="{ validateBtnActive: allQuestionsHaveAtLeastOneAnswer }">
-        Validez vos réponses
+        Valide tes réponses
       </button>
     </div>
     <p>{{validationText}}</p>
