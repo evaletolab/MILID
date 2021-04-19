@@ -71,7 +71,6 @@
     <DefinitionPopup 
       :open="showDefPopup" 
       :theme="module.theme" 
-      :height="popupHeight" 
       v-on:closerequest="showDefPopup = false">
       {{definition}}
     </DefinitionPopup>
@@ -180,7 +179,6 @@ export default class Lesson extends Vue {
   test = [];
 
   showDefPopup = false;
-  popupHeight = 0;
   definition = "";
 
   //
@@ -311,8 +309,7 @@ export default class Lesson extends Vue {
   }
 
   onPopupRequest(payload){
-    const { height, definition } = payload;
-    this.popupHeight = height;
+    const { definition } = payload;
     this.definition = definition;
     this.showDefPopup = true;
   }
