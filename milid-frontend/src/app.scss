@@ -28,6 +28,9 @@
   font-style: italic;
 }
 
+strong{
+  font-weight: bold;
+}
 
   html {
     -webkit-overflow-scrolling: touch;
@@ -177,7 +180,13 @@
     .progress{
       width: 90px;
       height: 25px;
-      margin: auto;        
+      margin: auto;
+    }
+    // special case, extra large for module 2 which has 9 lessons
+    .progress-module-2{
+      width: 180px;
+      height: 25px;
+      margin: auto;
     }
   }
 
