@@ -181,10 +181,10 @@ export default class Quiz extends Vue {
 
     if(correctAnswersCount == questionCount){
       // no errors
-      this.validationText = "Bravo, vous avez répondu correctement au Quizz!";
+      this.validationText = "Bravo, tu as répondu correctement au Quizz!";
     }else{
       // there were errors
-      this.validationText = `Vous avez trouvé ${correctAnswersCount} réponse${plural} sur ${questionCount}.`
+      this.validationText = `Tu as trouvé ${correctAnswersCount} réponse${plural} sur ${questionCount}.`
       // offer retry option
       this.showRetryBtn = true;
     }
