@@ -143,9 +143,9 @@ export default class LessonInfographic extends Vue {
   
   definitionClickHandler(e: any){
     const definitionId = e.target.dataset.definitionId;
-    const height = getOffset(e.target).top;
+    // const height = getOffset(e.target).top;
     const definition = this.definitions.find(def => def.id === definitionId).definition;
-    this.$emit('popupRequest', { height, definition });
+    this.$emit('popupRequest', { definition });
   }
   
   setupDefinitions(){

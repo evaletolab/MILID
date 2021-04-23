@@ -10,7 +10,7 @@
       class="validate-btn"
       :key="buttonKey"
       v-bind:class="{ validateBtnActive: allQuestionsHaveAtLeastOneAnswer }">
-        Validez vos réponses
+        Valide tes réponses
       </button>
     </div>
     <p>{{validationText}}</p>
@@ -42,6 +42,7 @@
   }
 
   .validate-btn{
+    font-family: "suisse", sans-serif;
     border: none;
     color: white;
     background-color: #aaa;
@@ -63,6 +64,7 @@
 
   .quiz /deep/ .quiz-btn
   {
+    font-family: "suisse", sans-serif;
     border: none;
     color: black;
     background-color: white;
@@ -181,10 +183,10 @@ export default class Quiz extends Vue {
 
     if(correctAnswersCount == questionCount){
       // no errors
-      this.validationText = "Bravo, vous avez répondu correctement au Quizz!";
+      this.validationText = "Bravo, tu as répondu correctement au Quizz!";
     }else{
       // there were errors
-      this.validationText = `Vous avez trouvé ${correctAnswersCount} réponse${plural} sur ${questionCount}.`
+      this.validationText = `Tu as trouvé ${correctAnswersCount} réponse${plural} sur ${questionCount}.`
       // offer retry option
       this.showRetryBtn = true;
     }

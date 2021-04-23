@@ -2,13 +2,15 @@
     <transition name="fade">
         <div v-if="open" :class="'theme-'+theme">
             <div class="backdrop" @click="close"></div>
-            <div :style="{'top':heightStr}" class="horizontal-center">
-                <div class="popup primary">
-                    <div class="text">
-                        <slot></slot>
-                    </div>
-                    <div class="icon">
-                        <MILIDIcons name="close" :color="iconColor" @wasClicked="close" />
+            <div class="popup-container">
+                <div  class="horizontal-center">
+                    <div class="popup primary">
+                        <div class="text">
+                            <slot></slot>
+                        </div>
+                        <div class="icon">
+                            <MILIDIcons name="close" :color="iconColor" @wasClicked="close" />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -28,13 +30,27 @@
         left:0;
         z-index: 1;
     }
+    
+    .popup-container{
+        position:fixed;
+        width:100%;
+        height:100%;
+        top:0;
+        left:0;
+        z-index: 2;
+        pointer-events: none;
+    }
 
     .horizontal-center {
         position:absolute;
         display: flex; // make us of Flexbox
         justify-content: center; // horizontally centers single line items
         height:auto;
-        left:0;
+        // left:0;
+        margin: 0 auto;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
     }  
 
     .popup{
@@ -83,12 +99,7 @@ import MILIDIcons from './MILIDIcons.vue';
 export default class DefinitionPopup extends Vue {
     @Prop() open!: boolean;
     @Prop() dataId!: string;
-    @Prop() height!: number;
     @Prop() theme!: number;
-
-    get heightStr(){
-        return `${this.height}px`;
-    }
 
     get iconColor(){
         return "#ffffff";
