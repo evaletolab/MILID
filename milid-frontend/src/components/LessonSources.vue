@@ -100,7 +100,7 @@ export default class LessonSources extends Vue {
     width: auto;
     margin-top: 10px;
     height: 55px;
-    transform: translateY(-64px) translateX(3px);
+    transform: translateY(-64px) translateX(0px);
   }
 
   section.sources nav{

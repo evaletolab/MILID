@@ -120,6 +120,19 @@ class MetricService {
     // load Airtable usage
     try{
       const res= await axios.get("/api/event?filter=" + user.id, defaultAxios);
+      if(res.data && res.data.length) {
+        res.data.forEach(params => {
+          this.progressionState[params.lesson] = {
+            lesson: params.module,
+            state: params.state,
+            timestamp: params.timestamp,
+            uid:params.uid,
+            module: params.module,
+            pseudoname: params.username
+          };          
+        });
+        $config.storageSet(this.STORAGE_KEY,this.progressionState);
+      }
       this.update$.next(null);
       return res;
     }catch(e){

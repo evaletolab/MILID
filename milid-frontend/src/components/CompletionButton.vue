@@ -3,7 +3,7 @@
            <lottie-animation 
            class="player"
            :loop="false"
-           :width="40"
+           :width="260"
            :path="lottiePath" 
            :autoPlay="false" 
            @AnimControl="setAnimController" />
@@ -45,7 +45,7 @@ export default class CompletionButton extends Vue {
     isPlaying = false;
 
     get lottiePath(){
-      return "lottie/validation_animation.json";
+      return "lottie/validation_lecon.json";
     }
 
     setAnimController(controller){

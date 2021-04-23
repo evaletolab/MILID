@@ -15,18 +15,18 @@ async function main(){
 
         const airtableData = await extractRawAirtable();
 
+        // write raw airtable structure for reference
+        emptyDirSync('./dist');
+        emptyDirSync('./dist/assets');
+        writeFileSync('./dist/airtable_data.json', JSON.stringify(airtableData, null, 2), { encoding: 'utf-8' });
 
         // transform and massage the data
         const step1 = lessonTransformer(airtableData);
         const data = moduleTransfomer(step1);
 
-        emptyDirSync('./dist');
-        emptyDirSync('./dist/assets');
         
         await downloadAssets(data);
 
-        // write raw airtable structure for reference
-        writeFileSync('./dist/airtable_data.json', JSON.stringify(airtableData, null, 2), { encoding: 'utf-8' });
         
         delete(data.assets);
         // export data 
