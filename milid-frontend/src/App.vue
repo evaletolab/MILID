@@ -94,7 +94,10 @@ export default class App extends Vue {
     // Make sure we only send a 'skip waiting' message if the SW is waiting
     if (!this.registration || !this.registration.waiting) return
     // Send message to SW to skip the waiting and activate the new SW
-    this.registration.waiting.postMessage({ type: 'SKIP_WAITING' })
+    this.registration.waiting.postMessage({ type: 'SKIP_WAITING' });
+    //
+    //refresh content from registerServiceWorker.ts
+    //setTimeout(()=> window.location.reload(true),3000);
   }  
 }
 </script>
