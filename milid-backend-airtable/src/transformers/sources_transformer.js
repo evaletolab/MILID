@@ -1,6 +1,6 @@
 const marked = require('marked');
-const md = require('markdown-it')();
-var result = md.render('# markdown-it rulezz!');
+// const md = require('markdown-it')();
+// var result = md.render('# markdown-it rulezz!');
 
 
 const fs = require('fs');
@@ -17,7 +17,7 @@ module.exports = function sourceTransformer(lesson){
 
     if(!lesson.sources) return lesson;
 
-    writeSourceToDisk(lesson);
+    // writeSourceToDisk(lesson);
 
     const renderer = new marked.Renderer();
 
@@ -28,12 +28,10 @@ module.exports = function sourceTransformer(lesson){
 
     const options = { renderer: renderer };
 
-
-    lesson.sources = lesson.sources.replace(/(\?)( )(_)/, "$1$3");
-
-    // lesson.sources = marked(lesson.sources, options);
-    lesson.sources = md.render(lesson.sources);
-    writeTransformedToDisk(lesson);
+    lesson.sources = marked(lesson.sources_md, options);
+    delete lesson.sources_md;
+    // lesson.sources = md.render(lesson.sources);
+    // writeTransformedToDisk(lesson);
 
     return lesson;
 }
