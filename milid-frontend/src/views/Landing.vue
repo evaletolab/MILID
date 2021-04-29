@@ -32,12 +32,13 @@
         <button class="btn tertiary" @click="onInstall" v-show="!installed">{{i18n('landing_desktop_install')}}</button>
       </section>
 
-      <section class="hide-md hide-lg">
+      <section class="hide-md hide-lg" >
         <h3 v-html="i18n('landing_title1')" />
         <p v-html="i18n('landing_title2')" />
         <img  src="@/assets/MILID-logo-minimal.svg" />
 
-        <button class="btn tertiary" @click="onInstall" v-show="!installed">{{i18n('landing_install')}}</button>
+        <button class="btn tertiary"                 
+                @click="onInstall" v-show="!installed">{{i18n('landing_install')}}</button>
       </section>
       <section class="continue hide-md  hide-lg">
         <button class="" @click="onOpen">
@@ -292,8 +293,11 @@ export default class Landing extends Vue {
 
   showParameters = false;
 
+  isInstallAvailable = true;
+
   async mounted(){
 
+    this.isInstallAvailable = ($config.isAndroid()|| ($config.isSafari() && $config.isIos()));
     window.addEventListener('beforeinstallprompt', (e) => {
       // Prevent Chrome 67 and earlier from automatically showing the prompt
       e.preventDefault();

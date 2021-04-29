@@ -108,6 +108,18 @@ class ConfigService {
   }
 
   //
+  // is Safari
+  isSafari() {
+    const userAgent = navigator.userAgent.toLowerCase();
+    return /^((?!chrome|android).)*safari/i.test(userAgent);
+  }
+
+  isAndroid() {
+    const userAgent = navigator.userAgent.toLowerCase();
+    return /android/i.test(userAgent);
+  }
+
+  //
   // Detects if device is in standalone mode
   isInStandaloneMode(){ 
     const $window = window as any;    
@@ -139,6 +151,7 @@ class ConfigService {
     });
   }
 }
+
 
 //
 // service start with $
