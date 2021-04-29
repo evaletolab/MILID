@@ -314,8 +314,9 @@ export default class ContentSwipe extends Vue {
     <!--
       LEFT & RIGHT TOUCH AREAS
       Non-visible divs over left & right sides of screen that can be tapped to change slide
+      optional => @click="previous"
     -->
-    <div class="touch-tap-left" role="button" aria-label="Previous" tabindex="0" @click="previous"
+    <div class="touch-tap-left" role="button" aria-label="Previous" tabindex="0" 
       @keyup.enter="previous" @keyup.space="previous">
 
       <!--   
@@ -330,7 +331,8 @@ export default class ContentSwipe extends Vue {
 
     </div>
 
-    <div class="touch-tap-right" role="button" aria-label="Next" tabindex="0" @click="next" @keyup.enter="next"
+    <!-- optional => @click="next" -->
+    <div class="touch-tap-right" role="button" aria-label="Next" tabindex="0"  @keyup.enter="next"
       @keyup.space="next">
 
       <!-- RIGHT EDGE SHAPE-->

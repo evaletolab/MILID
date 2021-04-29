@@ -46,6 +46,10 @@
     text-align: left;
     padding-top: 30px;
     position: relative;
+    @media (min-width:426px) {
+      padding-bottom:100px;
+    }
+
     .top-wave, .bottom-wave {
       width: 100%;
       position: absolute;
@@ -53,6 +57,10 @@
       left: 0;
       top: -20px;
       z-index: -1;      
+      @media (min-width:426px) {
+        top:-50px;
+      }
+  
     }
     .bottom-wave {
       top: inherit;

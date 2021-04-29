@@ -21,7 +21,7 @@ module.exports = {
     workboxPluginMode: 'GenerateSW',
     workboxOptions: {
       skipWaiting: true,
-      exclude: [/.mp3$/] // removes mp3 files from precache manifest
+      exclude: [/.mp3$/,/.json$/] // removes mp3 files from precache manifest
       // swSrc is required in InjectManifest mode.
       // swSrc: 'dev/sw.js',
       // ...other Workbox options...
