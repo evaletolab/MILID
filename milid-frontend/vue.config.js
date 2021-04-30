@@ -25,7 +25,10 @@ module.exports = {
       // swSrc is required in InjectManifest mode.
       // swSrc: 'dev/sw.js',
       // ...other Workbox options...
-    }
+    },
+    manifestOptions: {
+      background_color: "#0061d4"
+    }    
 
   }
 }
