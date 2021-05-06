@@ -102,7 +102,8 @@ export default class App extends Vue {
 
   onUpdateAvailable(event){
       this.registration = event.detail
-      this.updateExists = true
+      this.updateExists = true;
+      this.onRefreshApp();
   }
 
   onClose(){
