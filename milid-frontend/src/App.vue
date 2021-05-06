@@ -52,7 +52,7 @@
 @import "./app.scss";
 
 #app {
-  font-family: suisse, Sans-Serif;
+  font-family: inter, Sans-Serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

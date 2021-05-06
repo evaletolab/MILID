@@ -42,7 +42,7 @@
   }
 
   .validate-btn{
-    font-family: "suisse", sans-serif;
+    font-family: "inter", sans-serif;
     border: none;
     color: white;
     background-color: #aaa;
@@ -64,7 +64,7 @@
 
   .quiz /deep/ .quiz-btn
   {
-    font-family: "suisse", sans-serif;
+    font-family: "inter", sans-serif;
     border: none;
     color: black;
     background-color: white;
