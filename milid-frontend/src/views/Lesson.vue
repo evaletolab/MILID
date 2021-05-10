@@ -35,22 +35,6 @@
 
     </nav>
 
-    <!-- <md-speed-dial class="md-bottom-right ">
-      <md-speed-dial-target class="primary">
-        <md-icon>add</md-icon>
-      </md-speed-dial-target>
-
-      <md-speed-dial-content>
-        <md-button class="md-icon-button">
-          <md-icon>note</md-icon>
-        </md-button>
-
-        <md-button class="md-icon-button ">
-          <md-icon>event</md-icon>
-        </md-button>
-      </md-speed-dial-content>
-    </md-speed-dial>     -->
-
     <ContentSwipe :initial="$route.params.lesson_id - 1" :lessons="lessons" @changeCard="renderChange" ref="container">
       <section class="lesson rendered-item"          
           v-for="(lesson, index) in renderLessons" :key="index" :id="'ctn-'+index"          

@@ -25,6 +25,7 @@
     "lottie-vuejs": "^0.4.0",
     "register-service-worker": "^1.7.1",
     "rxjs": "^6.6.7",
+    "tween-functions": "^1.2.0",
     "vue": "^2.6.12",
     "vue-class-component": "^7.2.3",
     "vue-material": "^1.0.0-beta-15",
