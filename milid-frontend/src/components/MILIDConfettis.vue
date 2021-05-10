@@ -48,16 +48,15 @@ export default class MILIDConfettis extends Vue {
     const canvas = this.$refs.canvas as HTMLCanvasElement;
     const parentHeight = this.$parent.$el;
 
-    const { top } = this.$parent.$el.getBoundingClientRect()
-    const { width, height } = canvas.getBoundingClientRect();
+    const { width, height, top } = canvas.getBoundingClientRect();
 
     canvas.width = Math.floor(width * this.pixelRatio);
     canvas.height = Math.floor(height * this.pixelRatio);
 
     console.log('---DBG',top, height, document.body.clientHeight - height);
 
-    // canvas.style.display = 'block';
-    // canvas.style.top = ((document.body.clientHeight - height*2 ) - 100)+'px' ;
+    canvas.style.display = 'block';
+    canvas.style.top = ((top - height ) )+'px' ;
     //
     // options
     // https://github.com/alampros/react-confetti#props
@@ -74,9 +73,8 @@ export default class MILIDConfettis extends Vue {
   }
 
   stop(){
-    //const canvas = document.getElementById('confettis') as HTMLCanvasElement;
     const canvas = this.$refs.canvas as HTMLCanvasElement;
-    canvas.style.display = 'none';
+    //canvas.style.display = 'none';
 
     this.confetti.stop();
   }
@@ -86,5 +84,10 @@ export default class MILIDConfettis extends Vue {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-  
+  canvas{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    left: 0;
+  }
 </style>
