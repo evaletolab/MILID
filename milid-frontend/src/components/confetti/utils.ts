@@ -2,7 +2,7 @@ import { IPoint } from './Point'
 import { IRect } from './Rect'
 import { ICircle } from './Circle'
 
-export function norm(value: number, min:number, max: number) {
+export function norm(value: number, min: number, max: number) {
   return (value - min) / (max - min)
 }
 
@@ -34,7 +34,7 @@ export function circleCollision(c0: ICircle, c1: ICircle) {
   return distance(c0, c1) <= c0.radius + c1.radius
 }
 
-export function circlePointCollision(x: number, y:number, circle: ICircle) {
+export function circlePointCollision(x: number, y: number, circle: ICircle) {
   return distanceXY(x, y, circle.x, circle.y) < circle.radius
 }
 
