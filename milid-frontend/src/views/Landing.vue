@@ -52,10 +52,10 @@
         <MILIDIcons name="user" color="#85e5ff" class="user"/>
 
         <input v-model="pseudo" @keypress.enter="onEnter"
-              placeholder="Pseudo ..."  />
+              placeholder="Pseudo ... (3 charactères)"  />
 
         <a class=""
-          :class="{'hidden':(pseudo.length < 4)}"
+          :class="{'hidden':(pseudo.length < 3)}"
           @click="onEnter">
           <div class="icon material-icons">check_circle_outline</div>
           <h4>{{i18n('landing_continue_go')}}</h4>
