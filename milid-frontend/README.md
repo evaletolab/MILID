@@ -5,6 +5,20 @@
 npm install
 ```
 
+## local development
+- run php-analytics route  
+
+```
+cd ../php-analytics/sqlite/src
+php -S localhost:4000
+```
+
+- start vuejs 
+```
+npm run serve
+```
+
+
 ## deployment
 
 ### requirements

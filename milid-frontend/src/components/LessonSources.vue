@@ -88,8 +88,14 @@ export default class LessonSources extends Vue {
     border-radius: 20px 20px 0 0;
     padding: 0 5px;    
     transform: translateY(calc(100vh - 120px));
-    transition: all 200ms;      
+    transition: all 200ms;          
   }  
+
+  @media (min-width:426px) {
+    section.sources.open {
+      transform: translateY(45px)!important;
+    }
+  }
 
   section.sources.open {
     transform: translateY(180px);

@@ -55,7 +55,6 @@ export default class CompletionButton extends Vue {
       if(this.completed){
         const isFrame = true;
         const duration = this.lottieController.duration;
-        console.log("controller", this.lottieController, this.lottieController.totalFrames);
         this.lottieController.goToAndStop(this.lottieController.totalFrames - 1, isFrame);
       }else{
         this.lottieController.addEventListener("complete", this.animationCompleteHandler);
@@ -63,7 +62,7 @@ export default class CompletionButton extends Vue {
     }
   
     mounted(){
-      console.log("button is completed ?", this.completed);
+      // console.log("button is completed ?", this.completed);
     }
     
     beforeDestroy(){

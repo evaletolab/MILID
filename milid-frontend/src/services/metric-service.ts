@@ -41,10 +41,9 @@ class MetricService {
     const keys = Object.keys(state ||{});
     //
     // looking on Airtable
-    if(!keys.length){
-      await this.sync();
-      await $config.storageSet(this.STORAGE_KEY,this.progressionState);
-    }    
+    await this.sync();
+    await $config.storageSet(this.STORAGE_KEY,this.progressionState);
+
     Object.assign(this.progressionState,state);
     console.log('--DBG metrics',this.progressionState)
     return this.progressionState;
@@ -131,7 +130,6 @@ class MetricService {
             pseudoname: params.username
           };          
         });
-        $config.storageSet(this.STORAGE_KEY,this.progressionState);
       }
       this.update$.next(null);
       return res;

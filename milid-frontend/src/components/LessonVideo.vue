@@ -9,7 +9,7 @@
       <video ref="video"  playsinline  @click="onToggle" >
           <source :src="mediaUrl"  type='video/mp4'>
       </video>
-      <div class="status" :class="{'loader':isLoading,'play':isReadyToPlay}" @click="onToggle">
+      <div class="status" :class="{'loader':isLoading,'play':isPlaying}" @click="onToggle">
             <MILIDIcons name="podcast-play" width="40px" :theme="theme" />
       </div>
     </div>
@@ -274,6 +274,7 @@ export default class LessonVideo extends Vue {
     }
   }
 
+  // pause request
   onPause(){
     if(!this.isPlaying) return;
 
@@ -285,6 +286,7 @@ export default class LessonVideo extends Vue {
     }
   }
 
+  // play request
   onPlay() {
     if(this.isPlaying) return;
 
