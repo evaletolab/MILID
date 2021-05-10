@@ -28,8 +28,7 @@ module.exports = function sourceTransformer(lesson){
 
     const options = { renderer: renderer };
 
-    lesson.sources = marked(lesson.sources_md, options);
-    delete lesson.sources_md;
+    lesson.sources = marked(lesson.sources, options);
     // lesson.sources = md.render(lesson.sources);
     // writeTransformedToDisk(lesson);
 
