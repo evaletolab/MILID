@@ -51,11 +51,11 @@
       <section class="form">
         <MILIDIcons name="user" color="#85e5ff" class="user"/>
 
-        <input v-model="pseudo" @keypress.enter="onEnter"
-              placeholder="Pseudo ... (3 charactères)"  />
+        <input v-model="pseudo" @keypress.enter="onEnter" maxlength="25"
+              placeholder="Pseudo (min 3 charactères)"  />
 
         <a class=""
-          :class="{'hidden':(pseudo.length < 3)}"
+          :class="{'waiting':(pseudo.length < 3)}"
           @click="onEnter">
           <div class="icon material-icons">check_circle_outline</div>
           <h4>{{i18n('landing_continue_go')}}</h4>
@@ -247,6 +247,7 @@
           border-radius: 15px;
           border: 3px solid white;
           outline: 0;          
+          min-width: 240px;
         }
         a{
           display: block;
@@ -256,6 +257,9 @@
           }
           h4{
             margin-top: 0;
+          }
+          &.waiting{
+            opacity: .3;
           }
         }
       }
@@ -344,6 +348,9 @@ export default class Landing extends Vue {
 
 
   onEnter(){
+    if(!this.pseudo || this.pseudo.length < 3){
+      return;
+    }
     $user.createUser(this.pseudo);
     this.$router.push({path:'/module' });
   }
