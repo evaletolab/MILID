@@ -7,7 +7,7 @@
       :path="lottiePath" 
       :autoPlay="false" 
       @AnimControl="setAnimController" />
-    <MILIDConfettis  v-if="displayParty" />
+    <!-- <MILIDConfettis  v-if="displayParty" /> -->
   </div>
 </template>
 
@@ -30,14 +30,14 @@
 /* eslint-disable */
 import { Component, Vue, Prop } from 'vue-property-decorator';
 import LottieAnimation from "lottie-vuejs/src/LottieAnimation.vue";
-import MILIDConfettis from './MILIDConfettis.vue';
+// import MILIDConfettis from './MILIDConfettis.vue';
 
 import { ConfettiElement } from './confetti/ConfettiElement';
 
 @Component({
   components: { 
     LottieAnimation,
-    MILIDConfettis
+    // MILIDConfettis
   }
 })
 export default class CompletionButton extends Vue {
@@ -81,7 +81,6 @@ export default class CompletionButton extends Vue {
       if(this.confettiElement){
         this.confettiElement.unmount();
       }
-
     }
 
     animationCompleteHandler(){
