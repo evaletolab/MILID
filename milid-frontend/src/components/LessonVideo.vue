@@ -332,6 +332,10 @@ export default class LessonVideo extends Vue {
           state: MILID.LessonState.DONE
       };
       $metric.event(params);
+      
+      // ISSUE on iOS
+      // https://stackoverflow.com/questions/50051639/javascript-html5-video-event-canplay-not-firing-on-safari
+      this.isLoading = false
   }
 
 }
