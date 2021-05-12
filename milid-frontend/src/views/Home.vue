@@ -52,10 +52,10 @@
         </div>
       </div>
       <div class="bottom-wave"><MILIDWave name="bottom" :theme="mod.theme" :config="config" /></div>
-
-      <!-- <li><router-link :to="'/module/' + mod.id + '/lesson/0'">{{ mod.title }}</router-link></li> -->
     </div>
 
+    <!-- BACK TOP -->
+    <MILIDIcons name="back-top" color="black" class="backtop align-center" @click.native="onTop"/>
     <!-- FULLSCREEN MODAL -->
     <router-view name="l2" :key="$route.fullPath"/>
 
@@ -162,6 +162,10 @@ export default class Home extends Vue {
       return;
     }
     element.scrollIntoView({ behavior: 'smooth' });
+  }
+
+  onTop($event) {
+    this.onIndex($event,1);
   }
 }
 </script>
