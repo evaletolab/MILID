@@ -35,7 +35,11 @@ export class ConfettiElement
         // https://github.com/alampros/react-confetti#props
         this.confetti = new Confetti(this.canvas, {
             numberOfPieces:300,
-            recycle:false
+            recycle:false,
+            colors:['#6900FF','#260063','#BBB8FF',
+            '#FFBC00','#FF8D00','#FFF9C5',
+            '#00D6B2','#00A585','#D9FFF8',
+            '#FF0049','#A5003F','#FF85A2']
         }) as Confetti;
 
         setTimeout(()=>this.stop(),8000);
