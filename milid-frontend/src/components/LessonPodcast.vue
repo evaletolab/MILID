@@ -2,7 +2,7 @@
   <div class="col" :class="'theme-' + theme">
     <h1 class="primary-on-text" v-html="title" />
 
-    <audio ref="audioPlayer" preload="auto" >
+    <audio ref="audioPlayer"  >
       <source
         :src="mediaUrl"
         type='audio/mpeg; codecs="mp3"'
@@ -234,6 +234,7 @@ export default class LessonPodcast extends Vue {
     this.audioPlayer.addEventListener("timeupdate", this.onTimeUpdate);
     this.audioPlayer.addEventListener("loadedmetadata", this.onMetaLoaded);
     this.audioPlayer.addEventListener("canplay", this.onCanPlay);
+    this.audioPlayer.preload = null;
   }
 
   beforeDestroy() {
