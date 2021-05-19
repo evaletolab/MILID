@@ -123,9 +123,10 @@ export const confettiDefaults: Pick<IConfettiOptions, Exclude<keyof IConfettiOpt
 export class Confetti {
   constructor(canvas: HTMLCanvasElement, opts: Partial<IConfettiOptions>) {
     this.canvas = canvas
-    const ctx = this.canvas.getContext('2d')
+
+    const ctx = this.canvas?.getContext('2d')
     if(!ctx) {
-      throw new Error('Could not get canvas context')
+      return;
     }
     this.context = ctx
 
@@ -136,11 +137,11 @@ export class Confetti {
 
   canvas: HTMLCanvasElement
 
-  context: CanvasRenderingContext2D
+  context!: CanvasRenderingContext2D
 
   _options!: IConfettiOptions
 
-  generator: ParticleGenerator
+  generator!: ParticleGenerator
 
   rafId?: number
 
