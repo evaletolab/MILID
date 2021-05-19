@@ -258,7 +258,7 @@ export default class LessonPodcast extends Vue {
   play() {
     if (this.isPlaying) return;
 
-    this.audioPlayer.play();
+    this.audioPlayer.play().catch(err => console.log('---DBG',err));
     this.isPlaying = true;
     this.isReadyToPlay = true;
     if (this.lottieController) {
