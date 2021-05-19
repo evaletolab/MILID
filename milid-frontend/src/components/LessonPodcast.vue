@@ -2,12 +2,7 @@
   <div class="col" :class="'theme-' + theme">
     <h1 class="primary-on-text" v-html="title" />
 
-    <audio ref="audioPlayer"  >
-      <source
-        :src="mediaUrl"
-        type='audio/mpeg; codecs="mp3"'
-      />
-    </audio>
+    <audio ref="audioPlayer" :src="mediaUrl" ></audio>
 
     <div class="lottie-container">
       <lottie-animation
@@ -18,7 +13,7 @@
       />
       <div
         class="status "
-        :class="{ loader: isLoading, play: isReadyToPlay }"
+        :class="{ play: isReadyToPlay }"
         @click="onToggle">        
       </div>
     </div>
@@ -234,7 +229,6 @@ export default class LessonPodcast extends Vue {
     this.audioPlayer.addEventListener("timeupdate", this.onTimeUpdate);
     this.audioPlayer.addEventListener("loadedmetadata", this.onMetaLoaded);
     this.audioPlayer.addEventListener("canplay", this.onCanPlay);
-    this.audioPlayer.preload = null;
   }
 
   beforeDestroy() {
