@@ -2,10 +2,9 @@
   <div class="col" :class="'theme-' + theme">
     <h1 class="primary-on-text" v-html="title" />
 
-    <audio ref="audioPlayer" preload="metadata" >
+    <audio ref="audioPlayer" preload="auto" >
       <source
         :src="mediaUrl"
-        preload="metadata"
         type='audio/mpeg; codecs="mp3"'
       />
     </audio>
