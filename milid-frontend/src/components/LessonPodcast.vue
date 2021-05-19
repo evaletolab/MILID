@@ -19,7 +19,7 @@
       />
       <div
         class="status "
-        :class="{ loader: isLoading, play: isReadyToPlay }"
+        :class="{ play: isReadyToPlay }"
         @click="onToggle">        
       </div>
     </div>
