@@ -2,7 +2,7 @@
   <div class="col" :class="'theme-' + theme">
     <h1 class="primary-on-text" v-html="title" />
 
-    <audio ref="audioPlayer" >
+    <audio ref="audioPlayer" preload="metadata" >
       <source
         :src="mediaUrl"
         preload="metadata"
@@ -19,7 +19,7 @@
       />
       <div
         class="status "
-        :class="{ play: isReadyToPlay }"
+        :class="{ loader: isLoading, play: isReadyToPlay }"
         @click="onToggle">        
       </div>
     </div>
