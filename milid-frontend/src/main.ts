@@ -11,7 +11,7 @@ import { Integrations } from "@sentry/tracing";
 
 Sentry.init({
   Vue,
-  dsn: "https://9b50f6f872fc4623b486082a61764a22@o593182.ingest.sentry.io/5741548",
+  dsn: "https://47922795b7ee4dee98951a7e280351d0@o593182.ingest.sentry.io/5793422",
   integrations: [new Integrations.BrowserTracing()],
 
   // Set tracesSampleRate to 1.0 to capture 100%
