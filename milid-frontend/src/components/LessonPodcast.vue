@@ -2,13 +2,7 @@
   <div class="col" :class="'theme-' + theme">
     <h1 class="primary-on-text" v-html="title" />
 
-    <audio ref="audioPlayer">
-      <source
-        :src="mediaUrl"
-        preload="metadata"
-        type='audio/mpeg; codecs="mp3"'
-      />
-    </audio>
+    <audio ref="audioPlayer" :src="mediaUrl" ></audio>
 
     <div class="lottie-container">
       <lottie-animation
@@ -19,7 +13,7 @@
       />
       <div
         class="status "
-        :class="{ loader: isLoading, play: isReadyToPlay }"
+        :class="{ play: isReadyToPlay }"
         @click="onToggle">        
       </div>
     </div>
@@ -83,9 +77,9 @@ h1 {
 .lottie-container {
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 100vw;
   min-height: 320px;
-  margin-left: 15px;
+  -margin-left: 15px;
   position: relative;
   .status {
     left: calc(50% - 90px);
@@ -244,20 +238,6 @@ export default class LessonPodcast extends Vue {
     this.audioPlayer.removeEventListener("canplay", this.onCanPlay);
   }
 
-  onMetaLoaded() {
-    this.duration = Math.floor(this.audioPlayer.duration);
-    this.elapsed = "0";
-  }
-
-  onTrackEnded() {
-    this.isPlaying = false;
-    this.lottieController.pause();
-  }
-
-  onTimeUpdate() {
-    this.elapsed = `${Math.floor(this.audioPlayer.currentTime)}`;
-  }
-
   pause() {
     if (!this.isPlaying) return;
 
@@ -272,7 +252,7 @@ export default class LessonPodcast extends Vue {
   play() {
     if (this.isPlaying) return;
 
-    this.audioPlayer.play();
+    this.audioPlayer.play().catch(err => console.log('---DBG',err));
     this.isPlaying = true;
     this.isReadyToPlay = true;
     if (this.lottieController) {
@@ -308,7 +288,25 @@ export default class LessonPodcast extends Vue {
   }
 
   onCanPlay() {
+    // ISSUE on iOS
+    // https://stackoverflow.com/questions/50051639/javascript-html5-video-event-canplay-not-firing-on-safari
     this.isLoading = false;
   }
+
+  onMetaLoaded() {
+    this.isLoading = false;
+    this.duration = Math.floor(this.audioPlayer.duration);
+    this.elapsed = "0";
+  }
+
+  onTrackEnded() {
+    this.isPlaying = false;
+    this.lottieController.pause();
+  }
+
+  onTimeUpdate() {
+    this.elapsed = `${Math.floor(this.audioPlayer.currentTime)}`;
+  }
+
 }
 </script>

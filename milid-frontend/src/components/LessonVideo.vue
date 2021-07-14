@@ -254,8 +254,12 @@ export default class LessonVideo extends Vue {
   }
 
   onMetaLoaded(){
-      this.duration = Math.floor(this.video.duration);
-      this.elapsed = "0";
+    this.duration = Math.floor(this.video.duration);
+    this.elapsed = "0";
+
+    // ISSUE on iOS
+    // https://stackoverflow.com/questions/50051639/javascript-html5-video-event-canplay-not-firing-on-safari
+    this.isLoading = false;
   }
 
   onTrackEnded(){
@@ -326,12 +330,12 @@ export default class LessonVideo extends Vue {
   }
 
   onCompletionHandler(){
-      const params = {
-          lesson: this.lessonId,
-          module: this.moduleId,
-          state: MILID.LessonState.DONE
-      };
-      $metric.event(params);
+    const params = {
+        lesson: this.lessonId,
+        module: this.moduleId,
+        state: MILID.LessonState.DONE
+    };
+    $metric.event(params);
   }
 
 }

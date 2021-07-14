@@ -51,7 +51,7 @@ const routes: Array<RouteConfig> = [
     component: AccessDenied
   },
   {
-    path: '/dashboard',
+    path: '/xyz4546/dashboard',
     name: 'Dashboard',
     beforeEnter: (to, from, next) =>{
       $user.get().then(user => {

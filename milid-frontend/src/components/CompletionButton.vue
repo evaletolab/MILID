@@ -1,13 +1,14 @@
 <template>
-        <div class="container" @click="clickHandler">
-           <lottie-animation 
-           class="player"
-           :loop="false"
-           :width="260"
-           :path="lottiePath" 
-           :autoPlay="false" 
-           @AnimControl="setAnimController" />
-        </div>
+  <div class="container" @click="clickHandler">
+      <lottie-animation 
+      class="player"
+      :loop="false"
+      :width="260"
+      :path="lottiePath" 
+      :autoPlay="false" 
+      @AnimControl="setAnimController" />
+    <!-- <MILIDConfettis  v-if="displayParty" /> -->
+  </div>
 </template>
 
 
@@ -29,10 +30,14 @@
 /* eslint-disable */
 import { Component, Vue, Prop } from 'vue-property-decorator';
 import LottieAnimation from "lottie-vuejs/src/LottieAnimation.vue";
+// import MILIDConfettis from './MILIDConfettis.vue';
+
+import { ConfettiElement } from './confetti/ConfettiElement';
 
 @Component({
   components: { 
     LottieAnimation,
+    // MILIDConfettis
   }
 })
 export default class CompletionButton extends Vue {
@@ -43,6 +48,9 @@ export default class CompletionButton extends Vue {
     lottieOptions:any = null;
 
     isPlaying = false;
+    displayParty = false;
+
+    confettiElement!: ConfettiElement | null;
 
     get lottiePath(){
       return "lottie/validation_lecon.json";
@@ -69,6 +77,10 @@ export default class CompletionButton extends Vue {
       if(this.lottieController){
         this.lottieController.removeEventListener("complete", this.animationCompleteHandler);
       }
+
+      if(this.confettiElement){
+        this.confettiElement.unmount();
+      }
     }
 
     animationCompleteHandler(){
@@ -82,6 +94,10 @@ export default class CompletionButton extends Vue {
 
       this.lottieController.goToAndPlay(1, true);
       this.isPlaying = true;
+      this.displayParty = true;      
+
+      this.confettiElement = new ConfettiElement();
+      this.confettiElement.mount();
       // console.log("on click");
     }
 }

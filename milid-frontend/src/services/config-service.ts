@@ -97,6 +97,7 @@ class ConfigService {
 
       const tertiary = themes[theme].tertiary
       root.style.setProperty('--theme-'+theme+'-tertiary',tertiary);
+      //console.log("'"+primary + "','"+secondary + "','"+tertiary+"'");
     });
   }
 
